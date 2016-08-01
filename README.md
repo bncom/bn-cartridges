@@ -16,7 +16,7 @@ sudo npm install grunt-contrib-sass --save-dev
 
 sudo npm install grunt-contrib-concat --save-dev
 
-sudo npm install grunt-contrib-cssmin --save-dev
+// sudo npm install grunt-contrib-cssmin --save-dev  // using postcss cssnano
 
 sudo npm install grunt-contrib-jshint --save-dev
 
@@ -27,8 +27,8 @@ sudo npm install grunt-contrib-watch --save-dev
 
 sudo npm install grunt-browser-sync --save-dev
 
-// not using compass yet
-// sudo npm install grunt-contrib-compass --save-dev
+sudo npm install grunt-postcss --save-dev
+sudo npm install grunt-postcss pixrem autoprefixer cssnano
 
 
 
