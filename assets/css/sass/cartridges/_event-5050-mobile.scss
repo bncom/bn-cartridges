@@ -1,0 +1,20 @@
+ @media all and (max-width: 699px){ 
+  
+ .event-5050 {   
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  } 
+  .event-5050:nth-of-type(odd) {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+ .event-5050 .event-5050-img, .event-5050 .event-5050-txt {  
+    float: none; 
+    width:100%;
+    max-width:100%;
+    text-align:center;
+  } 
+  .event-5050 .event-5050-txt { padding: 30px 30px 0; }
+  .event-5050-img img {max-width: 100%;}
+
+}

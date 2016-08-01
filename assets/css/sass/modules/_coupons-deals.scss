@@ -1,0 +1,261 @@
+
+/*Coupon & Deals page*/ 
+[class*=coupn-] { transition: all 0.5s ease; }
+h1.coupn-h1 { 
+  position: relative; 
+  font-family: Milo; color:#6b6b6a; 
+  font-size:66px;
+  line-height:1;
+  font-weight:normal; 
+  text-align:center;
+  margin-top: -24px;
+  padding: 0 15px 20px 15px;  
+} 
+h2.coupn-h2 {
+  color: #6b6b6a;
+  display: block;
+  font-family: PTSans,Arial,sans-serif; 
+  font-size: 18px;
+  line-height:1;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: none;
+}
+
+.icon-stopwatch{
+  display: inline-block;
+  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/stopwatch.png) no-repeat 0px 0px; 
+  height: 26px;
+  padding-left:25px;
+  vertical-align: middle;
+}
+.rainbow-edge{
+  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/rainbow.jpg) repeat 0px 0px; 
+  height: 5px;
+  width: 100%;  
+}
+  /* green coupon section */
+.coupn {text-align: center; color:#fff; background-color:#5AA666; 
+  overflow: hidden;
+  margin: 27px 0;
+  padding:0 15px;  
+  position: relative;
+}
+.coupn-tag {
+  width: 76px;
+  height: 94px;
+  margin-bottom: -20px;
+  margin-right: -4px;
+  margin-top: -8px;
+  display: inline-block;
+  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/tag_03.png) no-repeat 0px 0px; 
+  position: relative;
+}
+.coupn-scissors {
+  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/scissors.png) no-repeat 0px 0px; 
+  height: 55px;
+  width:97%; 
+  position: absolute;
+  top: -22px;
+  z-index: 1; 
+}
+.coupn-intro-text { 
+  display: inline-block; 
+  border-bottom: 1px #fff solid; 
+  padding-bottom:5px; 
+  margin:10px 0 32px 0;
+  font-family: milo;
+  font-size: 20px;
+}
+.coupn-headline {width:49%;float: left;}
+.coupn-details {
+  position: relative;
+  width:50%;
+  min-height: 190px; 
+  float: right;
+  border-left:1px #fff solid;
+  margin-bottom: 27px;
+  padding-left:20px;
+  font-size: 16px;
+}
+ 
+.coupn-divider{    
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 0; 
+  border-top:10px #5AA666 solid;
+  border-right:10px #5AA666 solid;
+  border-bottom:10px #5AA666 solid;
+  border-left:10px #fff solid; 
+}
+
+.coupn-discount-amt{max-width:300px; margin: 5px auto 25px;}
+.pct-off-stack {float:right; margin-right: 10px;}
+.coupn-discount-dollar-amt { max-width: 335px; margin: 5px auto 25px;}
+.coupn-dollar-sign:before {content:"$"; font-family:Milo; font-size:70%; position: relative; bottom:15px; }
+.coupn-promo-msg {text-align: center;}
+.coupn-legal  {font-size:12px; color: #fff; margin-bottom:10px; }
+.coupn-legal a {font-size:12px; font-weight:bold; color: #fff;  }
+
+  /* coupon promo text message */
+.coupn-promo-msg{
+  border:1px #b2a58e solid;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 25px;
+  font-family:Milo; font-size:38px;
+  line-height: 1.2; 
+  padding: 15px;
+  color: #000;
+  display: block;
+} 
+.coupn-promo-msg:hover{text-decoration: none;}
+.coupn-promo-msg .standout{font-family:inherit;color:#D96630;}
+.coupn-promo-msg em{font-family:inherit;color:#6a6a69;}
+.coupn-pending { font-size:16px; line-height:1.4; font-weight:bold;color:#fff;padding:40px 20px; text-shadow: 0 -1px 1px #666;}
+.coupn-pending-txt { font-size:16px; line-height:1.4; font-weight:bold;color:#fff; text-shadow: 0 -1px 1px #666;}
+ 
+
+
+
+/* Featured Promos */
+.coupn-featured {
+  width:48.9%; 
+  min-height:350px;
+  float: right; 
+  margin-left: 0;
+  margin-bottom:30px;
+  text-align: center;
+  background-color: #C7B299;  
+  &:first-of-type { float: left; }
+  & .cq-bttn-shop  {  position: relative; padding:9px 50px;}  
+  & .cq-bttn-shop:before {    
+    border: 5px solid #E3D9CC;
+    border-radius: 5px;
+    margin: -6px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  a {text-decoration:none;}
+}
+ 
+.coupn-featured-hdr{font-family: milo; font-size: 24px; color: #564231; padding:25px 0 17px;}
+.coupn-featured-title{font-family: milo; font-size: 40px;line-height: 1.2; color: #fff; text-shadow: 0 -1px 1px #666; padding-bottom:10px;}
+.coupn-featured-detail{font-weight: bold; font-size: 14px;  padding: 15px 0;color: #000;}
+.coupn-featured-content {padding:0 25px 22px; position: relative;}
+
+[data-dotd="isVisible"]{display:block;}
+[data-dotd="isHidden"]{display: none;}
+#dodd-expDate {font-family: inherit;font-weight: inherit;font-size: inherit;} 
+
+
+/* coupon promotion items*/
+.coupn-promo{ 
+  padding:30px 0 20px 0; 
+  border-top:1px #b2a58e solid; 
+}
+.coupn-promo-avatar  {
+  height: 81px;
+  width:81px;
+  border:2px solid #478453;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.34); 
+  -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.34);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.34);
+
+  margin: 0 26px 25px 0;
+  padding:.3%;
+  float: left;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  color:#478453;
+  display: table;
+  text-align: center;
+}
+.coupn-promo-avatar .table-cell {
+  display: table-cell; 
+  vertical-align: middle; 
+  font-size: 22px;
+  line-height: 1;
+  font-weight: bold;
+} 
+.coupn-promo-item{ float:left; width:61%; }
+.coupn-promo-hdr {font-size: 16px; color: #5E5D57; margin-bottom:7px;}
+.coupn-promo-title {font-size: 26px; line-height:1.2; font-weight: bold;color: #000; margin-bottom:17px; }
+.coupn-promo-copy {margin:-10px 0 10px 0;color: #000; }
+.coupn-promo-legalize, .coupn-promo-legalize time {font-size:14px; font-weight: bold; color:#7a7a78;  }
+.coupn-promo-legalize a {font-size:14px; font-weight: bold;   }
+.coupn-promo-cta{float:right; padding-top:10px;}
+.coupn-promo .cq-bttn {padding: 10px 45px;}
+
+.reveal-wrapper{  position: relative; cursor:pointer;}
+.reveal-content  {color:#000; font-weight:bold;  }
+.reveal-top { white-space: nowrap; 
+  position: absolute;
+  top: 0; left: 0; 
+  border-radius: 5px;
+  background: #eb6e34; /* Fallback */
+  background: -webkit-linear-gradient(240deg, transparent 1.5em, #eb6e34 0);
+  background: linear-gradient(-150deg, transparent 1.5em, #eb6e34 0);
+  /*  
+  -webkit-box-shadow:0 0px 0px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0) inset, 0 0 1px 2px rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0) inset, 0 0 1px 2px rgba(255, 255, 255, 0.1) inset;
+  */
+  color:#fff;
+  width: 100%; 
+  height: 49px; 
+  padding: 15px 40px 10px 0;  
+  overflow: hidden;
+  -webkit-transition:all 0.6s ease;
+    transition:all 0.6s ease;
+  }
+.active .reveal-top{display:none}
+
+.reveal-coupon{
+  width:195px;  
+  height:47px;
+  margin: 20px auto; 
+  padding:15px 10px 10px;  white-space: nowrap;  
+  text-align: right;
+  border:1px solid #478453; 
+  background-color: #f5f4f0; 
+  border-radius: 5px; 
+  -webkit-box-shadow: 0 2px 4px -1px #666; 
+  -moz-box-shadow: 0 2px 4px -1px #666; 
+  box-shadow: 0 2px 4px -1px #666; 
+} 
+.reveal-wrapper:hover .reveal-top{width:30%;color:transparent;}
+.reveal-coupon:hover,.html .reveal-coupon:hover { 
+  text-align: center; padding: 15px 0 10px 25px; border:none; 
+  background: #f5f4f0 url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_dottedline.png") no-repeat center right;
+}
+.reveal-coupon.active { text-align: center; padding: 15px 0 10px 0; border:none; 
+  background: #f5f4f0 url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_dottedline.png") no-repeat center right;
+}
+.reveal-pull-corner-image { background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_orange.png") no-repeat center right;}
+
+.reveal-pull-corner::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 25px; 
+  height: 45px;
+  background: -webkit-linear-gradient(right top, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat;
+  background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat;
+  -webkit-transform: translateY(-20px) rotate(-30deg);
+  -ms-transform: translateY(-20px) rotate(-30deg);
+      transform: translateY(-20px) rotate(-30deg);
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+      transform-origin: bottom right;
+  border-bottom-left-radius: .5em;
+  box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+}
+/*End Coupon & Deals*/

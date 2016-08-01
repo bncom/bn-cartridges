@@ -1,1 +1,55 @@
-# bn-cartridges
+# production
+
+These files were compiled & processed using using Grunt.
+
+
+Notes to Getting Started with GRUNT:
+
+http://gruntjs.com/getting-started
+
+load command line interface
+sudo npm install -g grunt-cli
+
+load following packages:
+
+sudo npm install grunt-contrib-sass --save-dev
+
+sudo npm install grunt-contrib-concat --save-dev
+
+sudo npm install grunt-contrib-cssmin --save-dev
+
+sudo npm install grunt-contrib-jshint --save-dev
+
+
+sudo npm install grunt-contrib-uglify --save-dev
+
+sudo npm install grunt-contrib-watch --save-dev
+
+sudo npm install grunt-browser-sync --save-dev
+
+// not using compass yet
+// sudo npm install grunt-contrib-compass --save-dev
+
+
+
+FOLDER STRUCTURE
+==========
+
+# Dev files are in the following folders:
+
+assets/css/
+
+assets/js/
+
+# Merged and compiled, but still expanded files are in:
+
+assets/processed/css/
+
+assets/processed/js/
+
+
+# Minifield file for production:
+
+assets/build/css/
+
+assets/build/js/

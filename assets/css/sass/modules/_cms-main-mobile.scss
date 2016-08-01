@@ -1,0 +1,253 @@
+/*CQ Module HTML PAGE adjustments */
+
+
+/*Gift Cards */
+@media only screen and (max-width: 599px) {  
+   .gc-item {max-width: 33%; }    
+}
+@media only screen and (max-width: 399px) {  
+   .gc-item {max-width: 50%; }
+}
+@media only screen and (max-width: 330px) {  
+   .gc-item {max-width: 100%;  width: 100%;text-align:center; margin:0 auto;  }  
+}
+
+
+/* start textbooks subppages */
+@media only screen and (max-width: 749px) {  
+	.txtbk-column-main{width:63%; }
+   #cq-txtBookSearch.txtbkhome{ width: 75%;  margin:-20px auto 30px;}
+.txtbk-form-wrapper.txtbkhome{height:50px; } 
+} 
+@media only screen and (max-width: 699px) {
+    .links-container.browse.textbooks  {display: none;}
+}
+@media only screen and (max-width: 649px) {   
+	.txtbk-column-main{width:59%; }
+}
+@media only screen and (max-width: 599px) {   
+	.txtbk-column-main{width:100%;float: none;  }
+	.txtbk-column-right{    
+		text-align: center;
+		width: 100%; 
+		float: none; 
+		margin:0 auto;
+	}
+}
+/* end textbooks subppages */
+
+
+
+
+@media only screen and (max-width: 875px) {
+    .break-desktop {display:none;}
+    // .cms section.module {margin-top:20px;}
+    .cms .module.textbook-options figure {
+        width:50%;  padding:18px 0; text-align: center; 
+        float: left; 
+        border-left: 1px #ccc solid; 
+        border-top: 1px #ccc solid;
+    }
+    .cms .module.textbook-options figure.first{border-left: none; border-top: none;   }
+    .cms .module.textbook-options a:nth-child(2) figure {  border-top: none;   }
+    .cms .module.textbook-options a:nth-child(3) figure{  border-left: none;   }
+     #txtBookSearch + .isbn-link-modal{ float: none; display: block;  margin: 40px 0 0 0; text-align: center; }
+    section.return-msg p {width: 65%;}
+}
+
+@media only screen and (max-width: 699px) {
+    // #txtBookSearch  {width: auto;}
+    // #txtBookSearch input[type="text"] {
+    //     width:400px;
+    //     left:50%;
+    //     margin-left:-200px;
+    // }
+    #txtBookSearch input[type="submit"] { position: relative; left: 77%; margin-left: 0;}
+    section.return-msg { text-align: center;
+        position: relative; 
+        padding: 0 15px;
+        padding-bottom: 160px;}
+    section.return-msg img {  position: absolute; right: 50%;   bottom: 0;   margin-right: -103px;z-index: 1;}
+    section.return-msg p {width: auto;}
+    .links-container.browse.textbooks  {display: none;}
+}
+
+@media only screen and (max-width: 599px) {
+    .break-desktop {display:none;} 
+    .cms .module.textbook-options figure {width:100%;}
+    .cms .module.textbook-options figure {border-left: none;  }
+    .cms .module.textbook-options a:nth-child(2) figure {  border-top: 1px #ccc solid; } 
+    // #txtBookSearch  {width: auto;}
+    // #txtBookSearch input[type="text"] {
+    //     width:280px;
+    //     left:50%;
+    //     margin-left:-140px;
+    // }
+    // #txtBookSearch input[type="submit"] { position: relative; left: 52%; margin-left: 90px; }
+
+}
+ 
+
+
+
+/* My Favorite Teacher */
+	@media only screen and (max-width: 699px) {   
+		.myFavTeacherAwards .fLeft,
+		.myFavTeacherAwards .fRight {float:none; width: 100%;}
+	}
+/* End My Favorite Teacher */
+
+
+
+
+/*   // Put Me In The Story */ 
+@media only screen and (max-width: 986px) {   
+  figcaption.mob {display:block; margin-bottom:10px;}
+  figcaption.desk {display:none;}
+  .pmis-sample {margin-bottom:15px; }
+ .pmis-sample-product { 
+    float: none;
+    width:auto;
+    margin:0 auto;
+  }
+  .pmis-sample-carousel {
+    float: none; 
+    width: 465px; 
+    margin:0 auto 10px;
+  }
+}
+@media only screen and (max-width: 799px) {   
+  .pmis-hero {text-align: center;  }
+  .pmis-hero>figure {height:auto; }
+	.pmis-hero-img{ height:auto;}
+  .pmis-hero-features {
+    background-color: #fff; 
+    position: relative; 
+     margin: 0 auto;
+    height:auto;
+  }
+  .pmis-hero-copy{ padding: 25px 25px 15px;} 
+
+}
+
+
+@media only screen and (max-width: 499px) {    
+   .pmis-hero-copy{ 
+    padding: 20px 25px 48px; 
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .pmis-hero-features h3 { margin: 0; } 
+
+ .pmis-samplet {height:auto; overflow: hidden; }
+ .pmis-sample-product { 
+    float: none;
+    margin:0 auto;
+    padding:0;
+  }
+  .pmis-sample-carousel {
+    float: none; 
+    width: 350px; 
+  } 
+  .pmis-sample-carousel img {width:350px;}  
+  .pmis-samplet-prev-item { left: 33%; } 
+  .pmis-samplet-next-item { right: 33%;}
+}
+
+
+@media only screen and (max-width: 399px) {   
+  .pmis-hero-features { padding: 0 0 20px 0; width:auto;}
+  .pmis-hero-feature{   width:49%;font-size: 13px; height:182px;}
+  // .pmis-hero-feature:nth-child(odd) {  padding-left:0; }
+  // .pmis-hero-feature:nth-child(even) {  padding-right: 0;}
+
+  .pmis-sample-carousel {
+    float: none; 
+    width: 300px; 
+  }
+   .pmis-sample-carousel img {width:300px;}  
+}
+ 
+
+  
+@media only screen and (max-width: 899px) {   
+  .pmis-child { 
+    float:none;
+    margin-right: 0;
+    text-align: center;
+  }
+  .pmis-steps-list {width: 55%;  margin: 0 auto; padding: 0;}
+
+}
+@media only screen and (max-width: 699px) {   
+  
+    h3.pmis-steps-hdr{ font-size: 24px; }
+    .pmis-child img{max-width:100%; }
+    .pmis-steps-list {width:100%;  margin: 0 auto; padding: 0;}
+    .pmis-steps-list {padding: 0 15px;}  
+}
+
+@media only screen and (max-width: 799px) {   
+  .pmis-h-rule {margin:0 5px 35px; height:1px; border-top:1px solid #a7a5a5; }
+  .pmis a.pmis-button{  margin-top: 35px; } 
+  .pmis-sample { margin-top: 0; }
+  .pmis-footnote { margin-top:25px;}
+
+} 
+/*   // END Put Me In The Story */
+
+
+ /* persona  [ personalities mothersday fathersday ] */
+@media only screen and (max-width: 699px) {  /* store title design change  added to rich text editor */
+    #categoryHeaderContainer h1.persona-main-hdr { font-size: 27.43px; } 
+    section#categoryHeaderContainer h2.persona-main-hdr {
+        color: #000; 
+        font-size: 13.71px; 
+        margin: 1px 0 13px 0;
+        font-weight:normal;
+    }
+    h2.persona-main-hdr:before, h2.persona-main-hdr:after { padding: 2px 0; }
+    h2.persona-main-hdr:before {margin: 2px 5px 0 auto;width:26px; }
+    h2.persona-main-hdr:after {margin: 2px auto 0 5px; width:26px;} 
+}
+ 
+@media only screen and (max-width: 699px) {   
+  .persona { margin-bottom:13px; 
+    &:last-of-type {  padding-top: 14px;} 
+  }
+  .persona-header {
+    padding:0 21px;
+    h2 { font-size:18.41px; margin-bottom: 4px;line-height: 1.2;}
+  }
+  .persona-header-cta {font-size:8.94px;  margin-bottom: 5px;  padding: 4px 10px; right:21px; }
+ 
+  .persona-header-gcbanner h2 {
+    margin: 12% 0 4px 0; 
+    font-size: 15.4px; 
+  }
+  .persona-header-gc-copy{
+    font-size: 11px; 
+  }
+  .persona-header-gc-cta{
+    font-size: 8.25px; 
+    &:before{ 
+      width: 15px; 
+      margin: 4px auto;
+    }
+  }
+}
+ 
+@media only screen and (max-width: 599px) {    
+  .persona-header-gcbanner { width: 50%; }
+  .persona-gcbanner.mom{
+    background:url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Mobile_Pod6_599.jpg) no-repeat top left;
+    background-size: 100%; 
+  }
+}
+
+@media only screen and (max-width: 370px) {     
+  .persona-header-gcbanner h2 { margin: 9% 0 4px 0;  } 
+}
+ 
+/* // end persona   */
+

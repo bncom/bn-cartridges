@@ -1,0 +1,59 @@
+/* Desktop */ 
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+} 
+
+.event-copyrights { 
+	text-align: center; 
+	overflow: hidden; 
+  padding:0 10px;
+	margin-bottom: 30px;
+	 p { font-size:10px; line-height:12px;}
+}
+
+.event-cta,
+.event-intro-link { 
+  border: 1px solid #044D77; 
+  padding: 10px;
+  color: #044D77;
+  font-size: 15px;
+  line-height:1;
+  margin: 26px 10px 0;
+  display: inline-block;
+  *float: left;
+
+}
+.event-intro {
+  .event-cta,.event-intro-link { 
+    padding: 12px 15px;
+    text-transform: uppercase; 
+     /* create sprite */
+    &.locator{ 
+      padding-left: 40px;
+      background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Store_Locator_Graphic_LandingPage.png") no-repeat scroll 12px 9px;
+    }
+    &.locator:hover {
+      background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
+    }
+  }
+}
+.event-cta:hover,
+.event-intro-link:hover {
+  color: #a3bcd9;
+  border: 1px solid #a3bcd9;
+  text-decoration: none;
+}
+
+.event-border-top{
+  border-top: 1px solid #e7e6e4; 
+  margin-top:42px; 
+  padding-top:40px;
+}

@@ -1,0 +1,70 @@
+/* Coupons & Deals */
+.coupn-details { font-size: 15px; }
+// .reveal-top{display:none;}
+// .reveal-coupon,.html .reveal-coupon  { text-align: center; padding: 15px 0 10px 0;
+//   border:none; 
+//   background: #f5f4f0 url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_dottedline.png") no-repeat center right;
+//  width: 200px;
+// }
+h1.coupn-h1 {margin-top: -3px; }
+@media only screen and (max-width: 950px) {  
+   .coupn-featured {    min-height: 350px;   }  
+}
+@media only screen and (max-width: 750px) { 
+   .coupn-featured {    min-height: 400px;   }  
+   .coupn-tag {
+      width: 57px;
+      height: 72px;
+      margin-bottom: -15px; 
+      background-size:contain;
+    }
+} 
+@media only screen and (max-width: 699px) {  
+  .coupn-headline {
+      float: none;
+      width: 100%;
+  }
+  .coupn-details  {
+      float: none;
+      width: 100%;
+      padding-top: 30px;
+      border-top: 1px solid #fff;
+      border-left:none;
+  }
+  .coupn-divider {
+      border-color: #fff #5aa666 #5aa666; 
+      top: 0;
+      left: 50%;
+  }
+  .coupn-intro-text {
+      border-bottom: none; 
+      font-family: milo;
+      font-size: 25px;
+      margin: 30px 0 0; 
+  }
+  .coupn-discount-amt { margin: 25px auto 0; }
+  .coupn-promo-msg { font-size: 28px;}
+  .coupn-promo-item, .coupn-promo-cta {
+      float: none;
+      margin-left: 107px;
+  }
+  .coupn-promo-item{ width:auto; }
+}
+@media only screen and (max-width: 699px) {  
+  h1.coupn-h1 { padding-bottom: 5px; font-size: 45px;  } 
+  h2.coupn-h2 { font-size: 14px; line-height:1.5;  } 
+  .coupn-featured,.coupn-featured:first-of-type {float:none;  min-height: auto;  width: 100%;  }  
+}
+@media only screen and (max-width: 370px) {  
+  h1.coupn-h1 { font-size: 35px;  }    
+}
+@media only screen and (max-width: 350px) {  
+  .coupn-discount-amt .pct-off-stack { margin-right: 10%; }
+  .coupn-discount-amt .milo180{font-size: 165px;}
+  .coupn-discount-amt .milo61 {
+      font-family: Milo;
+      font-size: 50px;
+      line-height: 0.8;
+  } 
+}
+/* End Coupons & Deals */

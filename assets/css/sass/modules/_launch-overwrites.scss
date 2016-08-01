@@ -1,0 +1,64 @@
+ /* Global  */
+.cms .heroImage {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    border: 2px #fff solid;
+    font-size: 0;
+    line-height: 0;
+    max-width: 964px;
+    overflow:hidden;
+    margin: 0 auto;
+    -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+       border-radius: 5px;
+}
+.break-desktop {display:block;}
+/*textbooks landing*/ 
+.cms .textbook-options {overflow: hidden; padding:0; border-top: none;}
+.cms .textbook-options figure {width:25%;  padding:18px 0; text-align: center; float: left; border-left: 1px #ccc solid; border-top: 2px solid #fff;}
+.cms .textbook-options a:first-child figure {border-left: none;  }
+.cms .textbook-options figcaption {font-size:14px; line-height: 1.5; font-weight: normal; }
+.cms .textbook-options a {display: block; margin-top: 0; }
+.cms .textbook-options h3 {margin: 0;font-size: 20px;}
+section.return-msg h1 {line-height: 1.25;}
+section.return-msg { text-align: left;position: relative; z-index: 0;padding: 0px 25px 10px;}
+section.return-msg img {  position: absolute; right: 30px; bottom: 0; z-index: 1;}
+section.textbooks {border-bottom: none;}
+.links-container.textbooks > ul> li {padding-left:20px;width:20%; min-width: 125px;  }
+.isbn-link-modal {margin-top: 12px; }
+/*sub-textbooks mobile*/
+.BNspotlight .spotlight img { max-width: 100%;} 
+.mobile #mainContent { position: relative;width: auto;max-width: 740px;}
+.mobile .BNspotlight .block .spotlight {float: none;padding: 0 0 20px 0;width: auto;}
+.mobile .BNspotlight .block .details { width: auto;}
+.mobile .BNspotlight .block .spotlight {float: none;padding: 0 0 20px 0;width: auto;}
+.mobile .BNspotlight .block .spotlight img {margin: 0 4px 4px 0;}
+ 
+/* MasterCard over-writes */
+.cms .btn-cardApply{padding: 9px 40px; margin: 0 10px;}
+.cms.mastercard h3{font-size: 18px; clear: left;}
+.cms.mastercard .call-to-action {text-align: center;}
+.cms.mastercard .call-to-action:after {content:"";border-bottom:1px solid #e0e0e0;box-shadow:-3px 3px 8px -5px #000;height:10px;padding:0;position:relative;width:100%;z-index:2;margin-bottom:25px}
+.h3-cardApply {margin-bottom:8px;}
+.mc-features {border-bottom:1px solid #e0e0e0;}
+.mc-features-box {float:left; width: 50%; margin-bottom: 25px;}
+.mc-features-box:first-of-type  {padding-right: 25px;}
+.mc-features-box:last-of-type  {padding-left: 25px;}
+.mc-features-box sup {font-size: 60%;}
+.mc-features-box b{color: #eb6e34;}
+.mc-features-box h3{font-size: 18px; margin: 10px 0;}
+.mc-features-box p{ margin: 0 0 15px 0;line-height: 25px;}
+.mc-features-box.borderR {border-right:1px solid #e0e0e0; } 
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
