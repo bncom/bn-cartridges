@@ -2476,7 +2476,7 @@ section h2.event-hdr.dOnly {
   font-size: 10px;
   line-height: 12px;
 }
-.html .event-cta,
+.html .event-5050-txt > a,
 .html .event-intro-link {
   border: 1px solid #044D77;
   padding: 10px;
@@ -2499,7 +2499,7 @@ section h2.event-hdr.dOnly {
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
   background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
 }
-.html .event-cta:hover,
+.html .event-5050-txt > a:hover,
 .html .event-intro-link:hover {
   color: #a3bcd9;
   border: 1px solid #a3bcd9;
@@ -2925,7 +2925,7 @@ section h2.event-hdr.dOnly {
   font-size: 10px;
   line-height: 12px;
 }
-.html .event-cta,
+.html .event-5050-txt > a,
 .html .event-intro-link {
   border: 1px solid #044D77;
   padding: 10px;
@@ -2948,7 +2948,7 @@ section h2.event-hdr.dOnly {
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
   background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
 }
-.html .event-cta:hover,
+.html .event-5050-txt > a:hover,
 .html .event-intro-link:hover {
   color: #a3bcd9;
   border: 1px solid #a3bcd9;

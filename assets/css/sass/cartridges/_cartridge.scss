@@ -1,5 +1,4 @@
-/* Desktop */ 
-
+/* Desktop */  
 .screen-reader-text {
     border: 0;
     clip: rect(0 0 0 0);
@@ -12,14 +11,14 @@
 } 
 
 .event-copyrights { 
-	text-align: center; 
-	overflow: hidden; 
+  text-align: center; 
+  overflow: hidden; 
   padding:0 10px;
-	margin-bottom: 30px;
-	 p { font-size:10px; line-height:12px;}
+  margin-bottom: 30px;
+   p { font-size:10px; line-height:12px;}
 }
 
-.event-cta,
+.event-5050-txt > a,
 .event-intro-link { 
   border: 1px solid #044D77; 
   padding: 10px;
@@ -45,7 +44,7 @@
     }
   }
 }
-.event-cta:hover,
+.event-5050-txt > a:hover,
 .event-intro-link:hover {
   color: #a3bcd9;
   border: 1px solid #a3bcd9;
