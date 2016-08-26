@@ -165,8 +165,31 @@ input.cq-bttn-action:active {
  
 
  
+ /* Reskin 2016 buttons */
  
  
+.bttn { 
+    display: inline-block;
+    font-family: GillSans,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 300; 
+    margin: 0;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #346250;
+    border: 1px solid #3d7141;
+    color: #fff;
+}
+ 
+.bttn:focus, .bttn:hover  {
+    text-decoration: none;
+    background-color: #fff ;
+    border: 1px solid #346250 ;
+    color: #346250  ;
+    outline: 0 none;
+}
 
 
 

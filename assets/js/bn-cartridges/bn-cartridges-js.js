@@ -240,6 +240,18 @@
 			} 	
 
 
+		// Textbooks Search funtionality  
+		if ($('form#cqTextBookSearch').length) {
+			var txtSearch = $('form#cq-txtBookSearch');	
+				txtSearch.submit(function(){txtBookQuickSearch();});		
+				txtBookQuickSearch = function () {		 
+					var submitval = ($.trim($('#searchTextBookBar').val()).replace(/[\W]/g,"+"));	//encodeURIComponent	
+					var actionval = location.protocol + "//www.barnesandnoble.com/s/"+submitval+"/_/N-8q9";		 	
+				 	txtSearch.attr('action', actionval);		
+				 	txtSearch.attr('method', 'get');				 
+		        };	    
+		}
+
  
 
 	  } // ***  End desktop Only  ***

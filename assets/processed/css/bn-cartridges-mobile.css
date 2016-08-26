@@ -15,6 +15,7 @@ body {
 }
 
 .main-content {
+  /* are we adjusting the event templt headers above"? */
   /* expand BNReads pod on the One Column Marketing page */
 }
 .main-content section#hotBooksWithDesc .caroufredsel_wrapper,
@@ -29,6 +30,7 @@ body {
   margin-top: 42px;
   padding: 40px 0 0;
 }
+.main-content section h2.module-hdr,
 .main-content section h2.event-hdr,
 .main-content section#hotBooksWithDesc h2,
 .main-content section#hotBooks h2 {
@@ -36,6 +38,10 @@ body {
   line-height: 1;
   text-align: center;
   margin-bottom: 35px;
+}
+.main-content section h2.module-hdr {
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 .main-content section#hotBooks div.prev-item,
 .main-content div.carousel-prev,
@@ -206,6 +212,7 @@ section h2.event-hdr.dOnly {
   */
   /* Buttons */
   /* mimicModule See More buttons */
+  /* Reskin 2016 buttons */
   /************************************************/
   /*==================================================
    * shadow 1
@@ -556,6 +563,26 @@ section h2.event-hdr.dOnly {
 .html input.cq-bttn-action:active {
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.33) inset;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.33) inset;
+}
+.html .bttn {
+  display: inline-block;
+  font-family: GillSans,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #346250;
+  border: 1px solid #3d7141;
+  color: #fff;
+}
+.html .bttn:focus, .html .bttn:hover {
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #346250;
+  color: #346250;
+  outline: 0 none;
 }
 .html .shadowCast {
   position: relative;

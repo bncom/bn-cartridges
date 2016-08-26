@@ -1,0 +1,16 @@
+#cq-html-renderer,.cq-html-renderer{height:0;width: 0;visibility: hidden;opacity: 0;  display: flex;} 
+@import "cartridges/overwrite-global";
+.html{ position: relative;  clear: left;
+	* {
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box; 
+	}
+	@import "partials/var";
+	@import "partials/reset"; 
+	@import "partials/buttons";
+	@import "partials/shadows";
+	@import "modules/cms-mainRESKIN";	
+	@import "modules/coupons-deals";
+	@import "cartridges/apply-desktop";
+}  
+  
