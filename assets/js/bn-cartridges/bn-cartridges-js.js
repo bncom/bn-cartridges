@@ -1,9 +1,7 @@
 (function() {
  
 // Utilities...
-
-
-
+ 
 	loadRWDimg = function(dataAttr) {
 		$("["+dataAttr+"]").each(function(index, value){
           var isrc = $(this).attr(dataAttr);
@@ -15,6 +13,8 @@
  
  
     $(function() { //document.ready  
+
+
 
 /*
 		// $(window).resize(function(){
@@ -185,8 +185,7 @@
 			if(amountOfEvents < 4) {
 			   $('.ec-backward, .ec-forward').remove();
 			}
-
-
+ 
 			if($('#ec-carouselEvents').length){ 		
 				// initialization of the eventCarousel
 				$('#ec-carouselEvents').carouFredSel({
@@ -240,21 +239,83 @@
 			} 	
 
 
+ 
+
+	  } // ***  End desktop Only  ***
+
+
+
+
+
+
+
+
+
+
+
+
+
 		// Textbooks Search funtionality  
 		if ($('form#cqTextBookSearch').length) {
-			var txtSearch = $('form#cq-txtBookSearch');	
+			var txtSearch = $('form#cqTextBookSearch');	
 				txtSearch.submit(function(){txtBookQuickSearch();});		
 				txtBookQuickSearch = function () {		 
 					var submitval = ($.trim($('#searchTextBookBar').val()).replace(/[\W]/g,"+"));	//encodeURIComponent	
 					var actionval = location.protocol + "//www.barnesandnoble.com/s/"+submitval+"/_/N-8q9";		 	
 				 	txtSearch.attr('action', actionval);		
 				 	txtSearch.attr('method', 'get');				 
-		        };	    
+		        };	 
+
+		    $(".cqTextBookSearch-isbn-sample"); 
+		    $(".cqTextBookSearch-isbn-link").on( "click", function(e) { 
+		    	// if($(this+":focus")){alert('"focus');}
+		    	e.preventDefault();
+		    	//$(".cqTextBookSearch-isbn-sample").toggle();
+		    	var isbnLink = $(".cqTextBookSearch-isbn-link"); 
+			    var isVisible = $(".cqTextBookSearch-isbn-sample").is(":visible"); 
+  
+
+			    // var isVisible = $(".cqTextBookSearch-isbn-sample").is(":visible"); 
+			    // if (!isVisible) {
+			    //     $(".cqTextBookSearch-isbn-link").addClass('active');
+			    // } else {
+			    // 	$(".cqTextBookSearch-isbn-link").removeClass('active');
+			    // 	//$("#searchTextBookBar").focus();
+			    // } 
+
+			    var el = $(this); 
+				if( el.hasClass('active') )
+				{
+					el.removeClass('active');
+					$("#searchTextBookBar").focus();
+				}
+				else
+				{ 
+					el.addClass('active');
+				}
+				return false;
+
+
+
+
+
+
+
+		    	//return false;
+		    	// if($(".cqTextBookSearch-isbn-sample")){
+		    	// 	$("#searchTextBookBar").focus();
+		    	// }
+			});
+		 //    	return false;
+			//         if($(this+":focus")){alert('"focus');}
+			//         	//$(this).fadeOut();
+			//         // $("#searchTextBookBar").focus();}  
+			// });
+   
+
 		}
 
- 
 
-	  } // ***  End desktop Only  ***
 
  
 

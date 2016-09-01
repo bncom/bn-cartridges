@@ -3,7 +3,6 @@
   width: 0;
   visibility: hidden;
   opacity: 0;
-  display: flex;
 }
 
 body {
@@ -169,6 +168,34 @@ body {
   border-radius: 0;
 }
 
+.main-body {
+  padding: 0;
+}
+
+.hero1600 img {
+  left: inherit !important;
+  max-width: 100%;
+  left: inherit;
+}
+
+/* padding around product carousels */
+section#hotBooksWithDesc, section.featuredCategories {
+  padding: 20px 10px;
+}
+
+.bnreads {
+  padding: 0 10px;
+}
+
+.button-module-more {
+  right: 10px;
+  padding: 4px 13px;
+}
+
+section h2.event-hdr.dOnly {
+  display: none;
+}
+
 .html {
   position: relative;
   clear: left;
@@ -226,13 +253,89 @@ body {
   /* persona  [ personalities mothersday fathersday ] */
   /* store title design change  added to rich text editor */
   /* // end persona  */
+  /*CQ Module HTML PAGE adjustments */
+  /*Gift Cards */
+  /* start textbooks subppages */
+  /* end textbooks subppages */
+  /* My Favorite Teacher */
+  /* End My Favorite Teacher */
+  /*   // Put Me In The Story */
+  /*   // END Put Me In The Story */
+  /* persona  [ personalities mothersday fathersday ] */
+  /* // end persona   */
   /*Coupon & Deals page*/
   /* green coupon section */
   /* coupon promo text message */
   /* Featured Promos */
   /* coupon promotion items*/
   /*End Coupon & Deals*/
+  /* Coupons & Deals */
+  /* End Coupons & Deals */
   /* Desktop */
+  /*
+  
+  .event-banner a {  
+      display: inline-block;
+      color: #000000;
+      line-height:0;
+  }
+  .event-banner a:hover {
+      color: #000000;
+      text-decoration: none;
+  }
+  .event-banner p {
+      display: block;
+      font-family: Milo;
+      font-size: 26px;
+      line-height: 1;  
+      padding: 0;
+      position:absolute;
+      top: 40%; 
+      text-align: center; 
+      width: 100%;
+  }
+  
+  .event-banner img {
+    position: relative;
+    top:0;
+    left: 0; 
+    z-index: -1; 
+    border-top: 1px solid #e7e6e4;
+    border-bottom: 1px solid #e7e6e4; 
+    width:100%; 
+    min-height:65px;
+  
+  }
+  .event-banner img {
+    position: relative;
+    top:0;
+    left: 0; 
+    z-index: -1; 
+    border-top: 1px solid #e7e6e4;
+    border-bottom: 1px solid #e7e6e4; 
+    width:100%; 
+    min-height:65px;
+  
+  }
+  */
+  /* non flex support */
+  /*.calendar-bottom-content.current {
+    border: 4px solid #e7e6e4;
+    padding: 9px 0 0;
+  }
+  
+  .calendar-bottom-content:hover {
+    border: 4px solid #e7e6e4;
+    padding: 9px 0 0;
+  }*/
+  /* Desktop */
+  /* mobile only */
+  /*
+  @media only screen and (max-width: 699px) {   
+  
+  
+  }
+  */
   /*
   
   .event-banner a {  
@@ -296,6 +399,33 @@ body {
   /* landing page stores */
   /* Message box */
   /* Textbooks Store Pages */
+  /*  ISBN LINK */
+  /*  browse*/
+  /*
+  
+  
+  	.textbook-store-hdr:before {
+  	    content: "";
+  	    height: 40px;
+  	    width: 50px;
+  	    display: block;
+  	    margin:0 auto 15px; 
+  	}
+  	.textbook-store-hdr.rent:before { 
+  	    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -5px -77px no-repeat;
+  	}
+  	.textbook-store-hdr.used:before { 
+  	    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -53px -77px no-repeat;
+  	}
+  	.textbook-store-hdr.new:before { 
+  	    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -103px -77px no-repeat;
+  	}
+  	.textbook-store-hdr.buy:before { 
+  	    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -150px -77px no-repeat;
+  	} 
+  
+  
+  */
 }
 .html * {
   -moz-box-sizing: border-box;
@@ -951,26 +1081,20 @@ body {
 .html .links-container.browse {
   padding-top: 36px;
 }
-.html .links-container.textbooks.browse:first-of-type {
-  padding-top: 0;
-}
 .html .links-container.browse:first-of-type {
   padding-top: 16px;
 }
 .html .links-container.browse ul {
   margin-bottom: 15px;
 }
-.html .links-container.browse a:hover, .html .links-container.browse a:focus {
-  text-decoration: underline;
-}
 .html .links-container.textbooks > ul > li {
   min-width: 125px;
   padding-left: 20px;
-  width: 19%;
+  width: 20%;
 }
 .html .links-container ul li {
   display: inline-block;
-  line-height: 1.75;
+  line-height: 2;
   vertical-align: top;
   width: 238px;
 }
@@ -990,6 +1114,7 @@ body {
   border-radius: 5px;
 }
 .html .cms section.module {
+  background-image: -moz-linear-gradient(center bottom, #fff 25%, #fbfbf9 100%);
   border-radius: 4px;
   border-top: 2px solid #fff;
   box-shadow: 0 0 0 1px #d5d2d2;
@@ -1052,6 +1177,11 @@ body {
 }
 .html section.textbooks {
   border-bottom: none;
+}
+.html .links-container.textbooks > ul > li {
+  padding-left: 20px;
+  width: 20%;
+  min-width: 125px;
 }
 .html .isbn-link-modal {
   margin-top: 12px;
@@ -1573,6 +1703,348 @@ body {
 .html .persona-gcbanner.mom {
   background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
 }
+@media only screen and (max-width: 599px) {
+  .html .gc-item {
+    max-width: 33%;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .html .gc-item {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .html .gc-item {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .html .txtbk-column-main {
+    width: 63%;
+  }
+  .html #cq-txtBookSearch.txtbkhome {
+    width: 75%;
+    margin: -20px auto 30px;
+  }
+  .html .txtbk-form-wrapper.txtbkhome {
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .html .links-container.browse.textbooks {
+    display: none;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .html .txtbk-column-main {
+    width: 59%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .html .txtbk-column-main {
+    width: 100%;
+    float: none;
+  }
+  .html .txtbk-column-right {
+    text-align: center;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .html .break-desktop {
+    display: none;
+  }
+  .html .cms .module.textbook-options figure {
+    width: 50%;
+    padding: 18px 0;
+    text-align: center;
+    float: left;
+    border-left: 1px #ccc solid;
+    border-top: 1px #ccc solid;
+  }
+  .html .cms .module.textbook-options figure.first {
+    border-left: none;
+    border-top: none;
+  }
+  .html .cms .module.textbook-options a:nth-child(2) figure {
+    border-top: none;
+  }
+  .html .cms .module.textbook-options a:nth-child(3) figure {
+    border-left: none;
+  }
+  .html #txtBookSearch + .isbn-link-modal {
+    float: none;
+    display: block;
+    margin: 40px 0 0 0;
+    text-align: center;
+  }
+  .html section.return-msg p {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .html #txtBookSearch input[type="submit"] {
+    position: relative;
+    left: 77%;
+    margin-left: 0;
+  }
+  .html section.return-msg {
+    text-align: center;
+    position: relative;
+    padding: 0 15px;
+    padding-bottom: 160px;
+  }
+  .html section.return-msg img {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    margin-right: -103px;
+    z-index: 1;
+  }
+  .html section.return-msg p {
+    width: auto;
+  }
+  .html .links-container.browse.textbooks {
+    display: none;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .html .break-desktop {
+    display: none;
+  }
+  .html .cms .module.textbook-options figure {
+    width: 100%;
+  }
+  .html .cms .module.textbook-options figure {
+    border-left: none;
+  }
+  .html .cms .module.textbook-options a:nth-child(2) figure {
+    border-top: 1px #ccc solid;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .html .myFavTeacherAwards .fLeft,
+  .html .myFavTeacherAwards .fRight {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 986px) {
+  .html figcaption.mob {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .html figcaption.desk {
+    display: none;
+  }
+  .html .pmis-sample {
+    margin-bottom: 15px;
+  }
+  .html .pmis-sample-product {
+    float: none;
+    width: auto;
+    margin: 0 auto;
+  }
+  .html .pmis-sample-carousel {
+    float: none;
+    width: 465px;
+    margin: 0 auto 10px;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .html .pmis-hero {
+    text-align: center;
+  }
+  .html .pmis-hero > figure {
+    height: auto;
+  }
+  .html .pmis-hero-img {
+    height: auto;
+  }
+  .html .pmis-hero-features {
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+  }
+  .html .pmis-hero-copy {
+    padding: 25px 25px 15px;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .html .pmis-hero-copy {
+    padding: 20px 25px 48px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .html .pmis-hero-features h3 {
+    margin: 0;
+  }
+  .html .pmis-samplet {
+    height: auto;
+    overflow: hidden;
+  }
+  .html .pmis-sample-product {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .html .pmis-sample-carousel {
+    float: none;
+    width: 350px;
+  }
+  .html .pmis-sample-carousel img {
+    width: 350px;
+  }
+  .html .pmis-samplet-prev-item {
+    left: 33%;
+  }
+  .html .pmis-samplet-next-item {
+    right: 33%;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .html .pmis-hero-features {
+    padding: 0 0 20px 0;
+    width: auto;
+  }
+  .html .pmis-hero-feature {
+    width: 49%;
+    font-size: 13px;
+    height: 182px;
+  }
+  .html .pmis-sample-carousel {
+    float: none;
+    width: 300px;
+  }
+  .html .pmis-sample-carousel img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .html .pmis-child {
+    float: none;
+    margin-right: 0;
+    text-align: center;
+  }
+  .html .pmis-steps-list {
+    width: 55%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .html h3.pmis-steps-hdr {
+    font-size: 24px;
+  }
+  .html .pmis-child img {
+    max-width: 100%;
+  }
+  .html .pmis-steps-list {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .html .pmis-steps-list {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .html .pmis-h-rule {
+    margin: 0 5px 35px;
+    height: 1px;
+    border-top: 1px solid #a7a5a5;
+  }
+  .html .pmis a.pmis-button {
+    margin-top: 35px;
+  }
+  .html .pmis-sample {
+    margin-top: 0;
+  }
+  .html .pmis-footnote {
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .html {
+    /* store title design change  added to rich text editor */
+  }
+  .html #categoryHeaderContainer h1.persona-main-hdr {
+    font-size: 27.43px;
+  }
+  .html section#categoryHeaderContainer h2.persona-main-hdr {
+    color: #000;
+    font-size: 13.71px;
+    margin: 1px 0 13px 0;
+    font-weight: normal;
+  }
+  .html h2.persona-main-hdr:before, .html h2.persona-main-hdr:after {
+    padding: 2px 0;
+  }
+  .html h2.persona-main-hdr:before {
+    margin: 2px 5px 0 auto;
+    width: 26px;
+  }
+  .html h2.persona-main-hdr:after {
+    margin: 2px auto 0 5px;
+    width: 26px;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .html .persona {
+    margin-bottom: 13px;
+  }
+  .html .persona:last-of-type {
+    padding-top: 14px;
+  }
+  .html .persona-header {
+    padding: 0 21px;
+  }
+  .html .persona-header h2 {
+    font-size: 18.41px;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .html .persona-header-cta {
+    font-size: 8.94px;
+    margin-bottom: 5px;
+    padding: 4px 10px;
+    right: 21px;
+  }
+  .html .persona-header-gcbanner h2 {
+    margin: 12% 0 4px 0;
+    font-size: 15.4px;
+  }
+  .html .persona-header-gc-copy {
+    font-size: 11px;
+  }
+  .html .persona-header-gc-cta {
+    font-size: 8.25px;
+  }
+  .html .persona-header-gc-cta:before {
+    width: 15px;
+    margin: 4px auto;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .html .persona-header-gcbanner {
+    width: 50%;
+  }
+  .html .persona-gcbanner.mom {
+    background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Mobile_Pod6_599.jpg) no-repeat top left;
+    background-size: 100%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .html .persona-header-gcbanner h2 {
+    margin: 9% 0 4px 0;
+  }
+}
 .html [class*=coupn-] {
   transition: all 0.5s ease;
 }
@@ -1952,6 +2424,98 @@ body {
   transform-origin: bottom right;
   border-bottom-left-radius: .5em;
   box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.15);
+}
+.html .coupn-details {
+  font-size: 15px;
+}
+.html h1.coupn-h1 {
+  margin-top: -3px;
+}
+@media only screen and (max-width: 950px) {
+  .html .coupn-featured {
+    min-height: 350px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .html .coupn-featured {
+    min-height: 400px;
+  }
+  .html .coupn-tag {
+    width: 57px;
+    height: 72px;
+    margin-bottom: -15px;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .html .coupn-headline {
+    float: none;
+    width: 100%;
+  }
+  .html .coupn-details {
+    float: none;
+    width: 100%;
+    padding-top: 30px;
+    border-top: 1px solid #fff;
+    border-left: none;
+  }
+  .html .coupn-divider {
+    border-color: #fff #5aa666 #5aa666;
+    top: 0;
+    left: 50%;
+  }
+  .html .coupn-intro-text {
+    border-bottom: none;
+    font-family: milo;
+    font-size: 25px;
+    margin: 30px 0 0;
+  }
+  .html .coupn-discount-amt {
+    margin: 25px auto 0;
+  }
+  .html .coupn-promo-msg {
+    font-size: 28px;
+  }
+  .html .coupn-promo-item, .html .coupn-promo-cta {
+    float: none;
+    margin-left: 107px;
+  }
+  .html .coupn-promo-item {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .html h1.coupn-h1 {
+    padding-bottom: 5px;
+    font-size: 45px;
+  }
+  .html h2.coupn-h2 {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .html .coupn-featured, .html .coupn-featured:first-of-type {
+    float: none;
+    min-height: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .html h1.coupn-h1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .html .coupn-discount-amt .pct-off-stack {
+    margin-right: 10%;
+  }
+  .html .coupn-discount-amt .milo180 {
+    font-size: 165px;
+  }
+  .html .coupn-discount-amt .milo61 {
+    font-family: Milo;
+    font-size: 50px;
+    line-height: 0.8;
+  }
 }
 .html .screen-reader-text {
   border: 0;
@@ -2402,6 +2966,554 @@ body {
 .html .calendar-bottom-wrapper div.carousel-backward, .html .calendar-bottom-wrapper div.carousel-forward {
   top: 25%;
 }
+.html .screen-reader-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.html .event-copyrights {
+  text-align: center;
+  overflow: hidden;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+.html .event-copyrights p {
+  font-size: 10px;
+  line-height: 12px;
+}
+.html .event-5050-txt > a,
+.html .event-intro-link {
+  border: 1px solid #044D77;
+  padding: 10px;
+  color: #044D77;
+  font-size: 15px;
+  line-height: 1;
+  margin: 26px 10px 0;
+  display: inline-block;
+  *float: left;
+}
+.html .event-intro .event-cta, .html .event-intro .event-intro-link {
+  padding: 12px 15px;
+  text-transform: uppercase;
+  /* create sprite */
+}
+.html .event-intro .event-cta.locator, .html .event-intro .event-intro-link.locator {
+  padding-left: 40px;
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Store_Locator_Graphic_LandingPage.png") no-repeat scroll 12px 9px;
+}
+.html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
+}
+.html .event-5050-txt > a:hover,
+.html .event-intro-link:hover {
+  color: #a3bcd9;
+  border: 1px solid #a3bcd9;
+  text-decoration: none;
+}
+.html .event-border-top {
+  border-top: 1px solid #e7e6e4;
+  margin-top: 42px;
+  padding-top: 40px;
+}
+.html .hero1600 {
+  position: relative;
+}
+.html .hero1600-header {
+  position: absolute;
+  text-align: center;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  top: 58px;
+  z-index: 1;
+}
+.html .hero1600 figure {
+  min-height: 150px;
+}
+.html .hero1600 img {
+  position: relative;
+  top: 0;
+  left: -318px;
+  z-index: -1;
+  text-align: center;
+}
+.html .hero1600 h1 {
+  position: relative;
+  font-family: Milo;
+  font-size: 60px;
+  line-height: 45px;
+  font-weight: normal;
+  padding-top: 4px;
+  text-align: center;
+  vertical-align: middle;
+}
+.html .hero1600 h2 {
+  font-family: Milo;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: normal;
+  padding: 5px 0;
+  text-transform: none;
+  text-align: center;
+}
+@media only screen and (max-width: 699px) {
+  .html .hero1600-header {
+    top: 5px;
+  }
+  .html .hero1600 figure {
+    min-height: 100px;
+  }
+  .html .hero1600 img {
+    left: inherit !important;
+    max-width: 100%;
+    left: inherit;
+  }
+  .html .hero1600 h1 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .html .hero1600 h2 {
+    font-size: 15px;
+    line-height: 1;
+  }
+}
+.html .event-intro {
+  padding: 30px 40px 39px;
+}
+.html .event-intro h2 {
+  font-family: Milo;
+  font-size: 50px;
+  line-height: 54px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.html .event-intro nobr {
+  font-family: inherit;
+  font-weight: inherit;
+}
+.html .event-intro p {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+.html .event-intro p a {
+  font-family: inherit;
+  font-size: inherit;
+}
+.html .event-intro-links {
+  margin: 0 auto 0;
+  /* width: 530px; */
+  text-align: center;
+}
+@media only screen and (max-width: 699px) {
+  .html .event-intro {
+    padding: 15px 10px 30px;
+  }
+  .html .event-intro h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .html .event-intro-links {
+    width: 100%;
+    height: auto;
+  }
+  .html .event-intro-link {
+    margin: 5px 0 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+  .html .event-intro-link.locator {
+    padding: 12px 30px;
+  }
+}
+.html .event-banner, .html .event-banner-text {
+  position: relative;
+  /* background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/Events_HarryPotter_LP_Banner.jpg") no-repeat scroll 0 0;*/
+  border-bottom: 1px solid #e7e6e4;
+  border-top: 1px solid #e7e6e4;
+  line-height: 0;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+.html .event-banner img, .html .event-banner-text img {
+  max-width: 100%;
+  min-height: 70px;
+}
+.html .event-banner-text a {
+  display: table;
+  vertical-align: middle;
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+  color: #000000;
+}
+.html .event-banner-text a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+.html .event-banner-text p {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Milo;
+  font-size: 26px;
+  line-height: 1.2;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+}
+@media all and (max-width: 599px) {
+  .html .event-banner img, .html .event-banner-text img {
+    width: 100%;
+  }
+}
+.html .event-5050 {
+  clear: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  min-height: 150px;
+  padding: 30px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #e7e6e4;
+}
+.html .event-5050:nth-of-type(odd) {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.html .event-5050:last-of-type {
+  margin-bottom: 30px;
+}
+.html .event-5050 .event-5050-txt {
+  padding: 0 30px 0;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+.html .event-5050 .event-5050-txt p {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.html .event-5050 .event-5050-img, .html .event-5050 .event-5050-txt {
+  max-width: 50%;
+  flex: 0 0 auto;
+  align-items: center;
+  overflow: hidden;
+}
+.html .event-5050-txt h3 {
+  color: #000;
+  font-family: Milo;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+.html .event-5050-txt a {
+  font-family: inherit;
+  font-size: inherit;
+}
+.html .event-5050-txt i {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: italic;
+}
+.html .event-5050-txt a.shop-now {
+  display: block;
+  overflow: hidden;
+  width: 100px;
+  margin: 30px auto 0 auto;
+  line-height: 1;
+  border: 1px solid #3169a8;
+  padding: 10px;
+}
+.html .lt-ie9 .event-5050 .event-5050-img, .html .ie9 .event-5050 .event-5050-img,
+.html .lt-ie9 .event-5050 .event-5050-txt,
+.html .ie9 .event-5050 .event-5050-txt {
+  float: left;
+}
+.html .lt-ie9 .event-5050:nth-of-type(odd) .event-5050-img, .html .ie9 .event-5050:nth-of-type(odd) .event-5050-img {
+  float: right;
+}
+.html .lt-ie9 .event-5050 .event-5050-txt, .html .ie9 .event-5050 .event-5050-txt {
+  padding-top: 30px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .html {
+    /* IE10+ CSS styles go here */
+  }
+  .html .event-5050 .event-5050-img,
+  .html .event-5050 .event-5050-txt {
+    float: left;
+  }
+  .html .event-5050:nth-of-type(odd) .event-5050-img {
+    float: right;
+  }
+  .html .event-5050 .event-5050-txt {
+    padding-top: 30px;
+  }
+}
+@media all and (max-width: 699px) {
+  .html .event-5050 {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .html .event-5050:nth-of-type(odd) {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .html .event-5050 .event-5050-img, .html .event-5050 .event-5050-txt {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .html .event-5050 .event-5050-txt {
+    padding: 30px 30px 0;
+  }
+  .html .event-5050-img img {
+    max-width: 100%;
+  }
+}
+.html .event-social-links {
+  border-top: 1px solid #e7e6e4;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.html .event-social-hashtag {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 50px 0 30px 0;
+  display: block;
+}
+.html .event-social-link {
+  display: inline-block;
+  *float: left;
+  margin-left: 8px;
+  width: 79px;
+  height: 74px;
+  overflow: hidden;
+  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/social/socialSprite.jpg) no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+}
+.html .event-social-link.facebook:hover {
+  background-position: 0 -81px;
+}
+.html .event-social-link.twitter {
+  background-position: -79px 0;
+}
+.html .event-social-link.twitter:hover {
+  background-position: -79px -81px;
+}
+.html .event-social-link.instagram {
+  background-position: -158px 0;
+}
+.html .event-social-link.instagram:hover {
+  background-position: -158px -81px;
+}
+.html .event-info {
+  border: 1px solid #e7e6e4;
+  color: #000000;
+  font-family: Milo;
+  line-height: 26px;
+  margin: 0 auto 12px;
+  overflow: hidden;
+  width: 720px;
+}
+.html .event-info-pod {
+  float: left;
+  max-width: 720px;
+}
+.html .event-info-pod-img {
+  float: left;
+  width: 50%;
+}
+.html .event-info-pod-txt {
+  float: right;
+  width: 50%;
+}
+.html .event-info-pod-copy {
+  display: block;
+  padding: 20px 30px 0;
+}
+.html .event-info-pod-copy h3, .html .event-info-pod-copy h3 i {
+  font-family: Milo;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+.html .event-info-seperator {
+  border-bottom: 1px solid #e7e6e4;
+  display: block;
+  margin: 20px 0;
+}
+.html .event-info-pod-date {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "PTSans",Arial,Helvetica,sans-serif;
+  margin-bottom: 15px;
+  display: block;
+}
+.html .event-info-copy {
+  font-family: "PTSans",Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+  display: block;
+}
+.html .event-info-copy a {
+  font-family: inherit;
+  font-size: inherit;
+}
+.html .event-info-wrapper {
+  margin-bottom: 30px;
+}
+@media all and (max-width: 699px) {
+  .html .event-info {
+    border: none;
+    color: #000000;
+    font-family: Milo;
+    line-height: 26px;
+    margin: 0 auto 12px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .html .event-info-pod-txt,
+  .html .event-info-pod-img {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  .html .event-info img {
+    max-width: 100%;
+  }
+  .html .event-info-pod {
+    border: 1px solid #e7e6e4;
+    margin: 0 12px;
+  }
+  .html .event-info-pod-copy {
+    padding: 20px 10px;
+  }
+}
+.html .card a:hover, .html .card a:focus, .html .card a:hover {
+  text-decoration: none;
+}
+.html .calendar-bottom-wrapper
+.caroufredsel_wrapper {
+  margin: 0 auto !important;
+}
+.html .calendar-bottom-wrapper {
+  margin: 0 auto 30px;
+  position: relative;
+  width: 780px;
+}
+.html .calendar-bottom {
+  display: block;
+  width: 720px;
+  height: 224px;
+  overflow: hidden;
+}
+.html .calendar-bottom-content {
+  float: left;
+  height: 224px;
+  margin: 0 7px;
+  width: 231px;
+}
+.html .card-ref.current .card-image,
+.html .card-ref.ended span .card-image {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.html .card-ref.current span.cardimage, .html .card-ref.ended span.cardimage {
+  background-color: #000000;
+  display: inline-block;
+  height: 142px;
+  width: 170px;
+}
+.html .card-ref.current .card-image {
+  background-color: #000000;
+}
+.html .card-image {
+  height: 142px;
+  max-width: 170px;
+}
+.html .card-ref:hover, .html .card-ref.current, .html .card-ref.ended.current, .html .card-ref.ended.current:hover {
+  border: 4px solid #e7e6e4;
+  padding: 9px 0 0;
+  color: #000;
+}
+.html .card-ref {
+  border: 1px solid #e7e6e4;
+  display: block;
+  height: 224px;
+  padding: 12px 0 0;
+  width: 232px;
+  color: #000;
+}
+.html .card-ref.ended:hover, .html .card-ref.ended {
+  border: 1px solid #e7e6e4;
+  padding: 12px 0 0;
+}
+.html .card {
+  text-align: center;
+}
+.html a .card-title {
+  font-family: Milo;
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+}
+.html .card-date {
+  margin: 5px 0 0;
+}
+.html a .card-date {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+.html div.ec-carousel-backward {
+  background-image: url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/btn_prev_carousel_green.png");
+}
+.html div.ec-carousel-forward {
+  background-image: url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/btn_next_carousel_green.png");
+}
+.html .ec-forward.ec-carousel-forward.disabled, .html .ec-backward.ec-carousel-backward.disabled {
+  display: none !important;
+}
+.html .calendar-bottom-wrapper div.ec-carousel-backward, .html .calendar-bottom-wrapper div.ec-carousel-forward {
+  top: 25%;
+}
+.html .ec-carousel-forward, .html .ec-carousel-backward {
+  cursor: pointer;
+  height: 86px;
+  position: absolute;
+  top: 35%;
+  width: 49px;
+  z-index: 99;
+}
+.html .ec-carousel-forward {
+  right: 0;
+}
+.html .ec-forward.carousel-forward.disabled, .html .ec-backward.carousel-backward.disabled {
+  display: none !important;
+}
+.html .calendar-bottom-wrapper div.carousel-backward, .html .calendar-bottom-wrapper div.carousel-forward {
+  top: 25%;
+}
 .html .textbook-hero {
   position: relative;
   height: 330px;
@@ -2684,4 +3796,82 @@ body {
   margin: 20px 0 5px;
   font-size: 18px;
   font-weight: 500;
+}
+.html .textbook-hero-image img {
+  left: 100%;
+  margin-left: -200%;
+  position: relative;
+}
+.html .cqTextBookSearch-isbn-link {
+  top: -105px;
+  width: 190px;
+}
+.html .textbooks .module-hdr {
+  margin: 20px;
+}
+.html .links-container.browse.textbooks {
+  display: block;
+}
+.html .cqTextBookSearch-isbn-sample {
+  left: -117px;
+}
+@media only screen and (max-width: 669px) {
+  .html {
+    /* landing page stores */
+  }
+  .html .textbook-stores {
+    padding: 0;
+  }
+  .html .textbook-stores a {
+    padding: 25px 0;
+    float: none;
+    width: auto;
+    border-left: none;
+    border-top: 1px #ccc solid;
+    margin: 0 20px;
+  }
+  .html .textbook-stores a:first-child {
+    border-top: none;
+  }
+  .html .cqTextBookSearch-isbn-sample {
+    left: -56px;
+  }
+  .html .cqTextBookSearch-isbn-sample img {
+    max-width: 257px;
+  }
+  .html .links-container.textbooks > ul > li {
+    min-width: 45%;
+    padding-left: 20px;
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .html {
+    /*  ISBN LINK */
+  }
+  .html .cqTextBookSearch {
+    height: 18px;
+    left: auto;
+    margin: 0 auto;
+    position: relative;
+    top: -200px;
+    width: 100%;
+  }
+  .html .cqTextBookSearch input[type="text"] {
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    height: 60px;
+    padding: 2px 50px 0 20px;
+    position: relative;
+    width: 95%;
+  }
+  .html #txtBookSearchSubmit {
+    right: 5px;
+  }
+  .html .cqTextBookSearch-isbn-link {
+    top: -65px;
+  }
 }

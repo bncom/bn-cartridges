@@ -45,6 +45,7 @@
 <meta property="og:url" content="http://www-ra-test.barnesandnoble.com/b/textbooks/_/N-8q9"/>
 <meta property="og:image" content="http://dispatch.barnesandnoble.com/content/dam/ccr/social/BN_facebook_1200x630.jpg"/>
 <meta property="og:site_name" content="Barnes &amp; Noble"/>
+
 <link rel="icon" type="image/x-icon" href="http://ra-images.bn-web.com/static/img/favicon.ico" />
 <link rel="icon" sizes="192x192" href="http://ra-images.bn-web.com/static/img/bn-icon-192x192.png">
 <meta name="apple-mobile-web-app-title" content="Barnes & Noble">
@@ -54,7 +55,16 @@
 <link rel="apple-touch-icon" sizes="180x180" href="http://ra-images.bn-web.com/static/img/bn-icon-180x180.png" />
 <link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/vendor/normalize.css?vra"/>
 <link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/sprites.css?vra"/>
-<link rel="stylesheet" href="http://www-ra-test.barnesandnoble.com/static/css/fonts.css" />
+
+
+
+
+<!--  F O N T S  -->
+<link rel="stylesheet" href="http://www-ra-test.barnesandnoble.com/static/css/fonts.css?" />
+
+
+
+
 <link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/global.css?vra"/>
 <link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/storeassociate/storeassociate.css?vra"/>
 <link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/newsletter.css?vra">
@@ -431,6 +441,10 @@ document.cookie = curCookie;
 </head>
 <!--[if lt IE 9]>         <body  class="landingPage searchResultsPage lt-ie9"> <![endif]-->
 <!--[if IE 9]>         <body  class="landingPage searchResultsPage ie9"> <![endif]-->
+
+
+
+
 <!--[if gt IE 9]><!--> <body  class="landingPage searchResultsPage"> <!--<![endif]-->
 <header id="globalHeader" >
 <section id="logoAndSearch">
@@ -1835,12 +1849,12 @@ For a better shopping experience, please <a target="_blank" href="http://windows
 
  <link rel="stylesheet" href="../../../assets/build/css/bn-cartridgesRESKIN.min.css" type="text/css" media="screen"/>
 
-<!-- 
  
-<script type="text/javascript" src="../../assets/build/js/bn-cartridges-js.min.js"></script> -->
- 
-<script type="text/javascript" src="../../assets/build/js/cms.min.js"></script>
+<script type="text/javascript" src="../../../assets/build/js/bn-cartridges-js.min.js"></script>
 
+<!--  
+<script type="text/javascript" src="../../assets/build/js/cms.min.js"></script>
+ -->
 <!--  
 <script src="http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/cms.min.js?v02012016" type="text/javascript"></script>
  -->
@@ -1864,7 +1878,7 @@ Sourec pull from:
     <div style="clear:both;"></div>
 
 </div>
-    <div style="clear:both;"></div>
+ 
 
 </div>
 <!-- 
@@ -1921,26 +1935,8 @@ Return items within 14 days online or at any B&N store
  -->
 <style type="text/css">
   
-.textbook-hero{
-    position: relative;
-    height: 330px;
-}
 
-.textbook-hero-image {
-/*    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 0;line-height: 0;*/
-} 
-.html .cqTextBookSearch {
-    height: 18px;
-    position: absolute;
-    top: 115px;
-    left: 50%;
-    margin-left:-12%;
-    width: 50%;
-    z-index: 2;
-}
+
 </style>
 
 <div class="html">
@@ -1954,16 +1950,24 @@ Return items within 14 days online or at any B&N store
                <img title="" alt="Assorted Textbooks" src="http://prodny-adobe-previewdispatch.bn-web.com/content/ccr/web/stores/textbooks/page-hero-2/2016/8/reskin10-2016/jcr%3acontent/content-node.img.jpg/1472227302588.jpg">  
             </figure> 
 
-            <style type="text/css">
-                #cqTextBookSearch label {position: absolute;clip: rect(0,0,0,0);height: 1px;}
-            </style>
+ 
             <div class="">
                 <form name="txtBookSearch" id="cqTextBookSearch" class="cqTextBookSearch">
                     <label for="searchTextBookBar"> Enter Search Term </label> 
                     <input type="text" autocomplete="off" aria-autocomplete="list" role="textbox" value="" placeholder="Search by ISBN, Title, or Author" id="searchTextBookBar" class="user-success" /> 
-                    <input type="submit" value="" id="txtBookSearchSubmit" /> 
+                    <input type="submit" value="" id="txtBookSearchSubmit" class="cqTextBookSearchSubmit"/> 
+                    
                 </form>
-                <a class="Xtxtbk-isbn-link-modal  " data-modal-class="BN.Modal.External.Link" data-modal-scrolling="no" data-modal-height="280px" data-modal-width="460px" href="http://dispatch.barnesandnoble.com/content/ccr/h/modal/textbook-isbn-helper.use.html?">What's an ISBN?</a> 
+                <!-- data-modal-class="BN.Modal.External.Link" data-modal-scrolling="no" data-modal-height="280px" data-modal-width="460px" -->
+                <a class="cqTextBookSearch-isbn-link  "  href="http://dispatch.barnesandnoble.com/content/ccr/h/modal/textbook-isbn-helper.use.html?">What is an ISBN?
+                    <div class="cqTextBookSearch-isbn-sample">
+                        <p class="question">What's an ISBN</p>
+                        <p class="answer">An ISBN ia a 10-13 digit number found on your book's back cover.</p>
+                        <img src="http://dispatch.barnesandnoble.com/content/dam/ccr/stores/textbooks/ISBN_helper.png" alt=""/>
+                    </div>
+
+                </a> 
+
             </div>
 
 
@@ -1979,60 +1983,12 @@ Return items within 14 days online or at any B&N store
     </div>
 </div>
 
- 
+  
 
  
 
 <style type="text/css">
     
-.textbook-stores {
-    background-color: #f5f2ed; 
-    padding: 30px 0 23px;
-    margin-bottom: 40px;
-} 
-.textbook-stores a {
-    color:#000;
-    display:block;
-    width:25%;  
-    padding: 0; 
-    text-align: center; 
-    float: left; 
-    border-left: 1px #ccc solid;  
-}
-.textbook-stores a:first-child {border-left: none;  }
-.textbook-stores a:hover {text-decoration: none;} 
-.textbook-stores a:hover .textbook-store-cta,
-.textbook-stores a:focus .textbook-store-cta{text-decoration: underline;}
-.textbook-store-cta {display:block; font-size:18px; margin-top: 3px;color:#346250; }
-
- 
-.textbook-store-hdr, .textbook-announcement-hdr {
-    font-family: "Poynter",Georgia,serif;
-    font-size: 24px; 
-    line-height: 1.2;
-    font-weight: 600;
-}
-.textbook-store-hdr:before {
-    content: " ";
-    height: 61px;
-    width: 63px;
-    display: block;
-    margin:0 auto 15px; 
-}
-.textbook-store-hdr.rent:before { 
-    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -5px -10px no-repeat;
-}
-
-.textbook-store-hdr.used:before { 
-    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -74px -10px no-repeat;
-}
-
-.textbook-store-hdr.new:before { 
-    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -144px -10px no-repeat;
-}
-.textbook-store-hdr.buy:before { 
-    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -215px -10px no-repeat;
-} 
 
 
 </style>
@@ -2087,18 +2043,6 @@ Return items within 14 days online or at any B&N store
 
 <style type="text/css">
 
-.textbook-announcement {
-    background-color: #E4E8E3; 
-    text-align: center;
-    padding: 25px 10% 23px;
-    margin-bottom: 35px;
-}
-.textbook-announcement-hdr {
-    margin-bottom: 15px;
-}
-.textbook-announcement-msg {
-    margin-bottom: 20px;
-}
 
  
 
@@ -2192,7 +2136,18 @@ Return items within 14 days online or at any B&N store
 
 
 
+
+
+
+
+
+
 </div><!-- end main-content  -->
+
+
+
+
+
 
 
 

@@ -1,0 +1,270 @@
+/* Texbooks Landing Page */
+.textbook-hero{
+    position: relative;
+    height: 330px;
+    max-width:960px;
+    margin:0 auto;
+    overflow: hidden;
+    text-align:center;
+}
+ 
+/* Search Box */
+// .cqTextBookSearch {
+//     height: 18px;
+//     position: absolute;
+//     top: 125px;
+//     left: 50%;
+//     margin-left:-220px;
+//     width: 50%;
+//     z-index: 2;
+// }
+
+.cqTextBookSearch {
+    height: 61px;
+    position: relative;
+    top: -205px; 
+    margin:0 auto;
+    width: 445px;
+    z-index: 2;
+}
+
+.cqTextBookSearch input[type="text"] {
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    height: 60px;
+    padding: 2px 50px 0 20px;
+    position: relative;
+    width: 440px;
+}
+.cqTextBookSearch input[type="text"]:focus {border: 1px solid #346250;}
+input#searchTextBookBar::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #000;opacity: .75;}
+input#searchTextBookBar::-moz-placeholder { /* Firefox 19+ */ color: #000;opacity: .75;}
+input#searchTextBookBar::-ms-input-placeholder { /* IE 10+ */ color: #000;opacity: .75;}
+input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacity: .75;}
+.cqTextBookSearch label {position: absolute;clip: rect(0,0,0,0);height: 1px;}
+.cqTextBookSearchSubmit {
+    background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") no-repeat 3px -116px;
+    border:none;
+    border-radius: 0;
+    height: 50px;
+    margin: 5px 8px 5px 5px;
+    padding: 0;
+    width: 52px;
+    position: absolute;
+    right: 0;
+}
+.cqTextBookSearchSubmit:hover, 
+.cqTextBookSearchSubmit:focus {
+    // box-shadow: 0 0 2px -1px;
+    background-color:#ebe6dc;
+} 
+/*  ISBN LINK */  
+.cqTextBookSearch-isbn-link {
+    display: block;   
+    position: relative;
+    top: -115px;
+    margin: 0 auto;
+    width: 160px;
+}
+.cqTextBookSearch-isbn-link:hover,
+.cqTextBookSearch-isbn-link:focus,
+.cqTextBookSearch-isbn-link:active  {text-decoration: none;}
+.cqTextBookSearch-isbn-link:after {
+    content: "";
+    display:inline-block;
+    width:22px;
+    height:22px; 
+    background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") no-repeat -49px -125px;
+    position: relative;
+    top: 5px;
+    margin-left:11px;
+}
+.cqTextBookSearch-isbn-link:hover:after {background-position: -79px -125px;}
+.cqTextBookSearch-isbn-link:focus:after,
+.cqTextBookSearch-isbn-link:active:after,
+.cqTextBookSearch-isbn-link.active,
+.cqTextBookSearch-isbn-link.active:after {background-position: -109px -125px;}
+/* ISBN Sample */
+.cqTextBookSearch-isbn-sample {
+    display:none;
+    position: absolute; 
+    /* top:-245px; */
+    bottom:35px;
+    left:-66px;
+    background-color: #fff;
+    padding: 10px 20px 12px;
+    z-index: 0;
+    border:1px #ccc solid;
+    text-align:left;
+}
+.cqTextBookSearch-isbn-sample .question{ font-family: GillSans; font-weight: 500;}
+.cqTextBookSearch-isbn-sample p{ margin:0 0 3px 0;}
+.cqTextBookSearch-isbn-sample img{ max-width: 350px;}
+
+.cqTextBookSearch-isbn-link.active .cqTextBookSearch-isbn-sample,
+.cqTextBookSearch-isbn-link:focus .cqTextBookSearch-isbn-sample,
+.cqTextBookSearch-isbn-link:active .cqTextBookSearch-isbn-sample  {  display: block; z-index: 2;}
+.cqTextBookSearch-isbn-sample:after { 
+    content: "";
+    display:block;
+    width:0;
+    height:0;  
+    position: absolute;
+    /* top: 235px; */
+    bottom:-20px;
+    left: 196px;
+    border:10px transparent solid; 
+    border-top-color:#fff;
+}
+.cqTextBookSearch-isbn-sample:before { 
+    content: "";
+    display:block;
+    width:0;
+    height:0;  
+    position: absolute;
+    /* top: 236px; */
+    bottom:-24px;
+    left: 194px;
+    border:12px transparent solid; 
+    border-top-color:#ccc;
+}
+
+
+
+/* landing page stores */
+.textbook-stores {
+    background-color: #f5f2ed; 
+    padding: 30px 0 23px;
+    margin-bottom: 40px;
+} 
+.textbook-stores a {
+    color:#000;
+    display:block;
+    width:25%;  
+    padding: 0 10px; 
+    text-align: center; 
+    float: left; 
+    border-left: 1px #ccc solid;  
+}
+.textbook-stores a:first-child {border-left: none;  }
+.textbook-stores a:hover {text-decoration: none;} 
+.textbook-stores a:hover .textbook-store-cta,
+.textbook-stores a:focus .textbook-store-cta{text-decoration: underline;}
+.textbook-store-cta {display:block; font-size:18px; margin-top: 3px;color:#346250; }
+
+ .textbook-store-hdr, .textbook-announcement-hdr {
+    font-family: "Poynter",Georgia,serif;
+    font-size: 24px; 
+    line-height: 1.2;
+    font-weight: 600;
+}
+.textbook-store-hdr:before {
+    content: "";
+    height: 61px;
+    width: 63px;
+    display: block;
+    margin:0 auto 15px; 
+}
+.textbook-store-hdr.rent:before { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -5px -10px no-repeat;
+}
+.textbook-store-hdr.used:before { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -74px -10px no-repeat;
+}
+.textbook-store-hdr.new:before { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -144px -10px no-repeat;
+}
+.textbook-store-hdr.buy:before { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -215px -10px no-repeat;
+} 
+
+
+
+
+/* Message box */
+.textbook-announcement {
+    background-color: #E4E8E3; 
+    text-align: center;
+    padding: 25px 10% 23px;
+    margin-bottom: 35px;
+}
+.textbook-announcement-hdr { margin-bottom: 15px;}
+.textbook-announcement-msg {margin-bottom: 20px;}
+
+
+
+.links-container.textbooks > ul > li {
+    min-width: 125px;
+    padding-left: 20px;
+    width: 19%;
+}
+
+
+
+/* Textbooks Store Pages */
+
+.textbook-store-search {margin:40px 0 60px; }    
+.textbook-store-search .cqTextBookSearch {   
+    top: 0;
+    width: auto;
+    margin-right: 30px; 
+}
+.textbook-store-search .cqTextBookSearch input[type="text"] {
+    width: 100%;
+    border-color:#b4b2ac;
+}
+.textbook-store-search .cqTextBookSearch-isbn-link {  top: 6px; }
+
+.textbook-topic { margin-bottom: 60px; }
+.textbook-topic p{ line-height: 30px;}
+
+.textbook-topic h2 {
+    color:#000;
+    background-color: #F5F2ED;
+    padding:6px 30px 5px 24px; 
+    margin:0 0 20px -24px;
+}
+.textbook-topic h2:after {
+    content: "";
+    height: 40px;
+    width: 52px;
+    display:block;
+    margin:0 auto 15px;
+    float:right;
+}
+.textbook-topic h2.bookstack:after { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') 7px -77px no-repeat;
+}
+.textbook-topic h2.truck:after { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -204px -77px no-repeat;
+}
+
+
+.textbook-topic h2.tag:after { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -48px -77px no-repeat;
+}
+.textbook-topic h2.fourteenday:after { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -256px -77px no-repeat;
+}
+.textbook-topic h2.piggybank:after { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -148px -77px no-repeat;
+}
+  
+.textbook-topic h2.new:after { 
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -101px -77px no-repeat;
+}
+  
+  
+  
+
+.textbook-topic-item {
+    margin:20px 0 5px;
+    font-size: 18px; 
+    font-weight: 500;
+}
+
+
+
