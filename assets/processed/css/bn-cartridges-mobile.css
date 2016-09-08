@@ -568,6 +568,7 @@ section h2.event-hdr.dOnly {
   display: inline-block;
   font-family: GillSans,Arial,sans-serif;
   font-size: 18px;
+  line-height: 1.6;
   font-weight: 300;
   margin: 0;
   padding: 15px 20px;

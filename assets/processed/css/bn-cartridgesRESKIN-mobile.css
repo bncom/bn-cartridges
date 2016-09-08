@@ -401,31 +401,6 @@ section h2.event-hdr.dOnly {
   /* Textbooks Store Pages */
   /*  ISBN LINK */
   /*  browse*/
-  /*
-  
-  
-  	.textbook-store-hdr:before {
-  	    content: "";
-  	    height: 40px;
-  	    width: 50px;
-  	    display: block;
-  	    margin:0 auto 15px; 
-  	}
-  	.textbook-store-hdr.rent:before { 
-  	    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -5px -77px no-repeat;
-  	}
-  	.textbook-store-hdr.used:before { 
-  	    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -53px -77px no-repeat;
-  	}
-  	.textbook-store-hdr.new:before { 
-  	    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -103px -77px no-repeat;
-  	}
-  	.textbook-store-hdr.buy:before { 
-  	    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -150px -77px no-repeat;
-  	} 
-  
-  
-  */
 }
 .html * {
   -moz-box-sizing: border-box;
@@ -602,6 +577,7 @@ section h2.event-hdr.dOnly {
   display: inline-block;
   font-family: GillSans,Arial,sans-serif;
   font-size: 18px;
+  line-height: 1.6;
   font-weight: 300;
   margin: 0;
   padding: 15px 20px;
@@ -3590,6 +3566,7 @@ section h2.event-hdr.dOnly {
   top: -115px;
   margin: 0 auto;
   width: 160px;
+  color: #000;
 }
 .html .cqTextBookSearch-isbn-link:hover,
 .html .cqTextBookSearch-isbn-link:focus,
@@ -3673,6 +3650,9 @@ section h2.event-hdr.dOnly {
   margin-bottom: 40px;
 }
 .html .textbook-stores a {
+  font-family: GillSans;
+  font-size: 16px;
+  line-height: 1.5;
   color: #000;
   display: block;
   width: 25%;
@@ -3684,7 +3664,7 @@ section h2.event-hdr.dOnly {
 .html .textbook-stores a:first-child {
   border-left: none;
 }
-.html .textbook-stores a:hover {
+.html .textbook-stores a:hover, .html .textbook-stores a:focus {
   text-decoration: none;
 }
 .html .textbook-stores a:hover .textbook-store-cta,
@@ -3702,6 +3682,7 @@ section h2.event-hdr.dOnly {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 .html .textbook-store-hdr:before {
   content: "";
@@ -3734,6 +3715,9 @@ section h2.event-hdr.dOnly {
 .html .textbook-announcement-msg {
   margin-bottom: 20px;
 }
+.html .textbook-announcement-msg p {
+  font: 300 16px/1.618 GillSans,Arial,sans-serif;
+}
 .html .links-container.textbooks > ul > li {
   min-width: 125px;
   padding-left: 20px;
@@ -3754,6 +3738,12 @@ section h2.event-hdr.dOnly {
 .html .textbook-store-search .cqTextBookSearch-isbn-link {
   top: 6px;
 }
+.html .textbook-store-search .cqTextBookSearch-isbn-sample:after {
+  left: 190px;
+}
+.html .textbook-store-search .cqTextBookSearch-isbn-sample:before {
+  left: 188px;
+}
 .html .textbook-topic {
   margin-bottom: 60px;
 }
@@ -3761,9 +3751,13 @@ section h2.event-hdr.dOnly {
   line-height: 30px;
 }
 .html .textbook-topic h2 {
+  font-family: "Poynter",Georgia,serif;
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 600;
   color: #000;
   background-color: #F5F2ED;
-  padding: 6px 30px 5px 24px;
+  padding: 6px 30px 6px 24px;
   margin: 0 0 20px -24px;
 }
 .html .textbook-topic h2:after {
@@ -3771,7 +3765,7 @@ section h2.event-hdr.dOnly {
   height: 40px;
   width: 52px;
   display: block;
-  margin: 0 auto 15px;
+  margin: 3px auto;
   float: right;
 }
 .html .textbook-topic h2.bookstack:after {
@@ -3793,18 +3787,31 @@ section h2.event-hdr.dOnly {
   background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -101px -77px no-repeat;
 }
 .html .textbook-topic-item {
-  margin: 20px 0 5px;
+  margin: 14px 0 1px;
   font-size: 18px;
   font-weight: 500;
+}
+.html .textbook-topic-item:first-of-type {
+  line-height: 1;
+  margin-bottom: 7px;
 }
 .html .textbook-hero-image img {
   left: 100%;
   margin-left: -200%;
   position: relative;
 }
-.html .cqTextBookSearch-isbn-link {
-  top: -105px;
-  width: 190px;
+.html .textbook-topic h2 {
+  line-height: 1.65;
+  margin: 0 0 20px 0;
+}
+.html .textbook-topic {
+  font: 300 16px/1.618 GillSans,Arial,sans-serif;
+}
+.html .textbook-topic p {
+  padding: 0 25px;
+}
+.html .textbook-store-search .cqTextBookSearch-isbn-link {
+  width: 170px;
 }
 .html .textbooks .module-hdr {
   margin: 20px;
@@ -3849,6 +3856,16 @@ section h2.event-hdr.dOnly {
   .html {
     /*  ISBN LINK */
   }
+  .html .textbook-topic h2:after {
+    display: none;
+    float: none;
+  }
+  .html .textbook-store-search {
+    margin: 40px 0 90px;
+  }
+  .html .textbook-store-search .cqTextBookSearch {
+    margin: 0 20px;
+  }
   .html .cqTextBookSearch {
     height: 18px;
     left: auto;
@@ -3871,7 +3888,13 @@ section h2.event-hdr.dOnly {
   .html #txtBookSearchSubmit {
     right: 5px;
   }
-  .html .cqTextBookSearch-isbn-link {
-    top: -65px;
+  .html .textbook-store-search .cqTextBookSearch-isbn-link {
+    top: 65px;
+  }
+  .html .cqTextBookSearch-isbn-sample:after {
+    left: 152px;
+  }
+  .html .cqTextBookSearch-isbn-sample:before {
+    left: 150px;
   }
 }

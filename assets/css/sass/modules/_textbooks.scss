@@ -68,6 +68,7 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
     top: -115px;
     margin: 0 auto;
     width: 160px;
+    color: #000;
 }
 .cqTextBookSearch-isbn-link:hover,
 .cqTextBookSearch-isbn-link:focus,
@@ -140,7 +141,10 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
     padding: 30px 0 23px;
     margin-bottom: 40px;
 } 
-.textbook-stores a {
+.textbook-stores a { 
+    font-family: GillSans;
+    font-size: 16px;
+    line-height: 1.5;
     color:#000;
     display:block;
     width:25%;  
@@ -150,7 +154,7 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
     border-left: 1px #ccc solid;  
 }
 .textbook-stores a:first-child {border-left: none;  }
-.textbook-stores a:hover {text-decoration: none;} 
+.textbook-stores a:hover,.textbook-stores a:focus {text-decoration: none;} 
 .textbook-stores a:hover .textbook-store-cta,
 .textbook-stores a:focus .textbook-store-cta{text-decoration: underline;}
 .textbook-store-cta {display:block; font-size:18px; margin-top: 3px;color:#346250; }
@@ -160,6 +164,7 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
     font-size: 24px; 
     line-height: 1.2;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 .textbook-store-hdr:before {
     content: "";
@@ -193,7 +198,7 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
 }
 .textbook-announcement-hdr { margin-bottom: 15px;}
 .textbook-announcement-msg {margin-bottom: 20px;}
-
+.textbook-announcement-msg p{font:300 16px/1.618 GillSans,Arial,sans-serif;}
 
 
 .links-container.textbooks > ul > li {
@@ -218,21 +223,35 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
 }
 .textbook-store-search .cqTextBookSearch-isbn-link {  top: 6px; }
 
-.textbook-topic { margin-bottom: 60px; }
+.textbook-store-search .cqTextBookSearch-isbn-sample:after {  
+    left: 190px; 
+}
+.textbook-store-search .cqTextBookSearch-isbn-sample:before {  
+    left: 188px; 
+}
+
+
+.textbook-topic { margin-bottom: 60px;  }
 .textbook-topic p{ line-height: 30px;}
 
 .textbook-topic h2 {
+    font-family: "Poynter",Georgia,serif; 
+    font-size: 30px;
+    line-height:1.6;
+    font-weight: 600; 
     color:#000;
     background-color: #F5F2ED;
-    padding:6px 30px 5px 24px; 
+    padding:6px 30px 6px 24px; 
     margin:0 0 20px -24px;
+
 }
+ 
 .textbook-topic h2:after {
     content: "";
     height: 40px;
     width: 52px;
     display:block;
-    margin:0 auto 15px;
+    margin:3px auto;
     float:right;
 }
 .textbook-topic h2.bookstack:after { 
@@ -261,10 +280,12 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
   
 
 .textbook-topic-item {
-    margin:20px 0 5px;
+    margin:14px 0 1px;
     font-size: 18px; 
     font-weight: 500;
 }
-
+.textbook-topic-item:first-of-type {
+    line-height:1; margin-bottom:7px;
+}
 
 
