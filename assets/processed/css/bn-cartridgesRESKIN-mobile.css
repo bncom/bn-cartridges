@@ -393,7 +393,6 @@ section h2.event-hdr.dOnly {
     padding: 9px 0 0;
   }*/
   /* Texbooks Landing Page */
-  /* Search Box */
   /*  ISBN LINK */
   /* ISBN Sample */
   /* landing page stores */
@@ -3516,6 +3515,9 @@ section h2.event-hdr.dOnly {
   padding: 2px 50px 0 20px;
   position: relative;
   width: 440px;
+  box-shadow: none;
+  background-image: none;
+  background-color: #fff;
 }
 .html .cqTextBookSearch input[type="text"]:focus {
   border: 1px solid #346250;
@@ -3681,7 +3683,7 @@ section h2.event-hdr.dOnly {
   font-family: "Poynter",Georgia,serif;
   font-size: 24px;
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 5px;
 }
 .html .textbook-store-hdr:before {
@@ -3734,6 +3736,12 @@ section h2.event-hdr.dOnly {
 .html .textbook-store-search .cqTextBookSearch input[type="text"] {
   width: 100%;
   border-color: #b4b2ac;
+  background-image: none;
+  background-color: #fff;
+}
+.html .textbook-store-search .cqTextBookSearch input[type="text"]:focus {
+  border: 1px solid #346250;
+  box-shadow: none;
 }
 .html .textbook-store-search .cqTextBookSearch-isbn-link {
   top: 6px;

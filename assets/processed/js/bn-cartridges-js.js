@@ -250,9 +250,7 @@
 
 
 
-
-
-
+ 
 
 
 		// Textbooks Search funtionality  
@@ -261,7 +259,7 @@
 				txtSearch.submit(function(){txtBookQuickSearch();});		
 				txtBookQuickSearch = function () {		 
 					var submitval = ($.trim($('#searchTextBookBar').val()).replace(/[\W]/g,"+"));	//encodeURIComponent	
-					var actionval = location.protocol + "//www.barnesandnoble.com/s/"+submitval+"/_/N-8q9";		 	
+					var actionval = location.protocol + "//"+location.hostname+"/s/"+submitval+"/_/N-8q9";		 	
 				 	txtSearch.attr('action', actionval);		
 				 	txtSearch.attr('method', 'get');				 
 		        };	 

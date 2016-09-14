@@ -7,18 +7,7 @@
     overflow: hidden;
     text-align:center;
 }
- 
-/* Search Box */
-// .cqTextBookSearch {
-//     height: 18px;
-//     position: absolute;
-//     top: 125px;
-//     left: 50%;
-//     margin-left:-220px;
-//     width: 50%;
-//     z-index: 2;
-// }
-
+  
 .cqTextBookSearch {
     height: 61px;
     position: relative;
@@ -38,6 +27,9 @@
     padding: 2px 50px 0 20px;
     position: relative;
     width: 440px;
+    box-shadow: none; 
+    background-image: none;
+    background-color: #fff;
 }
 .cqTextBookSearch input[type="text"]:focus {border: 1px solid #346250;}
 input#searchTextBookBar::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #000;opacity: .75;}
@@ -163,7 +155,7 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
     font-family: "Poynter",Georgia,serif;
     font-size: 24px; 
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 5px;
 }
 .textbook-store-hdr:before {
@@ -209,8 +201,7 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
 
 
 
-/* Textbooks Store Pages */
-
+/* Textbooks Store Pages */ 
 .textbook-store-search {margin:40px 0 60px; }    
 .textbook-store-search .cqTextBookSearch {   
     top: 0;
@@ -219,8 +210,14 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
 }
 .textbook-store-search .cqTextBookSearch input[type="text"] {
     width: 100%;
-    border-color:#b4b2ac;
+    border-color:#b4b2ac; 
+    background-image: none;
+    background-color: #fff;
+
 }
+
+.textbook-store-search .cqTextBookSearch input[type="text"]:focus {border: 1px solid #346250;box-shadow: none;}
+
 .textbook-store-search .cqTextBookSearch-isbn-link {  top: 6px; }
 
 .textbook-store-search .cqTextBookSearch-isbn-sample:after {  
