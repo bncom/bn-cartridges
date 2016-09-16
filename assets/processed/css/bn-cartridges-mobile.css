@@ -1670,22 +1670,18 @@ section h2.event-hdr.dOnly {
 .html .persona-gcbanner.mom {
   background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
 }
+.html .gift-card-list {
+  padding: 0 20px;
+}
+.html .gc-item figcaption {
+  text-align: center;
+}
 @media only screen and (max-width: 599px) {
   .html .gc-item {
-    max-width: 33%;
-  }
-}
-@media only screen and (max-width: 399px) {
-  .html .gc-item {
-    max-width: 50%;
-  }
-}
-@media only screen and (max-width: 330px) {
-  .html .gc-item {
     max-width: 100%;
-    width: 100%;
+    width: 43%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 20px 0 0;
   }
 }
 @media only screen and (max-width: 749px) {

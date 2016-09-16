@@ -215,7 +215,48 @@ body {
   /*Font sizes initiated on coupon page*/
   /* My Favorite Teacher */
   /* end My Favorite Teacher  */
-  /*Gift Cards*/
+  /* OLD Gift Cards
+  .gc-section {margin: 0 0 10px 0;  padding: 0; font-size: 20px;line-height: 1.3; font-family: milo; font-weight: normal; }
+  .gc-item {
+    display:inline-block; 
+    vertical-align:top; 
+    max-width: 183px; 
+    padding: 8px 8px 20px 8px; 
+    img {  max-width:100%; max-height:105px; }
+    figcaption {  
+      line-height:1; 
+      padding:5px; 
+      font-family: milo; 
+      font-weight: 400;
+    }
+    a {    
+      color: #000;
+      font-family: Milo; 
+      font-size: 15px;
+      display:block;
+      padding:3px;
+      &:hover{ color: #3169a8; text-decoration:none;}
+      &:focus { outline:0 none; border:1px #aaa dotted;padding:2px; 
+        .element-shadow {
+          -webkit-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+          -moz-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+          box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+        } 
+      } 
+    } 
+  } 
+  .gift-card-list h3 {    
+    margin: 20px 0 20px 0; 
+    padding: 20px 0 0 0;     
+    font-family: Milo;
+    font-size: 24px;
+    font-weight: 400;    
+    line-height: 1.5;
+  
+    &:first-of-type{margin-top:0;} 
+  } 
+  */
+  /* 2016 Reskin */
   /*Browse page links*/
   /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
   /*sub-textbooks mobile*/
@@ -746,7 +787,7 @@ body {
   box-sizing: border-box;
 }
 .html .cq-module-shadow-top {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #959595;
   /* 
   -webkit-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
     -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
@@ -762,7 +803,7 @@ body {
 }
 .html .module-shadow, .html .element-shadow {
   border-width: 0;
-  border-radius: 5;
+  border-radius: 0;
   box-shadow: none;
 }
 .html .element-shadow {
@@ -891,19 +932,33 @@ body {
 .html .myFavTeacherAwards img {
   max-width: 100%;
 }
-.html .gc-section {
-  margin: 0 0 10px 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 1.3;
-  font-family: milo;
-  font-weight: normal;
+.html .gift-card-list h2,
+.html .gift-card-list h3 {
+  margin: 0px 0 25px 0;
+  padding: 20px 0 0 0;
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.html .gift-card-list h2:first-of-type,
+.html .gift-card-list h3:first-of-type {
+  margin-top: -10px;
+  padding-top: 0;
+}
+.html .gift-card-list h3.cq-module-shadow-top:first-of-type {
+  border: none;
 }
 .html .gc-item {
   display: inline-block;
   vertical-align: top;
+  width: 33%;
   max-width: 225px;
-  padding: 8px 8px 20px 8px;
+  padding: 0;
+  margin-right: 30px;
+}
+.html .gc-item:nth-child(3n) {
+  margin-right: 0;
 }
 .html .gc-item img {
   max-width: 100%;
@@ -911,36 +966,32 @@ body {
 }
 .html .gc-item figcaption {
   line-height: 1;
-  padding: 5px;
-  font-family: milo;
-  font-weight: 400;
+  padding: 6px 5px 50px;
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
 .html .gc-item a {
   color: #000;
-  font-family: Milo;
-  font-size: 15px;
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   display: block;
-  padding: 3px;
+  padding: 0;
 }
 .html .gc-item a:hover {
   color: #3169a8;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .html .gc-item a:focus {
+  color: #3169a8;
+  text-decoration: underline;
   outline: 0 none;
-  border: 1px #aaa dotted;
-  padding: 2px;
+  border-width: 0;
+  padding: 0;
 }
-.html .gift-card-list h3, .html .gift-card-list h2 {
-  margin: 20px 0 13px 0;
-  padding: 20px 0 0 0;
-  font-family: "Poynter",Georgia,serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.5;
-}
-.html .gift-card-list h3:first-of-type, .html .gift-card-list h2:first-of-type {
-  margin-top: 0;
+.html .gc-item a:focus .element-shadow {
+  box-shadow: none;
 }
 .html .links-container.browse {
   padding-top: 36px;

@@ -242,7 +242,48 @@ section h2.event-hdr.dOnly {
   /*Font sizes initiated on coupon page*/
   /* My Favorite Teacher */
   /* end My Favorite Teacher  */
-  /*Gift Cards*/
+  /* OLD Gift Cards
+  .gc-section {margin: 0 0 10px 0;  padding: 0; font-size: 20px;line-height: 1.3; font-family: milo; font-weight: normal; }
+  .gc-item {
+    display:inline-block; 
+    vertical-align:top; 
+    max-width: 183px; 
+    padding: 8px 8px 20px 8px; 
+    img {  max-width:100%; max-height:105px; }
+    figcaption {  
+      line-height:1; 
+      padding:5px; 
+      font-family: milo; 
+      font-weight: 400;
+    }
+    a {    
+      color: #000;
+      font-family: Milo; 
+      font-size: 15px;
+      display:block;
+      padding:3px;
+      &:hover{ color: #3169a8; text-decoration:none;}
+      &:focus { outline:0 none; border:1px #aaa dotted;padding:2px; 
+        .element-shadow {
+          -webkit-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+          -moz-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+          box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+        } 
+      } 
+    } 
+  } 
+  .gift-card-list h3 {    
+    margin: 20px 0 20px 0; 
+    padding: 20px 0 0 0;     
+    font-family: Milo;
+    font-size: 24px;
+    font-weight: 400;    
+    line-height: 1.5;
+  
+    &:first-of-type{margin-top:0;} 
+  } 
+  */
+  /* 2016 Reskin */
   /*Browse page links*/
   /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
   /*sub-textbooks mobile*/
@@ -851,10 +892,13 @@ section h2.event-hdr.dOnly {
   box-sizing: border-box;
 }
 .html .cq-module-shadow-top {
-  border-top: 1px solid #d1c2a8;
+  border-top: 1px solid #959595;
+  /* 
   -webkit-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-  -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-  box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+    -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+      box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+      */
+  box-shadow: none;
   height: auto;
   padding: 20px 0;
   position: relative;
@@ -863,19 +907,15 @@ section h2.event-hdr.dOnly {
   clear: both;
 }
 .html .module-shadow, .html .element-shadow {
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;
-  -moz-box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;
-  box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;
+  border-width: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 .html .element-shadow {
   cursor: pointer;
 }
 .html .element-shadow:hover {
-  -webkit-box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-  -moz-box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-  box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
+  box-shadow: none;
 }
 .html .hideIt {
   display: none;
@@ -997,64 +1037,72 @@ section h2.event-hdr.dOnly {
 .html .myFavTeacherAwards img {
   max-width: 100%;
 }
-.html .gc-section {
-  margin: 0 0 10px 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 1.3;
-  font-family: milo;
-  font-weight: normal;
+.html .gift-card-list h2,
+.html .gift-card-list h3 {
+  margin: 0px 0 25px 0;
+  padding: 20px 0 0 0;
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.html .gift-card-list h2:first-of-type,
+.html .gift-card-list h3:first-of-type {
+  margin-top: -10px;
+  padding-top: 0;
+}
+.html .gift-card-list h3.cq-module-shadow-top:first-of-type {
+  border: none;
 }
 .html .gc-item {
   display: inline-block;
   vertical-align: top;
-  max-width: 183px;
-  padding: 8px 8px 20px 8px;
+  width: 33%;
+  max-width: 225px;
+  padding: 0;
+  margin-right: 30px;
+}
+.html .gc-item:nth-child(3n) {
+  margin-right: 0;
 }
 .html .gc-item img {
   max-width: 100%;
-  max-height: 105px;
+  max-height: 143px;
 }
 .html .gc-item figcaption {
   line-height: 1;
-  padding: 5px;
-  font-family: milo;
-  font-weight: 400;
+  padding: 6px 5px 50px;
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
 .html .gc-item a {
   color: #000;
-  font-family: Milo;
-  font-size: 15px;
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   display: block;
-  padding: 3px;
+  padding: 0;
 }
 .html .gc-item a:hover {
   color: #3169a8;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .html .gc-item a:focus {
+  color: #3169a8;
+  text-decoration: underline;
   outline: 0 none;
-  border: 1px #aaa dotted;
-  padding: 2px;
+  border-width: 0;
+  padding: 0;
 }
 .html .gc-item a:focus .element-shadow {
-  -webkit-box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-  -moz-box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-  box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-}
-.html .gift-card-list h3 {
-  margin: 20px 0 20px 0;
-  padding: 20px 0 0 0;
-  font-family: Milo;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-.html .gift-card-list h3:first-of-type {
-  margin-top: 0;
+  box-shadow: none;
 }
 .html .links-container.browse {
   padding-top: 36px;
+}
+.html .links-container.textbooks.browse:first-of-type {
+  padding-top: 0;
 }
 .html .links-container.browse:first-of-type {
   padding-top: 16px;
@@ -1062,14 +1110,17 @@ section h2.event-hdr.dOnly {
 .html .links-container.browse ul {
   margin-bottom: 15px;
 }
+.html .links-container.browse a:hover, .html .links-container.browse a:focus {
+  text-decoration: underline;
+}
 .html .links-container.textbooks > ul > li {
   min-width: 125px;
   padding-left: 20px;
-  width: 20%;
+  width: 19%;
 }
 .html .links-container ul li {
   display: inline-block;
-  line-height: 2;
+  line-height: 1.75;
   vertical-align: top;
   width: 238px;
 }
@@ -1089,7 +1140,6 @@ section h2.event-hdr.dOnly {
   border-radius: 5px;
 }
 .html .cms section.module {
-  background-image: -moz-linear-gradient(center bottom, #fff 25%, #fbfbf9 100%);
   border-radius: 4px;
   border-top: 2px solid #fff;
   box-shadow: 0 0 0 1px #d5d2d2;
@@ -1152,11 +1202,6 @@ section h2.event-hdr.dOnly {
 }
 .html section.textbooks {
   border-bottom: none;
-}
-.html .links-container.textbooks > ul > li {
-  padding-left: 20px;
-  width: 20%;
-  min-width: 125px;
 }
 .html .isbn-link-modal {
   margin-top: 12px;
@@ -1678,22 +1723,18 @@ section h2.event-hdr.dOnly {
 .html .persona-gcbanner.mom {
   background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
 }
+.html .gift-card-list {
+  padding: 0 20px;
+}
+.html .gc-item figcaption {
+  text-align: center;
+}
 @media only screen and (max-width: 599px) {
   .html .gc-item {
-    max-width: 33%;
-  }
-}
-@media only screen and (max-width: 399px) {
-  .html .gc-item {
-    max-width: 50%;
-  }
-}
-@media only screen and (max-width: 330px) {
-  .html .gc-item {
     max-width: 100%;
-    width: 100%;
+    width: 43%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 20px 0 0;
   }
 }
 @media only screen and (max-width: 749px) {
