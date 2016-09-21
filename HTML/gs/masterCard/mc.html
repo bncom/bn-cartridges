@@ -140,288 +140,19 @@ func();
 }
 </script>
 <script src="http://ra-js.bn-web.com/static/js/vendor/jquery-1.8.3.min.js?vra"></script>
-<script>
-function updateMiniCartCount(count) {
-if(typeof count != 'undefined' && count != $.trim($('#bagTotal').text())) {
-$('#bagTotal').text(count);
-}
-}
-function miniCartEvents($container) {
-var $spinner = $('<div/>').addClass('mini-cart-spinner'),
-$quantityUpdateForms = $('.mini-cart-quantity-update');
-BN.MiniCart = new MiniCart('#miniCart', '#shoppingBag');
-// shopping bag flyout only
-$('#bagContentsContainer').find('.mini-cart-quantity-update').each(function() {
-BN.uXHR.Form.apply(this);
-});
-$quantityUpdateForms.find('.product-quantity').each(function() {
-var $this = $(this);
-$this.data('initial-value', $this.val());
-});
-$quantityUpdateForms.find('input[type=submit]').on('click', function(e) {
-var $theForm = $(this).closest('form'),
-$eleProductQuantity = $theForm.find('.product-quantity').first(),
-productQuantity = $eleProductQuantity.length ? $eleProductQuantity.val().trim() : '';
-if (productQuantity.length == 0) {
-e.preventDefault();
-/* reset to the initial quantity if the user tried to submit an empty value */
-if ($eleProductQuantity.length && $eleProductQuantity.data('initial-value')) {
-$eleProductQuantity.val($eleProductQuantity.data('initial-value'));
-}
-}
-});
-$quantityUpdateForms.on('submit', function() {
-var $this = $(this),
-$miniCartItem = $this.parents('#miniCart');
-$spinner.appendTo($miniCartItem);
-}).on('amplifiFormSuccess', function(e, response) {
-//Adobe Analytics: updates cart object
-if(typeof s_setP !== 'undefined') updateAnalyticsCart();
-// check to shopping bag reload flag is on page
-// if shopping bag is updated in dropdown and page
-// contains the items, it must be refreshed
-if ($("#shoppingBagReloadFlag").length){
-consoleLog("Reload Page to update shopping bag.");
-location.reload(true);
-} else {
-$('#miniCartItems .miniCartItems-list').load(webContextRoot+"/checkout/includes/get-mini-cart-commerce-items.jsp", miniCartEvents);
-$('#subtotalLine .subtotal-amount').html('$'+response.data.subtotal);
-$('#subtotalLine .item-count').html('('+response.data.totalQuantity+' items)');
-$('#bagTotal').html(response.data.totalQuantity);
-if(response.data.totalQuantity < 1) {
-//DONT SHOW CART IF TYPE AHEAD IS OPEN
-if($('#headSearchTypeAheadHolder').is(':visible')) {
-loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, true);
-} else {
-loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, false);
-}
-}
-}
-$spinner.remove();
-if(e.target.id && /remove/i.test(e.target.id) || $(this).data('form-type') === 'remove') {
-$(this).trigger('analytics-mini-cart-remove');
-} else {
-$(this).trigger('analytics-mini-cart-add');
-}
-}).on('amplifiFormError', function(e, response) {
-$spinner.remove();
-});
-}
-function loadHeaderElement($container, frag, miniCartLoaded, hideCart) {
-$.ajax({
-url: frag,
-cache: false,
-type: "get",
-beforeSend: function() {
-if(!$('#miniCart').length) {
-if (hideCart) {
-$container.html('<div id="miniCart" style="height: 150px; display:none;"><div class="triangle-up"></div><div class="mini-cart-spinner"></div>');
-$container.attr("aria-hidden", "true");
-} else {
-$container.html('<div id="miniCart" style="height: 150px"><div class="triangle-up"></div><div class="mini-cart-spinner"></div>');
-$container.attr("aria-hidden", "false");
-}
-}
-}
-}).done(function(data) {
-$container.html(data);
-if (hideCart) {
-$("#miniCart").css("display", "none");
-}
-if (miniCartLoaded) {
-updateMiniCartCount($('#miniCartQuantityVal').val());
-miniCartEvents();
-}
-});
-}
-function displayHeaderFooterData(dataObj) {
-try {
-if(typeof dataObj != 'undefined' && dataObj != '') {
-//set login status variables
-if(typeof BN != 'undefined') {
-BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
-BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
-} else {
-$(document).ready(function() {
-BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
-BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
-});
-}
-//populate sign in/account links data
-$('#authBar').html(dataObj.signInHtml);
-$('#myAccountMenu').html(dataObj.accountLinksHtml);
-updateMiniCartCount(dataObj.cartQuantity);
-HEADERLOADED = true;
-HEADERDATA = '';
-bnLoggingEnabled = dataObj.bnLoggingEnabled;
-$("#myAccountMenu").click(function(e) {
-if($(e.target).attr('id') == 'myAccountLink')
-e.preventDefault();
-$("#myAccountLinks").toggleClass("showMyAccountLinks");
-});
-}
-} catch(err) {
-console.log(err);
-}
-}
-function loadEmailSignUp() {
-// check for email signup class in CQ template
-if ($(".global-footer-email-signup").length){
-// bind form to framework
-var $form = $('#emailSignupForm');
-BN.Validate.Listen($form);
-BN.uXHR.Form.apply($form);
-// success action
-$('#emailSignupForm').on('amplifiFormSuccess', function() {
-$('#emailSignupDiv').html("<span>Thank you for submitting your email address.</span>");
-$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
-}).on("amplifiFormBeforeSerialize", function(){
-$('#emailSignupForm').find('.handler-email-signup').remove();
-$('#emailSignupForm').append('<input class="handler-email-signup" type="hidden" name="amplifiHandler" value="/atg/userprofiling/ProfileFormHandler.emailSignup">');
-}).on("amplifiFormError",function(event,err,xhr,status,msgs){
-var errors = msgs.items;
-BN.Validate.DisplayErrors(this, errors);
-$form.find('input[type=text]').addClass('user-error');
-$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
-}).on("amplifiFormBeforeSubmit",function(){
-consoleLog("Calling displaySpinner");
-$form.find('input[type=text]').removeClass('user-error');
-$('.global-footer-email-signup').append($('<div/>').addClass('mini-cart-spinner'));
-});
-}
-}
-function populateEmailSignUp(data) {
-$(document).ready(function() {
-$('#emailAddr').val(data.email);
-});
-}
-//load header elements for akamai caching
-//SIGN IN Links, PTA Link, EMAIL SIGN UP, CART DETAILS
-function loadDynamicHeaderElements(callback) {
-$.ajax({
-url: '/xhr/header-footer-data.jsp',
-cache: false,
-type: "get",
-dataType: 'json'
-}).done(function(data) {
-HEADERDATA = data;
-HEADERLOADED = false;
-if($('#userLinks').length) {
-displayHeaderFooterData(HEADERDATA);
-} else {
-$(document).ready(function() {
-displayHeaderFooterData(HEADERDATA);
-});
-}
-populateEmailSignUp(data);
-});
-$(document).ready(function() {
-loadEmailSignUp();
-miniCartEvents();
-});
-}
-</script>
-<script>
 
-loadDynamicHeaderElements();
-</script>
-<script src="http://ra-js.bn-web.com/static/./js/vendor/es5.js?vra"></script><script src="http://ra-js.bn-web.com/static/./js/vendor/html5shiv.js?vra"></script><script src="http://ra-js.bn-web.com/static/./js/vendor/selectivizr-min.js?vra"></script><script src="http://ra-js.bn-web.com/static/./js/vendor/jquery.ba-postmessage.min.js?vra"></script><script src="http://ra-js.bn-web.com/static/js/vendor/js-webshim-1.15/dev/extras/modernizr-custom.js?vra"></script>
-<script src="http://ra-js.bn-web.com/static/js/vendor/js-webshim-1.15/dev/polyfiller.js?vra"></script>
-<script src="http://assets.adobedtm.com/a6ce917b5fc2d1d613b7b801115955bcaacab070/satelliteLib-c247216a2145ee58039f29269709adbc59bd1aa8.js"></script>
-<script src="https://cdns.gigya.com/JS/socialize.js?apiKey=3_rfp_k4uS74K_xQGe5pwC5OgzdifPXM1eKvVMohNHCsJiVLfpa7LO-NLX0Y9zXC-S" type="text/javascript">
-{
-siteName: 'pdsrev-qa.barnesandnoble.com',
-enabledProviders: 'facebook,twitter,googleplus'
-}
-</script>
-<script>
-var enableGoogleAdsAfterPageLoad = true;
-var bodyClass = "searchResultsPage";
 
-var asyncRelatedAdsEnabled = true;
-$(document).on('googleRelatedAdsLoaded', function() {
 
-googletag.cmd.push(function() {
-// Double check the bodyClass from header-javascript variable
-if(bodyClass.indexOf('searchResultsPage') >= 0 || bodyClass == 'landingPage searchResultsPage') {
-bodyClass = 'searchResultsPage';
-}
-switch (bodyClass) {
-case 'pdpPage':
-var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/prod/', [300, 250], 'relatedAd')
-.setTargeting('member','F')
-.setTargeting('lo','mid')
-.setTargeting('s','bn')
-.setTargeting('EAN','')
-.setTargeting('redflag','0')
-.setTargeting('prod','');
-var adSlot2 = googletag.defineSlot('/9885823/lia.barnesandnoble/prod/', [728, 90], 'relatedAd2')
-.setTargeting('member','F')
-.setTargeting('lo','mid')
-.setTargeting('s','bn')
-.setTargeting('EAN','')
-.setTargeting('redflag','0')
-.setTargeting('prod','');
-break;
-case 'landingPage':
-var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/home/', [160, 600], 'relatedAd');
-var adSlot2 = googletag.defineSlot('/9885823/lia.barnesandnoble/home/', [728, 90], 'relatedAd2');
-break;
-case 'searchResultsPage':
-var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/search/', [160, 600], 'relatedAd');
-var adSlot2 = googletag.defineSlot('/9885823/lia.barnesandnoble/search/', [728, 90], 'relatedAd2');
-break;
-case 'thank-you':
-var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/thank_you_page', [970, 250], 'relatedAd');
-break;
-default :
-break;
-}
-if(adSlot1) {
-adSlot1.addService(googletag.pubads());
-}
-if(adSlot2) {
-adSlot2.addService(googletag.pubads());
-}
-googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-if(event.size[0] !== 728) {
-$(document).trigger('rendered-slot1');
-} else {
-$(document).trigger('rendered-slot2');
-}
-});
-googletag.enableServices();
-$(document).trigger('googleRelatedAdsEnabled');
-});
 
-})
-</script>
-<script type="text/javascript">
-var asyncTextAdsEnabled = true;
-</script>
-<script type="text/javascript">
-$(document).ready(function() {
-$('#primaryNav').on('hover touchstart', function() {
-$('.nav-menu').css('display', 'block');
-});
-});
-function set_cookie (cvalue) {
 
-var cname = "internalCampaign";
-cvalue = cvalue.replace(/ /gi,'-').replace(/[`~!@#^&*()|+\=÷¿?;:'",<>\{\}\[\]\\\/]/gi, '').toLowerCase()
-cvalue = 'ocmp_' +  cvalue;
-//cvalue = encodeURI(cvalue);
-var d = new Date();
-d.setTime(d.getTime() + (1*24*60*60*1000));
-var curCookie = cname + "=" + cvalue +
-"; expires=" + d.toGMTString() +
-"; path=" + "/"  +
-"; domain=" + SITE_DOMAIN;
-document.cookie = curCookie;
 
-}
-</script>
-<script src="http://ra-js.bn-web.com" type="text/javascript"></script>
+
+
+
+
+
+
+
 <script>window['adrum-start-time'] = new Date().getTime();</script>
 <link rel="canonical" href="http://www-ra-test.barnesandnoble.com/h/bn-mastercard/">
 <link rel="alternate" media="only screen and (max-width: 640px)" href="http://www-ra-test.barnesandnoble.com/mobile/h/bn-mastercard">
@@ -1526,31 +1257,7 @@ The Barnes &amp; Noble MasterCard<sup>&reg;</sup>
 
 
 <style type="text/css">
-	.mc-hdr{
-	  border: 1px dotted red;
-	    float: right;
-	    text-align: left;
-	    width: 45%;
-	}
-	.mc-hdr .bttn{
-	  margin-top: 15px;
-	}
- 	.mc-hdr-main{
- 		font-family: Poynter;
-    	font-weight: 600;
- 		font-size: 30px;
- 		line-height: 1.2;
- 		color:#000;
- 		margin:0 0 10px 0;
- 	}
-	.mc-hdr-sub{
-    	font-family: GillSans,Arial,sans-serif;
-    	font-weight: 300;
- 		font-size: 18px;
- 		line-height: 1.7;
- 		color:#000;
-	}
-	.mc-hdr sup, .mc-features sup {font-family:sans-serif;font-size: 50%; top:-0.75em;}
+
 </style>
 <!-- 
 http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/2016/bnreadouts-mobile.min.css?v0529
@@ -1566,27 +1273,29 @@ http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/2016/bnreadou
 		    <h2></h2>
 		  </div>
 		 -->  
-		    <div class="hero1600-header">
-		    	<div class="mc-hdr">
-			    	<div class="mc-hdr-main">Earn 5% Back<sup>2</sup> on All<br> Barnes&amp;Noble Purchases</div>
-			    	
-			    	<div class="mc-hdr-sub">Earn 2X at Restaurants<sup>3</sup></div>
-			    	<div class="mc-hdr-sub">Earn 1X on All Other Purchases<sup>3</sup></div>
-			    	<div class="mc-hdr-sub">Automatically Receive a $25 B&amp;N Gift Every 2500 Pts<sup>3</sup></div>
-			    	<div class="mc-hdr-sub">12 Months of FREE B&amp;N Membership<sup>4</sup></div>
-			    	<a class="bttn" href="http://www.barclaycardus.com/apply/Landing.action?campaignId=1845&amp;cellNumber=19&amp;prodidreq=CCMPS56272&amp;referrerid=" target="_blank">APPLY&nbsp;NOW</a>
-		    	</div>    	
+		    <div class="hero1600-header">  
+		    	<div class="mc-hdr-main">Earn 5% Back<sup>2</sup> on All<br> Barnes&nbsp;&amp;&nbsp;Noble Purchases</div>  	
 		    </div>
 		    <!-- If using true H1 wrap image in figure tag -->
 		  <figure>
 		      <img id="eventHero" alt=""  />
 		        <noscript><img src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/mastercard/MasterCard_Reskin_Hero.jpg" alt="" /></noscript>
 		    </figure>
+		    	<div class="mc-hdr">
+			    	<div class="mc-hdr-main">Earn 5% Back<sup>2</sup> on All<br> Barnes&nbsp;&amp;&nbsp;Noble Purchases</div>
+			    	
+			    	<div class="mc-hdr-sub">Earn 2X at Restaurants<sup>3</sup></div>
+			    	<div class="mc-hdr-sub">Earn 1X on All Other Purchases<sup>3</sup></div>
+			    	<div class="mc-hdr-sub">Automatically Receive a $25 B&amp;N Gift Every 2500 Pts<sup>3</sup></div>
+			    	<div class="mc-hdr-sub">12 Months of FREE B&amp;N Membership<sup>4</sup></div>
+			    	<a class="bttn" href="http://www.barclaycardus.com/apply/Landing.action?campaignId=1845&amp;cellNumber=19&amp;prodidreq=CCMPS56272&amp;referrerid=" target="_blank">APPLY&nbsp;NOW</a> 
+ 
+		    	</div>
 		    <script type="text/javascript">
 		    var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
 		    if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com") {isMobile = true;}
 		    if ( isMobile ){
-		      document.getElementById("eventHero").src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/mastercard/MasterCard_Reskin_Hero.jpg";
+		      document.getElementById("eventHero").src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/mastercard/MasterCard_Reskin_Hero-mobile.jpg";
 		    }else{
 		      document.getElementById("eventHero").src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/mastercard/MasterCard_Reskin_Hero.jpg";
 		    }
@@ -1594,76 +1303,10 @@ http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/2016/bnreadou
 		</div>
 
 
-
-<!-- 
-	<figure class="heroImage">
-		<img src="http://dispatch.barnesandnoble.com/content/dam/ccr/boutique/hero1/2016/MasterCard_Hero_031416_v2.jpg" style="max-width:100%;" 
-		title="Earn 2X at Restaurants and 5% Back on All B&amp;N Purchases. Earn $25 Gift Card after your first purchase. Earn 12 months of B&amp;N Membership after spending $7,500/year on eligible purchases. Earn 1x points on all other purchasesc(excluding B&amp;N purchases)." 
-		alt="Earn 2X at Restaurants and 5% Back on All B&amp;N Purchases. Earn $25 Gift Card after your first purchase. Earn 12 months of B&amp;N Membership after spending $7,500/year on eligible purchases. Earn 1x points on all other purchasesc(excluding B&amp;N purchases)." /> 
-	</figure>
-
- -->
-
-
-
-
-
-<style type="text/css">
-	.mc-features {border-bottom:1px solid #ccc; padding-bottom:30px;margin: 25px 0 50px 0; }
-
-	.mc-features-group {float:left; width: 50%;}
-	.mc-features-group:first-of-type  {border-right:1px solid #ccc;} 
-
-
-	.mc-feature {
-		text-align: center; 
-		padding:30px 50px;
-		margin: 0 50px;
-    	padding: 30px 0;
-		height: 367px;
-	}
-	.mc-feature:first-of-type  {border-bottom:1px solid #ccc;}
-
-	.mc-feature-hdr { 
- 		font-family: "Poynter",Georgia,serif;
-    	font-weight: 600;
- 		font-size: 24px;
- 		line-height: 1.5;
- 		color:#000;
- 		margin: 0 0 7px 0 ;
- 	}
-	.mc-icon:before {
-		content:"";
-		display: block;
-		width: 62px;
-		height: 62px;
-		margin: 0 auto 10px; 
- 	}
-
-	.mc-icon.earnrewards:before { 
-		background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png') no-repeat -9px -182px;
- 	}
-	.mc-icon.earn5pct:before { 
-		background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png') no-repeat -79px -182px;
- 	}
-	.mc-icon.earngiftcards:before { 
-		background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png') no-repeat -149px -182px;
- 	}
-	.mc-icon.earnmembership:before { 
-		background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png') no-repeat -219px -182px;
- 	}
  
-	.mc-feature p{
-    	font-family: GillSans,Arial,sans-serif;
-    	font-weight: 300;
- 		font-size: 16px;
- 		line-height: 1.75;
- 		color:#000;
-	}
-	.mc-feature-hdr.nofee {margin-top:20px;}
-</style>
 
-
+ 
+ 
  
 
 		<div class="mc-features clearer">
@@ -1706,30 +1349,7 @@ http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/2016/bnreadou
 			</div>
 		</div>
 
-
-<style type="text/css">
-	
-	.mc-questions p { 
-		font-size:12px;
-		line-height:1.7;
-		margin: 0 0 10px 0;
-	}
-	.mc-questions ul {
-		list-style: disc inside none;
-		font-size:12px;
-		line-height:1.7;
-
-		
-	}
-	.mc-questions li{margin-bottom:10px ;}
-
-	.mc-questions a{
-
-    font-family: GillSans;
-    font-weight: 500;
-    font-size: inherit;
-	}
-</style>
+ 
 
 
 	<div class="mc-questions">
@@ -1762,11 +1382,7 @@ http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/2016/bnreadou
 		
 		<p>&copy;2015 Barclays Bank Delaware (Barclaycard). Member FDIC </p>
 
-
-
-
-
-
+ 
 	</div>
 
 
@@ -1861,4 +1477,9 @@ _satellite.pageBottom();
 </body>
 </html>
 </section>
+
+
+
+
+
 

@@ -1,0 +1,107 @@
+
+
+  /* MasterCard header */
+.mc-hdr{ 
+  float: right;
+  text-align: left;
+  width: 45%;
+}
+.mc-hdr .bttn{
+  margin-top: 15px;
+}
+.mc-hdr-main{
+  font-family: Poynter; 
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color:#000;
+  margin:0 0 10px 0;
+}  
+.mc-hdr-sub{
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.7;
+  color:#000;
+}
+ .mc-hdr sup, .mc-features sup {font-family:sans-serif; font-size: 50%; top:-0.75em;}
+
+
+  /* MasterCard  FEATURES */
+.mc-features {
+  border-bottom:1px solid #ccc; 
+  padding-bottom:30px;
+  margin: 25px 0 50px 0; 
+}
+
+.mc-features-group {float:left; width: 50%;}
+.mc-features-group:first-of-type  {border-right:1px solid #ccc;} 
+
+.mc-feature {
+  text-align: center; 
+  padding:30px 50px;
+  margin: 0 49px;
+  padding: 30px 0;
+  height: 370px;
+}
+.mc-feature:first-of-type  {border-bottom:1px solid #ccc;}
+
+.mc-feature-hdr { 
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color:#000;
+  margin: 0 0 7px 0 ;
+}
+.mc-feature-hdr.nofee {margin-top:25px;}
+.mc-icon:before {
+  content:"";
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 10px; 
+}
+
+.mc-icon.earnrewards:before { 
+  background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png') no-repeat -9px -182px;
+}
+.mc-icon.earn5pct:before { 
+  background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png') no-repeat -79px -182px;
+}
+.mc-icon.earngiftcards:before { 
+  background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png') no-repeat -149px -182px;
+}
+.mc-icon.earnmembership:before { 
+  background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png') no-repeat -219px -182px;
+}
+
+.mc-feature p{
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+  color:#000;
+}
+  /* MasterCard QUESTIONS */
+.mc-questions p { 
+  font-size:12px;
+  line-height:1.7;
+  margin: 0 0 10px 0;
+}
+.mc-questions ul {
+  list-style: disc inside none;
+  font-size:12px;
+  line-height:1.7;  
+}
+.mc-questions li{margin-bottom:10px ;}
+
+.mc-questions a{
+  font-family: GillSans;
+  font-weight: 500;
+  font-size: inherit;
+  color:#346250;
+}
+.mc-questions p a,
+.mc-questions a:hover,
+.mc-questions a:focus { text-decoration: underline; }

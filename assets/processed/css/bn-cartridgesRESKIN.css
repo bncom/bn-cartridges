@@ -186,6 +186,37 @@ body {
   /* Buttons */
   /* mimicModule See More buttons */
   /* Reskin 2016 buttons */
+  /*  Original Button on Textbooks - depricated for new standard 
+  .bttn-txtbks { 
+      display: inline-block;
+      font-family: GillSans,Arial,sans-serif;
+      font-size: 18px;
+      line-height:1.6;
+      font-weight: 300; 
+      margin: 0;
+      padding: 15px 20px;
+      text-align: center;
+      text-decoration: none;
+  
+      background-color: #346250;
+      border: 1px solid #3d7141;
+      color: #fff;
+  }
+   
+  .bttn-txtbks:focus, .bttn-txtbks:hover  {
+      text-decoration: none;
+      background-color: #fff ;
+      border: 1px solid #346250 ;
+      color: #346250  ;
+      outline: 0 none;
+  }
+  */
+  /* Default Green/Primary */
+  /* Default Green Sibling/Secondary*/
+  /* Action Red/Primary */
+  /* Action Red/Sibling/Secondary*/
+  /* Commerce Blue/Primary */
+  /* Commerce Blue/Sibling/Secondary*/
   /************************************************/
   /*==================================================
    * shadow 1
@@ -334,6 +365,9 @@ body {
   /* landing page stores */
   /* Message box */
   /* Textbooks Store Pages */
+  /* MasterCard header */
+  /* MasterCard  FEATURES */
+  /* MasterCard QUESTIONS */
 }
 .html * {
   -moz-box-sizing: border-box;
@@ -506,26 +540,140 @@ body {
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.33) inset;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.33) inset;
 }
-.html .bttn {
+.html .bttn-base, .html .bttn, .html .bttn-sibling, .html .bttn-action, .html .bttn-action-sibling, .html .bttn-commerce, .html .bttn-commerce-sibling {
   display: inline-block;
   font-family: GillSans,Arial,sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 500;
+  min-width: 210px;
   margin: 0;
-  padding: 15px 20px;
+  padding: 16px 20px 14px;
   text-align: center;
   text-decoration: none;
-  background-color: #346250;
-  border: 1px solid #3d7141;
-  color: #fff;
+  border: 1px solid transparent;
+  position: relative;
 }
-.html .bttn:focus, .html .bttn:hover {
-  text-decoration: none;
-  background-color: #fff;
-  border: 1px solid #346250;
-  color: #346250;
+.html .bttn-before, .html .bttn:hover:before, .html .bttn-action:hover:before, .html .bttn-commerce:hover:before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.html .bttn {
+  background-color: #366250;
+  border-color: #366250;
+  color: #fff;
   outline: 0 none;
+}
+.html .bttn:hover {
+  text-decoration: none;
+}
+.html .bttn:focus,
+.html .bttn:active {
+  text-decoration: none;
+  border-color: #fff;
+  -webkit-box-shadow: 0 0 5px 5px rgba(49, 81, 67, 0.3);
+  box-shadow: 0 0 5px 5px rgba(49, 81, 67, 0.3);
+}
+.html .bttn-sibling {
+  background-color: #fff;
+  border-color: #366250;
+  color: #056937;
+  outline: 0 none;
+}
+.html .bttn-sibling:hover {
+  text-decoration: none;
+  border-color: #315143;
+  -webkit-box-shadow: inset 0 0 0 1px #315143;
+  box-shadow: inset 0 0 0 1px #315143;
+}
+.html .bttn-sibling:focus,
+.html .bttn-sibling:active {
+  text-decoration: none;
+  border-color: #315143;
+  -webkit-box-shadow: 0 0 5px 5px rgba(49, 81, 67, 0.3), inset 0 0 0 1px #315143;
+  box-shadow: 0 0 5px 5px rgba(49, 81, 67, 0.3), inset 0 0 0 1px #315143;
+}
+.html .bttn-action {
+  background-color: #ee3924;
+  border-color: #ee3924;
+  color: #fff;
+  outline: 0 none;
+}
+.html .bttn-action:hover {
+  text-decoration: none;
+  border-color: #B23B27;
+}
+.html .bttn-action:focus,
+.html .bttn-action:active {
+  text-decoration: none;
+  border-color: #fff;
+  -webkit-box-shadow: 0 0 5px 5px rgba(178, 59, 39, 0.3);
+  box-shadow: 0 0 5px 5px rgba(178, 59, 39, 0.3);
+}
+.html .bttn-action-sibling {
+  background-color: #fff;
+  border-color: #B23B27;
+  color: #B23B27;
+  outline: 0 none;
+}
+.html .bttn-action-sibling:hover {
+  text-decoration: none;
+  border-color: #B23B27;
+  color: #B23B27;
+  -webkit-box-shadow: inset 0 0 0 1px #b23b27;
+  box-shadow: inset 0 0 0 1px #b23b27;
+}
+.html .bttn-action-sibling:focus,
+.html .bttn-action-sibling:active {
+  text-decoration: none;
+  border-color: #B23B27;
+  color: #B23B27;
+  -webkit-box-shadow: 0 0 5px 5px rgba(178, 59, 39, 0.3), inset 0 0 0 1px #b23b27;
+  box-shadow: 0 0 5px 5px rgba(178, 59, 39, 0.3), inset 0 0 0 1px #b23b27;
+}
+.html .bttn-commerce {
+  background-color: #356DB5;
+  border-color: #356DB5;
+  color: #fff;
+  outline: 0 none;
+}
+.html .bttn-commerce:hover {
+  text-decoration: none;
+  border-color: #3D5B8B;
+}
+.html .bttn-commerce:focus,
+.html .bttn-commerce:active {
+  text-decoration: none;
+  border-color: #fff;
+  -webkit-box-shadow: 0 0 5px 5px rgba(61, 91, 139, 0.3);
+  box-shadow: 0 0 5px 5px rgba(61, 91, 139, 0.3);
+}
+.html .bttn-commerce-sibling {
+  background-color: #fff;
+  border-color: #3E6DB5;
+  color: #3E6DB5;
+  outline: 0 none;
+}
+.html .bttn-commerce-sibling:hover {
+  text-decoration: none;
+  border-color: #3D5B8B;
+  color: #3D5B8B;
+  -webkit-box-shadow: inset 0 0 0 1px #3d5b8b;
+  box-shadow: inset 0 0 0 1px #3d5b8b;
+}
+.html .bttn-commerce-sibling:focus,
+.html .bttn-commerce-sibling:active {
+  text-decoration: none;
+  border-color: #3D5B8B;
+  color: #3D5B8B;
+  -webkit-box-shadow: 0 0 5px 5px rgba(61, 91, 139, 0.3), inset 0 0 0 1px #3d5b8b;
+  box-shadow: 0 0 5px 5px rgba(61, 91, 139, 0.3), inset 0 0 0 1px #3d5b8b;
 }
 .html .shadowCast {
   position: relative;
@@ -790,7 +938,7 @@ body {
   -webkit-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
     -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
       box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-      */
+  */
   box-shadow: none;
   height: auto;
   padding: 20px 0;
@@ -2546,4 +2694,115 @@ body {
 .html .textbook-topic-item:first-of-type {
   line-height: 1;
   margin-bottom: 7px;
+}
+.html .mc-hdr {
+  float: right;
+  text-align: left;
+  width: 45%;
+}
+.html .mc-hdr .bttn {
+  margin-top: 15px;
+}
+.html .mc-hdr-main {
+  font-family: Poynter;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+.html .mc-hdr-sub {
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #000;
+}
+.html .mc-hdr sup, .html .mc-features sup {
+  font-family: sans-serif;
+  font-size: 50%;
+  top: -0.75em;
+}
+.html .mc-features {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  margin: 25px 0 50px 0;
+}
+.html .mc-features-group {
+  float: left;
+  width: 50%;
+}
+.html .mc-features-group:first-of-type {
+  border-right: 1px solid #ccc;
+}
+.html .mc-feature {
+  text-align: center;
+  padding: 30px 50px;
+  margin: 0 49px;
+  padding: 30px 0;
+  height: 370px;
+}
+.html .mc-feature:first-of-type {
+  border-bottom: 1px solid #ccc;
+}
+.html .mc-feature-hdr {
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000;
+  margin: 0 0 7px 0;
+}
+.html .mc-feature-hdr.nofee {
+  margin-top: 25px;
+}
+.html .mc-icon:before {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 10px;
+}
+.html .mc-icon.earnrewards:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -9px -182px;
+}
+.html .mc-icon.earn5pct:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -79px -182px;
+}
+.html .mc-icon.earngiftcards:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -149px -182px;
+}
+.html .mc-icon.earnmembership:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -219px -182px;
+}
+.html .mc-feature p {
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #000;
+}
+.html .mc-questions p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0 0 10px 0;
+}
+.html .mc-questions ul {
+  list-style: disc inside none;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.html .mc-questions li {
+  margin-bottom: 10px;
+}
+.html .mc-questions a {
+  font-family: GillSans;
+  font-weight: 500;
+  font-size: inherit;
+  color: #346250;
+}
+.html .mc-questions p a,
+.html .mc-questions a:hover,
+.html .mc-questions a:focus {
+  text-decoration: underline;
 }
