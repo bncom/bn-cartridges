@@ -2,11 +2,15 @@
 
   /* MasterCard header */
 .mc-hdr{ 
-  float: right;
-  text-align: left;
-  width: 45%;
+  // float: right;
+  // text-align: left;
+  // width: 45%;
+  position: absolute;
+  top:80px;
+  right:0;
+  width:auto;
 }
-.mc-hdr .bttn{
+.mc-hdr [class^=bttn]{
   margin-top: 15px;
 }
 .mc-hdr-main{
@@ -102,6 +106,6 @@
   font-size: inherit;
   color:#346250;
 }
-.mc-questions p a,
-.mc-questions a:hover,
-.mc-questions a:focus { text-decoration: underline; }
+ 
+// .mc-questions a:hover,
+// .mc-questions a:focus { text-decoration: underline; }

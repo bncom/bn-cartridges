@@ -1,11 +1,16 @@
-
-
 body { overflow-x: hidden; }
-
+/* page-hero 1 desktop white text mobile black text  */
+.bn-ccr-core-page-hero-1 .dwhite-mblack #promoContentContainer section#promoInfo h3, 
+.bn-ccr-core-page-hero-1 .dwhite-mblack #promoContentContainer section#promoInfo .hero1-hdr, 
+.bn-ccr-core-page-hero-1 .dwhite-mblack #promoContentContainer section#promoInfo p {color:#fff;}
+/* page-hero 1 desktop white text mobile black text  */
+.main-body .bn-ccr-core-page-hero-1 .dwhite-mblack #promoContentContainer section#promoInfo h3, 
+.main-body .bn-ccr-core-page-hero-1 .dwhite-mblack #promoContentContainer section#promoInfo .hero1-hdr, 
+.main-body .bn-ccr-core-page-hero-1 .dwhite-mblack #promoContentContainer section#promoInfo p {color:#000;}
+ 
 .landingPage .main-content [id^='book-carousel'] li { width: 140px !important;margin-right: 10px !important;}  
 
 .main-content { 
-
   section#hotBooksWithDesc .caroufredsel_wrapper,
   section#hotBooks .caroufredsel_wrapper {width:100% !important}
 

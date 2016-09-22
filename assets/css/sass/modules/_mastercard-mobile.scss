@@ -1,18 +1,39 @@
- 
+.dOnly {display:none;}
+.mOnly {display:block;}
 
-@media only screen and (max-width: 669px) {  
- 
+.mc-hdr{ 
+  // float: right;
+  // text-align: left;
+  // width: 45%;
+  position: relative;
+  top:0;
+  right:0;
+  left:0; 
+  text-align:center;
+  padding: 20px 10px 30px;
+  border-bottom:1px solid #ccc;
+}
+.mc-questions {padding:0 20px;}
+
+@media only screen and (max-width: 699px) {  
+	.mc-hdr-main{ 
+	  font-size: 25px; 
+	  margin-top:20px;
+	}   
 
 }
 
-
-
-
-
-@media only screen and (max-width: 499px) {  
  
 
+@media only screen and (max-width: 899px) {  
+	.mc-features-group {
+	    float: none;
+	    width: 100%;
+	}
+	.mc-features-group:first-of-type  {border-right:none;} 
+	.mc-feature  {border-bottom:1px solid #ccc; height:auto;}
 
+	.mc-features-group:last-of-type .mc-feature:last-of-type  {border-bottom:none;}
 
 }
  

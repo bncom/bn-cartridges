@@ -209,6 +209,9 @@ input.cq-bttn-action:active {
     border:1px solid transparent;
     position: relative;
 }
+@media only screen and (max-width: 499px) {  
+    .bttn-base { width:95%; }   
+}
 .bttn-before {
     content:"";
     display: block;
@@ -235,7 +238,7 @@ input.cq-bttn-action:active {
     @extend .bttn-before;
 }
 .bttn:focus,
-.bttn:active {
+button.bttn:active {
     text-decoration: none;
     // background-color: #315143;
     border-color: #fff;  
@@ -259,7 +262,7 @@ input.cq-bttn-action:active {
 }
  
 .bttn-sibling:focus,
-.bttn-sibling:active {
+button.bttn-sibling:active {
     text-decoration: none; 
     border-color:#315143;   
     -webkit-box-shadow:0  0 5px 5px rgba(49, 81, 67, 0.3), inset 0 0 0 1px rgba(49, 81, 67, 1);;
@@ -285,7 +288,7 @@ input.cq-bttn-action:active {
     @extend .bttn-before;
 }
 .bttn-action:focus,
-.bttn-action:active {
+button.bttn-action:active {
     text-decoration: none;
     // background-color: #B23B27;
     border-color: #fff;  
@@ -310,7 +313,7 @@ input.cq-bttn-action:active {
 }
  
 .bttn-action-sibling:focus,
-.bttn-action-sibling:active {
+button.bttn-action-sibling:active {
     text-decoration: none; 
     border-color: #B23B27;   
     color: #B23B27; 
@@ -337,7 +340,7 @@ input.cq-bttn-action:active {
     @extend .bttn-before;
 }
 .bttn-commerce:focus,
-.bttn-commerce:active {
+button.bttn-commerce:active {
     text-decoration: none;
     // background-color: #B23B27;
     border-color: #fff;  
@@ -362,7 +365,7 @@ input.cq-bttn-action:active {
 }
  
 .bttn-commerce-sibling:focus,
-.bttn-commerce-sibling:active {
+button.bttn-commerce-sibling:active {
     text-decoration: none; 
     border-color: #3D5B8B;   
     color: #3D5B8B ; 
