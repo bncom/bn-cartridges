@@ -1889,11 +1889,7 @@ Sourec pull from:
 /content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png
 
  -->
-
-<style type="text/css">
-    x.html {border:1px red dotted;}
-</style>
-
+ 
 
 
 
@@ -1907,6 +1903,8 @@ Sourec pull from:
         </div>
     </section>
 </div>
+
+
 
 /content/dam/ccr/bnstores/textbooks/hero2/2016/Textbooks_LP_Hero_img_960x330.jpg
 
@@ -1944,31 +1942,30 @@ Return items within 14 days online or at any B&N store
 
 <!-- QA
 /content/ccr/web/stores/textbooks/html/2016/9/textbooks-home-hero.use.html
+
+Prod
+/content/ccr/h/textbooks/2016reskin/home/search-hero-home.use.html
  -->
+
+
         <div class="textbook-hero">
-
             <figure class="textbook-hero-image">
-               <img title="" alt="Assorted Textbooks" src="http://prodny-adobe-previewdispatch.bn-web.com/content/ccr/web/stores/textbooks/page-hero-2/2016/8/reskin10-2016/jcr%3acontent/content-node.img.jpg/1472227302588.jpg">  
+               <img alt="Assorted Textbooks" src="http://dispatch.barnesandnoble.com/content/dam/ccr/bnstores/textbooks/hero2/2016/Textbooks_LP_Hero_img_960x330.jpg">  
             </figure> 
-
-            <div class="">
-                <form name="txtBookSearch" id="cqTextBookSearch" class="cqTextBookSearch">
-                    <label for="searchTextBookBar"> Enter Search Term </label> 
-                    <input type="text" autocomplete="off" aria-autocomplete="list" role="textbox" value="" placeholder="Search by ISBN, Title, or Author" id="searchTextBookBar" class="user-success" /> 
-                    <input type="submit" value="" id="txtBookSearchSubmit" class="cqTextBookSearchSubmit"/> 
-                    
-                </form>
-                <!-- data-modal-class="BN.Modal.External.Link" data-modal-scrolling="no" data-modal-height="280px" data-modal-width="460px" -->
-                <a class="cqTextBookSearch-isbn-link  "  href="http://dispatch.barnesandnoble.com/content/ccr/h/modal/textbook-isbn-helper.use.html?">What is an ISBN?
-                    <div class="cqTextBookSearch-isbn-sample">
-                        <p class="question">What's an ISBN</p>
-                        <p class="answer">An ISBN ia a 10-13 digit number found on your book's back cover.</p>
-                        <img src="http://dispatch.barnesandnoble.com/content/dam/ccr/stores/textbooks/ISBN_helper.png" alt=""/>
-                    </div>
-
-                </a> 
-
-            </div>
+            <form name="txtBookSearch" id="cqTextBookSearch" class="cqTextBookSearch">
+                <label for="searchTextBookBar"> Enter Search Term </label> 
+                <input type="text" autocomplete="off" aria-autocomplete="list" role="textbox" value="" placeholder="Search by ISBN, Title, or Author" id="searchTextBookBar" class="user-success" /> 
+                <input type="submit" value="" id="txtBookSearchSubmit" class="cqTextBookSearchSubmit"/> 
+                
+            </form>
+            <!-- data-modal-class="BN.Modal.External.Link" data-modal-scrolling="no" data-modal-height="280px" data-modal-width="460px" -->
+            <a class="cqTextBookSearch-isbn-link  "  href="http://dispatch.barnesandnoble.com/content/ccr/h/modal/textbook-isbn-helper.use.html?">What is an ISBN?
+                <div class="cqTextBookSearch-isbn-sample">
+                    <p class="question">What's an ISBN</p>
+                    <p class="answer">An ISBN ia a 10-13 digit number found on your book's back cover.</p>
+                    <img src="http://dispatch.barnesandnoble.com/content/dam/ccr/stores/textbooks/ISBN_helper.png" alt=""/>
+                </div>
+            </a> 
         </div>
 
 
@@ -1977,20 +1974,10 @@ Return items within 14 days online or at any B&N store
 </div>
 
  
-<div class="html">
-    <div class="html-embed-container">
-    </div>
-</div>
-
+ 
   
 
  
-
-<style type="text/css">
-    
-
-
-</style>
 
 <div class="html">
     <div class="html-embed-container"> 
@@ -1999,11 +1986,14 @@ Return items within 14 days online or at any B&N store
 
 <!-- QA
 /content/ccr/web/stores/textbooks/html/2016/9/textbooks-home-stores.use.html
+
+Prod
+/content/ccr/h/textbooks/2016reskin/home/textbook-stores.use.html
+
  -->
 
 
-
-        <section>
+ 
             <div class="textbook-stores clearer">
                 <a href="/h/textbooks/rental">  
                         <div class="textbook-store-hdr rent">Rent</div>
@@ -2030,7 +2020,7 @@ Return items within 14 days online or at any B&N store
                         <span class="textbook-store-cta">Learn More</span>  
                 </a> 
             </div>
-        </section>
+  
 
 
 
@@ -2042,33 +2032,28 @@ Return items within 14 days online or at any B&N store
  -->
 
 
-<style type="text/css">
 
-
- 
-
-
-</style>
 
 <!-- 
 
 QA
 /content/ccr/web/stores/textbooks/html/2016/9/textbooks-home-announcement.use.html
+
+Prod
+/content/ccr/h/textbooks/2016reskin/home/announcement.use.html
+
  -->
-    <div class="textbook-announcement clearer">
-        
+    <div class="textbook-announcement clearer"> 
         <div class="textbook-announcement-hdr">Do You Have a Rental to Return?</div>
         <div class="textbook-announcement-msg">
         <p>Visit the Manage Textbooks Rentals page to print your free shipping label and packing slip and to find a UPS drop-off location. You'll also be able to find your Due Date, Extend your Rental, or Purchase the Book.</p>
         </div>
         
-        <a class="bttn" href="#">Manage Textbook Rentals</a>
- 
+        <a class="bttn" href="https://www.barnesandnoble.com/account/rentals/#activeRentals">Manage Textbook Rentals</a>
     </div>
 
 
- 
-
+  
 
 
 
@@ -2085,6 +2070,10 @@ QA
 <!-- 
 QA
 /content/ccr/web/stores/textbooks/html/2016/9/textbooks-home-subjects.use.html
+
+Prod
+/content/ccr/h/textbooks/2016reskin/home/subject-list.use.html
+
  -->
 
         <div class="cms">
