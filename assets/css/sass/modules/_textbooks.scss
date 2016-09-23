@@ -234,36 +234,36 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
 .textbook-topic h2 {
     font-family: "Poynter",Georgia,serif; 
     font-size: 30px;
-    line-height:1.6;
+    line-height:1.6 !important;
     font-weight: 600; 
     color:#000;
     background-color: #F5F2ED;
     padding:6px 30px 6px 24px; 
-    margin:0 0 20px -24px;
-
+    margin:0 0 20px -24px !important; 
 }
  
 .textbook-topic h2:after {
     content: "";
     height: 40px;
-    width: 52px;
+    width: 46px;
     display:block;
     margin:3px auto;
     float:right;
 }
 .textbook-topic h2.bookstack:after { 
-    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') 7px -77px no-repeat;
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') 2px -77px no-repeat;
 }
 .textbook-topic h2.truck:after { 
     background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -204px -77px no-repeat;
+    width:60px;
 }
 
 
 .textbook-topic h2.tag:after { 
-    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -48px -77px no-repeat;
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -54px -77px no-repeat;
 }
 .textbook-topic h2.fourteenday:after { 
-    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -256px -77px no-repeat;
+    background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -265px -77px no-repeat;
 }
 .textbook-topic h2.piggybank:after { 
     background: transparent url('http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -148px -77px no-repeat;
