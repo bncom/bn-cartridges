@@ -28,6 +28,11 @@ body {
   margin-right: 10px !important;
 }
 
+#searchGrid section .textbook-topic h2 {
+  line-height: 1.6;
+  margin: 0 0 20px -24px;
+}
+
 .main-content {
   /* are we adjusting the event templt headers above"? */
   /* expand BNReads pod on the One Column Marketing page */
@@ -358,6 +363,17 @@ section h2.event-hdr.dOnly {
   /* Desktop */
   /*
   
+  
+  
+  http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Store_Locator_Graphic_LandingPage.png //12px 9px;
+  url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
+  
+  
+  http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/2016/bn-cartridgesRESKIN-js.js?test=09272016
+  http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png
+  */
+  /*
+  
   .event-banner a {  
       display: inline-block;
       color: #000000;
@@ -413,6 +429,17 @@ section h2.event-hdr.dOnly {
     padding: 9px 0 0;
   }*/
   /* Desktop */
+  /*
+  
+  
+  
+  http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Store_Locator_Graphic_LandingPage.png //12px 9px;
+  url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
+  
+  
+  http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/2016/bn-cartridgesRESKIN-js.js?test=09272016
+  http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png
+  */
   /* mobile only */
   /*
   @media only screen and (max-width: 699px) {   
@@ -483,6 +510,7 @@ section h2.event-hdr.dOnly {
   /* Message box */
   /* Textbooks Store Pages */
   /*  ISBN LINK */
+  /*  Textbook store search fom position  */
   /*  browse*/
   /* MasterCard header */
   /* MasterCard  FEATURES */
@@ -2524,16 +2552,49 @@ section h2.event-hdr.dOnly {
   *float: left;
 }
 .html .event-intro .event-cta, .html .event-intro .event-intro-link {
-  padding: 12px 15px;
+  padding: 12px 16px;
   text-transform: uppercase;
   /* create sprite */
 }
+.html .event-intro .event-cta:hover, .html .event-intro .event-intro-link:hover {
+  background: none;
+  background-color: #3D6DB5;
+  color: #fff;
+}
 .html .event-intro .event-cta.locator, .html .event-intro .event-intro-link.locator {
-  padding-left: 40px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Store_Locator_Graphic_LandingPage.png") no-repeat scroll 12px 9px;
+  padding-left: 12px;
+  background: none;
+}
+.html .event-intro .event-cta:before, .html .event-intro .event-intro-link:before {
+  content: " ";
+  font-family: GillSans,Arial,sans-serif;
+  font-size: 20px;
+}
+.html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
+  padding-left: 27px;
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
+  padding-left: 12px;
+  background: none;
+  background-color: #3D6DB5;
+  color: #fff;
+}
+.html .event-intro .event-cta.locator:hover:before, .html .event-intro .event-intro-link.locator:hover:before {
+  padding-left: 27px;
+  background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background-position: -31px -273px;
+}
+.html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
+  padding-left: 32px;
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background-position: -9px -242px;
+}
+.html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
+  padding-left: 32px;
+  background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background-position: -39px -242px;
 }
 .html .event-5050-txt > a:hover,
 .html .event-intro-link:hover {
@@ -2588,15 +2649,39 @@ section h2.event-hdr.dOnly {
   text-align: center;
 }
 .html .event-intro {
-  padding: 30px 40px 39px;
+  padding: 45px 40px 39px;
 }
 .html .event-intro h2 {
-  font-family: Milo;
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 600;
   font-size: 50px;
-  line-height: 54px;
-  font-weight: normal;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 20px;
+}
+.html .event-intro h2 i {
+  font-family: inherit;
+  font-size: inherit;
+}
+.html .event-intro h2 em {
+  font-family: inherit;
+  font-size: inherit;
+}
+.html .event-intro h3 {
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.html .event-intro h3 i {
+  font-family: inherit;
+  font-size: inherit;
+}
+.html .event-intro h3 em {
+  font-family: inherit;
+  font-size: inherit;
 }
 .html .event-intro nobr {
   font-family: inherit;
@@ -2604,16 +2689,19 @@ section h2.event-hdr.dOnly {
 }
 .html .event-intro p {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.85;
   text-align: center;
+  margin-bottom: 30px;
 }
 .html .event-intro p a {
   font-family: inherit;
   font-size: inherit;
 }
+.html .event-intro p:last-of-type {
+  margin-bottom: 7px;
+}
 .html .event-intro-links {
   margin: 0 auto 0;
-  /* width: 530px; */
   text-align: center;
 }
 .html .event-banner, .html .event-banner-text {
@@ -2973,16 +3061,49 @@ section h2.event-hdr.dOnly {
   *float: left;
 }
 .html .event-intro .event-cta, .html .event-intro .event-intro-link {
-  padding: 12px 15px;
+  padding: 12px 16px;
   text-transform: uppercase;
   /* create sprite */
 }
+.html .event-intro .event-cta:hover, .html .event-intro .event-intro-link:hover {
+  background: none;
+  background-color: #3D6DB5;
+  color: #fff;
+}
 .html .event-intro .event-cta.locator, .html .event-intro .event-intro-link.locator {
-  padding-left: 40px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Store_Locator_Graphic_LandingPage.png") no-repeat scroll 12px 9px;
+  padding-left: 12px;
+  background: none;
+}
+.html .event-intro .event-cta:before, .html .event-intro .event-intro-link:before {
+  content: " ";
+  font-family: GillSans,Arial,sans-serif;
+  font-size: 20px;
+}
+.html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
+  padding-left: 27px;
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
+  padding-left: 12px;
+  background: none;
+  background-color: #3D6DB5;
+  color: #fff;
+}
+.html .event-intro .event-cta.locator:hover:before, .html .event-intro .event-intro-link.locator:hover:before {
+  padding-left: 27px;
+  background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background-position: -31px -273px;
+}
+.html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
+  padding-left: 32px;
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background-position: -9px -242px;
+}
+.html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
+  padding-left: 32px;
+  background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background-position: -39px -242px;
 }
 .html .event-5050-txt > a:hover,
 .html .event-intro-link:hover {
@@ -3062,15 +3183,39 @@ section h2.event-hdr.dOnly {
   }
 }
 .html .event-intro {
-  padding: 30px 40px 39px;
+  padding: 45px 40px 39px;
 }
 .html .event-intro h2 {
-  font-family: Milo;
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 600;
   font-size: 50px;
-  line-height: 54px;
-  font-weight: normal;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 20px;
+}
+.html .event-intro h2 i {
+  font-family: inherit;
+  font-size: inherit;
+}
+.html .event-intro h2 em {
+  font-family: inherit;
+  font-size: inherit;
+}
+.html .event-intro h3 {
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.html .event-intro h3 i {
+  font-family: inherit;
+  font-size: inherit;
+}
+.html .event-intro h3 em {
+  font-family: inherit;
+  font-size: inherit;
 }
 .html .event-intro nobr {
   font-family: inherit;
@@ -3078,16 +3223,19 @@ section h2.event-hdr.dOnly {
 }
 .html .event-intro p {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.85;
   text-align: center;
+  margin-bottom: 30px;
 }
 .html .event-intro p a {
   font-family: inherit;
   font-size: inherit;
 }
+.html .event-intro p:last-of-type {
+  margin-bottom: 7px;
+}
 .html .event-intro-links {
   margin: 0 auto 0;
-  /* width: 530px; */
   text-align: center;
 }
 @media only screen and (max-width: 699px) {
@@ -3765,12 +3913,12 @@ section h2.event-hdr.dOnly {
 .html .textbook-topic h2 {
   font-family: "Poynter",Georgia,serif;
   font-size: 30px;
-  line-height: 1.6 !important;
+  line-height: 1.6;
   font-weight: 600;
   color: #000;
   background-color: #F5F2ED;
   padding: 6px 30px 6px 24px;
-  margin: 0 0 20px -24px !important;
+  margin: 0 0 20px -24px;
 }
 .html .textbook-topic h2:after {
   content: "";
@@ -3784,7 +3932,7 @@ section h2.event-hdr.dOnly {
   background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") 2px -77px no-repeat;
 }
 .html .textbook-topic h2.truck:after {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -204px -77px no-repeat;
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -205px -77px no-repeat;
   width: 60px;
 }
 .html .textbook-topic h2.tag:after {
@@ -3794,7 +3942,7 @@ section h2.event-hdr.dOnly {
   background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -265px -77px no-repeat;
 }
 .html .textbook-topic h2.piggybank:after {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -148px -77px no-repeat;
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -150px -77px no-repeat;
 }
 .html .textbook-topic h2.new:after {
   background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -101px -77px no-repeat;
@@ -3823,17 +3971,23 @@ section h2.event-hdr.dOnly {
 .html .textbook-topic p {
   padding: 0 25px;
 }
+.html .cqTextBookSearch-isbn-link {
+  font-size: 15px;
+}
 .html .textbook-store-search .cqTextBookSearch-isbn-link {
   width: 170px;
+}
+.html .textbook-store-search .cqTextBookSearch {
+  margin: 0 20px;
+}
+.html .cqTextBookSearch-isbn-sample {
+  left: -117px;
 }
 .html .textbooks .module-hdr {
   margin: 20px;
 }
 .html .links-container.browse.textbooks {
   display: block;
-}
-.html .cqTextBookSearch-isbn-sample {
-  left: -117px;
 }
 @media only screen and (max-width: 669px) {
   .html {
@@ -3876,9 +4030,6 @@ section h2.event-hdr.dOnly {
   .html .textbook-store-search {
     margin: 40px 0 90px;
   }
-  .html .textbook-store-search .cqTextBookSearch {
-    margin: 0 20px;
-  }
   .html .cqTextBookSearch {
     height: 18px;
     left: auto;
@@ -3900,6 +4051,10 @@ section h2.event-hdr.dOnly {
   }
   .html #txtBookSearchSubmit {
     right: 5px;
+  }
+  .html .cqTextBookSearch-isbn-link {
+    top: -55px;
+    width: 190px;
   }
   .html .textbook-store-search .cqTextBookSearch-isbn-link {
     top: 65px;
@@ -4040,6 +4195,14 @@ section h2.event-hdr.dOnly {
   .html .mc-hdr-main {
     font-size: 25px;
     margin-top: 20px;
+  }
+  .html .mc-hdr-main.mOnly {
+    margin-top: 55px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .html .mc-hdr-main.mOnly {
+    margin-top: 30px;
   }
 }
 @media only screen and (max-width: 899px) {

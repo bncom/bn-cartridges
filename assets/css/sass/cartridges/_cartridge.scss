@@ -32,18 +32,51 @@
 }
 .event-intro {
   .event-cta,.event-intro-link { 
-    padding: 12px 15px;
+    padding: 12px 16px;
     text-transform: uppercase; 
      /* create sprite */
-    &.locator{ 
-      padding-left: 40px;
-      background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Store_Locator_Graphic_LandingPage.png") no-repeat scroll 12px 9px;
+    &:hover { background: none; background-color:#3D6DB5;color: #fff; } 
+    &.locator { padding-left:12px; background: none;}
+    &:before { 
+      content:" ";
+      font-family:GillSans,Arial,sans-serif;
+      font-size:20px;   
     }
-    &.locator:hover {
-      background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
+    &.locator:before {  
+      padding-left: 27px; 
+      background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
+      background-position: -9px -273px
+    }
+    &.locator:hover { padding-left:12px; background: none; background-color:#3D6DB5;color: #fff; }
+    &.locator:hover:before {
+      padding-left: 27px; 
+      background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
+      background-position: -31px -273px;
+
+    }
+    &.video:before {  
+      padding-left:32px; 
+      background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
+      background-position: -9px -242px
+    } 
+    &.video:hover:before {
+      padding-left:32px; 
+      background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
+      background-position: -39px -242px;
     }
   }
 }
+/*
+
+
+
+http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Store_Locator_Graphic_LandingPage.png //12px 9px;
+url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
+
+
+http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/2016/bn-cartridgesRESKIN-js.js?test=09272016
+http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png
+*/
 .event-5050-txt > a:hover,
 .event-intro-link:hover {
   color: #a3bcd9;

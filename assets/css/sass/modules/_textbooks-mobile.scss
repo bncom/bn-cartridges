@@ -15,18 +15,19 @@
 }
 
 /*  ISBN LINK */  
-.textbook-store-search .cqTextBookSearch-isbn-link { width:170px;}
 
+.cqTextBookSearch-isbn-link { font-size:15px;}
+.textbook-store-search .cqTextBookSearch-isbn-link { width:170px; }
 
+/*  Textbook store search fom position  */  
+.textbook-store-search .cqTextBookSearch { margin:0 20px; }
+.cqTextBookSearch-isbn-sample {  left:-117px; }
 
  /*  browse*/  
 .textbooks .module-hdr { margin:20px;}
-.links-container.browse.textbooks  {display: block;}
+.links-container.browse.textbooks  {display: block;} 
 
-.cqTextBookSearch-isbn-sample {  left:-117px; }
-
-@media only screen and (max-width: 669px) {  
-	 
+@media only screen and (max-width: 669px) {   
 	/* landing page stores */
 	.textbook-stores { padding: 0; } 
 	.textbook-stores a { 
@@ -44,8 +45,7 @@
 	    min-width: 45%;
 	    padding-left: 20px;
 	    width: 45%;
-	}
-
+	} 
 }
 
 
@@ -60,9 +60,6 @@
 	.textbook-store-search {
 	    margin: 40px 0 90px;
 	}
-	.textbook-store-search .cqTextBookSearch {
-    	margin:0 20px;
-    }
     .cqTextBookSearch {
 	    height: 18px;
 	    left:auto;
@@ -86,10 +83,10 @@
 	#txtBookSearchSubmit {right:5px;}
 
 	/*  ISBN LINK */  
+ 	.cqTextBookSearch-isbn-link { top:-55px;width:190px;}
 	.textbook-store-search .cqTextBookSearch-isbn-link {top:65px;}  
 	.cqTextBookSearch-isbn-sample:after { left: 152px; }
 	.cqTextBookSearch-isbn-sample:before { left: 150px;  }
-
 
 
 }

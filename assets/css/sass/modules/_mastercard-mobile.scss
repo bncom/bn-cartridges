@@ -20,9 +20,11 @@
 	  font-size: 25px; 
 	  margin-top:20px;
 	}   
-
+	.mc-hdr-main.mOnly{margin-top:55px;}
 }
-
+@media only screen and (max-width: 599px) {    
+	.mc-hdr-main.mOnly{margin-top:30px;}
+}
  
 
 @media only screen and (max-width: 899px) {  

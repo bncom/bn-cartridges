@@ -1,0 +1,24 @@
+// .hero1600 { min-height: 150px; }
+ .hero1600 figure {text-align: center; }
+@media only screen and (max-width : 699px) {
+
+	.hero1600-header {top:5px; }
+ 
+	.hero1600 figure { min-height:100px;text-align: center; }
+	.hero1600 img {
+		left:inherit !important;  
+		max-width:100%;
+		left:inherit;
+	}
+
+	.hero1600 h1 {    
+	    font-size: 32px;
+	    line-height: 45px;  
+	}
+	.hero1600 h2{  
+	    font-size: 15px;
+	    line-height: 1;  
+	}
+ 
+
+}

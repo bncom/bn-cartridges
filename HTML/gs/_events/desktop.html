@@ -6,299 +6,105 @@
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
-<!-- 
-
-
-http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Bfest-Mobile.jpg
-
-http://dispatch.barnesandnoble.com/content/dam/ccr/social/BN_facebook_1200x630.jpg
-
-
- -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
-<meta name="viewport" content="980px">
+<meta content="width=device-width" name="viewport">
 <meta name="format-detection" content="telephone=no">
 <meta name="author" content="Barnes &amp; Noble">
-<title>GPC Desktop | Barnes &amp; Noble</title>
+<title>Get Pop-Cultured with Barnes & Noble | Barnes &amp; Noble&reg;</title>
+<meta name="description" content="It’s time for Get Pop-Cultured, Barnes & Noble’s annual celebration of fanboys, fangirls, and pop-culture. Join us in Stores July 6th – August 7th. Check with your local store for details." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@BNBuzz" />
+<meta property="og:title" content="Get Pop-Cultured with Barnes & Noble"/>
+<meta property="og:description" content="It’s time for Get Pop-Cultured, Barnes &amp; Noble’s annual celebration of fanboys, fangirls, and pop-culture. Join us in Stores July 6th – August 7th. Check with your local store for details."/>
 <meta property="og:type" content="product"/>
-<meta property="og:url" content="http://www.barnesandnoble.com/w"/>
+<meta property="og:url" content="http://www-ra-test.barnesandnoble.com/h/get-pop-cultured"/>
+<meta property="og:image" content="http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/get-pop-culture/2016/gpc-og.jpg"/>
 <meta property="og:site_name" content="Barnes &amp; Noble"/>
-<link rel="icon" type="image/x-icon" href="//img.images-bn.com/static/img/favicon.ico" />
-<link rel="icon" sizes="192x192" href="//img.images-bn.com/static/img/bn-icon-192x192.png">
+<link rel="icon" type="image/x-icon" href="http://ra-images.bn-web.com/static/img/favicon.ico" />
+<link rel="icon" sizes="192x192" href="http://ra-images.bn-web.com/static/img/bn-icon-192x192.png">
 <meta name="apple-mobile-web-app-title" content="Barnes & Noble">
-<link rel="apple-touch-icon" href="//img.images-bn.com/static/img/iphone-icon.png"/>
-<link rel="apple-touch-icon" sizes="72x72" href="//img.images-bn.com/static/img/bn-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="//img.images-bn.com/static/img/bn-icon-114x114.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="//img.images-bn.com/static/img/bn-icon-180x180.png" />
-<link rel="stylesheet" href="/static/release/css/fonts.min.css" />
-<link rel="stylesheet" type="text/css" href="//css.css-bn.com/static/release/css/concat.min.css?v2.7.6&setviewtype=full" />
-<link href="//css.css-bn.com/static/release/css/category/category.min.css?v2.7.6" rel="stylesheet" media="screen">
-<link href="//css.css-bn.com/static/release/css/category/search.min.css?v2.7.6" rel="stylesheet" media="screen">
+<link rel="apple-touch-icon" href="http://ra-images.bn-web.com/static/img/iphone-icon.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="http://ra-images.bn-web.com/static/img/bn-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="http://ra-images.bn-web.com/static/img/bn-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="http://ra-images.bn-web.com/static/img/bn-icon-180x180.png" />
+<link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/vendor/normalize.css?vra"/>
+<link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/sprites.css?vra"/>
+
+
+
+
+<!-- 
+
+<link rel="stylesheet" href="/static/css/fonts.css" />
+
+ -->
+
+
+<link rel="stylesheet" href="http://www-ra-test.barnesandnoble.com/static/css/fonts.css?" />
 
 
 
 
 
-<link href="bn-h-cms-legacy" rel="stylesheet" media="screen">
 
+
+
+<link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/global.css?vra"/>
+<link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/storeassociate/storeassociate.css?vra"/>
+<link rel="stylesheet" href="http://ra-css.bn-web.com/static/css/newsletter.css?vra">
+<link href="http://ra-css.bn-web.com/static/css/category/category.css?vra" rel="stylesheet" media="screen">
+<link href="http://ra-css.bn-web.com/static/css/category/search.css?vra" rel="stylesheet" media="screen">
 <style>
 
 @-webkit-keyframes bugfix { from { padding: 0px; } to { padding: 0px; } }
 label span { -webkit-animation: bugfix infinite 1ms; }
 </style>
-<script>
-var SITE_PROTOCOL = document.location.protocol||window.location.protocol||'http:',
-SITE_DOMAIN = document.location.hostname||window.location.hostname||'www.barnesandnoble.com',
-SITE_PORT = document.location.port||window.location.port||'80',
-THIS_PATH = document.location.pathname||window.location.pathname||'/cartridges/PageSlot/PageSlot.jsp',
-SITE_DOMAIN_URL = THIS_PAGE = SITE_ROOT = port = "",
-STATIC_ASSETS_PATH = "/static",
-webContextRoot ='',
-staticAssetVersion = '?v2.7.6',
-XHR_FOLDER ='/xhr',
-XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp',
-PAGE_DEBUG_MODE = false;
-if(SITE_PROTOCOL=="https:") {
-XHR_FOLDER = '/xhr';
-XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp';
-}
-if(SITE_PORT.length > 0 && SITE_PORT!=80)
-port = ":"+SITE_PORT;
-SITE_DOMAIN_URL = SITE_PROTOCOL + "//" + SITE_DOMAIN + port;
-SITE_ROOT = SITE_DOMAIN_URL + webContextRoot;
-THIS_PAGE = SITE_DOMAIN_URL + THIS_PATH;
-port = null;
-function consoleLog() {
-if (PAGE_DEBUG_MODE!==true) return;
-if (typeof console != "undefined" && typeof console.log != "undefined") {
-if (typeof console.log.apply != "undefined") {
-console.log.apply(console,arguments);
-} else {
-for(var i=0;i<arguments.length;i++) {
-var arg = arguments[i];
-console.log(arg);
-}
-}
-}
-}
-function consoleWarn() {
-if (PAGE_DEBUG_MODE!==true) return;
-if (typeof console == "undefined") return;
-if (typeof console.warn != "undefined" && typeof console.warn.apply != "undefined") {
-console.warn.apply(console,arguments);
-} else {
-consoleLog.apply(console,arguments);
-}
-}
-function consoleError() {
-if (PAGE_DEBUG_MODE!==true) return;
-if (typeof console == "undefined") return;
-if (typeof console.error != "undefined" && typeof console.error.apply != "undefined") {
-console.error.apply(console,arguments);
-} else {
-consoleWarn.apply(console,arguments);
-}
-}
-var verifyCallbackToCaptcha = function() {
-grecaptcha.render('html_element', {
-'sitekey' : '6LctFgsTAAAAAJXPN_lYrGuAQiN8KDE_W84nWsjc',
-'expired-callback': function(){
-consoleLog("verify reset");
-grecaptcha.reset();
-}
-});
-};
-</script>
-<script src="//js.js-bn.com/static/js/vendor/jquery-1.8.3.min.js?v2.7.6"></script>
-<script>
-/*
-var $viewportMeta = $('meta[name="viewport"]');
-$('input, select, textarea').bind('focus blur', function(event) {
-$viewportMeta.attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1));
-});
-*/
-function updateMiniCartCount(count) {
-if(typeof count != 'undefined' && count != $.trim($('#bagTotal').text())) {
-$('#bagTotal').text(count);
-}
-}
-function miniCartEvents($container) {
-var $spinner = $('<div/>').addClass('mini-cart-spinner'),
-$quantityUpdateForms = $('.mini-cart-quantity-update');
-BN.MiniCart = new MiniCart('#miniCart', '#shoppingBag');
-// shopping bag flyout only
-$('#bagContentsContainer').find('.mini-cart-quantity-update').each(function() {
-BN.uXHR.Form.apply(this);
-});
-$quantityUpdateForms.find('.product-quantity').each(function() {
-var $this = $(this);
-$this.data('initial-value', $this.val());
-});
-$quantityUpdateForms.find('input[type=submit]').on('click', function(e) {
-var $theForm = $(this).closest('form'),
-$eleProductQuantity = $theForm.find('.product-quantity').first(),
-productQuantity = $eleProductQuantity.length ? $eleProductQuantity.val().trim() : '';
-if (productQuantity.length == 0) {
-e.preventDefault();
-/* reset to the initial quantity if the user tried to submit an empty value */
-if ($eleProductQuantity.length && $eleProductQuantity.data('initial-value')) {
-$eleProductQuantity.val($eleProductQuantity.data('initial-value'));
-}
-}
-});
-$quantityUpdateForms.on('submit', function() {
-var $this = $(this),
-$miniCartItem = $this.parents('#miniCart');
-$spinner.appendTo($miniCartItem);
-}).on('amplifiFormSuccess', function(e, response) {
-// check to shopping bag reload flag is on page
-// if shopping bag is updated in dropdown and page
-// contains the items, it must be refreshed
-if ($("#shoppingBagReloadFlag").length){
-consoleLog("Reload Page to update shopping bag.");
-location.reload(true);
-} else {
-$('#miniCartItems .miniCartItems-list').load(webContextRoot+"/checkout/includes/get-mini-cart-commerce-items.jsp", miniCartEvents);
-$('#subtotalLine .subtotal-amount').html('$'+response.data.subtotal);
-$('#subtotalLine .item-count').html('('+response.data.totalQuantity+' items)');
-$('#bagTotal').html(response.data.totalQuantity);
-if(response.data.totalQuantity < 1) {
-loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true);
-}
-}
-//Adobe Analytics: updates cart object
-updateAnalyticsCart();
-$spinner.remove();
-}).on('amplifiFormError', function(e, response) {
-$spinner.remove();
-});
-}
-function loadHeaderElement($container, frag, miniCartLoaded) {
-$.ajax({
-url: frag,
-cache: false,
-type: "get"
-}).done(function(data) {
-$container.html(data);
-if (miniCartLoaded) {
-updateMiniCartCount($('#miniCartQuantityVal').val());
-miniCartEvents();
-}
-});
-}
-function displayHeaderFooterData(dataObj) {
-try {
-if(typeof dataObj != 'undefined' && dataObj != '') {
-//set login status variables
-if(typeof BN != 'undefined') {
-BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
-BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
-} else {
-$(document).ready(function() {
-BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
-BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
-});
-}
-//populate sign in/account links data
-$('#authBar').html(dataObj.signInHtml);
-$('#myAccountMenu').html(dataObj.accountLinksHtml);
-updateMiniCartCount(dataObj.cartQuantity);
-HEADERLOADED = true;
-HEADERDATA = '';
-$("#myAccountMenu").click(function(e) {
-if($(e.target).attr('id') == 'myAccountLink')
-e.preventDefault();
-$("#myAccountLinks").toggleClass("showMyAccountLinks");
-});
-}
-} catch(err) {
-console.log(err);
-}
-}
-function loadEmailSignUp() {
-// check for email signup class in CQ template
-if ($(".global-footer-email-signup").length){
-// load email signup form
-$(".global-footer-email-signup").load("/includes/email-signup.jsp", function(){
-// bind form to framework
-var $form = $('#emailSignupForm');
-BN.Validate.Listen($form);
-BN.uXHR.Form.apply($form);
-// success action
-$('#emailSignupForm').on('amplifiFormSuccess', function() {
-$('#emailSignupDiv').html("<span>Thank you for submitting your email address.</span>");
-$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
-}).on("amplifiFormError",function(event,err,xhr,status,msgs){
-var errors = msgs.items;
-BN.Validate.DisplayErrors(this, errors);
-$form.find('input[type=text]').addClass('user-error');
-$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
-}).on("amplifiFormBeforeSubmit",function(){
-consoleLog("Calling displaySpinner");
-$form.find('input[type=text]').removeClass('user-error');
-$('.global-footer-email-signup').append($('<div/>').addClass('mini-cart-spinner'));
-});
-});
-}
-}
-//load header elements for akamai caching
-//SIGN IN Links, PTA Link, EMAIL SIGN UP, CART DETAILS
-function loadDynamicHeaderElements(callback) {
-$.ajax({
-url: '/xhr/header-footer-data.jsp',
-cache: false,
-type: "get",
-dataType: 'json'
-}).done(function(data) {
-HEADERDATA = data;
-HEADERLOADED = false;
-if($('div#shoppingBag').length) {
-displayHeaderFooterData(HEADERDATA);
-} else {
-$(document).ready(function() {
-displayHeaderFooterData(HEADERDATA);
-});
-}
-});
-$(document).ready(function() {
-loadEmailSignUp();
-loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true);
-});
-}
-</script>
+<link href="http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges.min.css?v=07012016a&v=09" rel="stylesheet" type="text/css"/>
  
-<link rel="canonical" href="http://www.barnesandnoble.com/b/books/_/N-29Z8q8">
-<link rel="alternate" media="only screen and (max-width: 640px)" href="http://www.barnesandnoble.com/mobile/b/books/_/N-29Z8q8">
+<script src="http://ra-js.bn-web.com/static/js/vendor/jquery-1.8.3.min.js?vra"></script>
  
+ 
+<script src="http://ra-js.bn-web.com/static/./js/vendor/es5.js?vra"></script><script src="http://ra-js.bn-web.com/static/./js/vendor/html5shiv.js?vra"></script><script src="http://ra-js.bn-web.com/static/./js/vendor/selectivizr-min.js?vra"></script><script src="http://ra-js.bn-web.com/static/./js/vendor/jquery.ba-postmessage.min.js?vra"></script><script src="http://ra-js.bn-web.com/static/js/vendor/js-webshim-1.15/dev/extras/modernizr-custom.js?vra"></script>
+<script src="http://ra-js.bn-web.com/static/js/vendor/js-webshim-1.15/dev/polyfiller.js?vra"></script>
+ 
+  
+<script src="http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/bn-cartridges-js.min.js?v=v=06302016&v=09" type="text/javascript"></script>
+<script>window['adrum-start-time'] = new Date().getTime();</script>
+<link rel="canonical" href="http://www-ra-test.barnesandnoble.com/h/get-pop-cultured">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://www-ra-test.barnesandnoble.com/mobile/h/get-pop-cultured">
+</head>
 
-<!-- <link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600" rel="stylesheet"> -->
+
+
+
+
+<!-- <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,500,700,600" rel="stylesheet"> -->
 
 <!-- 
  <link rel="stylesheet" href="../../assets/build/css/cms.min.css" type="text/css" media="screen"/>
  -->
 
-
-
-
+ 
+<!--   
 
  <link rel="stylesheet" href="../../assets/build/css/bn-cartridges.min.css" type="text/css" media="screen"/>
 
+http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/2016/bn-cartridgesRESKIN.min.css?v=92116
+ -->
+<link rel="stylesheet" href="../../../assets/build/css/bn-cartridgesRESKIN.min.css" type="text/css" media="screen"/>
+
+
+<script type="text/javascript" src="../../../assets/build/js/bn-cartridges-js.min.js"></script>
+
+
+
+
 
  
-<script type="text/javascript" src="../../assets/build/js/bn-cartridges-js.min.js"></script>
-
-
-
-
-
-
-
-
-</head>
 
 <!--[if IE 8]>         <body  class="landingPage lt-ie9"> <![endif]-->
 <!--[if IE 9]>         <body  class="landingPage ie9"> <![endif]-->
@@ -339,70 +145,8 @@ loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping
 
 
 
-
-
-
-<!-- 
-
-<section id="categoryHeaderContainer">
-	<h1 class="persona-main-hdr">Mother's Day Gift Guide</h1>
-	<h2 class="persona-main-hdr">Perfect Gifts for Every Mom</h2>
-</section>
-
- -->
-
  
-
-
-<!-- content start --> 
-
-<!-- 
-
-
-http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges.min.css?v=1a
-http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css?v=1a
-
-
  
-http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/2016/testCSSdesk.css?v=test
-
-http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/2016/testCSSMobile.css?v=test
- 
-
-
- -->
- 
- <style type="text/css">
-
-
-
-@media only screen and (max-width : 699px) {
-
- 
-
-.social-icons {display:none;}
-}
-
-
- </style>
-
-<!-- 
-BN Readouts modules for storefronts
-
-
-http://jira.hq.bn-corp.com/browse/PROD-4239
- -->
-http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css//2016/test-cartridge.css?v=x
-
-http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css//2016/test-cartridge-mobile.css?v=x
-
-
-  
- 
- <!-- 
-/content/ccr/h/special-collections/get-pop-cultured/2016/hero1600.use.html
-  -->
-
  
 <div class="hero1600 clearer"> 
 <!--  if H1 & H2 are entered 
@@ -419,39 +163,22 @@ http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css//2016/test-ca
         title="Get Pop-Cultured with Barnes &amp; Noble" />
         <noscript><img src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/get-pop-culture/2016/Events_GPC_LP_Hero_DT_v2b.jpg" 
         alt="It's Back! Get Pop-Cultured with Barnes &amp; Noble" title="Get Pop-Cultured with Barnes &amp; Noble" /></noscript>
-    </h1>  
-    <script type="text/javascript">  
-    var testMobile = document.getElementsByClassName("main-body");  
-    if (testMobile.length > 0){
+    </h1>   
+    <script type="text/javascript">
+    var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
+    if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com") {isMobile = true;}
+    if ( isMobile ){
       document.getElementById("eventHero").src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/get-pop-culture/2016/Events_GPC_LP_Hero_M_v2c.jpg";
     }else{
       document.getElementById("eventHero").src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/get-pop-culture/2016/Events_GPC_LP_Hero_DT_v2b.jpg";
     }
-    </script> 
+    </script>  
 </div>
   
 
 
-<!-- 
-
-Events_GPC_LP_Hero_M_v2c.jpg
-
-
-
-/content/ccr/h/gs/dev/bfest/billboard1600.use.html 
-
-
-
-/content/dam/ccr/h/events/get-pop-culture/2016
-
-/content/dam/ccr/h/events/get-pop-culture/2016/Events_GPC_LP_Hero_M.jpg
-//content/dam/ccr/h/events/get-pop-culture/2016Events_GPC_LP_Hero_DT.jpg
-
--->
-
-
-
-
+ 
+ 
 
 <!-- 
 /content/ccr/h/special-collections/get-pop-cultured/2016/event-intro.use.html
@@ -461,15 +188,19 @@ Events_GPC_LP_Hero_M_v2c.jpg
  -->
 <!-- event-intro -->
     <div class="event-intro clearer"> 
-      <h2>Join us in Stores July&nbsp;6th &ndash; August&nbsp;7th</nobr></h2>
+      <h2>Join us in Stores July&nbsp;6th &ndash; August&nbsp;7th </h2>
+      <h3> <i>Finding Dory</i> <br>July&nbsp;6th &ndash; August&nbsp;7th </h3>
       <p>
         It’s time for Get Pop-Cultured, Barnes &amp; Noble’s annual celebration of fanboys, fangirls, and pop-culture. From <i>Finding Dory</i> to Star Wars&trade;, DC&trade; to Marvel&reg;, Pokémon&trade; to Comic Convention Collectibles, and Manga to the return of Harry Potter, your local B&amp;N store has you covered. Come in to experience an entire month of family-friendly activities, games, giveaways (while supplies last), trivia, special promotions, cosplay, and more!  Check&nbsp;with your local&nbsp;store for details.
+      </p>
+      <p> MMMMMMM XXXXXXX MMMMMMMMM <BR>Come in to experience an entire month of family-friendly activities, games, giveaways (while supplies last), trivia, special promotions, cosplay, and more!  Check&nbsp;with your local&nbsp;store for details.
       </p> 
       <div class="event-intro-links clearer">
-        <!-- 
+     
         <a class="event-intro-link" href="/h/b-fest-teen-book-festival/events" onclick="set_cookie('bfest_intro-copy-link1-bfest-flyer_see-whos-joining-us-at-b-fest_button');" target="_blank">See who's joining us at </a> 
-          -->
+ 
         <a class="event-intro-link locator" href="http://stores.barnesandnoble.com/events?name=Get%20Pop-Cultured&amp;storeFilter=all&amp;searchText=&amp;view=events2" onclick="set_cookie('event_event-intro_discover-events-near-you_button');">Discover events near you</a>   
+        <a class="event-intro-link video" href="http://stores.barnesandnoble.com/events?name=Get%20Pop-Cultured&amp;storeFilter=all&amp;searchText=&amp;view=events2" onclick="set_cookie('event_event-intro_discover-events-near-you_button');">Discover events near you</a>   
       </div>
     </div>
 
@@ -479,14 +210,12 @@ Events_GPC_LP_Hero_M_v2c.jpg
 
 
 
-<!-- 
-
+<!--  
 /content/ccr/h/special-collections/get-pop-cultured/2016/event-info.use.html 
 
 /content/ccr/h/special-collections/get-pop-cultured/2016/7-1-event-info.use.html
 
-/content/ccr/h/special-collections/get-pop-cultured/2016/7-21-event-info.use.html
-
+/content/ccr/h/special-collections/get-pop-cultured/2016/7-21-event-info.use.html 
  -->
  
 
@@ -1500,220 +1229,35 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-11110821-1', {'cookieDomain': 'barnesandnoble.com'});
 ga('send', 'pageview');
 </script>
-<script src="//js.js-bn.com/static/release/js/vendor.js?v2.7.6"></script><script src="//js.js-bn.com/static/release/js/contrib.js?v2.7.6"></script><script src="//js.js-bn.com/static/release/js/modal.modals-browse.js?v2.7.6"></script><script>
+<script src="http://js.js-bn.com/static/release/js/vendor.js?v2.7.6"></script><script src="http://js.js-bn.com/static/release/js/contrib.js?v2.7.6"></script><script src="http://js.js-bn.com/static/release/js/modal.modals-browse.js?v2.7.6"></script><script>
 BN.Validate.SetAllMessages(
 { }
 );
 </script>
-<script src="//js.js-bn.com/static/release/js/bn.js?v2.7.6"></script><script>
+<script src="http://js.js-bn.com/static/release/js/bn.js?v2.7.6"></script><script>
 $.webshims.polyfill('es5 forms forms-ext');
 </script>
 <script type="text/javascript"
-src="//js.js-bn.com/static/js/sections/search/search.js?v2.7.6"></script>
+src="http://js.js-bn.com/static/js/sections/search/search.js?v2.7.6"></script>
 <script type="text/javascript"
-src="//js.js-bn.com/static/js/vendor/jquery.scrollpane.min.js?v2.7.6"></script>
+src="http://js.js-bn.com/static/js/vendor/jquery.scrollpane.min.js?v2.7.6"></script>
 <script type="text/javascript"
-src="//js.js-bn.com/static/js/vendor/jquery.mousewheel.js?v2.7.6"></script>
+src="http://js.js-bn.com/static/js/vendor/jquery.mousewheel.js?v2.7.6"></script>
 <script type="text/javascript"
-src="//js.js-bn.com/static/js/sections/pdp/swfobject2.js?v2.7.6"></script>
+src="http://js.js-bn.com/static/js/sections/pdp/swfobject2.js?v2.7.6"></script>
 <script type="text/javascript"
-src="//js.js-bn.com/static/js/sections/pdp/kitcloud.js?v2.7.6"></script>
+src="http://js.js-bn.com/static/js/sections/pdp/kitcloud.js?v2.7.6"></script>
 <script type="text/javascript"
-src="//js.js-bn.com/static/js/sections/pdp/flashdetect.js?v2.7.6"></script>
+src="http://js.js-bn.com/static/js/sections/pdp/flashdetect.js?v2.7.6"></script>
 
-
-
-
-
-<script type="text/javascript">
-
-
- 
-
-</script>
 
 
 
  
-<script type="text/javascript">
-(function() {
-function keynload() {
-var s = document.createElement('script');
-s.type = 'text/javascript';
-s.async = true;
-s.src = "https://d1wscoizcbxzhp.cloudfront.net/377320.js";
-s.onload = function() {
-BOOMR.init({
-beacon_url: 'https://rum.keynote.com/rum.png',
-autorun: true
-});
-}
-s.onreadystatechange = function() {
-if ( "loaded" === s.readyState || "complete" === s.readyState ) {
-s.onload();
-}
-}
-var sc = document.getElementsByTagName('script')[0]; sc.parentNode.insertBefore(s,sc);
-};
-if (window.attachEvent) {
-window.attachEvent('onload', keynload);
-} else {
-window.addEventListener('load', keynload, false);
-}
-})();
-</script>
-<script>
-
-$(document).ready(function(){
-
-if (typeof s_setP !== 'undefined') {
-
-s_setP( 'digitalData.page.attributes.channel', 'store fronts' );
-
-$(document).on('click', 'form[id^=frmUpdateQty_mini] .update-link', function(e) {
-var $this = $(this);
-analyticsShoppingCart($this);
-});
-
-}
-});
-
-
-
-</script>
-<script type="text/javascript">_satellite.pageBottom();</script>
 </body>
 </html>
 
-
-
-7/10 Carousel EANs
-9780425286784 Bloodline (B&N Exclusive Edition) (Star Wars)
-9780425286852 Life Debt: Aftermath (B&N Exclusive Edition) (Star Wars)
-9781419717802 Art of Star Wars: The Force Awakens
-9781465437853 STAR WARS ABSOLUTELY EVERYTHIN
-9781484775844 FORCE AWAKENS JUNIOR NOVEL DEL
-9781484741429 STAR WARS ABC 3PO
-9780736434911 STAR WARS THE FORCE AWAKENS ST
-9781616613761 Fantasy Flight X-wing Game
-0849803096182 POP STAR WARS: EP7 - REY (W/ LIGHTSABER)
-9781616619787 X-Wing Starfield Playmat
-0851897003755 Sphero BB-8 App-Enabled Droid
-0812771025485 Utapau Clone Trooper (212th Attack Battalion) ArtFX+ Statue Exclusive
-0786936849769 Star Wars the Force Awakens
-0024543876243 Star Wars Trilogy Episodes IV - VI
-0050087342166 Star Wars: The Force Awakens [Original Motion Picture Soundtrack] [2 LP Laser Etched w/Holograms]
-0050087343149 Star Wars: The Force Awakens [Original Motion Picture Soundtrack] [2 LP Picture Disc]
-0889853324910 Star Wars Episode IV: A New Hope [2 LP Gold Vinyl]
-0889853346615 Star Wars - Episode V: The Empire Strikes Back [2 LP Gold Vinyl]
-0889853346714 Star Wars - Episode VI: Return Of The Jedi [Gold Vinyl]
-0888750874511 Star Wars: The Ultimate Vinyl Collection
-8051272891034 Moleskine Limited Edition Star Wars Luke Skywalker Large Ruled Hardcover Notebook - B&N Exclusive
-8051272891027 Moleskine Limited Edition Star Wars Darth Vader Large Ruled Hardcover Notebook - B&N Exclusive
-0041205666387 Star Wars Funtainer Thermal Bottle 12 oz. 
-
-9780425286784
-9780425286852
-9781419717802
-9781465437853
-9781484775844
-9781484741429
-9780736434911
-9781616613761
-0849803096182
-9781616619787
-0851897003755
-0812771025485
-0786936849769
-0024543876243
-0050087342166
-0050087343149 
-0889853324910
-0889853346615
-0889853346714
-0888750874511
-8051272891034
-8051272891027
-0041205666387
-
-
-7/18 carousel
-9781338131369 B&N Exclusive DELUXE ESSNTL HDBK POK�MON
-0820650800917 Pokemon – Mythical Shaymin Pin Box
-0820650801525 Pokemon Break Evolution Box
-0820650801112 Pokemon Red & Blue Collection
-0700304046215 MONOPOLY: Pokemon
-0820650801501 Pokemon TCG: Zygarde Figure Collection Box
-0053941185244 Tomy Pokemon Action Pose Figure 3 Pack
-0782009243991 Pokemon: Johto League Champions - The Complete Collection
-0782009244417 Pokémon the Movie: 2000
-0782009244400 Pokémon: the First Movie
-0782009244189 Pokemon The Series: Xy Kalos Quest Set 1
-
-9781338131369
-0820650800917
-0820650801525
-0820650801112
-0700304046215
-0820650801501
-0053941185244
-0782009243991
-0782009244417
-0782009244400
-0782009244189
-
-
-7/18 Preview link
-Pokemon carousel
-http://prodny-preview.bn-web.com/h/get-pop-cultured?Endeca_user_agent=&Endeca_date=2016-07-17T23%3A30&Endeca_user_segments=
-
-http://www.barnesandnoble.com/w/toys-games-pokemon-tcg-break-evolution-box-featuring-ho-oh-lugia/29947533?ean=0820650801525
-
-http://www.barnesandnoble.com/w/toys-games-pokemon-tcg-red-blue-collection-venusaur-ex/29947532?ean=0820650801112
-
-
-
-
-
-7/20 Preview
-DC Comics Text Banner and Carousel
-http://prodny-preview.bn-web.com/h/get-pop-cultured?Endeca_user_agent=&Endeca_date=2016-07-20T23%3A30
-
-
-7/20  DC Comics
-9781401240455 Preacher Book One
-9781401235444 Suicide Squad Vol. 1: Kicked in the Teeth (The New 52)
-9781401216672 Batman: The Killing Joke
-9781401225759 Sandman, Volume 1: Preludes and Nocturnes (New Edition)
-9781401232597 Batman: The Long Halloween
-9781401237554 Fables, Volume 1: Legends in Exile (New Edition)
-0887961282665 Mattel DC Super Hero Girls
-0887961334302 Mattel DC Super Hero Girls
-0887961285734 Mattel DC Super Hero Girls
-0817989017208 Wonder Woman Uniform Ceramic Mug with Glitter 14 oz
-0817989018168 Batman Logo Ceramic Mug with Laser 14oz.
-8051272890129 Moleskine Batman Large Ruled Hardcover Notebook - B&N Exclusive
-0883929447442 Batman v Superman Dawn of Justice
-0794043188510 Batman v Superman Vinyl Soundtrack
-0883929520558 LEGO Justice League: Gotham City 
-
-
-9781401240455
-9781401235444
-9781401216672
-9781401225759
-9781401232597
-9781401237554
-0887961282665
-0887961334302
-0887961285734
-0817989017208
-0817989018168
-8051272890129
-0883929447442
-0794043188510
-0883929520558
-
+ 
 
 
 

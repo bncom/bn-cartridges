@@ -14,6 +14,17 @@
  
     $(function() { //document.ready  
 
+ 
+		// initialization of the MakerFaire eventCarousel / mobile
+		$('#ec-carouselEventsVideo').carouFredSel({
+		    next: {
+		      button: ".ec-carousel-forward"
+		    },
+		    prev: {
+		      button: ".ec-carousel-backward"
+		    }
+		});
+		$('a.mf-cta').off(); // unbind cta links just in case
 
 
 /*
