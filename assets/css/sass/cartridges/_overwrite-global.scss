@@ -14,14 +14,15 @@ body { overflow-x: hidden; }
 
 .main-content { 
   section#hotBooksWithDesc .caroufredsel_wrapper,
-  section#hotBooks .caroufredsel_wrapper {width:100% !important}
+  section#hotBooks .caroufredsel_wrapper,
+  section.blog-rss-feed {width:100% !important}
 
   section#hotBooksWithDesc,
   section#hotBooks {width:100%; border-top:1px solid #e7e6e4; box-shadow: none; margin-top:42px;padding:40px 0 0;}
   section h2.module-hdr,
-  section h2.event-hdr, 
   section#hotBooksWithDesc h2,
   section#hotBooks h2 {font-size:32px; line-height:1;text-align:center;margin-bottom:35px;} 
+  section h2.event-hdr {font-size:30px; font-family: Poynter,Georgia,serif; font-weight: 600; line-height:1;text-align:center;margin-bottom:29px;} 
    /* are we adjusting the event templt headers above"? */
  section h2.module-hdr{font-size:30px; margin-bottom:40px; }
 

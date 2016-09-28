@@ -8,16 +8,16 @@
   display:inline-block;
   *float:left;
   margin-left:8px; 
-  width:79px; height:74px; 
+  width:65px; height:65px; 
   overflow:hidden; 
-  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/social/socialSprite.jpg) no-repeat; 
-  background-position:0 0; 
+  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png) no-repeat; 
+  background-position:-10px -10px; 
   vertical-align:middle;
 }
-.event-social-link.facebook:hover { background-position:0 -81px;}
-.event-social-link.twitter { background-position:-79px 0 ;}
-.event-social-link.twitter:hover { background-position: -79px -81px}
-.event-social-link.instagram { background-position:-158px 0 }
-.event-social-link.instagram:hover { background-position:-158px -81px;}
+.event-social-link.facebook:hover { background-position:-10px -81px;}
+.event-social-link.twitter { background-position:-80px -10px;}
+.event-social-link.twitter:hover { background-position: -80px -81px}
+.event-social-link.instagram { background-position:-150px -10px }
+.event-social-link.instagram:hover { background-position:-150px -81px;}
 
  

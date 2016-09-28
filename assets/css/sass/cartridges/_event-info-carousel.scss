@@ -1,91 +1,122 @@
+$calendar-pod-height:235px; 
 
 .card a:hover, .card a:focus, .card a:hover {
   text-decoration: none;
 }
 
-.calendar-bottom-wrapper 
-.caroufredsel_wrapper {
+.calendar-bottom-wrapper .caroufredsel_wrapper {
   margin: 0 auto !important;
+  width: 745px !important;
 }
 
 .calendar-bottom-wrapper {
- margin: 0 auto 30px;
+  margin: 0 auto 30px;
   position: relative;
-  width: 780px;
+  width: 820px;
 }
 
 .calendar-bottom {
   display: block;
-  width: 720px;
-  height: 224px;
+  width: 736px;
+  height: $calendar-pod-height;
   overflow: hidden;  
 }
 
 .calendar-bottom-content {
   float: left;
-  height: 224px;
-  margin: 0 7px;
-  width: 231px;
+  height: $calendar-pod-height;
+  margin: 5px 5px;
+  width: 238px;
 }
 
-/*.calendar-bottom-content.current {
-  border: 4px solid #e7e6e4;
-  padding: 9px 0 0;
-}
+ 
 
-.calendar-bottom-content:hover {
-  border: 4px solid #e7e6e4;
-  padding: 9px 0 0;
-}*/
-
-.card-ref.current .card-image, 
+//.card-ref.current .card-image, 
 .card-ref.ended span .card-image {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  // opacity: 0.6;
+  // filter: alpha(opacity=60); 
+-webkit-filter: grayscale(1);
+-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
-.card-ref.current span.cardimage, .card-ref.ended span.cardimage  {
-  background-color: #000000;
+.card-ref.current span.cardimage, 
+.card-ref.ended span.cardimage  {
+  // background-color: #000000;
   display: inline-block;
-  height: 142px;
-  width: 170px;
+  height: 150px;
+  max-width: 178px;
 }
 
-.card-ref.current  .card-image {
+.card-ref.current .card-image {
   background-color: #000000;
 }
 .card-image {
-  height: 142px;
-  max-width: 170px;
+  height: 150px;
+  max-width: 178px;
 }
 
-.card-ref:hover, .card-ref.current,  .card-ref.ended.current,  .card-ref.ended.current:hover {
-  border: 4px solid #e7e6e4;
-  padding: 9px 0 0;
-  color: #000;
-}
+
 .card-ref {
-  border: 1px solid #e7e6e4;
+  border: 1px solid #ccc;
   display: block;
-  height: 224px;
-  padding: 12px 0 0;
-  width: 232px;
+  height: $calendar-pod-height;
+  padding: 20px 0 0;
+  width: 238px;
   color: #000;
 } 
-.card-ref.ended:hover, .card-ref.ended {
+.card-ref.ended:hover, 
+x.card-ref.ended {
   // background-color: #e5e5e5;
-  border: 1px solid #e7e6e4;
- // color: #d63026;
+  border: 1px solid #ccc;
+ //  color: #d63026;
   padding: 12px 0 0;
 }
-.card {
-  text-align: center;
+
+.card-ref.current{   
+  border: 4px solid #3D5B8B;
+  padding: 17px 0 0;
+  color: #3E6DB5;
+  background-color:#F2F2F2;
+  }
+
+.card-ref:hover, 
+.card-ref.ended:hover, 
+.card-ref.ended.current,  
+.card-ref.ended.current:hover {
+  border: 4px solid #3D5B8B;
+  padding: 17px 0 0;
+  color: #3D5B8B;
 }
 
+
+
+.card-ref:focus, 
+.card-ref.ended:focus,  
+.card-ref.ended.current:focus {
+  border: 4px solid #3D5B8B;
+  padding: 17px 0 0;
+  color: #3D5B8B;
+  background-color:#F2F2F2;
+  -webkit-box-shadow: 0 0 5px 5px rgba(60,109,181,0.3);
+     -moz-box-shadow: 0 0 5px 5px rgba(60,109,181,0.3);
+          box-shadow: 0 0 5px 5px rgba(60,109,181,0.3);
+}
+.card-ref.current:focus {   
+  border: 4px solid #3D5B8B;
+  padding: 17px 0 0;
+  color: #3E6DB5;  
+  background-color:#F2F2F2;
+  -webkit-box-shadow: 0 0 5px 5px rgba(60,109,181,0.3);
+     -moz-box-shadow: 0 0 5px 5px rgba(60,109,181,0.3);
+          box-shadow: 0 0 5px 5px rgba(60,109,181,0.3);
+}
+.card { text-align: center;}
+
 a .card-title {
-  font-family: Milo;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.75;
   display: block;
 }
 
@@ -96,43 +127,52 @@ a .card-title {
 a .card-date {
   display: block;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 300;
+  line-height: 1.2;
   margin: 0;
   text-align: center;
 }
-div.ec-carousel-backward {
-  background-image: url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/btn_prev_carousel_green.png");
-}
+a:hover .card-title,a:hover .card-date {text-decoration: underline;}
 
-div.ec-carousel-forward {
-  background-image: url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/btn_next_carousel_green.png");
-}
 
-.ec-forward.ec-carousel-forward.disabled, .ec-backward.ec-carousel-backward.disabled {
-  display: none !important;
-}
 
-.calendar-bottom-wrapper div.ec-carousel-backward, .calendar-bottom-wrapper div.ec-carousel-forward {
- top: 25%;
-}
+// .calendar-bottom-wrapper .ec-carousel-backward, 
+// .calendar-bottom-wrapper .ec-carousel-forward {
+//  top: 25%;
+// }
 .ec-carousel-forward, .ec-carousel-backward {
     cursor: pointer;
-    height: 86px;
+    height: 47px;
     position: absolute;
     top: 35%;
-    width: 49px;
-    z-index: 99;
-}
-.ec-carousel-forward {
+    width: 33px;
+    z-index: 99;  
+    background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;      
+} 
+.ec-carousel-backward {  
+  background-position: -215px 0;
+} 
+.ec-carousel-forward {  
+  background-position: -238px 0;
   right: 0;
 }
+.ec-carousel-backward:hover,.ec-carousel-backward:focus {  
+  background-position: -215px -38px; outline:0 none;
+}
+
+.ec-carousel-forward:hover,.ec-carousel-forward:focus {  
+  background-position: -238px -38px; outline:0 none; 
+}
+
+.ec-forward.ec-carousel-forward.disabled, .ec-backward.ec-carousel-backward.disabled,
 .ec-forward.carousel-forward.disabled, .ec-backward.carousel-backward.disabled {
   display: none !important;
 }
 
-.calendar-bottom-wrapper div.carousel-backward, .calendar-bottom-wrapper div.carousel-forward {
- top: 25%;
-}
+// .calendar-bottom-wrapper .carousel-backward, 
+// .calendar-bottom-wrapper .carousel-forward {
+//  top: 25%;
+// }
 
 
 

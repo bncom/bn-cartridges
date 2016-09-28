@@ -22,9 +22,13 @@
 		    },
 		    prev: {
 		      button: ".ec-carousel-backward"
-		    }
+		    },
+		    auto: {
+				play: false
+			}
 		});
 		$('a.mf-cta').off(); // unbind cta links just in case
+
 
 
 /*

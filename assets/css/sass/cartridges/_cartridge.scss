@@ -25,14 +25,13 @@
   color: #044D77;
   font-size: 15px;
   line-height:1;
-  margin: 26px 10px 0;
+  margin: 26px 8px 0;
   display: inline-block;
   *float: left;
-
 }
 .event-intro {
   .event-cta,.event-intro-link { 
-    padding: 12px 16px;
+    padding: 12px 16px 14px;
     text-transform: uppercase; 
      /* create sprite */
     &:hover { background: none; background-color:#3D6DB5;color: #fff; } 
@@ -55,37 +54,28 @@
 
     }
     &.video:before {  
-      padding-left:32px; 
+      padding-left:30px; 
       background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
-      background-position: -9px -242px
+      background-position: -11px -242px
     } 
     &.video:hover:before {
-      padding-left:32px; 
+      padding-left:30px; 
       background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
       background-position: -39px -242px;
     }
   }
 }
-/*
 
 
-
-http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/Store_Locator_Graphic_LandingPage.png //12px 9px;
-url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/EventsLocator_Icon_Rollover.png") no-repeat scroll 15px 10px;
-
-
-http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/2016/bn-cartridgesRESKIN-js.js?test=09272016
-http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png
-*/
 .event-5050-txt > a:hover,
 .event-intro-link:hover {
   color: #a3bcd9;
   border: 1px solid #a3bcd9;
   text-decoration: none;
-}
+  background-color:#3D6DB5;color: #fff; } 
 
 .event-border-top{
-  border-top: 1px solid #e7e6e4; 
-  margin-top:42px; 
-  padding-top:40px;
+  border-top: none; 
+  margin-top:0; 
+  padding-top:57px;
 }
