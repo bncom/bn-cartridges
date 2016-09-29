@@ -1,4 +1,5 @@
 #cq-html-renderer,.cq-html-renderer{height:0;width: 0;visibility: hidden;opacity: 0;}
+
 @import "cartridges/overwrite-global";
 @import "cartridges/overwrite-global-mobile";
 .html{position: relative;  clear: left;
@@ -10,7 +11,6 @@
 	@import "partials/reset"; 
 	@import "partials/buttons";
 	@import "partials/shadows";
-
 
 	@import "modules/cms-mainRESKIN";	
  	@import "modules/cms-main-mobile";

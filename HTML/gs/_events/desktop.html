@@ -64,24 +64,14 @@
 label span { -webkit-animation: bugfix infinite 1ms; }
 </style>
 
-
-<!-- 
-
-
-<link href="http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges.min.css?v=07012016a&v=09" rel="stylesheet" type="text/css"/>
-
-
-
-
- --> 
+ 
 <script src="http://ra-js.bn-web.com/static/js/vendor/jquery-1.8.3.min.js?vra"></script>
  
  
 <script src="http://ra-js.bn-web.com/static/./js/vendor/es5.js?vra"></script><script src="http://ra-js.bn-web.com/static/./js/vendor/html5shiv.js?vra"></script><script src="http://ra-js.bn-web.com/static/./js/vendor/selectivizr-min.js?vra"></script><script src="http://ra-js.bn-web.com/static/./js/vendor/jquery.ba-postmessage.min.js?vra"></script><script src="http://ra-js.bn-web.com/static/js/vendor/js-webshim-1.15/dev/extras/modernizr-custom.js?vra"></script>
 <script src="http://ra-js.bn-web.com/static/js/vendor/js-webshim-1.15/dev/polyfiller.js?vra"></script>
  
-  
-<script src="http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/bn-cartridges-js.min.js?v=v=06302016&v=09" type="text/javascript"></script>
+ 
 <script>window['adrum-start-time'] = new Date().getTime();</script>
 <link rel="canonical" href="http://www-ra-test.barnesandnoble.com/h/get-pop-cultured">
 <link rel="alternate" media="only screen and (max-width: 640px)" href="http://www-ra-test.barnesandnoble.com/mobile/h/get-pop-cultured">
@@ -102,18 +92,26 @@ label span { -webkit-animation: bugfix infinite 1ms; }
 
  <link rel="stylesheet" href="../../assets/build/css/bn-cartridges.min.css" type="text/css" media="screen"/>
 
-http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/2016/bn-cartridgesRESKIN.min.css?v=92116
+ 
  -->
+
 <link rel="stylesheet" href="../../../assets/build/css/bn-cartridgesRESKIN.min.css" type="text/css" media="screen"/>
 
 
 <script type="text/javascript" src="../../../assets/build/js/bn-cartridges-js.min.js"></script>
 
 
+<!-- 
 
-
-
- 
+      var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
+      if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com") {isMobile = true;}
+      if ( isMobile ){
+        document.getElementById("eventHero").src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/mastercard/MasterCard_Reskin_Hero-mobile.jpg";
+      }else{
+        document.getElementById("eventHero").src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/mastercard/MasterCard_Reskin_Hero.jpg";
+      }
+       
+  -->
 
 <!--[if IE 8]>         <body  class="landingPage lt-ie9"> <![endif]-->
 <!--[if IE 9]>         <body  class="landingPage ie9"> <![endif]-->
@@ -150,8 +148,9 @@ http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/2016/bn-cartr
 
 
 <!-- main content area -->
-<div   class="main-content clearer html lt-ie9 ">
+<div class="main-content clearer lt-ie9 ">
 
+<div class="html ">
 
 
  
@@ -187,6 +186,23 @@ http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/2016/bn-cartr
 
 
  
+
+
+
+
+
+
+  
+
+  <div class="event-belly-band clearer">
+    <a href="http://www.barnesandnoble.com/h/makerfaire/signup">
+      Calling All Makers! Sign up to be a presenter <br>at your local Barnes &amp; Noble Mini Maker&nbsp;Faire. 
+    </a> 
+  </div>
+ 
+
+
+
  
 
 <!-- 
@@ -761,7 +777,15 @@ http://www.barnesandnoble.com/b/dc-graphic-novels-buy-2-get-the-3rd-free/_/N-2cp
     
 
 
-<!-- content end -->
+
+
+
+
+
+
+<!-- html end -->
+</div>
+<!-- main content end -->
 </div>
 
 

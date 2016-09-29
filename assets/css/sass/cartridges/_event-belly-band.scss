@@ -1,0 +1,38 @@
+
+.event-belly-band { 
+	max-width: 1600px; 
+	position: relative; 
+	top: -5px; 
+	width: 1600px; 
+	left: -318px; 
+	text-align: center; 
+
+	padding: 16px 24px;  
+	background-color: #f9af4c;  
+
+	font-family: "Poynter",Georgia,serif;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 1.5;
+	color: #000;  
+}  
+
+  .event-belly-band a { 
+     font-family: "Poynter",Georgia,serif;
+    font-weight: 600;
+    font-size: 25px; 
+    line-height: 1.5;
+    color: #000; 
+    text-decoration: underline;  
+  } 
+@media screen and (max-width: 850px) { 
+    .event-belly-band {
+	      position: static; width: 100%;
+	    .event-belly-band a { 
+	      font-size: 20px; 
+	      line-height: 1; 
+	  	}
+  	}
+} 
+
+ 

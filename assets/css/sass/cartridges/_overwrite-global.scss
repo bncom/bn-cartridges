@@ -89,25 +89,56 @@ body { overflow-x: hidden; }
 
   .landingPage [id^="book-carousel"] { padding: 0; }
 
-  .cq-module-shadow-top {
+  .cq-module-shadow-top, 
+  .html .cq-module-shadow-top  {
     border-top-color: #e7e6e4;
+    border:none; 
     -webkit-box-shadow: none;
     -moz-box-shadow: none; 
      box-shadow: none;  
-    padding: 40px 0 40px;
+    padding: 0 0 40px 0;
   }
 
   /* expand BNReads pod on the One Column Marketing page */
-  .triple .bnreads-pod { max-width: 29%; width: 29%;  margin-right:60px; } 
+  //.triple .bnreads-pod { max-width: 29%; width: 29%;  margin-right:60px; }  
+  .triple .bnreads-pods { margin: 0 30px; }
+  .triple .bnreads-pod { max-width: 280px; width: 280px;  margin:0 10px; padding:0;} 
   .triple .bnreads-pod:last-of-type {  margin-right:0;} 
+  .triple .bnreads-img-wrap {
+    margin-bottom: 23px;
+    max-height: 158px;
+    max-width: 280px;
+  }
+
   .double .bnreads-pod:last-of-type::before {background: none; }
-  .double .bnreads-pod {width:48%;} 
+  .double .bnreads-pod {width:48%;}
+
+  .bnreads-pod .element-shadow,
+  .bnreads-pod:hover .element-shadow {
+     -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;   
+  }
 
   .bnreads h1 {
     text-align:center;
-    font-size:32px;
-    margin: 10px 0 35px;
+    font-family: "Poynter",Georgia,serif;
+    font-weight: 600;
+    font-size:30px;
+    line-height:1.4;
+    margin: 0 0 25px;
+    width: 100%;
   }
+  .bnreads h3, .html .bnreads h3 { 
+    margin-bottom:7px; 
+  }
+  .bnreads-pod p, .html .bnreads-pod p  { 
+    font-family: "GillSans",Arial,sans-serif;
+    font-weight: 300;
+    font-size:16px;
+    line-height:1.9;
+    margin-bottom: 10px;
+  }
+  
+
   .button-module-more{
     background:none; -pie-background-image: none;
      border:0 none;
@@ -124,7 +155,15 @@ body { overflow-x: hidden; }
   .button-module-more:active  {   
     -webkit-box-shadow: none;-moz-box-shadow: none; box-shadow: none; 
   }
-  .bnreads-pod .aLink {font-weight:normal;}
+  .bnreads-pod .aLink {
+    font-family: GillSans,Arial,sans-serif;
+    font-weight: 500;
+    color:#3D6DB5;
+    text-decoration:none;
+  }
+  .bnreads-pod:hover .aLink,.bnreads-pod:focus .aLink { 
+    text-decoration:underline;
+  }
   .bnreads-pod .element-shadow {border:0 none; border-radius: 0;}
 
 }

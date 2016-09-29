@@ -1,4 +1,5 @@
 #cq-html-renderer,.cq-html-renderer{height:0;width: 0;visibility: hidden;opacity: 0;  display: flex;} 
+
 @import "cartridges/overwrite-global";
 .html{ position: relative;  clear: left;
 	* {
@@ -16,4 +17,3 @@
 	@import "modules/textbooks";
 	@import "modules/mastercard";
 }  
-  

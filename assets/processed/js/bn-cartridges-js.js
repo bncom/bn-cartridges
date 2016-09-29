@@ -15,19 +15,7 @@
     $(function() { //document.ready  
 
  
-		// initialization of the MakerFaire eventCarousel / mobile
-		$('#ec-carouselEventsVideo').carouFredSel({
-		    next: {
-		      button: ".ec-carousel-forward"
-		    },
-		    prev: {
-		      button: ".ec-carousel-backward"
-		    },
-		    auto: {
-				play: false
-			}
-		});
-		$('a.mf-cta').off(); // unbind cta links just in case
+
 
 
 
@@ -153,6 +141,20 @@
 		});
 
 		initCarouFredSelect(cfg);
+
+
+		// initialization of the MakerFaire eventCarousel / mobile
+		$('#ec-carouselEventsVideo').carouFredSel({
+		    auto: {
+		        play: true,
+		        timeoutDuration: 3000 
+		    },
+		    scroll: {
+		        items: 1
+		    }
+		});
+		$('a.mf-cta').off();// unbind cta links just in case
+
 
 
  		// ***  End Mobile Only  ***
