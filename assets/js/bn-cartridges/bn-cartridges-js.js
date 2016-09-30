@@ -20,11 +20,11 @@
 
 
 /*
-		// $(window).resize(function(){
+		 $(window).resize(function(){
 
-		// });
+		 });
 
-		// $(window).resize(); 
+		 $(window).resize(); 
 */
 
 		// load adaptive images 
@@ -36,9 +36,12 @@
 		}else{
 		    loadRWDimg('data-img-src-tablet');
 		}
+ 
 
-
-	  if ($('.main-body').length) { // ***  Applies to Mobile Only  *** 
+      var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
+      if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com"){isMobile = true;}
+      if ( isMobile ){ // ***  Applies to Mobile Only  ***  
+	  //if ($('.main-body').length) { // ***  Applies to Mobile Only  ***  removed: class may not be available post SKAVA
 	  	// event carousel for mobile 
 		var initCarouFredSelect = function (cfg) {
 		    // check for carousels
