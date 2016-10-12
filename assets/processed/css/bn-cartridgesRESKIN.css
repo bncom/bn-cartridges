@@ -2667,6 +2667,7 @@ body {
   width: 52px;
   position: absolute;
   right: 0;
+  top: 0;
 }
 .html .cqTextBookSearchSubmit:hover,
 .html .cqTextBookSearchSubmit:focus {

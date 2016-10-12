@@ -47,6 +47,7 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
     width: 52px;
     position: absolute;
     right: 0;
+    top:0; 
 }
 .cqTextBookSearchSubmit:hover, 
 .cqTextBookSearchSubmit:focus {
