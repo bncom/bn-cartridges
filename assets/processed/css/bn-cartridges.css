@@ -310,11 +310,50 @@ body {
   /*Font sizes initiated on coupon page*/
   /* My Favorite Teacher */
   /* end My Favorite Teacher  */
-  /*Gift Cards*/
+  /* OLD Gift Cards
+  .gc-section {margin: 0 0 10px 0;  padding: 0; font-size: 20px;line-height: 1.3; font-family: milo; font-weight: normal; }
+  .gc-item {
+    display:inline-block; 
+    vertical-align:top; 
+    max-width: 183px; 
+    padding: 8px 8px 20px 8px; 
+    img {  max-width:100%; max-height:105px; }
+    figcaption {  
+      line-height:1; 
+      padding:5px; 
+      font-family: milo; 
+      font-weight: 400;
+    }
+    a {    
+      color: #000;
+      font-family: Milo; 
+      font-size: 15px;
+      display:block;
+      padding:3px;
+      &:hover{ color: #3169a8; text-decoration:none;}
+      &:focus { outline:0 none; border:1px #aaa dotted;padding:2px; 
+        .element-shadow {
+          -webkit-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+          -moz-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+          box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+        } 
+      } 
+    } 
+  } 
+  .gift-card-list h3 {    
+    margin: 20px 0 20px 0; 
+    padding: 20px 0 0 0;     
+    font-family: Milo;
+    font-size: 24px;
+    font-weight: 400;    
+    line-height: 1.5;
+  
+    &:first-of-type{margin-top:0;} 
+  } 
+  */
+  /* 2016 Reskin */
   /*Browse page links*/
   /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
-  /*sub-textbooks mobile*/
-  /*start textbooks subppages*/
   /* end textbooks subppages */
   /*  Put Me In The Story */
   /*  // END Put Me In The Story */
@@ -375,6 +414,15 @@ body {
   }
   */
   /* non flex support */
+  /* Texbooks Landing Page */
+  /*  ISBN LINK */
+  /* ISBN Sample */
+  /* landing page stores */
+  /* Message box */
+  /* Textbooks Store Pages */
+  /* MasterCard header */
+  /* MasterCard  FEATURES */
+  /* MasterCard QUESTIONS */
 }
 .html * {
   -moz-box-sizing: border-box;
@@ -945,10 +993,13 @@ body {
   box-sizing: border-box;
 }
 .html .cq-module-shadow-top {
-  border-top: 1px solid #d1c2a8;
+  border-top: 1px solid #959595;
+  /* 
   -webkit-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-  -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-  box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+    -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+      box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+  */
+  box-shadow: none;
   height: auto;
   padding: 20px 0;
   position: relative;
@@ -957,19 +1008,15 @@ body {
   clear: both;
 }
 .html .module-shadow, .html .element-shadow {
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;
-  -moz-box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;
-  box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;
+  border-width: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 .html .element-shadow {
   cursor: pointer;
 }
 .html .element-shadow:hover {
-  -webkit-box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-  -moz-box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-  box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
+  box-shadow: none;
 }
 .html .hideIt {
   display: none;
@@ -988,6 +1035,12 @@ body {
 }
 .html .underline {
   text-decoration: underline;
+}
+.html .dOnly {
+  display: block;
+}
+.html .mOnly {
+  display: none;
 }
 .html .milo180 {
   font-family: Milo;
@@ -1091,64 +1144,72 @@ body {
 .html .myFavTeacherAwards img {
   max-width: 100%;
 }
-.html .gc-section {
-  margin: 0 0 10px 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 1.3;
-  font-family: milo;
-  font-weight: normal;
+.html .gift-card-list h2,
+.html .gift-card-list h3 {
+  margin: 0px 0 25px 0;
+  padding: 20px 0 0 0;
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.html .gift-card-list h2:first-of-type,
+.html .gift-card-list h3:first-of-type {
+  margin-top: -10px;
+  padding-top: 0;
+}
+.html .gift-card-list h3.cq-module-shadow-top:first-of-type {
+  border: none;
 }
 .html .gc-item {
   display: inline-block;
   vertical-align: top;
-  max-width: 183px;
-  padding: 8px 8px 20px 8px;
+  width: 33%;
+  max-width: 225px;
+  padding: 0;
+  margin-right: 30px;
+}
+.html .gc-item:nth-child(3n) {
+  margin-right: 0;
 }
 .html .gc-item img {
   max-width: 100%;
-  max-height: 105px;
+  max-height: 143px;
 }
 .html .gc-item figcaption {
   line-height: 1;
-  padding: 5px;
-  font-family: milo;
-  font-weight: 400;
+  padding: 6px 5px 50px;
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
 .html .gc-item a {
   color: #000;
-  font-family: Milo;
-  font-size: 15px;
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   display: block;
-  padding: 3px;
+  padding: 0;
 }
 .html .gc-item a:hover {
   color: #3169a8;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .html .gc-item a:focus {
+  color: #3169a8;
+  text-decoration: underline;
   outline: 0 none;
-  border: 1px #aaa dotted;
-  padding: 2px;
+  border-width: 0;
+  padding: 0;
 }
 .html .gc-item a:focus .element-shadow {
-  -webkit-box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-  -moz-box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-  box-shadow: 0 0 7px 1px rgba(49, 105, 168, 0.5);
-}
-.html .gift-card-list h3 {
-  margin: 20px 0 20px 0;
-  padding: 20px 0 0 0;
-  font-family: Milo;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-.html .gift-card-list h3:first-of-type {
-  margin-top: 0;
+  box-shadow: none;
 }
 .html .links-container.browse {
   padding-top: 36px;
+}
+.html .links-container.textbooks.browse:first-of-type {
+  padding-top: 0;
 }
 .html .links-container.browse:first-of-type {
   padding-top: 16px;
@@ -1156,14 +1217,17 @@ body {
 .html .links-container.browse ul {
   margin-bottom: 15px;
 }
+.html .links-container.browse a:hover, .html .links-container.browse a:focus {
+  text-decoration: underline;
+}
 .html .links-container.textbooks > ul > li {
   min-width: 125px;
   padding-left: 20px;
-  width: 20%;
+  width: 19%;
 }
 .html .links-container ul li {
   display: inline-block;
-  line-height: 2;
+  line-height: 1.75;
   vertical-align: top;
   width: 238px;
 }
@@ -1183,230 +1247,12 @@ body {
   border-radius: 5px;
 }
 .html .cms section.module {
-  background-image: -moz-linear-gradient(center bottom, #fff 25%, #fbfbf9 100%);
   border-radius: 4px;
   border-top: 2px solid #fff;
   box-shadow: 0 0 0 1px #d5d2d2;
   font-size: 22px;
   margin: 48px 0 36px 1px;
   position: relative;
-}
-.html .cms .textbook-options {
-  overflow: hidden;
-  padding: 0;
-  border-top: none;
-}
-.html .cms .textbook-options figure {
-  width: 25%;
-  padding: 18px 0;
-  text-align: center;
-  float: left;
-  border-left: 1px #ccc solid;
-  border-top: 2px solid #fff;
-}
-.html .cms .textbook-options a:first-child figure {
-  border-left: none;
-}
-.html .cms .textbook-options figcaption {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000;
-  font-weight: normal;
-}
-.html .cms .textbook-options a {
-  display: block;
-  margin-top: 0;
-}
-.html .cms .textbook-options a .text-link {
-  font-size: 16px;
-}
-.html .cms .textbook-options h3 {
-  margin: 0;
-  font-size: 20px;
-}
-.html section.return-msg h1 {
-  line-height: 1.25;
-  margin: 0.67em 0;
-}
-.html section.return-msg p {
-  line-height: 1.25;
-  margin: 0.67em 0;
-}
-.html section.return-msg {
-  text-align: left;
-  position: relative;
-  z-index: 0;
-  padding: 0px 25px 10px;
-}
-.html section.return-msg img {
-  position: absolute;
-  right: 30px;
-  bottom: 0;
-  z-index: 1;
-}
-.html section.textbooks {
-  border-bottom: none;
-}
-.html .links-container.textbooks > ul > li {
-  padding-left: 20px;
-  width: 20%;
-  min-width: 125px;
-}
-.html .isbn-link-modal {
-  margin-top: 12px;
-}
-.html .BNspotlight .spotlight img {
-  max-width: 100%;
-}
-.html .mobile #mainContent {
-  position: relative;
-  width: auto;
-  max-width: 740px;
-}
-.html .mobile .BNspotlight .block .spotlight {
-  float: none;
-  padding: 0 0 20px 0;
-  width: auto;
-}
-.html .mobile .BNspotlight .block .details {
-  width: auto;
-}
-.html .mobile .BNspotlight .block .spotlight {
-  float: none;
-  padding: 0 0 20px 0;
-  width: auto;
-}
-.html .mobile .BNspotlight .block .spotlight img {
-  margin: 0 4px 4px 0;
-}
-.html #cq-txtBookSearch {
-  margin: 40px auto 40px;
-  position: relative;
-  width: 95%;
-  height: 18px;
-}
-.html #cq-txtBookSearch.txtbkhome {
-  width: 65%;
-  margin: -20px auto 0px;
-}
-.html #cq-txtBookSearch input[type="text"] {
-  background: #fff;
-  background-repeat: no-repeat;
-  background-position: 97%;
-  border: 1px solid #B4B2AC;
-  border-radius: 30px;
-  -webkit-box-shadow: inset 0 4px 12px -1px rgba(0, 0, 0, 0.2), 0 0 0 10px #f4f3ef, 0 0 0 11px #b9b6b2, 0 0 15px 13px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0 4px 12px -1px rgba(0, 0, 0, 0.2), 0 0 0 10px #f4f3ef, 0 0 0 11px #b9b6b2, 0 0 15px 13px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 4px 12px -1px rgba(0, 0, 0, 0.2), 0 0 0 10px #f4f3ef, 0 0 0 11px #b9b6b2, 0 0 15px 13px rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  font-size: 14px;
-  font-weight: normal;
-  height: 36px;
-  line-height: 16px;
-  margin: 0;
-  padding: 0 20px;
-  vertical-align: top;
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  font-weight: bold;
-  color: #000;
-}
-.html #cq-txtBookSearch input[type="text"]:focus {
-  outline: none;
-  border-color: #3069AE;
-}
-.html #cq-txtBookSearch input[type="submit"] {
-  background-color: transparent;
-  background-image: url("http://css.css-bn.com/static/release/img/search_icon.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  height: 36px;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  width: 30px;
-}
-.html #cq-txtBookSearch input::-webkit-input-placeholder {
-  color: #666;
-}
-.html #cq-txtBookSearch input:-moz-placeholder {
-  color: #666;
-}
-.html #cq-txtBookSearch input::-moz-placeholder {
-  color: #666;
-}
-.html #cq-txtBookSearch input:-ms-input-placeholder {
-  color: #666;
-}
-.html .txtbk-form-wrapper {
-  height: 95px;
-}
-.html .txtbk-form-wrapper.txtbkhome {
-  height: 30px;
-}
-.html .txtbk-module {
-  border-bottom: 1px #ccc solid;
-  margin-bottom: 35px;
-}
-.html .txtbk-module:last-of-type {
-  border-bottom: none;
-}
-.html .txtbk-hdr {
-  color: #009000;
-  font-size: 20px;
-  margin: 0 0 15px;
-}
-.html .txtbk-column-main {
-  width: 68%;
-  float: left;
-}
-.html .txtbk-column-main p {
-  font-size: 14px;
-  line-height: 1.75;
-  margin-bottom: 20px;
-}
-.html .txtbk-column-right {
-  width: 205px;
-  float: right;
-}
-.html .txtbk-column-right img {
-  margin-bottom: 20px;
-  max-width: 100%;
-}
-.html .txtbk-bubble-arrow, .html .bubble-arrow {
-  position: relative;
-}
-.html .txtbk-bubble-arrow:before, .html .bubble-arrow:before {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 50%;
-  top: -49px;
-  margin-left: -25px;
-  border: 25px solid;
-  border-color: transparent transparent #b4b2ac transparent;
-}
-.html .txtbk-bubble-arrow:after, .html .bubble-arrow:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 50%;
-  top: -43px;
-  margin-left: -20px;
-  border: 20px solid;
-  border-color: transparent transparent #f4f3ef transparent;
-}
-.html .txtbk-isbn-link-modal {
-  float: right;
-  margin-right: 0px;
-  margin-top: 12px;
-}
-.html .txtbk-isbn-link-modal.txtbkhome {
-  margin-right: 35px;
 }
 .html .pmis {
   max-width: 965px;
@@ -2752,4 +2598,427 @@ body {
     font-size: 20px;
     line-height: 1;
   }
+}
+.html .textbook-hero {
+  position: relative;
+  height: 330px;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+.html .cqTextBookSearch {
+  height: 61px;
+  position: relative;
+  top: -205px;
+  margin: 0 auto;
+  width: 445px;
+  z-index: 2;
+}
+.html .cqTextBookSearch input[type="text"] {
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  height: 60px;
+  padding: 2px 50px 0 20px;
+  position: relative;
+  width: 440px;
+  box-shadow: none;
+  background-image: none;
+  background-color: #fff;
+}
+.html .cqTextBookSearch input[type="text"]:focus {
+  border: 1px solid #346250;
+}
+.html input#searchTextBookBar::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000;
+  opacity: .75;
+}
+.html input#searchTextBookBar::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+  opacity: .75;
+}
+.html input#searchTextBookBar::-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000;
+  opacity: .75;
+}
+.html input#searchTextBookBar::-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+  opacity: .75;
+}
+.html .cqTextBookSearch label {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+}
+.html .cqTextBookSearchSubmit {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") no-repeat 3px -116px;
+  border: none;
+  border-radius: 0;
+  height: 50px;
+  margin: 5px 8px 5px 5px;
+  padding: 0;
+  width: 52px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.html .cqTextBookSearchSubmit:hover,
+.html .cqTextBookSearchSubmit:focus {
+  background-color: #ebe6dc;
+}
+.html .cqTextBookSearch-isbn-link {
+  display: block;
+  position: relative;
+  top: -115px;
+  margin: 0 auto;
+  width: 160px;
+  color: #000;
+}
+.html .cqTextBookSearch-isbn-link:hover,
+.html .cqTextBookSearch-isbn-link:focus,
+.html .cqTextBookSearch-isbn-link:active {
+  text-decoration: none;
+}
+.html .cqTextBookSearch-isbn-link:after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") no-repeat -49px -125px;
+  position: relative;
+  top: 5px;
+  margin-left: 11px;
+}
+.html .cqTextBookSearch-isbn-link:hover:after {
+  background-position: -79px -125px;
+}
+.html .cqTextBookSearch-isbn-link:focus:after,
+.html .cqTextBookSearch-isbn-link:active:after,
+.html .cqTextBookSearch-isbn-link.active,
+.html .cqTextBookSearch-isbn-link.active:after {
+  background-position: -109px -125px;
+}
+.html .cqTextBookSearch-isbn-sample {
+  display: none;
+  position: absolute;
+  /* top:-245px; */
+  bottom: 35px;
+  left: -66px;
+  background-color: #fff;
+  padding: 10px 20px 12px;
+  z-index: 0;
+  border: 1px #ccc solid;
+  text-align: left;
+}
+.html .cqTextBookSearch-isbn-sample .question {
+  font-family: GillSans;
+  font-weight: 500;
+}
+.html .cqTextBookSearch-isbn-sample p {
+  margin: 0 0 3px 0;
+}
+.html .cqTextBookSearch-isbn-sample img {
+  max-width: 350px;
+}
+.html .cqTextBookSearch-isbn-link.active .cqTextBookSearch-isbn-sample,
+.html .cqTextBookSearch-isbn-link:focus .cqTextBookSearch-isbn-sample,
+.html .cqTextBookSearch-isbn-link:active .cqTextBookSearch-isbn-sample {
+  display: block;
+  z-index: 2;
+}
+.html .cqTextBookSearch-isbn-sample:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  /* top: 235px; */
+  bottom: -20px;
+  left: 196px;
+  border: 10px transparent solid;
+  border-top-color: #fff;
+}
+.html .cqTextBookSearch-isbn-sample:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  /* top: 236px; */
+  bottom: -24px;
+  left: 194px;
+  border: 12px transparent solid;
+  border-top-color: #ccc;
+}
+.html .textbook-stores {
+  background-color: #f5f2ed;
+  padding: 30px 0 23px;
+  margin-bottom: 40px;
+}
+.html .textbook-stores a {
+  font-family: GillSans;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  display: block;
+  width: 25%;
+  padding: 0 10px;
+  text-align: center;
+  float: left;
+  border-left: 1px #ccc solid;
+}
+.html .textbook-stores a:first-child {
+  border-left: none;
+}
+.html .textbook-stores a:hover, .html .textbook-stores a:focus {
+  text-decoration: none;
+}
+.html .textbook-stores a:hover .textbook-store-cta,
+.html .textbook-stores a:focus .textbook-store-cta {
+  text-decoration: underline;
+}
+.html .textbook-store-cta {
+  display: block;
+  font-size: 18px;
+  margin-top: 3px;
+  color: #346250;
+}
+.html .textbook-store-hdr, .html .textbook-announcement-hdr {
+  font-family: "Poynter",Georgia,serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.html .textbook-store-hdr:before {
+  content: "";
+  height: 61px;
+  width: 63px;
+  display: block;
+  margin: 0 auto 15px;
+}
+.html .textbook-store-hdr.rent:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -5px -10px no-repeat;
+}
+.html .textbook-store-hdr.used:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -74px -10px no-repeat;
+}
+.html .textbook-store-hdr.new:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -144px -10px no-repeat;
+}
+.html .textbook-store-hdr.buy:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -215px -10px no-repeat;
+}
+.html .textbook-announcement {
+  background-color: #E4E8E3;
+  text-align: center;
+  padding: 25px 10% 23px;
+  margin-bottom: 35px;
+}
+.html .textbook-announcement-hdr {
+  margin-bottom: 15px;
+}
+.html .textbook-announcement-msg {
+  margin-bottom: 20px;
+}
+.html .textbook-announcement-msg p {
+  font: 300 16px/1.618 GillSans,Arial,sans-serif;
+}
+.html .links-container.textbooks > ul > li {
+  min-width: 125px;
+  padding-left: 20px;
+  width: 19%;
+}
+.html .textbook-store-search {
+  margin: 40px 0 60px;
+}
+.html .textbook-store-search .cqTextBookSearch {
+  top: 0;
+  width: auto;
+  margin-right: 30px;
+}
+.html .textbook-store-search .cqTextBookSearch input[type="text"] {
+  width: 100%;
+  border-color: #b4b2ac;
+  background-image: none;
+  background-color: #fff;
+}
+.html .textbook-store-search .cqTextBookSearch input[type="text"]:focus {
+  border: 1px solid #346250;
+  box-shadow: none;
+}
+.html .textbook-store-search .cqTextBookSearch-isbn-link {
+  top: 6px;
+}
+.html .textbook-store-search .cqTextBookSearch-isbn-sample:after {
+  left: 190px;
+}
+.html .textbook-store-search .cqTextBookSearch-isbn-sample:before {
+  left: 188px;
+}
+.html .textbook-topic {
+  margin-bottom: 60px;
+}
+.html .textbook-topic p {
+  line-height: 30px;
+}
+.html .textbook-topic h2 {
+  font-family: "Poynter",Georgia,serif;
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #000;
+  background-color: #F5F2ED;
+  padding: 6px 30px 6px 24px;
+  margin: 0 0 20px -24px;
+}
+.html .textbook-topic h2:after {
+  content: "";
+  height: 40px;
+  width: 46px;
+  display: block;
+  margin: 3px auto;
+  float: right;
+}
+.html .textbook-topic h2.bookstack:after {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") 2px -77px no-repeat;
+}
+.html .textbook-topic h2.truck:after {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -205px -77px no-repeat;
+  width: 60px;
+}
+.html .textbook-topic h2.tag:after {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -54px -77px no-repeat;
+}
+.html .textbook-topic h2.fourteenday:after {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -265px -77px no-repeat;
+}
+.html .textbook-topic h2.piggybank:after {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -150px -77px no-repeat;
+}
+.html .textbook-topic h2.new:after {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -101px -77px no-repeat;
+}
+.html .textbook-topic-item {
+  margin: 14px 0 1px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.html .textbook-topic-item:first-of-type {
+  line-height: 1;
+  margin-bottom: 7px;
+}
+.html .mc-hdr {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: auto;
+}
+.html .mc-hdr [class^=bttn] {
+  margin-top: 15px;
+}
+.html .mc-hdr-main {
+  font-family: Poynter;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+.html .mc-hdr-sub {
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #000;
+}
+.html .mc-hdr sup, .html .mc-features sup {
+  font-family: sans-serif;
+  font-size: 50%;
+  top: -0.75em;
+}
+.html .mc-features {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  margin: 25px 0 50px 0;
+}
+.html .mc-features-group {
+  float: left;
+  width: 50%;
+}
+.html .mc-features-group:first-of-type {
+  border-right: 1px solid #ccc;
+}
+.html .mc-feature {
+  text-align: center;
+  padding: 30px 50px;
+  margin: 0 49px;
+  padding: 30px 0;
+  height: 370px;
+}
+.html .mc-feature:first-of-type {
+  border-bottom: 1px solid #ccc;
+}
+.html .mc-feature-hdr {
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000;
+  margin: 0 0 7px 0;
+}
+.html .mc-feature-hdr.nofee {
+  margin-top: 25px;
+}
+.html .mc-icon:before {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 10px;
+}
+.html .mc-icon.earnrewards:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -9px -182px;
+}
+.html .mc-icon.earn5pct:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -79px -182px;
+}
+.html .mc-icon.earngiftcards:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -149px -182px;
+}
+.html .mc-icon.earnmembership:before {
+  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -219px -182px;
+}
+.html .mc-feature p {
+  font-family: GillSans,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #000;
+}
+.html .mc-questions p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0 0 10px 0;
+}
+.html .mc-questions ul {
+  list-style: disc inside none;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.html .mc-questions li {
+  margin-bottom: 10px;
+}
+.html .mc-questions a {
+  font-family: GillSans;
+  font-weight: 500;
+  font-size: inherit;
+  color: #346250;
 }

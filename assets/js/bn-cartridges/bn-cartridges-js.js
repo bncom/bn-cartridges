@@ -14,10 +14,6 @@
  
     $(function() { //document.ready  
 
- 
-
-
-
 
 /*
 		 $(window).resize(function(){

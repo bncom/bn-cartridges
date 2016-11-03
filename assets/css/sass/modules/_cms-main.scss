@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 .cq-module-shadow-top {
-  border-top: 1px solid #d1c2a8; 
+  border-top: 1px solid #959595;
+  /* 
   -webkit-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
     -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
       box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+  */ 
+  box-shadow: none;
   height: auto;
   padding: 20px 0;
   position: relative;
@@ -16,19 +19,23 @@
   clear:both;   
 }
 .module-shadow {
-  border: 2px solid #ffffff;
-  border-radius: 5px; 
-  -webkit-box-shadow:1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;
-    -moz-box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf; 
-      box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf; 
+  // border: 2px solid #ffffff;
+  // border-radius: 5px; 
+  // -webkit-box-shadow:1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;
+  //   -moz-box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf; 
+  //     box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf; 
+  border-width: 0;
+  border-radius: 0;
+  box-shadow: none; 
 }
 .element-shadow {
   cursor: pointer;
   @extend .module-shadow;
-  &:hover  { 
-    -webkit-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
-      -moz-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);  
-        box-shadow: 0 0 7px 1px rgba(49,105,168,.5); 
+  &:hover  {  
+    // -webkit-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+    //   -moz-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);  
+    //     box-shadow: 0 0 7px 1px rgba(49,105,168,.5); 
+    box-shadow: none; 
   }
 }
 .hideIt {display:none;} 
@@ -36,8 +43,10 @@
 .fLeft{float:left;}
 .fRight{float:right;}
 .centered {text-align: center;}
-.underline {text-decoration: underline}
+.underline {text-decoration: underline; }
 
+.dOnly {display:block;}
+.mOnly {display:none;}
 
 /*Font sizes initiated on coupon page*/
 .milo180{font-family:Milo; font-size:180px;line-height:0.8; letter-spacing: -16px;}
@@ -88,7 +97,9 @@
 }
 /* end My Favorite Teacher  */
 
-/*Gift Cards*/
+
+
+/* OLD Gift Cards
 .gc-section {margin: 0 0 10px 0;  padding: 0; font-size: 20px;line-height: 1.3; font-family: milo; font-weight: normal; }
 .gc-item {
   display:inline-block; 
@@ -127,29 +138,88 @@
   line-height: 1.5;
 
   &:first-of-type{margin-top:0;} 
+} 
+*/
+//http://prodimage.images-bn.com/pimages/2000004062453_p0_v3_s272x272.jpg
+
+
+/* 2016 Reskin */ 
+.gift-card-list h2,
+.gift-card-list h3 {    
+  margin: 0px 0 25px 0; 
+  padding: 20px 0 0 0;     
+  // font-family: Milo;
+  font-family: "Poynter",Georgia,serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;  
+  &:first-of-type{margin-top:-10px; padding-top:0;} 
 }
+.gift-card-list h3.cq-module-shadow-top:first-of-type{border:none; } 
+
+.gc-item {
+  display:inline-block; 
+  vertical-align:top; 
+  width: 33%; 
+  max-width: 225px;
+  padding: 0; 
+  margin-right:30px;
+  &:nth-child(3n) {  margin-right: 0;  }
+  img {  max-width:100%; max-height:143px; }
+  figcaption {  
+    line-height:1; 
+    padding:6px 5px 50px; 
+    font-family: GillSans,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  a {    
+    color: #000;
+    font-family: GillSans,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    display:block;
+    padding:0; 
+    &:hover{ color: #3169a8; text-decoration:underline;}
+    &:focus {  color: #3169a8;text-decoration:underline; outline:0 none; border-width:0; padding:0; 
+      .element-shadow {
+        // -webkit-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+        // -moz-box-shadow: 0 0 7px 1px rgba(49,105,168,.5);
+        box-shadow: none;
+      } 
+    } 
+  } 
+} 
+
+
+
+
+
 
 /*Browse page links*/
 .links-container.browse  {padding-top:36px;}
+.links-container.textbooks.browse:first-of-type{padding-top:0;}
 .links-container.browse:first-of-type{padding-top:16px;}
 .links-container.browse ul {margin-bottom: 15px;}
- 
+ .links-container.browse a:hover, .links-container.browse a:focus {text-decoration:underline;}
+
 .links-container.textbooks > ul > li {
     min-width: 125px;
     padding-left: 20px;
-    width: 20%;
+    width: 19%;
 }
 .links-container ul li {
     display: inline-block;
-    line-height: 2;
+    line-height: 1.75;  //2; reskin
     vertical-align: top;
     width: 238px;
 }
  
 /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
-.break-desktop {
-    display: block;
-}
+.break-desktop { display: block; }
+
+
+
 .cms .heroImage {
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
     border: 2px #fff solid;
@@ -162,8 +232,7 @@
       -moz-border-radius: 5px;
       border-radius: 5px;
 }
-.cms section.module {
-    background-image: -moz-linear-gradient(center bottom , #fff 25%, #fbfbf9 100%);
+.cms section.module { 
     border-radius: 4px;
     border-top: 2px solid #fff;
     box-shadow: 0 0 0 1px #d5d2d2;
@@ -172,125 +241,6 @@
     position: relative; 
 }
 
-.cms .textbook-options {overflow: hidden; padding:0; border-top: none;}
-.cms .textbook-options figure {width:25%;  padding:18px 0; text-align: center; float: left; border-left: 1px #ccc solid; border-top: 2px solid #fff;}
-.cms .textbook-options a:first-child figure{border-left: none;  }
-.cms .textbook-options figcaption {font-size:16px; line-height: 1.5; color:#000; font-weight: normal; }
-.cms .textbook-options a {display: block; margin-top: 0; }
-.cms .textbook-options a .text-link {font-size:16px; }
-
-.cms .textbook-options h3 {margin: 0;font-size: 20px;}
-section.return-msg h1 {line-height: 1.25;margin: 0.67em 0;}
-section.return-msg p {line-height: 1.25;margin: 0.67em 0;}
-section.return-msg { text-align: left;position: relative; z-index: 0;padding: 0px 25px 10px;}
-section.return-msg img { position: absolute; right: 30px; bottom: 0; z-index: 1;}
-section.textbooks {border-bottom: none;}
- 
-.links-container.textbooks > ul> li {padding-left:20px;width:20%; min-width: 125px;  }
-.isbn-link-modal {margin-top: 12px; }
-/*sub-textbooks mobile*/
-.BNspotlight .spotlight img { max-width: 100%;} 
-.mobile #mainContent { position: relative;width: auto;max-width: 740px;}
-.mobile .BNspotlight .block .spotlight {float: none;padding: 0 0 20px 0;width: auto;}
-.mobile .BNspotlight .block .details { width: auto;}
-.mobile .BNspotlight .block .spotlight {float: none;padding: 0 0 20px 0;width: auto;}
-.mobile .BNspotlight .block .spotlight img {margin: 0 4px 4px 0;}
-/*start textbooks subppages*/
-#cq-txtBookSearch{
-  margin: 40px auto 40px;
-  position: relative;
-  width: 95%; 
-  height:18px;
-}
-#cq-txtBookSearch.txtbkhome{ width: 65%;  margin:-20px auto 0px;}
-#cq-txtBookSearch input[type="text"]{
-  background: #fff;
-  background-repeat: no-repeat;
-  background-position: 97%;
-  border: 1px solid #B4B2AC;
-  border-radius: 30px;
-  -webkit-box-shadow: inset 0 4px 12px -1px rgba(0,0,0,.2),0 0 0 10px #f4f3ef,0 0 0 11px #b9b6b2,0 0 15px 13px rgba(0,0,0,.2);
-  -moz-box-shadow:inset 0 4px 12px -1px rgba(0,0,0,.2),0 0 0 10px #f4f3ef,0 0 0 11px #b9b6b2,0 0 15px 13px rgba(0,0,0,.2);
-  box-shadow:inset 0 4px 12px -1px rgba(0,0,0,.2),0 0 0 10px #f4f3ef,0 0 0 11px #b9b6b2,0 0 15px 13px rgba(0,0,0,.2);
-  display: inline-block;
-  font-size: 14px;
-  font-weight: normal;
-  height: 36px;
-  line-height: 16px;
-  margin: 0;
-  padding: 0 20px;
-  vertical-align: top;
-
-  position:absolute;
-  left:0px; 
-  width: 100%; 
-  font-weight: bold;
-  color:#000;
-}
-#cq-txtBookSearch input[type="text"]:focus {
-  outline: none;
-  border-color: #3069AE;
-}
-
-#cq-txtBookSearch input[type="submit"]{
-  background-color: transparent;
-  background-image: url('http://css.css-bn.com/static/release/img/search_icon.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  height: 36px;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  width: 30px; 
-}
-#cq-txtBookSearch input::-webkit-input-placeholder{color:#666}
-#cq-txtBookSearch input:-moz-placeholder{color:#666}
-#cq-txtBookSearch input::-moz-placeholder{color:#666}
-#cq-txtBookSearch input:-ms-input-placeholder{color:#666}
-.txtbk-form-wrapper{height:95px;} 
-
-.txtbk-form-wrapper.txtbkhome{height:30px; } 
-.txtbk-module {border-bottom:1px #ccc solid;margin-bottom:35px;}
-.txtbk-module:last-of-type {border-bottom:none;}
-.txtbk-hdr {color:#009000; font-size:20px; margin:0 0 15px; }
- 
-.txtbk-column-main{width:68%;float: left;}
-.txtbk-column-main p {font-size:14px; line-height: 1.75; margin-bottom: 20px;}
-.txtbk-column-right{width:205px; float: right; }
-.txtbk-column-right img{margin-bottom: 20px; max-width: 100%; }
-
-.txtbk-bubble-arrow,.bubble-arrow{position:relative;}
-.txtbk-bubble-arrow:before,.bubble-arrow:before {
-  content: ' '; 
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 50%;
-  top: -49px;
-  margin-left: -25px;
-  border: 25px solid;
-  border-color: transparent transparent #b4b2ac transparent ;
-}
-.txtbk-bubble-arrow:after,.bubble-arrow:after{
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 50%;
-  top: -43px;
-  margin-left:-20px;
-  border: 20px solid;
-  border-color: transparent transparent #f4f3ef transparent;
-}
-.txtbk-isbn-link-modal {
-  float: right;
-  margin-right: 0px;
-  margin-top: 12px;
-}
-.txtbk-isbn-link-modal.txtbkhome { 
-  margin-right: 35px; 
-}
 /* end textbooks subppages */
 
 
@@ -611,4 +561,7 @@ h2.persona-main-hdr:after {margin: 2px auto 0 10px; }
 }
 /* // end persona  */ 
 
+
+
+ 
 
