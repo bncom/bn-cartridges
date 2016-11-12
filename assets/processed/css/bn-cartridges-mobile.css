@@ -387,6 +387,8 @@ section h2.event-hdr.dOnly {
   /* persona  [ personalities mothersday fathersday ] */
   /* store title design change  added to rich text editor */
   /* // end persona  */
+  /* jsonGridItem -- result list from json array -- black-friday-signed-editions */
+  /*  sticky nav */
   /*CQ Module HTML PAGE adjustments */
   /*Gift Cards */
   /* start textbooks subppages */
@@ -1714,6 +1716,70 @@ section h2.event-hdr.dOnly {
 }
 .html .persona-gcbanner.mom {
   background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
+}
+.html .jsonGridItem {
+  display: block;
+  float: left;
+  position: relative;
+  width: 140px;
+  margin: 0 5px 0 15px;
+  font-size: 15px;
+}
+.html .jsonGridImage {
+  height: 200px;
+  position: relative;
+}
+.html .jsonGridImage img {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  max-width: 100%;
+}
+.html .jsonGridDetails {
+  height: 100px;
+  position: relative;
+}
+.html .jsonGridTitle {
+  font-size: 15px;
+  color: #353535;
+  line-height: 1.2;
+  margin: 5px 0;
+}
+.html .jsonGridContributor {
+  font-size: 13px;
+  color: #737373;
+  line-height: 1.2;
+  margin: 0;
+}
+.html .sticky-nav {
+  position: fixed;
+  top: 0;
+  display: none;
+  background: #fff;
+  z-index: 10;
+}
+.html .sticky-nav img {
+  position: relative;
+}
+.html .sticky-nav.event-hero-1600 img {
+  width: 1600px;
+  left: -318px;
+}
+.html .sticky-nav-scrolled {
+  position: fixed;
+  /* display: block; */
+  width: 100%;
+  top: 0;
+}
+.html .bfSignedEdIntroCopy {
+  font-size: 22px;
+  text-align: center;
+}
+.html .sticky-nav.event-hero-1600 img {
+  display: none;
+  width: 0;
+  left: 0;
 }
 .html .gift-card-list {
   padding: 0 20px;

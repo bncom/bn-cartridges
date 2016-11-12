@@ -1,5 +1,9 @@
 /*CQ Module HTML PAGE adjustments */
-
+.sticky-nav.event-hero-1600 img { 
+  display:none;
+  width: 0;
+  left:0;
+} 
 
 /*Gift Cards */
 .gift-card-list {padding:0 20px;  }

@@ -12,9 +12,7 @@
 
  
  
-    $(function() { //document.ready  
-
-
+    $(function() { //document.ready   
 /*
 		 $(window).resize(function(){
 
@@ -33,6 +31,7 @@
 		    loadRWDimg('data-img-src-tablet');
 		}
  
+
 
       var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
       if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com"){isMobile = true;}
@@ -286,9 +285,7 @@
 		    	e.preventDefault();
 		    	//$(".cqTextBookSearch-isbn-sample").toggle();
 		    	var isbnLink = $(".cqTextBookSearch-isbn-link"); 
-			    var isVisible = $(".cqTextBookSearch-isbn-sample").is(":visible"); 
-  
-
+			    var isVisible = $(".cqTextBookSearch-isbn-sample").is(":visible");  
 			    // var isVisible = $(".cqTextBookSearch-isbn-sample").is(":visible"); 
 			    // if (!isVisible) {
 			    //     $(".cqTextBookSearch-isbn-link").addClass('active');
@@ -308,13 +305,7 @@
 					el.addClass('active');
 				}
 				return false;
-
-
-
-
-
-
-
+ 
 		    	//return false;
 		    	// if($(".cqTextBookSearch-isbn-sample")){
 		    	// 	$("#searchTextBookBar").focus();
@@ -325,14 +316,67 @@
 			//         	//$(this).fadeOut();
 			//         // $("#searchTextBookBar").focus();}  
 			// });
-   
-
+ 
 		}
 
 
 
+    	   // Confirm dom wrapper to write to AND array are available! then...
+	      if ($('#jsonGridItems').length && (typeof jsonGridItems !== "undefined")){
+ 
+	        $.each(jsonGridItems, function(i) { // console.log(i); loop through each array line
+	            var count = i +1;   
+	            var promoIsCurrent = true; 
+	            if(count > 0){ // isolate this array line's items  
+	              var ean = this.ean;  // regular edition 
+	              var title = this.title.trim();
+	              var contributor = this.contributor.trim();  
+	              //console.log(seTitle.length) 
+	              var characterMaxLength = 50;// maximum number of characters to extract
+	              var titleDisplayed = title;
+	               if(title.length > characterMaxLength) {
+	                    var extHellip = '&hellip;';   
+	                    //trim the string to the maximum length
+	                    var trimmedString = title.substr(0, characterMaxLength);
+	                    //re-trim if we are in the middle of a word
+	                    trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))); 
+	                    titleDisplayed = trimmedString+extHellip;
+	                  // $(this).text(trimmedString); 
+	                  // $(this).append(extHellip);
+	                } 
+
+                  var icItem = "event_result-grid_"+ean+"_image";
+	              var imgPath = "http://prodimage.images-bn.com/pimages/"+ean+"_p0_v3_s118x184.jpg";
+	              var jsonItem = $('<div class="jsonGridItem"><a href="http://stores.barnesandnoble.com/" onclick="set_cookie('+icItem+');"><div class="jsonGridImage"><img src="'+imgPath+'" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridTitle">'+titleDisplayed+'</p><p class="jsonGridContributor">by '+contributor+'</p></div></a></div>'); 
+	             $('#jsonGridItems').append(jsonItem); 
+
+	            }
+	        });
+	    }
+
+// $(window).scroll(function()
+// {
+//     var s = $('html').scrollTop() || $('body').scrollTop();
+//     console.log(s);
+// });
+		
+		// var sn = $(".sticky-nav");
+		// if(sn && isMobile === false){
+		// 	$("body").addClass('sticky-nav-true');
+		//   var snscrolled = "sticky-nav-scrolled";
+		//   var snheight = 370; //$('header').height();
+		// 	$(window).scroll(function() {
+		// 		console.log($(this).scrollTop());
+		// 	  if( $(this).scrollTop() > snheight ) {
+		// 	    sn.addClass(snscrolled).fadeIn();
+		// 	  } else {
+		// 	    sn.fadeOut().removeClass(snscrolled);
+		// 	  }
+		// 	});
+		// }
  
 
+ 
 
 
  
