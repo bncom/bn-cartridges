@@ -1,4 +1,6 @@
 /* Desktop */  
+* { font-family:GillSans,Arial,sans-serif; font-weight:400; } 
+
 .screen-reader-text {
     border: 0;
     clip: rect(0 0 0 0);
@@ -18,10 +20,11 @@
    p { font-size:10px; line-height:12px;}
 }
 
+
 .event-5050-txt > a,
 .event-intro-link { 
   border: 1px solid #044D77; 
-  padding: 10px;
+  padding: 16px;
   color: #044D77;
   font-size: 15px;
   line-height:1;
@@ -31,7 +34,7 @@
 }
 .event-intro {
   .event-cta,.event-intro-link { 
-    padding: 12px 16px 14px;
+    padding: 12px 16px 12px;
     text-transform: uppercase; 
      /* create sprite */
     &:hover { background: none; background-color:#3D6DB5;color: #fff; } 
@@ -39,7 +42,8 @@
     &:before { 
       content:" ";
       font-family:GillSans,Arial,sans-serif;
-      font-size:20px;   
+      font-size:25px;   
+      vertical-align: middle;
     }
     &.locator:before {  
       padding-left: 27px; 

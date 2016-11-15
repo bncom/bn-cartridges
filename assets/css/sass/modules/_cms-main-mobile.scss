@@ -253,3 +253,36 @@
  
 /* // end persona   */
 
+
+/* black friday signed editions */
+.bfSignedEdIntroCopy {  margin: 20px;  }
+@media only screen and (max-width: 805px) {  
+    .jsonGridItem {  
+        width: 130px;
+    }
+}
+@media only screen and (max-width: 645px) {  
+    .jsonGridItem {
+        margin: 0 0 0 10px; 
+        text-align: center;
+        width: 30%;
+    }
+    .jsonGridImage { width:120px; margin:0 auto; }
+}
+@media only screen and (max-width: 459px) {  
+    .jsonGridItem {   
+        text-align: center;
+        width: 45%;
+    }
+    .jsonGridImage { width:auto; max-width:120px; }
+}
+
+
+
+
+
+
+
+
+
+
