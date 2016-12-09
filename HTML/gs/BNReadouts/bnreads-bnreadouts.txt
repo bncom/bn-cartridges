@@ -1,0 +1,153 @@
+/*
+*** Below are the styles that need to be updated on the site for:
+B&N Reads http://jira.hq.bn-corp.com/browse/ATG-10558
+B&N Readouts http://jira.hq.bn-corp.com/browse/ATG-10557
+
+**** I've listed full style markup imdicating what is changed or ADDed or NEW **** 
+*/
+
+/*  B&N Reads Find and Change: */ 
+ .bnreads h1, .bnreads h2 {
+    color: #363636;
+    font-family: Poynter,Georgia,serif; /* change */
+    font-size: 28px;/* change  */
+    font-weight: 400;/* change  */
+    margin: 8px 0 18px;
+    padding: 0;
+}
+
+.bnreads-pod img {
+    margin-bottom: 0;  /* change  */
+    max-width: 100%;
+} 
+.bnreads-pod .element-shadow {
+	border: 2px solid transparent; /* change  */
+  border-radius: 0;  /* change  */
+  -webkit-box-shadow: none; /* change  */
+    -moz-box-shadow: none;  /* change  */
+      box-shadow: none; /* change  */
+  	cursor: pointer;
+ 
+}
+.bnreads-pod:hover .element-shadow {
+	-webkit-box-shadow: none; /* change  */
+	  -moz-box-shadow: none;  /* change  */
+	    box-shadow: none; /* change  */ 
+    border: 2px solid #346250; /*  ADD */
+}
+
+
+/*  B&N Readouts Find and Change: */
+
+.bnreadouts {
+    max-width:736px; 
+    margin:0 auto; 
+    border-bottom: 1px solid #ccc;  /* ADD */
+} 
+.bnreadouts .button-module-more {
+    top: 35px; /* change */
+    position:absolute;  /* ADD */
+}
+
+.readouts-pod img {
+  float: left;
+  max-width: 166px;
+  max-height: 263px;
+  margin: 0 26px 20px 0;
+  border: 2px solid transparent; /* ADD  */
+}
+/* NEW */
+.readouts-pod:hover img { border: 2px solid #346250; /*  ADD */ }
+
+.readoutsTitle {
+    font-family: Poynter,Georgia,serif; /* change */
+    font-weight: 400;  /* ADD */ 
+    font-size: 26px;
+    line-height: 1.15;
+    margin: 5px 0;
+}
+.readouts-excerpt p:first-child::first-letter {
+    color: #000;
+    float: left;
+    font-family: Poynter,Georgia,serif; /* change */
+    font-weight: 600;  /* ADD */ 
+    font-size: 60px;
+    line-height: 0.65;
+    margin: 5px 7px 0 0;
+    padding: 0;
+}
+.readouts-excerpt .moreLink {
+    color: #3169a8;
+    font-weight: 500; /* ADD */ 
+    white-space: nowrap;
+}
+
+.readouts-quote {
+    color: #346250;
+    font-family: Poynter,Georgia,serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+    margin: 40px auto 8px;
+}
+.readouts-quote-source {
+    color: #999;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.double .bnreads-pod:last-of-type:before {
+  content: "";
+  margin: 0 -28px;
+  position: absolute;
+  top: 80px;
+  bottom: 35px;
+  width: 1px;
+  background: #ccc;
+}
+  
+.landingPage .bnreadouts #featuredItems {
+  background-image: none;
+  padding: 0;
+  height: 290px;
+  overflow: hidden;
+  margin: 22px 3px 28px 3px;
+  border: none; /* change */
+  -webkit-box-shadow: none; /* change */
+  -moz-box-shadow: none; /* change */
+  box-shadow: none; /* change */
+}
+
+.landingPage .bnreadouts #featuredItems:hover {
+  border: none; /* change */
+  -webkit-box-shadow: none; /* change */
+  -moz-box-shadow: none; /* change */
+  box-shadow: none; /* change */
+}
+  
+ 
+/* NEW ** add the following to the bottom of the Readouts section */
+.readouts-pods [data-icon] {background-color: transparent;background-image: none; }
+.readouts-pods [data-icon="carousel-pager-off"] { background-image: none; } 
+.readouts-pods [id^="carousel-pagination"] span.selected { background:none;}
+.readouts-pods #carousel-pagination span { 
+   background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/sprite_desktop_pagination_v2.png");
+    background-repeat: no-repeat;
+   background-position: -24px -26px;
+    color: transparent;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    margin: 1px 2px;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle; 
+    border:1px red dotted; 
+    border: 2px solid transparent;
+    height: 16px;
+    width: 16px;
+}
+.readouts-pods #carousel-pagination span.selected { background-position: -46px -26px; }
+.readouts-pods #carousel-pagination span:focus, 
+.readouts-pods #carousel-pagination span:hover { background-position: -46px -26px; outline: 0 none;} 

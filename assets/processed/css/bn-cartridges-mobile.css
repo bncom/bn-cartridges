@@ -1911,6 +1911,9 @@ section h2.event-hdr.dOnly {
     border-top: 1px #ccc solid;
   }
 }
+.html .mft-content {
+  padding: 0 10px;
+}
 @media only screen and (max-width: 699px) {
   .html .myFavTeacherAwards .fLeft,
   .html .myFavTeacherAwards .fRight {
