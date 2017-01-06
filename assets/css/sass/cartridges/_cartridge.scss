@@ -19,8 +19,7 @@
   margin-bottom: 30px;
    p { font-size:10px; line-height:12px;}
 }
-
-
+ 
 .event-5050-txt > a,
 .event-intro-link { 
   border: 1px solid #044D77; 
@@ -47,24 +46,24 @@
     }
     &.locator:before {  
       padding-left: 27px; 
-      background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
+      background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
       background-position: -9px -273px
     }
     &.locator:hover { padding-left:12px; background: none; background-color:#3D6DB5;color: #fff; }
     &.locator:hover:before {
       padding-left: 27px; 
-      background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
+      background: #3D6DB5 url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
       background-position: -31px -273px;
 
     }
     &.video:before {  
       padding-left:30px; 
-      background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
+      background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
       background-position: -11px -242px
     } 
     &.video:hover:before {
       padding-left:30px; 
-      background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
+      background: #3D6DB5 url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat; 
       background-position: -39px -242px;
     }
   }

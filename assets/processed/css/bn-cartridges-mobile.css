@@ -74,13 +74,13 @@ body {
 .main-content div.carousel-prev,
 .main-content div.featured-prev-item,
 .main-content .bx-prev {
-  background-image: url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/btn_prev_carousel_green.png");
+  background-image: url("//dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/btn_prev_carousel_green.png");
 }
 .main-content section#hotBooks div.next-item,
 .main-content div.carousel-next,
 .main-content div.featured-next-item,
 .main-content .bx-next {
-  background-image: url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/btn_next_carousel_green.png");
+  background-image: url("//dispatch.barnesandnoble.com/content/dam/ccr/h/events/b-fest/btn_next_carousel_green.png");
 }
 .main-content section#hotBooks div.prev-item,
 .main-content section#hotBooksWithDesc div.carousel-prev,
@@ -1218,7 +1218,7 @@ section h2.event-hdr.dOnly {
   margin-top: 25px;
 }
 .html #myFavTeacher .mft-hero {
-  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/my-favorite-teacher/MyFavTeacherContest_hero.jpg) center center no-repeat;
+  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/my-favorite-teacher/MyFavTeacherContest_hero.jpg) center center no-repeat;
   height: 330px;
   width: 100%;
   max-width: 960px;
@@ -1478,7 +1478,7 @@ section h2.event-hdr.dOnly {
   float: left;
 }
 .html .pmis-samplet-next-item, .html .pmis-samplet-prev-item {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
   height: 25px;
@@ -1527,7 +1527,7 @@ section h2.event-hdr.dOnly {
   margin: 23px 0 28px;
 }
 .html .pmis-steps::before {
-  background: transparent url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
+  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
   top: 25px;
   content: "";
   display: block;
@@ -1537,7 +1537,7 @@ section h2.event-hdr.dOnly {
   width: 100%;
 }
 .html .pmis-steps::after {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
   content: "";
   display: block;
   height: 6px;
@@ -1564,7 +1564,7 @@ section h2.event-hdr.dOnly {
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   font-family: Raleway, PTSans,Arial;
   color: #0d4563;
   font-size: 20px;
@@ -1725,7 +1725,7 @@ section h2.event-hdr.dOnly {
   position: relative;
 }
 .html .persona-gcbanner.mom {
-  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
+  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
 }
 .html .jsonGridItem {
   display: block;
@@ -2123,7 +2123,7 @@ section h2.event-hdr.dOnly {
     width: 50%;
   }
   .html .persona-gcbanner.mom {
-    background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Mobile_Pod6_599.jpg) no-repeat top left;
+    background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Mobile_Pod6_599.jpg) no-repeat top left;
     background-size: 100%;
   }
 }
@@ -2188,13 +2188,13 @@ section h2.event-hdr.dOnly {
 }
 .html .icon-stopwatch {
   display: inline-block;
-  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/stopwatch.png) no-repeat 0px 0px;
+  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/stopwatch.png) no-repeat 0px 0px;
   height: 26px;
   padding-left: 25px;
   vertical-align: middle;
 }
 .html .rainbow-edge {
-  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/rainbow.jpg) repeat 0px 0px;
+  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/rainbow.jpg) repeat 0px 0px;
   height: 5px;
   width: 100%;
 }
@@ -2214,11 +2214,11 @@ section h2.event-hdr.dOnly {
   margin-right: -4px;
   margin-top: -8px;
   display: inline-block;
-  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/tag_03.png) no-repeat 0px 0px;
+  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/tag_03.png) no-repeat 0px 0px;
   position: relative;
 }
 .html .coupn-scissors {
-  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/scissors.png) no-repeat 0px 0px;
+  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/scissors.png) no-repeat 0px 0px;
   height: 55px;
   width: 97%;
   position: absolute;
@@ -2512,16 +2512,16 @@ section h2.event-hdr.dOnly {
   text-align: center;
   padding: 15px 0 10px 25px;
   border: none;
-  background: #f5f4f0 url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_dottedline.png") no-repeat center right;
+  background: #f5f4f0 url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_dottedline.png") no-repeat center right;
 }
 .html .reveal-coupon.active {
   text-align: center;
   padding: 15px 0 10px 0;
   border: none;
-  background: #f5f4f0 url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_dottedline.png") no-repeat center right;
+  background: #f5f4f0 url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_dottedline.png") no-repeat center right;
 }
 .html .reveal-pull-corner-image {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_orange.png") no-repeat center right;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/coupons-deals/codebox_orange.png") no-repeat center right;
 }
 .html .reveal-pull-corner::before {
   content: '';
@@ -2690,7 +2690,7 @@ section h2.event-hdr.dOnly {
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -2701,17 +2701,17 @@ section h2.event-hdr.dOnly {
 }
 .html .event-intro .event-cta.locator:hover:before, .html .event-intro .event-intro-link.locator:hover:before {
   padding-left: 27px;
-  background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: #3D6DB5 url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -31px -273px;
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
   padding-left: 30px;
-  background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: #3D6DB5 url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -39px -242px;
 }
 .html .event-5050-txt > a:hover,
@@ -2827,7 +2827,7 @@ section h2.event-hdr.dOnly {
 }
 .html .event-banner, .html .event-banner-text {
   position: relative;
-  /* background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/Events_HarryPotter_LP_Banner.jpg") no-repeat scroll 0 0;*/
+  /* background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/Events_HarryPotter_LP_Banner.jpg") no-repeat scroll 0 0;*/
   border-bottom: 1px solid #e7e6e4;
   border-top: 1px solid #e7e6e4;
   line-height: 0;
@@ -2985,7 +2985,7 @@ section h2.event-hdr.dOnly {
   width: 65px;
   height: 65px;
   overflow: hidden;
-  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png) no-repeat;
+  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png) no-repeat;
   background-position: -10px -10px;
   vertical-align: middle;
 }
@@ -3052,7 +3052,7 @@ section h2.event-hdr.dOnly {
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -3186,7 +3186,7 @@ section h2.event-hdr.dOnly {
   top: 35%;
   width: 33px;
   z-index: 99;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
 }
 .html .ec-carousel-backward {
   background-position: -215px 0;
@@ -3297,7 +3297,7 @@ section h2.event-hdr.dOnly {
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -3308,17 +3308,17 @@ section h2.event-hdr.dOnly {
 }
 .html .event-intro .event-cta.locator:hover:before, .html .event-intro .event-intro-link.locator:hover:before {
   padding-left: 27px;
-  background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: #3D6DB5 url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -31px -273px;
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
   padding-left: 30px;
-  background: #3D6DB5 url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: #3D6DB5 url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -39px -242px;
 }
 .html .event-5050-txt > a:hover,
@@ -3483,7 +3483,7 @@ section h2.event-hdr.dOnly {
 }
 .html .event-banner, .html .event-banner-text {
   position: relative;
-  /* background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/Events_HarryPotter_LP_Banner.jpg") no-repeat scroll 0 0;*/
+  /* background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/events/Year-of-harry-potter/Events_HarryPotter_LP_Banner.jpg") no-repeat scroll 0 0;*/
   border-bottom: 1px solid #e7e6e4;
   border-top: 1px solid #e7e6e4;
   line-height: 0;
@@ -3668,7 +3668,7 @@ section h2.event-hdr.dOnly {
   width: 65px;
   height: 65px;
   overflow: hidden;
-  background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png) no-repeat;
+  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png) no-repeat;
   background-position: -10px -10px;
   vertical-align: middle;
 }
@@ -3735,7 +3735,7 @@ section h2.event-hdr.dOnly {
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -3899,7 +3899,7 @@ section h2.event-hdr.dOnly {
   top: 35%;
   width: 33px;
   z-index: 99;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
 }
 .html .ec-carousel-backward {
   background-position: -215px 0;
@@ -4012,7 +4012,7 @@ section h2.event-hdr.dOnly {
   height: 1px;
 }
 .html .cqTextBookSearchSubmit {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") no-repeat 3px -116px;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") no-repeat 3px -116px;
   border: none;
   border-radius: 0;
   height: 50px;
@@ -4045,7 +4045,7 @@ section h2.event-hdr.dOnly {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") no-repeat -49px -125px;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") no-repeat -49px -125px;
   position: relative;
   top: 5px;
   margin-left: 11px;
@@ -4159,16 +4159,16 @@ section h2.event-hdr.dOnly {
   margin: 0 auto 15px;
 }
 .html .textbook-store-hdr.rent:before {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -5px -10px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -5px -10px no-repeat;
 }
 .html .textbook-store-hdr.used:before {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -74px -10px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -74px -10px no-repeat;
 }
 .html .textbook-store-hdr.new:before {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -144px -10px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -144px -10px no-repeat;
 }
 .html .textbook-store-hdr.buy:before {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -215px -10px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -215px -10px no-repeat;
 }
 .html .textbook-announcement {
   background-color: #E4E8E3;
@@ -4242,23 +4242,23 @@ section h2.event-hdr.dOnly {
   float: right;
 }
 .html .textbook-topic h2.bookstack:after {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") 2px -77px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") 2px -77px no-repeat;
 }
 .html .textbook-topic h2.truck:after {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -205px -77px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -205px -77px no-repeat;
   width: 60px;
 }
 .html .textbook-topic h2.tag:after {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -54px -77px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -54px -77px no-repeat;
 }
 .html .textbook-topic h2.fourteenday:after {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -265px -77px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -265px -77px no-repeat;
 }
 .html .textbook-topic h2.piggybank:after {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -150px -77px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -150px -77px no-repeat;
 }
 .html .textbook-topic h2.new:after {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -101px -77px no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png") -101px -77px no-repeat;
 }
 .html .textbook-topic-item {
   margin: 14px 0 1px;
@@ -4449,16 +4449,16 @@ section h2.event-hdr.dOnly {
   margin: 0 auto 10px;
 }
 .html .mc-icon.earnrewards:before {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -9px -182px;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -9px -182px;
 }
 .html .mc-icon.earn5pct:before {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -79px -182px;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -79px -182px;
 }
 .html .mc-icon.earngiftcards:before {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -149px -182px;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -149px -182px;
 }
 .html .mc-icon.earnmembership:before {
-  background: transparent url("http://dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -219px -182px;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -219px -182px;
 }
 .html .mc-feature p {
   font-family: GillSans,Arial,sans-serif;

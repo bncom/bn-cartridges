@@ -67,7 +67,7 @@
   width: 100%;
   margin-top: 25px;
   .mft-hero{
-    background: url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/my-favorite-teacher/MyFavTeacherContest_hero.jpg) center center no-repeat; 
+    background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/my-favorite-teacher/MyFavTeacherContest_hero.jpg) center center no-repeat; 
     height:330px; width:100%; max-width:960px;margin:0 auto;
   }
   p {
@@ -335,7 +335,7 @@
 .pmis-samplet ul li {float: left;} 
 
  .pmis-samplet-next-item, .pmis-samplet-prev-item {      
-    background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat; 
+    background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat; 
     bottom: 0;
     cursor: pointer;
     height: 25px;
@@ -376,7 +376,7 @@ h3.pmis-steps-hdr{
 
 }
 .pmis-steps::before {
-  background:rgba(0, 0, 0, 0) url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;  
+  background:rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;  
     top:25px;
     content: "";
     display: block;
@@ -386,7 +386,7 @@ h3.pmis-steps-hdr{
     width: 100%;
 }
 .pmis-steps::after {
-    background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
     content: "";
     display: block;
     height: 6px;
@@ -409,7 +409,7 @@ li.pmisOne, li.pmisTwo, li.pmisThree{
   height: 140px;  
   padding: 30px 0 0 115px;
   margin-bottom:  8px;
-  background: rgba(0, 0, 0, 0) url("http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat; 
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat; 
   font-family: Raleway, PTSans,Arial;
   color:#0d4563;
   font-size: 20px;
@@ -556,7 +556,7 @@ h2.persona-main-hdr:after {margin: 2px auto 0 10px; }
   margin:0 auto;
   position: relative;
   &.mom { 
-    background:url(http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right; 
+    background:url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right; 
   }
 }
 /* // end persona  */ 
