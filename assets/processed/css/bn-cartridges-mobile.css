@@ -404,6 +404,7 @@ section h2.event-hdr.dOnly {
   /* // end persona  */
   /* jsonGridItem -- result list from json array -- black-friday-signed-editions */
   /*  sticky nav */
+  /* Privacy Policy */
   /*CQ Module HTML PAGE adjustments */
   /*Gift Cards */
   /* start textbooks subppages */
@@ -1791,6 +1792,26 @@ section h2.event-hdr.dOnly {
 .html .bfSignedEdIntroCopy {
   font-size: 22px;
   text-align: center;
+}
+.html .bn-pp-copy h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #b0a178;
+}
+.html .bn-pp-copy p {
+  font-size: 15px;
+}
+.html .bn-pp-copy a {
+  text-decoration: underline;
+}
+.html .bn-pp-copy ul li {
+  color: #5a7d56;
+  list-style-type: decimal;
+}
+.html .bn-pp-copy ul li a {
+  font-weight: bold;
+  color: #5a7d56;
+  line-height: 20px;
 }
 .html .sticky-nav.event-hero-1600 img {
   display: none;

@@ -610,3 +610,26 @@ h2.persona-main-hdr:after {margin: 2px auto 0 10px; }
 .bfSignedEdIntroCopy {font-size: 22px; text-align: center;} 
  
 
+/* Privacy Policy */
+.bn-pp-copy{
+    h3{
+        font-weight: bold; 
+        font-size: 18px; 
+        color: #b0a178; 
+    }
+    p {
+        font-size: 15px;
+    }
+    a{ 
+        text-decoration: underline;
+    }
+    ul li{
+        color:#5a7d56;
+        list-style-type: decimal;
+    }
+    ul li a{
+        font-weight: bold;
+        color:#5a7d56;
+        line-height: 20px;
+    }
+}
