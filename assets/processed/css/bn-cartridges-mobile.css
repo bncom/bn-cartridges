@@ -269,6 +269,12 @@ section h2.event-hdr.dOnly {
   display: none;
 }
 
+/* bnreads for skava  */
+.triple .bnreads-pod {
+  max-width: 31%;
+  width: 31%;
+}
+
 .html {
   position: relative;
   clear: left;
