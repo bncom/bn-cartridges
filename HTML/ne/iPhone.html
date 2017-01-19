@@ -385,84 +385,7 @@ window['adrum-start-time'] = new Date().getTime();
 
 <!--<![endif]-->
 <div class="skavacontentdiv"></div>
-<script type="text/javascript">
-//<![CDATA[
-var SITE_PROTOCOL = document.location.protocol||window.location.protocol||'http:',
-SITE_DOMAIN = document.location.hostname||window.location.hostname||'mbarnesandnoble.skavaone.com',
-SITE_PORT = document.location.port||window.location.port||'80',
-THIS_PATH = document.location.pathname||window.location.pathname||'/cartridges/OneColumnMarketingPage/OneColumnMarketingPage.jsp',
-SITE_DOMAIN_URL = THIS_PAGE = SITE_ROOT = port = "",
-STATIC_ASSETS_PATH = "/static",
-webContextRoot ='',
-staticAssetVersion = '?v3.17.4',
-XHR_FOLDER ='/xhr',
-XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp',
-PAGE_DEBUG_MODE = false;
-if(SITE_PROTOCOL=="https:") {
-XHR_FOLDER = '/xhr';
-XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp';
-}
-if(SITE_PORT.length > 0 && SITE_PORT!=80)
-port = ":"+SITE_PORT;
-SITE_DOMAIN_URL = SITE_PROTOCOL + "//" + SITE_DOMAIN + port;
-SITE_ROOT = SITE_DOMAIN_URL + webContextRoot;
-THIS_PAGE = SITE_DOMAIN_URL + THIS_PATH;
-port = null;
-function consoleLog() {
-if (PAGE_DEBUG_MODE!==true) return;
-if (typeof console != "undefined" && typeof console.log != "undefined") {
-if (typeof console.log.apply != "undefined") {
-console.log.apply(console,arguments);
-} else {
-for(var i=0;i<arguments.length;i++) {
-var arg = arguments[i];
-console.log(arg);
-}
-}
-}
-}
-function consoleWarn() {
-if (PAGE_DEBUG_MODE!==true) return;
-if (typeof console == "undefined") return;
-if (typeof console.warn != "undefined" && typeof console.warn.apply != "undefined") {
-console.warn.apply(console,arguments);
-} else {
-consoleLog.apply(console,arguments);
-}
-}
-function consoleError() {
-if (PAGE_DEBUG_MODE!==true) return;
-if (typeof console == "undefined") return;
-if (typeof console.error != "undefined" && typeof console.error.apply != "undefined") {
-console.error.apply(console,arguments);
-} else {
-consoleWarn.apply(console,arguments);
-}
-}
-var verifyCallbackToCaptcha = function() {
-grecaptcha.render('html_element', {
-'sitekey' : '6LctFgsTAAAAAJXPN_lYrGuAQiN8KDE_W84nWsjc',
-'expired-callback': function(){
-consoleLog("verify reset");
-grecaptcha.reset();
-}
-});
-};
-function addOnLoadEvent(func) {
-var oldonload = window.onload;
-if (typeof window.onload != 'function') {
-window.onload = func;
-} else {
-window.onload = function() {
-if (oldonload) {
-oldonload();
-}
-func();
-}
-}
-}
-//]]>
-</script>
+
 <div id="screen"></div>
 <main role="main" class="clearer">
 <div class="browser-notice ie-outdated">
@@ -472,36 +395,12 @@ func();
 For a better shopping experience, please <a target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie/">upgrade now.</a></p>
 </div>
 </div>
-<script type="text/javascript">
-//<![CDATA[
-if($.browser.msie && parseInt($.browser.version, 10) <=10){
-if(!$('.ie-outdated').is('visible')){
-$('.ie-outdated').show();
-}
-}
-//]]>
-</script>
- <noscript>
-<div class="browser-notice">
-<div>
-<p class="circle">!</p>
-<p>&nbsp;&nbsp;Javascript is not enabled in your browser. Enabling JavaScript in your browser will allow you to experience all the features of our site.<br />
-<br />
- &nbsp;&nbsp;<a href="https://help.barnesandnoble.com">Learn how to enable JavaScript on your browser</a></p>
-</div>
-</div>
-</noscript> 
-<section id="main-content" class="landing-page-content">
+<section id="main-content" class="landing-page-content html">
 <div class="header"></div>
 <div class="main-content clearer">
 <div class="html content-node">
 <div class="html-embed-container">
-    <!-- Adometry marketing pixels== https://nyjira.barnesandnoble.com/browse/CDS-825 -->
-    <script type="text/javascript" src="//js.dmtry.com/___channel.js#gid_3845;advid_970;pid_726069">
-//<![CDATA[
-//]]>
-</script>
- <noscript><img width="0" height="0" src="//log.dmtry.com/redir/1/0/3845/726069/0/1/159/0/970/1.ver?at=v&amp;d=PxConv" /></noscript>
+
     <article data-bntrack-root="true" data-bntrack="bnapp-hero" class="nook-bn n-5050 bnapp-hero">
         <div class="module-bn">
             <div class="modRight">
