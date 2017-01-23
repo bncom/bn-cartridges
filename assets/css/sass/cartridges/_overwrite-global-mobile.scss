@@ -21,3 +21,17 @@ section h2.event-hdr.dOnly{display:none;}
     max-width: 31%;
     width: 31%;
 }
+
+
+ 
+/* bnreads for skava  */ 
+.main-content {
+	.triple .bnreads-pod {
+	    max-width: 29% !important;
+	    width: 29% !important;
+	} 
+ 	.double .bnreads-viewport, 
+ 	.triple .bnreads-viewport { overflow-x: scroll !important; }
+	.calendar-bottom-wrapper { display:none !important; }
+
+}

@@ -275,6 +275,19 @@ section h2.event-hdr.dOnly {
   width: 31%;
 }
 
+/* bnreads for skava  */
+.main-content .triple .bnreads-pod {
+  max-width: 29% !important;
+  width: 29% !important;
+}
+.main-content .double .bnreads-viewport,
+.main-content .triple .bnreads-viewport {
+  overflow-x: scroll !important;
+}
+.main-content .calendar-bottom-wrapper {
+  display: none !important;
+}
+
 .html {
   position: relative;
   clear: left;
