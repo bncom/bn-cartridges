@@ -349,6 +349,7 @@
 }
 
 /* Nook Education  */
+@media (max-width: 699px){
 #refinements,.secondary-nav-c{ display: none !important; }
 .bn-ccr-core-page-hero-1 {
     width: 100% !important;
@@ -393,8 +394,17 @@
         padding-bottom: 10px !important;
     }
 }
+}
 
-
+/* B&N Accessibility */
+@media (max-width: 699px){
+    .custom-wrapper{
+        margin: 30px 80px 60px 80px;
+    }
+    b,strong{
+        font-weight: 700;
+    }
+}
 
 
 
