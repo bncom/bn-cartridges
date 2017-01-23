@@ -8439,7 +8439,7 @@ section h2.event-hdr.dOnly {
     margin: 30px 80px 60px 80px;
   }
   .html b, .html strong {
-    font-weight: 700;
+    font-weight: 700 !important;
   }
 }
 .html [class*=coupn-] {
