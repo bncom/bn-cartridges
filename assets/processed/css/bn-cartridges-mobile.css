@@ -270,6 +270,11 @@ section h2.event-hdr.dOnly {
 }
 
 /* bnreads for skava  Event Page adjustments for Skava */
+.main-content {
+  /* hide event info carousel */
+  /* hide video header makerfaire - plus */
+  /* adjust hero position b-fest */
+}
 .main-content .triple .bnreads-pod {
   max-width: 29% !important;
   width: 29% !important;
@@ -280,6 +285,12 @@ section h2.event-hdr.dOnly {
 }
 .main-content .calendar-bottom-wrapper {
   display: none !important;
+}
+.main-content .fpvid-container {
+  display: none;
+}
+.main-content .b-fest-hero-img {
+  left: inherit;
 }
 
 .html {

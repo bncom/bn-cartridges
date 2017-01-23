@@ -26,6 +26,11 @@ section h2.event-hdr.dOnly{display:none;}
 	} 
  	.double .bnreads-viewport, 
  	.triple .bnreads-viewport { overflow-x: scroll !important; }
+ 	/* hide event info carousel */
 	.calendar-bottom-wrapper { display:none !important; }
+ 	/* hide video header makerfaire - plus */
+	.fpvid-container { display:none;}
+ 	/* adjust hero position b-fest */
+	.b-fest-hero-img {left: inherit;}
 
 }
