@@ -1,3 +1,7 @@
+Running Grunt requires NODE js
+Please visit https://nodejs.org/en/ to install
+
+
 # production
 
 These files were compiled & processed using using Grunt.
@@ -6,6 +10,7 @@ These files were compiled & processed using using Grunt.
 Notes to Getting Started with GRUNT:
 
 http://gruntjs.com/getting-started
+After you have Grunt installed:
 
 load command line interface
 sudo npm install -g grunt-cli
