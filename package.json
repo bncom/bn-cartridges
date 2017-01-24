@@ -5,7 +5,12 @@
   "department": "Production",
   "description": "Production Development Team Resources",
   "homepage": "http://barnesandnoble.com/",
-  "repository": "bncom/bn-cartridges",
+  "license": "UNLICENSED",
+  "private": "true",
+  "repository":{
+	  "type": 'git",
+	  "url": "https://github.com/bncom/bn-cartridges"
+  }
   "author": {
     "name": "Gil Sanchez",
     "email": "gsanchez@book.com"
