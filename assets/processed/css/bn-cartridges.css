@@ -36,6 +36,7 @@ body {
 
 .main-content {
   /* are we adjusting the event templt headers above"? */
+  /* banner with image on event pages */
   /* expand BNReads pod on the One Column Marketing page */
 }
 .main-content section#hotBooksWithDesc .caroufredsel_wrapper,
@@ -107,6 +108,14 @@ body {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
+}
+.main-content section#nookPromo {
+  width: 100%;
+  margin: 40px 0;
+}
+.main-content #nookPromo img {
+  height: 100px;
+  width: 1px;
 }
 .main-content .btn, .main-content [class*="btn"] {
   padding: 9px 0 8px;

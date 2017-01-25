@@ -35,6 +35,7 @@ body {
 
 .main-content {
   /* are we adjusting the event templt headers above"? */
+  /* banner with image on event pages */
   /* expand BNReads pod on the One Column Marketing page */
 }
 .main-content section#hotBooksWithDesc .caroufredsel_wrapper,
@@ -106,6 +107,14 @@ body {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
+}
+.main-content section#nookPromo {
+  width: 100%;
+  margin: 40px 0;
+}
+.main-content #nookPromo img {
+  height: 100px;
+  width: 1px;
 }
 .main-content .btn, .main-content [class*="btn"] {
   padding: 9px 0 8px;
@@ -293,6 +302,11 @@ section h2.event-hdr.dOnly {
   left: inherit;
 }
 
+@media only screen and (max-width: 599px) {
+  .main-content #nookPromo img {
+    display: none;
+  }
+}
 .html {
   position: relative;
   clear: left;
@@ -538,6 +552,7 @@ section h2.event-hdr.dOnly {
   /* iPhone Download App */
   /* Nook Education  */
   /* B&N Accessibility */
+  /* H page header and page margin (padding) fixes */
   /*Coupon & Deals page*/
   /* green coupon section */
   /* coupon promo text message */
@@ -8440,6 +8455,23 @@ section h2.event-hdr.dOnly {
   }
   .html b, .html strong {
     font-weight: 700 !important;
+  }
+}
+@media (max-width: 799px) {
+  .html #categoryHeaderContainer h1 {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: PoynterOSDisp-Semibold;
+  }
+  .html .html .links-container.browse {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .html .pageshell {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 .html [class*=coupn-] {

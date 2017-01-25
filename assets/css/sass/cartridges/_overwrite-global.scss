@@ -67,6 +67,13 @@ body { overflow-x: hidden; }
     box-shadow: none !important;
   }
 
+/* banner with image on event pages */
+  section#nookPromo {width:100%; margin:40px 0;}
+  #nookPromo img { height:100px; width:1px;}
+
+
+
+
   .btn, [class*="btn"] { padding: 9px 0 8px; }
 
   div.see-all a:hover {text-decoration: underline;}
