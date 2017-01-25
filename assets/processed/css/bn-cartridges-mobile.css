@@ -317,6 +317,7 @@ section h2.event-hdr.dOnly {
     display: none;
   }
 }
+/* Skava global overwrites */
 .html {
   position: relative;
   clear: left;
@@ -407,6 +408,7 @@ section h2.event-hdr.dOnly {
   /* // end persona   */
   /* black friday signed editions */
   /* end black friday signed editions */
+  /* Skava local styling  */
   /*Coupon & Deals page*/
   /* green coupon section */
   /* coupon promo text message */

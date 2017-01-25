@@ -3,6 +3,7 @@
 @import "partials/var";
 @import "cartridges/overwrite-global";
 @import "cartridges/overwrite-global-mobile";
+@import "skava/skava-global-overwrite-mobile";
 .html{position: relative;  clear: left;
 	* {
 	  -moz-box-sizing: border-box;
@@ -14,6 +15,7 @@
 
 	@import "modules/cms-main";	
  	@import "modules/cms-main-mobile";
+ 	@import "skava/skava-local-mobile";
 	@import "modules/coupons-deals";
 	@import "modules/coupons-deals-mobile";
 	@import "cartridges/apply-desktop";
