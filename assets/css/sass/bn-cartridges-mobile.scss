@@ -1,5 +1,6 @@
 #cq-html-renderer,.cq-html-renderer{height:0;width: 0;visibility: hidden;opacity: 0;}
 
+@import "partials/var";
 @import "cartridges/overwrite-global";
 @import "cartridges/overwrite-global-mobile";
 .html{position: relative;  clear: left;
@@ -7,7 +8,6 @@
 	  -moz-box-sizing: border-box;
 	  box-sizing: border-box;
 	}
-	@import "partials/var";
 	@import "partials/reset"; 
 	@import "partials/buttons";
 	@import "partials/shadows";

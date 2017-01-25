@@ -2,9 +2,9 @@
 .event-intro {
   padding:45px 40px 39px; 
 }  
- 
+
 .event-intro h2 { 
-  font-family: "Poynter",serif;
+  font-family: $primary-font;
   font-weight: 600;
   font-size: 50px;
   line-height:1.2; 
@@ -14,7 +14,7 @@
   em {font-family: inherit;font-size: inherit;}
 }
 .event-intro h3 { 
-  font-family: "Poynter",serif;
+  font-family: $primary-font;
   font-weight: 600;
   font-size: 24px;
   line-height:1.2; 
@@ -30,7 +30,7 @@
  
 .event-intro p {
   font-size:16px;
-  font-family: GillSans,Arial,sans-serif;
+  font-family: $secondary-font;
   line-height:1.85;
   text-align:center;
   margin-bottom:30px;

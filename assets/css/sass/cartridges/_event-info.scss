@@ -1,3 +1,4 @@
+
 .event-info {
   border: 1px solid #ccc;
   color: #000000;
@@ -11,9 +12,7 @@
   float: left;
   max-width: 736px;
 }
-.event-info-pod-img {
-  // clear: both;
-  // display: flex;
+.event-info-pod-img { 
   float: left;
   width: 50%;
 }
@@ -26,7 +25,7 @@
   padding: 30px 30px 15px;
 }
 .event-info-pod-copy h3, .event-info-pod-copy h3 i {
-  font-family: "Poynter",serif;
+  font-family: $primary-font;
   font-weight: 600;
   font-size: 24px;
   margin: 0;
@@ -38,7 +37,7 @@
 }
 .event-info-pod-date {
   font-size: 18px;
-  font-family: GillSans,Arial,sans-serif; 
+  font-family: $secondary-font; 
     font-weight: 500;
   margin-bottom: 10px;
   display: block;
@@ -54,7 +53,7 @@
     font-size:22px;
 }
 .event-info-copy {
-  font-family: GillSans,Arial,sans-serif;
+  font-family: $secondary-font;
     font-weight: 300;
   font-size: 16px;
   margin-bottom: 15px;
