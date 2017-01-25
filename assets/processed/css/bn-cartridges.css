@@ -1117,7 +1117,7 @@ body {
 .html .gift-card-list h3 {
   margin: 0px 0 25px 0;
   padding: 20px 0 0 0;
-  font-family: "Poynter",Georgia,serif;
+  font-family: "Poynter", serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
@@ -1148,7 +1148,7 @@ body {
 .html .gc-item figcaption {
   line-height: 1;
   padding: 6px 5px 50px;
-  font-family: GillSans,Arial,sans-serif;
+  font-family: GillSans, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
 }
