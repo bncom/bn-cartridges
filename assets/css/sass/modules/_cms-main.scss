@@ -633,3 +633,6962 @@ h2.persona-main-hdr:after {margin: 2px auto 0 10px; }
         line-height: 20px;
     }
 }
+
+/* Nook css for h page iPhone app */
+/* GENERAL */
+
+section a {
+  color: #129daf;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+em {
+  font-style: italic;
+}
+/* CONTAINERS */
+
+section.page-content {
+  &:before, &:after {
+    background: none;
+  }
+}
+
+button, .button, button:after, .button:after {
+  background: none;
+}
+
+#nookpage {
+  .whats-new .button, .whats-new-small .button {
+    background: url("http://img1.imagesbn.com/pImages/nook/encore/support/whats-new-button.png") no-repeat scroll left center transparent;
+    clear: both;
+    display: block;
+    padding: 0 0 0 30px;
+  }
+}
+/* SUBNAV */
+
+header.box {
+  padding: 0;
+}
+
+#nookpage {
+  .nook-subnav {
+    background-position: 0 7px;
+  }
+  .centered-width {
+    width: 970px;
+    padding: 0;
+  }
+}
+
+/* LEFT NAV */
+
+.search-filter span.filter-value-a {
+  a {
+    color: #000000;
+    &:hover {
+      color: #3169A8;
+      text-decoration: underline;
+    }
+  }
+  &.caret {
+    color: #3169A8;
+  }
+}
+
+.SearchFilter span.filter-value-a.caret a {
+  color: #3169A8;
+}
+
+.search-filter .filter-value-a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.sub-hide {
+  display: none;
+}
+/* EXISTING MODULES CSS OVERRIDES */
+
+#nookpage .frequently-asked-questions {
+  clear: both;
+  background: none;
+  border: none;
+  .section-title {
+    margin: 40px 0 18px 14px;
+  }
+}
+
+/* left margin reduced from 20px to match support headers */
+/* COMMERCE MODULES */
+.nook-commerce { display: none; }
+
+/* HEADERS */
+
+#nookpage {
+  div.header {
+    h1 {
+      margin: 38px 0 10px 0;
+      padding: 0 0 11px 0;
+      text-indent: -10000px;
+    }
+    div.shadow {
+      position: relative;
+      margin-bottom: 15px;
+      height: 9px;
+      background: url(http://img1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0 transparent;
+      border-top: 1px solid #DBDBDB;
+      div.endfade {
+        position: absolute;
+        height: 9px;
+        width: 202px;
+        right: 0;
+        background: transparent url(http://img1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
+      }
+    }
+  }
+  .bb-message, .bb-more, .bb-message a, .bb-more a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.featured-author .header a {
+  float: none;
+}
+/* FOOTER */
+
+#nk-footer {
+  clear: both;
+  padding: 40px 25px 0 25px;
+  border-top: 20px solid white;
+  position: relative;
+  height: 176px;
+  background: transparent url(http://img1.imagesbn.com/pimages/nook/tablet/footer/Footer_bg.jpg) no-repeat scroll 0 0;
+  color: #333333;
+  h6 {
+    margin: 20px 0 3px 0;
+    padding: 0;
+    height: 16px;
+    text-indent: -10000px;
+    &.first {
+      margin: 0 0 3px 0;
+    }
+  }
+}
+
+.nk-footer-col {
+  float: left;
+  width: 160px;
+  font: normal 11px Arial,sans-serif;
+  a {
+    color: #333333;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+  }
+  hr {
+    margin: 8px 0;
+    padding: 0;
+    background: none;
+    height: 2px;
+    border: none;
+    border-bottom: 2px dotted #d5d6d9;
+    text-align: left;
+  }
+  span.light {
+    color: #666666;
+  }
+  &.utility {
+    float: left;
+    width: 235px;
+    margin-left: 45px;
+    .find-a-store {
+      position: relative;
+      h6 {
+        position: absolute;
+        top: 6px;
+        left: 2px;
+        width: 80px;
+      }
+      #zipcode1 {
+        position: absolute;
+        left: 88px;
+        font-size: 12px;
+        margin: 0;
+        padding: 4px 2px 4px 4px;
+        width: 70px;
+        height: auto;
+        color: #999999;
+        border: 1px solid #cccccc;
+      }
+      a {
+        position: absolute;
+        left: 170px;
+      }
+    }
+  }
+  &.divider {
+    position: absolute;
+    top: 40px;
+    left: 670px;
+    width: 11px;
+    height: 145px;
+    border-right: 2px dotted #d5d6d9;
+  }
+}
+
+/* MEDIA KIT */
+
+.mt-40 {
+  margin-top: 45px;
+}
+
+.mediakit-tabbed-container {
+  background-image: none;
+  overflow: hidden;
+  width: 650px;
+  position: relative;
+  margin-top: -110px;
+}
+
+.media-thumbholder a, .span-1 a, .span-3 a {
+  color: #129daf;
+  font: normal 12px arial;
+}
+
+#merchMainHeader h1 .textonlymedia {
+  left: 0px;
+  top: 10px;
+}
+
+.mediakit-wrapper {
+  font: normal 12px arial;
+  color: #222222;
+  margin: 15px 0 0 0;
+  width: 735px;
+  float: left;
+}
+
+#support-right-wrap {
+  .whats-new {
+    .whatsnew-button {
+      margin-top: 0px;
+    }
+    h4 {
+      margin-bottom: 10px;
+      float: left;
+    }
+    a {
+      margin-top: 78px;
+    }
+  }
+  width: 218px;
+  float: left;
+}
+
+.whats-new {
+  background: url(http://img1.imagesbn.com/pImages/nook/tablet/mediakit/Whatsnew_block.jpg) no-repeat scroll 0 0 transparent;
+  height: 149px;
+  margin: 0 0 42px;
+  padding: 10px 10px 20px;
+  text-align: left;
+  width: 218px;
+  h3 {
+    background-image: none;
+  }
+  .whatsnew-button {
+    clear: both;
+    display: block;
+    padding: 0 10px 0 30px;
+  }
+}
+
+.whats-new-small .whatsnew-button {
+  clear: both;
+  display: block;
+  padding: 0 10px 0 30px;
+}
+
+.whats-new .download, .whats-new-small .download {
+  clear: both;
+  display: block;
+  margin: 0 0 10px;
+}
+
+.whats-new a, .whats-new-small a, .user-guides-manuals a, .media-rnav-wrap a {
+  color: #129daf;
+}
+
+#nook-pageheader {
+  width: 482px;
+  position: relative;
+}
+
+#merchMainHeader h1 {
+  .nookcolor-hdr, .text-hdr {
+    width: 482px;
+    position: relative;
+  }
+}
+
+.media-rnav-wrap, .media-thumbholder {
+  font: normal 12px arial;
+  color: #222222;
+  float: left;
+}
+
+.media-rnav-wrap {
+  width: 234px;
+  &.facts {
+    margin-top: 40px;
+    a {
+      margin: 4px 0 4px 0;
+    }
+  }
+  &.nookcolor-media {
+    margin-top: 30px;
+  }
+  img {
+    clear: both;
+    float: left;
+    margin-bottom: 15px;
+  }
+}
+
+.user-guides-manuals a:hover, .media-rnav-wrap a:hover, .whats-new a:hover {
+  text-decoration: underline;
+}
+
+.user-guides-manuals {
+  &.media {
+    position: relative;
+    top: 0px;
+    margin-top: 45px;
+  }
+  margin-left: 0px;
+  float: left;
+}
+
+.nook-chat-support {
+  margin: 15px 0 0 0;
+  float: left;
+}
+
+/* MEDIA KIT left nav */
+
+.nooklnav {
+  .mknav {
+    font: 12px/18px Arial,Helvetica,sans-serif;
+    color: #222;
+  }
+  a {
+    &:link, &:visited, &:hover, &:active, &:focus {
+      color: #129DAF;
+    }
+  }
+  .header {
+    margin: 0 0 6px 0;
+  }
+  .date {
+    height: 26px;
+  }
+  .show {
+    line-height: 5px;
+    cursor: pointer;
+    color: #129DAF;
+    margin: 12px 0 0 0;
+    padding: 0 0 0 11px;
+    background: url("http://img1.imagesbn.com/pImages/nook/mediakit/fpo/up_down.gif") no-repeat scroll 0 0 transparent;
+    &.less {
+      background: url("http://img1.imagesbn.com/pImages/nook/mediakit/fpo/up_down.gif") no-repeat scroll 0 -5px transparent;
+    }
+  }
+  .fact-sheets {
+    margin: 37px 0 0 0;
+    line-height: 22px;
+  }
+  span {
+    display: block;
+  }
+}
+/* MEDIA KIT TEMPLATE */
+
+#nook-mediakit-597 {
+  float: left;
+  width: 597px;
+  clear: both;
+  margin-bottom: 37px;
+  h2 {
+    margin-bottom: 15px;
+    float: left;
+  }
+}
+
+.nook-mediakit-header {
+  width: 597px;
+  height: 36px;
+  margin-bottom: 16px;
+  float: left;
+  clear: both;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/mediakit/shadow_rule_570.gif) no-repeat top left;
+}
+
+.nook-mediakit-header-copy {
+  float: left;
+  margin: 16px 0 0 3px;
+  h2 {
+    font-size: 18px;
+    color: #222222;
+  }
+}
+
+.nook-mediakit-section {
+  float: left;
+}
+
+.nook-mediakit-row {
+  float: left;
+  width: 597px;
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.nook-mediakit-item {
+  float: left;
+  width: 172px;
+  font: normal 12px/14px arial;
+  color: #222222;
+  margin-right: 27px;
+}
+
+.nook-mediakit-thumb {
+  float: left;
+  width: 172px;
+  margin-bottom: 10px;
+}
+
+.nook-mediakit-title {
+  float: left;
+  width: 172px;
+  margin-bottom: 5px;
+}
+
+.nook-mediakit-cta {
+  float: left;
+  width: 172px;
+  a {
+    color: #129daf;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* TUTORIAL VIDEOS TEMPLATE */
+
+#nook-vid-970 {
+  width: 970px;
+  float: left;
+  clear: both;
+  color: #222222;
+  font: 13px/18px arial;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#nook-vid-970-shadow {
+  width: 970px;
+  height: 15px;
+  float: left;
+  clear: both;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/videotutorial/landing/videos_LP_shadow_rule_970.gif) no-repeat bottom left;
+}
+
+#nook-vid-top {
+  display: inline-block;
+  clear: both;
+  width: 664px;
+  margin-bottom: -4px;
+  #nook-vid-f1 {
+    float: left;
+  }
+  #nook-vid-f1-img {
+    width: 239px;
+    height: 224px;
+    float: left;
+  }
+  #nook-vid-f1-content {
+    float: left;
+    text-align: left;
+    width: 425px;
+  }
+  span {
+    float: left;
+    margin-left: 4px;
+  }
+  p {
+    margin-top: 0px;
+  }
+  h2 {
+    margin: 45px 0 11px 0;
+    float: left;
+  }
+}
+
+#nook-vid-bottom {
+  display: inline-block;
+  clear: both;
+  _display: inline;
+  _zoom: 1;
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.nook-vid-device {
+  width: 175px;
+  float: left;
+}
+
+.nook-vid-device-img {
+  width: 175px;
+  height: 160px;
+  float: left;
+  clear: both;
+}
+
+.nook-vid-device-links {
+  text-align: center;
+  clear: both;
+  width: 175px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: -3px;
+    padding: 0;
+    span, a {
+      font: 12px/18px arial;
+      color: #129DAF;
+      text-decoration: none;
+      background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+      padding: 0 10px 0 0;
+    }
+    span a {
+      font: 12px/18px arial;
+      color: #129DAF;
+      &.video-icon {
+        background: url(http://img1.imagesbn.com/pimages/nook/tablet/compare/video_icon.png) no-repeat 0 0;
+        padding: 0 0 0 25px;
+      }
+    }
+  }
+}
+
+.nook-vid-dotted-v {
+  width: 2px;
+  height: 160px;
+  float: left;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/videotutorial/landing/videos_LP_dotted_divider_line.gif) repeat-y top left;
+}
+/*NOOK Chat style*/
+
+.nook-chat, .nook-chat-footer {
+  display: none;
+}
+
+.nook-chat-support h3 {
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/headers/hdr_ChatwithNookExpert.png) no-repeat 0 0;
+  clear: both;
+  display: block;
+  height: 19px;
+  margin: 20px 0 4px;
+  padding: 0;
+  text-indent: -10000px;
+  width: 218px;
+}
+
+.user-guides-manuals h3 {
+  background: url(http://img1.imagesbn.com/pImages/nook/tablet/headers/hdr_UserGuidesandManuals.png) no-repeat 0 0;
+}
+
+/* SUPPORT LANDING - LEGACY - delete soon */
+
+#nk-support-wrap {
+  width: 970px;
+  height: 510px;
+  margin-top: 6px;
+  float: left;
+  background: url(http://img1.imagesbn.com/pImages/nook/tablet/support/home/HorizontalGradient_8x14.png) top left repeat-x;
+}
+
+.nk-support-pod-wrap {
+  width: 242px;
+  float: left;
+}
+
+.nk-support-prodimg {
+  width: 240px;
+  float: left;
+  padding-top: 50px;
+}
+
+.nk-support-prodinfo {
+  margin: 0 0 0 23px;
+  font: normal 12px/18px arial;
+  color: #222222;
+  float: left;
+  h3 {
+    margin-bottom: 5px;
+    padding: 0;
+  }
+  strong {
+    display: block;
+    margin-top: 8px;
+    clear: both;
+  }
+  a.pdf-icon {
+    background: url(http://img1.imagesbn.com/pImages/nook/tablet/support/home/Acrobat_icon.png) no-repeat 0 0;
+    clear: both;
+    color: #129daf;
+    display: block;
+    padding: 0 0 0 25px;
+    text-decoration: none;
+  }
+}
+
+.nk-support-listitem a {
+  font: normal 12px/18px arial;
+  color: #129daf;
+  text-decoration: none;
+  margin-top: 0px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.nk-support-devicehdr {
+  margin-bottom: 9px;
+}
+
+.nk-support-prodimg {
+  margin-bottom: 34px;
+}
+
+#nook-pageheader h1 {
+  font: normal 12px arial;
+  color: #222222;
+  padding-top: 10px;
+}
+
+.nk-support-vertline {
+  background: url(http://img1.imagesbn.com/pImages/nook/tablet/support/home/Verticaldottedrule.png) repeat-y 0 0;
+  height: 510px;
+  width: 2px;
+  float: left;
+}
+
+#nook-pageheader {
+  left: 0px;
+}
+
+#nk-support-wrap #merchMainHeader h1 {
+  color: #222222;
+}
+
+/* NEW SUPPORT LANDING */
+
+.choose-one-box {
+  margin: -26px 0 34px 0;
+  padding: 14px 0 0 0;
+  border: 1px solid #d5d3d3;
+  background-color: #f8f8f8;
+}
+
+img.choose-one-hdr {
+  display: block;
+  margin: 0 0 21px 0;
+}
+
+.choose-one-box .devices {
+  height: 119px;
+}
+
+table.device-grid {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  td {
+    padding: 0;
+    border-spacing: 0;
+    &.thumb-box {
+      width: 159px;
+      height: 77px;
+      vertical-align: bottom;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &.text-box {
+      padding: 6px 0 0 0;
+      text-align: center;
+      vertical-align: top;
+      font: normal 10px/13px Arial, sans-serif;
+      color: #222222;
+      a {
+        color: #222222;
+        text-decoration: none;
+        &:hover {
+          color: #129daf;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.ns-left-col {
+  float: left;
+  width: 648px;
+}
+
+.ns-right-col {
+  float: left;
+  width: 297px;
+  margin: 0 0 0 25px;
+}
+
+.welcome {
+  background: transparent url(http://img1.imagesbn.com/pimages/nook/support/rule-divider_diagonallines.png) no-repeat scroll bottom left;
+  margin: 0;
+  padding: 0 0 25px 0;
+  font: normal 13px Arial, sans-serif;
+  color: #222222;
+  img {
+    display: block;
+    margin: 0 0 5px 0;
+  }
+}
+
+.device-module {
+  position: relative;
+  border-bottom: 1px solid #d2d2d2;
+  overflow: auto;
+  width: 100%;
+  &.last {
+    position: relative;
+    border-bottom: none;
+    overflow: auto;
+    width: 100%;
+  }
+  .device-graphic {
+    float: left;
+    margin: 0 25px 0 0;
+  }
+  .device-graphic-wide {
+    float: left;
+    margin: 0 25px 0 10px;
+  }
+  h2 {
+    float: left;
+    height: 23px;
+    width: 382px;
+    margin: 29px 0 24px 0;
+    padding: 0;
+    background: 0 none;
+  }
+  &.last h2 {
+    width: 206px;
+  }
+  .ns-links-container {
+    float: left;
+    font: normal 13px/13px Arial, sans-serif;
+    color: #222222;
+    h3 {
+      font: bold 12px Arial, sans-serif;
+      margin: 0;
+      padding: 0 0 11px 0;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      padding: 0 0 11px 0;
+    }
+    a {
+      color: #129daf;
+      text-decoration: none;
+      &:hover {
+        color: #129daf;
+        text-decoration: underline;
+      }
+    }
+    .leftrow {
+      float: left;
+      width: 180px;
+    }
+    .rightrow {
+      float: left;
+      margin-left: 25px;
+    }
+  }
+}
+
+.ns-right-col {
+  .ns-right-box {
+    width: 295px;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 18px;
+  }
+  .ns-right-box-plain {
+    width: 297px;
+    margin-bottom: 18px;
+  }
+  .ns-right-box {
+    .imgblock {
+      display: block;
+    }
+    .ns-right-header {
+      width: 285px;
+      padding: 4px 5px;
+      color: #ffffff;
+      background-color: #ababab;
+      font: normal 11px/11px Arial, sans-serif;
+      letter-spacing: 1px;
+    }
+    .ns-right-content {
+      padding: 24px 25px;
+      font: normal 11px Arial, sans-serif;
+    }
+    .ns-right-content-plain {
+      padding: 0;
+    }
+    .ns-right-content {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        padding: 0 0 13px 0;
+        line-height: 13px;
+        &.last {
+          padding: 0;
+        }
+        a {
+          color: #129daf;
+          text-decoration: none;
+          &:hover {
+            color: #129daf;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.download-box {
+  margin-bottom: 30px;
+  line-height: 15px;
+  color: #222222;
+  &.last {
+    margin-bottom: 0;
+  }
+}
+
+.ns-download-button {
+  float: right;
+}
+
+.download-box a {
+  color: #129daf;
+  text-decoration: none;
+  &:hover {
+    color: #129daf;
+    text-decoration: underline;
+  }
+}
+
+.mt24 {
+  margin-top: 24px;
+}
+
+.ml25 {
+  margin-left: 25px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.mr25 {
+  margin-right: 25px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+#ns-search {
+  position: relative;
+  margin-top: 12px;
+  height: 25px;
+  form.ns-kbform {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 248px;
+    height: 26px;
+    background: transparent url(http://img1.imagesbn.com/pimages/nook/support/search_textfield.png) no-repeat scroll 0 0;
+    fieldset {
+      border: 0 none;
+    }
+    label {
+      position: absolute;
+      left: -10000px;
+      top: -10000px;
+    }
+    input {
+      &.search-term {
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        font: normal 11px Arial, sans-serif;
+        border: 0 none;
+        width: 196px;
+        color: #484848;
+        background-color: transparent;
+        height: 12px;
+        &:focus {
+          outline: 0 none;
+        }
+      }
+      &.search-graphic {
+        position: absolute;
+        z-index: 10;
+        display: block;
+        top: 5px;
+        right: 8px;
+        width: 20px;
+        height: 16px;
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+      }
+    }
+  }
+}
+
+#alertbox {
+  width: 936px;
+  height: 26px;
+  border: 1px solid #d5d3d3;
+  background-color: #f8f8f8;
+  padding: 3px 16px 0 16px;
+  div {
+    float: left;
+  }
+}
+
+.alert-header {
+  font: bold 12px Arial, sans-serif;
+  color: #222222;
+  padding-right: 9px;
+  margin-top: 4px;
+}
+
+.alert-text {
+  font: normal 12px Arial, sans-serif;
+  padding-left: 21px;
+  margin-top: 4px;
+}
+
+.alert-link {
+  font: normal 12px Arial, sans-serif;
+  color: #129daf;
+  padding-left: 9px;
+  margin-top: 4px;
+  &.second {
+    padding-left: 15px;
+  }
+  a {
+    font: normal 12px Arial, sans-serif;
+    color: #129daf;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.alert-balloon {
+  position: relative;
+}
+
+.alert-balloon-text {
+  position: absolute;
+  font: bold 11px Helvetica, Arial, sans-serif;
+  color: white;
+  top: 1px;
+  left: 7px;
+}
+
+.rsaquo {
+  font: normal 15px MiloSerifOffcMedium, serif;
+  color: #129daf;
+  position: relative;
+  top: -1px;
+}
+
+/* PROTECTION PLAN */
+
+#protection-table {
+  td {
+    &.header-row a {
+      color: #129daf;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    color: #222222;
+  }
+  color: #222222;
+}
+
+#merchMainHeader h1 .text-hdr {
+  top: 0px;
+  margin: 38px 0 10px 0;
+}
+
+.protection-maincallout {
+  width: 100%;
+  h4 {
+    color: #222222;
+    font: normal 18px arial;
+    margin-bottom: 28px;
+  }
+}
+
+.protection-leftcol h4, .protection-rightcol h4 {
+  color: #222222;
+  font: normal 18px arial;
+  margin-bottom: 28px;
+}
+
+.protection-plan-wrap {
+  font: normal 12px/18px arial;
+  color: #222222;
+  margin-top: 75px;
+  clear: both;
+  left: 0px;
+}
+
+.protection-leftcol h3, .protection-rightcol h3 {
+  color: #222222;
+  font: bold 14px arial;
+  margin: 10px 0 4px;
+  padding: 0;
+}
+
+a.protection-next {
+  font: normal 12px arial;
+  background: url(http://img1.imagesbn.com/PImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right 4px;
+  color: #129daf;
+}
+
+#nook-pageheader {
+  left: 0px;
+}
+
+.pp-checklist {
+  margin: 0;
+  padding: 0;
+  list-type: none;
+}
+
+.pp-check {
+  margin: 0;
+  padding: 0;
+}
+
+/* SUPPORT - FAQ */
+
+#nook-faq-wrap {
+  width: 772px;
+  float: left;
+  font: normal 12px/18px arial;
+  a {
+    color: #129daf;
+    text-decoration: none;
+  }
+}
+
+#nook-faq-hdr-wrap {
+  width: 772px;
+  height: 73px;
+  float: left;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/faq/LongSectionDivider.png) bottom left no-repeat;
+}
+
+#nook-faq-hdr {
+  width: 489px;
+  float: left;
+  margin-bottom: 11px;
+}
+
+#nook-faq-subhdr {
+  width: 489px;
+  float: left;
+  font: normal 12px/18px arial;
+  color: #222222;
+  margin-bottom: 17px;
+}
+
+#nook-faq-vid-hdr-wrap {
+  width: 756px;
+  float: left;
+  padding: 16px 0 33px 14px;
+  clear: both;
+}
+
+#nook-faq-guide-wrap {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    display: inline;
+  }
+  li {
+    display: inline;
+    padding: 10px 0 10px 35px;
+    margin: 0 40px 0 0;
+    background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/faq/Acrobatlrg_icon.png) no-repeat 0 0.3em;
+  }
+  a {
+    background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+    padding: 0 10px 0 0;
+    text-decoration: none;
+  }
+  width: 756px;
+  height: 45px;
+  float: left;
+  padding: 0 0 33px 14px;
+  clear: both;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/faq/LongSectionDivider.png) bottom left no-repeat;
+}
+
+#nook-faq-vid-wrap {
+  width: 756px;
+  height: 100%;
+  float: left;
+  padding: 0 0 33px 14px;
+  clear: both;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/faq/LongSectionDivider.png) bottom left no-repeat;
+}
+
+#nook-vid-hdr {
+  float: left;
+  margin: 0;
+  font: normal 18px arial;
+  color: #222222;
+}
+
+#nook-vid-seeall {
+  float: right;
+  margin: 0 30px 0 0;
+  background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+  padding: 0 10px 0 0;
+  text-decoration: none;
+}
+
+#nook-faq-vid-wrap img {
+  display: block;
+}
+
+.nook-faq-vid-thumb {
+  float: left;
+  margin: 0 8px 15px 0;
+  width: 178px;
+}
+
+/* GIFT CARDS */
+
+#nook-gc-wrap {
+  width: 970px;
+  float: left;
+  font: normal 12px/18px arial;
+  color: #222222;
+  margin: 0 0 39px 0;
+}
+
+.nook-gc-row {
+  width: 970px;
+  float: left;
+  border-bottom: 1px dotted #cccccc;
+}
+
+.nook-gc-left {
+  width: 482px;
+  height: 249px;
+  float: left;
+}
+
+.first-row .nook-gc-left {
+  margin: 0;
+  padding: 0;
+}
+
+.nook-gc-right {
+  width: 488px;
+  float: left;
+}
+
+.gray-border {
+  border-bottom: 1px solid #cccccc;
+}
+
+.first-row .nook-gc-header {
+  padding: 0;
+  margin: 72px 0 15px 0;
+}
+
+.nook-gc-header {
+  padding: 0;
+  margin: 53px 0 15px 0;
+}
+
+.nook-gc-copy {
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.nook-gc-button {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.nook-gc-more-link {
+  padding: 0;
+  margin: 0 0 35px 0;
+  a {
+    color: #129daf;
+    background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+    padding: 0 10px 0 0;
+    text-decoration: none;
+  }
+}
+
+.last-row {
+  border-bottom: none;
+}
+
+.nook-gc-title {
+  float: left;
+  padding: 0;
+  margin: 0 0 10px 0;
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* SUPPORT - FAQ */
+
+#nook-faq-wrap {
+  width: 772px;
+  float: left;
+  font: normal 12px/18px arial;
+  a {
+    color: #129daf;
+    text-decoration: none;
+  }
+}
+
+#nook-faq-hdr-wrap {
+  width: 772px;
+  height: 73px;
+  float: left;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/faq/LongSectionDivider.png) bottom left no-repeat;
+}
+
+#nook-faq-hdr {
+  width: 489px;
+  float: left;
+  margin-bottom: 11px;
+}
+
+#nook-faq-subhdr {
+  width: 489px;
+  float: left;
+  font: normal 12px/18px arial;
+  color: #222222;
+  margin-bottom: 17px;
+}
+
+#nook-faq-vid-hdr-wrap {
+  width: 756px;
+  float: left;
+  padding: 16px 0 33px 14px;
+  clear: both;
+}
+
+#nook-faq-guide-wrap {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    display: inline;
+  }
+  li {
+    display: inline;
+    padding: 10px 0 10px 35px;
+    margin: 0 40px 0 0;
+    background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/faq/Acrobatlrg_icon.png) no-repeat 0 0.3em;
+  }
+  a {
+    background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+    padding: 0 10px 0 0;
+    text-decoration: none;
+  }
+  width: 756px;
+  height: 45px;
+  float: left;
+  padding: 0 0 33px 14px;
+  clear: both;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/faq/LongSectionDivider.png) bottom left no-repeat;
+}
+
+#nook-faq-vid-wrap {
+  width: 756px;
+  height: 100%;
+  float: left;
+  padding: 0 0 33px 14px;
+  clear: both;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/faq/LongSectionDivider.png) bottom left no-repeat;
+}
+
+#nook-vid-hdr {
+  float: left;
+  margin: 0;
+  font: normal 18px arial;
+  color: #222222;
+}
+
+#nook-vid-seeall {
+  float: right;
+  margin: 0 30px 0 0;
+  background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+  padding: 0 10px 0 0;
+  text-decoration: none;
+}
+
+#nook-faq-vid-wrap img {
+  display: block;
+}
+
+.nook-faq-vid-thumb {
+  float: left;
+  margin: 0 8px 15px 0;
+  width: 178px;
+}
+
+/* GIFT CARDS */
+
+#nook-gc-wrap {
+  width: 970px;
+  float: left;
+  font: normal 12px/18px arial;
+  color: #222222;
+  margin: 0 0 39px 0;
+}
+
+.nook-gc-row {
+  width: 970px;
+  float: left;
+  border-bottom: 1px dotted #cccccc;
+}
+
+.nook-gc-left {
+  width: 482px;
+  height: 249px;
+  float: left;
+}
+
+.first-row .nook-gc-left {
+  margin: 0;
+  padding: 0;
+}
+
+.nook-gc-right {
+  width: 488px;
+  float: left;
+}
+
+.gray-border {
+  border-bottom: 1px solid #cccccc;
+}
+
+.first-row .nook-gc-header {
+  padding: 0;
+  margin: 72px 0 15px 0;
+}
+
+.nook-gc-header {
+  padding: 0;
+  margin: 53px 0 15px 0;
+}
+
+.nook-gc-copy {
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.nook-gc-button {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.nook-gc-more-link {
+  padding: 0;
+  margin: 0 0 35px 0;
+  a {
+    color: #129daf;
+    background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+    padding: 0 10px 0 0;
+    text-decoration: none;
+  }
+}
+
+.last-row {
+  border-bottom: none;
+}
+
+.nook-gc-title {
+  float: left;
+  padding: 0;
+  margin: 0 0 10px 0;
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* GIFTING - 30+ */
+
+#nook-gifting-wrap {
+  width: 970px;
+  float: left;
+  background-color: #ffffff;
+  a {
+    color: #129daf;
+    text-decoration: none;
+    &:hover {
+      color: #129daf;
+      text-decoration: underline;
+    }
+  }
+  h1 {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+}
+
+#nook-gifting-gridbg {
+  float: left;
+  padding: 10px;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/corporategifting/pattern.png) repeat top left;
+}
+
+#nook-gifting-gridbg-lower {
+  float: left;
+  padding: 0 10px 10px 10px;
+  margin-bottom: 50px;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/corporategifting/pattern.png) repeat top left;
+}
+
+.nook-gifting-gridbody {
+  float: left;
+  background-color: #ffffff;
+  padding: 15px 0 0 0;
+}
+
+#nook-gifting-gridtitle {
+  position: relative;
+  top: 18px;
+  height: 25px;
+  text-align: center;
+  z-index: 1000;
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#nook-gifting-gridtitle-lower {
+  position: relative;
+  top: -9px;
+  height: 25px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.nook-gifting-gridwrap {
+  float: left;
+  width: 950px;
+}
+
+.nook-gifting-griditem {
+  float: left;
+  margin: 0 0 15px 15px;
+  font: normal 12px/18px arial;
+  ul {
+    margin: 78px 0 0 25px;
+    width: 225px;
+  }
+  li {
+    background: url(http://img1.imagesbn.com/pimages/nook/tablet/whatsnew/222_bullet.png) no-repeat left 8px;
+    color: #222222;
+    font: normal 12px/18px arial;
+    padding: 0 0 0 9px;
+    width: 225px;
+    margin-bottom: 5px;
+  }
+  a {
+    background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+    padding: 0 10px 0 0;
+  }
+  .browse-link {
+    margin-left: 26px;
+  }
+}
+
+#nook-gifting-f1-left {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#nook-gifting-f1-right {
+  float: left;
+  font: normal 12px/18px arial;
+  width: 450px;
+  a img {
+    left: -4px;
+    position: relative;
+  }
+}
+
+#nook-gifting-f1-copy {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.top-pad {
+  margin-top: 30px;
+}
+
+.pad-box {
+  width: auto;
+  height: 50px;
+  float: left;
+}
+
+/* USER GUIDES */
+
+#nk-user-guides {
+  font: normal 12px arial;
+  color: #222222;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin: 0 0 15px;
+    padding: 0;
+  }
+  a {
+    background: url(http://img1.imagesbn.com/pImages/nook/tablet/support/home/Acrobat_icon.png) no-repeat 0 0;
+    clear: both;
+    color: #129daf;
+    padding: 0 0 7px 25px;
+    text-decoration: none;
+  }
+}
+
+/* IN STORE */
+
+#nook-is-wrap, #nook-is-f1-topwrap, #nook-is-f1-bottomwrap {
+  clear: both;
+  float: left;
+  width: 970px;
+  font: normal 12px/18px arial;
+  color: #222222;
+}
+
+#nook-is-f1-topwrap {
+  margin: 0 0 10px;
+}
+
+#nook-is-f1-bottomwrap {
+  padding-bottom: 46px;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/support/home/HorizontalGradient_8x14.png) repeat-x bottom left;
+}
+
+#nook-is-wrap a {
+  color: #129daf;
+  text-decoration: none;
+}
+
+#nook-is-f1-left {
+  float: left;
+  width: 557px;
+  height: 335px;
+}
+
+#nook-is-f1-right {
+  float: left;
+  width: 413px;
+  padding: 82px 0 0 0;
+  h2 {
+    margin: 0;
+    padding: 0 0 -15px 0;
+  }
+}
+
+.nook-is-f1-copy {
+  width: 335px;
+  margin: 0;
+  padding: 0 0 13px 0;
+}
+
+.vert-sep {
+  width: 1px;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/instore/vertical_rule.png) repeat-y top left;
+  float: left;
+}
+
+#nook-is-f1-bottomwrap {
+  h2 {
+    margin: 0 0 15px 0;
+    padding: 0;
+  }
+  a {
+    color: #129daf;
+    background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+    padding: 0 10px 0 0;
+  }
+}
+
+#nook-is-f1-leftpod {
+  margin: 0 0 0 18px;
+  padding: 0 18px 0 0;
+  float: left;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/instore/vertical_rule.png) repeat-y top right;
+}
+
+#nook-is-f1-centerpod {
+  margin: 0 0 0 30px;
+  padding: 0 18px 0 0;
+  float: left;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/instore/vertical_rule.png) repeat-y top right;
+}
+
+#nook-is-f1-rightpod {
+  margin: 0 0 0 30px;
+  padding: 0;
+  float: left;
+}
+
+#nook-is-f1-leftpod, #nook-is-f1-centerpod {
+  width: 279px;
+}
+
+#nook-is-f1-rightpod {
+  width: 297px;
+}
+
+#nk-mis-wrap {
+  float: left;
+  width: 970px;
+  font: normal 12px/18px arial;
+  color: #222222;
+  h3 {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#nk-mis-subhdr {
+  margin: 0 0 0 18px;
+  float: left;
+  clear: both;
+}
+
+#nk-mis-grid-wrap {
+  margin: 34px 0 120px 18px;
+  padding: 0;
+  float: left;
+}
+
+.nk-mis-box-wrap {
+  margin: 0 30px 30px 0;
+  float: left;
+}
+
+.nk-mis-box-cover {
+  margin: 0 30px 0 0;
+  float: left;
+  width: 108px;
+  height: 160px;
+}
+
+.nk-mis-box-info {
+  float: left;
+  width: 300px;
+  height: 160px;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/instore/horizontal_rule.png) bottom left repeat-x;
+}
+
+.nk-mis-box-titleauthor, #nk-mis-grid-wrap a {
+  font: bold 14px/18px arial;
+  color: #222222;
+}
+
+.nk-mis-box-type {
+  font-style: italic;
+  padding-bottom: 18px;
+  clear: both;
+}
+
+.nk-mis-box-copy {
+  float: left;
+  height: 97px;
+}
+
+.nk-mis-box-cover img {
+  max-height: 160px;
+  max-width: 108px;
+  border: 1px solid #BDBAAF;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+  padding: 3px;
+}
+
+#nk-mis-grid-header {
+  overflow: hidden;
+  margin-bottom: 2px;
+  h2 {
+    text-indent: 0px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#nk-mis-grid-subhdr {
+  color: #222222;
+  float: left;
+  font: 12px/18px arial;
+  margin-bottom: 40px;
+  width: 722px;
+}
+
+#nk-mis-grid-dlhdr {
+  padding: 0 0 34px 0;
+  float: left;
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.section-header-wrap {
+  margin-left: 0px;
+  overflow: hidden;
+}
+
+.lower {
+  width: 279px;
+}
+
+sup {
+  font-size: 10px;
+}
+
+/* FIND A STORE */
+
+#findastore-wrap {
+  width: 210px;
+  float: left;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/instore/horizontal_rule.png) top left repeat-x;
+  padding: 0;
+}
+
+#zipcode {
+  margin: 0 203px 0 0;
+  padding: 0;
+}
+
+h6.first {
+  margin: 0 0 3px;
+}
+
+.find-a-store {
+  h6 {
+    height: 16px;
+    padding: 0;
+    text-indent: -10000px;
+    left: 2px;
+    position: absolute;
+    top: 6px;
+    width: 80px;
+  }
+  position: relative;
+  #zipcode1 {
+    border: 1px solid #CCCCCC;
+    color: #999999;
+    font-size: 12px;
+    height: auto;
+    left: 88px;
+    margin: 0;
+    padding: 4px 2px 4px 4px;
+    position: absolute;
+    width: 82px;
+  }
+  a {
+    left: 181px;
+    position: absolute;
+  }
+}
+
+/* WARRANTY */
+
+.warranty-hdr {
+  color: #222222;
+  font: bold 14px arial;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.warranty-subhdr {
+  color: #222222;
+  font: normal 14px arial;
+  margin-top: 30px;
+  width: 100%;
+}
+
+p.warranty-p {
+  color: #222222;
+  font: normal 12px arial;
+  width: 100%;
+}
+
+ol {
+  &.pp-ll {
+    list-style-type: lower-alpha;
+    margin-left: 18px;
+  }
+  &.pptc-list {
+    margin: 25px 0 0 0;
+    padding: 0;
+    li {
+      margin: 0 0 10px;
+      padding: 0;
+    }
+  }
+}
+
+/* FONT DEMO - NOOK 1ST EDITION */
+
+#nfe-fontdemo li#page-1 a.active, #encore-font-sizes-wrap li#page-1 a.active, #nst-fontdemo li#page-1 a.active {
+  padding: 0;
+}
+
+#nfe-fontdemo {
+  margin: 0 auto;
+  #font-sizes-wrap {
+    position: relative;
+    left: 0;
+    width: 739px;
+    overflow: hidden;
+    margin: 0 auto;
+    .font-sizes-container {
+      background: url(http://images.barnesandnoble.com/pimages/nook/encore/features/textsizes/nook_wifi_fontsize_demo_F1v2.jpg) no-repeat top left;
+      width: 744px;
+      height: 619px;
+      position: absolute;
+      top: 65px;
+      padding-bottom: 50px;
+      z-index: 1;
+    }
+    .font-sizes {
+      float: left;
+      width: 318px;
+      height: 408px;
+      margin: 0;
+      list-style: none;
+      padding: 86px 0 0 173px;
+    }
+    .paging-control {
+      float: left;
+      margin-left: 34px;
+      padding-left: 0;
+      padding-top: 256px;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 157px;
+      }
+    }
+    .font-sizes-container .paging-control ul li {
+      a {
+        outline: 0;
+        background: url(http://images.barnesandnoble.com/pimages/nook/encore/features/textsizes/fontNav_sprite.png) no-repeat top left;
+        width: 177px;
+        height: 34px;
+        display: block;
+        text-indent: -9999px;
+      }
+      &#page-1 a {
+        background-position: 0 0;
+      }
+      &#page-2 a {
+        background-position: 0 -34px;
+      }
+      &#page-3 a {
+        background-position: 0 -68px;
+      }
+      &#page-4 a {
+        background-position: 0 -102px;
+      }
+      &#page-5 a {
+        background-position: 0 -136px;
+      }
+      &#page-6 a {
+        background-position: 0 -170px;
+      }
+      &#page-1 {
+        a:hover, &.ctf-on a {
+          background-position: -177px 0;
+          padding: 0;
+        }
+      }
+      &#page-2 {
+        a {
+          &:hover, &.active {
+            background-position: -177px -34px;
+            padding: 0;
+          }
+        }
+        &.ctf-on a {
+          background-position: -177px -34px;
+          padding: 0;
+        }
+      }
+      &#page-3 {
+        a {
+          &:hover, &.active {
+            background-position: -177px -68px;
+            padding: 0;
+          }
+        }
+        &.ctf-on a {
+          background-position: -177px -68px;
+          padding: 0;
+        }
+      }
+      &#page-4 {
+        a {
+          &:hover, &.active {
+            background-position: -177px -102px;
+            padding: 0;
+          }
+        }
+        &.ctf-on a {
+          background-position: -177px -102px;
+          padding: 0;
+        }
+      }
+      &#page-5 {
+        a {
+          &:hover, &.active {
+            background-position: -177px -136px;
+            padding: 0;
+          }
+        }
+        &.ctf-on a {
+          background-position: -177px -136px;
+          padding: 0;
+        }
+      }
+      &#page-6 {
+        a {
+          &:hover, &.active {
+            background-position: -177px -170px;
+            padding: 0;
+          }
+        }
+        &.ctf-on a {
+          background-position: -177px -170px;
+          padding: 0;
+        }
+      }
+    }
+    a {
+      &.font-sizes-link, &:visited.font-sizes-link {
+        color: #96B23C;
+        text-decoration: none;
+        font-size: 11px;
+      }
+      &:hover.font-sizes-link {
+        text-decoration: underline;
+      }
+    }
+    #font-sizes-link-container {
+      padding: 35px 0 25px 185px;
+      position: relative;
+      float: left;
+    }
+    .ctf-on, .ctf-off, .paging-control {
+      display: block;
+    }
+    .font-sizes-container {
+      position: relative;
+      top: 75px;
+    }
+    #font-sizes-link-container {
+      position: relative;
+      padding-top: 45px;
+    }
+  }
+}
+
+/* FONT DEMO - NOOK COLOR */
+
+.feature-detail-wrap {
+  margin: 0 auto;
+  width: 723px;
+}
+
+#encore-font-sizes-wrap {
+  position: relative;
+  left: 0;
+  width: 739px;
+  overflow: hidden;
+  margin: 0 auto;
+  .font-sizes-container {
+    background: url(http://images.barnesandnoble.com/pimages/nook/encore/features/encoretextsizes/Encorebasev2.jpg) no-repeat top left;
+    width: 744px;
+    height: 619px;
+    position: absolute;
+    top: 65px;
+    padding-bottom: 50px;
+    z-index: 1;
+  }
+  .font-sizes {
+    float: left;
+    width: 318px;
+    height: 408px;
+    margin: 0;
+    list-style: none;
+    padding: 70px 0 0 170px;
+  }
+  .paging-control {
+    float: left;
+    margin-left: 11px;
+    padding-left: 0;
+    padding-top: 256px;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 157px;
+    }
+  }
+  .font-sizes-container .paging-control ul li {
+    a {
+      outline: 0;
+      background: url(http://images.barnesandnoble.com/pimages/nook/encore/features/textsizes/fontNav_sprite.png) no-repeat top left;
+      width: 177px;
+      height: 34px;
+      display: block;
+      text-indent: -9999px;
+    }
+    &#page-1 a {
+      background-position: 0 0;
+    }
+    &#page-2 a {
+      background-position: 0 -34px;
+    }
+    &#page-3 a {
+      background-position: 0 -68px;
+    }
+    &#page-4 a {
+      background-position: 0 -102px;
+    }
+    &#page-5 a {
+      background-position: 0 -136px;
+    }
+    &#page-6 a {
+      background-position: 0 -170px;
+    }
+    &#page-1 {
+      a:hover, &.ctf-on a {
+        background-position: -177px 0;
+        padding: 0;
+      }
+    }
+    &#page-2 {
+      a {
+        &:hover, &.active {
+          background-position: -177px -34px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -177px -34px;
+        padding: 0;
+      }
+    }
+    &#page-3 {
+      a {
+        &:hover, &.active {
+          background-position: -177px -68px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -177px -68px;
+        padding: 0;
+      }
+    }
+    &#page-4 {
+      a {
+        &:hover, &.active {
+          background-position: -177px -102px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -177px -102px;
+        padding: 0;
+      }
+    }
+    &#page-5 {
+      a {
+        &:hover, &.active {
+          background-position: -177px -136px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -177px -136px;
+        padding: 0;
+      }
+    }
+    &#page-6 {
+      a {
+        &:hover, &.active {
+          background-position: -177px -170px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -177px -170px;
+        padding: 0;
+      }
+    }
+  }
+  a {
+    &.font-sizes-link, &:visited.font-sizes-link {
+      color: #96B23C;
+      text-decoration: none;
+      font-size: 11px;
+    }
+    &:hover.font-sizes-link {
+      text-decoration: underline;
+    }
+  }
+  #font-sizes-link-container {
+    padding: 35px 0 25px 185px;
+    position: relative;
+    float: left;
+  }
+  .ctf-on, .ctf-off, .paging-control {
+    display: block;
+  }
+  .font-sizes-container {
+    position: relative;
+    top: 75px;
+  }
+  #font-sizes-link-container {
+    position: relative;
+    padding-top: 45px;
+  }
+}
+
+#encore-font-bottom {
+  position: relative;
+  top: 75px;
+}
+
+/* FONT DEMO - NOOK SIMPLE TOUCH */
+
+#nst-fontdemo #font-sizes-wrap {
+  .font-sizes-container {
+    background: url(http://images.barnesandnoble.com/pimages/nook/2/fontsize/Gossamer_textdemo_F1.jpg) no-repeat top left;
+    width: 688px;
+    z-index: 1;
+    .paging-control ul li a {
+      background: url(http://images.barnesandnoble.com/pimages/nook/2/fontsize/Textsize_indicator.jpg) no-repeat top left;
+      display: block;
+      height: 41px;
+      outline: 0 none;
+      text-indent: -9999px;
+      width: 226px;
+    }
+  }
+  .font-sizes {
+    padding: 72px 0 0 105px;
+  }
+  overflow: visible;
+  margin: 0 auto;
+  width: 688px;
+  .paging-control ul {
+    width: 226px;
+  }
+  .font-sizes-container .paging-control ul li {
+    &#page-1 {
+      a:hover, &.ctf-on a {
+        background-position: -226px 0;
+        padding: 0;
+      }
+    }
+    &#page-2 {
+      a {
+        &:hover, &.active {
+          background-position: -226px -41px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -226px -41px;
+        padding: 0;
+      }
+    }
+    &#page-3 {
+      a {
+        &:hover, &.active {
+          background-position: -226px -82px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -226px -82px;
+        padding: 0;
+      }
+    }
+    &#page-4 {
+      a {
+        &:hover, &.active {
+          background-position: -226px -123px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -226px -123px;
+        padding: 0;
+      }
+    }
+    &#page-5 {
+      a {
+        &:hover, &.active {
+          background-position: -226px -164px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -226px -164px;
+        padding: 0;
+      }
+    }
+    &#page-6 {
+      a {
+        &:hover, &.active {
+          background-position: -226px -205px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -226px -205px;
+        padding: 0;
+      }
+    }
+    &#page-7 {
+      a {
+        &:hover, &.active {
+          background-position: -226px -246px;
+          padding: 0;
+        }
+      }
+      &.ctf-on a {
+        background-position: -226px -246px;
+        padding: 0;
+      }
+    }
+    &#page-1 a {
+      background-position: 0 0;
+    }
+    &#page-2 a {
+      background-position: 0 -41px;
+    }
+    &#page-3 a {
+      background-position: 0 -82px;
+    }
+    &#page-4 a {
+      background-position: 0 -123px;
+    }
+    &#page-5 a {
+      background-position: 0 -164px;
+    }
+    &#page-6 a {
+      background-position: 0 -205px;
+    }
+    &#page-7 a {
+      background-position: 0 -246px;
+    }
+  }
+  .paging-control {
+    float: left;
+    margin-left: 19px;
+    padding-left: 0;
+    padding-top: 176px;
+  }
+}
+
+/* TERMS OF SERVICE */
+
+h1.tos-hdr {
+  margin-bottom: 25px;
+  text-indent: -9999px;
+  width: 136px;
+  height: 19px;
+  background: url(http://img1.imagesbn.com/pimages/nook/tablet/headers/hdr_termsandservice.gif) no-repeat top left;
+}
+
+.tos-body {
+  font: normal 12px arial;
+  color: #222222;
+}
+/*Begin Brian's NOOK Styles*/
+
+#compare-nook {
+  position: relative;
+}
+
+.compare-nook {
+  width: 322px;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #222;
+  line-height: 15px;
+  .comp-hdr, .media-tout, .comp-copy, .comp-cta, .commerce_box {
+    margin-left: 19px;
+    width: 100%;
+  }
+  .comp-hdr {
+    margin-bottom: 10px;
+  }
+  .comp-copy {
+    width: 300px;
+  }
+  .comp-cta {
+    color: #129DAF;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    a {
+      color: #129DAF;
+    }
+    span {
+      background: url("http://img1.imagesbn.com/pimages/nook/tablet/whatsnew/269dae_arrow5x6.png") no-repeat scroll right 4px transparent;
+      padding: 0 9px 0 0;
+    }
+    a.video {
+      background: url("http://img1.imagesbn.com/pimages/nook/tablet/compare/video_icon.png") no-repeat scroll 0 0 transparent;
+      padding: 0 0 0 25px;
+      color: #129DAF;
+    }
+  }
+}
+
+ul.comp-nook-box {
+  float: left;
+  margin: 0;
+  padding: 0 0 0 0px;
+  width: 306px;
+  margin: 0 15px 0 0;
+  min-height: 100px;
+  &.last {
+    margin: 0;
+  }
+  li {
+    font-size: 12px;
+    width: 250px;
+    line-height: 18px;
+    list-style: none;
+    background: url("http://img1.imagesbn.com/pimages/nook/tablet/whatsnew/222_bullet.png") no-repeat scroll left 8px transparent;
+    padding: 0 0 0 11px;
+    sup {
+      vertical-align: top;
+      position: relative;
+      top: -2px;
+      margin: 0 0 0 2px;
+    }
+  }
+}
+
+.comp-nook-outer-top, .comp-nook-outer-middle, .comp-nook-outer-bottom {
+  clear: both;
+  float: left;
+}
+
+.comp-nook-outer-middle {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  margin: 19px 0 0 0;
+  background: url("http://img1.imagesbn.com/pimages/nook/tablet/compare/3columnstripe.png") repeat scroll 19px 0 transparent;
+  .comp-nook-hdr {
+    font-size: 18px;
+  }
+}
+
+.comp-clear {
+  clear: both;
+  line-height: 1px;
+}
+
+.comp-nook-row, .comp-nook-outer-bottom {
+  width: 970px;
+  display: block;
+}
+
+.comp-nook-row {
+  margin: 0 0 0 19px;
+}
+
+.comp-nook-hdr {
+  line-height: 20px;
+  font-size: 18px;
+  &.first {
+    background: url("http://img1.imagesbn.com/pimages/nook/tablet/compare/topshadow.png") no-repeat scroll 0 25px #FFFFFF;
+    height: 42px;
+  }
+  &.other {
+    border-bottom: 1px solid #DEDEDE;
+    height: 26px;
+    margin: 20px 0 10px;
+    width: 928px;
+  }
+}
+
+.comp-closer {
+  background: url("http://img1.imagesbn.com/pimages/nook/tablet/compare/bottomshadow.png") no-repeat scroll 0 0 #FFFFFF;
+  height: 55px;
+  width: 970px;
+  margin: 0 0 0 19px;
+}
+
+.comp-nook-outer-bottom {
+  margin-bottom: 45px;
+}
+
+#compare-nook .nook-cm-buttons {
+  position: relative;
+  left: -1px;
+}
+
+/* Commerce Module */
+
+.nook-commerce {
+  display: none;
+}
+
+.commerce_box form {
+  display: inline;
+}
+
+.nook-price-container {
+  .strikeout {
+    text-decoration: line-through;
+    margin: 0 3px 0 0;
+  }
+  color: #ee7336;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+  .promo-shipping-msg {
+    color: #222;
+    font-size: 11px;
+  }
+}
+
+/*Video*/
+
+.NOOKmicrosite-player.wide {
+  .s-videoheader {
+    width: 608px;
+  }
+  .s-popupvid {
+    height: 377px;
+    width: 608px;
+  }
+  width: 614px;
+  z-index: 11000;
+}
+
+.nc-sectionheader {
+  width: 477px;
+}
+
+#fade {
+  Z-INDEX: 2001;
+  POSITION: fixed;
+  WIDTH: 100%;
+  DISPLAY: none;
+  BACKGROUND: #000;
+  HEIGHT: 100%;
+  TOP: 0px;
+  LEFT: 0px;
+  opacity: .75;
+}
+
+* HTML #fade {
+  POSITION: absolute;
+  WIDTH: 100%;
+  HEIGHT: 100%;
+}
+
+.NOOKmicrosite-player {
+  &.s-videocontainer {
+    background-color: white;
+    display: none;
+    height: 306px;
+    margin: 130px 0 0 50px;
+    position: absolute;
+    z-index: 11000;
+  }
+  .s-videoborder {
+    border: 3px solid #C4C4C4;
+  }
+  .s-videoheader {
+    background-color: white;
+    color: #999999;
+    height: 30px;
+    position: relative;
+    div.s-videoheader-text {
+      font: bold 14px Verdana;
+      left: 18px;
+      position: absolute;
+      top: 6px;
+    }
+    img.xclosevideo {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+    }
+  }
+  .s-popupvid {
+    background: none repeat scroll 0 0 #FFFFFF;
+  }
+  #videoBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    height: 480px;
+    left: -999em;
+    opacity: 0.5;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #flashBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 300px;
+    left: -999em;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #feedroomWrap {
+    display: none;
+    height: 300px;
+    left: 3px;
+    position: absolute;
+    top: 33px;
+    width: 400px;
+    z-index: 500;
+  }
+  .s-videofooter {
+    display: none;
+    height: 25px;
+    position: relative;
+    a {
+      color: #96B227;
+      display: block;
+      font: 11px Verdana,sans-serif;
+      position: absolute;
+      right: 15px;
+      text-decoration: none;
+      top: 6px;
+    }
+  }
+}
+
+.NOOKplayer-piksel-oneclip {
+  &.s-videocontainer {
+    background-color: white;
+    display: none;
+    height: 523px;
+    width: 806px;
+    margin: 0;
+    position: absolute;
+    z-index: 11000;
+  }
+  .s-videoborder {
+    border: 3px solid #C4C4C4;
+  }
+  .s-videoheader {
+    background-color: white;
+    color: #999999;
+    height: 30px;
+    position: relative;
+    div.s-videoheader-text {
+      font: bold 14px Verdana;
+      left: 18px;
+      position: absolute;
+      top: 6px;
+    }
+    img.xclosevideo {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+    }
+  }
+  .s-popupvid {
+    background: none repeat scroll 0 0 #FFFFFF;
+  }
+  #videoBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    height: 480px;
+    left: -999em;
+    opacity: 0.5;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #flashBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 300px;
+    left: -999em;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #feedroomWrap {
+    display: none;
+    height: 300px;
+    left: 3px;
+    position: absolute;
+    top: 33px;
+    width: 400px;
+    z-index: 500;
+  }
+  .s-videofooter {
+    display: none;
+    height: 25px;
+    position: relative;
+    a {
+      color: #96B227;
+      display: block;
+      font: 11px Verdana,sans-serif;
+      position: absolute;
+      right: 15px;
+      text-decoration: none;
+      top: 6px;
+    }
+  }
+}
+
+/*NOOK Home*/
+
+#nook-home-hero-2011 .nook-hero-box {
+  float: left;
+  height: 504px;
+  width: 323px;
+  h2 {
+    height: 24px;
+    margin: 31px 0 5px;
+    width: 100%;
+    text-indent: -4000px;
+  }
+  .media-quote {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 15px 0;
+  }
+  img {
+    margin: 0 0 0 0;
+  }
+}
+
+.nook-HP-img {
+  height: 236px;
+  position: relative;
+  margin: 0 0 20px 0;
+  img {
+    position: absolute;
+    bottom: 0px;
+    border: 0;
+  }
+}
+
+#nook-home-hero-2011 {
+  width: 980px;
+  position: relative;
+  top: -25px;
+  .three-across-nook {
+    background: url("http://img1.imagesbn.com/pimages/nook/tablet/home/vertline.jpg") no-repeat scroll 0 0 transparent;
+    height: 504px;
+    padding: 0 0 0 2px;
+  }
+  ul {
+    margin: 0px 0 18px 22px;
+    li {
+      background: url("http://img1.imagesbn.com/pimages/nook/tablet/whatsnew/222_bullet.png") no-repeat scroll left 10px transparent;
+      color: #222222;
+      font-family: arial;
+      font-size: 12px;
+      line-height: 20px;
+      padding: 0 0 0 9px;
+      width: 270px;
+    }
+  }
+  .commerce_box {
+    width: 290px;
+    padding: 0 0 0 22px;
+    img, form input {
+      margin: 0;
+      float: left;
+    }
+  }
+  .nook-cm-buttons {
+    position: relative;
+    left: -1px;
+  }
+}
+
+.nook-home-in-page img {
+  left: -11px;
+  margin: -10px 0 -12px 0;
+  position: relative;
+}
+
+#nook-home-bottom-banner img {
+  left: -11px;
+  margin: 12px 0 -5px 0;
+  position: relative;
+}
+
+.nook-home-bottom-copy {
+  color: #AAAAAA;
+  font: normal 10px verdana;
+  padding: 0 20px 0 18px;
+}
+
+.nook-home-compare-bar {
+  float: left;
+  clear: both;
+  left: -9px;
+  padding-top: 28px;
+  position: relative;
+}
+/* What's New */
+
+#whatsnew2011 {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  color: #222;
+  line-height: 18px;
+  margin: 0 0 0 15px;
+  #header {
+    margin: 0 0 16px -15px;
+  }
+  .top-pod-wrap {
+    float: left;
+    margin: 0;
+    width: 970px;
+    clear: both;
+  }
+  .top-pod-img {
+    float: left;
+    margin: 0;
+  }
+  .wn-bold {
+    font-weight: bold;
+  }
+  .top-pod-copy-wrap {
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    width: 745px;
+    margin: 0 0 0 13px;
+    padding: 0 0 15px 0;
+  }
+  .update {
+    margin: 5px 0 20px 0;
+  }
+  .price-box {
+    .orange {
+      margin: 0 0 20px 0;
+      font-size: 18px;
+      color: #EE7336;
+    }
+    .strike {
+      text-decoration: line-through;
+    }
+    .rebate a {
+      text-decoration: underline;
+      color: #222;
+    }
+    font-size: 11px;
+    color: #222;
+  }
+  .update a {
+    background: url("http://img1.imagesbn.com/pimages/nook/tablet/icons/129daf_caret_link.png") no-repeat scroll right 50% transparent;
+    color: #129daf;
+    padding-right: 9px;
+    text-decoration: none;
+  }
+  ul.hero-bulletlist {
+    color: #222;
+    list-style: none outside none;
+    margin: 6px 0 0 0;
+    width: 600px;
+    padding: 0;
+    li {
+      color: #222;
+      font: 12px/16px arial, sans-serif;
+      background: url("http://img1.imagesbn.com/pimages/nook/tablet/whatsnew/222_bullet.png") no-repeat scroll 0 7px transparent;
+      padding: 0 0 5px 8px;
+    }
+  }
+  .explore-features {
+    margin: 18px 0 27px -2px;
+  }
+  .mid-pod {
+    margin: 32px 0 0 0;
+    width: 477px;
+    float: left;
+    max-height: 202px;
+    height: 202px;
+  }
+  .mid-pod-header {
+    font-weight: bold;
+    margin: 0 15px 2px 0;
+    width: 226px;
+    float: left;
+  }
+  .mid-pod-copy {
+    margin: 0 15px 0 0;
+    width: 226px;
+    float: left;
+  }
+  .mid-pod-img {
+    margin: 0 13px 0 0;
+    width: 198px;
+    float: left;
+  }
+  .mid-pod-link a {
+    background: url("http://img1.imagesbn.com/pimages/nook/tablet/icons/129daf_caret_link.png") no-repeat scroll right 50% transparent;
+    color: #129daf;
+    padding-right: 9px;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 12px;
+  }
+  .pagedivider {
+    background: url("http://img1.imagesbn.com/pimages/nook/tablet/support/home/HorizontalGradient_8x14.png") repeat-x scroll 0 0 transparent;
+    height: 14px;
+    width: 970px;
+    clear: both;
+    margin: 0 0 40px 0;
+  }
+}
+
+/* Getting Started */
+
+#getting-started-2011 {
+  margin-left: 40px;
+  width: 530px;
+  line-height: 18px;
+  color: #222222;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  text-align: left;
+  h3, h4 {
+    font-family: Arial,Helvetica,sans-serif;
+    color: #222;
+  }
+  .grouper {
+    width: 530px;
+    float: left;
+    clear: both;
+    display: block;
+    margin: 16px 0 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .sub-header {
+    color: #222;
+    font-size: 18px;
+    margin: -20px 0 0 0;
+    font-weight: normal;
+  }
+  .sub-text {
+    color: #222;
+    font-size: 12px;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 0 0 31px;
+  }
+  .product-image {
+    text-align: left;
+  }
+  .grouper h4 {
+    padding: 26px 0 0 7px;
+  }
+  .icon-set {
+    background: url("http://img1.imagesbn.com/pimages/nook/tablet/support/gettingstarted/Instructions_icons.png") no-repeat scroll 0 0 transparent;
+  }
+}
+
+.icon-set * {
+  background: url("http://img1.imagesbn.com/pimages/nook/tablet/support/gettingstarted/Instructions_icons.png") no-repeat scroll 0 0 transparent;
+}
+
+#getting-started-2011 {
+  .plug {
+    background-position: 0px 0px;
+  }
+  .power {
+    background-position: 0 -24px;
+  }
+  .movie {
+    background-position: 0 -48px;
+  }
+  .document {
+    background-position: 0 -70px;
+    height: 22px;
+  }
+  .time {
+    background-position: 0 -93px;
+  }
+  .wifi {
+    background-position: 0 -116px;
+  }
+  .arch {
+    background-position: 0 -138px;
+  }
+  .grouper .icon-set {
+    margin: 0 20px 25px 58px;
+  }
+  .last {
+    margin: 18px 0 20px 94px;
+    padding: 0;
+    width: 430px;
+  }
+  .num-bullets {
+    li {
+      a {
+        background: url("http://img1.imagesbn.com/pimages/nook/tablet/icons/129daf_caret_link.png") no-repeat scroll right 50% transparent;
+        color: #129daf;
+        padding-right: 9px;
+        text-decoration: none;
+        font-family: arial;
+        font-size: 12px;
+      }
+      margin-bottom: 20px;
+    }
+    clear: both;
+    display: block;
+    list-style: lower-alpha outside none;
+    margin: 0 0 0 75px;
+    padding: 0;
+  }
+  .steps-bullets {
+    li {
+      a {
+        background: url("http://img1.imagesbn.com/pimages/nook/tablet/icons/129daf_caret_link.png") no-repeat scroll right 50% transparent;
+        color: #129daf;
+        padding-right: 9px;
+        text-decoration: none;
+        font-family: arial;
+        font-size: 12px;
+      }
+      margin-bottom: 20px;
+    }
+    clear: both;
+    display: block;
+    list-style: decimal outside none;
+    margin: 0 0 0 75px;
+    padding: 0;
+  }
+  .divider {
+    background: url("http://img1.imagesbn.com/pImages/nook/encore/support/bottom-gradient.png") no-repeat scroll center bottom transparent;
+    height: 27px;
+    margin: 0;
+    width: 415px;
+  }
+  .numbered-sprite-1 {
+    background-position: 0 0;
+  }
+  .numbered-sprite-2 {
+    background-position: 0 -39px;
+  }
+  .numbered-sprite-1 {
+    background: url("http://img1.imagesbn.com/pImages/nook/encore/getting-started/numbered-sprite.png") no-repeat scroll 0 0 transparent;
+    height: 37px;
+    width: 33px;
+  }
+}
+
+.numbered-sprite-2, .numbered-sprite-3, .numbered-sprite-4 {
+  background: url("http://img1.imagesbn.com/pImages/nook/encore/getting-started/numbered-sprite.png") no-repeat scroll 0 0 transparent;
+  height: 37px;
+  width: 33px;
+}
+
+#getting-started-2011 .grouper * {
+  float: left;
+}
+/* Special Offers */
+
+#specialoffers2011 {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  color: #222;
+  line-height: 18px;
+  .hero-graphic {
+    width: 515px;
+    height: 313px;
+    float: left;
+  }
+  .hero-right-pod {
+    float: left;
+    width: 455px;
+    margin: 60px 0 0 0;
+    .subhead {
+      font-size: 16px;
+      margin: 13px 0 0 0;
+      line-height: 21px;
+      width: 400px;
+    }
+  }
+}
+
+.hero-right-pod {
+  .price {
+    font-size: 40px;
+    color: #ee7336;
+    margin: 25px 0 0 0;
+    span {
+      font-size: 15px;
+      color: #ee7336;
+      margin: 0 0 0 8px;
+    }
+  }
+  .copy {
+    width: 400px;
+  }
+}
+
+#specialoffers2011 .offer-button {
+  margin: 12px 7px 0 -2px;
+  float: left;
+}
+
+.so-row-right-pod {
+  width: 576px;
+  float: left;
+  padding: 20px 0 0 0;
+  .header {
+    margin: 0 0 12px 0;
+    line-height: 28px;
+    font-size: 25px;
+  }
+  .copy {
+    width: 550px;
+  }
+}
+
+.so-row-img {
+  float: left;
+}
+
+.so-row-bottom {
+  width: 970px;
+  height: 15px;
+  border-bottom: 1px solid #ccc;
+  clear: both;
+  margin: 0 0 15px 0;
+}
+
+.so-row-final {
+  width: 970px;
+  height: 20px;
+  clear: both;
+  margin: 0 0 20px 0;
+}
+
+.so-row-right-pod .price {
+  font-size: 35px;
+  color: #ee7336;
+  margin: 25px 0 0 0;
+}
+
+#specialoffers2011 .tc a {
+  background: url("http://img1.imagesbn.com/pimages/nook/tablet/icons/129daf_caret_link.png") no-repeat scroll right 50% transparent;
+  padding-right: 9px;
+  text-decoration: none;
+}
+
+/* Books Kids Newsstand Apps */
+
+.features2011 {
+  height: 18px;
+}
+
+#merchMainHeader .features2011 h1 {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 17px;
+  color: #5e606b;
+  float: left;
+  margin: 0 3px 0 0;
+}
+
+.features2011 h2 {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  color: #5e606b;
+}
+
+#features2011-hero {
+  position: relative;
+  margin: 0 0 5px 0;
+}
+
+#features-hero {
+  width: 970px;
+  height: 363px;
+  postition: relative;
+}
+
+#pod-wrapper-v {
+  position: absolute;
+  left: 399px;
+  top: 40px;
+}
+
+#pod-wrapper-h {
+  position: absolute;
+  left: 323px;
+  top: 103px;
+}
+
+#pod-wrapper-v .pod, #pod-wrapper-h .pod {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#features2011-hero .hero-bottom {
+  background: url("http://img1.imagesbn.com/pimages/nook/tablet/special_offers/SpecialOffers_v06_17.png") no-repeat scroll right 50% transparent;
+  width: 970px;
+  height: 14px;
+  clear: both;
+}
+
+.features2011-row {
+  width: 970px;
+  .row-img {
+    float: left;
+  }
+  .row-header {
+    float: left;
+    clear: right;
+    margin: 45px 0 10px 0;
+  }
+  .row-copy {
+    float: left;
+    width: 560px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #222;
+  }
+  .row-link {
+    float: left;
+    margin: 6px 0 0 0;
+    width: 300px;
+  }
+  .row-bottom {
+    width: 970px;
+    height: 15px;
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    margin: 0;
+  }
+  .row-final {
+    width: 970px;
+    height: 20px;
+    clear: both;
+    margin: 0 0 20px 0;
+  }
+  .row-link a {
+    background: url("http://img1.imagesbn.com/pimages/nook/tablet/icons/129daf_caret_link.png") no-repeat scroll right 50% transparent;
+    padding-right: 9px;
+    color: #129daf;
+  }
+}
+/*nookapps carousel*/
+
+#nookpage .merch-4 {
+  margin: 0 0 0 99px;
+  width: 765px;
+}
+
+.module .header {
+  clear: both;
+  display: block;
+  font-family: Arial,Helvetica,sans-serif;
+  height: 30px;
+  padding: 0 0 12px;
+  position: relative;
+  h3 {
+    color: #000000;
+    display: inline;
+    float: left;
+    font-family: MiloSerifOffcMedium,serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    top: 6px;
+    em {
+      font-family: MiloSerifOffcMediumItalic,serif;
+      font-style: normal;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+}
+
+#home-right .header h3 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.module .header .see-all a {
+  margin: 8px 1px 8px 0;
+  width: 100%;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.merch-4 .body {
+  height: 100%;
+  border-bottom: none;
+}
+
+.module .bg-body-right {
+  background: url("http://img1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png") no-repeat scroll 0 0 transparent;
+  height: 17px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  _top: 1px;
+  width: 202px;
+}
+
+/* Carousel */
+
+.wrapper-4 {
+  border-bottom: 1px solid #DDDDDD;
+  margin: 0;
+  width: 970px;
+  clear: both;
+}
+
+.ec-carousel-4 {
+  margin: 0 0 0 99px;
+  width: 970px;
+}
+
+.ec-carousel-wrap {
+  padding-left: 10px;
+}
+
+.ec-carousel-4 {
+  .ec-carousel-image-wrap {
+    height: 148px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 158px;
+  }
+  .ec-carousel-pod {
+    float: left;
+    height: 307px;
+    position: relative;
+    width: 172px;
+  }
+}
+
+.ec-carousel-image {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.ec-carousel-pick {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ec-carousel-4 .ec-carousel-merchinfo {
+  font: 12px Arial,sans-serif;
+  line-height: 16px;
+  left: 0;
+  margin-top: 10px;
+  position: absolute;
+  top: 145px;
+  width: 135px;
+}
+
+.ec-carousel-title {
+  font-weight: bold;
+  a {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+      color: #3169A8;
+      text-decoration: none;
+    }
+  }
+}
+
+.ec-carousel-author {
+  font-size: 12px;
+  a {
+    color: #000;
+    &:hover {
+      color: #3169A8;
+    }
+  }
+}
+
+.ec-carousel-price {
+  color: #000;
+  ul {
+    &.promo-price {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li.online-price {
+      color: #000000;
+      font-size: 12px;
+      font-weight: normal;
+      strong {
+        color: #B60000;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.ec-carousel-addtocart {
+  display: none;
+  ul.buynowbtn {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  td form {
+    margin-bottom: 0;
+  }
+}
+
+.ec-carousel-4 .scrollable {
+  float: left;
+  height: 223px;
+  overflow: hidden;
+  position: relative;
+  width: 650px;
+  margin: 0 15px 0 0;
+}
+
+.scrollable .items {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 20000em;
+  top: -24px;
+}
+
+.ec-carousel-3 .items div.page {
+  float: left;
+  width: 568px;
+}
+
+.ec-carousel-4 .items div.page {
+  float: left;
+  width: 765px;
+}
+
+.digital-content {
+  bottom: -20px;
+  left: 5px;
+  position: absolute;
+}
+
+.navi {
+  display: none;
+}
+
+a {
+  &.right, &.left {
+    cursor: pointer;
+    float: left;
+    font-size: 1px;
+    height: 29px;
+    margin: 0;
+    width: 40px;
+    background: url("http://img1.imagesbn.com/pImages/resources/gateway/2011/dev/carousel-arrows-blue.png") no-repeat scroll transparent;
+  }
+  &.disabled {
+    cursor: default;
+  }
+  &.left {
+    margin: 100px 25px 0 0;
+    width: 28px;
+    background-position: 0 0;
+    &:hover {
+      margin: 100px 25px 0 0;
+      width: 28px;
+      background-position: 0 -57px;
+    }
+  }
+  &.prev.disabled {
+    margin: 100px 25px 0 0;
+    width: 28px;
+    background-position: 0 -84px;
+    &:hover {
+      margin: 100px 25px 0 0;
+      width: 28px;
+      background-position: 0 -84px;
+    }
+  }
+  &.nextPage {
+    margin: 100px 0 0;
+    width: 28px;
+    background-position: -27px 0;
+  }
+  &.right:hover {
+    margin: 100px 0 0;
+    width: 28px;
+    background-position: -27px -57px;
+  }
+}
+
+.disabled.nextPage, a.disabled.nextPage:hover {
+  margin: 100px 0 0;
+  width: 28px;
+  background-position: -27px -84px;
+}
+
+.ec-carousel-image img {
+  width: 110px;
+}
+
+/*Comparison header */
+
+#nook-compare-header {
+  height: 16px;
+  clear: both;
+  h1 {
+    color: #5E606B;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    margin: 0 3px 0 0;
+    span {
+      font-size: 13px;
+    }
+  }
+}
+
+/* NOOK 2012 */
+
+/* HOME/COMPARE */
+
+h1.brown {
+  position: absolute;
+  text-indent: -9999px;
+}
+
+#compare-nook {
+  position: relative;
+  clear: both;
+  top: -25px;
+}
+
+.compare-nook-2012 {
+  width: 242px;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #222;
+  line-height: 15px;
+}
+
+ul.comp-nook-box-2012 {
+  float: left;
+  padding: 0;
+  width: 242px;
+  margin: 0;
+  min-height: 20px;
+  &.three-across {
+    width: 322px;
+  }
+  li {
+    font-size: 12px;
+    width: 200px;
+    line-height: 18px;
+    list-style: none;
+    background: url("http://img1.imagesbn.com/pimages/nook/tablet/whatsnew/222_bullet.png") no-repeat scroll left 8px transparent;
+    padding: 0 0 0 11px;
+    sup {
+      vertical-align: top;
+      position: relative;
+      top: -3px;
+      margin: 0 0 0 2px;
+    }
+  }
+}
+
+.comp-nook-outer-middle-2012 {
+  .comp-nook-outer-bottom-2012 {
+    clear: both;
+    float: left;
+  }
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 10px 0 0 0;
+  .comp-nook-hdr {
+    font-size: 18px;
+  }
+}
+
+.comp-nook-row-2012, .comp-nook-outer-bottom-2012 {
+  width: 972px;
+  display: block;
+}
+
+.comp-nook-row-2012 {
+  padding: 0 0 0 19px;
+}
+
+.comp-nook-hdr-2012 {
+  line-height: 20px;
+  font-size: 18px;
+  margin: 20px 0 15px 0;
+}
+
+.comp-closer-2012 {
+  height: 19px;
+  width: 972px;
+  margin: 0;
+}
+
+.comp-nook-outer-bottom-2012 {
+  margin: 30px 0 20px 2px;
+}
+
+#compare-nook #stickyBar {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* .three-across-nook {position:relative;padding:0 0 0 3px;float:left;top:-25px;} */
+
+.comp-clear {
+  clear: both;
+  padding: 30px 0 0 0;
+  border-bottom: 1px solid #c7c7c7;
+  width: 970px;
+}
+
+.comp-final {
+  clear: both;
+  padding: 30px 0 0 0;
+}
+
+.stickyPoint {
+  position: relative;
+  top: -95px;
+}
+
+.unstickPoint {
+  position: relative;
+}
+
+.clear-box {
+  h2.clear-hdr {
+    text-align: center;
+    text-indent: 0;
+    a {
+      text-indent: -9999px;
+      display: block;
+      height: 21px;
+    }
+  }
+  .media-quote {
+    color: #ffffff;
+    position: relative;
+    top: 15px;
+  }
+  .nook-HP-img a {
+    width: 195px;
+    height: 100%;
+    float: left;
+    text-indent: -9999px;
+  }
+  .nook-price-container {
+    color: #129daf;
+  }
+}
+
+.comp-cta {
+  a.video {
+    background: url(http://img1.imagesbn.com/pimages/nook/tablet/compare/video_icon.png) no-repeat scroll 0 0 transparent;
+    color: #129DAF;
+    padding: 0 0 0 25px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  span {
+    background: url(http://img1.imagesbn.com/pimages/nook/tablet/whatsnew/269dae_arrow5x6.png) no-repeat scroll right 4px transparent;
+    padding: 0 9px 0 0;
+  }
+}
+
+#nook-hero-2012 .nook-home-box-footnote {
+  padding: 0 10px 10px;
+  text-align: center;
+  font: 9px arial;
+  color: #666666;
+}
+
+.nook-home-bar-top {
+  left: -10px;
+  position: relative;
+  padding: 0 0 25px;
+}
+
+.nook-home-bar-bottom {
+  float: left;
+  left: -10px;
+  position: relative;
+}
+
+#nook-hero-2012 {
+  padding: 0 0 0 2px;
+  position: relative;
+  .three-across {
+    color: #222222;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    width: 322px;
+  }
+  .commerce_box {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  .nook-cm-buttons {
+    left: 0px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .nook-hero-box {
+    float: left;
+    height: 481px;
+    width: 242px;
+    text-align: center;
+    .media-quote {
+      margin: 0;
+      width: 100%;
+      font-size: 11px;
+      height: 18px;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0 17px 5px 17px;
+    li {
+      list-style: none;
+      background: none;
+      text-align: center;
+      color: #222222;
+      font-family: arial;
+      font-size: 12px;
+      line-height: 17px;
+      padding: 0;
+      width: auto;
+    }
+  }
+  .nook-hero-box h2 {
+    height: 22px;
+    margin: 41px 0 4px;
+    width: 100%;
+  }
+  .three-across .nook-hero-box {
+    width: 322px;
+  }
+  #nook-hero-pod-wrap {
+    float: left;
+    background: url(http://img1.imagesbn.com/pimages/nook/light/home/dotted_line.gif) no-repeat 0 0;
+    height: 481px;
+    padding: 0 0 0 2px;
+    position: relative;
+    width: 970px;
+    top: -26px;
+    left: -2px;
+  }
+}
+
+#compare-nook .three .compare-nook-2012 {
+  width: 322px;
+}
+
+#nook-hero-2012 .nook-HP-img {
+  margin: 14px 0 0 0;
+  height: 231px;
+  img {
+    position: relative;
+  }
+}
+
+.nook-compare-bottom-copy {
+  clear: both;
+  color: #AAAAAA;
+  font: 10px verdana;
+  padding: 0 20px 0 18px;
+}
+
+/* Commerce Module */
+
+.nook-cm-buttons {
+  left: 0;
+}
+
+.nook-price-container {
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
+.nook-cm-buttons {
+  text-align: center;
+}
+
+#nook-home-hero-2011 .commerce_box {
+  img, form input {
+    float: none;
+  }
+}
+
+.nook-cm-explore {
+  clear: both;
+  a {
+    color: #129DAF;
+    text-decoration: none;
+    background: url("http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png") no-repeat scroll right center transparent;
+    padding: 0 10px 0 0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.nook-commerce-copy {
+  clear: both;
+  a {
+    color: #129DAF;
+    text-decoration: none;
+    background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+    padding: 0 10px 0 0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.nookOrderButton2 {
+  padding-right: 4px;
+}
+/* 'WHY NOOK IS BEST' GRID */
+
+#nook-grid-wrap {
+  background-color: #ffffff;
+  float: left;
+  width: 970px;
+  a {
+    color: #129daf;
+    text-decoration: none;
+    &:hover {
+      color: #129daf;
+      text-decoration: underline;
+    }
+  }
+  #grid-title {
+    height: 25px;
+    position: relative;
+    text-align: center;
+    top: 18px;
+    z-index: 1000;
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  #grid-bg {
+    background: url(http://img1.imagesbn.com/pimages/nook/tablet/corporategifting/pattern.png) repeat left top;
+    float: left;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  #grid-white-bg {
+    background-color: #ffffff;
+    float: left;
+    padding: 15px 0 0 3px;
+    width: 950px;
+  }
+  #grid-wrap {
+    float: left;
+  }
+  .grid-pod {
+    background: url(http://img1.imagesbn.com/pImages/nook/light/home/whynookisbest/pod2_background.jpg) no-repeat top left;
+    float: left;
+    font: 12px/18px arial;
+    height: 237px;
+    margin: 0 0 12px 10px;
+    width: 457px;
+  }
+  .pod-left {
+    float: left;
+    width: 264px;
+    height: 237px;
+    h3 {
+      width: 236px;
+      height: 17px;
+      position: relative;
+      top: 55px;
+      left: 26px;
+    }
+  }
+  .pod-right {
+    float: left;
+    width: 193px;
+    height: 237px;
+    img {
+      width: 193px;
+      height: 237px;
+    }
+  }
+  .grid-pod {
+    ul {
+      list-style: none;
+      margin: 61px 0 0 25px;
+      padding: 0;
+      width: 225px;
+    }
+    li {
+      background: url(http://img1.imagesbn.com/pimages/nook/tablet/whatsnew/222_bullet.png) no-repeat left 8px;
+      color: #222222;
+      font: 12px/18px arial;
+      margin-bottom: 5px;
+      padding: 0 0 0 9px;
+      width: 225px;
+    }
+    .browse-link {
+      margin-left: 26px;
+      a {
+        background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+        padding: 0 10px 0 0;
+      }
+    }
+  }
+}
+
+/* SPECIAL OFFERS 2012 */
+
+#so-hero {
+  width: 970px;
+  height: 341px;
+  clear: both;
+  font: 13px/19px arial;
+  #so-left {
+    width: 495px;
+    height: 341px;
+    float: left;
+    margin-right: 20px;
+  }
+  #so-right {
+    float: left;
+    width: 455px;
+    a {
+      text-decoration: none;
+      color: #129daf;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  #so-head {
+    width: 455px;
+  }
+  #so-copy {
+    width: 402px;
+    margin: 0 0 6px 2px;
+    color: #222222;
+  }
+  #so-link {
+    margin: 12px 0 0 2px;
+    display: inline;
+    float: left;
+    a {
+      background: url(http://img1.imagesbn.com/pImages/nook/tablet/icons/129daf_caret_link.png) no-repeat right center;
+      padding: 0 10px 0 0;
+    }
+  }
+  #so-button {
+    clear: both;
+    margin: 14px 0px 6px 0px;
+    float: left;
+    img {
+      float: left;
+      margin-right: 16px;
+    }
+  }
+  #so-bottom {
+    width: 455px;
+    position: relative;
+    float: left;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+#specialoffers2011 #hero-bottom {
+  clear: both;
+  padding: 15px 0 0 0;
+}
+
+/* OOYALA PLAYER STYLES */
+
+.NOOKplayer {
+  &.wide {
+    .s-videoheader {
+      width: 800px;
+    }
+    .s-popupvid {
+      height: 450px;
+      width: 800px;
+    }
+    width: 806px;
+    z-index: 11000;
+  }
+  &.s-videocontainer {
+    background-color: white;
+    display: none;
+    height: 306px;
+    margin: 130px 0 0 50px;
+    position: absolute;
+    z-index: 11000;
+  }
+  .s-videoborder {
+    border: 3px solid #C4C4C4;
+  }
+  .s-videoheader {
+    background-color: white;
+    color: #999999;
+    height: 30px;
+    position: relative;
+    div.s-videoheader-text {
+      font: bold 14px Verdana;
+      left: 18px;
+      position: absolute;
+      top: 6px;
+    }
+    img.xclosevideo {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+    }
+  }
+  .s-popupvid {
+    background: none repeat scroll 0 0 #FFFFFF;
+  }
+  #videoBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    height: 480px;
+    left: -999em;
+    opacity: 0.5;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #flashBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 300px;
+    left: -999em;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #feedroomWrap {
+    display: none;
+    height: 300px;
+    left: 3px;
+    position: absolute;
+    top: 33px;
+    width: 400px;
+    z-index: 500;
+  }
+  .s-videofooter {
+    display: none;
+    height: 25px;
+    position: relative;
+    a {
+      color: #96B227;
+      display: block;
+      font: 11px Verdana,sans-serif;
+      position: absolute;
+      right: 15px;
+      text-decoration: none;
+      top: 6px;
+    }
+  }
+}
+
+/* OOYALA PLAYER STYLES - 800x500 */
+
+.NOOKplayer-500 {
+  &.wide {
+    .s-videoheader {
+      width: 800px;
+    }
+    .s-popupvid {
+      height: 500px;
+      width: 800px;
+    }
+    width: 806px;
+    z-index: 11000;
+  }
+  &.s-videocontainer {
+    background-color: white;
+    display: none;
+    height: 306px;
+    margin: 130px 0 0 50px;
+    position: absolute;
+    z-index: 11000;
+  }
+  .s-videoborder {
+    border: 3px solid #C4C4C4;
+  }
+  .s-videoheader {
+    background-color: white;
+    color: #999999;
+    height: 30px;
+    position: relative;
+    div.s-videoheader-text {
+      font: bold 14px Verdana;
+      left: 18px;
+      position: absolute;
+      top: 6px;
+    }
+    img.xclosevideo {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+    }
+  }
+  .s-popupvid {
+    background: none repeat scroll 0 0 #FFFFFF;
+  }
+  #videoBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    height: 480px;
+    left: -999em;
+    opacity: 0.5;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #flashBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 300px;
+    left: -999em;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #feedroomWrap {
+    display: none;
+    height: 300px;
+    left: 3px;
+    position: absolute;
+    top: 33px;
+    width: 400px;
+    z-index: 500;
+  }
+  .s-videofooter {
+    display: none;
+    height: 25px;
+    position: relative;
+    a {
+      color: #96B227;
+      display: block;
+      font: 11px Verdana,sans-serif;
+      position: absolute;
+      right: 15px;
+      text-decoration: none;
+      top: 6px;
+    }
+  }
+}
+
+/* OOYALA PLAYER STYLES - 800x534 */
+
+.NOOKplayer-534 {
+  &.wide {
+    .s-videoheader {
+      width: 800px;
+    }
+    .s-popupvid {
+      height: 534px;
+      width: 800px;
+    }
+    width: 806px;
+    z-index: 11000;
+  }
+  &.s-videocontainer {
+    background-color: white;
+    display: none;
+    height: 306px;
+    margin: 130px 0 0 50px;
+    position: absolute;
+    z-index: 11000;
+  }
+  .s-videoborder {
+    border: 3px solid #C4C4C4;
+  }
+  .s-videoheader {
+    background-color: white;
+    color: #999999;
+    height: 30px;
+    position: relative;
+    div.s-videoheader-text {
+      font: bold 14px Verdana;
+      left: 18px;
+      position: absolute;
+      top: 6px;
+    }
+    img.xclosevideo {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+    }
+  }
+  .s-popupvid {
+    background: none repeat scroll 0 0 #FFFFFF;
+  }
+  #videoBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    height: 480px;
+    left: -999em;
+    opacity: 0.5;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #flashBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 300px;
+    left: -999em;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #feedroomWrap {
+    display: none;
+    height: 300px;
+    left: 3px;
+    position: absolute;
+    top: 33px;
+    width: 400px;
+    z-index: 500;
+  }
+  .s-videofooter {
+    display: none;
+    height: 25px;
+    position: relative;
+    a {
+      color: #96B227;
+      display: block;
+      font: 11px Verdana,sans-serif;
+      position: absolute;
+      right: 15px;
+      text-decoration: none;
+      top: 6px;
+    }
+  }
+}
+
+/* OOYALA PLAYER STYLES - Vertical */
+
+.NOOKplayer-vert {
+  &.wide {
+    .s-videoheader {
+      width: 318px;
+    }
+    .s-popupvid {
+      height: 508px;
+      width: 318px;
+    }
+    width: 324px;
+    z-index: 11000;
+  }
+  &.s-videocontainer {
+    background-color: white;
+    display: none;
+    height: 306px;
+    margin: 130px 0 0 50px;
+    position: absolute;
+    z-index: 11000;
+  }
+  .s-videoborder {
+    border: 3px solid #C4C4C4;
+  }
+  .s-videoheader {
+    background-color: white;
+    color: #999999;
+    height: 30px;
+    position: relative;
+    div.s-videoheader-text {
+      font: bold 14px Verdana;
+      left: 18px;
+      position: absolute;
+      top: 6px;
+    }
+    img.xclosevideo {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+    }
+  }
+  .s-popupvid {
+    background: none repeat scroll 0 0 #FFFFFF;
+  }
+  #videoBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    height: 480px;
+    left: -999em;
+    opacity: 0.5;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #flashBlocker {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 300px;
+    left: -999em;
+    position: absolute;
+    top: -2px;
+    width: 990px;
+    z-index: 1;
+  }
+  #feedroomWrap {
+    display: none;
+    height: 300px;
+    left: 3px;
+    position: absolute;
+    top: 33px;
+    width: 400px;
+    z-index: 500;
+  }
+  .s-videofooter {
+    display: none;
+    height: 25px;
+    position: relative;
+    a {
+      color: #96B227;
+      display: block;
+      font: 11px Verdana,sans-serif;
+      position: absolute;
+      right: 15px;
+      text-decoration: none;
+      top: 6px;
+    }
+  }
+}
+/* NOOK 2013 */
+
+/* NIE - NIB */
+
+.features2011-row {
+  .row-bullet-list {
+    clear: right;
+    float: left;
+    width: 540px;
+  }
+  .row-bullet-container {
+    clear: both;
+    float: left;
+  }
+  .row-bullet-graphic {
+    float: left;
+    width: 10px;
+    height: 13px;
+    background: url("http://img1.imagesbn.com/pimages/nook/nook-in-business/Bullet.gif") no-repeat scroll 1px 6px transparent;
+    padding: 0;
+  }
+  .row-bullet-copy {
+    float: right;
+    color: #222222;
+    width: 525px;
+  }
+}
+
+.n-in {
+  .link {
+    color: #666666;
+    font: italic 12px arial;
+  }
+  .compare-link {
+    margin: 1px 16px 14px;
+    float: right;
+  }
+  .link a {
+    background: url("http://img1.imagesbn.com/pimages/nook/nook06/compare/2col/CTA_Arrow.png") no-repeat scroll right center transparent;
+    color: #129DAF;
+    font: 12px arial;
+    padding: 0 10px 0 0;
+    text-decoration: none;
+  }
+}
+
+.n-in-f1-copy a {
+  color: #129DAF;
+  text-decoration: none;
+}
+
+.n-in .link a:hover {
+  text-decoration: underline;
+}
+
+#n-in-f1 {
+  background-color: #FFFFFF;
+  float: left;
+  width: 970px;
+  margin-top: 25px;
+}
+
+#n-in-f1-left {
+  float: left;
+}
+
+#n-in-f1-right {
+  float: left;
+  font: 12px/18px arial;
+}
+
+.n-in-f1-copy {
+  margin: 0 0 20px;
+  padding: 0;
+  width: 390px;
+}
+
+/* SWIPER required styles  */
+
+.swiper-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  -ms-touch-action: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform,left,top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform,left,top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0px, 0, 0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform,left,top;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0px, 0, 0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0px, 0px);
+  -ms-transition-property: -ms-transform,left,top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0px, 0, 0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform,left,top;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0, 0);
+  transition-timing-function: ease;
+}
+
+.swiper-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  float: left;
+}
+
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}
+
+.swiper-container, .swiper-slide, .swiper-slide-active, .swiper-slide-visible, .swiper-pagination-switch, .swiper-active-switch, .swiper-visible-switch {}
+
+/* SWIPER General Syles */
+
+.swiper-container {
+  height: auto;
+  margin: 0 auto;
+}
+
+.swiper-scrollbar {
+  height: 10px;
+  width: 98%;
+  left: 1%;
+  bottom: 0px;
+  position: absolute;
+  background: #f0efef;
+  border-bottom: 1px solid #d7d7d7;
+  -moz-box-shadow: 1px 1px 1px #666666  inset;
+  -webkit-box-shadow: 1px 1px 1px #666666  inset;
+  box-shadow: 1px 1px 1px #666666  inset;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #23c5d7;
+  -moz-box-shadow: 0px 1px 1px #999999;
+  -webkit-box-shadow: 0px 1px 1px #999999;
+  box-shadow: 0px 1px 1px #999999;
+}
+
+.swiper-slide {
+  color: #666;
+  font-family: Arial, verdana, sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  a {
+    &:link, &:visited {
+      color: #666;
+      font-family: Arial, verdana, sans-serif;
+      font-size: 13px;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+    }
+    &:hover {
+      color: #129daf;
+      ~ div a {
+        color: #129daf;
+      }
+    }
+  }
+}
+
+.support-device-strip {
+  background-color: #F8F8F8;
+  border: 1px solid #D5D3D3;
+  margin: -26px 0 20px 0;
+  padding: 28px 20px 18px 20px;
+  .swiper-container {
+    height: 226px;
+  }
+  .swiper-slide img {
+    margin: 0 30px;
+  }
+  .swiper-slide-text {
+    margin-top: 6px;
+    padding-bottom: 8px;
+  }
+}
+
+/* Support Device Strip Syles */
+
+/* Rotator-swiper Syles */
+
+.swiper-container .pagination {
+  background: none;
+}
+
+.nook-home-rotator {
+  .rotate-left, .rotate-right {
+    width: 43px;
+    height: 44px;
+    margin: 0;
+    outline: medium none;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: none;
+  }
+  .rotate-left {
+    background-image: url("/pImages/resources/gateway/2011/dev/carousel-arrows-large.png");
+    background-position: -2px 0;
+    left: 0;
+    &:hover {
+      background-position: -2px -56px;
+    }
+    &:active {
+      background-position: -2px -110px;
+    }
+  }
+  .rotate-right {
+    background-image: url("/pImages/resources/gateway/2011/dev/carousel-arrows-large.png");
+    background-position: -51px 0;
+    right: 0;
+    &:hover {
+      background-position: -51px -56px;
+    }
+    &:active {
+      background-position: -51px -110px;
+    }
+  }
+  position: relative;
+  width: 970px;
+  margin: 0 auto;
+  border-bottom: 1px solid #BDBCBC;
+  .swiper-container {
+    height: 424px;
+  }
+  .slide {
+    text-align: left;
+    height: 424px;
+    padding: 116px 0 0 44px;
+  }
+  .headline {
+    margin-bottom: 15px;
+  }
+  .copy-block {
+    font-family: Arial, verdana, sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #222222;
+    width: 375px;
+    margin-bottom: 14px;
+  }
+  .cta a {
+    background: url(/pImages/nook/nook08/rotator/AVO_LP__CTA.png) no-repeat scroll right center transparent;
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    padding: 0 12px 1px 0;
+    text-decoration: none;
+    color: #129DAF;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .pagination {
+    bottom: 3px;
+    left: 50%;
+    margin-left: -24px;
+    position: absolute;
+    z-index: 2;
+  }
+  .swiper-pagination-switch {
+    height: 11px;
+    width: 10px;
+    margin-right: 8px;
+    display: inline-block;
+    background: url(/pImages/nook/nook08/rotator/Avo_LP_rotator_Dot_sprite.png) no-repeat 0 0;
+    &.swiper-visible-switch {
+      background-position: -11px 0;
+    }
+  }
+}
+
+/*  **app info scroller PLUS popular on nook**   */
+
+.app-scroller .swiper-container div, .on-nook .swiper-container div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.app-scroller .swiper-slide-text, .on-nook .swiper-slide-text {
+  font-size: 11px;
+  color: #6b6b6b;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.app-scroller .swiper-slide {
+  img {
+    margin-right: 40px;
+  }
+  &:last-of-type img {
+    margin-right: 0;
+  }
+}
+
+.on-nook .swiper-slide:last-of-type img {
+  margin-right: 0;
+}
+
+.app-scroller .swiper-container {
+  height: 420px;
+  padding: 18px 15px 0 15px;
+  margin-bottom: 25px;
+}
+
+.on-nook .swiper-container {
+  height: 420px;
+  padding: 18px 15px 0 15px;
+  margin-bottom: 25px;
+  height: 275px;
+  padding: 18px 15px 0 15px;
+}
+
+.app-scroller .swiper-scrollbar, .on-nook .swiper-scrollbar {
+  margin-left: 165px;
+  width: 645px;
+}
+
+.app-scroller-hdr, .on-nook-hdr {
+  margin-bottom: 0px;
+  color: #222222;
+  font-family: arial;
+  font-size: 21px;
+}
+
+.app-scroller .swiper-container {
+  &:before {
+    content: url('/pimages/nook/readingapps/shaded-edge_screenshots_left.png');
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 25px;
+    z-index: 1;
+  }
+  &:after {
+    content: url('/pimages/nook/readingapps/shaded-edge_screenshots.png');
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 25px;
+    z-index: 1;
+  }
+}
+
+.app-scroller-hRule {
+  &.r-top, &.r-bottom {
+    background: url('/pimages/nook/tablet/corporategifting/pattern.png') repeat-x 0 0;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.on-nook-hRule.r-bottom {
+  background: url('/pimages/nook/tablet/corporategifting/pattern.png') repeat-x 0 0;
+  height: 10px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/*  **popular on nook**   */
+
+.on-nook {
+  .swiper-slide {
+    .slide {
+      margin-right: 40px;
+    }
+    &:last-of-type .slide {
+      margin-right: 10px;
+    }
+  }
+  .swiper-slide-text {
+    font-size: 11px;
+    color: #6b6b6b;
+    text-align: left;
+    margin-top: 8px;
+  }
+  .swiper-slide-image {
+    min-height: 166px;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  .swiper-slide {
+    img {
+      border: 1px solid #BDBAAF;
+      -webkit-box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25);
+      padding: 3px;
+    }
+    a {
+      font: 11px Arial,sans-serif;
+      color: #6B6B6B;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+}
+
+.swiper-slide {
+  .prod-title {
+    margin-bottom: 5px;
+    a:hover {
+      color: #129DAF;
+      text-decoration: underline;
+    }
+  }
+  .prod-ref {
+    a {
+      color: #129DAF;
+    }
+    &:after {
+      content: " >";
+      color: #129DAF;
+    }
+  }
+}
+
+.on-nook {
+  .swiper-slide a:hover img {
+    -webkit-box-shadow: 0 1px 6px rgba(49, 105, 168, 0.75);
+    -moz-box-shadow: 0 1px 6px rgba(49, 105, 168, 0.75);
+    box-shadow: 0 1px 6px rgba(49, 105, 168, 0.75);
+  }
+  .swiper-container {
+    &:before {
+      content: url('/pimages/nook/readingapps/shaded-edge_content_left.png');
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 25px;
+      z-index: 1;
+    }
+    &:after {
+      content: url('/pimages/nook/readingapps/shaded-edge_content.png');
+      position: absolute;
+      top: -6px;
+      right: 0;
+      width: 25px;
+      z-index: 1;
+    }
+  }
+}
+
+/* End SWIPER styles  */
+
+/* NOOK.com Home - Oct 2013 */
+#nook-hero-2012 {
+  display: none;
+}
+
+.ova-btm-links {
+  line-height: 1.8em;
+}
+
+.nhome {
+  clear: both;
+  width: 970px;
+  color: #222222;
+  margin-top: -26px;
+  > div {
+    clear: both;
+    border-bottom: 1px solid #4d4d4d;
+    width: 970px;
+  }
+  a {
+    color: #129daf;
+    text-decoration: none;
+    background: url(http://img1.imagesbn.com/pimages/nook/nook08/readingentertainment/R-E_CTA.png) no-repeat right center;
+    padding: 0 10px 0 0;
+  }
+}
+
+.nhome-lower a {
+  color: #129daf;
+  text-decoration: none;
+  background: url(http://img1.imagesbn.com/pimages/nook/nook08/readingentertainment/R-E_CTA.png) no-repeat right center;
+  padding: 0 10px 0 0;
+}
+
+.nhome a:hover, .nhome-lower a:hover {
+  text-decoration: underline;
+}
+
+.nhome #bb img {
+  display: block;
+}
+
+area {
+  cursor: pointer;
+}
+.nhome-lower {
+  clear: both;
+  width: 970px;
+  color: #222222;
+  margin-top: -26px;
+  margin-bottom: 3px;
+  > div {
+    clear: both;
+    border-bottom: 1px solid #bdbcbc;
+    width: 970px;
+  }
+  #reading {
+    .content {
+      font: 15px/26px arial;
+      margin-top: 116px;
+      margin-left: 44px;
+    }
+    .header {
+      margin-bottom: 25px;
+    }
+  }
+  #feat {
+    background-color: #f2f3f3;
+    overflow: hidden;
+    .content {
+      float: left;
+      margin: 83px 0px 48px 44px;
+    }
+    .col {
+      width: 274px;
+      float: left;
+    }
+    .icon {
+      margin-bottom: 27px;
+    }
+    .header {
+      margin-bottom: -2px;
+    }
+    .copy {
+      font: 13px/24px arial;
+      width: 253px;
+    }
+    a {
+      background: none;
+      padding: 0;
+    }
+  }
+  #acc {
+    height: 383px;
+    background: url(http://img1.imagesbn.com/pimages/nook/nook08/rotator/parallax/Avo_LP_Accessories_back_PLAX.jpg) repeat-y 0 0;
+    img {
+      position: absolute;
+    }
+    .content {
+      font: 14px/24px arial;
+      top: 166px;
+      left: 44px;
+      position: relative;
+      z-index: 100;
+      width: 340px;
+      margin: 0;
+    }
+    .header {
+      margin-bottom: -3px;
+      img {
+        position: relative;
+      }
+    }
+    .copy {
+      font: 15px/26px arial;
+      font: 15px/26px arial;
+    }
+  }
+  #fam {
+    padding: 71px 0 41px 0;
+    overflow: hidden;
+    .hdr-img a {
+      background: none;
+      padding: 0;
+    }
+  }
+  #readapp {
+    background-color: #f2f3f3;
+    padding-top: 91px;
+    overflow: hidden;
+    .content {
+      margin: 0 79px 0px 44px;
+    }
+    .header {
+      margin-bottom: -3px;
+    }
+    .copy {
+      width: 490px;
+      float: left;
+      font: 15px/26px arial;
+      margin-bottom: 28px;
+    }
+    .icon {
+      img {
+        float: left;
+        margin-right: 31px;
+      }
+      a {
+        background: none;
+        padding: 0;
+      }
+    }
+    .image {
+      float: right;
+      margin-bottom: 71px;
+    }
+  }
+}
+
+.pad52 {
+  margin-left: 52px;
+}
+
+.dotted {
+  width: 890px;
+  height: 36px;
+  margin: 0 auto;
+  border-top: 1px dashed #bdbcbc;
+  clear: both;
+}
+/* Meet the NOOK Family - Oct 2013 */
+
+#image {
+  height: 117px;
+  width: 211px;
+  background: url(http://images.barnesandnoble.com/pimages/nook/promopod/promo_spot_bg2.gif) no-repeat 0 0;
+  position: absolute;
+  top: -23px;
+  right: -2px;
+  img {
+    padding-left: 20px;
+  }
+}
+
+.deviceprice {
+  color: #333333;
+  line-height: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.nook_bg_titles {
+  width: 970px;
+}
+
+#compare_condensed {
+  text-align: center;
+}
+
+.nook_subhdr {
+  display: block;
+  height: 13px;
+  left: 49px;
+  margin: 0 0 5px;
+  position: relative;
+  top: 34px;
+  width: 296px;
+}
+
+.mod-titles-hdplus {
+  float: left;
+  width: 280px;
+}
+
+.mod-titles-hd {
+  float: left;
+  width: 224px;
+}
+
+.mod-titles-gl {
+  float: left;
+  margin: 22px 0 0;
+  width: 218px;
+}
+
+.mod-titles-nst {
+  float: left;
+  margin: 22px 0 0;
+  width: 242px;
+}
+
+.chnnl-bottom {
+  float: left;
+  margin: 0 0 56px;
+  text-align: center;
+}
+
+p.hum-default-nook {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 35px;
+  padding: 0;
+}
+
+header#bottom {
+  text-align: center;
+}
+
+p.hum-default {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px;
+  padding: 0 0 7px;
+  font-color: #393939;
+}
+
+.nook-d3-link {
+  color: #129daf;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  padding: 0 12px 2px 0;
+  text-decoration: none;
+}
+
+.nook-d3-link-lower {
+  color: #129daf;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 0 12px 2px 0;
+  text-decoration: none;
+}
+
+.dflt-footnt {
+  clear: both;
+  color: #999999;
+  font-family: Arial;
+  font-size: 10px;
+  margin: 20px 25px 0 25px;
+  border-bottom-style: none !important;
+  a {
+    background: none;
+    padding: 0;
+    color: #999999;
+    text-decoration: underline;
+  }
+}
+
+/* Reading & Entertainment - Oct 2013 */
+
+#read-ent {
+  width: 970px;
+  clear: both;
+  h2 {
+    float: left;
+    height: auto;
+    margin-bottom: 2px;
+  }
+  .lt {
+    float: left;
+    width: 100%;
+    .copy {
+      float: left;
+      margin-left: 33px;
+    }
+    .img {
+      float: right;
+      img {
+        float: right;
+      }
+    }
+  }
+  .dk {
+    float: left;
+    width: 100%;
+    background-color: #f7f7f7;
+    .copy {
+      float: right;
+      margin-left: 20px;
+    }
+    .img {
+      float: left;
+      img {
+        float: left;
+      }
+    }
+  }
+  .copy {
+    font: 15px/24px arial;
+    color: #222222;
+    a {
+      color: #129daf;
+      text-decoration: none;
+      background: url(http://img1.imagesbn.com/pimages/nook/nook08/readingentertainment/R-E_CTA.png) no-repeat right center;
+      padding: 0 10px 0 0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .compat {
+      padding: 0;
+      margin: 34px 0 0 0;
+      float: left;
+    }
+  }
+  .stroke {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #ffffff;
+  }
+  .stroke-nobottom {
+    border-top: 1px solid #dadada;
+  }
+  .lt {
+    .img {
+      width: 518px;
+    }
+    .copy {
+      width: 419px;
+      .content {
+        width: 410px;
+        float: left;
+      }
+    }
+  }
+  .dk {
+    .copy {
+      width: 421px;
+      .content {
+        width: 385px;
+        float: left;
+      }
+    }
+    .img {
+      width: 529px;
+    }
+  }
+  .overline {
+    position: relative;
+    z-index: 500;
+    bottom: 18px;
+    height: 458px;
+  }
+  .bottom-pad {
+    float: left;
+    width: 970px;
+    height: 30px;
+    clear: both;
+    border-top: 1px solid #dadada;
+  }
+}
+
+#nookpage #nook-home-header {
+  margin: 38px 0 10px 0;
+}
+/* Meet the NOOK Family - Oct 2013 */
+
+#image {
+  height: 117px;
+  width: 211px;
+  background: url(http://images.barnesandnoble.com/pimages/nook/promopod/promo_spot_bg2.gif) no-repeat 0 0;
+  position: absolute;
+  top: -23px;
+  right: -2px;
+  img {
+    padding-left: 20px;
+  }
+}
+
+.deviceprice {
+  color: #333333;
+  line-height: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.nook_bg_titles {
+  width: 970px;
+}
+
+#compare_condensed {
+  text-align: center;
+}
+
+.nook_subhdr {
+  display: block;
+  height: 13px;
+  left: 49px;
+  margin: 0 0 5px;
+  position: relative;
+  top: 34px;
+  width: 296px;
+}
+
+.mod-titles-hdplus {
+  float: left;
+  width: 280px;
+}
+
+.mod-titles-hd {
+  float: left;
+  width: 224px;
+}
+
+.mod-titles-gl {
+  float: left;
+  margin: 22px 0 0;
+  width: 218px;
+}
+
+.mod-titles-nst {
+  float: left;
+  margin: 22px 0 0;
+  width: 242px;
+}
+
+.chnnl-bottom {
+  float: left;
+  margin: 0 0 56px;
+  text-align: center;
+}
+
+p.hum-default-nook {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 35px;
+  padding: 0;
+}
+
+header#bottom {
+  text-align: center;
+}
+
+p.hum-default {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px;
+  padding: 0 0 7px;
+  font-color: #393939;
+}
+
+.nook-d3-link {
+  color: #129daf;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  padding: 0 12px 2px 0;
+  text-decoration: none;
+}
+
+.nook-d3-link-lower {
+  color: #129daf;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 0 12px 2px 0;
+  text-decoration: none;
+}
+
+.dflt-footnt {
+  clear: both;
+  color: #999999;
+  font-family: Arial;
+  font-size: 10px;
+  margin: 20px 25px 0 25px;
+  border-bottom-style: none !important;
+  a {
+    background: none;
+    padding: 0;
+    color: #999999;
+    text-decoration: underline;
+  }
+}
+
+/* Reading & Entertainment - Oct 2013 */
+
+#read-ent {
+  width: 970px;
+  clear: both;
+  h2 {
+    float: left;
+    height: auto;
+    margin-bottom: 2px;
+  }
+  .lt {
+    float: left;
+    width: 100%;
+    .copy {
+      float: left;
+      margin-left: 33px;
+    }
+    .img {
+      float: right;
+      img {
+        float: right;
+      }
+    }
+  }
+  .dk {
+    float: left;
+    width: 100%;
+    background-color: #f7f7f7;
+    .copy {
+      float: right;
+      margin-left: 20px;
+    }
+    .img {
+      float: left;
+      img {
+        float: left;
+      }
+    }
+  }
+  .copy {
+    font: 15px/24px arial;
+    color: #222222;
+    a {
+      color: #129daf;
+      text-decoration: none;
+      background: url(http://img1.imagesbn.com/pimages/nook/nook08/readingentertainment/R-E_CTA.png) no-repeat right center;
+      padding: 0 10px 0 0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .compat {
+      padding: 0;
+      margin: 34px 0 0 0;
+      float: left;
+    }
+  }
+  .stroke {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #ffffff;
+  }
+  .stroke-nobottom {
+    border-top: 1px solid #dadada;
+  }
+  .lt {
+    .img {
+      width: 518px;
+    }
+    .copy {
+      width: 419px;
+      .content {
+        width: 410px;
+        float: left;
+      }
+    }
+  }
+  .dk {
+    .copy {
+      width: 421px;
+      .content {
+        width: 385px;
+        float: left;
+      }
+    }
+    .img {
+      width: 529px;
+    }
+  }
+  .overline {
+    position: relative;
+    z-index: 500;
+    bottom: 18px;
+    height: 458px;
+  }
+  .bottom-pad {
+    float: left;
+    width: 970px;
+    height: 30px;
+    clear: both;
+    border-top: 1px solid #dadada;
+  }
+}
+
+#nookpage #nook-home-header {
+  margin: 38px 0 10px 0;
+}
+/* Reading & Entertainment - Oct 2013 */
+
+#read-ent {
+  width: 970px;
+  clear: both;
+  h2 {
+    float: left;
+    height: auto;
+    margin-bottom: 2px;
+  }
+  .lt {
+    float: left;
+    width: 100%;
+    .copy {
+      float: left;
+      margin-left: 33px;
+    }
+    .img {
+      float: right;
+      img {
+        float: right;
+      }
+    }
+  }
+  .dk {
+    float: left;
+    width: 100%;
+    background-color: #f7f7f7;
+    .copy {
+      float: right;
+      margin-left: 20px;
+    }
+    .img {
+      float: left;
+      img {
+        float: left;
+      }
+    }
+  }
+  .copy {
+    font: 15px/24px arial;
+    color: #222222;
+    a {
+      color: #129daf;
+      text-decoration: none;
+      background: url(http://img1.imagesbn.com/pimages/nook/nook08/readingentertainment/R-E_CTA.png) no-repeat right center;
+      padding: 0 10px 0 0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .compat {
+      padding: 0;
+      margin: 34px 0 0 0;
+      float: left;
+    }
+  }
+  .stroke {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #ffffff;
+  }
+  .stroke-nobottom {
+    border-top: 1px solid #dadada;
+  }
+  .lt {
+    .img {
+      width: 518px;
+    }
+    .copy {
+      width: 419px;
+      .content {
+        width: 410px;
+        float: left;
+      }
+    }
+  }
+  .dk {
+    .copy {
+      width: 421px;
+      .content {
+        width: 385px;
+        float: left;
+      }
+    }
+    .img {
+      width: 529px;
+    }
+  }
+  .overline {
+    position: relative;
+    z-index: 500;
+    bottom: 18px;
+    height: 458px;
+  }
+  .bottom-pad {
+    float: left;
+    width: 970px;
+    height: 30px;
+    clear: both;
+    border-top: 1px solid #dadada;
+  }
+}
+
+#nookpage #nook-home-header {
+  margin: 38px 0 10px 0;
+}
+
+/* NOOK 2014 microsite refresh */
+
+/* magic classes - preface each class with .module-bn */
+
+.module-bn {
+  .body-copy {
+    /*h7*/
+    font-family: Arial, sans-serif;
+    color: #808080;
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 0 0 1.25em;
+  }
+  .body-small {
+    /*h10*/
+    font-family: Arial, sans-serif;
+    font-size: .75em;
+    line-height: 1em;
+  }
+  .hdr1 {
+    /*h1*/
+    font-family: GillSansLight, Arial, sans-serif;
+    font-size: 3em;
+    line-height: 1em;
+    color: #222222;
+    margin: 0 0 .075em;
+    text-rendering: optimizeLegibility;
+  }
+  .hdr2 {
+    /*h2*/
+    font-family: GillSansLight, Arial, sans-serif;
+    font-size: 2.4em;
+    line-height: 1.15em;
+    color: #222222;
+    margin-bottom: .15em;
+  }
+  .hdr2-inverse {
+    font-family: GillSansLight, Arial, sans-serif;
+    font-size: 2.4em;
+    line-height: 1.15em;
+    color: #f7f7f7;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
+    margin-bottom: .15em;
+  }
+  .hdr4 {
+    font-size: 1.3em;
+  }
+  .eyebrow {
+    /*h3*/
+    font-family: GillSansLight, Arial, sans-serif;
+    font-size: 1.3em;
+    line-height: 1em;
+    color: #222222;
+  }
+  .textbanner {
+    font-family: GillSansBook, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #FFFFFF;
+  }
+  .small-device-name {
+    /*h3*/
+    font-family: GillSansLight, Arial, sans-serif;
+    font-size: 1.3em;
+    line-height: 1em;
+    color: #222222;
+  }
+  .price, .subhead {
+    /*h4*/
+    font-family: Tahoma, sans-serif;
+    font-size: 1.3em;
+    line-height: 1em;
+    color: #222222;
+    margin: 0 0 .25em;
+  }
+  a:link {
+    color: #0079ad;
+  }
+  .pricepoint {
+    /*h7c*/
+    /*default body-copy*/
+    color: #222222;
+  }
+  .shipping {
+    font-family: Arial, sans-serif;
+    font-size: .75em;
+    line-height: 1em;
+    color: #808080;
+    margin: 0 0 2.25em;
+  }
+  .addendum, .featureName {
+    /*h10+#222*/
+    font-family: Arial, sans-serif;
+    font-size: .75em;
+    line-height: 1em;
+    color: #222222;
+  }
+  .legalese {
+    /*h11*/
+    font-family: Arial, sans-serif;
+    font-size: .6em;
+    line-height: 1.2em;
+    color: #808080;
+    a {
+      color: #808080;
+      text-decoration: underline;
+    }
+  }
+  .standOut {
+    /*h7d*/
+    color: #ca025c;
+    a {
+      color: #CA025C;
+      text-decoration: underline;
+    }
+  }
+  .inverse {
+    color: #f7f7f7;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .n-cta-button {
+    font-size: 0.85em;
+    letter-spacing: 0.03em;
+    line-height: 1em;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    vertical-align: middle;
+    margin-bottom: 1.25em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #0079AD;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+    border-radius: 2em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-shadow: 0px -1px 1px #003247;
+    /*box-shadow:inset 0 1px 0 0 rgba(255,255,255,0.2),0 2px 6px 0 rgba(0,0,0,0.2);*/
+    background-color: #1A85B3;
+    background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #1A85B3), color-stop(100%, #008ae0));
+    background: -webkit-linear-gradient(bottom, #1A85B3, #399CC6);
+    background: -moz-linear-gradient(bottom, #1A85B3, #399CC6);
+    background: -o-linear-gradient(bottom, #1A85B3, #399CC6);
+    background: linear-gradient(bottom, #1A85B3, #399CC6);
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF1A85B3', endColorstr='#FF399CC6');
+  }
+  a.n-cta-button:link {
+    color: #fff;
+  }
+  .n-cta-button:hover {
+    text-decoration: none;
+    /*box-shadow:inset 0 1px 0 0 rgba(255,255,255,0.3),inset 0 3.33em 3.33em -2.22em rgba(255,255,255,0.2),0 2px 6px 0 rgba(0,0,0,0.3);*/
+  }
+    h2{
+        &.bnapp-hdr-standard{
+            margin: 0 auto !important;
+        }
+    }
+}
+
+/* button  default */
+
+.HideItDesktop {
+  display: none;
+}
+
+/* background gradient */
+
+.nook-bn {
+  &.n-gradient {
+    margin: 0 auto;
+    background-image: -o-linear-gradient(bottom, #E5E5E5 0%, #F7F7F7 50%);
+    background-image: -moz-linear-gradient(bottom, #E5E5E5 0%, #F7F7F7 50%);
+    background-image: -webkit-linear-gradient(bottom, #F7F7F7 0%, #E5E5E5 50%);
+    background-image: -ms-linear-gradient(bottom, #E5E5E5 0%, #F7F7F7 50%);
+    background-image: linear-gradient(to bottom, #E5E5E5 0%, #F7F7F7 50%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E5E5E5), color-stop(0.5, #F7F7F7));
+  }
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #808080;
+  text-align: left;
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  p {
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    line-height: 1.3em;
+  }
+}
+
+/* ******************* NEW NOOK MODULES ******************** */
+/* fonts available: GillSansBook, GillSansLight, GillSansLightItalic, GillSansBookItalic */
+
+/* global styles */
+
+.module-bn {
+  a {
+    color: #0079ad;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+  .modRight {
+    float: right;
+    width: 50%;
+  }
+  .modLeft {
+    float: left;
+    width: 50%;
+  }
+  .modPodImg {
+    line-height: 0;
+    img {
+      max-width: 100%;
+    }
+  }
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    position: relative;
+    width: 0;
+  }
+}
+
+/* DB */
+
+.n-sbs .module-bn, .n-sbs-hero .module-bn {
+  margin: 0 3.6%;
+}
+
+.n-content .module-bn {
+  margin: 0 0 0 3.6%;
+}
+
+.promo-copy {
+  color: #ca025c;
+  margin: 0 0 1em;
+}
+
+.hdr1 {
+  .trade {
+    font-size: 0.4em;
+    position: relative;
+    top: -1em;
+  }
+  .reg {
+    font-size: 0.3em;
+    position: relative;
+    top: -1.6em;
+  }
+}
+
+.body-copy {
+  .reg {
+    font-size: 0.5em;
+    position: relative;
+    top: -0.8em;
+  }
+  .trade {
+    font-size: 0.8em;
+    position: relative;
+    top: -0.15em;
+  }
+}
+
+.n-lifestyle {
+  .trade {
+    font-size: 0.5em;
+    position: relative;
+    top: -0.7em;
+  }
+  .reg {
+    font-size: 0.4em;
+    position: relative;
+    top: -1em;
+  }
+}
+
+/* side-by-side module */
+
+.n-sbs .module-bn .modLeft {
+  width: 49%;
+}
+
+.nook-bn .modCenter {
+  text-align: center;
+  padding: 8% 0 0 0;
+  clear: both;
+}
+
+.n-sbs {
+  .n-sep {
+    border-right: 2px solid #E5E5E5;
+    float: left;
+    height: 135px;
+    margin: 40px -2px 0 0;
+    width: 1%;
+    display: block;
+  }
+  .modPodImg {
+    float: left;
+    padding: 0 3% 0 0;
+  }
+  .modLeft .modPodText {
+    width: 54%;
+    float: left;
+  }
+  .modRight {
+    .modPodText {
+      float: left;
+      width: 54%;
+    }
+    .modPodImg {
+      padding: 0 3% 0 5.5%;
+    }
+  }
+  .modLeft, .modRight {
+    padding: 4.5% 0 0 0;
+  }
+  .modLeft .modPodImg {
+    width: 40%;
+  }
+  .modRight .modPodImg {
+    width: 44%;
+  }
+  .badges {
+    float: left;
+    width: 100%;
+    img {
+      float: left;
+      max-width: 30%;
+      margin: 3% 0 0 3%;
+    }
+  }
+}
+
+/* side-by-side hero */
+
+.nook-bn.n-sbs-hero {
+  .modLeft, .modRight {
+    text-align: center;
+  }
+}
+
+.n-sbs-hero {
+  .pricepoint {
+    display: inline-block;
+    color: #222222;
+  }
+  .shipping {
+    color: #222222;
+    display: inline-block;
+  }
+  .price {
+    padding: 0.4em 0 0.2em;
+  }
+  .modPodText {
+    padding: 0 0 2em;
+  }
+}
+
+/* 50-50 module */
+
+.n-5050 .modPodText, .n-centered .modPodText {
+  padding: 22% 10% 0;
+}
+
+.n-5050 .modRight {
+  position: relative;
+}
+
+.n-5050swap .modPodText {
+  padding: 22% 10% 0;
+}
+
+.n-5050 .n-legalcopy {
+  bottom: 42px;
+  clear: both;
+  font-size: 0.6em;
+  height: 0;
+  line-height: 1.2em;
+  margin: 0 0 0 5%;
+  position: relative;
+}
+
+.n-5050swap .n-legalcopy {
+  bottom: 42px;
+  clear: both;
+  font-size: 0.6em;
+  height: 0;
+  line-height: 1.2em;
+  margin: 0 0 0 55%;
+  position: relative;
+}
+
+.n-5050 {
+  .n-special-offer {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 0;
+  }
+  &.n-5050swap .modRight {
+    float: left;
+  }
+}
+
+.n-5050-bg, .n-5050-readingapps {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  position: relative;
+  background-position: top right;
+}
+
+.n-5050-bg-best {
+  background-image: url(http://img1.imagesbn.com/pimages/nook/modules/5050/feat_Glow_BestReading_Dback.jpg);
+}
+
+.n-5050-bg-perfectly {
+  background-image: url(http://img1.imagesbn.com/pimages/nook/modules/5050/feat_Glow_PerfectlyLit_Dback.jpg);
+}
+
+.n-5050 .modPodImg {
+  img {
+    min-width: 460px;
+  }
+  overflow: hidden;
+  position: relative;
+  text-align: right;
+}
+
+.n-5050swap .modPodImg {
+  float: right;
+}
+
+.n-5050.n-promo {
+  border-top: 5px solid #CA025C;
+}
+
+.n-5050-icons img {
+  max-width: 100%;
+}
+
+.n-5050.n-soh {
+  margin-bottom: 1em;
+  float: left;
+}
+
+/* device hero */
+
+.n-device-hero {
+  position: relative;
+  .module-bn {
+    .modRight {
+      width: 70%;
+    }
+    .modPodImg {
+      text-align: right;
+      overflow: hidden;
+    }
+  }
+  .modPodImg img {
+    max-width: 100%;
+    min-width: 680px;
+  }
+  .module-bn .modLeft {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+  }
+  .hdr1 {
+    width: 100%;
+  }
+  .body-copy {
+    width: 90%;
+  }
+  .hero-links {
+    bottom: 4em;
+    clear: both;
+    height: 0;
+    padding: 0 0 0 5%;
+    position: relative;
+    a {
+      background: url("http://img1.imagesbn.com/pimages/nook/modules/gl_camera_icon_0079AD.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+      padding: 0 0 0 30px;
+      font-size: 0.8em;
+      line-height: 1.8em;
+      display: inline-block;
+    }
+  }
+  .rating {
+    margin-bottom: .5em;
+    .rating-line {
+      margin-right: 10px;
+    }
+  }
+  .bnStarRating .stars {
+    display: none;
+  }
+}
+
+.bnStarRating {
+  display: inline-block;
+}
+
+.n-device-hero .bnStarRating a, .bnStarRating a .count {
+  color: #0079AD;
+  font-size: 0.75em;
+  position: relative;
+  top: -0.1em;
+}
+
+.n-device-hero .bnStarRating a:hover, .bnStarRating a:hover .count {
+  color: #0079AD;
+  text-decoration: none;
+}
+
+.n-device-hero .shipping {
+  margin: 0 0 0.75em;
+}
+
+/* content pod */
+
+.n-content {
+  .modLeft {
+    width: 35%;
+  }
+  .modRight {
+    width: 65%;
+    min-height: 460px;
+    overflow: hidden;
+  }
+  .modPodText {
+    padding: 26% 17% 0 0;
+    /*23% 35% 0 0;*/
+  }
+}
+
+.n-content-row {
+  padding: 14% 0 0 0;
+  position: relative;
+  max-width: 550px;
+}
+
+.n-content-img {
+  position: absolute;
+  bottom: -268px;
+  line-height: 0;
+  > img {
+    width: 170px;
+    -webkit-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.75);
+  }
+  &.n-ci1 {
+    left: 0;
+  }
+  &.n-ci2 {
+    left: 34%;
+  }
+  &.n-ci3 {
+    left: 68%;
+  }
+}
+
+/* centered module */
+
+.n-centered {
+  .modPodImg {
+    margin: 0 auto;
+    max-width: 970px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .modPodText {
+    padding: 0 18%;
+  }
+}
+
+/* text banner module  */
+
+.n-textbanner .promo-text {
+  background-color: #0079AD;
+  text-align: center;
+  padding: 0.6em 0 0.4em 0;
+  a {
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
+}
+
+/* accessories modules */
+
+.nook-bn {
+  .module.nook-covers {
+    border-bottom: 1px solid #b7b7b7;
+    padding-bottom: 36px;
+    margin: 0;
+  }
+  .acc-cover.rsz > img {
+    max-width: 100%;
+  }
+  &.n-legal {
+    padding: 1em 0 0;
+  }
+}
+
+/* GS */
+
+.n-sop {
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    text-align: center;
+    vertical-align: top;
+    width: 49%;
+    float: right;
+    &:first-child {
+      margin-right: .75%;
+      float: left;
+    }
+  }
+}
+
+/* Special Offer Pod = sop*/
+
+.n-sop-grp {
+  clear: left;
+  overflow: auto;
+  margin-top: 1em;
+}
+
+.n-sop-itm {
+  max-width: 475px;
+  margin: 0 auto;
+  padding: 2.5em 6.25% 0 6.25%;
+  background-color/*\**/: #f7f7f7\9;
+  background-image: -o-linear-gradient(top, #e5e5e5 15%, #f7f7f7 50%, #ffffff 100%);
+  background-image: -moz-linear-gradient(center top, #e5e5e5 15%, #f7f7f7 50%, #ffffff 100%);
+  background-image: -webkit-linear-gradient(top, #e5e5e5 15%, #f7f7f7 50%, #ffffff 100%);
+  background-image: -ms-linear-gradient(top, #e5e5e5 15%, #f7f7f7 50%, #ffffff 100%);
+  background-image: linear-gradient(top, #e5e5e5 15%, #f7f7f7 50%, #ffffff 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.15, #e5e5e5), color-stop(0.5, #f7f7f7), color-stop(1, #ffffff));
+  h2.hdr2 sup {
+    vertical-align: top;
+    position: relative;
+    top: -1.2em;
+    font-size: 0.25em;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.n-sop-copy {
+  margin-bottom: 0.75em;
+  .quote-author {
+    font-size: 0.7em;
+  }
+}
+
+.n-sop-cta {
+  margin-bottom: 0.5em;
+  .dbl-link {
+    display: inline;
+    width: 45%;
+    margin: 0 15px;
+  }
+}
+
+/* LifeStyle A & B */
+
+.n-lifestyle {
+  background-image: url(http://img1.imagesbn.com/pimages/nook/modules/lifestyle/imageSample_A.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  position: relative;
+  background-position: center center;
+}
+
+.n-gradient-grey-white {
+  position: relative;
+  background: -moz-linear-gradient(top, rgba(0, 2, 34, 0) 0%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0.44) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 2, 34, 0)), color-stop(45%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.44)));
+  background: -webkit-linear-gradient(top, rgba(0, 2, 34, 0) 0%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0.44) 100%);
+  background: -o-linear-gradient(top, rgba(0, 2, 34, 0) 0%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0.44) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 2, 34, 0) 0%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0.44) 100%);
+  background: linear-gradient(to bottom, rgba(0, 2, 34, 0) 0%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0.44) 100%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000222', endColorstr='#000000', GradientType=0 ); */
+}
+
+.n-lifestyle-hdr {
+  position: relative;
+  text-align: center;
+  max-width/*\**/: 1000px\9;
+  margin/*\**/: 0 auto\9;
+  .hdr2-inverse {
+    margin-bottom: 0;
+    padding: 36% 6.25% 5% 6.25%;
+    padding/*\**/: 30% 6.25% 5% 6.25% \9;
+  }
+  &.topLeft .hdr2-inverse {
+    padding: 5% 30% 36% 5%;
+    text-align: left;
+  }
+  &.topRight .hdr2-inverse {
+    padding: 5% 5% 36% 30%;
+    text-align: right;
+  }
+  &.bottomLeft .hdr2-inverse {
+    padding: 36% 30% 5% 5%;
+    text-align: left;
+  }
+  &.bottomRight .hdr2-inverse {
+    padding: 36% 5% 5% 30%;
+    text-align: right;
+  }
+}
+
+/*45 to 30 */
+
+/* Comparison Content */
+
+.n-comp-list {
+  ul li {
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.3em;
+    width: 47%;
+    *float: left;
+    &:nth-child(2n+2) {
+      margin-left: 45px;
+    }
+  }
+  background-color: #f7f7f7;
+  padding-bottom: 1.25em;
+  min-width: 280px;
+  margin-bottom: 1.25em;
+}
+
+.n-comp-content-section {
+  padding: 1.5em 2.5% 1em 2.5%;
+  margin: 0 2.5%;
+  &.n-section-intro {
+    padding: 1.5em 2.5% 1em 2.5%;
+  }
+  &:not(.n-section-intro) li {
+    font-family: Arial, sans-serif;
+    font-size: .75em;
+    line-height: 1.2em;
+    padding-bottom: 10px;
+  }
+  &:nth-child(odd) {
+    background-color: #fff;
+  }
+}
+
+.n-comp-copy {
+  padding-bottom: .35em;
+}
+
+.comp-price {
+  padding-bottom: 1em;
+}
+
+.n-comp-label {
+  padding-bottom: 1.25em;
+}
+
+/* end comparison*/
+
+/*content category pages*/
+
+.n-content-hero {
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.category-selection ul, category-selection li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.n-catagory {
+  display: block;
+  position: relative;
+  top: 27px;
+  z-index: 2;
+  font-size: .75em;
+  line-height: 1em;
+  color: #fefefe;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+  text-align: center;
+  cursor: pointer;
+}
+
+.n-catagory-button {
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #f7f7f7;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+  background-color/*\**/: gray\9;
+  opacity: .5;
+  position: relative;
+  z-index: 1;
+}
+
+.n-tabs {
+  padding: 0 4%;
+}
+
+.tab-menu {
+  ul {
+    width: 100%;
+  }
+  li {
+    display: inline-block;
+    float/*\**/: left\9;
+    text-align: center;
+    vertical-align: bottom;
+    width: 14%;
+    min-width: 130px;
+    margin: 0 .75%;
+  }
+}
+
+.n-tab {
+  position: relative;
+  a {
+    &:link {
+      text-decoration: none;
+      outline: none;
+    }
+    &:hover .n-catagory-button {
+      opacity: .75;
+      background-color/*\**/: #ccc\9;
+    }
+  }
+}
+
+.tab-menu {
+  .mark {
+    position: relative;
+    left: 50%;
+    margin-left: -15px;
+    width: 0;
+    border: 15px transparent solid;
+  }
+  .active {
+    .n-catagory-button {
+      opacity: .75;
+    }
+    .n-catagory {
+      color: #222222;
+    }
+  }
+}
+
+.n-content-hero {
+  min-height: 450px;
+  position: relative;
+  .n-gradient-grey-white {
+    min-height: 450px;
+    position: relative;
+  }
+}
+
+.n-content-hdr {
+  position: relative;
+  text-align: center;
+  padding: 5% 6.25% 26%;
+  p {
+    color: #f7f7f7;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.n-tabs button {
+  display: none;
+}
+
+.n-content-hero {
+  .n-tab-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: visible;
+  }
+  #hero-image {
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position/*\**/: center center\9;
+    position: relative;
+    min-height: 450px;
+  }
+}
+
+.n-lifestyle.sharedCategory {
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position/*\**/: center center\9;
+  position: relative;
+  min-height: 450px;
+}
+
+.n-content-hero {
+  .landing {
+    background-image: url("http://img1.imagesbn.com/pimages/nook/modules/lifestyle/content/Cntent_F1_lifestyle_Default_D.jpg");
+  }
+  .adventurer {
+    background-image: url("http://img1.imagesbn.com/pimages/nook/modules/lifestyle/content/Cntent_F1_lifestyle_Adventurer_D.jpg");
+  }
+  .performer {
+    background-image: url("http://img1.imagesbn.com/pimages/nook/modules/lifestyle/content/Cntent_F1_lifestyle_Performer_D.jpg");
+  }
+  .visionary {
+    background-image: url("http://img1.imagesbn.com/pimages/nook/modules/lifestyle/content/Cntent_F1_lifestyle_Visionary_D.jpg");
+  }
+  .thinker {
+    background-image: url("http://img1.imagesbn.com/pimages/nook/modules/lifestyle/content/Cntent_F1_lifestyle_Thinker_D.jpg");
+  }
+  .nurturer {
+    background-image: url("http://img1.imagesbn.com/pimages/nook/modules/lifestyle/content/Cntent_F1_lifestyle_Nuturer_D.jpg");
+  }
+  .futurist {
+    background-image: url("http://img1.imagesbn.com/pimages/nook/modules/lifestyle/content/Cntent_F1_lifestyle_Futurist_D.jpg");
+  }
+}
+
+.n-lifestyle.sharedCategory {
+  background-image: url("http://img1.imagesbn.com/pimages/nook/modules/lifestyle/content/Cntent_F4_lifestyle_D.jpg");
+}
+
+.category-selection {
+  display: none;
+}
+
+#landing {
+  display: block;
+}
+
+.cat-hdr {
+  display: none;
+}
+
+#landing-hdr {
+  display: block;
+}
+
+.modalOverlay {
+  position: relative;
+  z-index: 3;
+  height: 100px;
+  background: url("http://www1.nookassets.com/cmsassets/content/dam/nook/images/misc/loader_light.gif") no-repeat center center;
+}
+
+#NOOKBlogRSSfeature {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  li {
+    z-index: 4;
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  img {
+    height: auto;
+    z-index: 8;
+    margin-bottom: 15px;
+  }
+}
+
+#NOOKBlogRSS.n-5050 .modPodImg {
+  padding: 20% 2% 26.75% 2%;
+  float: right;
+  max-width: 100%;
+}
+
+/*
+    @media only screen and (max-width: 950px){
+      #NOOKBlogRSS.n-5050 .modPodImg {  
+        width: 460px;
+      }
+    }*/
+
+#NOOKBlogRSSfeature {
+  p {
+    display: none;
+  }
+  h2 {
+    font-size: .8em;
+    line-height: 1em;
+    padding: 2px;
+    a:link {
+      color: #000;
+    }
+  }
+  .single-feed a {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
+.n-gradient-side {
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #E5E5E5), color-stop(0.5, #FFFFFF));
+  background-image: -o-linear-gradient(right, #E5E5E5 0%, #FFFFFF 50%);
+  background-image: -moz-linear-gradient(right, #E5E5E5 0%, #FFFFFF 50%);
+  background-image: -webkit-linear-gradient(right, #E5E5E5 0%, #FFFFFF 50%);
+  background-image: linear-gradient(to left, #E5E5E5 0%, #FFFFFF 50%);
+}
+
+/* BB */
+
+/* CATEGORIES MODULE */
+
+.n-categories {
+  .module-bn {
+    padding: 8% 5% 3% 5%;
+  }
+  h2.hdr1, .sub {
+    text-align: center;
+  }
+}
+
+.n-categories-pod-wrapper {
+  margin-top: 1.5em;
+}
+
+a.n-categories-pod {
+  display: block;
+  width: 33.33%;
+  float: left;
+  padding: 0 0 2% 0;
+  text-align: center;
+}
+
+.tight a.n-categories-pod {
+  width: 25%;
+}
+
+.n-categories-pod-image {
+  max-width: 100%;
+}
+
+.n-categories-pod-link {
+  font-size: 1.1em;
+}
+
+/* SUPPORT MODULE */
+
+.m-break {
+  display: inline;
+}
+
+.link-color {
+  color: #0079ad;
+}
+
+.or {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0.9375em;
+  span {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.hdr10 {
+  font-size: 0.75em;
+}
+
+.n-support {
+  .module-bn {
+    margin: 0 0 0 3.6%;
+    overflow: auto;
+  }
+  .hdr1 {
+    margin: 1.167em 0 0.25em 0;
+  }
+}
+
+.n-support-wrap {
+  position: relative;
+  min-height: 345px;
+}
+
+.n-support-constrain {
+  width: 70%;
+  position: relative;
+  z-index: 2;
+}
+
+.n-support-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 38%;
+  img {
+    &.d {
+      display: block;
+      max-width: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    &.m {
+      display: none;
+    }
+  }
+}
+
+.device-filter {
+  display: inline-block;
+  width: 290px;
+}
+
+#device-select {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.8em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-shadow: 0px -1px 1px #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  option {
+    padding: 0.25em 1em;
+  }
+}
+
+/* PLATFORM SELECT AUX MODULE */
+
+.select-platform-style {
+  background-color: #459749;
+  color: white;
+  .module-bn {
+    height: 100px;
+    padding: 25px 0 0 0;
+    overflow: hidden;
+  }
+}
+
+.platform-select {
+  float: left;
+  padding: 12px 25px 0 10%;
+}
+
+.platform-badges {
+  float: left;
+  max-width: 58%;
+  img {
+    display: inline-block;
+    padding-right: 25px;
+    max-width: 32%;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: inset 2px 2px 6px -2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 2px 2px 6px -2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 6px -2px rgba(0, 0, 0, 0.25);
+  span {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 10px 0 0 20px;
+    cursor: pointer;
+  }
+}
+
+.device-filter select {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  line-height: inherit;
+  text-shadow: inherit;
+  text-align: inherit;
+  display: inline-block;
+  border: 0 none;
+  text-indent: 0;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.select-wrapper > {
+  select {
+    margin: 0;
+    width: 290px;
+    height: 45px;
+    text-align: left;
+    opacity: 0;
+    cursor: pointer;
+  }
+  span:after {
+    content: "";
+    width: 55px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent url(http://img1.imagesbn.com/pimages/nook/modules/fpo/Support_DownArrow.png) no-repeat scroll 15px 0;
+    border-left: 2px solid #ccc;
+  }
+}
+
+.search-box-wrapper {
+  position: relative;
+  border: 1px solid #ccc;
+  width: 290px;
+  height: 45px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: inset 2px 2px 6px -2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 2px 2px 6px -2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 6px -2px rgba(0, 0, 0, 0.25);
+}
+
+.ns-kbform {
+  border: 0;
+  margin: 0;
+  height: auto;
+  display: inline-block;
+  fieldset {
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  input {
+    &.search-term {
+      display: inline-block;
+      height: 45px;
+      width: 235px;
+      border: 0;
+      margin: 0;
+      padding: 0 0 0 20px;
+      font-size: 0.9em;
+      background-color: transparent;
+    }
+    &:focus {
+      outline: 0;
+    }
+    &.search-graphic {
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+  }
+  label {
+    display: none;
+  }
+}
+
+/*  fix for Global Mobile Navigation CSS conflict - src: core.css on img3.bn.com  */
+
+#sideNavHeader a {
+  &.btn-orange {
+    &:link, &:visited {
+      color: #fff;
+    }
+  }
+  &.btn-addtocart {
+    color: #fff;
+  }
+}
+
+#panel-sidebar li a {
+  line-height: normal;
+}
+
+#sideNavHeader a {
+  &:link, &:visited, &:hover, &:active, &:focus {
+    color: #3169a8;
+  }
+}

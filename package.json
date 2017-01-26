@@ -1,9 +1,16 @@
 {
-  "name": "bn-production",
-  "version": "0.2.0",
+  "name": "bn-cartridges",
+  "version": "0.2.1",
   "project": "bn.com",
   "department": "Production",
-  "description": " ",
+  "description": "Production Development Team Resources",
+  "homepage": "http://barnesandnoble.com/",
+  "license": "UNLICENSED",
+  "private": "true",
+  "repository":{
+	  "type": "git",
+	  "url": "https://github.com/bncom/bn-cartridges"
+  },
   "author": {
     "name": "Gil Sanchez",
     "email": "gsanchez@book.com"
