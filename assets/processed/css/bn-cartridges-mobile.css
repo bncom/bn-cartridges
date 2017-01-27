@@ -203,9 +203,9 @@ body {
   margin-bottom: 7px;
 }
 .main-content .bnreads-pod p, .main-content .html .bnreads-pod p {
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 1.9;
   margin-bottom: 10px;
 }
@@ -237,8 +237,8 @@ body {
   box-shadow: none;
 }
 .main-content .bnreads-pod .aLink {
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 500;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 700;
   color: #3D6DB5;
   text-decoration: none;
 }
@@ -1352,15 +1352,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .gc-item figcaption {
   line-height: 1;
   padding: 6px 5px 50px;
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
 }
 .html .gc-item a {
   color: #000;
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
   display: block;
   padding: 0;
 }
@@ -2718,7 +2718,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
 }
 .html * {
-  font-family: GillSans, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   font-weight: 400;
 }
 .html .screen-reader-text {
@@ -2768,7 +2768,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta:before, .html .event-intro .event-intro-link:before {
   content: " ";
-  font-family: GillSans, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   font-size: 25px;
   vertical-align: middle;
 }
@@ -2892,8 +2892,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   font-weight: inherit;
 }
 .html .event-intro p {
-  font-size: 16px;
-  font-family: GillSans, Arial, sans-serif;
+  font-size: 15px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
   line-height: 1.85;
   text-align: center;
   margin-bottom: 30px;
@@ -3015,9 +3016,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   padding: 10px;
 }
 .html .event-5050-sub-hdr, .html p.event-5050-sub-hdr {
-  font-family: GillSans, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.3;
   margin: 0;
 }
@@ -3126,8 +3127,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-info-pod-date {
   font-size: 18px;
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 500;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 700;
   margin-bottom: 10px;
   display: block;
 }
@@ -3141,9 +3142,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   font-size: 22px;
 }
 .html .event-info-copy {
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
   margin-bottom: 15px;
   display: block;
 }
@@ -3325,7 +3326,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
 }
 .html * {
-  font-family: GillSans, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   font-weight: 400;
 }
 .html .screen-reader-text {
@@ -3375,7 +3376,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta:before, .html .event-intro .event-intro-link:before {
   content: " ";
-  font-family: GillSans, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   font-size: 25px;
   vertical-align: middle;
 }
@@ -3527,8 +3528,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   font-weight: inherit;
 }
 .html .event-intro p {
-  font-size: 16px;
-  font-family: GillSans, Arial, sans-serif;
+  font-size: 15px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
   line-height: 1.85;
   text-align: center;
   margin-bottom: 30px;
@@ -3676,9 +3678,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   padding: 10px;
 }
 .html .event-5050-sub-hdr, .html p.event-5050-sub-hdr {
-  font-family: GillSans, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.3;
   margin: 0;
 }
@@ -3809,8 +3811,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-info-pod-date {
   font-size: 18px;
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 500;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 700;
   margin-bottom: 10px;
   display: block;
 }
@@ -3824,9 +3826,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   font-size: 22px;
 }
 .html .event-info-copy {
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
   margin-bottom: 15px;
   display: block;
 }
@@ -4156,8 +4158,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-align: left;
 }
 .html .cqTextBookSearch-isbn-sample .question {
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 500;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 700;
 }
 .html .cqTextBookSearch-isbn-sample p {
   margin: 0 0 3px 0;
@@ -4201,8 +4203,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin-bottom: 40px;
 }
 .html .textbook-stores a {
-  font-family: GillSans, Arial, sans-serif;
-  font-size: 16px;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 1.5;
   color: #000;
   display: block;
@@ -4363,7 +4366,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 0 0 20px 0;
 }
 .html .textbook-topic {
-  font: 300 16px/1.618 GillSans, Arial, sans-serif;
+  font: 400 15px/1.618 Lato, Arial, sans-serif;
 }
 .html .textbook-topic p {
   padding: 0 25px;
@@ -4481,8 +4484,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 0 0 10px 0;
 }
 .html .mc-hdr-sub {
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 300;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
   color: #000;
@@ -4545,9 +4548,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/MasterCard_Sprites.png") no-repeat -219px -182px;
 }
 .html .mc-feature p {
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 1.75;
   color: #000;
 }
@@ -4565,8 +4568,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin-bottom: 10px;
 }
 .html .mc-questions a {
-  font-family: GillSans, Arial, sans-serif;
-  font-weight: 500;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 700;
   font-size: inherit;
   color: #346250;
 }

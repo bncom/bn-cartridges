@@ -16,7 +16,6 @@
     width: 445px;
     z-index: 2;
 }
-
 .cqTextBookSearch input[type="text"] {
     border: 1px solid #fff;
     border-radius: 0;
@@ -95,7 +94,7 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
     text-align:left;
 }
 
-.cqTextBookSearch-isbn-sample .question{ font-family: $secondary-font; font-weight: 500;}
+.cqTextBookSearch-isbn-sample .question{ font-family: $secondary-font; font-weight: 700;}
 .cqTextBookSearch-isbn-sample p{ margin:0 0 3px 0;}
 .cqTextBookSearch-isbn-sample img{ max-width: 350px;}
 
@@ -137,7 +136,8 @@ input#searchTextBookBar::-moz-placeholder { /* Firefox 18- */ color: #000;opacit
 } 
 .textbook-stores a { 
     font-family: $secondary-font;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.5;
     color:#000;
     display:block;
