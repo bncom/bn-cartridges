@@ -1092,10 +1092,10 @@ body {
   margin: 15px 0 20px;
 }
 .html #myFavTeacher span {
-  color: green;
-  font-weight: bold;
   display: block;
-  font-size: 18px;
+  color: green;
+  font-weight: 700;
+  font-size: 17px;
   margin-bottom: 8px;
 }
 .html #myFavTeacher .cq-bttn {
@@ -2842,7 +2842,7 @@ body {
 }
 .html .textbook-store-cta {
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 3px;
   color: #346250;
 }
@@ -2991,7 +2991,7 @@ body {
 .html .mc-hdr-sub {
   font-family: Lato, Arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.7;
   color: #000;
 }
