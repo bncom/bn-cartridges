@@ -318,6 +318,70 @@ section h2.event-hdr.dOnly {
   }
 }
 /* Skava global overwrites */
+/*  Overwrite Global Desktop styles for Mobile */
+#searchGrid {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section#customerFavorites, section#featuredAuthor, section#featuredBrands, section#featuredEditorialSlot, section#gridViewSpotlight, section#hotBooks, section#hotBooksWithDesc, section#newWriters, section#nowShipping, section#searchGrid > div.bn-ccr-core-page-hero-1, section#searchGrid > div.bn-ccr-core-page-hero-2, section#summerReading, section#todaysDeal, section#vidEditorial, section.blog-rss-feed, section.featuredCategories {
+  /* inherit from desktop
+  border-bottom: 1px solid #ccc;
+  height: auto;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+  */
+  /* change for skava mobile */
+  width: 100%;
+}
+
+/*  End Overwrite Global Desktop  */
+/*  bnreads RSS Module  */
+@media only screen and (max-width: 749px) {
+  .double .bnreads-viewport, .triple .bnreads-viewport {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .single .bnreads-pod img, .single .bnreads-img-wrap {
+    float: none;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .button-module-more {
+    top: 15px;
+  }
+  .button-module-more span {
+    display: none;
+  }
+  .button-module-more:after {
+    content: ">";
+    font-size: 20px;
+  }
+}
+/*  End bnreads   */
+/* H page header and page margin (padding) fixes */
+@media (max-width: 799px) {
+  #categoryHeaderContainer h1 {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: PoynterOSDisp-Semibold;
+  }
+
+  .html .links-container.browse {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .pageshell {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 .html {
   position: relative;
   clear: left;
