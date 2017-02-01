@@ -1,0 +1,30 @@
+/* NOOK Microsite */
+
+/* NOOK Comparison */
+
+@media only screen and (max-width: 699px){
+  .n-comp-2015 .n-comp-scroll .module-bn {
+    width: 225%;
+  }
+  .n-comp-2015 .btn-nook-comparison {
+    text-align: center;
+    height: 45px;
+    display: inline;
+    padding: 10px;
+  }
+}
+
+/* NOOK Apps */
+
+@media only screen and (max-width: 699px){
+  #searchGrid section h2 {
+    line-height: 1;
+    margin: 20px 0;
+    font-family: Poynter,Georgia,serif;
+  }
+  section#featuredEditorialSlot {
+    width: 100%;
+    padding-right: 24px;
+  }
+
+}
