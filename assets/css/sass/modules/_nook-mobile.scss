@@ -1,8 +1,11 @@
 /* NOOK Microsite */
 
-/* NOOK Comparison */
+
 
 @media only screen and (max-width: 699px){
+
+  /* NOOK Comparison */
+
   .n-comp-2015 .n-comp-scroll .module-bn {
     width: 225%;
   }
@@ -12,11 +15,9 @@
     display: inline;
     padding: 10px;
   }
-}
 
-/* NOOK Apps */
+  /* NOOK Apps */
 
-@media only screen and (max-width: 699px){
   #searchGrid section h2 {
     line-height: 1;
     margin: 20px 0;
@@ -25,6 +26,33 @@
   section#featuredEditorialSlot {
     width: 100%;
     padding-right: 24px;
+  }
+  
+  /* BN Readouts - Banner */
+  
+  section#nookPromo {
+    width: 100%;
+  }
+
+  section#nookPromo .text-link {
+    display: block;
+    border-left: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* BN Readouts - Customer Favorites */
+
+  .landingPage .carousel-next, .landingPage .carousel-prev {
+    display: none !important;
+  }
+  .landingPage .caroufredsel_wrapper {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+  }
+  .landingPage [id^=book-carousel] li {
+    margin-right: 10px !important;
+    width: 1470px !important;
   }
 
 }
