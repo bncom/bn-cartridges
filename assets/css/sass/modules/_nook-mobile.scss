@@ -55,4 +55,9 @@
     width: 1470px !important;
   }
 
+  div.featured-categories-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
 }
