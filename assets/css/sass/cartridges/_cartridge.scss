@@ -1,6 +1,5 @@
 /* Desktop */  
-* { font-family:GillSans,Arial,sans-serif; font-weight:400; } 
-
+* { font-family:$secondary-font ; font-weight:400; } 
 .screen-reader-text {
     border: 0;
     clip: rect(0 0 0 0);
@@ -40,7 +39,7 @@
     &.locator { padding-left:12px; background: none;}
     &:before { 
       content:" ";
-      font-family:GillSans,Arial,sans-serif;
+      font-family:$secondary-font;
       font-size:25px;   
       vertical-align: middle;
     }

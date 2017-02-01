@@ -32,5 +32,9 @@ section h2.event-hdr.dOnly{display:none;}
 	.fpvid-container { display:none;}
  	/* adjust hero position b-fest */
 	.b-fest-hero-img {left: inherit;}
-
 }
+
+/* banner with image on event pages */
+    @media only screen and (max-width: 599px) {  
+      .main-content #nookPromo img,#nookPromo img { display:none;}
+    }

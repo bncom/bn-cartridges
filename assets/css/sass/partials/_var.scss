@@ -4,12 +4,13 @@ $line-height: $font-size * 1.6;
 $h1-size: $font-size * 2; // all other fonts are related to $font-size.
 
 $control-height: 40px; // applied to any control that needs the same height.
-$radius: 5px;
-
-// ie: height: $control-height; // instead of height: 40px;
-
+$radius: 5px; 
+// ie: height: $control-height; // instead of height: 40px; 
 */
 
 $cach-buster: 0001;
 $font-size: 16px;
-$module-max-width:970px; 
+$module-max-width:970px;  
+ 
+$primary-font:"Poynter",serif; 
+$secondary-font:Lato,Arial,sans-serif; //GillSans,Arial,sans-serif; 

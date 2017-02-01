@@ -14,17 +14,17 @@
   margin-top: 15px;
 }
 .mc-hdr-main{
-  font-family: Poynter; 
+  font-family: $primary-font; 
   font-weight: 600;
   font-size: 30px;
   line-height: 1.2;
   color:#000;
   margin:0 0 10px 0;
 }  
-.mc-hdr-sub{
-  font-family: GillSans,Arial,sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+.mc-hdr-sub{ 
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 17px;
   line-height: 1.7;
   color:#000;
 }
@@ -51,7 +51,7 @@
 .mc-feature:first-of-type  {border-bottom:1px solid #ccc;}
 
 .mc-feature-hdr { 
-  font-family: "Poynter",Georgia,serif;
+  font-family:$primary-font;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.5;
@@ -81,9 +81,9 @@
 }
 
 .mc-feature p{
-  font-family: GillSans,Arial,sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 1.75;
   color:#000;
 }
@@ -101,8 +101,8 @@
 .mc-questions li{margin-bottom:10px ;}
 
 .mc-questions a{
-  font-family: GillSans;
-  font-weight: 500;
+  font-family: $secondary-font;
+  font-weight: 700;
   font-size: inherit;
   color:#346250;
 }
