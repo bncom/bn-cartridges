@@ -18,6 +18,22 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 /*  End Overwrite Global Desktop  */
 
 
+/* H page headers to match proxy pages */
+@media (max-width: 799px){
+  .landingPage .landing-page-content #categoryHeaderContainer span.text-container {
+    padding: 18px 21px 0;
+  }
+  .landingPage .landing-page-content #categoryHeaderContainer span.text {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .sk_passthroughPage .sk_navCont {
+    margin-top: 7px;
+  }
+}
+/* End H page headers to match proxy pages */
+
+
 /*  bnreads RSS Module  */
 @media only screen and (max-width: 749px) {   
     .double .bnreads-viewport, .triple .bnreads-viewport{  
