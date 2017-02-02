@@ -36,6 +36,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 /*  End bnreads   */
 
 
+/* remove page heros from Skava mobile */
+@media (max-width: 799px){
+	.sk_passthroughPage .bn-ccr-core-page-hero-1, .sk_passthroughPage .bn-ccr-core-page-hero-2 {
+		display: none;
+	}
+}
+/* End page heros removal */
+
+
 /* H page header and page margin (padding) fixes */
 @media (max-width: 799px){
     #categoryHeaderContainer h1 {
@@ -54,5 +63,6 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
       padding-left: 20px;
     }
 }
+/* End H page header and page margin (padding) fixes */
 
  
