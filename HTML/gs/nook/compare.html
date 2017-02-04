@@ -1445,9 +1445,9 @@ For a better shopping experience, please <a target="_blank" href="http://windows
 
 
 
-
+<!-- 
 <script src="http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/bn-cartridges-js.min.js?v=111416f" type="text/javascript"></script>
-
+ -->
 
  <!-- 
 
@@ -1455,8 +1455,9 @@ For a better shopping experience, please <a target="_blank" href="http://windows
 
   -->
  
+ 
 
-
+<script src="../../../../assets/build/js/bn-cartridges-js.min.js" type="text/css" media="screen"></script>
  
  
 
@@ -1576,6 +1577,7 @@ $249.99 $199.99 data-bnprice="9781400697601"
 								} else { 
 						     		$(this).html(pdpSalePrice); 
 								} 
+						     	$(this).attr("data-endeca-price","true"); 
 						    } else { 
 						     	$(this).html(pdpSalePrice); 
 							}

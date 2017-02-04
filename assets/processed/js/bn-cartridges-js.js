@@ -30,11 +30,10 @@
 		}else{
 		    loadRWDimg('data-img-src-tablet');
 		}
- 
-
+  
 
       var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
-      if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com"){isMobile = true;}
+      if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com"|| window.location.hostname === "mbarnesandnoble.skavaone.com") {isMobile = true;}
       if ( isMobile ){ // ***  Applies to Mobile Only  ***  
 	  //if ($('.main-body').length) { // ***  Applies to Mobile Only  ***  removed: class may not be available post SKAVA
 	  	// event carousel for mobile 
@@ -353,6 +352,76 @@
 	            }
 	        });
 	    }
+
+	    // NOOK Device pricing 
+	 	if($('#compare').length || $('.comp-price').length || $('#nook-device-price').length){  
+	          $.ajax({   
+	          	  url: "http://localhost:3000/HTML/gs/nook/nook-device.json?format=json", 
+	      		//	url: "//"+window.location.host+"/web-services/nook-devices?format=json,
+	              type: "GET",
+	              dataType: "text",
+	          })
+	            // Code to run if the request succeeds (is done);
+	            // The response is passed to the function
+	            .done(function( xjson ) { 
+	              //data downloaded so we call parseJSON function  
+	              var json = $.parseJSON(xjson); //now json variable contains data in json format 
+
+	          			/* possible future data points */
+		              // var collectionTitle = json.mainContent[0].title;  
+		              // var seeAllLink = json.mainContent[0].seeAllLinkUrl;  
+		              // var seeAllLinkText = json.mainContent[0].seeAllLinkText;  
+	                $.each(json.mainContent[0].records, function(i) {   
+	                    //console.log(i);
+	                  if (i < 20){   
+						var ean= this.attributes["common.id"]; 
+	                    var pdpListPrice = this.attributes.P_List_Price; 
+						pdpListPrice='$'+Math.round(pdpListPrice*100)/100; 
+	                    var pdpSalePrice = this.attributes.P_Sale_Price; 
+						pdpSalePrice='$'+Math.round(pdpSalePrice*100)/100;
+	                    var pdpPctSave = this.attributes.P_Percentage_Save; 
+	          			/* possible future data points */
+	                    // var pdpTitle = this.attributes.P_Display_Name; 
+	                    // var imageURL = "http://prodimage.images-bn.com/pimages/"+this.attributes.P_Image_Url;
+	                    // var pdpURL = "/w/"+this.attributes.P_SEO_Keywords+"/"+this.attributes["sku.workId"]+"?ean="+this.attributes["common.id"];
+	                    // var imageURL = "http://prodimage.images-bn.com/pimages/"+this.attributes.P_Image_Url;
+						$("[data-bnprice='" + ean +"']").each(function(){ 
+						    if($(this).parent().hasClass("comp-price")){  
+						    // if comparison page  or show list & bnprice 
+						     	if (pdpSalePrice < pdpListPrice){
+						     		$(this).html('<s>'+pdpListPrice+'</s>');
+						     		$(this).next().html(pdpSalePrice); 
+								} else { 
+						     		$(this).html(pdpSalePrice); 
+								} 
+						     	$(this).attr("data-endeca-price","true"); 
+						    } else { 
+						     	$(this).html(pdpSalePrice); 
+							}
+						});                 
+	                  }
+	                });   
+		        
+	            }) 
+	            // Code to run if the request fails; the raw request and
+	            // status codes are passed to the function
+	            .fail(function( xhr, status, errorThrown ) {
+	              // console.log( "Error: " + errorThrown );
+	              // console.log( "Status: " + status );   
+	            })
+	            // status codes are passed to the function
+	            .success(function( xhr, status ) { 
+	                //console.log( "xhr: " + xhr );
+	                //console.log( "Status: " + status ); 
+	            })
+	            // Code to run regardless of success or failure;
+	            .complete(function( xhr, status ) {
+	             // alert( "The request is complete!" ); 
+	            });
+	     
+	    } // end NOOK pricing
+
+
 
 // $(window).scroll(function()
 // {
