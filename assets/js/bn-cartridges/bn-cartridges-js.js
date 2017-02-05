@@ -356,8 +356,8 @@
 	    // NOOK Device pricing 
 	 	if($('#compare').length || $('.comp-price').length || $('#nook-device-price').length){  
 	          $.ajax({   
-	          	  url: "http://localhost:3000/HTML/gs/nook/nook-device.json?format=json", 
-	      		//	url: "//"+window.location.host+"/web-services/nook-devices?format=json,
+	          	  // url: "http://localhost:3000/HTML/gs/nook/nook-device.json?format=json", 
+	      		  url: "//"+window.location.host+"/web-services/nook-devices?format=json",
 	              type: "GET",
 	              dataType: "text",
 	          })
