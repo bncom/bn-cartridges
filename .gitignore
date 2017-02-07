@@ -6,6 +6,7 @@
 # NODE    #
 ###################
 node_modules/*
+package.json
 
 # Compiled source #
 ###################
