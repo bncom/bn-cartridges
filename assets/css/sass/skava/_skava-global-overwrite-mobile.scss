@@ -20,10 +20,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 
 /* H page headers to match proxy pages */
 @media (max-width: 799px){
-  .landingPage .landing-page-content #categoryHeaderContainer span.text-container {
+  .sk_passthroughPage .landingPage .landing-page-content #categoryHeaderContainer span.text-container {
     padding: 18px 21px 0;
   }
-  .landingPage .landing-page-content #categoryHeaderContainer span.text {
+  .sk_passthroughPage .landingPage .landing-page-content #categoryHeaderContainer span.text {
     font-size: 30px;
     line-height: normal;
   }
@@ -81,4 +81,60 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 /* End H page header and page margin (padding) fixes */
 
+
+@media only screen and (max-width: 699px){
+
+  /* BN Readouts - Banner */
+  
+  section#nookPromo {
+    width: 100%;
+  }
+
+  section#nookPromo .text-link {
+    display: block;
+    border-left: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* BN Readouts - Customer Favorites */
+
+  .landingPage .carousel-next, .landingPage .carousel-prev {
+    display: none !important;
+  }
+  .landingPage .caroufredsel_wrapper {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+  }
+  .landingPage [id^=book-carousel] li {
+    margin-right: 10px !important;
+    width: 1470px !important;
+  }
+
+  div.featured-categories-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  /* NOOK Apps */
+
+  #searchGrid section h2 {
+    line-height: 1;
+    margin: 20px 0;
+    font-family: Poynter,Georgia,serif;
+  }
+  section#featuredEditorialSlot {
+    width: 100%;
+    padding-right: 24px;
+  }
+  #bookOfTheMonthText {
+    width: 100%;
+  }
+
+  /* NOOK Media Kit */
+
+  /* #promoContentContainer img {
+    max-width: 100%;
+  } */
+}
  

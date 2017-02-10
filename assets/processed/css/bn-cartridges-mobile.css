@@ -337,6 +337,22 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 
 /*  End Overwrite Global Desktop  */
+/* H page headers to match proxy pages */
+@media (max-width: 799px) {
+  .sk_passthroughPage .landingPage .landing-page-content #categoryHeaderContainer span.text-container {
+    padding: 18px 21px 0;
+  }
+
+  .sk_passthroughPage .landingPage .landing-page-content #categoryHeaderContainer span.text {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .sk_passthroughPage .sk_navCont {
+    margin-top: 7px;
+  }
+}
+/* End H page headers to match proxy pages */
 /*  bnreads RSS Module  */
 @media only screen and (max-width: 749px) {
   .double .bnreads-viewport, .triple .bnreads-viewport {
@@ -362,6 +378,13 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
 }
 /*  End bnreads   */
+/* remove page heros from Skava mobile */
+@media (max-width: 799px) {
+  .sk_passthroughPage .bn-ccr-core-page-hero-1, .sk_passthroughPage .bn-ccr-core-page-hero-2 {
+    display: none;
+  }
+}
+/* End page heros removal */
 /* H page header and page margin (padding) fixes */
 @media (max-width: 799px) {
   #categoryHeaderContainer h1 {
@@ -381,6 +404,61 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     padding-right: 20px;
     padding-left: 20px;
   }
+}
+/* End H page header and page margin (padding) fixes */
+@media only screen and (max-width: 699px) {
+  /* BN Readouts - Banner */
+  section#nookPromo {
+    width: 100%;
+  }
+
+  section#nookPromo .text-link {
+    display: block;
+    border-left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* BN Readouts - Customer Favorites */
+  .landingPage .carousel-next, .landingPage .carousel-prev {
+    display: none !important;
+  }
+
+  .landingPage .caroufredsel_wrapper {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+  }
+
+  .landingPage [id^=book-carousel] li {
+    margin-right: 10px !important;
+    width: 1470px !important;
+  }
+
+  div.featured-categories-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  /* NOOK Apps */
+  #searchGrid section h2 {
+    line-height: 1;
+    margin: 20px 0;
+    font-family: Poynter,Georgia,serif;
+  }
+
+  section#featuredEditorialSlot {
+    width: 100%;
+    padding-right: 24px;
+  }
+
+  #bookOfTheMonthText {
+    width: 100%;
+  }
+
+  /* NOOK Media Kit */
+  /* #promoContentContainer img {
+    max-width: 100%;
+  } */
 }
 .html {
   position: relative;
@@ -596,6 +674,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* MasterCard header */
   /* MasterCard  FEATURES */
   /* MasterCard QUESTIONS */
+  /* NOOK Microsite - Mobile */
+  /* NOOK Microsite */
 }
 .html * {
   -moz-box-sizing: border-box;
@@ -4619,5 +4699,21 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
   .html .mc-features-group:last-of-type .mc-feature:last-of-type {
     border-bottom: none;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .html {
+    /* NOOK Comparison */
+  }
+  .html .n-comp-2015 .n-comp-scroll .module-bn {
+    width: 225%;
+  }
+  .html .n-comp-2015 .btn-nook-comparison {
+    text-align: center;
+    height: 45px;
+    display: inline;
+  }
+  .html .main-content .n-comp-2015 [class*=btn] {
+    padding: 10px;
   }
 }
