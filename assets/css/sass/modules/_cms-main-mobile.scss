@@ -276,3 +276,73 @@
     .jsonGridImage { width:auto; max-width:120px; }
 }
 /* end black friday signed editions */
+
+/* iPhone Download App */
+ @media (max-width: 699px){
+     .bnapp-hero {
+         .modLeft{
+             padding: 0;
+             float: none;
+             width: 100%;
+         }
+         .modPodText{
+             padding: 10% 5% 0;
+             text-align: center;
+         }
+         .appPodImg{
+             float: none;
+             text-align: center;
+             img {
+                 max-width: 75%;
+             }
+         }
+     }
+     .module-bn {
+         .body-copy{
+             font-size: 0.6em;
+         }
+         .bnapp-hdr{
+             font-size: 0.8em;
+             font-family:MiloSerifOffcMediumItalic,serif;
+         }
+         .modRight{
+             float: none;
+             width: 100%;
+         }
+         .bnapp-hdr1{
+             font-size: 20px;
+         }
+         .bnapp-body-copy{
+             font-size: 11px;
+             line-height: 20px;
+         }
+         .bnapp-button, 
+         .bnapp-button-small{
+             a{
+                 &:link{
+                     font-family: arial,vedana;
+                     font-size: 14px;
+                     padding: 7px;
+                     text-decoration: none;
+                 }
+             }
+         }
+         .bnapp-hdr .inner{
+             font-size: 0.8em;
+         }
+         .bnapp-categories-header {
+             font-size: 0.8em;
+             font-weight: bold;
+         }
+         .bnapp-categories-text{
+             font-size: 0.6em; 
+         }
+     }
+     h2.bnapp-hdr-standard{
+         width: 90%;
+         margin: 0 auto;
+         text-align: center;
+     }
+     
+ }
+/* End iPhone */
