@@ -699,7 +699,6 @@ h2.persona-main-hdr:after {margin: 2px auto 0 10px; }
     }
 }
 
-
 h2{
     &.bnapp-hdr-standard {
         background: rgba(0, 0, 0, 0) url("http://img1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
@@ -722,12 +721,17 @@ h2{
     padding: 2% 0 3%;
     text-align: center;
     width: 33.33%;
+   
 }
 .bnapp-categories-header {
     color: #222222;
     font-size: 1em;
     font-weight: bold;
     padding: 5% 0 0;
+     sup{
+        font-size: .7em;
+         font-weight: bold;
+    }
 }
 .bnapp-categories-text {
     color: #222222;
@@ -787,242 +791,3 @@ h2{
         width: 1%;
     }
 }
-//.module-bn .bnapp-hdr {
-//    color: #222222;
-//    font-family: MiloSerifOffcMediumItalic,serif;
-//    font-size: 1em;
-//    font-weight: normal;
-//    line-height: 1em;
-//    margin: 0 0 2%;
-//    text-align: center;
-//    text-rendering: optimizelegibility;
-//}
-//.bnapp-sbs .module-bn .body-copy {
-//    color: #222222;
-//    font-family: Arial,sans-serif;
-//    font-size: 0.7em;
-//    line-height: 1.75em;
-//    margin: 0 0 1.25em;
-//}
-//.bnapp-sbs {
-//    background: rgba(0, 0, 0, 0) url("http://img1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png") repeat-x scroll 0 0;
-//    border-bottom: 1px solid #dbdbdb;
-//    border-top: 1px solid #dbdbdb;
-//    min-height: 232px;
-//    overflow: hidden;
-//    .module-bn .modLeft {
-//    width: 49%;
-//}
-//    .modLeft, 
-//    .bnapp-sbs .modRight {
-//    padding: 0;
-//}
-//    .modPodImg {
-//    float: left;
-//    padding: 5% 4% 0 8%;
-//}
-//    .modPodText {
-//    float: left;
-//    width: 60%;
-//}
-//    .n-sep {
-//    border-right: 1px solid #e5e5e5;
-//    display: block;
-//    float: left;
-//    height: 90px;
-//    margin: 20px -2px 0 0;
-//    width: 1%;
-//}
-//    .modCenter {
-//    clear: both;
-//    padding: 0;
-//    text-align: center;
-//}
-//    .bg-body-right {
-//    background: rgba(0, 0, 0, 0) url("http://img1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png") no-repeat scroll 0 0;
-//    float: right;
-//    height: 17px;
-//    width: 202px;
-//}
-//}
-//h2.bnapp-hdr-standard {
-//    background: rgba(0, 0, 0, 0) url("http://img1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
-//    letter-spacing: 0.5px;
-//    margin: 0 auto;
-//    text-align: center;
-//    width: 772px;
-//    word-spacing: 1px;
-//}
-//.bnapp-hdr .inner {
-//    background-color: #ffffff;
-//    padding: 0 10px;
-//    position: relative;
-//}
-//.bnapp-hero {
-//    background-image: url("http://img1.imagesbn.com/pimages/mobile/app/bnapp_hero_bg.jpg");
-//    background-origin: content-box;
-//    background-position: right top;
-//    background-repeat: no-repeat;
-//    background-size: cover;
-//    position: relative;
-//}
-//.module-bn .bnapp-hdr1 {
-//    color: #ffffff;
-//    font-family: "PT Sans Bold",sans-serif;
-//    font-size: 1.4em;
-//    font-weight: bold;
-//    line-height: 1.4em;
-//    margin: 0 0 0.075em;
-//    text-rendering: optimizelegibility;
-//}
-//.module-bn .bnapp-body-copy {
-//    color: #ffffff;
-//    font-family: "PT Sans",sans-serif;
-//    font-size: 0.8em;
-//    line-height: 1.8em;
-//    margin: 0 0 1.25em;
-//}
-//.bnapp-hero .appPodImg {
-//    float: right;
-//    line-height: 0;
-//    overflow: hidden;
-//    position: relative;
-//    text-align: right;
-//}
-//.bnapp-hero .appPodImg img {
-//    max-width: 100%;
-//}
-//.bnapp-button {
-//    background: rgba(0, 0, 0, 0) url("http://img1.imagesbn.com/pimages/mobile/app/button.png") no-repeat scroll left center;
-//    clear: both;
-//    height: 41px;
-//    margin: 0 auto;
-//    text-align: center;
-//    width: 281px;
-//}
-//.bnapp-hero .bnapp-button-small {
-//    background: rgba(0, 0, 0, 0) url("http://img1.imagesbn.com/pimages/mobile/app/buttonsmall.png") no-repeat scroll left center;
-//    clear: both;
-//    float: left;
-//    height: 41px;
-//    padding: 0 0 0 30px;
-//    width: 174px;
-//}
-//.bnapp-button a:link, .bnapp-button-small a:link {
-//    color: #3169a8;
-//    display: block;
-//    font-family: "PT Sans",san-serif;
-//    font-size: 0.8em;
-//    font-weight: bold;
-//    padding: 7px 0 0;
-//}
-//.bnapp-button a:hover, .bnapp-button-small a:hover {
-//    text-decoration: none;
-//}
-//.bnapp-hero .itunes-icon {
-//    background: rgba(0, 0, 0, 0) url("http://img1.imagesbn.com/pimages/mobile/app/bnapp_itune.png") no-repeat scroll left center;
-//    float: left;
-//    height: 33px;
-//    margin: 2px 0 0 20px;
-//    width: 98px;
-//}
-//.bnapp-sbs .module-bn a:link {
-//    color: #3169a8;
-//}
-//@media all and (max-width: 699px) {
-//#merchMainHeader {
-//    display: none;
-//}
-//.bnapp-hero {
-//    margin-top: 0;
-//}
-//.bnapp-hero .bnapp-button-small {
-//    float: none;
-//    margin: 0 auto;
-//    padding: 0;
-//    text-align: center;
-//}
-//.bnapp-hero .modLeft {
-//    padding: 0;
-//}
-//.bnapp-hero .modPodText {
-//    padding: 10% 5% 0;
-//    text-align: center;
-//}
-//.bnapp-hero .itunes-icon {
-//    clear: both;
-//    float: none;
-//    margin: 12px auto 8px;
-//}
-//.bnapp-hero .appPodImg img {
-//    max-width: 75%;
-//}
-//.bnapp-hero .appPodImg {
-//    float: none;
-//    text-align: center;
-//}
-//.bnapp-button a:link, .bnapp-button-small a:link {
-//    font-family: arial,vedana;
-//    font-size: 1em;
-//    padding: 0.8em 0 0;
-//    text-decoration: none;
-//}
-//.h2.bnapp-hdr-standard {
-//    width: 90%;
-//}
-//.module-bn .bnapp-hdr {
-//    font-size: 0.8em;
-//}
-//.bnapp-categories-pod {
-//    clear: both;
-//    padding: 5% 0;
-//    width: 100%;
-//}
-//.bnapp-categories .module-bn {
-//    padding: 6% 0;
-//}
-//.bnapp-categories-header {
-//    font-size: 1.1em;
-//    font-weight: bold;
-//}
-//.bnapp-categories-text {
-//    font-size: 0.8em;
-//    padding: 0 10%;
-//}
-//.bnapp-categories .bnapp-button {
-//    margin: 0 auto 10px;
-//}
-//.bnapp-sbs .n-sep {
-//    display: none;
-//}
-//    .bnapp-sbs .module-bn{
-//        .body-copy {
-//            font-size: 0.8em;
-//        }
-//        display: inline-block;
-//        .modLeft {
-//            border-bottom: 1px solid #dbdbdb;
-//            display: inline-block;
-//            padding: 1% 0 3%;
-//            width: 50%;
-//            float: left;
-//        }
-//        .modRight {
-//            padding: 2% 0;
-//            width: 50%;
-//            float: right;
-//        }
-//    }
-//.bnapp-sbs .module-bn 
-//.bnapp-sbs .modPodText {
-//    float: left;
-//    padding: 3% 0 0;
-//    width: 55%;
-//}
-//h2.bnapp-hdr-standard {
-//    width: 90%;
-//}
-//.bnapp-sbs .modCenter {
-//    padding: 3% 0;
-//}
-//}

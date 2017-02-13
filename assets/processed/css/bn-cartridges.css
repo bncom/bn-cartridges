@@ -1797,6 +1797,10 @@ body {
   font-weight: bold;
   padding: 5% 0 0;
 }
+.html .bnapp-categories-header sup {
+  font-size: .7em;
+  font-weight: bold;
+}
 .html .bnapp-categories-text {
   color: #222222;
   font-size: 0.9em;

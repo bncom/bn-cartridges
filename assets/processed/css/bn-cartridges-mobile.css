@@ -552,6 +552,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* black friday signed editions */
   /* end black friday signed editions */
   /* iPhone Download App */
+  /* iPhone Download App */
   /* End iPhone */
   /* Skava local styling  */
   /*Coupon & Deals page*/
@@ -2082,6 +2083,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   font-weight: bold;
   padding: 5% 0 0;
 }
+.html .bnapp-categories-header sup {
+  font-size: .7em;
+  font-weight: bold;
+}
 .html .bnapp-categories-text {
   color: #222222;
   font-size: 0.9em;
@@ -2515,61 +2520,69 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
 }
 @media (max-width: 699px) {
-  .html .bnapp-hero .modLeft {
-    padding: 0;
-    float: none;
-    width: 100%;
+  .html .bnapp-hero {
+    height: inherit;
   }
-  .html .bnapp-hero .modPodText {
-    padding: 10% 5% 0;
+  .html .bnapp-hero .module-bn .modRight,
+  .html .bnapp-hero .module-bn .modLeft {
+    width: 100%;
+    float: none;
+  }
+  .html .bnapp-hero .module-bn .modRight .modPodText,
+  .html .bnapp-hero .module-bn .modLeft .modPodText {
+    padding: 10%;
+    padding-bottom: 0px;
     text-align: center;
   }
-  .html .bnapp-hero .appPodImg {
-    float: none;
+  .html .bnapp-hero .module-bn .modRight .modPodText .bnapp-button-small,
+  .html .bnapp-hero .module-bn .modLeft .modPodText .bnapp-button-small {
     text-align: center;
-  }
-  .html .bnapp-hero .appPodImg img {
-    max-width: 75%;
-  }
-  .html .module-bn .body-copy {
-    font-size: 0.6em;
-  }
-  .html .module-bn .bnapp-hdr {
-    font-size: 0.8em;
-    font-family: MiloSerifOffcMediumItalic,serif;
-  }
-  .html .module-bn .modRight {
     float: none;
-    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
   }
-  .html .module-bn .bnapp-hdr1 {
-    font-size: 20px;
+  .html .bnapp-hero .module-bn .modRight .modPodText .itunes-icon,
+  .html .bnapp-hero .module-bn .modLeft .modPodText .itunes-icon {
+    text-align: center;
+    margin: 10px auto;
+    float: none;
+    padding-top: 10px;
   }
-  .html .module-bn .bnapp-body-copy {
-    font-size: 11px;
-    line-height: 20px;
-  }
-  .html .module-bn .bnapp-button a:link,
-  .html .module-bn .bnapp-button-small a:link {
-    font-family: arial,vedana;
-    font-size: 14px;
-    padding: 7px;
-    text-decoration: none;
-  }
-  .html .module-bn .bnapp-hdr .inner {
-    font-size: 0.8em;
-  }
-  .html .module-bn .bnapp-categories-header {
-    font-size: 0.8em;
-    font-weight: bold;
-  }
-  .html .module-bn .bnapp-categories-text {
-    font-size: 0.6em;
+  .html .bnapp-hero .module-bn .modRight .appPodImg,
+  .html .bnapp-hero .module-bn .modLeft .appPodImg {
+    text-align: center;
   }
   .html h2.bnapp-hdr-standard {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+  }
+  .html .bnapp-sbs .module-bn .modLeft {
+    border-bottom: 1px solid #dbdbdb;
+    float: none;
+    display: inline-block;
+    padding: 1% 0 3%;
+    width: 100%;
+  }
+  .html .bnapp-sbs .module-bn .modRight {
+    padding: 2% 0;
+    float: none;
+    width: 100%;
+  }
+  .html .bnapp-sbs .n-sep {
+    display: none;
+  }
+  .html .bnapp-categories-pod {
+    clear: both;
+    padding: 6% 0;
+    width: 100%;
+    float: none;
+  }
+  .html .bnapp-categories .module-bn {
+    padding: 6% 0 !important;
+  }
+  .html .bnapp-hdr .inner {
+    font-size: 0.8em;
   }
 }
 .html [class*=coupn-] {
