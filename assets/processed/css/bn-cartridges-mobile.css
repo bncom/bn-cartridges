@@ -1252,10 +1252,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .cq-module-shadow-top {
   border-top: 1px solid #959595;
   /* 
-  -webkit-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-    -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-      box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-  */
+-webkit-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+*/
   box-shadow: none;
   height: auto;
   padding: 20px 0;
@@ -1474,7 +1474,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .links-container.browse ul {
   margin-bottom: 15px;
 }
-.html .links-container.browse a:hover, .html .links-container.browse a:focus {
+.html .links-container.browse a:hover,
+.html .links-container.browse a:focus {
   text-decoration: underline;
 }
 .html .links-container.textbooks > ul > li {
@@ -1542,7 +1543,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-hero-feature {
   width: 182px;
   float: left;
-  font-family: Raleway-Bold, PTSans,Arial;
+  font-family: Raleway-Bold, PTSans, Arial;
   font-size: 14px;
   line-height: 1.4;
   color: #0d4563;
@@ -1551,7 +1552,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .pmis-hero-feature figcaption {
   text-align: center;
-  font-family: Raleway-Bold, PTSans,Arial;
+  font-family: Raleway-Bold, PTSans, Arial;
   padding: 3px 0 15px 0;
 }
 .html .pmis-hero-feature img {
@@ -1571,7 +1572,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-hero-copy {
   text-align: center;
   padding: 25px 25px 44px;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
   line-height: 1.5;
@@ -1585,7 +1586,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .pmis-sample-product {
   position: relative;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   width: 459px;
   padding: 0 33px;
@@ -1597,7 +1598,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   max-width: 100%;
 }
 .html .pmis-sample-product figcaption .italic {
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 17px;
   font-style: italic;
@@ -1625,7 +1626,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-samplet ul li {
   float: left;
 }
-.html .pmis-samplet-next-item, .html .pmis-samplet-prev-item {
+.html .pmis-samplet-next-item,
+.html .pmis-samplet-prev-item {
   background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
@@ -1650,15 +1652,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html #pmis-samplet-status {
   height: 26px;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 17px;
 }
 .html .pmis-steps {
   background-color: #d6eaa1;
   /*  -moz-box-shadow:  -2px 2px 1px 0 rgba(157, 176, 191, 0.55);
-    -webkit-box-shadow: -2px 2px 1px 0 rgba(157, 176, 191, 0.55);
-      box-shadow: -2px 2px 1px 0 rgba(157, 176, 191, 0.55);*/
+-webkit-box-shadow: -2px 2px 1px 0 rgba(157, 176, 191, 0.55);
+  box-shadow: -2px 2px 1px 0 rgba(157, 176, 191, 0.55);*/
   margin: 0 0 20px;
   padding: 35px 0 30px 0;
   position: relative;
@@ -1667,7 +1669,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html h3.pmis-steps-hdr {
   text-align: center;
-  font-family: Quicksand-Bold, PTSans,Arial;
+  font-family: Quicksand-Bold, PTSans, Arial;
   color: #0d4563;
   font-weight: bold;
   font-size: 30px;
@@ -1697,7 +1699,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-cta {
   margin-bottom: 25px;
   padding: 0 30px;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
   line-height: 1.5;
@@ -1707,13 +1709,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 0 0 0 50px;
   padding: 0;
 }
-.html li.pmisOne, .html li.pmisTwo, .html li.pmisThree {
+.html li.pmisOne,
+.html li.pmisTwo,
+.html li.pmisThree {
   position: relative;
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
   background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
   line-height: 1.2;
@@ -1732,7 +1736,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin-right: 32px;
   clear: both;
 }
-.html .pmis a.pmis-button, .html .pmis .pmis-button {
+.html .pmis a.pmis-button,
+.html .pmis .pmis-button {
   border: 0 none;
   color: #ffffff;
   display: inline-block;
@@ -1744,7 +1749,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   white-space: nowrap;
   margin-top: 7px;
   background-color: #f1ac68;
-  font-family: Quicksand, PTSans,Arial;
+  font-family: Quicksand, PTSans, Arial;
   font-size: 18px;
   font-weight: 700;
   height: 44px;
@@ -1756,10 +1761,29 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 30px 0 16px 0;
 }
 .html .pmis-footnote {
-  font-family: PTSans,Arial,Helvetica,sans-serif;
+  font-family: PTSans, Arial, Helvetica, sans-serif;
   color: #0d4563;
   font-size: 14px;
   line-height: 1.4;
+}
+.html .pmis-visible-md {
+  display: block;
+}
+.html .pmis-hidden-md {
+  display: none;
+}
+.html .pmis-img-fluid {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .html .pmis-visible-sm {
+    display: block;
+  }
+  .html .pmis-hidden-sm {
+    display: none;
+  }
 }
 .html #categoryHeaderContainer h1.persona-main-hdr {
   font-size: 66px;
@@ -1769,7 +1793,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html section#categoryHeaderContainer h2.persona-main-hdr {
   color: #000;
-  font-family: PTSans,Arial,Helvetica,sans-serif;
+  font-family: PTSans, Arial, Helvetica, sans-serif;
   font-size: 30.5px;
   line-height: 1;
   text-align: center;
@@ -1777,7 +1801,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-transform: none;
   margin: 0 0 32px 0;
 }
-.html h2.persona-main-hdr:before, .html h2.persona-main-hdr:after {
+.html h2.persona-main-hdr:before,
+.html h2.persona-main-hdr:after {
   content: "";
   border-top: 1px #919190 solid;
   width: 72px;
@@ -1973,18 +1998,32 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .bnapp-hero .module-bn .modRight .modPodText {
   padding: 22% 10% 0;
   color: #fff;
-  font-family: "PT Sans Bold",sans-serif;
+  font-family: "PT Sans Bold", sans-serif;
 }
-.html .bnapp-hero .module-bn .modRight .modPodText h1 {
-  font: 1.4em;
+.html .bnapp-hero .module-bn .modRight .modPodText .bnapp-hdr1 {
+  font-size: 2em;
   font-weight: bold;
   line-height: 1.4em;
   margin: 0 0 0.075em;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "PT Sans", sans-serif;
 }
-.html .bnapp-hero .module-bn .modRight .modPodText p {
-  font-size: 0.8em;
+.html .bnapp-hero .module-bn .modRight .modPodText .bnapp-body-copy {
+  margin-bottom: 10px;
+  font-size: 1em;
   line-height: 1.8em;
   margin: 0 0 1.25em;
+  font-family: "PT Sans", sans-serif;
+}
+.html .bnapp-hero .module-bn .modRight .modPodText .bnapp-button-small a {
+  color: #3169a8;
+  display: inline-block;
+  font-family: PT Sans, san-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 7px 0;
+  text-decoration: none;
 }
 .html .bnapp-hero .module-bn .modLeft {
   float: left;
@@ -2011,7 +2050,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .bnapp-hero .bnapp-hdr {
   color: #222222;
-  font-family: MiloSerifOffcMediumItalic,serif;
+  font-family: MiloSerifOffcMediumItalic, serif;
   font-size: 1em;
   font-weight: normal;
   line-height: 1em;
@@ -2030,10 +2069,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .bnapp-button a {
   color: #3169a8;
   display: inline-block;
-  font-family: "PT Sans",san-serif;
-  font-size: 0.9em;
+  font-family: "PT Sans", san-serif;
+  font-size: 1.1em;
   font-weight: bold;
-  padding: 10px 0 0;
+  padding: 8px 0 0;
   text-decoration: none;
 }
 .html .bnapp-button-small {
@@ -2047,10 +2086,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .bnapp-button-small a {
   color: #3169a8;
   display: inline-block;
-  font-family: "PT Sans",san-serif;
+  font-family: "PT Sans", san-serif;
   font-size: 0.9em;
   font-weight: bold;
-  padding: 10px 0 0;
+  padding: 10px;
   text-decoration: none;
 }
 .html .bnapp-categories .module-bn {
@@ -2127,7 +2166,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .bnapp-sbs .module-bn .body-copy {
   color: #222222;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 0.9em;
   line-height: 1.75em;
   margin: 0 0 1.25em;
@@ -2564,10 +2603,17 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     padding: 1% 0 3%;
     width: 100%;
   }
+  .html .bnapp-sbs .module-bn .modLeft .modPodImg {
+    padding-top: 2%;
+  }
   .html .bnapp-sbs .module-bn .modRight {
     padding: 2% 0;
     float: none;
     width: 100%;
+    display: inline-block;
+  }
+  .html .bnapp-sbs .module-bn .modRight .modPodImg {
+    padding-top: 2%;
   }
   .html .bnapp-sbs .n-sep {
     display: none;

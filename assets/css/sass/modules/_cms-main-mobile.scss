@@ -195,6 +195,7 @@
   .pmis-footnote { margin-top:25px;}
 
 } 
+
 /*   // END Put Me In The Story */
 
 
@@ -321,14 +322,21 @@
              .modLeft {
                 border-bottom: 1px solid #dbdbdb;
                 float: none;
-                 display: inline-block;
+                display: inline-block;
                 padding: 1% 0 3%;
                 width: 100%;
+                 .modPodImg{
+                     padding-top: 2%;
+                 }
              }
              .modRight {
                 padding: 2% 0;
                  float: none;
                  width: 100%;
+                 display: inline-block;
+                 .modPodImg{
+                     padding-top: 2%;
+                 }
              }
          }
          .n-sep {
