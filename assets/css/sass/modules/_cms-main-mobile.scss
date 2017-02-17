@@ -159,8 +159,6 @@
 @media only screen and (max-width: 399px) {   
   .pmis-hero-features { padding: 0 0 20px 0; width:auto;}
   .pmis-hero-feature{   width:49%;font-size: 13px; height:182px;}
-  // .pmis-hero-feature:nth-child(odd) {  padding-left:0; }
-  // .pmis-hero-feature:nth-child(even) {  padding-right: 0;}
 
   .pmis-sample-carousel {
     float: none; 
@@ -195,7 +193,20 @@
   .pmis-footnote { margin-top:25px;}
 
 } 
+.pmis-img-fluid {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
 
+@media only screen and (max-width:768px) {
+    .pmis-visible-sm {
+        display: block;
+    }
+    .pmis-hidden-sm{
+        display: none;
+    }
+}
 /*   // END Put Me In The Story */
 
 

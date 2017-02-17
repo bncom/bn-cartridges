@@ -644,23 +644,7 @@ li.pmisThree {
 .pmis-hidden-md {
     display: none;
 }
-
-.pmis-img-fluid {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-
-@media only screen and (max-width:768px) {
-    .pmis-visible-sm {
-        display: block;
-    }
-    .pmis-hidden-sm {
-        display: none;
-    }
-}
-
-
+ .pmis-visible-sm{display: none;}
 /*  // END Put Me In The Story */
 
 

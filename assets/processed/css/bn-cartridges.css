@@ -1487,18 +1487,8 @@ body {
 .html .pmis-hidden-md {
   display: none;
 }
-.html .pmis-img-fluid {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-@media only screen and (max-width: 768px) {
-  .html .pmis-visible-sm {
-    display: block;
-  }
-  .html .pmis-hidden-sm {
-    display: none;
-  }
+.html .pmis-visible-sm {
+  display: none;
 }
 .html #categoryHeaderContainer h1.persona-main-hdr {
   font-size: 66px;
