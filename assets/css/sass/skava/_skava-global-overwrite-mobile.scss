@@ -20,10 +20,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 
 /* H page headers to match proxy pages */
 @media (max-width: 799px){
-  .sk_passthroughPage .landingPage .landing-page-content #categoryHeaderContainer span.text-container {
+  .sk_passthroughPage #categoryHeaderContainer span.text-container {
     padding: 18px 21px 0;
   }
-  .sk_passthroughPage .landingPage .landing-page-content #categoryHeaderContainer span.text {
+  .sk_passthroughPage #categoryHeaderContainer span.text {
     font-size: 30px;
     line-height: normal;
   }
