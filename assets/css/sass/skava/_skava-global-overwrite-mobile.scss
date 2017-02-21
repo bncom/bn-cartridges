@@ -19,6 +19,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 
 
 /* H page headers to match proxy pages */
+.sk_passthroughPage #categoryHeaderContainer h1, .sk_TextbookLanding #categoryHeaderContainer h1 {
+  font-size: 30px;
+  padding: 20px !important;
+}
 @media (max-width: 799px){
   .sk_passthroughPage.landingPage .landing-page-content #categoryHeaderContainer span.text-container {
     padding: 18px 21px 0;

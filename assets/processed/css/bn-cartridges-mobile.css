@@ -338,6 +338,11 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 
 /*  End Overwrite Global Desktop  */
 /* H page headers to match proxy pages */
+.sk_passthroughPage #categoryHeaderContainer h1, .sk_TextbookLanding #categoryHeaderContainer h1 {
+  font-size: 30px;
+  padding: 20px !important;
+}
+
 @media (max-width: 799px) {
   .sk_passthroughPage.landingPage .landing-page-content #categoryHeaderContainer span.text-container {
     padding: 18px 21px 0;
@@ -5016,12 +5021,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     /* NOOK Comparison */
   }
   .html .n-comp-2015 .n-comp-scroll .module-bn {
-    width: 225%;
+    width: 100%;
   }
   .html .n-comp-2015 .btn-nook-comparison {
     text-align: center;
     height: 45px;
     display: inline;
+    font-size: 17px;
+    padding: 10px;
   }
   .html .main-content .n-comp-2015 [class*=btn] {
     padding: 10px;
