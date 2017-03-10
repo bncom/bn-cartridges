@@ -466,6 +466,11 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     max-width: 100%;
   } */
 }
+#main-content, .PageContent {
+  overflow-y: initial;
+  -webkit-overflow-scrolling: touch;
+}
+
 .html {
   position: relative;
   clear: left;

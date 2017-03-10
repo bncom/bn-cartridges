@@ -4,6 +4,10 @@
 @import "cartridges/overwrite-global";
 @import "cartridges/overwrite-global-mobile";
 @import "skava/skava-global-overwrite-mobile";
+#main-content, .PageContent{ 
+       overflow-y: initial;  
+       -webkit-overflow-scrolling: touch; 
+}
 .html{position: relative;  clear: left;
 	* {
 	  -moz-box-sizing: border-box;
