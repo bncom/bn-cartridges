@@ -125,9 +125,6 @@ body {
   height: 100px;
   width: 1px;
 }
-.main-content .btn, .main-content [class*="btn"] {
-  padding: 9px 0 8px;
-}
 .main-content div.see-all a:hover {
   text-decoration: underline;
 }
@@ -538,6 +535,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* My Favorite Teacher */
   /* end My Favorite Teacher  */
   /* 2016 Reskin Gift Cards */
+  /* Gift Cards 2017 Redesign */
   /*Browse page links*/
   /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
   /* end textbooks subppages */
@@ -1472,6 +1470,32 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .gc-item a:focus .element-shadow {
   box-shadow: none;
+}
+.html .gift-card-list-r17.tile-grid figure {
+  margin: 0;
+}
+.html .gift-card-list-r17.tile-grid {
+  max-width: 1024px;
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-wrap: wrap;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.html .gift-card-list-r17 .tile {
+  height: auto;
+  margin-right: 1rem;
+  width: calc(33.3333% - 0.75625rem);
+}
+.html .gift-card-list-r17 .tile:nth-child(3n) {
+  margin-right: 0;
+}
+.html .gift-card-list-r17 .tile img {
+  max-width: 100%;
+  max-height: 193px;
 }
 .html .links-container.browse {
   padding-top: 36px;
@@ -5038,4 +5062,197 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   .html .main-content .n-comp-2015 [class*=btn] {
     padding: 10px;
   }
+}
+
+/*  Redesign 2017 */
+/* Coupon & Deals page */
+.hero.mb-xxl {
+  margin-bottom: 0.0rem !important;
+  /* 4.5rem; */
+}
+
+.coupon-features {
+  min-height: 25.5rem;
+}
+
+.mw1040 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.coupon-promo-copy-height {
+  height: 5rem;
+}
+
+.coupon-promo .brow {
+  margin: 10px 0;
+}
+
+.coupon-promo a, .coupon-promo a:hover {
+  text-decoration: none;
+}
+
+.promo-item-name .header3 {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+}
+
+/* Coupons & Deals */
+/*  mobile  */
+.header h1 {
+  font-family: Poynter,Georgia,serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.text--subheader {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0 20px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.text--center, .text--block-center {
+  text-align: center;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.hero .hero-slide {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.hero .hero-slide img {
+  max-width: 100%;
+}
+
+.coupon-features .header1 {
+  font-family: Poynter,Georgia,serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.coupon-features .header4 {
+  font-family: Poynter,Georgia,serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.coupon-features {
+  min-height: 1rem;
+  padding: 20px;
+  border-top: 1px solid #f9f8f4;
+}
+
+.coupon-features .btn {
+  padding: 0;
+  margin: 3px 5px 5px;
+  background-color: transparent;
+  border: none;
+  height: auto;
+  color: #21282d;
+  border-bottom: 1px solid #21282d;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.coupon-features .color-lapis {
+  /* deep blue */
+  color: #112d4d;
+}
+
+.text--medium {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.coupon-promo {
+  margin: 0 20px;
+  padding: 10px 0 13px 0;
+  position: relative;
+}
+
+.coupon-promo .brow.color-coal {
+  color: #828c8e;
+  margin: 0;
+}
+
+.coupon-promo .text--medium.color-coal.mt-xxs {
+  color: #515b5b;
+}
+
+.coupon-promo a, .coupon-promo a:hover {
+  text-decoration: none;
+}
+
+.coupon-promo .header3 {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #346250;
+}
+
+.promo-item-name {
+  display: table;
+}
+
+.promo-item-name div {
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 25px;
+}
+
+.promo-item-name .arrow:after {
+  content: "";
+  display: block;
+  background: transparent url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
+  height: 17px;
+  white-space: nowrap;
+  width: 11px;
+  margin-left: 10px;
+}
+
+.coupon-promo-copy-height {
+  height: auto;
+}
+
+.coupon-promo .btn.btn--medium {
+  display: none;
+}
+
+.coupon-promo.bd-b-geyser {
+  border-bottom: 1px solid #cccccc;
+}
+
+.bg-peach {
+  background-color: #efd1bc;
+}
+
+.bg-mist {
+  background-color: #c9dbe2;
+}
+
+.rose, .color-rose {
+  color: #a36b6c;
 }

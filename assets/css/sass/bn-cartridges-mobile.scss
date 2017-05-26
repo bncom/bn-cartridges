@@ -1,4 +1,4 @@
-#cq-html-renderer,.cq-html-renderer{height:0;width: 0;visibility: hidden;opacity: 0;}
+#cq-html-renderer,.cq-html-renderer{height:0;width: 0;visibility: hidden; opacity: 0;}
 
 @import "partials/var";
 @import "cartridges/overwrite-global";
@@ -32,3 +32,7 @@
 	@import "modules/nook";
 	@import "modules/nook-mobile";
 }
+
+/*  Redesign 2017 */ 
+@import "r17/r17-coupons-deals";
+@import "r17/r17-coupons-deals-mobile";

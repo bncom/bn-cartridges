@@ -126,9 +126,6 @@ body {
   height: 100px;
   width: 1px;
 }
-.main-content .btn, .main-content [class*="btn"] {
-  padding: 9px 0 8px;
-}
 .main-content div.see-all a:hover {
   text-decoration: underline;
 }
@@ -318,6 +315,7 @@ body {
   /* My Favorite Teacher */
   /* end My Favorite Teacher  */
   /* 2016 Reskin Gift Cards */
+  /* Gift Cards 2017 Redesign */
   /*Browse page links*/
   /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
   /* end textbooks subppages */
@@ -1176,6 +1174,32 @@ body {
 }
 .html .gc-item a:focus .element-shadow {
   box-shadow: none;
+}
+.html .gift-card-list-r17.tile-grid figure {
+  margin: 0;
+}
+.html .gift-card-list-r17.tile-grid {
+  max-width: 1024px;
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-wrap: wrap;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.html .gift-card-list-r17 .tile {
+  height: auto;
+  margin-right: 1rem;
+  width: calc(33.3333% - 0.75625rem);
+}
+.html .gift-card-list-r17 .tile:nth-child(3n) {
+  margin-right: 0;
+}
+.html .gift-card-list-r17 .tile img {
+  max-width: 100%;
+  max-height: 193px;
 }
 .html .links-container.browse {
   padding-top: 36px;
@@ -3299,4 +3323,37 @@ body {
   font-weight: 700;
   font-size: inherit;
   color: #346250;
+}
+
+/*  Redesign 2017 */
+/* Coupon & Deals page */
+.hero.mb-xxl {
+  margin-bottom: 0.0rem !important;
+  /* 4.5rem; */
+}
+
+.coupon-features {
+  min-height: 25.5rem;
+}
+
+.mw1040 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.coupon-promo-copy-height {
+  height: 5rem;
+}
+
+.coupon-promo .brow {
+  margin: 10px 0;
+}
+
+.coupon-promo a, .coupon-promo a:hover {
+  text-decoration: none;
+}
+
+.promo-item-name .header3 {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
 }
