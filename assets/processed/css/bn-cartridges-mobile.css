@@ -5099,6 +5099,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 
 /* Coupons & Deals */
 /*  mobile  */
+.skavahide {
+  display: none !important;
+}
+
 .header h1 {
   font-family: Poynter,Georgia,serif;
   font-size: 26px;
