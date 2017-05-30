@@ -9,15 +9,15 @@
 	 	});
 	};
 	 
-
+ 
  
  
     $(function() { //document.ready   
 /*
 		 $(window).resize(function(){
 
-		 });
-
+		 });  
+   
 		 $(window).resize(); 
 */
 
@@ -264,8 +264,17 @@
 
 
 
- 
-
+        // r17 Textbooks Search funtionality  
+        if ($('form#r17TextBookSearch').length) {
+            var r17_txtSearch = $('form#r17TextBookSearch'); 
+            r17_txtSearch.submit(function(){txtBookQuickSearch();});        
+            txtBookQuickSearch = function () {       
+                var submitval = ($.trim($('#siteSearch').val()).replace(/[\W]/g,"+"));   //encodeURIComponent    
+                var actionval = location.protocol + "//"+location.hostname+"/s/"+submitval+"/_/N-8q9";          
+                r17_txtSearch.attr('action', actionval);   
+                r17_txtSearch.attr('method', 'get');    
+            };   
+        }
 
 		// Textbooks Search funtionality  
 		if ($('form#cqTextBookSearch').length) {
@@ -300,7 +309,7 @@
 					$("#searchTextBookBar").focus();
 				}
 				else
-				{ 
+				{  
 					el.addClass('active');
 				}
 				return false;
@@ -345,7 +354,7 @@
 	                } 
 
                   var icItem = "event_result-grid_"+ean+"_image";
-	              var imgPath = "http://prodimage.images-bn.com/pimages/"+ean+"_p0_v3_s118x184.jpg";
+	              var imgPath = "//prodimage.images-bn.com/pimages/"+ean+"_p0_v3_s118x184.jpg";
 	              var jsonItem = $('<div class="jsonGridItem"><a href="http://stores.barnesandnoble.com/" onclick="set_cookie('+icItem+');"><div class="jsonGridImage"><img src="'+imgPath+'" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridTitle">'+titleDisplayed+'</p><p class="jsonGridContributor">by '+contributor+'</p></div></a></div>'); 
 	             $('#jsonGridItems').append(jsonItem); 
 
