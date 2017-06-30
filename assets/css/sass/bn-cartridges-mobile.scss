@@ -32,7 +32,12 @@
 	@import "modules/nook";
 	@import "modules/nook-mobile";
 }
+ 
 
-/*  Redesign 2017 */ 
+.mobile-only{display: block !important; } 
+/* *** Redesign 2017 *** */  
+@import "r17/r17-skava";
+@import "r17/r17-textbooks";
+@import "r17/r17-textbooks-mobile"; 
 @import "r17/r17-coupons-deals";
 @import "r17/r17-coupons-deals-mobile";

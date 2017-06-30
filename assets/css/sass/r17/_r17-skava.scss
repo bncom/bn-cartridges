@@ -1,0 +1,50 @@
+/* skava */
+
+.skavahide { display:none !important;}
+.main-content.container,
+.container.container--no-padding-bottom{ padding:0 !important;}
+.container.container--no-padding-bottom .col-lg-10.pl-l {
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+header h1 { 
+    font-family: PoynterOSDisp-Semibold,Poynter;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 10px;
+}
+.header h1 {
+    font-family: PoynterOSDisp-Semibold,Poynter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight:600;
+    line-height: 1.25;
+    margin: 0;
+    padding:0 20px;
+}
+
+.text--subheader {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 5px 0 20px 0;
+    padding:0 20px;
+    text-align: center;
+}
+.text--center, .text--block-center{text-align: center;}
+.text--uppercase {text-transform: uppercase;}
+
+
+.bd-geyser {
+    border: 1px solid #d0d9df;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.col-lg-12 {
+    width: 100%;
+}

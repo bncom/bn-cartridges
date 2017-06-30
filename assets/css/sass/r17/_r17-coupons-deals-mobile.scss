@@ -1,29 +1,18 @@
 /* Coupons & Deals */
 
 /*  mobile  */
-.skavahide { display:none !important;}
 
-.header h1 {
-    font-family: Poynter,Georgia,serif;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.25;
-    margin: 0;
-    padding:0 20px;
+ 
+header .text--subheader {
+  font-size: 14px;
+  line-height: 1.5;
+
 }
-.text--subheader {
-    display: block;
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 5px 0 20px 0;
-    padding:0 20px;
-    text-align: center;
-}
-.text--center, .text--block-center{text-align: center;}
-.text--uppercase {text-transform: uppercase;}
-  
- .hero .hero-slide{
+
+
+.html .hero .hero-slide {height:auto;}
+/*  
+ .coupon-hero.hero  {
     height: auto;
     overflow: hidden;
     position: relative;
@@ -31,22 +20,30 @@
     text-align: center;
     line-height: 0;
 } 
- .hero .hero-slide img{
-  max-width: 100%;
+ .coupon-hero.hero img{
+    max-width: 100%; 
+    left: 0;
+    margin-left: 0;
 } 
-
+*/
+.coupon.col-lg-6 {width: 100%;} 
+.coupon-features + .bd-b-geyser.pt-xs {padding:0 !important;}
  
+.coupon-features p.text--uppercase {
+  font-size: 12px;
+}
 .coupon-features .header1 {
-    font-family: Poynter,Georgia,serif;
+    font-family: PoynterOSDisp-Semibold,Poynter;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.35;
     margin: 0;
     padding:0 20px;
+    color: #21282d !important;
 }
 .coupon-features .header4 {
-    font-family: Poynter,Georgia,serif;
+    font-family: PoynterOSDisp-Semibold,Poynter;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -55,29 +52,66 @@
 }
 
 
-.coupon-features {
-  min-height:1rem;
-  padding:20px;
+.coupon-features { 
+  padding:24px 20px !important;
+  margin: 0 !important;
   border-top: 1px solid #f9f8f4;
+  min-height: 100px !important;
 
 }
 .coupon-features .btn{ 
   padding:0;
-  margin:3px 5px 5px;
-  background-color: transparent;
-  border: none;
+  margin:3px 5px 5px !important;
   height:auto;
   color: #21282d;
   border-bottom: 1px solid #21282d;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
+
+  
+  background-color: transparent !important;
+  border: none !important;
+
 }
+
+
+.coupon-features .btn:active:active::after, 
+.coupon-features a.btn-ghost:active:active::after, 
+.coupon-features a.btn:active:active::after,
+.coupon-features a.btn-ghost:focus, 
+.coupon-features a.btn-ghost:hover, 
+.coupon-features a.btn.active:focus, 
+.coupon-features a.btn.active:hover, 
+.coupon-features a.btn.focus:focus, 
+.coupon-features a.btn.focus:hover, 
+.coupon-features a.btn.hover:focus, 
+.coupon-features a.btn.hover:hover, 
+.coupon-features a.btn:focus, a.btn:focus:active, 
+.coupon-features a.btn:focus:hover, 
+.coupon-features a.btn:hover, 
+.coupon-features a.btn:hover:active, 
+.coupon-features a.btn:hover:focus {
+    border: none !important;
+    background-color: transparent !important;
+    color: inherit;
+    height: 18px !important;
+    font-size: 12px !important;
+
+  text-transform: uppercase !important;
+  }
+ 
+ 
+
+
+
+
+
 .coupon-features .color-lapis{ 
   /* deep blue */
  color: #112d4d;
 }
-
+ 
 .text--medium {
   font-size: 14px;
     line-height: 1.5
@@ -85,18 +119,25 @@
  
 
 .coupon-promo {
-  margin: 0 20px;
-  padding: 10px 0 13px 0;
+  margin: 0 20px !important; 
+  padding: 13px 0 13px 0 !important; 
   position: relative;
 }
-.coupon-promo .brow.color-coal {color: #828c8e; margin:0;}
+.coupon-promo .brow.color-coal {
+  color: #828c8e; 
+  margin:0 0 5px 0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #828c8e;
+}
 .coupon-promo .text--medium.color-coal.mt-xxs {color: #515b5b; }
 .coupon-promo a,.coupon-promo a:hover {text-decoration: none;}
 .coupon-promo .header3{
   font-size: 16px;
   line-height: 1.25;
   font-weight: 600;
-  color:#346250; 
+  color:#346250 !important; 
+
 }
 .promo-item-name{display:table;}
 .promo-item-name div{  display:table-cell; vertical-align: middle; min-width: 25px;}
@@ -104,15 +145,17 @@
   content: "";
   display: block;
     background: rgba(0, 0, 0, 0) url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px / 276px 84px;
-    height: 17px;
- 
+    height: 17px; 
 
     white-space: nowrap;
     width: 11px;
     margin-left: 10px;
 }
  
-.coupon-promo-copy-height{height:auto;}
+.coupon-promo-copy-height{
+  height:auto; margin-top:5px; 
+  color: #515b5b!important;
+}
 .coupon-promo .btn.btn--medium {display: none;}
 
 .coupon-promo.bd-b-geyser  {

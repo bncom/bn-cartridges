@@ -315,7 +315,18 @@ body {
   /* My Favorite Teacher */
   /* end My Favorite Teacher  */
   /* 2016 Reskin Gift Cards */
-  /* Gift Cards 2017 Redesign */
+  /* Gift Cards 2017 Redesign  */
+  /*
+  .gift-card-list-r17.tile-grid figure {  margin:0;}
+  .gift-card-list-r17.tile-grid {max-width: 1024px;
+      display: flex;  
+      display: -webkit-flex;  
+      -webkit-flex-wrap: wrap; 
+      display: flex;  
+      flex-wrap: wrap; 
+      flex-direction: row;
+  }
+  */
   /*Browse page links*/
   /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
   /* end textbooks subppages */
@@ -1175,24 +1186,10 @@ body {
 .html .gc-item a:focus .element-shadow {
   box-shadow: none;
 }
-.html .gift-card-list-r17.tile-grid figure {
-  margin: 0;
-}
-.html .gift-card-list-r17.tile-grid {
-  max-width: 1024px;
-  display: flex;
-  display: -webkit-flex;
-  /* Safari */
-  -webkit-flex-wrap: wrap;
-  /* Safari 6.1+ */
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
 .html .gift-card-list-r17 .tile {
   height: auto;
-  margin-right: 1rem;
-  width: calc(33.3333% - 0.75625rem);
+  margin-right: 30px;
+  width: calc(33.3333% - 20px);
 }
 .html .gift-card-list-r17 .tile:nth-child(3n) {
   margin-right: 0;
@@ -1200,6 +1197,16 @@ body {
 .html .gift-card-list-r17 .tile img {
   max-width: 100%;
   max-height: 193px;
+  margin-bottom: 7px;
+}
+.html .gift-card-list-r17 h2.rule {
+  width: 100%;
+  margin: 25px 0 40px !important;
+  font-family: Poynter,Georgia,serif;
+  font-weight: 600;
+}
+.html .gift-card-list-r17 a.tile {
+  color: #21282d;
 }
 .html .links-container.browse {
   padding-top: 36px;
@@ -2405,7 +2412,7 @@ body {
   position: relative;
   top: 0;
   left: -318px;
-  z-index: -1;
+  z-index: 0;
   text-align: center;
 }
 .html .hero1600 h1 {
@@ -3250,6 +3257,8 @@ body {
   border-bottom: 1px solid #ccc;
   padding-bottom: 30px;
   margin: 25px 0 50px 0;
+  clear: left;
+  overflow: hidden;
 }
 .html .mc-features-group {
   float: left;
@@ -3325,7 +3334,50 @@ body {
   color: #346250;
 }
 
-/*  Redesign 2017 */
+.mobile-only {
+  display: none;
+}
+
+/* *** Redesign 2017 *** */
+/* textbooks */
+.mobile-only {
+  display: none;
+}
+
+.textbooksSearchDT {
+  position: relative;
+}
+
+.textbooksSearchDT .navigation-search-input {
+  width: 70%;
+}
+
+.textbooksSearchISBNDT {
+  position: absolute;
+  right: 20px;
+  top: 35%;
+}
+
+.textbook-ISBN-tooltip-MP {
+  display: none;
+}
+
+.icon-textbook-rental, .icon-textbook-used, .icon-textbook-new, .icon-textbook-buyback {
+  font-size: 50px;
+}
+
+.textbooksHeroDT.page-hero {
+  margin: 0 auto;
+  position: relative;
+  width: 1040px;
+  max-width: 1040px;
+  /* left: 0; */
+}
+
+.textbooksHeroDT img {
+  max-width: 100%;
+}
+
 /* Coupon & Deals page */
 .hero.mb-xxl {
   margin-bottom: 0.0rem !important;
@@ -3356,4 +3408,27 @@ body {
 .promo-item-name .header3 {
   font-family: Lato,sans-serif;
   font-weight: 400;
+  height: 22px;
+  overflow: hidden;
 }
+
+#coupn-promo-container {
+  overflow: hidden;
+  clear: left;
+}
+
+/*
+ .coupon-hero.hero  {
+    height: auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    max-width: 1440px;
+} 
+ .coupon-hero.hero img{
+    position: relative;
+    left: 50%;
+    margin-left: -884px;
+} 
+*/

@@ -269,20 +269,35 @@
     }
 }
 
-/* Gift Cards 2017 Redesign */
+/* Gift Cards 2017 Redesign  */
+/*
 .gift-card-list-r17.tile-grid figure {  margin:0;}
 .gift-card-list-r17.tile-grid {max-width: 1024px;
     display: flex;  
-    display: -webkit-flex; /* Safari */
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: -webkit-flex;  
+    -webkit-flex-wrap: wrap; 
     display: flex;  
     flex-wrap: wrap; 
     flex-direction: row;
 }
-.gift-card-list-r17 .tile{height:auto;  margin-right: 1rem; width: calc(33.3333% - 0.75625rem); }
-.gift-card-list-r17 .tile:nth-child(3n){margin-right: 0;}
-.gift-card-list-r17 .tile img{ max-width:100%; max-height: 193px;} 
+*/ 
 
+.gift-card-list-r17 .tile{
+    height:auto;  
+    margin-right: 30px; 
+    width: calc(33.3333% - 20px); 
+}
+.gift-card-list-r17 .tile:nth-child(3n){margin-right: 0;}
+.gift-card-list-r17 .tile img{ max-width:100%; max-height: 193px; margin-bottom: 7px;} 
+
+.gift-card-list-r17 h2.rule{ 
+    width: 100%;
+    margin: 25px 0 40px !important; 
+    font-family: Poynter,Georgia,serif; 
+    font-weight: 600; 
+}
+.gift-card-list-r17 a.tile  {
+    color: #21282d;}
 
 
 /*Browse page links*/

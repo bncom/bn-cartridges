@@ -11,8 +11,24 @@
 .promo-item-name .header3 {
   font-family: Lato,sans-serif;
   font-weight: 400;
+     height: 22px;
+    overflow: hidden;
 }
+#coupn-promo-container {overflow: hidden; clear: left;} 
 
- 
 
-
+/*
+ .coupon-hero.hero  {
+    height: auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    max-width: 1440px;
+} 
+ .coupon-hero.hero img{
+    position: relative;
+    left: 50%;
+    margin-left: -884px;
+} 
+*/

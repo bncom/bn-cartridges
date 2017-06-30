@@ -20,5 +20,8 @@
 	@import "modules/nook";
 }  
 
-/*  Redesign 2017 */ 
-@import "r17/r17-coupons-deals";
+.mobile-only{display: none; }
+ 
+/* *** Redesign 2017 *** */   
+@import "r17/r17-textbooks"; 
+@import "r17/r17-coupons-deals"; 

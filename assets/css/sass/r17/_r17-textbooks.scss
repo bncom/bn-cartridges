@@ -1,0 +1,22 @@
+/* textbooks */
+ 
+.mobile-only{display: none; } 
+
+.textbooksSearchDT{position: relative;}
+.textbooksSearchDT .navigation-search-input {width:70%;}
+.textbooksSearchISBNDT {position:absolute; right:20px; top:35%;} 
+.textbook-ISBN-tooltip-MP {display: none;}
+ 
+.icon-textbook-rental,.icon-textbook-used,.icon-textbook-new,.icon-textbook-buyback {font-size: 50px;}
+  
+.textbooksHeroDT.page-hero{
+   	margin: 0 auto;
+    position: relative;
+    width: 1040px; 
+    max-width: 1040px;  
+   /* left: 0; */ 
+} 
+ 
+.textbooksHeroDT img{
+    max-width: 100%;  
+} 
