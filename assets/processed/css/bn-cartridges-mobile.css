@@ -5130,6 +5130,12 @@ header h1 {
   text-transform: uppercase;
 }
 
+/*  grid widths */
+.col-lg-12 {
+  width: 100%;
+}
+
+/*  Background colors  */
 .bd-geyser {
   border: 1px solid #d0d9df;
 }
@@ -5138,8 +5144,38 @@ header h1 {
   background-color: #ffffff;
 }
 
-.col-lg-12 {
+.bg-deep-blue {
+  background-color: #112d4d;
+}
+
+/* components */
+/*  alerts.promo-pdp-textbook  general banner -- initial on textbooks landing  */
+.promo-pdp {
+  line-height: 1.2;
+  margin: 0 0 5px;
   width: 100%;
+}
+
+.promo-pdp .container {
+  margin: 0 auto !important;
+  padding: 30px 10px !important;
+  display: block;
+  text-align: center;
+}
+
+.promo-pdp--light-text a {
+  font-family: PoynterOSDisp-Semibold,Poynter;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+
+.promo-pdp--light-text .promo-pdp__cta {
+  color: #fff;
+  display: block;
+  text-decoration: underline;
+  font-size: 14px;
 }
 
 /* textbooks */
