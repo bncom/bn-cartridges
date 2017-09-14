@@ -66,7 +66,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 /* End page heros removal */
 
 
-/* H page header and page margin (padding) fixes */
+/* H page header, page margin (padding) & other fixes */
 @media (max-width: 799px){
     #categoryHeaderContainer h1 {
       padding-right: 20px;
@@ -76,8 +76,13 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
       font-family: PoynterOSDisp-Semibold;
     }
     .html .links-container.browse {
+      padding-top: 0;
       padding-right: 20px;
       padding-left: 20px;
+      font-size: initial;
+    }
+    .html .links-container.browse > ul li ul li {
+      padding-bottom: 6px;
     }
     .pageshell {
       padding-right: 20px;
