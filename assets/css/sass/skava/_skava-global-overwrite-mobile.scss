@@ -59,7 +59,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 
 /* remove page heros from Skava mobile */
 @media (max-width: 799px){
-	.sk_passthroughPage .bn-ccr-core-page-hero-1, .sk_passthroughPage .bn-ccr-core-page-hero-2 {
+	.sk_passthroughPage .page-hero, .sk_passthroughPage .bn-ccr-core-page-hero-1, .sk_passthroughPage .bn-ccr-core-page-hero-2 {
 		display: none;
 	}
 }
