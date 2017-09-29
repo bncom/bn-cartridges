@@ -5102,7 +5102,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 
 header h1 {
-  font-family: PoynterOSDisp-Semibold,Poynter;
+  font-family: PoynterOSDisp-Semibold, Poynter;
   font-weight: 600;
   font-size: 30px;
   line-height: 1.2;
@@ -5110,7 +5110,7 @@ header h1 {
 }
 
 .header h1 {
-  font-family: PoynterOSDisp-Semibold,Poynter;
+  font-family: PoynterOSDisp-Semibold, Poynter;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -5128,7 +5128,8 @@ header h1 {
   text-align: center;
 }
 
-.text--center, .text--block-center {
+.text--center,
+.text--block-center {
   text-align: center;
 }
 
@@ -5170,7 +5171,7 @@ header h1 {
 }
 
 .promo-pdp--light-text a {
-  font-family: PoynterOSDisp-Semibold,Poynter;
+  font-family: PoynterOSDisp-Semibold, Poynter;
   font-size: 24px;
   font-weight: 300;
   color: #fff;
@@ -5187,6 +5188,7 @@ header h1 {
 /* Product Editorial */
 .html .row {
   margin: 0px;
+  padding: 15px 0;
 }
 .html .mb-xs {
   text-align: left;
@@ -5227,24 +5229,53 @@ header h1 {
 .html .editorial-collection h3.title {
   font-size: 16px;
 }
-.html .editorial-collection .product-shelf-tile {
+
+.product-shelf-info {
+  text-align: center;
+  border-top: 0px;
+}
+
+.product-shelf-tile {
   display: table-cell;
   padding-right: 20px;
-  width: 114px;
+  width: 114px !important;
 }
-.html .editorial-collection .product-shelf-tile .product-shelf-image img {
-  max-height: 173px;
-  max-width: 114px;
+.product-shelf-tile .product-shelf-image img {
+  max-width: 100px;
 }
-.html .editorial-collection .product-shelf-tile .product-shelf-info {
-  display: block;
+
+.product-shelf-title {
+  text-align: center;
+}
+.product-shelf-title a {
   text-decoration: none;
   color: #010101;
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.product-shelf-author {
+  font-size: 14px;
+  text-align: center;
+}
+.product-shelf-author a {
+  text-decoration: none;
+  color: #4e4e4e;
+  line-height: 20px;
+}
+
+.product-shelf-grid .product-shelf-image-cont {
+  width: 114px !important;
+  min-width: 0px;
+}
+
+.product-shelf-favorite,
+.product-shelf-curl,
+.product-shelf-ratings {
+  display: none;
 }
 
 /* textbooks */
