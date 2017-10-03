@@ -5201,7 +5201,9 @@ header h1 {
   font-size: 19px;
 }
 .html p {
-  font-size: 13px;
+  line-height: 18px;
+  font-family: GillSansMTPro-Book,GillSansMTPro-Medium;
+  font-size: 16px;
 }
 .html .rule:after,
 .html .rule:before {
@@ -5227,54 +5229,56 @@ header h1 {
   width: 33.33333333%;
 }
 .html .editorial-collection h3.title {
-  font-size: 16px;
+  margin-bottom: 5px;
+  font-family: PoynterOSDisp-Semibold,Poynter;
+  font-size: 22px;
+  color: #010101;
+  position: relative;
+  width: 95%;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  padding-left: 20px;
 }
-
-.product-shelf-info {
+.html .product-shelf-info {
   text-align: center;
-  border-top: 0px;
+  border-top: 0px !important;
 }
-
-.product-shelf-tile {
+.html .product-shelf-tile {
   display: table-cell;
   padding-right: 20px;
   width: 114px !important;
 }
-.product-shelf-tile .product-shelf-image img {
-  max-width: 100px;
+.html .product-shelf-tile .product-shelf-image img {
+  max-width: auto;
 }
-
-.product-shelf-title {
+.html .product-shelf-title {
   text-align: center;
 }
-.product-shelf-title a {
+.html .product-shelf-title a {
   text-decoration: none;
   color: #010101;
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-size: 14px;
+  font-size: 12px;
 }
-
-.product-shelf-author {
-  font-size: 14px;
+.html .product-shelf-author {
+  font-size: 12px;
   text-align: center;
 }
-.product-shelf-author a {
+.html .product-shelf-author a {
   text-decoration: none;
   color: #4e4e4e;
   line-height: 20px;
 }
-
-.product-shelf-grid .product-shelf-image-cont {
-  width: 114px !important;
+.html .product-shelf-grid .product-shelf-image-cont {
+  width: auto;
   min-width: 0px;
 }
-
-.product-shelf-favorite,
-.product-shelf-curl,
-.product-shelf-ratings {
+.html .product-shelf-favorite,
+.html .product-shelf-curl,
+.html .product-shelf-ratings {
   display: none;
 }
 
