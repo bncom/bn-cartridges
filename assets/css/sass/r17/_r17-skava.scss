@@ -179,20 +179,14 @@ header h1 {
     padding-left: 20px;
             }
         }
-    }
-<<<<<<< HEAD
+    } 
 
 .product-shelf-info{
     text-align: center;
-    border-top: 0px !important; 
-=======
+    border-top: 0px !important;  
 }
 
-.product-shelf-info {
-    text-align: center;
-    border-top: 0px;
->>>>>>> cac5d279f1f73ad3b3d539055b948186a01ae57b
-}
+ 
 
 .product-shelf-tile {
     display: table-cell;
@@ -227,15 +221,10 @@ header h1 {
         line-height: 20px;
     }
 }
-<<<<<<< HEAD
-.product-shelf-grid .product-shelf-image-cont{
-    width: auto;
-=======
 
 .product-shelf-grid .product-shelf-image-cont {
     width: 114px !important;
->>>>>>> cac5d279f1f73ad3b3d539055b948186a01ae57b
-    min-width: 0px;
+    min-width: 0;
 }
 
 .product-shelf-favorite,

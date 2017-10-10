@@ -1374,7 +1374,7 @@ body {
 }
 .html .pmis-samplet-next-item,
 .html .pmis-samplet-prev-item {
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
   height: 25px;
@@ -1423,7 +1423,7 @@ body {
   margin: 23px 0 28px;
 }
 .html .pmis-steps::before {
-  background: rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
+  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
   top: 25px;
   content: "";
   display: block;
@@ -1433,7 +1433,7 @@ body {
   width: 100%;
 }
 .html .pmis-steps::after {
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
   content: "";
   display: block;
   height: 6px;
@@ -1462,7 +1462,7 @@ body {
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
@@ -1646,6 +1646,7 @@ body {
 }
 .html .jsonGridImage {
   height: 200px;
+  width: 140px;
   position: relative;
 }
 .html .jsonGridImage img {
@@ -1656,14 +1657,14 @@ body {
   max-width: 100%;
 }
 .html .jsonGridDetails {
-  height: 100px;
+  height: 115px;
   position: relative;
 }
 .html .jsonGridTitle {
-  font-size: 15px;
   color: #353535;
+  font-size: 14px;
   line-height: 1.2;
-  margin: 5px 0;
+  margin: 7px 0 4px;
 }
 .html .jsonGridContributor {
   font-size: 13px;
@@ -1716,7 +1717,7 @@ body {
   line-height: 20px;
 }
 .html .bnapp-hero {
-  background-image: url(http://img1.imagesbn.com/pimages/mobile/app/bnapp_hero_bg.jpg);
+  background-image: url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_hero_bg.jpg);
   background-origin: content-box;
   background-position: right top;
   background-repeat: no-repeat;
@@ -1778,7 +1779,7 @@ body {
   bottom: 0px;
 }
 .html .bnapp-hero .itunes-icon {
-  background: rgba(0, 0, 0, 0) url(http://img1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
   float: left;
   height: 33px;
   margin: 2px 0 0 20px;
@@ -1795,7 +1796,7 @@ body {
   text-rendering: optimizelegibility;
 }
 .html .bnapp-button {
-  background: rgba(0, 0, 0, 0) url(http://img1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
   clear: both;
   height: 41px;
   margin: 0 auto;
@@ -1812,7 +1813,7 @@ body {
   text-decoration: none;
 }
 .html .bnapp-button-small {
-  background: rgba(0, 0, 0, 0) url(http://img1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
   clear: both;
   float: left;
   height: 41px;
@@ -1829,11 +1830,11 @@ body {
   text-decoration: none;
 }
 .html .bnapp-categories .module-bn {
-  background: rgba(0, 0, 0, 0) url(http://img1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
   padding: 3% 0;
 }
 .html h2.bnapp-hdr-standard {
-  background: rgba(0, 0, 0, 0) url("http://img1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
+  background: transparent url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
   letter-spacing: 0.5px;
   margin: 0 auto;
   text-align: center;
@@ -1869,14 +1870,14 @@ body {
   line-height: 24px;
 }
 .html .bnapp-sbs {
-  background: rgba(0, 0, 0, 0) url(http://img1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
   min-height: 232px;
   overflow: hidden;
 }
 .html .bnapp-sbs .bg-body-right {
-  background: rgba(0, 0, 0, 0) url(http://img1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
   float: right;
   height: 17px;
   width: 202px;
@@ -2356,7 +2357,7 @@ body {
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -2372,7 +2373,7 @@ body {
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -2411,7 +2412,7 @@ body {
 .html .hero1600 img {
   position: relative;
   top: 0;
-  left: -318px;
+  left: -355px;
   z-index: 0;
   text-align: center;
 }
@@ -2719,7 +2720,7 @@ body {
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
