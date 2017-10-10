@@ -233,3 +233,66 @@ header h1 {
     display: none;
 }
 }
+
+
+/* H-Page Carousel */
+
+#searchGrid section h2 {
+    margin-bottom: 5px;
+    font-family: PoynterOSDisp-Semibold,Poynter;
+    font-size: 22px;
+    color: #010101;
+    position: relative;
+    width: 100%;
+    /* width: calc(100% - 45px); */
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.rule:after, .rule:before {
+    display: none;
+}
+
+.record-spotlight-title a {
+    font-family: PoynterOSDisp-Semibold,Poynter;
+    color: #010101;
+    font-size: 15.5px;
+    line-height: 1.3;
+}
+
+.product-shelf-author {
+    color: #4e4e4e;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.product-shelf-author a {
+    font-family: PoynterOSDisp-Semibold,Poynter;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.product-shelf-favorite, .product-shelf-curl {
+    display: none;
+}
+
+.star {
+    font-size: 14px;
+}
+
+.product-shelf-grid .product-shelf-tile {
+    width: 145px !important;
+}
+
+.product-shelf.book .slick-list .product-shelf-grid {
+    width: 2175px !important;
+}
+
+.text--center {
+    text-align: left;
+}
+
+.product-shelf-grid .product-shelf-tile-book .product-shelf-image>a img {
+    max-height: 173px;
+    max-width: 114px;
+}
