@@ -236,17 +236,18 @@ header h1 {
 
 
 /* H-Page Carousel */
-
-#searchGrid section h2 {
-    margin-bottom: 5px;
-    font-family: PoynterOSDisp-Semibold,Poynter;
-    font-size: 22px;
-    color: #010101;
-    position: relative;
-    width: 100%;
-    /* width: calc(100% - 45px); */
-    box-sizing: border-box;
-    padding-left: 20px;
+@media only screen and (max-width: 699px) {
+    #searchGrid section h2 {
+        margin-bottom: 5px;
+        font-family: PoynterOSDisp-Semibold,Poynter;
+        font-size: 22px;
+        color: #010101;
+        position: relative;
+        width: 100%;
+        /* width: calc(100% - 45px); */
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
 }
 
 .rule:after, .rule:before {
