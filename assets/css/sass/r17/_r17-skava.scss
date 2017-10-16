@@ -155,7 +155,7 @@ section {
                     }
                     h3 {
                         &.title {
-                            margin-bottom: 5px;
+                            margin-top: 15px;
                             font-family: PoynterOSDisp-Semibold, Poynter;
                             font-size: 16px;
                             color: #010101;
@@ -169,6 +169,7 @@ section {
                         line-height: 18px;
                         font-family: GillSansMTPro-Book, GillSansMTPro-Medium;
                         font-size: 13px;
+                        margin-top: 0px;
                     }
 
                 }
@@ -188,7 +189,7 @@ section {
                                     .product-shelf-tile {
                                         display: table-cell;
                                         padding-right: 10px;
-                                        width: 114px !important;
+                                        width: 106px !important;
                                         .product-shelf-image-cont {
                                             height: auto;
                                             max-height: 173px;
