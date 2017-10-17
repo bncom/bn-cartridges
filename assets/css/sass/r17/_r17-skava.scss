@@ -245,20 +245,20 @@ section {
     /* width: calc(100% - 45px); */
     box-sizing: border-box;
     padding-left: 20px;
-@media only screen and (max-width: 699px) {
-    #searchGrid section h2 {
-        margin-bottom: 5px;
-        font-family: PoynterOSDisp-Semibold,Poynter;
-        font-size: 22px;
-        color: #010101;
-        position: relative;
-        width: 100%;
-        /* width: calc(100% - 45px); */
-        box-sizing: border-box;
-        padding-left: 20px;
+    @media only screen and (max-width: 699px) {
+        #searchGrid section h2 {
+            margin-bottom: 5px;
+            font-family: PoynterOSDisp-Semibold,Poynter;
+            font-size: 22px;
+            color: #010101;
+            position: relative;
+            width: 100%;
+            /* width: calc(100% - 45px); */
+            box-sizing: border-box;
+            padding-left: 20px;
+        }
     }
 }
-
 .rule:after,
 .rule:before {
     display: none;
@@ -308,3 +308,7 @@ section {
     max-height: 173px;
     max-width: 114px;
 }
+
+
+
+
