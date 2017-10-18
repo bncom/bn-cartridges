@@ -4904,10 +4904,17 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     left: 150px;
   }
 }
+.html .hero1600 img.bnmcard {
+  left: 0;
+  max-width: 100%;
+}
 .html .mc-hdr {
+  /* float: right;
+     text-align: left;
+     width: 45%;*/
   position: absolute;
-  top: 80px;
-  right: 0;
+  top: 50px;
+  right: 55px;
   width: auto;
 }
 .html .mc-hdr [class^=bttn] {
@@ -4924,7 +4931,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-hdr-sub {
   font-family: Lato, Arial, sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.7;
   color: #000;
 }
@@ -4936,7 +4943,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-features {
   border-bottom: 1px solid #ccc;
   padding-bottom: 30px;
-  margin: 25px 0 50px 0;
+  margin: 25px auto 50px;
+  /* new */
+  width: 900px;
+  /* new */
   clear: left;
   overflow: hidden;
 }
@@ -4952,7 +4962,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   padding: 30px 50px;
   margin: 0 49px;
   padding: 30px 0;
-  height: 370px;
+  height: 350px;
 }
 .html .mc-feature:first-of-type {
   border-bottom: 1px solid #ccc;
@@ -4990,9 +5000,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-feature p {
   font-family: Lato, Arial, sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.75;
   color: #000;
+}
+.html .mc-questions {
+  margin: 25px auto 50px;
+  /* new */
+  width: 900px;
+  /* new */
 }
 .html .mc-questions p {
   font-size: 12px;
@@ -5030,6 +5046,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .mc-questions {
   padding: 0 20px;
+}
+.html .mc-features, .html .mc-questions {
+  width: auto;
+  /* new */
 }
 @media only screen and (max-width: 699px) {
   .html .mc-hdr-main {
