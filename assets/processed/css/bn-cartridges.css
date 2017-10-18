@@ -578,8 +578,8 @@ body {
 }
 .html .bttn-base, .html .bttn, .html .bttn-sibling, .html .bttn-action, .html .bttn-action-sibling, .html .bttn-commerce, .html .bttn-commerce-sibling {
   display: inline-block;
-  font-family: GillSans,Arial,sans-serif;
-  font-size: 18px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
   line-height: 1.6;
   font-weight: 500;
   min-width: 210px;
@@ -3252,7 +3252,7 @@ body {
 .html .mc-hdr-sub {
   font-family: Lato, Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.7;
   color: #000;
 }
