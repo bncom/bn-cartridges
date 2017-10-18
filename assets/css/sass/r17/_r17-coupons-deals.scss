@@ -1,0 +1,34 @@
+/* Coupon & Deals page */ 
+
+.hero.mb-xxl {
+    margin-bottom: 0.0rem !important; /* 4.5rem; */
+} 
+.coupon-features {min-height:25.5rem;}
+.mw1040 {max-width: 1100px; margin: 0 auto; } 
+.coupon-promo-copy-height{height:5rem;} 
+.coupon-promo .brow {margin: 10px 0;}
+.coupon-promo a,.coupon-promo a:hover {text-decoration: none;}
+.promo-item-name .header3 {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+     height: 22px;
+    overflow: hidden;
+}
+#coupn-promo-container {overflow: hidden; clear: left;} 
+
+
+/*
+ .coupon-hero.hero  {
+    height: auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    max-width: 1440px;
+} 
+ .coupon-hero.hero img{
+    position: relative;
+    left: 50%;
+    margin-left: -884px;
+} 
+*/

@@ -1,13 +1,14 @@
 
 
   /* MasterCard header */
+.hero1600 img.bnmcard {left:0; max-width: 100%;}   
 .mc-hdr{ 
-  // float: right;
-  // text-align: left;
-  // width: 45%;
+/* float: right;
+   text-align: left;
+   width: 45%;*/
   position: absolute;
-  top:80px;
-  right:0;
+  top:50px;
+  right:55px;
   width:auto;
 }
 .mc-hdr [class^=bttn]{
@@ -24,7 +25,7 @@
 .mc-hdr-sub{ 
   font-family: $secondary-font;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.7;
   color:#000;
 }
@@ -35,8 +36,15 @@
 .mc-features {
   border-bottom:1px solid #ccc; 
   padding-bottom:30px;
-  margin: 25px 0 50px 0; 
+  margin: 25px auto 50px;    /* new */ 
+  width: 900px;   /* new */
+    clear: left; 
+    overflow: hidden; 
 }
+
+
+ 
+
 
 .mc-features-group {float:left; width: 50%;}
 .mc-features-group:first-of-type  {border-right:1px solid #ccc;} 
@@ -46,7 +54,7 @@
   padding:30px 50px;
   margin: 0 49px;
   padding: 30px 0;
-  height: 370px;
+  height: 350px;
 }
 .mc-feature:first-of-type  {border-bottom:1px solid #ccc;}
 
@@ -83,11 +91,16 @@
 .mc-feature p{
   font-family: $secondary-font;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.75;
   color:#000;
 }
-  /* MasterCard QUESTIONS */
+  /* MasterCard QUESTIONS */ 
+.mc-questions { 
+  margin: 25px auto 50px;    /* new */ 
+  width: 900px;   /* new */
+}
+
 .mc-questions p { 
   font-size:12px;
   line-height:1.7;
@@ -107,5 +120,4 @@
   color:#346250;
 }
  
-// .mc-questions a:hover,
-// .mc-questions a:focus { text-decoration: underline; }
+ 

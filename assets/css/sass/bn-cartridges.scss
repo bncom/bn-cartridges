@@ -17,4 +17,11 @@
 	
 	@import "modules/textbooks";
 	@import "modules/mastercard";
+	@import "modules/nook";
 }  
+
+.mobile-only{display: none; }
+ 
+/* *** Redesign 2017 *** */   
+@import "r17/r17-textbooks"; 
+@import "r17/r17-coupons-deals"; 

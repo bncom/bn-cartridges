@@ -125,9 +125,6 @@ body {
   height: 100px;
   width: 1px;
 }
-.main-content .btn, .main-content [class*="btn"] {
-  padding: 9px 0 8px;
-}
 .main-content div.see-all a:hover {
   text-decoration: underline;
 }
@@ -337,6 +334,28 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 
 /*  End Overwrite Global Desktop  */
+/* H page headers to match proxy pages */
+.sk_passthroughPage #categoryHeaderContainer h1, .sk_TextbookLanding #categoryHeaderContainer h1 {
+  font-size: 30px;
+  padding: 20px !important;
+}
+
+@media (max-width: 799px) {
+  .sk_passthroughPage.landingPage .landing-page-content #categoryHeaderContainer span.text-container {
+    padding: 18px 21px 0;
+  }
+
+  .sk_passthroughPage.landingPage .landing-page-content #categoryHeaderContainer span.text {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .sk_passthroughPage.landingPage .landing-page-content .sk_navCont {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
+/* End H page headers to match proxy pages */
 /*  bnreads RSS Module  */
 @media only screen and (max-width: 749px) {
   .double .bnreads-viewport, .triple .bnreads-viewport {
@@ -362,7 +381,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
 }
 /*  End bnreads   */
-/* H page header and page margin (padding) fixes */
+/* remove page heros from Skava mobile */
+@media (max-width: 799px) {
+  .sk_passthroughPage .page-hero, .sk_passthroughPage .bn-ccr-core-page-hero-1, .sk_passthroughPage .bn-ccr-core-page-hero-2 {
+    display: none;
+  }
+}
+/* End page heros removal */
+/* H page header, page margin (padding) & other fixes */
 @media (max-width: 799px) {
   #categoryHeaderContainer h1 {
     padding-right: 20px;
@@ -373,8 +399,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
 
   .html .links-container.browse {
+    padding-top: 0;
     padding-right: 20px;
     padding-left: 20px;
+    font-size: initial;
+  }
+
+  .html .links-container.browse > ul li ul li {
+    padding-bottom: 6px;
   }
 
   .pageshell {
@@ -382,6 +414,66 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     padding-left: 20px;
   }
 }
+/* End H page header and page margin (padding) fixes */
+@media only screen and (max-width: 699px) {
+  /* BN Readouts - Banner */
+  section#nookPromo {
+    width: 100%;
+  }
+
+  section#nookPromo .text-link {
+    display: block;
+    border-left: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* BN Readouts - Customer Favorites */
+  .landingPage .carousel-next, .landingPage .carousel-prev {
+    display: none !important;
+  }
+
+  .landingPage .caroufredsel_wrapper {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+  }
+
+  .landingPage [id^=book-carousel] li {
+    margin-right: 10px !important;
+    width: 1470px !important;
+  }
+
+  div.featured-categories-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  /* NOOK Apps */
+  #searchGrid section h2 {
+    line-height: 1;
+    margin: 20px 0;
+    font-family: Poynter,Georgia,serif;
+  }
+
+  section#featuredEditorialSlot {
+    width: 100%;
+    padding-right: 24px;
+  }
+
+  #bookOfTheMonthText {
+    width: 100%;
+  }
+
+  /* NOOK Media Kit */
+  /* #promoContentContainer img {
+    max-width: 100%;
+  } */
+}
+#main-content, .PageContent {
+  overflow-y: initial;
+  -webkit-overflow-scrolling: touch;
+}
+
 .html {
   position: relative;
   clear: left;
@@ -449,6 +541,18 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* My Favorite Teacher */
   /* end My Favorite Teacher  */
   /* 2016 Reskin Gift Cards */
+  /* Gift Cards 2017 Redesign  */
+  /*
+  .gift-card-list-r17.tile-grid figure {  margin:0;}
+  .gift-card-list-r17.tile-grid {max-width: 1024px;
+      display: flex;  
+      display: -webkit-flex;  
+      -webkit-flex-wrap: wrap; 
+      display: flex;  
+      flex-wrap: wrap; 
+      flex-direction: row;
+  }
+  */
   /*Browse page links*/
   /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
   /* end textbooks subppages */
@@ -460,6 +564,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* jsonGridItem -- result list from json array -- black-friday-signed-editions */
   /*  sticky nav */
   /* Privacy Policy */
+  /* iPhone Mobile */
+  /* END iPhone App H page */
   /*CQ Module HTML PAGE adjustments */
   /*Gift Cards */
   /* start textbooks subppages */
@@ -472,6 +578,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* // end persona   */
   /* black friday signed editions */
   /* end black friday signed editions */
+  /* iPhone Download App */
+  /* End iPhone */
   /* Skava local styling  */
   /*Coupon & Deals page*/
   /* green coupon section */
@@ -596,6 +704,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* MasterCard header */
   /* MasterCard  FEATURES */
   /* MasterCard QUESTIONS */
+  /* NOOK Microsite - Mobile */
+  /* NOOK Microsite */
 }
 .html * {
   -moz-box-sizing: border-box;
@@ -1168,10 +1278,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .cq-module-shadow-top {
   border-top: 1px solid #959595;
   /* 
-  -webkit-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-    -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-      box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
-  */
+-webkit-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0 21px 16px -23px rgba(0, 0, 0, 0.25) inset;
+*/
   box-shadow: none;
   height: auto;
   padding: 20px 0;
@@ -1378,6 +1488,28 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .gc-item a:focus .element-shadow {
   box-shadow: none;
 }
+.html .gift-card-list-r17 .tile {
+  height: auto;
+  margin-right: 30px;
+  width: calc(33.3333% - 20px);
+}
+.html .gift-card-list-r17 .tile:nth-child(3n) {
+  margin-right: 0;
+}
+.html .gift-card-list-r17 .tile img {
+  max-width: 100%;
+  max-height: 193px;
+  margin-bottom: 7px;
+}
+.html .gift-card-list-r17 h2.rule {
+  width: 100%;
+  margin: 25px 0 40px !important;
+  font-family: Poynter,Georgia,serif;
+  font-weight: 600;
+}
+.html .gift-card-list-r17 a.tile {
+  color: #21282d;
+}
 .html .links-container.browse {
   padding-top: 36px;
 }
@@ -1390,7 +1522,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .links-container.browse ul {
   margin-bottom: 15px;
 }
-.html .links-container.browse a:hover, .html .links-container.browse a:focus {
+.html .links-container.browse a:hover,
+.html .links-container.browse a:focus {
   text-decoration: underline;
 }
 .html .links-container.textbooks > ul > li {
@@ -1458,7 +1591,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-hero-feature {
   width: 182px;
   float: left;
-  font-family: Raleway-Bold, PTSans,Arial;
+  font-family: Raleway-Bold, PTSans, Arial;
   font-size: 14px;
   line-height: 1.4;
   color: #0d4563;
@@ -1467,7 +1600,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .pmis-hero-feature figcaption {
   text-align: center;
-  font-family: Raleway-Bold, PTSans,Arial;
+  font-family: Raleway-Bold, PTSans, Arial;
   padding: 3px 0 15px 0;
 }
 .html .pmis-hero-feature img {
@@ -1487,7 +1620,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-hero-copy {
   text-align: center;
   padding: 25px 25px 44px;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
   line-height: 1.5;
@@ -1501,7 +1634,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .pmis-sample-product {
   position: relative;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   width: 459px;
   padding: 0 33px;
@@ -1513,7 +1646,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   max-width: 100%;
 }
 .html .pmis-sample-product figcaption .italic {
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 17px;
   font-style: italic;
@@ -1541,7 +1674,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-samplet ul li {
   float: left;
 }
-.html .pmis-samplet-next-item, .html .pmis-samplet-prev-item {
+.html .pmis-samplet-next-item,
+.html .pmis-samplet-prev-item {
   background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
@@ -1566,15 +1700,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html #pmis-samplet-status {
   height: 26px;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 17px;
 }
 .html .pmis-steps {
   background-color: #d6eaa1;
   /*  -moz-box-shadow:  -2px 2px 1px 0 rgba(157, 176, 191, 0.55);
-    -webkit-box-shadow: -2px 2px 1px 0 rgba(157, 176, 191, 0.55);
-      box-shadow: -2px 2px 1px 0 rgba(157, 176, 191, 0.55);*/
+-webkit-box-shadow: -2px 2px 1px 0 rgba(157, 176, 191, 0.55);
+  box-shadow: -2px 2px 1px 0 rgba(157, 176, 191, 0.55);*/
   margin: 0 0 20px;
   padding: 35px 0 30px 0;
   position: relative;
@@ -1583,7 +1717,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html h3.pmis-steps-hdr {
   text-align: center;
-  font-family: Quicksand-Bold, PTSans,Arial;
+  font-family: Quicksand-Bold, PTSans, Arial;
   color: #0d4563;
   font-weight: bold;
   font-size: 30px;
@@ -1613,7 +1747,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-cta {
   margin-bottom: 25px;
   padding: 0 30px;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
   line-height: 1.5;
@@ -1623,13 +1757,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 0 0 0 50px;
   padding: 0;
 }
-.html li.pmisOne, .html li.pmisTwo, .html li.pmisThree {
+.html li.pmisOne,
+.html li.pmisTwo,
+.html li.pmisThree {
   position: relative;
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
   background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
-  font-family: Raleway, PTSans,Arial;
+  font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
   line-height: 1.2;
@@ -1648,7 +1784,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin-right: 32px;
   clear: both;
 }
-.html .pmis a.pmis-button, .html .pmis .pmis-button {
+.html .pmis a.pmis-button,
+.html .pmis .pmis-button {
   border: 0 none;
   color: #ffffff;
   display: inline-block;
@@ -1660,7 +1797,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   white-space: nowrap;
   margin-top: 7px;
   background-color: #f1ac68;
-  font-family: Quicksand, PTSans,Arial;
+  font-family: Quicksand, PTSans, Arial;
   font-size: 18px;
   font-weight: 700;
   height: 44px;
@@ -1672,10 +1809,19 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 30px 0 16px 0;
 }
 .html .pmis-footnote {
-  font-family: PTSans,Arial,Helvetica,sans-serif;
+  font-family: PTSans, Arial, Helvetica, sans-serif;
   color: #0d4563;
   font-size: 14px;
   line-height: 1.4;
+}
+.html .pmis-visible-md {
+  display: block;
+}
+.html .pmis-hidden-md {
+  display: none;
+}
+.html .pmis-visible-sm {
+  display: none;
 }
 .html #categoryHeaderContainer h1.persona-main-hdr {
   font-size: 66px;
@@ -1685,7 +1831,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html section#categoryHeaderContainer h2.persona-main-hdr {
   color: #000;
-  font-family: PTSans,Arial,Helvetica,sans-serif;
+  font-family: PTSans, Arial, Helvetica, sans-serif;
   font-size: 30.5px;
   line-height: 1;
   text-align: center;
@@ -1693,7 +1839,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-transform: none;
   margin: 0 0 32px 0;
 }
-.html h2.persona-main-hdr:before, .html h2.persona-main-hdr:after {
+.html h2.persona-main-hdr:before,
+.html h2.persona-main-hdr:after {
   content: "";
   border-top: 1px #919190 solid;
   width: 72px;
@@ -1801,6 +1948,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .jsonGridImage {
   height: 200px;
+  width: 140px;
   position: relative;
 }
 .html .jsonGridImage img {
@@ -1811,14 +1959,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   max-width: 100%;
 }
 .html .jsonGridDetails {
-  height: 100px;
+  height: 115px;
   position: relative;
 }
 .html .jsonGridTitle {
-  font-size: 15px;
   color: #353535;
+  font-size: 14px;
   line-height: 1.2;
-  margin: 5px 0;
+  margin: 7px 0 4px;
 }
 .html .jsonGridContributor {
   font-size: 13px;
@@ -1869,6 +2017,210 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   font-weight: bold;
   color: #5a7d56;
   line-height: 20px;
+}
+.html .bnapp-hero {
+  background-image: url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_hero_bg.jpg);
+  background-origin: content-box;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 442px;
+}
+.html .bnapp-hero .module-bn {
+  display: inline-block;
+}
+.html .bnapp-hero .module-bn .modRight {
+  float: right;
+  text-align: left;
+  width: 50%;
+}
+.html .bnapp-hero .module-bn .modRight .modPodText {
+  padding: 22% 10% 0;
+  color: #fff;
+  font-family: "PT Sans Bold", sans-serif;
+}
+.html .bnapp-hero .module-bn .modRight .modPodText .bnapp-hdr1 {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0 0 0.075em;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "PT Sans", sans-serif;
+}
+.html .bnapp-hero .module-bn .modRight .modPodText .bnapp-body-copy {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.8em;
+  margin: 0 0 1.25em;
+  font-family: "PT Sans", sans-serif;
+}
+.html .bnapp-hero .module-bn .modRight .modPodText .bnapp-button-small a {
+  color: #3169a8;
+  display: inline-block;
+  font-family: PT Sans, san-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 7px 0;
+  text-decoration: none;
+}
+.html .bnapp-hero .module-bn .modLeft {
+  float: left;
+  text-align: right;
+  width: 50%;
+}
+.html .bnapp-hero .module-bn .modLeft .appPodImg {
+  overflow: hidden;
+  position: relative;
+  text-align: right;
+}
+.html .bnapp-hero .module-bn .modLeft .appPodImg img {
+  max-width: 100%;
+  margin-top: 10px;
+  position: relative;
+  bottom: 0px;
+}
+.html .bnapp-hero .itunes-icon {
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
+  float: left;
+  height: 33px;
+  margin: 2px 0 0 20px;
+  width: 98px;
+}
+.html .bnapp-hero .bnapp-hdr {
+  color: #222222;
+  font-family: MiloSerifOffcMediumItalic, serif;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0 0 2%;
+  text-align: center;
+  text-rendering: optimizelegibility;
+}
+.html .bnapp-button {
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
+  clear: both;
+  height: 41px;
+  margin: 0 auto;
+  text-align: center;
+  width: 281px;
+}
+.html .bnapp-button a {
+  color: #3169a8;
+  display: inline-block;
+  font-family: "PT Sans", san-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 8px 0 0;
+  text-decoration: none;
+}
+.html .bnapp-button-small {
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
+  clear: both;
+  float: left;
+  height: 41px;
+  padding: 0 0 0 30px;
+  width: 174px;
+}
+.html .bnapp-button-small a {
+  color: #3169a8;
+  display: inline-block;
+  font-family: "PT Sans", san-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+}
+.html .bnapp-categories .module-bn {
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
+  padding: 3% 0;
+}
+.html h2.bnapp-hdr-standard {
+  background: transparent url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+  text-align: center;
+  width: 772px;
+  word-spacing: 1px;
+}
+.html .bnapp-hdr .inner {
+  background-color: #ffffff;
+  padding: 0 10px;
+  position: relative;
+}
+.html .bnapp-categories-pod {
+  display: block;
+  float: left;
+  padding: 2% 0 3%;
+  text-align: center;
+  width: 33.33%;
+}
+.html .bnapp-categories-header {
+  color: #222222;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5% 0 0;
+}
+.html .bnapp-categories-header sup {
+  font-size: .7em;
+  font-weight: bold;
+}
+.html .bnapp-categories-text {
+  color: #222222;
+  font-size: 0.9em;
+  padding: 0 5%;
+  line-height: 24px;
+}
+.html .bnapp-sbs {
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+  min-height: 232px;
+  overflow: hidden;
+}
+.html .bnapp-sbs .bg-body-right {
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
+  float: right;
+  height: 17px;
+  width: 202px;
+}
+.html .bnapp-sbs .module-bn {
+  margin-top: 20px;
+}
+.html .bnapp-sbs .module-bn .modLeft {
+  float: left;
+  width: 49%;
+}
+.html .bnapp-sbs .module-bn .modRight {
+  float: right;
+  width: 50%;
+}
+.html .bnapp-sbs .module-bn .modPodImg {
+  float: left;
+  padding: 5% 4% 0 8%;
+}
+.html .bnapp-sbs .module-bn .modPodText {
+  float: left;
+  width: 60%;
+}
+.html .bnapp-sbs .module-bn .body-copy {
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.75em;
+  margin: 0 0 1.25em;
+}
+.html .bnapp-sbs .module-bn .body-copy a {
+  color: #3169a8;
+  text-decoration: none;
+}
+.html .bnapp-sbs .n-sep {
+  border-right: 1px solid #e5e5e5;
+  display: block;
+  float: left;
+  height: 90px;
+  margin: 20px -2px 0 0;
+  width: 1%;
 }
 .html .sticky-nav.event-hero-1600 img {
   display: none;
@@ -2141,6 +2493,19 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     margin-top: 25px;
   }
 }
+.html .pmis-img-fluid {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .html .pmis-visible-sm {
+    display: block;
+  }
+  .html .pmis-hidden-sm {
+    display: none;
+  }
+}
 @media only screen and (max-width: 699px) {
   .html {
     /* store title design change  added to rich text editor */
@@ -2243,6 +2608,79 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   .html .jsonGridImage {
     width: auto;
     max-width: 120px;
+  }
+}
+@media (max-width: 699px) {
+  .html .bnapp-hero {
+    height: inherit;
+  }
+  .html .bnapp-hero .module-bn .modRight,
+  .html .bnapp-hero .module-bn .modLeft {
+    width: 100%;
+    float: none;
+  }
+  .html .bnapp-hero .module-bn .modRight .modPodText,
+  .html .bnapp-hero .module-bn .modLeft .modPodText {
+    padding: 10%;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  .html .bnapp-hero .module-bn .modRight .modPodText .bnapp-button-small,
+  .html .bnapp-hero .module-bn .modLeft .modPodText .bnapp-button-small {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .html .bnapp-hero .module-bn .modRight .modPodText .itunes-icon,
+  .html .bnapp-hero .module-bn .modLeft .modPodText .itunes-icon {
+    text-align: center;
+    margin: 10px auto;
+    float: none;
+    padding-top: 10px;
+  }
+  .html .bnapp-hero .module-bn .modRight .appPodImg,
+  .html .bnapp-hero .module-bn .modLeft .appPodImg {
+    text-align: center;
+  }
+  .html h2.bnapp-hdr-standard {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .html .bnapp-sbs .module-bn .modLeft {
+    border-bottom: 1px solid #dbdbdb;
+    float: none;
+    display: inline-block;
+    padding: 1% 0 3%;
+    width: 100%;
+  }
+  .html .bnapp-sbs .module-bn .modLeft .modPodImg {
+    padding-top: 2%;
+  }
+  .html .bnapp-sbs .module-bn .modRight {
+    padding: 2% 0;
+    float: none;
+    width: 100%;
+    display: inline-block;
+  }
+  .html .bnapp-sbs .module-bn .modRight .modPodImg {
+    padding-top: 2%;
+  }
+  .html .bnapp-sbs .n-sep {
+    display: none;
+  }
+  .html .bnapp-categories-pod {
+    clear: both;
+    padding: 6% 0;
+    width: 100%;
+    float: none;
+  }
+  .html .bnapp-categories .module-bn {
+    padding: 6% 0 !important;
+  }
+  .html .bnapp-hdr .inner {
+    font-size: 0.8em;
   }
 }
 .html [class*=coupn-] {
@@ -2829,8 +3267,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .hero1600 img {
   position: relative;
   top: 0;
-  left: -318px;
-  z-index: -1;
+  left: -355px;
+  z-index: 0;
   text-align: center;
 }
 .html .hero1600 h1 {
@@ -3440,8 +3878,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .hero1600 img {
   position: relative;
   top: 0;
-  left: -318px;
-  z-index: -1;
+  left: -355px;
+  z-index: 0;
   text-align: center;
 }
 .html .hero1600 h1 {
@@ -4466,10 +4904,17 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     left: 150px;
   }
 }
+.html .hero1600 img.bnmcard {
+  left: 0;
+  max-width: 100%;
+}
 .html .mc-hdr {
+  /* float: right;
+     text-align: left;
+     width: 45%;*/
   position: absolute;
-  top: 80px;
-  right: 0;
+  top: 50px;
+  right: 55px;
   width: auto;
 }
 .html .mc-hdr [class^=bttn] {
@@ -4486,7 +4931,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-hdr-sub {
   font-family: Lato, Arial, sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.7;
   color: #000;
 }
@@ -4498,7 +4943,12 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-features {
   border-bottom: 1px solid #ccc;
   padding-bottom: 30px;
-  margin: 25px 0 50px 0;
+  margin: 25px auto 50px;
+  /* new */
+  width: 900px;
+  /* new */
+  clear: left;
+  overflow: hidden;
 }
 .html .mc-features-group {
   float: left;
@@ -4512,7 +4962,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   padding: 30px 50px;
   margin: 0 49px;
   padding: 30px 0;
-  height: 370px;
+  height: 350px;
 }
 .html .mc-feature:first-of-type {
   border-bottom: 1px solid #ccc;
@@ -4550,9 +5000,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-feature p {
   font-family: Lato, Arial, sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.75;
   color: #000;
+}
+.html .mc-questions {
+  margin: 25px auto 50px;
+  /* new */
+  width: 900px;
+  /* new */
 }
 .html .mc-questions p {
   font-size: 12px;
@@ -4591,6 +5047,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-questions {
   padding: 0 20px;
 }
+.html .mc-features, .html .mc-questions {
+  width: auto;
+  /* new */
+}
 @media only screen and (max-width: 699px) {
   .html .mc-hdr-main {
     font-size: 25px;
@@ -4620,4 +5080,974 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   .html .mc-features-group:last-of-type .mc-feature:last-of-type {
     border-bottom: none;
   }
+}
+@media only screen and (max-width: 699px) {
+  .html {
+    /* NOOK Comparison */
+  }
+  .html .n-comp-2015 .n-comp-scroll .module-bn {
+    width: 100%;
+  }
+  .html .n-comp-2015 .btn-nook-comparison {
+    text-align: center;
+    height: 45px;
+    display: inline;
+    font-size: 17px;
+    padding: 10px;
+  }
+  .html .main-content .n-comp-2015 [class*=btn] {
+    padding: 10px;
+  }
+}
+
+.mobile-only {
+  display: block !important;
+}
+
+/* *** Redesign 2017 *** */
+/* skava */
+.skavahide {
+  display: none !important;
+}
+
+.main-content.container,
+.container.container--no-padding-bottom {
+  padding: 0 !important;
+}
+
+.container.container--no-padding-bottom .col-lg-10.pl-l {
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+header h1 {
+  font-family: PoynterOSDisp-Semibold, Poynter;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 10px;
+}
+
+.header h1 {
+  font-family: PoynterOSDisp-Semibold, Poynter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.text--subheader {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0 20px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.text--center,
+.text--block-center {
+  text-align: center;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/*  grid widths */
+.col-lg-12 {
+  width: 100%;
+}
+
+/*  Background colors  */
+.bd-geyser {
+  border: 1px solid #d0d9df;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-deep-blue {
+  background-color: #112d4d;
+}
+
+/* components */
+/*  alerts.promo-pdp-textbook  general banner -- initial on textbooks landing  */
+.promo-pdp {
+  line-height: 1.2;
+  margin: 0 0 5px;
+  width: 100%;
+}
+
+.promo-pdp .container {
+  margin: 0 auto !important;
+  padding: 30px 10px !important;
+  display: block;
+  text-align: center;
+}
+
+.promo-pdp--light-text a {
+  font-family: PoynterOSDisp-Semibold, Poynter;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+
+.promo-pdp--light-text .promo-pdp__cta {
+  color: #fff;
+  display: block;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Product Editorial */
+section header.mb-s .rule:after,
+section header.mb-s .rule:before {
+  height: 0px;
+  -webkit-flex-grow: 0;
+  margin-right: 0px;
+}
+section header.mb-s .rule:after .mb-xs,
+section header.mb-s .rule:before .mb-xs {
+  text-align: left;
+  margin: 0px;
+}
+section header.mb-s .rule:after .mb-xs h2:after,
+section header.mb-s .rule:before .mb-xs h2:after {
+  content: ">";
+}
+section header.mb-s a {
+  text-align: left;
+  display: block;
+}
+section header.mb-s a span {
+  font-size: 13px;
+  display: inline-block;
+  padding-left: 20px;
+}
+section .editorial-collection .align-horizontal {
+  display: block;
+}
+section .editorial-collection .align-horizontal.row {
+  margin: 0px;
+  padding: 0px 20px;
+}
+section .editorial-collection .align-horizontal.row .col-lg-4 {
+  width: 100%;
+  padding: 0px;
+}
+section .editorial-collection .align-horizontal.row .col-lg-4 h2 {
+  font-size: 16px;
+}
+section .editorial-collection .align-horizontal.row .col-lg-4 h3.title {
+  margin-top: 15px;
+  font-family: PoynterOSDisp-Semibold, Poynter;
+  font-size: 16px;
+  color: #010101;
+  position: relative;
+  width: 95%;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+}
+section .editorial-collection .align-horizontal.row .col-lg-4 p {
+  line-height: 18px;
+  font-family: GillSansMTPro-Book, GillSansMTPro-Medium;
+  font-size: 13px;
+  margin-top: 0px;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 {
+  width: 100%;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray {
+  border: none;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray.pl-m {
+  padding-left: 0px !important;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf {
+  margin: 0px;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list {
+  margin: 0px;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track {
+  width: 100% !important;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile {
+  display: table-cell;
+  padding-right: 10px;
+  width: 106px !important;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont {
+  height: auto;
+  max-height: 173px;
+  margin-bottom: 5px;
+  max-width: none;
+  min-width: fit-content !important;
+  padding: 0px;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image a {
+  display: -webkit-box;
+  max-width: 114px !important;
+  font-size: 13px;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image a img {
+  max-height: 173px !important;
+  max-width: auto;
+  width: 100% !important;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image .product-shelf-favorite, section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image product-shelf-curl, section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image product-last-star {
+  display: none;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-info {
+  border-top: 0px;
+  margin-bottom: 5px;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-info a {
+  font-size: 13px;
+}
+
+/* H-Page Carousel */
+#searchGrid section h2 {
+  margin-bottom: 5px;
+  font-family: PoynterOSDisp-Semibold, Poynter;
+  font-size: 22px;
+  color: #010101;
+  position: relative;
+  width: 100%;
+  /* width: calc(100% - 45px); */
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 699px) {
+  #searchGrid section h2 #searchGrid section h2 {
+    margin-bottom: 5px;
+    font-family: PoynterOSDisp-Semibold,Poynter;
+    font-size: 22px;
+    color: #010101;
+    position: relative;
+    width: 100%;
+    /* width: calc(100% - 45px); */
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+}
+
+.rule:after,
+.rule:before {
+  display: none;
+}
+
+.record-spotlight-title a {
+  font-family: PoynterOSDisp-Semibold, Poynter;
+  color: #010101;
+  font-size: 15.5px;
+  line-height: 1.3;
+}
+
+.product-shelf-author {
+  color: #4e4e4e;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.product-shelf-author a {
+  font-family: PoynterOSDisp-Semibold, Poynter;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.product-shelf-favorite,
+.product-shelf-curl {
+  display: none;
+}
+
+.star {
+  font-size: 14px;
+}
+
+.product-shelf-grid .product-shelf-tile {
+  width: 145px !important;
+}
+
+.product-shelf.book .slick-list .product-shelf-grid {
+  width: 2175px !important;
+}
+
+.text--center {
+  text-align: left;
+}
+
+.product-shelf-grid .product-shelf-tile-book .product-shelf-image > a img {
+  max-height: 173px;
+  max-width: 114px;
+}
+
+/* textbooks */
+.mobile-only {
+  display: none;
+}
+
+.textbooksSearchDT {
+  position: relative;
+}
+
+.textbooksSearchDT .navigation-search-input {
+  width: 70%;
+}
+
+.textbooksSearchISBNDT {
+  position: absolute;
+  right: 20px;
+  top: 35%;
+}
+
+.textbook-ISBN-tooltip-MP {
+  display: none;
+}
+
+.icon-textbook-rental, .icon-textbook-used, .icon-textbook-new, .icon-textbook-buyback {
+  font-size: 50px;
+}
+
+.textbooksHeroDT.page-hero {
+  margin: 0 auto;
+  position: relative;
+  width: 1040px;
+  max-width: 1040px;
+  /* left: 0; */
+}
+
+.textbooksHeroDT img {
+  max-width: 100%;
+}
+
+/* textbooks */
+.textbooksHeroDT {
+  display: none;
+}
+
+.textbooksSearchDT {
+  display: none;
+}
+
+.textbooksSearchISBNDT {
+  display: none;
+}
+
+.textbook-ISBN-tooltip-MP {
+  display: block;
+}
+
+.textbook-hero-wrapper-mobile {
+  position: relative;
+  height: 182px;
+  clear: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.textbook-hero-wrapper-mobile.search-only {
+  height: 50px;
+}
+
+.textbooksHeroMP {
+  position: relative;
+  overflow: hidden;
+}
+
+.textbooksHeroMP .hero-MP img {
+  height: 182px;
+  max-width: 100%;
+}
+
+.textbook-hero-wrapper-mobile .page-hero {
+  position: absolute;
+}
+
+.textbook-hero-wrapper-mobile .textbook-searchboxMP {
+  position: relative;
+  top: 37%;
+  margin: 0 20px;
+}
+
+.textbook-hero-wrapper-mobile.search-only .textbook-searchboxMP {
+  top: 0;
+}
+
+.textbook-hero-wrapper-mobile + .html .cqTextBookSearch-isbn-link {
+  top: 4px;
+  width: 150px;
+}
+
+.textbookstores-r17 {
+  padding: 0 20px;
+}
+
+.textbookstores-r17 p {
+  font-family: Lato,Arial,sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  margin: 4px;
+}
+
+.textbookstores-r17 p.textbook-store-r17,
+.textbook-announcement-hdr {
+  font-family: PoynterOSDisp-Semibold,Poynter !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+  margin-bottom: 5px;
+}
+
+.textbookstores-r17 a {
+  font-family: Lato,Arial,sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #347d56;
+}
+
+.textbook-store-r17:before {
+  content: "";
+  height: 50px;
+  width: 55px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.textbook-store-r17.rent:before {
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbook_Sprites_mobile-retina.png") 5px 0 no-repeat;
+  background-size: 260px 50px;
+}
+
+.textbook-store-r17.used:before {
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbook_Sprites_mobile-retina.png") -51px 0 no-repeat;
+  background-size: 260px 50px;
+}
+
+.textbook-store-r17.new:before {
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbook_Sprites_mobile-retina.png") -114px 0 no-repeat;
+  background-size: 260px 50px;
+}
+
+.textbook-store-r17.buy:before {
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbook_Sprites_mobile-retina.png") -175px 0 no-repeat;
+  background-size: 260px 50px;
+}
+
+/* 
+.textbook-store-r17.rent:before { 
+    background: transparent url('//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -4px -75px no-repeat;
+}
+.textbook-store-r17.used:before { 
+    background: transparent url('//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -54px -75px no-repeat;
+}
+.textbook-store-r17.new:before { 
+    background: transparent url('//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -106px -75px no-repeat;
+}
+.textbook-store-r17.buy:before { 
+    background: transparent url('//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbooks_Sprite.png') -153px -75px no-repeat;
+} 
+*/
+.textbookstores-r17 .bd-r-geyser {
+  border-bottom: 1px solid #d0d9df;
+}
+
+.textbookstores-r17 .text--center {
+  padding: 25px 0 30px;
+  margin: 0 20px;
+}
+
+.textbookstores-r17.mb-xxl {
+  margin-bottom: 0 !important;
+}
+
+.textbook-announcement-r17.col-lg-12 {
+  background-color: #e6e6e4;
+  padding-top: 27px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  padding-bottom: 30px !important;
+}
+
+.textbook-announcement-r17 p {
+  font-family: Lato,Arial,sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+.textbook-announcement-r17 p.header2 {
+  font-family: PoynterOSDisp-Semibold,Poynter !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+  margin: 0 0 5px;
+}
+
+.textbook-announcement-r17 p.header2 + p {
+  margin-bottom: 20px !important;
+}
+
+.textbook-announcement-r17 .btn.btn--medium {
+  background-color: #346250;
+  color: #fff;
+  padding: 0 20px 0;
+  height: 48px;
+  margin-top: 8px;
+  font-family: Lato,Arial,sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+.textbook-store-content {
+  padding: 0 20px 25px;
+  text-align: center;
+}
+
+.textbook-store-content .rule::after, .textbook-store-content .rule::before {
+  background-color: transparent !important;
+}
+
+section .textbook-store-content h2,
+.textbook-store-content h2 {
+  font-family: PoynterOSDisp-Semibold,Poynter;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  /*  */
+  margin: 25px 0 20px 0 !important;
+  display: block;
+}
+
+.textbook-store-content h2:not(:first-of-type) {
+  border-top: 1px #ccc solid;
+  padding-top: 25px !important;
+  padding-bottom: 20px !important;
+  margin-top: 28px !important;
+}
+
+.textbook-store-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 !important;
+}
+
+.textbook-store-content .sub-heading {
+  font-size: 20px;
+  line-height: 1;
+  margin: 15px 0 5px !important;
+}
+
+/* ISBN Sample */
+.html.mobile-only .cqTextBookSearch-isbn-sample {
+  display: none;
+  position: absolute;
+  top: 35px;
+  bottom: auto;
+  left: -80px;
+  background-color: #fff;
+  padding: 10px 20px 12px;
+  z-index: 0;
+  border: 1px #ccc solid;
+  text-align: left;
+}
+
+.html.mobile-only .cqTextBookSearch-isbn-sample:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -20px;
+  /* bottom:-20px;*/
+  left: 205px;
+  border: 10px transparent solid;
+  border-bottom-color: #fff;
+}
+
+.html.mobile-only .cqTextBookSearch-isbn-sample:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -24px;
+  /*    bottom:-24px;*/
+  left: 203px;
+  border: 12px transparent solid;
+  border-bottom-color: #ccc;
+}
+
+.textbook-searchboxMP .col-lg-12.pa-ss {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+}
+
+.textbook-searchboxMP form {
+  margin: 0;
+}
+
+.textbook-searchboxMP .navigation-search-input {
+  width: 100%;
+}
+
+.textbook-searchboxMP .search-input {
+  border-bottom: 0.125rem solid #21282d;
+  color: #21282d;
+  font-family: Poynter,Georgia,serif;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+}
+
+.textbook-searchboxMP .search-input input[type="search"]::-moz-placeholder {
+  color: #21282d;
+}
+
+.textbook-searchboxMP .search-input input[type="search"]::placeholder {
+  color: #21282d;
+}
+
+.textbook-searchboxMP .search-input input[type="search"] {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  padding-left: 1em;
+  width: 100%;
+  z-index: 1;
+}
+
+.textbook-searchboxMP input[type=search] {
+  border: 1px solid #cccccc;
+  padding: 0.375rem;
+  min-height: 2.1875rem;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.textbook-searchboxMP .navigation-search-input input[type=search] {
+  border: none;
+  padding-left: 1em;
+  width: 100%;
+  z-index: 1;
+  background: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#txtBookSearchSubmit.r17TextBookSearchSubmitMP {
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/BN_Textbook_Sprites_mobile-retina.png") -229px -18px no-repeat;
+  background-size: 260px 50px;
+  border: none;
+  border-radius: 0;
+  height: 38px;
+  margin: 0 5px 0 0;
+  padding: 0;
+  width: 38px;
+  position: absolute;
+  right: 0;
+  top: -8px;
+}
+
+/* toolkit overwrites */
+/* possible h page global */
+html:not(.no-scaling) {
+  min-width: 10px !important;
+}
+
+.sk_TextbookLanding .container {
+  padding: 0;
+}
+
+#searchGrid.bd-left-disabled-gray.pl-xxl {
+  border-width: 0;
+  padding: 0 !important;
+}
+
+.sk_TextbookLanding .col-lg-2.if-fixed-width {
+  display: none;
+}
+
+.sk_TextbookLanding .col-lg-10.pl-l {
+  width: 100% !important;
+  float: none;
+  padding: 0 !important;
+}
+
+.sk_TextbookLanding .col-lg-3 {
+  width: 100%;
+}
+
+.sk_TextbookLanding .bd-r-geyser {
+  border-right-width: 0;
+}
+
+.icon-textbook-buyback, .icon-textbook-new, .icon-textbook-rental, .icon-textbook-used {
+  display: none;
+}
+
+.navigation-search-input::before {
+  content: "";
+  font-size: 1rem;
+  left: 0.625rem;
+  position: absolute;
+  top: 0.625rem;
+  display: none;
+}
+
+/* Coupon & Deals page */
+.hero.mb-xxl {
+  margin-bottom: 0.0rem !important;
+  /* 4.5rem; */
+}
+
+.coupon-features {
+  min-height: 25.5rem;
+}
+
+.mw1040 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.coupon-promo-copy-height {
+  height: 5rem;
+}
+
+.coupon-promo .brow {
+  margin: 10px 0;
+}
+
+.coupon-promo a, .coupon-promo a:hover {
+  text-decoration: none;
+}
+
+.promo-item-name .header3 {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  height: 22px;
+  overflow: hidden;
+}
+
+#coupn-promo-container {
+  overflow: hidden;
+  clear: left;
+}
+
+/*
+ .coupon-hero.hero  {
+    height: auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    max-width: 1440px;
+} 
+ .coupon-hero.hero img{
+    position: relative;
+    left: 50%;
+    margin-left: -884px;
+} 
+*/
+/* Coupons & Deals */
+/*  mobile  */
+header .text--subheader {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.html .hero .hero-slide {
+  height: auto;
+}
+
+/*  
+ .coupon-hero.hero  {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+} 
+ .coupon-hero.hero img{
+    max-width: 100%; 
+    left: 0;
+    margin-left: 0;
+} 
+*/
+.coupon.col-lg-6 {
+  width: 100%;
+}
+
+.coupon-features + .bd-b-geyser.pt-xs {
+  padding: 0 !important;
+}
+
+.coupon-features p.text--uppercase {
+  font-size: 12px;
+}
+
+.coupon-features .header1 {
+  font-family: PoynterOSDisp-Semibold,Poynter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+  padding: 0 20px;
+  color: #21282d !important;
+}
+
+.coupon-features .header4 {
+  font-family: PoynterOSDisp-Semibold,Poynter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.coupon-features {
+  padding: 24px 20px !important;
+  margin: 0 !important;
+  border-top: 1px solid #f9f8f4;
+  min-height: 100px !important;
+}
+
+.coupon-features .btn {
+  padding: 0;
+  margin: 3px 5px 5px !important;
+  height: auto;
+  color: #21282d;
+  border-bottom: 1px solid #21282d;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.coupon-features .btn:active:active::after,
+.coupon-features a.btn-ghost:active:active::after,
+.coupon-features a.btn:active:active::after,
+.coupon-features a.btn-ghost:focus,
+.coupon-features a.btn-ghost:hover,
+.coupon-features a.btn.active:focus,
+.coupon-features a.btn.active:hover,
+.coupon-features a.btn.focus:focus,
+.coupon-features a.btn.focus:hover,
+.coupon-features a.btn.hover:focus,
+.coupon-features a.btn.hover:hover,
+.coupon-features a.btn:focus, a.btn:focus:active,
+.coupon-features a.btn:focus:hover,
+.coupon-features a.btn:hover,
+.coupon-features a.btn:hover:active,
+.coupon-features a.btn:hover:focus {
+  border: none !important;
+  background-color: transparent !important;
+  color: inherit;
+  height: 18px !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+}
+
+.coupon-features .color-lapis {
+  /* deep blue */
+  color: #112d4d;
+}
+
+.text--medium {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.coupon-promo {
+  margin: 0 20px !important;
+  padding: 13px 0 13px 0 !important;
+  position: relative;
+}
+
+.coupon-promo .brow.color-coal {
+  color: #828c8e;
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #828c8e;
+}
+
+.coupon-promo .text--medium.color-coal.mt-xxs {
+  color: #515b5b;
+}
+
+.coupon-promo a, .coupon-promo a:hover {
+  text-decoration: none;
+}
+
+.coupon-promo .header3 {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #346250 !important;
+}
+
+.promo-item-name {
+  display: table;
+}
+
+.promo-item-name div {
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 25px;
+}
+
+.promo-item-name .arrow:after {
+  content: "";
+  display: block;
+  background: transparent url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
+  height: 17px;
+  white-space: nowrap;
+  width: 11px;
+  margin-left: 10px;
+}
+
+.coupon-promo-copy-height {
+  height: auto;
+  margin-top: 5px;
+  color: #515b5b !important;
+}
+
+.coupon-promo .btn.btn--medium {
+  display: none;
+}
+
+.coupon-promo.bd-b-geyser {
+  border-bottom: 1px solid #cccccc;
+}
+
+.bg-peach {
+  background-color: #efd1bc;
+}
+
+.bg-mist {
+  background-color: #c9dbe2;
+}
+
+.rose, .color-rose {
+  color: #a36b6c;
 }

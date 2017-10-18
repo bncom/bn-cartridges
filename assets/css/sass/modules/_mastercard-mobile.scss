@@ -14,6 +14,9 @@
   border-bottom:1px solid #ccc;
 }
 .mc-questions {padding:0 20px;}
+.mc-features,.mc-questions {
+  width:auto;   /* new */ 
+}
 
 @media only screen and (max-width: 699px) {  
 	.mc-hdr-main{ 
@@ -33,10 +36,8 @@
 	    width: 100%;
 	}
 	.mc-features-group:first-of-type  {border-right:none;} 
-	.mc-feature  {border-bottom:1px solid #ccc; height:auto;}
-
-	.mc-features-group:last-of-type .mc-feature:last-of-type  {border-bottom:none;}
-
+	.mc-feature  {border-bottom:1px solid #ccc; height:auto;} 
+	.mc-features-group:last-of-type .mc-feature:last-of-type  {border-bottom:none;} 
 }
  
 

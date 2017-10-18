@@ -1,0 +1,909 @@
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" sizes="192x192" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201702230319p/img/bn-icon-192x192.png">
+<link rel="apple-touch-icon" sizes="72x72" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201702230319p/img/bn-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201702230319p/img/bn-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201702230319p/img/bn-icon-180x180.png" />
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+
+<script type='text/javascript'>
+sm = {};
+sm.clientDomain = "m.barnesandnoble.com";
+sm.clientVersion = "v5";
+sm.clientPartner = "barnesandnoble";
+sm.campaignId = "772";
+sm.EXTERNAL_DOMAIN = "www.barnesandnoble.com";
+sm.INTERNAL_DOMAIN = "m.barnesandnoble.com";
+sm.STORES_DOMAIN = "mstores.barnesandnoble.com";
+sm.HELP_DOMAIN = "help.barnesandnoble.com";
+sm.GA_KEY = "UA-69761400-3";
+brmSiteFlags = {};
+brmSiteFlags.trackAdtm = true;
+</script>
+
+<meta name="generator" content="HTML Tidy for Java (vers. 2009-12-01), see jtidy.sourceforge.net" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta content="width=device-width" name="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Barnes &amp; Noble" />
+<title>Save Up to 30% on New Textbooks | Barnes &amp; Noble&reg;</title>
+<meta name="description" content="Order new textbooks online from our huge selection with low prices up to 30% off when you buy a new textbook. Fast &amp; FREE Shipping on orders $25 &amp; up." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@BNBuzz" />
+<meta property="og:title" content="Save Up to 30% on New Textbooks" />
+<meta property="og:description" content="Order new textbooks online from our huge selection with low prices up to 30% off when you buy a new textbook. Fast &amp; FREE Shipping on orders $25 &amp; up." />
+<meta property="og:type" content="product" />
+<meta property="og:url" content="http://www.barnesandnoble.com/h/textbooks/new" />
+<meta property="og:image" content="http://dispatch.barnesandnoble.com/content/dam/ccr/bnstores/textbooks/hero2/2016/Textbooks_LP_Hero_img_960x330.jpg" />
+<meta property="og:site_name" content="Barnes &amp; Noble" />
+<meta name="apple-mobile-web-app-title" content="Barnes &amp; Noble" />
+<link type="text/css" rel="stylesheet" href="/static/release/css/fonts.min.css" />
+<link rel="stylesheet" type="text/css" href="//css.css-bn.com/static/release/css/concat.min.css?v4.3.4&amp;setviewtype=full" />
+<link type="text/css" href="//css.css-bn.com/static/release/css/category/category.min.css?v4.3.4" rel="stylesheet" media="screen" />
+<link type="text/css" href="//css.css-bn.com/static/release/css/category/search.min.css?v4.3.4" rel="stylesheet" media="screen" /><style type="text/css">
+/*<![CDATA[*/
+
+@-webkit-keyframes bugfix { from { padding: 0px; } to { padding: 0px; } }
+label span { -webkit-animation: bugfix infinite 1ms; }
+/*]]>*/
+</style>
+<link href="http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges.min.css?v=02" rel="stylesheet" type="text/css" /><script type="text/javascript" src="//js.js-bn.com/static/js/vendor/jquery-1.8.3.min.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function updateMiniCartCount(count) {
+if(typeof count != 'undefined' && count != $.trim($('#bagTotal').text())) {
+$('#bagTotal').text(count);
+}
+}
+function miniCartEvents($container) {
+var $spinner = $('<div/>').addClass('mini-cart-spinner'),
+$quantityUpdateForms = $('.mini-cart-quantity-update');
+BN.MiniCart = new MiniCart('#miniCart', '#shoppingBag');
+// shopping bag flyout only
+$('#bagContentsContainer').find('.mini-cart-quantity-update').each(function() {
+BN.uXHR.Form.apply(this);
+});
+$quantityUpdateForms.find('.product-quantity').each(function() {
+var $this = $(this);
+$this.data('initial-value', $this.val());
+});
+$quantityUpdateForms.find('input[type=submit]').on('click', function(e) {
+var $theForm = $(this).closest('form'),
+$eleProductQuantity = $theForm.find('.product-quantity').first(),
+productQuantity = $eleProductQuantity.length ? $eleProductQuantity.val().trim() : '';
+if (productQuantity.length == 0) {
+e.preventDefault();
+/* reset to the initial quantity if the user tried to submit an empty value */
+if ($eleProductQuantity.length && $eleProductQuantity.data('initial-value')) {
+$eleProductQuantity.val($eleProductQuantity.data('initial-value'));
+}
+}
+});
+$quantityUpdateForms.on('submit', function() {
+var $this = $(this),
+$miniCartItem = $this.parents('#miniCart');
+$spinner.appendTo($miniCartItem);
+}).on('amplifiFormSuccess', function(e, response) {
+//Adobe Analytics: updates cart object
+if(typeof s_setP !== 'undefined') updateAnalyticsCart();
+// check to shopping bag reload flag is on page
+// if shopping bag is updated in dropdown and page
+// contains the items, it must be refreshed
+if ($("#shoppingBagReloadFlag").length){
+consoleLog("Reload Page to update shopping bag.");
+location.reload(true);
+} else {
+$('#miniCartItems .miniCartItems-list').load(webContextRoot+"/checkout/includes/get-mini-cart-commerce-items.jsp", miniCartEvents);
+$('#subtotalLine .subtotal-amount').html('$'+response.data.subtotal);
+$('#subtotalLine .item-count').html('('+response.data.totalQuantity+' items)');
+$('#bagTotal').html(response.data.totalQuantity);
+if(response.data.totalQuantity < 1) {
+//DONT SHOW CART IF TYPE AHEAD IS OPEN
+if($('#headSearchTypeAheadHolder').is(':visible')) {
+loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, true);
+} else {
+loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, false);
+}
+}
+}
+$spinner.remove();
+if(e.target.id && /remove/i.test(e.target.id) || $(this).data('form-type') === 'remove') {
+$(this).trigger('analytics-mini-cart-remove');
+} else {
+$(this).trigger('analytics-mini-cart-add');
+}
+}).on('amplifiFormError', function(e, response) {
+$spinner.remove();
+});
+}
+function loadHeaderElement($container, frag, miniCartLoaded, hideCart) {
+$.ajax({
+url: frag,
+cache: false,
+type: "get",
+beforeSend: function() {
+if(!$('#miniCart').length) {
+if (hideCart) {
+$container.html('<div id="miniCart" style="height: 150px; display:none;"><div class="triangle-up"><\/div><div class="mini-cart-spinner"><\/div>');
+$container.attr("aria-hidden", "true");
+} else {
+$container.html('<div id="miniCart" style="height: 150px"><div class="triangle-up"><\/div><div class="mini-cart-spinner"><\/div>');
+$container.attr("aria-hidden", "false");
+}
+}
+}
+}).done(function(data) {
+$container.html(data);
+if (hideCart) {
+$("#miniCart").css("display", "none");
+}
+if (miniCartLoaded) {
+updateMiniCartCount($('#miniCartQuantityVal').val());
+miniCartEvents();
+}
+});
+}
+function displayHeaderFooterData(dataObj) {
+try {
+if(typeof dataObj != 'undefined' && dataObj != '') {
+//set login status variables
+if(typeof BN != 'undefined') {
+BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
+BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
+} else {
+$(document).ready(function() {
+BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
+BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
+});
+}
+//populate sign in/account links data
+$('#authBar').html(dataObj.signInHtml);
+$('#myAccountMenu').html(dataObj.accountLinksHtml);
+updateMiniCartCount(dataObj.cartQuantity);
+HEADERLOADED = true;
+HEADERDATA = '';
+bnLoggingEnabled = dataObj.bnLoggingEnabled;
+$("#myAccountMenu").click(function(e) {
+if($(e.target).attr('id') == 'myAccountLink')
+e.preventDefault();
+$("#myAccountLinks").toggleClass("showMyAccountLinks");
+});
+}
+} catch(err) {
+console.log(err);
+}
+}
+function loadEmailSignUp() {
+// check for email signup class in CQ template
+if ($(".global-footer-email-signup").length){
+// bind form to framework
+var $form = $('#emailSignupForm');
+BN.Validate.Listen($form);
+BN.uXHR.Form.apply($form);
+// success action
+$('#emailSignupForm').on('amplifiFormSuccess', function() {
+$('#emailSignupDiv').html("<span>Thank you for submitting your email address.<\/span>");
+$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
+}).on("amplifiFormBeforeSerialize", function(){
+$('#emailSignupForm').find('.handler-email-signup').remove();
+$('#emailSignupForm').append('<input class="handler-email-signup" type="hidden" name="amplifiHandler" value="/atg/userprofiling/ProfileFormHandler.emailSignup">');
+}).on("amplifiFormError",function(event,err,xhr,status,msgs){
+var errors = msgs.items;
+BN.Validate.DisplayErrors(this, errors);
+$form.find('input[type=text]').addClass('user-error');
+$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
+}).on("amplifiFormBeforeSubmit",function(){
+consoleLog("Calling displaySpinner");
+$form.find('input[type=text]').removeClass('user-error');
+$('.global-footer-email-signup').append($('<div/>').addClass('mini-cart-spinner'));
+});
+}
+}
+/* ATG-10818: Pre-populate footer email field only when user is logged in */
+function populateEmailSignUp(data) {
+$(document).ready(function() {
+if(data.isSecureLogin){
+$('#emailAddr').val(data.email);
+}
+});
+}
+//load header elements for akamai caching
+//SIGN IN Links, PTA Link, EMAIL SIGN UP, CART DETAILS
+function loadDynamicHeaderElements(callback) {
+$.ajax({
+url: '/xhr/header-footer-data.jsp',
+cache: false,
+type: "get",
+dataType: 'json'
+}).done(function(data) {
+HEADERDATA = data;
+HEADERLOADED = false;
+if($('#userLinks').length) {
+displayHeaderFooterData(HEADERDATA);
+} else {
+$(document).ready(function() {
+displayHeaderFooterData(HEADERDATA);
+});
+}
+populateEmailSignUp(data);
+});
+$(document).ready(function() {
+loadEmailSignUp();
+miniCartEvents();
+});
+}
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+
+loadDynamicHeaderElements();
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/release/js/head.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/js/vendor/js-webshim-1.15/dev/extras/modernizr-custom.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/js/vendor/js-webshim-1.15/dev/polyfiller.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//assets.adobedtm.com/a6ce917b5fc2d1d613b7b801115955bcaacab070/satelliteLib-c247216a2145ee58039f29269709adbc59bd1aa8.js">
+//<![CDATA[
+//]]>
+</script>
+<script src="https://cdns.gigya.com/JS/socialize.js?apiKey=3_MD_HJHUOCjSeK80xcc1NTYJYTlZXtSSDOc3XHyRvw6dcljSs4YVf8OInYiEPtpeE" type="text/javascript">
+//<![CDATA[
+{
+siteName: 'barnesandnoble.com',
+enabledProviders: 'facebook,twitter,googleplus'
+}
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var enableGoogleAdsAfterPageLoad = true;
+var bodyClass = "landingPage";
+
+var asyncRelatedAdsEnabled = true;
+$(document).on('googleRelatedAdsLoaded', function() {
+
+googletag.cmd.push(function() {
+// Double check the bodyClass from header-javascript variable
+if(bodyClass.indexOf('searchResultsPage') >= 0 || bodyClass == 'landingPage searchResultsPage') {
+bodyClass = 'searchResultsPage';
+}
+switch (bodyClass) {
+case 'pdpPage':
+var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/prod/Save-Up-to-30-on-New-Textbooks', [300, 250], 'relatedAd')
+.setTargeting('member','F')
+.setTargeting('lo','mid')
+.setTargeting('s','bn')
+.setTargeting('EAN','')
+.setTargeting('redflag','0')
+.setTargeting('prod','');
+var adSlot2 = googletag.defineSlot('/9885823/lia.barnesandnoble/prod/Save-Up-to-30-on-New-Textbooks', [728, 90], 'relatedAd2')
+.setTargeting('member','F')
+.setTargeting('lo','mid')
+.setTargeting('s','bn')
+.setTargeting('EAN','')
+.setTargeting('redflag','0')
+.setTargeting('prod','');
+break;
+case 'landingPage':
+var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/home/Save-Up-to-30-on-New-Textbooks', [160, 600], 'relatedAd');
+var adSlot2 = googletag.defineSlot('/9885823/lia.barnesandnoble/home/Save-Up-to-30-on-New-Textbooks', [728, 90], 'relatedAd2');
+break;
+case 'searchResultsPage':
+var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/search/Save-Up-to-30-on-New-Textbooks', [160, 600], 'relatedAd');
+var adSlot2 = googletag.defineSlot('/9885823/lia.barnesandnoble/search/Save-Up-to-30-on-New-Textbooks', [728, 90], 'relatedAd2');
+break;
+case 'thank-you':
+var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/thank_you_page', [970, 250], 'relatedAd');
+break;
+default :
+break;
+}
+if(adSlot1) {
+adSlot1.addService(googletag.pubads());
+}
+if(adSlot2) {
+adSlot2.addService(googletag.pubads());
+}
+googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+if(event.size[0] !== 728) {
+$(document).trigger('rendered-slot1');
+} else {
+$(document).trigger('rendered-slot2');
+}
+});
+googletag.enableServices();
+$(document).trigger('googleRelatedAdsEnabled');
+});
+
+})
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var asyncTextAdsEnabled = true;
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+$('#primaryNav').on('hover touchstart', function() {
+$('.nav-menu').css('display', 'block');
+});
+$('#primaryNav li.nav-item a').on('focus', function() {
+$('.nav-menu').css('display', 'block');
+});
+});
+function set_cookie (cvalue) {
+
+var cname = "internalCampaign";
+cvalue = cvalue.replace(/ /gi,'-').replace(/[`~!@#^&*()|+\=???;:'",<>\{\}\[\]\\\/]/gi, '').toLowerCase()
+cvalue = 'tcmp_' +  cvalue;
+//cvalue = encodeURI(cvalue);
+var d = new Date();
+d.setTime(d.getTime() + (1*24*60*60*1000));
+var curCookie = cname + "=" + cvalue +
+"; expires=" + d.toGMTString() +
+"; path=" + "/"  +
+"; domain=" + SITE_DOMAIN;
+document.cookie = curCookie;
+
+}
+//]]>
+</script>
+<script src="http://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/bn-cartridges-js.min.js?v=02" type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+window['adrum-start-time'] = new Date().getTime();
+//]]>
+</script>
+<!-- ATG-10336 Tactical fix starts -->
+<link rel="canonical" href="http://www.barnesandnoble.com/h/textbooks/new" /><!-- ATG-10336 Tactical fix starts -->
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.barnesandnoble.com/mobile/h/textbooks/new" />
+
+<link rel='stylesheet' type='text/css' media='screen' href='//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201702230319p/css/proxy.css'/>
+
+
+
+
+<!-- 
+
+
+<link rel='stylesheet' type='text/css' media='screen' href='//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css?v=initial'/>
+
+ -->
+
+ <link rel="stylesheet" href="../../../assets/build/css/bn-cartridges-mobile.min.css" type="text/css" media="screen"/>
+
+
+ 
+<link rel="stylesheet" href="http://css.css-bn.com/mobile/static/release/css/concat.min.css?v4.3.4" type="text/css" media="screen"/>
+<link rel="stylesheet" href="http://www.barnesandnoble.com/mobile/static/release/css/search.min.css?v4.3.4" media="screen"/>
+
+
+
+
+
+
+</head>
+<!--[if lt IE 9]>         <body  class="landingPage lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <body  class="landingPage ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<body class="landingPage" skbody="true">
+<div class="sk_header_cont">
+    <div class="sk_prmBnrDv"></div>
+    <div class="sk_hdrDv"></div>
+</div>
+<div id="latest-event"></div>
+
+<script type="text/javascript">
+document.body.classList.add('sk_passthroughPage');
+</script>
+
+<!--<![endif]-->
+<div class="skavacontentdiv"></div>
+<script type="text/javascript">
+//<![CDATA[
+var SITE_PROTOCOL = document.location.protocol||window.location.protocol||'http:',
+SITE_DOMAIN = document.location.hostname||window.location.hostname||'m.barnesandnoble.com',
+SITE_PORT = document.location.port||window.location.port||'80',
+THIS_PATH = document.location.pathname||window.location.pathname||'/cartridges/PageSlot/PageSlot.jsp',
+SITE_DOMAIN_URL = THIS_PAGE = SITE_ROOT = port = "",
+STATIC_ASSETS_PATH = "/static",
+webContextRoot ='',
+staticAssetVersion = '?v4.3.4',
+XHR_FOLDER ='/xhr',
+XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp',
+PAGE_DEBUG_MODE = false;
+if(SITE_PROTOCOL=="https:") {
+XHR_FOLDER = '/xhr';
+XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp';
+}
+if(SITE_PORT.length > 0 && SITE_PORT!=80)
+port = ":"+SITE_PORT;
+SITE_DOMAIN_URL = SITE_PROTOCOL + "//" + SITE_DOMAIN + port;
+SITE_ROOT = SITE_DOMAIN_URL + webContextRoot;
+THIS_PAGE = SITE_DOMAIN_URL + THIS_PATH;
+port = null;
+function consoleLog() {
+if (PAGE_DEBUG_MODE!==true) return;
+if (typeof console != "undefined" && typeof console.log != "undefined") {
+if (typeof console.log.apply != "undefined") {
+console.log.apply(console,arguments);
+} else {
+for(var i=0;i<arguments.length;i++) {
+var arg = arguments[i];
+console.log(arg);
+}
+}
+}
+}
+function consoleWarn() {
+if (PAGE_DEBUG_MODE!==true) return;
+if (typeof console == "undefined") return;
+if (typeof console.warn != "undefined" && typeof console.warn.apply != "undefined") {
+console.warn.apply(console,arguments);
+} else {
+consoleLog.apply(console,arguments);
+}
+}
+function consoleError() {
+if (PAGE_DEBUG_MODE!==true) return;
+if (typeof console == "undefined") return;
+if (typeof console.error != "undefined" && typeof console.error.apply != "undefined") {
+console.error.apply(console,arguments);
+} else {
+consoleWarn.apply(console,arguments);
+}
+}
+var verifyCallbackToCaptcha = function() {
+grecaptcha.render('html_element', {
+'sitekey' : '6LctFgsTAAAAAJXPN_lYrGuAQiN8KDE_W84nWsjc',
+'expired-callback': function(){
+consoleLog("verify reset");
+grecaptcha.reset();
+}
+});
+};
+function addOnLoadEvent(func) {
+var oldonload = window.onload;
+if (typeof window.onload != 'function') {
+window.onload = func;
+} else {
+window.onload = function() {
+if (oldonload) {
+oldonload();
+}
+func();
+}
+}
+}
+//]]>
+</script>
+<header id="globalHeader" style="display:none !important">
+<section id="logoAndSearch">
+<div id="logoContainer" class="image-class-default"><a href="/"><span class="viewport-bounce">Barnes &amp; Noble</span></a></div>
+<form id="searchForm" name="searchFormName" action="/includes/submit.jsp;jsessionid=C2ABCED0D17C56AA900471AAB8EF5D53.prodny_store02-atgap06?_DARGS=/cartridges/HeaderSearchBox/HeaderSearchBox.jsp" method="post"><input name="_dyncharset" value="UTF-8" type="hidden" /><input value="-6885024321780597232" type="hidden" /><input name="/com/bn/endeca/base/SearchFormHandler.searchSuccessURL" value="/s/" type="hidden" /><input name="_D:/com/bn/endeca/base/SearchFormHandler.searchSuccessURL" value=" " type="hidden" /><input name="/com/bn/endeca/base/SearchFormHandler.searchErrorURL" value="/s/" type="hidden" /><input name="_D:/com/bn/endeca/base/SearchFormHandler.searchErrorURL" value=" " type="hidden" /><input data-autosuggesturl="//ta.barnesandnoble.com/bntypeahead-service-authoring/json/pages/typeahead?" placeholder="Search" aria-autocomplete="list" type="text" autocomplete="off" aria-owns="headSearchTypeAheadHolder" data-maxautosuggestcount="8" id="searchBarBN" name="Ntt" value="" role="combobox" data-mininputcharactercount="2" aria-expanded="false" /><input name="_D:Ntt" value=" " type="hidden" /><input type="hidden" id="typeAheadValue" name="typeAheadValue" value="" /> <input name="_D:/com/bn/endeca/base/SearchFormHandler.fs" value=" " type="hidden" /><select id="searchFilterSelect" name="/com/bn/endeca/base/SearchFormHandler.fs">
+<option value="0">All</option>
+<option value="8q8">Books</option>
+<option value="8qa">NOOK Books</option>
+<option value="1pbl">NOOK</option>
+<option value="8q9">Textbooks</option>
+<option value="8qb">Bargain Books</option>
+<option value="8qe">Newsstand</option>
+<option value="8qd">Teens</option>
+<option value="8qc">Kids</option>
+<option value="8qf">Toys &amp; Games</option>
+<option value="1gls">Hobbies &amp; Collectibles</option>
+<option value="8qg">Home &amp; Gifts</option>
+<option value="8qh">Movies &amp; TV</option>
+<option value="8qi">Music</option>
+</select><input id="searchSubmit" title="search" name="/com/bn/endeca/base/SearchFormHandler.search" value="" type="submit" /><input name="_D:/com/bn/endeca/base/SearchFormHandler.search" value=" " type="hidden" /><input name="_DARGS" value="/cartridges/HeaderSearchBox/HeaderSearchBox.jsp" type="hidden" /></form>
+<div id="free-shipping-global-header">Spend $25, Get<br />
+Free Shipping</div>
+<div id="shoppingBag" class="image-class-default" tabindex="0"><a href="/checkout/" id="shoppingBagLink" rel="nofollow" role="menu"><span class="hide-content">shopping bag count</span>
+<div id="bagTotal"></div>
+</a> 
+<div id="bagContentsContainer" aria-hidden="true"></div>
+</div>
+</section>
+<nav id="userLinks"><span id="authBar"></span> 
+<div id="myAccountMenu"></div>
+<script type="text/javascript">
+//<![CDATA[
+if(typeof HEADERLOADED != 'undefined' && !HEADERLOADED) {
+displayHeaderFooterData(HEADERDATA);
+}
+//]]>
+</script>
+ <input id="chatPtaURL" type="hidden" value="https://help.barnesandnoble.com/app/chat/chat_launch" /> 
+<ul id="upsellPromo">
+<li><!-- Internal Component Tracking - Begin -->
+<!-- Internal Component Tracking - End -->
+<a href="/h/coupons-deals" onclick="set_cookie('pc_Up to 20% Off with code BNREAD40_na_text');"><span class="default-utility">Up to 20% Off with code BNREAD40</span>&nbsp;<span class="default-utility"></span></a></li>
+<li><!-- Internal Component Tracking - Begin -->
+<!-- Internal Component Tracking - End -->
+<a href="/b/bargain-books/_/N-8qb" onclick="set_cookie('pc_Now Up to 75% Off Clearance_na_text');"><span class="default-utility">Now Up to 75% Off Clearance</span>&nbsp;<span class="default-utility"></span></a></li>
+<li><!-- Internal Component Tracking - Begin -->
+<!-- Internal Component Tracking - End -->
+<a href="/b/save-5-on-2-select-picture-books/_/N-2jwj" onclick="set_cookie('pc_Save $5 on 2 Picture Books_na_text');"><span class="default-utility">Save $5 on 2 Picture Books</span>&nbsp;<span class="default-utility"></span></a></li>
+<li><!-- Internal Component Tracking - Begin -->
+<!-- Internal Component Tracking - End -->
+<a href="/b/image-comics-buy-2-get-the-3rd-free/_/N-1gmj" onclick="set_cookie('pc_Graphic Novels: Buy 2, Get 1 Free_na_text');"><span class="default-utility">Graphic Novels: Buy 2, Get 1 Free</span>&nbsp;<span class="default-utility"></span></a></li>
+</ul>
+<a href="http://m.barnesandnoble.com/membership/"><span class="default-utility">Membership</span></a> <a href="http://m.barnesandnoble.com/b/gift-cards/_/N-8rg"><span class="default-utility">Gift Cards</span></a> <a href="http://stores.barnesandnoble.com/"><span class="default-utility">Stores &amp; Events</span></a> <a href="https://help.barnesandnoble.com/"><span class="default-utility">Help</span></a> </nav>
+<div class="PageContent"></div>
+</header>
+<div id="screen"></div>
+<main role="main" class="clearer">
+<div class="browser-notice ie-outdated">
+<div><span class="x">&times;</span> 
+<p><b>Uh-oh, it looks like your Internet Explorer is out of date.</b><br />
+<br />
+For a better shopping experience, please <a target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie/">upgrade now.</a></p>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+if($.browser.msie && parseInt($.browser.version, 10) <=10){
+if(!$('.ie-outdated').is('visible')){
+$('.ie-outdated').show();
+}
+}
+//]]>
+</script>
+ <noscript>
+<div class="browser-notice">
+<div>
+<p class="circle">!</p>
+<p>&nbsp;&nbsp;Javascript is not enabled in your browser. Enabling JavaScript in your browser will allow you to experience all the features of our site.<br />
+<br />
+ &nbsp;&nbsp;<a href="https://help.barnesandnoble.com">Learn how to enable JavaScript on your browser</a></p>
+</div>
+</div>
+</noscript> 
+<div class="PageContent">
+<section id="main-content" class="landing-page-content">
+<div class="header">
+<section id="categoryHeaderContainer">
+<h1>New Textbooks</h1>
+</section>
+</div>
+<nav id="refinements" class="secondary-nav-c">
+<h2 class="augHeader">Browse Textbooks</h2>
+<ul>
+<li>
+<div><a href="/b/textbooks/_/N-8q9" onclick="set_cookie('agn_Browse Textbooks_Home_text');">Home</a></div>
+</li>
+<li>
+<div><a href="/h/textbooks/new" onclick="set_cookie('agn_Browse Textbooks_New Textbooks_text');">New Textbooks</a></div>
+</li>
+<li>
+<div><a href="/h/textbooks/rental" onclick="set_cookie('agn_Browse Textbooks_Rental Textbooks_text');">Rental Textbooks</a></div>
+</li>
+<li>
+<div><a href="/h/textbooks/used" onclick="set_cookie('agn_Browse Textbooks_Used Textbooks_text');">Used Textbooks</a></div>
+</li>
+<li>
+<div><a href="/textbook/textbook-buyback.jsp" onclick="set_cookie('agn_Browse Textbooks_Sell Your Textbooks_text');">Sell Your Textbooks</a></div>
+</li>
+</ul>
+<h2 class="augHeader">Textbooks by Subject</h2>
+<ul>
+<li>
+<div><a href="/b/textbooks/business/accounting/_/N-8q9Ztsb" onclick="set_cookie('agn_Textbooks by Subject_Accounting_text');">Accounting</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/mathematics/algebra/_/N-8q9Z18k3" onclick="set_cookie('agn_Textbooks by Subject_Algebra_text');">Algebra</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/art-architecture-photography/architecture/_/N-8q9Zs9j" onclick="set_cookie('agn_Textbooks by Subject_Architecture_text');">Architecture</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/art-architecture-photography/art-history-criticism/_/N-8q9Zsfg" onclick="set_cookie('agn_Textbooks by Subject_Art History_text');">Art History</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/science-technology/biology-life-sciences/_/N-8q9Z18br" onclick="set_cookie('agn_Textbooks by Subject_Biology_text');">Biology</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/business/_/N-8q9Zt82" onclick="set_cookie('agn_Textbooks by Subject_Business_text');">Business</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/mathematics/calculus/_/N-8q9Z18k6" onclick="set_cookie('agn_Textbooks by Subject_Calculus_text');">Calculus</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/science-technology/chemistry/_/N-8q9Z18dk" onclick="set_cookie('agn_Textbooks by Subject_Chemistry_text');">Chemistry</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/computers/_/N-8q9Zug4" onclick="set_cookie('agn_Textbooks by Subject_Computer_text');">Computer</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/art-fashion-decorative-arts-design/design-history/_/N-8q9Zsbz" onclick="set_cookie('agn_Textbooks by Subject_Design_text');">Design</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/business/economics/_/N-8q9Ztka" onclick="set_cookie('agn_Textbooks by Subject_Economics_text');">Economics</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/education/_/N-8q9Zzmg" onclick="set_cookie('agn_Textbooks by Subject_Education_text');">Education</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/science-technology/engineering/_/N-8q9Z2bxy" onclick="set_cookie('agn_Textbooks by Subject_Engineering_text');">Engineering</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/history/_/N-8q9Z11km" onclick="set_cookie('agn_Textbooks by Subject_History_text');">History</a></div>
+</li>
+</ul>
+<h2 class="augHeader">&nbsp;</h2>
+<ul>
+<li>
+<div><a href="/b/textbooks/law/_/N-8q9Z1f68" onclick="set_cookie('agn_&nbsp;_Law_text');">Law</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/literature/_/N-8q9Z15v3" onclick="set_cookie('agn_&nbsp;_Literature_text');">Literature</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/medicine-nursing/_/N-8q9Z167w" onclick="set_cookie('agn_&nbsp;_Medicine_text');">Medicine</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/science-technology/mathematics/_/N-8q9Z18j7" onclick="set_cookie('agn_&nbsp;_Mathematics_text');">Mathematics</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/entertainment-performing-arts/music/_/N-8q9Z1bl4" onclick="set_cookie('agn_&nbsp;_Music_text');">Music</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/medicine-nursing/_/N-8q9Z167w" onclick="set_cookie('agn_&nbsp;_Nursing_text');">Nursing</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/philosophy/_/N-8q9Z1fe7" onclick="set_cookie('agn_&nbsp;_Philosophy_text');">Philosophy</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/politics-current-affairs/_/N-8q9Z16st" onclick="set_cookie('agn_&nbsp;_Politics &amp; Current Affairs_text');">Politics &amp; Current Affairs</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/psychology/_/N-8q9Z1fcc" onclick="set_cookie('agn_&nbsp;_Psychology_text');">Psychology</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/reference/_/N-8q9Z1g9w" onclick="set_cookie('agn_&nbsp;_Reference_text');">Reference</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/religion/_/N-8q9Z17d6" onclick="set_cookie('agn_&nbsp;_Religion_text');">Religion</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/science-technology/science-general-miscellaneous/_/N-8q9Z18hz" onclick="set_cookie('agn_&nbsp;_Science_text');">Science</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/social-sciences/_/N-8q9Z18q3" onclick="set_cookie('agn_&nbsp;_Social Science_text');">Social Science</a></div>
+</li>
+<li>
+<div><a href="/b/textbooks/study-aids/test-study-skills-general-miscellaneous/_/N-8q9Z1gky" onclick="set_cookie('agn_&nbsp;_Test Preparation_text');">Test Preparation</a></div>
+</li>
+</ul>
+<figcaption>Advertising</figcaption>
+<script type="text/javascript">
+//<![CDATA[
+
+$(document).on('googleRelatedAdsEnabled', function() {
+
+$(document).on('rendered-slot1', function() {
+if($('#relatedAd iframe').length > 0) {
+$('#relatedAd iframe').attr('title', 'Advertising');
+}
+});
+googletag.cmd.push(function() {
+googletag.display("relatedAd");
+});
+
+});
+//]]>
+</script>
+</nav>
+<section id="searchGrid" class="primary-content clearer">
+<div class="html">
+<div class="html-embed-container">
+<div class="textbook-store-search">
+<form name="txtBookSearch" id="cqTextBookSearch" class="cqTextBookSearch"><label for="searchTextBookBar">Enter Search Term</label> <input type="text" autocomplete="off" aria-autocomplete="list" role="textbox" value="" placeholder="Search by ISBN, Title, or Author" id="searchTextBookBar" class="user-success" /> <input type="submit" value="" id="txtBookSearchSubmit" class="cqTextBookSearchSubmit" /></form>
+<!-- data-modal-class="BN.Modal.External.Link" data-modal-scrolling="no" data-modal-height="280px" data-modal-width="460px" --><a class="cqTextBookSearch-isbn-link" href="http://dispatch.barnesandnoble.com/content/ccr/h/modal/textbook-isbn-helper.use.html?">What is an ISBN? 
+<div class="cqTextBookSearch-isbn-sample">
+<p class="question">What's an ISBN</p>
+<p class="answer">An ISBN is a 10-13 digit number found on your book's back cover.</p>
+<img src="http://dispatch.barnesandnoble.com/content/dam/ccr/bnstores/textbooks/misc/2016/BN_Textbook_Tooltip.jpg" alt="" /></div>
+</a></div>
+</div>
+</div>
+<div class="html">
+<div class="html-embed-container">
+<section>
+<div class="textbook-topic clearer">
+<h2 class="new">Buying New Textbooks</h2>
+<p class="textbook-topic-item">Amazing Selection</p>
+<p>We have a huge selection of new textbooks available for purchase directly from BN.com and we work with Marketplace sellers, all of whom are approved by Barnes &amp; Noble to offer the largest selection of new textbooks. To find new textbooks, just search for the title, author, or ISBN you are looking for and you will find all of our new textbook options listed.</p>
+<p class="textbook-topic-item">Great Value</p>
+<p>We offer you low prices, so you can get the most for your money. Our new textbooks are listed up to 30% off their sticker price.</p>
+<p class="textbook-topic-item">Free Shipping</p>
+<p>We offer FREE shipping on all New Textbook orders over $25.</p>
+</div>
+<div class="textbook-topic clearer">
+<h2 class="fourteenday">Return Policy</h2>
+<p>Returns are accepted within 14 days of the date that you received your order. Books can be mailed with the original packing slip to:<br />
+ <strong>Barnes &amp; Noble Returns Department<br />
+ 1 Barnes &amp; Noble Way<br />
+ Monroe Township, NJ 08831<br />
+</strong></p>
+</div>
+<div class="textbook-topic clearer">
+<h2 class="piggybank">Sell Your Books</h2>
+<p>At the end of the semester, if your textbooks are still in good condition, you can sell your books back to us for cash!</p>
+</div>
+</section>
+</div>
+</div>
+</section>
+<div class="clearer"></div>
+<div class="clearer"></div>
+<script type="text/javascript">
+//<![CDATA[
+if(!$('body').hasClass('thank-you')) {
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-11110821-1', {'cookieDomain': 'barnesandnoble.com'});
+ga('send', 'pageview');
+}
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/release/js/vendor.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/release/js/contrib.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/release/js/modal.modals-browse.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/js/js-messaging.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/release/js/bn.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+$.webshims.polyfill('es5 forms forms-ext');
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/sections/search/search.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/vendor/jquery.scrollpane.min.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/vendor/jquery.mousewheel.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/sections/pdp/swfobject2.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/sections/pdp/kitcloud.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/sections/pdp/flashdetect.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/js-countries.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/bn/bn.analytics.js?v4.3.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript">
+//<![CDATA[
+
+var digitalData = {"session":{"sessionID":"C2ABCED0D17C56AA900471AAB8EF5D53","serverName":"prodny_store02"},"page":{"timestamp":"Tue Feb 28 08:43:01 EST 2017","category":{"primaryCategory":"textbooks","subCategory":["new"],"hierarchy":"/h/textbooks"},"pageInfo":{"pageType":"generic content","pageName":"generic content:textbooks","language":"en","geoRegion":"US","breadCrumbs":["home","h","textbooks"],"ipAddress":"152.179.137.234"},"attributes":{"internalCampaignCTA":"","internalCampaignElement":"","internalCampaignAdFormat":"","internalCampaignPageType":"","internalCampaignDescription":""}},"cart":{"price":{"shipping":0,"priceWithTax":0,"transationalTotal":0,"basePrice":0}}};
+
+if (typeof s_setP !== 'undefined') {
+s_setP('digitalData.component[1].componentInfo.componentName','promo_content');
+s_setP('digitalData.component[1].componentInfo.componentLocation','tcmp-toputilitycontent');
+s_setP('digitalData.component[1].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[2].componentInfo.componentName','promo_content');
+s_setP('digitalData.component[2].componentInfo.componentLocation','tcmp-toputilitycontent');
+s_setP('digitalData.component[2].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[3].componentInfo.componentName','promo_content');
+s_setP('digitalData.component[3].componentInfo.componentLocation','tcmp-toputilitycontent');
+s_setP('digitalData.component[3].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[4].componentInfo.componentName','promo_content');
+s_setP('digitalData.component[4].componentInfo.componentLocation','tcmp-toputilitycontent');
+s_setP('digitalData.component[4].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[5].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[5].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[5].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[6].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[6].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[6].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[7].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[7].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[7].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[8].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[8].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[8].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[9].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[9].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[9].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[10].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[10].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[10].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[11].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[11].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[11].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[12].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[12].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[12].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[13].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[13].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[13].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[14].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[14].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[14].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[15].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[15].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[15].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[16].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[16].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[16].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[17].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[17].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[17].componentInfo.primaryCategory','internal campaign');
+
+}
+$(document).ready(function(){
+if (typeof s_setP !== 'undefined') {
+
+BN.Analytics.Landing.init();
+
+BN.Analytics.Generic.GoogleAds();
+
+}
+});
+_satellite.pageBottom();
+//]]>
+</script>
+  </section>
+</div>
+</main>
+
+<script type='text/javascript' src='//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201702230319p/js/proxy.js'></script>
+</body>
+</html>
+

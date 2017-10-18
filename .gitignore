@@ -6,6 +6,7 @@
 # NODE    #
 ###################
 node_modules/*
+package.json
 
 # Compiled source #
 ###################
@@ -44,3 +45,5 @@ node_modules/*
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+*test.js

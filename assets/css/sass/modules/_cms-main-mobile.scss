@@ -159,8 +159,6 @@
 @media only screen and (max-width: 399px) {   
   .pmis-hero-features { padding: 0 0 20px 0; width:auto;}
   .pmis-hero-feature{   width:49%;font-size: 13px; height:182px;}
-  // .pmis-hero-feature:nth-child(odd) {  padding-left:0; }
-  // .pmis-hero-feature:nth-child(even) {  padding-right: 0;}
 
   .pmis-sample-carousel {
     float: none; 
@@ -195,6 +193,20 @@
   .pmis-footnote { margin-top:25px;}
 
 } 
+.pmis-img-fluid {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width:768px) {
+    .pmis-visible-sm {
+        display: block;
+    }
+    .pmis-hidden-sm{
+        display: none;
+    }
+}
 /*   // END Put Me In The Story */
 
 
@@ -276,3 +288,86 @@
     .jsonGridImage { width:auto; max-width:120px; }
 }
 /* end black friday signed editions */
+
+/* iPhone Download App */
+ @media (max-width: 699px){
+     .bnapp-hero {
+         height: inherit;
+         .module-bn {
+             .modRight,
+             .modLeft{
+                 width: 100%;
+                 float: none;
+                 .modPodText{
+                     padding: 10%;
+                     padding-bottom: 0px;
+                     text-align: center;
+                     .bnapp-button-small{
+                         text-align: center;
+                         float: none;
+                         margin: 0 auto;
+                         padding: 0px;
+                     }
+                     .itunes-icon{
+                         text-align: center;
+                         margin: 10px auto;
+                         float: none;
+                         padding-top: 10px; 
+                     }
+                 }
+                 .appPodImg{
+                     text-align: center;    
+                 }
+             }
+         }
+     }
+     
+     h2.bnapp-hdr-standard{
+         width: 90%;
+         margin: 0 auto;
+         text-align: center;
+     }
+     
+    .bnapp-sbs{ 
+         .module-bn{ 
+             .modLeft {
+                border-bottom: 1px solid #dbdbdb;
+                float: none;
+                display: inline-block;
+                padding: 1% 0 3%;
+                width: 100%;
+                 .modPodImg{
+                     padding-top: 2%;
+                 }
+             }
+             .modRight {
+                padding: 2% 0;
+                 float: none;
+                 width: 100%;
+                 display: inline-block;
+                 .modPodImg{
+                     padding-top: 2%;
+                 }
+             }
+         }
+         .n-sep {
+            display: none;
+        }
+    }
+    
+     .bnapp-categories-pod {
+        clear: both;
+        padding: 6% 0;
+        width: 100%;
+        float: none;
+        
+    }
+     .bnapp-categories{
+         .module-bn {
+             padding: 6% 0 !important;
+         }
+     }
+     .bnapp-hdr .inner{font-size: 0.8em;}
+     
+ }
+/* End iPhone */

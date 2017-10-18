@@ -1,0 +1,1010 @@
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" sizes="192x192" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201701250131p/img/bn-icon-192x192.png">
+<link rel="apple-touch-icon" sizes="72x72" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201701250131p/img/bn-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201701250131p/img/bn-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201701250131p/img/bn-icon-180x180.png" />
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<script type='text/javascript'>
+sm = {};
+sm.clientDomain = "mbarnesandnoble.skavaone.com";
+sm.clientVersion = "v5";
+sm.clientPartner = "barnesandnoble";
+sm.campaignId = "772";
+sm.EXTERNAL_DOMAIN = "www.barnesandnoble.com";
+</script>
+
+<meta name="generator" content="HTML Tidy for Java (vers. 2009-12-01), see jtidy.sourceforge.net" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta content="width=device-width" name="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Barnes &amp; Noble" />
+<title>BN Readouts | Barnes &amp; Noble&reg;</title>
+<meta name="description" content="B&amp;N Readouts - A quick read for every moment - indulge your interests or discover something new. It's a fun, fresh way to browse." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@BNBuzz" />
+<meta property="og:title" content="BN Readouts" />
+<meta property="og:description" content="B&amp;N Readouts - A quick read for every moment - indulge your interests or discover something new. It's a fun, fresh way to browse." />
+<meta property="og:type" content="product" />
+<meta property="og:url" content="http://www.barnesandnoble.com/h/nook/bn-readouts" />
+<meta property="og:site_name" content="Barnes &amp; Noble" />
+<meta name="apple-mobile-web-app-title" content="Barnes &amp; Noble" />
+<link type="text/css" rel="stylesheet" href="/static/release/css/fonts.min.css" />
+<link rel="stylesheet" type="text/css" href="//css.css-bn.com/static/release/css/concat.min.css?v4.1.4&amp;setviewtype=full" />
+<link type="text/css" href="//css.css-bn.com/static/release/css/category/category.min.css?v4.1.4" rel="stylesheet" media="screen" />
+<link type="text/css" href="//css.css-bn.com/static/release/css/category/search.min.css?v4.1.4" rel="stylesheet" media="screen" /><style type="text/css">
+/*<![CDATA[*/
+
+@-webkit-keyframes bugfix { from { padding: 0px; } to { padding: 0px; } }
+label span { -webkit-animation: bugfix infinite 1ms; }
+/*]]>*/
+</style>
+<link href="//css.css-bn.com?v=01" rel="stylesheet" type="text/css" /><script type="text/javascript" src="//js.js-bn.com/static/js/vendor/jquery-1.8.3.min.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function updateMiniCartCount(count) {
+if(typeof count != 'undefined' && count != $.trim($('#bagTotal').text())) {
+$('#bagTotal').text(count);
+}
+}
+function miniCartEvents($container) {
+var $spinner = $('<div/>').addClass('mini-cart-spinner'),
+$quantityUpdateForms = $('.mini-cart-quantity-update');
+BN.MiniCart = new MiniCart('#miniCart', '#shoppingBag');
+// shopping bag flyout only
+$('#bagContentsContainer').find('.mini-cart-quantity-update').each(function() {
+BN.uXHR.Form.apply(this);
+});
+$quantityUpdateForms.find('.product-quantity').each(function() {
+var $this = $(this);
+$this.data('initial-value', $this.val());
+});
+$quantityUpdateForms.find('input[type=submit]').on('click', function(e) {
+var $theForm = $(this).closest('form'),
+$eleProductQuantity = $theForm.find('.product-quantity').first(),
+productQuantity = $eleProductQuantity.length ? $eleProductQuantity.val().trim() : '';
+if (productQuantity.length == 0) {
+e.preventDefault();
+/* reset to the initial quantity if the user tried to submit an empty value */
+if ($eleProductQuantity.length && $eleProductQuantity.data('initial-value')) {
+$eleProductQuantity.val($eleProductQuantity.data('initial-value'));
+}
+}
+});
+$quantityUpdateForms.on('submit', function() {
+var $this = $(this),
+$miniCartItem = $this.parents('#miniCart');
+$spinner.appendTo($miniCartItem);
+}).on('amplifiFormSuccess', function(e, response) {
+//Adobe Analytics: updates cart object
+if(typeof s_setP !== 'undefined') updateAnalyticsCart();
+// check to shopping bag reload flag is on page
+// if shopping bag is updated in dropdown and page
+// contains the items, it must be refreshed
+if ($("#shoppingBagReloadFlag").length){
+consoleLog("Reload Page to update shopping bag.");
+location.reload(true);
+} else {
+$('#miniCartItems .miniCartItems-list').load(webContextRoot+"/checkout/includes/get-mini-cart-commerce-items.jsp", miniCartEvents);
+$('#subtotalLine .subtotal-amount').html('$'+response.data.subtotal);
+$('#subtotalLine .item-count').html('('+response.data.totalQuantity+' items)');
+$('#bagTotal').html(response.data.totalQuantity);
+if(response.data.totalQuantity < 1) {
+//DONT SHOW CART IF TYPE AHEAD IS OPEN
+if($('#headSearchTypeAheadHolder').is(':visible')) {
+loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, true);
+} else {
+loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, false);
+}
+}
+}
+$spinner.remove();
+if(e.target.id && /remove/i.test(e.target.id) || $(this).data('form-type') === 'remove') {
+$(this).trigger('analytics-mini-cart-remove');
+} else {
+$(this).trigger('analytics-mini-cart-add');
+}
+}).on('amplifiFormError', function(e, response) {
+$spinner.remove();
+});
+}
+function loadHeaderElement($container, frag, miniCartLoaded, hideCart) {
+$.ajax({
+url: frag,
+cache: false,
+type: "get",
+beforeSend: function() {
+if(!$('#miniCart').length) {
+if (hideCart) {
+$container.html('<div id="miniCart" style="height: 150px; display:none;"><div class="triangle-up"><\/div><div class="mini-cart-spinner"><\/div>');
+$container.attr("aria-hidden", "true");
+} else {
+$container.html('<div id="miniCart" style="height: 150px"><div class="triangle-up"><\/div><div class="mini-cart-spinner"><\/div>');
+$container.attr("aria-hidden", "false");
+}
+}
+}
+}).done(function(data) {
+$container.html(data);
+if (hideCart) {
+$("#miniCart").css("display", "none");
+}
+if (miniCartLoaded) {
+updateMiniCartCount($('#miniCartQuantityVal').val());
+miniCartEvents();
+}
+});
+}
+function displayHeaderFooterData(dataObj) {
+try {
+if(typeof dataObj != 'undefined' && dataObj != '') {
+//set login status variables
+if(typeof BN != 'undefined') {
+BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
+BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
+} else {
+$(document).ready(function() {
+BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
+BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
+});
+}
+//populate sign in/account links data
+$('#authBar').html(dataObj.signInHtml);
+$('#myAccountMenu').html(dataObj.accountLinksHtml);
+updateMiniCartCount(dataObj.cartQuantity);
+HEADERLOADED = true;
+HEADERDATA = '';
+bnLoggingEnabled = dataObj.bnLoggingEnabled;
+$("#myAccountMenu").click(function(e) {
+if($(e.target).attr('id') == 'myAccountLink')
+e.preventDefault();
+$("#myAccountLinks").toggleClass("showMyAccountLinks");
+});
+}
+} catch(err) {
+console.log(err);
+}
+}
+function loadEmailSignUp() {
+// check for email signup class in CQ template
+if ($(".global-footer-email-signup").length){
+// bind form to framework
+var $form = $('#emailSignupForm');
+BN.Validate.Listen($form);
+BN.uXHR.Form.apply($form);
+// success action
+$('#emailSignupForm').on('amplifiFormSuccess', function() {
+$('#emailSignupDiv').html("<span>Thank you for submitting your email address.<\/span>");
+$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
+}).on("amplifiFormBeforeSerialize", function(){
+$('#emailSignupForm').find('.handler-email-signup').remove();
+$('#emailSignupForm').append('<input class="handler-email-signup" type="hidden" name="amplifiHandler" value="/atg/userprofiling/ProfileFormHandler.emailSignup">');
+}).on("amplifiFormError",function(event,err,xhr,status,msgs){
+var errors = msgs.items;
+BN.Validate.DisplayErrors(this, errors);
+$form.find('input[type=text]').addClass('user-error');
+$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
+}).on("amplifiFormBeforeSubmit",function(){
+consoleLog("Calling displaySpinner");
+$form.find('input[type=text]').removeClass('user-error');
+$('.global-footer-email-signup').append($('<div/>').addClass('mini-cart-spinner'));
+});
+}
+}
+/* ATG-10818: Pre-populate footer email field only when user is logged in */
+function populateEmailSignUp(data) {
+$(document).ready(function() {
+if(data.isSecureLogin){
+$('#emailAddr').val(data.email);
+}
+});
+}
+//load header elements for akamai caching
+//SIGN IN Links, PTA Link, EMAIL SIGN UP, CART DETAILS
+function loadDynamicHeaderElements(callback) {
+$.ajax({
+url: '/xhr/header-footer-data.jsp',
+cache: false,
+type: "get",
+dataType: 'json'
+}).done(function(data) {
+HEADERDATA = data;
+HEADERLOADED = false;
+if($('#userLinks').length) {
+displayHeaderFooterData(HEADERDATA);
+} else {
+$(document).ready(function() {
+displayHeaderFooterData(HEADERDATA);
+});
+}
+populateEmailSignUp(data);
+});
+$(document).ready(function() {
+loadEmailSignUp();
+miniCartEvents();
+});
+}
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+
+loadDynamicHeaderElements();
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/release/js/head.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/js/vendor/js-webshim-1.15/dev/extras/modernizr-custom.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/js/vendor/js-webshim-1.15/dev/polyfiller.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//assets.adobedtm.com/a6ce917b5fc2d1d613b7b801115955bcaacab070/satelliteLib-c247216a2145ee58039f29269709adbc59bd1aa8.js">
+//<![CDATA[
+//]]>
+</script>
+<script src="https://cdns.gigya.com/JS/socialize.js?apiKey=3_MD_HJHUOCjSeK80xcc1NTYJYTlZXtSSDOc3XHyRvw6dcljSs4YVf8OInYiEPtpeE" type="text/javascript">
+//<![CDATA[
+{
+siteName: 'barnesandnoble.com',
+enabledProviders: 'facebook,twitter,googleplus'
+}
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var enableGoogleAdsAfterPageLoad = true;
+var bodyClass = "landingPage";
+
+var asyncRelatedAdsEnabled = true;
+$(document).on('googleRelatedAdsLoaded', function() {
+
+googletag.cmd.push(function() {
+// Double check the bodyClass from header-javascript variable
+if(bodyClass.indexOf('searchResultsPage') >= 0 || bodyClass == 'landingPage searchResultsPage') {
+bodyClass = 'searchResultsPage';
+}
+switch (bodyClass) {
+case 'pdpPage':
+var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/prod/BN-Readouts', [300, 250], 'relatedAd')
+.setTargeting('member','F')
+.setTargeting('lo','mid')
+.setTargeting('s','bn')
+.setTargeting('EAN','')
+.setTargeting('redflag','0')
+.setTargeting('prod','');
+var adSlot2 = googletag.defineSlot('/9885823/lia.barnesandnoble/prod/BN-Readouts', [728, 90], 'relatedAd2')
+.setTargeting('member','F')
+.setTargeting('lo','mid')
+.setTargeting('s','bn')
+.setTargeting('EAN','')
+.setTargeting('redflag','0')
+.setTargeting('prod','');
+break;
+case 'landingPage':
+var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/home/BN-Readouts', [160, 600], 'relatedAd');
+var adSlot2 = googletag.defineSlot('/9885823/lia.barnesandnoble/home/BN-Readouts', [728, 90], 'relatedAd2');
+break;
+case 'searchResultsPage':
+var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/search/BN-Readouts', [160, 600], 'relatedAd');
+var adSlot2 = googletag.defineSlot('/9885823/lia.barnesandnoble/search/BN-Readouts', [728, 90], 'relatedAd2');
+break;
+case 'thank-you':
+var adSlot1 = googletag.defineSlot('/9885823/lia.barnesandnoble/thank_you_page', [970, 250], 'relatedAd');
+break;
+default :
+break;
+}
+if(adSlot1) {
+adSlot1.addService(googletag.pubads());
+}
+if(adSlot2) {
+adSlot2.addService(googletag.pubads());
+}
+googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+if(event.size[0] !== 728) {
+$(document).trigger('rendered-slot1');
+} else {
+$(document).trigger('rendered-slot2');
+}
+});
+googletag.enableServices();
+$(document).trigger('googleRelatedAdsEnabled');
+});
+
+})
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var asyncTextAdsEnabled = true;
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+$('#primaryNav').on('hover touchstart', function() {
+$('.nav-menu').css('display', 'block');
+});
+$('#primaryNav li.nav-item a').on('focus', function() {
+$('.nav-menu').css('display', 'block');
+});
+});
+function set_cookie (cvalue) {
+
+var cname = "internalCampaign";
+cvalue = cvalue.replace(/ /gi,'-').replace(/[`~!@#^&*()|+\=???;:'",<>\{\}\[\]\\\/]/gi, '').toLowerCase()
+cvalue = 'tcmp_' +  cvalue;
+//cvalue = encodeURI(cvalue);
+var d = new Date();
+d.setTime(d.getTime() + (1*24*60*60*1000));
+var curCookie = cname + "=" + cvalue +
+"; expires=" + d.toGMTString() +
+"; path=" + "/"  +
+"; domain=" + SITE_DOMAIN;
+document.cookie = curCookie;
+
+}
+//]]>
+</script>
+<script src="//js.js-bn.com?v=01" type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+window['adrum-start-time'] = new Date().getTime();
+//]]>
+</script>
+<!-- ATG-10336 Tactical fix starts -->
+<link rel="canonical" href="http://www.barnesandnoble.com/h/nook/bn-readouts" /><!-- ATG-10336 Tactical fix starts -->
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://mbarnesandnoble.skavaone.com/mobile/h/nook/bn-readouts" /><style type="text/css">
+/*<![CDATA[*/
+.bnreads {padding-top: 30px; margin-bottom: 25px;} .bnreads-pod {margin-right: 16px;} .bnreads-pod .reg {font-size: 0.6em; position: relative; top: -0.33em;} .bnreads-pod figure:focus {outline: none;} .bnreads-pod .edit-pod-copy a {color: #3169a8; font-size: 14px; text-decoration: none;} .bnreads-pod .edit-pod-copy a:hover {text-decoration: underline;} @media all and (max-width: 699px){ .bnreads {padding-top: 30px; margin-bottom: 25px; border-top: 1px solid #e0e0e0;} .bnreads-pod .display-video {display: none;} } 
+/*]]>*/
+</style>
+
+<link rel='stylesheet' type='text/css' media='screen' href='//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201701250131p/css/proxy.css'/>
+
+<link rel='stylesheet' type='text/css' media='screen' href='//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css?v=initial'/>
+</head>
+<!--[if lt IE 9]>         <body  class="landingPage lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <body  class="landingPage ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<body class="landingPage" skbody="true">
+<div class="sk_header_cont">
+    <div class="sk_prmBnrDv"></div>
+    <div class="sk_hdrDv"></div>
+</div>
+<div id="latest-event"></div>
+
+<!--<![endif]-->
+<div class="skavacontentdiv"></div>
+<script type="text/javascript">
+//<![CDATA[
+var SITE_PROTOCOL = document.location.protocol||window.location.protocol||'http:',
+SITE_DOMAIN = document.location.hostname||window.location.hostname||'mbarnesandnoble.skavaone.com',
+SITE_PORT = document.location.port||window.location.port||'80',
+THIS_PATH = document.location.pathname||window.location.pathname||'/cartridges/TwoColumnMarketingPage/TwoColumnMarketingPage.jsp',
+SITE_DOMAIN_URL = THIS_PAGE = SITE_ROOT = port = "",
+STATIC_ASSETS_PATH = "/static",
+webContextRoot ='',
+staticAssetVersion = '?v4.1.4',
+XHR_FOLDER ='/xhr',
+XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp',
+PAGE_DEBUG_MODE = false;
+if(SITE_PROTOCOL=="https:") {
+XHR_FOLDER = '/xhr';
+XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp';
+}
+if(SITE_PORT.length > 0 && SITE_PORT!=80)
+port = ":"+SITE_PORT;
+SITE_DOMAIN_URL = SITE_PROTOCOL + "//" + SITE_DOMAIN + port;
+SITE_ROOT = SITE_DOMAIN_URL + webContextRoot;
+THIS_PAGE = SITE_DOMAIN_URL + THIS_PATH;
+port = null;
+function consoleLog() {
+if (PAGE_DEBUG_MODE!==true) return;
+if (typeof console != "undefined" && typeof console.log != "undefined") {
+if (typeof console.log.apply != "undefined") {
+console.log.apply(console,arguments);
+} else {
+for(var i=0;i<arguments.length;i++) {
+var arg = arguments[i];
+console.log(arg);
+}
+}
+}
+}
+function consoleWarn() {
+if (PAGE_DEBUG_MODE!==true) return;
+if (typeof console == "undefined") return;
+if (typeof console.warn != "undefined" && typeof console.warn.apply != "undefined") {
+console.warn.apply(console,arguments);
+} else {
+consoleLog.apply(console,arguments);
+}
+}
+function consoleError() {
+if (PAGE_DEBUG_MODE!==true) return;
+if (typeof console == "undefined") return;
+if (typeof console.error != "undefined" && typeof console.error.apply != "undefined") {
+console.error.apply(console,arguments);
+} else {
+consoleWarn.apply(console,arguments);
+}
+}
+var verifyCallbackToCaptcha = function() {
+grecaptcha.render('html_element', {
+'sitekey' : '6LctFgsTAAAAAJXPN_lYrGuAQiN8KDE_W84nWsjc',
+'expired-callback': function(){
+consoleLog("verify reset");
+grecaptcha.reset();
+}
+});
+};
+function addOnLoadEvent(func) {
+var oldonload = window.onload;
+if (typeof window.onload != 'function') {
+window.onload = func;
+} else {
+window.onload = function() {
+if (oldonload) {
+oldonload();
+}
+func();
+}
+}
+}
+//]]>
+</script>
+<div id="screen"></div>
+<main role="main" class="clearer">
+<div class="browser-notice ie-outdated">
+<div><span class="x">&times;</span> 
+<p><b>Uh-oh, it looks like your Internet Explorer is out of date.</b><br />
+<br />
+For a better shopping experience, please <a target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie/">upgrade now.</a></p>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+if($.browser.msie && parseInt($.browser.version, 10) <=10){
+if(!$('.ie-outdated').is('visible')){
+$('.ie-outdated').show();
+}
+}
+//]]>
+</script>
+ <noscript>
+<div class="browser-notice">
+<div>
+<p class="circle">!</p>
+<p>&nbsp;&nbsp;Javascript is not enabled in your browser. Enabling JavaScript in your browser will allow you to experience all the features of our site.<br />
+<br />
+ &nbsp;&nbsp;<a href="https://help.barnesandnoble.com">Learn how to enable JavaScript on your browser</a></p>
+</div>
+</div>
+</noscript> 
+<div class="PageContent">
+<section id="main-content" class="landing-page-content">
+<div class="header">
+<section id="categoryHeaderContainer">
+<h1 class="header-with-brackets"><span class="centered-line"></span> <span class="text-container"><span class="left-bracket"></span> <span class="text">B&amp;N Readouts&#153;</span> <span class="right-bracket"></span> <span></span></span></h1>
+</section>
+</div>
+<nav id="refinements" class="secondary-nav-c">
+<h3 class="">Featured in NOOK</h3>
+<h2 class="augHeader">Tablets</h2>
+<ul>
+<li>
+<div><a href="/w/samsung-galaxy-tab-a-nook-7-inch-barnes-noble/1123826273" onclick="set_cookie('agn_Tablets_Samsung Galaxy Tab A NOOK_text');">Samsung Galaxy Tab A NOOK</a></div>
+</li>
+<li>
+<div><a href="/w/samsung-galaxy-tab-e-nook-9-inch-barnes-noble/1122750330" onclick="set_cookie('agn_Tablets_Samsung Galaxy Tab E NOOK_text');">Samsung Galaxy Tab E NOOK</a></div>
+</li>
+<li>
+<div><a href="/w/samsung-galaxy-tab-s2-nook-8-inch-barnes-noble/1122314016?ean=9780594699842" onclick="set_cookie('agn_Tablets_Samsung Galaxy Tab S2 NOOK_text');">Samsung Galaxy Tab S2 NOOK</a></div>
+</li>
+<li>
+<div><a href="/w/samsung-galaxy-tab-4-nook-7-inch-barnes-noble/1119732448?ean=9781400697496" onclick="set_cookie('agn_Tablets_Samsung Galaxy Tab 4 NOOK_text');">Samsung Galaxy Tab 4 NOOK</a></div>
+</li>
+</ul>
+<h2 class="augHeader">eReaders</h2>
+<ul>
+<li>
+<div><a href="/w/nook-glowlight-plus-barnes-noble/1122314015" onclick="set_cookie('agn_eReaders_NOOK GlowLight Plus_text');">NOOK GlowLight Plus</a></div>
+</li>
+</ul>
+<h2 class="augHeader">Apps</h2>
+<ul>
+<li>
+<div><a href="/h/nook/apps" onclick="set_cookie('agn_Apps_NOOK Reading App_text');">NOOK Reading App</a></div>
+</li>
+<li>
+<div><a href="/h/nook/apps#nook-audiobooks-app" onclick="set_cookie('agn_Apps_NOOK Audiobooks App_text');">NOOK Audiobooks App</a></div>
+</li>
+<li>
+<div><a href="/h/nook/apps#bn-app" onclick="set_cookie('agn_Apps_Barnes &amp; Noble App_text');">Barnes &amp; Noble App</a></div>
+</li>
+<li>
+<div><a href="/h/nook/bn-readouts" onclick="set_cookie('agn_Apps_B&amp;N Readouts_text');">B&amp;N Readouts</a></div>
+</li>
+</ul>
+<h2 class="augHeader">More from NOOK</h2>
+<ul>
+<li>
+<div><a href="/b/nook-accessories/_/N-1p28" onclick="set_cookie('agn_More from NOOK_Accessories_text');">Accessories</a></div>
+</li>
+<li>
+<div><a href="/h/instant-gifting" onclick="set_cookie('agn_More from NOOK_Instant Gifting_text');">Instant Gifting</a></div>
+</li>
+<li>
+<div><a href="/h/nook/compare" onclick="set_cookie('agn_More from NOOK_Compare Our NOOKs_text');">Compare Our NOOKs</a></div>
+</li>
+<li>
+<div><a href="/h/nook/recycling" onclick="set_cookie('agn_More from NOOK_Recycling Your NOOK_text');">Recycling Your NOOK</a></div>
+</li>
+<li>
+<div><a href="/h/coupons-deals" onclick="set_cookie('agn_More from NOOK_Coupons &amp; Deals_text');">Coupons &amp; Deals</a></div>
+</li>
+</ul>
+<h2 class="augHeader">NOOK B2B</h2>
+<ul>
+<li>
+<div><a href="/h/nook/business" onclick="set_cookie('agn_NOOK B2B_NOOK in Business_text');">NOOK in Business</a></div>
+</li>
+<li>
+<div><a href="/h/nook/education" onclick="set_cookie('agn_NOOK B2B_NOOK in Education_text');">NOOK in Education</a></div>
+</li>
+</ul>
+<h2 class="augHeader">Need Help?</h2>
+<ul>
+<li>
+<div><a href="http://help.barnesandnoble.com/app/nook_support/list" onclick="set_cookie('agn_Need Help?_NOOK Support_text');">NOOK Support</a></div>
+</li>
+<li>
+<div><a href="https://bookclubs.barnesandnoble.com/welcome" onclick="set_cookie('agn_Need Help?_Support Forum_text');">Support Forum</a></div>
+</li>
+<li>
+<div><a href="/h/nook/media-kits" onclick="set_cookie('agn_Need Help?_Media Kits_text');">Media Kits</a></div>
+</li>
+<li>
+<div><a href="https://help.barnesandnoble.com/app/answers/detail/a_id/2824" onclick="set_cookie('agn_Need Help?_Redeem Your Gift Card_text');">Redeem Your Gift Card</a></div>
+</li>
+<li>
+<div><a href="http://nook.barnesandnoble.com/u/nook-legal-documents/379004098" onclick="set_cookie('agn_Need Help?_Legal_text');">Legal</a></div>
+</li>
+<li>
+<div><a href="https://help.barnesandnoble.com/" onclick="set_cookie('agn_Need Help?_Contact Us_text');">Contact Us</a></div>
+</li>
+</ul>
+<figcaption>Advertising</figcaption>
+<script type="text/javascript">
+//<![CDATA[
+
+$(document).on('googleRelatedAdsEnabled', function() {
+
+$(document).on('rendered-slot1', function() {
+if($('#relatedAd iframe').length > 0) {
+$('#relatedAd iframe').attr('title', 'Advertising');
+}
+});
+googletag.cmd.push(function() {
+googletag.display("relatedAd");
+});
+
+});
+//]]>
+</script>
+</nav>
+<section id="searchGrid" class="primary-content clearer">
+
+
+
+
+
+
+
+
+ 
+
+
+
+<div class="bn-ccr-core-page-hero-2">
+<section class="content-shadow" id="promoContentContainer"><a onclick="set_cookie('cqph2_get-bn-readouts-on-nook-today_get-the-app_imagetext');" class="hero-2-wt-wb" href="http://www.nook.com/nookapp/">
+<div class="hero-2-img-container"><img title="B&amp;N Readouts on Samsung Galaxy Tab S2 NOOK and iPhone" alt="B&amp;N Readouts on Samsung Galaxy Tab S2 NOOK and iPhone" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/hero2/2016/BN_Reaoduts_hero_2.jpg" /></div>
+<section id="promoInfoBottom">
+<p>Get B&amp;N Readouts on NOOK Today</p>
+<button class="btn-addtocart">Get the App</button></section>
+</a></section>
+</div>
+
+ 
+
+
+
+<div class="video-editorial">
+<section id="vidEditorial">
+<h2></h2>
+<div id="vidEditorialVideo">
+<figure><a onclick="set_cookie('cqve__Add_video');" href="#" data-modal-class="BN.Modal.Browse.PDP.Video" class="display-video" data-media-title="BN Readouts" data-media-stem="" data-asset-id="2906485" data-asset-source="" data-asset-skin=""><img title="BN Readouts" alt="BN Readouts" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/video-thumbnails/2016/videothumb_bn-readouts.jpg" /></a></figure>
+</div>
+<h4>Scroll Down Our Aisles</h4>
+<p>Enjoy a quick read for every moment with our free digital discovery feature &ndash; available on <a href="http://www.nook.com/nookapp/">NOOK</a>* and <a href="http://mbarnesandnoble.skavaone.com/readouts/">BN.com</a>. Explore favorite genres or stumble upon new authors and interests. It&rsquo;s a fun, fresh way to browse.</p>
+<p>*Version 4.5 and above, on NOOK Reading App&trade;,<br />
+ NOOK&reg; by Samsung, and NOOK GlowLight Plus&trade;</p>
+<p><br />
+ &nbsp;</p>
+</section>
+</div>
+
+
+ 
+
+
+
+
+
+
+
+<style type="text/css">
+/*  Overwrite Global Desktop styles for Mobile */
+#searchGrid { 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+section#customerFavorites, section#featuredAuthor, section#featuredBrands, section#featuredEditorialSlot, section#gridViewSpotlight, section#hotBooks, section#hotBooksWithDesc, section#newWriters, section#nowShipping, section#searchGrid > div.bn-ccr-core-page-hero-1, section#searchGrid > div.bn-ccr-core-page-hero-2, section#summerReading, section#todaysDeal, section#vidEditorial, section.blog-rss-feed, section.featuredCategories {
+    /* inherit from desktop
+    border-bottom: 1px solid #ccc;
+    height: auto;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    */
+    /* change for skava mobile */
+    width: 100%;
+}
+/*  End Overwrite Global Desktop  */
+
+
+/*  bnreads RSS Module  */
+@media only screen and (max-width: 749px) {   
+    .double .bnreads-viewport, .triple .bnreads-viewport{  
+        overflow-x: scroll; 
+        -webkit-overflow-scrolling: touch;  
+    }
+    .single .bnreads-pod img,.single .bnreads-img-wrap {float:none; margin-right:0;   }
+}
+@media only screen and (max-width: 599px) {  
+   .button-module-more{
+        top:15px;
+        span {display:none;} 
+        &:after{  content:">"; font-size:20px; } 
+    }
+}
+/*  End bnreads   */
+
+
+</style>
+
+
+
+
+<div class="html content-node">
+<div class="html-embed-container">
+<section class="parbase blog-rss-feed content-node">
+<div class="bnreads triple">
+<!--     <div class="bnreads-row"><h1><figure><a onclick="set_cookie('cqbnreadsrss_bn-reads_na_text');" href="http://www.barnesandnoble.com/blog/"> <img title="B&amp;N Reads" alt="B&amp;N Reads" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/bn-reads/bnreads_header_logo.jpg"> </a> </figure></h1><div class="button-module-more"><a onclick="set_cookie('cqbnreadsrss_bn-reads_read-more_button');" href="http://www.barnesandnoble.com/blog/"><span>Read More</span></a> </div></div> -->
+
+<div class="bnreads-row">
+<div class="bnreads-viewport">
+<div class="bnreads-pods">
+<div class="bnreads-pod"><img alt="A lady checking B&amp;N Readouts on her phone" class="Thumbnail thumbnail storefront-three" src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/nook/bn-readouts/readouts_pod1.jpg" /> 
+<div class=" edit-pod-copy">
+<h3>Discovery<br />
+Delivered Daily</h3>
+<p>Browse daily book excerpts, recipes, and magazine articles, and catch up on reviews from readers and booksellers across the country.</p>
+</div>
+</div>
+<div class="bnreads-pod"><img alt="B&amp;N Readouts titles" class="Thumbnail thumbnail storefront-three" src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/nook/bn-readouts/readouts_pod2.jpg" /> 
+<div class=" edit-pod-copy">
+<h3>A Tasting Menu<br />
+for Readers</h3>
+<p>Dip into romance or mystery, or find unexpected treats across a range of topics. Readouts&trade; is curated by our editors to surprise and delight you.</p>
+</div>
+</div>
+<div class="bnreads-pod"><img alt="Share B&amp;N Readouts on social media" class="Thumbnail thumbnail storefront-three" src="http://dispatch.barnesandnoble.com/content/dam/ccr/h/nook/bn-readouts/readouts_pod3_stroke.jpg" /> 
+<div class=" edit-pod-copy">
+<h3>Stories You&rsquo;ll Want<br />
+to Share</h3>
+<p>Seamlessly share your favorites with friends through your preferred social channels.<br />
+<a onclick="set_cookie('cqve__Add_video');" href="#" data-modal-class="BN.Modal.Browse.PDP.Video" class="display-video" data-media-title="BN Readouts Tour" data-media-stem="" data-asset-id="2906519" data-asset-source="" data-asset-skin="">Watch How B&amp;N Readouts Works</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--  Banner
+
+<div class="parbase banner-with-image content-node"><a onclick="set_cookie('cqbwi_read-a-book-free-on-serial-reads_check-out-this-months-pick_imagetext');" href="/readouts/serial-reads/">
+<section id="nookPromo"><img title="" alt="" class="cq-image-placeholder" src="//dispatch.barnesandnoble.com/etc/designs/default/0.gif" /> 
+<div class="banner-w-img-hdr">Read a book FREE on Serial Reads<span class="text-link">Check out this month's pick</span></div>
+</section>
+</a></div>
+
+ -->
+
+
+
+
+
+<!-- Customet Faforites
+
+<div class="content-node customer-favorites">
+<section id="customerFavorites">
+<h2>Explore our Topics</h2>
+<ul id="book-carousel-customer-favs">
+<li><a onclick="set_cookie('cqcf_explore-our-topics_fiction_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/fiction/">
+<figure><img title="Fiction" alt="Fiction" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_Fiction.png" /> 
+<figcaption>Fiction</figcaption>
+</figure>
+</a></li>
+<li><a onclick="set_cookie('cqcf_explore-our-topics_romance_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/romance/">
+<figure><img title="Romance" alt="Romance" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_Romance.png" /> 
+<figcaption>Romance</figcaption>
+</figure>
+</a></li>
+<li><a onclick="set_cookie('cqcf_explore-our-topics_mysteries--thrillers_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/mysteries-thrillers/">
+<figure><img title="Mysteries &amp; Thrillers" alt="Mysteries &amp; Thrillers" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_Mys-Thrillers.png" /> 
+<figcaption>Mysteries &amp; Thrillers</figcaption>
+</figure>
+</a></li>
+<li><a onclick="set_cookie('cqcf_explore-our-topics_sf--fantasy_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/sf-fantasy/">
+<figure><img title="SF &amp; Fantasy" alt="SF &amp; Fantasy" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_SF-Fantasy.png" /> 
+<figcaption>SF &amp; Fantasy</figcaption>
+</figure>
+</a></li>
+<li><a onclick="set_cookie('cqcf_explore-our-topics_teen--ya_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/teen-ya/">
+<figure><img title="Teen &amp; YA" alt="Teen &amp; YA" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_Teen-YA.png" /> 
+<figcaption>Teen &amp; YA</figcaption>
+</figure>
+</a></li>
+<li><a onclick="set_cookie('cqcf_explore-our-topics_books--ideas_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/books-ideas/">
+<figure><img title="Books &amp; Ideas" alt="Books &amp; Ideas" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_Books-Ideas.png" /> 
+<figcaption>Books &amp; Ideas</figcaption>
+</figure>
+</a></li>
+<li><a onclick="set_cookie('cqcf_explore-our-topics_food--cooking_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/food-cooking/">
+<figure><img title="Food &amp; Cooking" alt="Food &amp; Cooking" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_Food-Cooking.png" /> 
+<figcaption>Food &amp; Cooking</figcaption>
+</figure>
+</a></li>
+<li><a onclick="set_cookie('cqcf_explore-our-topics_science--tech_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/science-tech/">
+<figure><img title="Science &amp; Tech" alt="Science &amp; Tech" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_Scienc-Tech.png" /> 
+<figcaption>Science &amp; Tech</figcaption>
+</figure>
+</a></li>
+<li><a onclick="set_cookie('cqcf_explore-our-topics_business--innovation_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/business-innovation/">
+<figure><img title="Business &amp; Innovation" alt="Business &amp; Innovation" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_Busi-Innov.png" /> 
+<figcaption>Business &amp; Innovation</figcaption>
+</figure>
+</a></li>
+<li><a onclick="set_cookie('cqcf_explore-our-topics_lifestyle_image');" href="http://mbarnesandnoble.skavaone.com/readouts/category/lifestyle/">
+<figure><img title="Lifestyle" alt="Lifestyle" class="full-shadow" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/nook/customer-favorites/2016/Readouts_Topic_Lifestyle.jpg" /> 
+<figcaption>Lifestyle</figcaption>
+</figure>
+</a></li>
+</ul>
+<div id="carousel-pagination-1"></div>
+<div class="prev-item"></div>
+<div class="next-item"></div>
+</section>
+</div>
+
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="clearer"></div>
+<div class="clearer"></div>
+<script type="text/javascript">
+//<![CDATA[
+if(!$('body').hasClass('thank-you')) {
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-11110821-1', {'cookieDomain': 'barnesandnoble.com'});
+ga('send', 'pageview');
+}
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/release/js/vendor.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/release/js/contrib.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/release/js/modal.modals-browse.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript" src="//js.js-bn.com/static/js/js-messaging.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/release/js/bn.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+$.webshims.polyfill('es5 forms forms-ext');
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/sections/search/search.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/vendor/jquery.scrollpane.min.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/vendor/jquery.mousewheel.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/sections/pdp/swfobject2.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/sections/pdp/kitcloud.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/sections/pdp/flashdetect.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/js-countries.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript" src="//js.js-bn.com/static/js/bn/bn.analytics.js?v4.1.4">
+//<![CDATA[
+//]]>
+</script>
+ <script type="text/javascript">
+//<![CDATA[
+
+var digitalData = {"session":{"sessionID":"6079308135DEE54895C47273AED26E5F","serverName":"prodny_store02"},"page":{"timestamp":"Fri Jan 27 08:25:26 EST 2017","category":{"primaryCategory":"nook","subCategory":["bn-readouts"],"hierarchy":"/h/nook"},"pageInfo":{"pageType":"nook","pageName":"nook:nook","language":"en","geoRegion":"US","breadCrumbs":["home","h","nook"],"ipAddress":"152.179.137.234"},"attributes":{"internalCampaignCTA":"","internalCampaignElement":"","internalCampaignAdFormat":"","internalCampaignPageType":"","internalCampaignDescription":""}},"cart":{"price":{"shipping":0,"priceWithTax":0,"transationalTotal":0,"basePrice":0}}};
+
+if (typeof s_setP !== 'undefined') {
+s_setP('digitalData.component[1].componentInfo.componentName','promo_content');
+s_setP('digitalData.component[1].componentInfo.componentLocation','tcmp-toputilitycontent');
+s_setP('digitalData.component[1].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[2].componentInfo.componentName','promo_content');
+s_setP('digitalData.component[2].componentInfo.componentLocation','tcmp-toputilitycontent');
+s_setP('digitalData.component[2].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[3].componentInfo.componentName','promo_content');
+s_setP('digitalData.component[3].componentInfo.componentLocation','tcmp-toputilitycontent');
+s_setP('digitalData.component[3].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[4].componentInfo.componentName','promo_content');
+s_setP('digitalData.component[4].componentInfo.componentLocation','tcmp-toputilitycontent');
+s_setP('digitalData.component[4].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[5].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[5].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[5].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[6].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[6].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[6].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[7].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[7].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[7].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[8].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[8].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[8].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[9].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[9].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[9].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[10].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[10].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[10].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[11].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[11].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[11].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[12].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[12].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[12].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[13].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[13].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[13].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[14].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[14].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[14].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[15].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[15].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[15].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[16].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[16].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[16].componentInfo.primaryCategory','internal campaign');
+s_setP('digitalData.component[17].componentInfo.componentName','ppod_topnav');
+s_setP('digitalData.component[17].componentInfo.componentLocation','tcmp-topnavcontent');
+s_setP('digitalData.component[17].componentInfo.primaryCategory','internal campaign');
+
+}
+$(document).ready(function(){
+if (typeof s_setP !== 'undefined') {
+
+BN.Analytics.Landing.init();
+
+BN.Analytics.Generic.GoogleAds();
+
+}
+});
+_satellite.pageBottom();
+//]]>
+</script>
+  </section>
+</div>
+</main>
+
+<script type='text/javascript' src='//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201701250131p/js/proxy.js'></script>
+</body>
+</html>
+

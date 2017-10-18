@@ -1,6 +1,80 @@
 (function() {
- 
+
+
+
 // Utilities...
+
+// retrieve querystring params
+	var BNgetQSParams =function (sParam) {
+	    var sPageURL = window.location.search.substring(1);
+	    var sURLVariables = sPageURL.split('&');
+
+	    for (var i = 0; i < sURLVariables.length; i++){
+	        var sParameterName = sURLVariables[i].split('=');
+	        if (sParameterName[0] === sParam){
+	            return sParameterName[1];
+	        }
+	    }
+	}; //console.log(BNgetQSParams('date'));
+
+	var BNcookieGet, BNcookieSet, BNcookieSetExpire, BNcookieDelete;
+	BNcookieGet = function (cookieName) {
+	  var re = new RegExp('[; ]'+cookieName+'=([^\\s;]*)');
+	  //http://www.javascripter.net/faq/regularexpressionsyntax.htm
+	  var sMatch = (' '+document.cookie).match(re);
+	  if (cookieName && sMatch) {return unescape(sMatch[1]);}
+	  return ''; //NcookieGet('cookieName2');
+	};
+	BNcookieSet = function (name, value, expires, path, domain, secure){
+	  var buildCookie;
+	  buildCookie = name + "=" + escape(value) + "; ";
+	  if(expires){
+	    expires = BNcookieSetExpire(expires);
+	    buildCookie += "expires=" + expires + "; ";
+	  }
+	  if(path){buildCookie += "path=" + path + "; ";}
+	  if(domain){buildCookie += "domain=" + domain + "; ";}
+	  if(secure){buildCookie += "secure; ";}
+	  document.cookie = buildCookie;
+	};
+	BNcookieSetExpire=function (cookieLife){
+	  var today = new Date();
+	  //var expr = new Date(today.getTime() + cookieLife * 60 * 60 * 1000);//hours
+	  var expr = new Date(today.getTime() + cookieLife * 24 * 60 * 60 * 1000);//days
+	  return  expr.toUTCString();
+	};
+	BNcookieDelete = function (name){
+	  BNcookieSet(name,'',-1);
+	};
+
+	var isPreviewEnv = false;
+	if (window.location.hostname === 'prodny-endeca.bn-web.com' || window.location.hostname === 'prodny-preview.bn-web.com' || window.location.hostname === 'localhost' ) {
+		isPreviewEnv = true;
+	}
+
+
+	// can we re-use Endeca's date format? // &Endeca_date=2016-01-04T23%3A30
+    var todaysDate;
+	if (BNgetQSParams('date') && isPreviewEnv) {
+		 todaysDate = new Date(BNgetQSParams('date')); 
+	}else{
+		todaysDate = new Date(); 
+	}
+	todaysDate.setHours(0, 0, 0); 
+	var oToday = Date.parse(todaysDate); 
+ 
+	//var tomorrowsDate = new Date();
+	//   add a day to the date
+	//tomorrowsDate.setDate(tomorrowsDate.getDate() + 1); 
+
+	// format the date to display
+	var twoDigitMonth = todaysDate.getMonth()+1;if(twoDigitMonth.length===1){twoDigitMonth="0" +twoDigitMonth;}
+	var twoDigitDay = todaysDate.getDate()+"";if(twoDigitDay.length===1){twoDigitDay="0" +twoDigitDay;}
+	var todaysDisplayDate = twoDigitMonth  + "/" + twoDigitDay + "/" + todaysDate.getFullYear();
+
+    var dayOfWeek=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+    // console.log("Today is " + dayOfWeek[todaysDate.getDay()]);  // console.log( todaysDate.getDay());
+
  
 	loadRWDimg = function(dataAttr) {
 		$("["+dataAttr+"]").each(function(index, value){
@@ -9,15 +83,15 @@
 	 	});
 	};
 	 
-
+ 
  
  
     $(function() { //document.ready   
 /*
 		 $(window).resize(function(){
 
-		 });
-
+		 });  
+   
 		 $(window).resize(); 
 */
 
@@ -30,11 +104,10 @@
 		}else{
 		    loadRWDimg('data-img-src-tablet');
 		}
- 
-
+  
 
       var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
-      if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com"){isMobile = true;}
+      if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com"|| window.location.hostname === "mbarnesandnoble.skavaone.com") {isMobile = true;}
       if ( isMobile ){ // ***  Applies to Mobile Only  ***  
 	  //if ($('.main-body').length) { // ***  Applies to Mobile Only  ***  removed: class may not be available post SKAVA
 	  	// event carousel for mobile 
@@ -261,14 +334,52 @@
 
 
 
+  
 
-
-
-
+        // r17 Textbooks Desktop Search funtionality  
+        if ($('form#r17TextBookSearch.DT').length) {
+			$("#r17TextBookSearch.DT #siteSearch").keypress(function(event) {
+			    if (event.which === 13) { 
+			        var r17_txtSearchDT = $('form#r17TextBookSearch.DT'); 
+			        r17_txtSearchDT.submit(function(){txtBookQuickSearch();});        
+			        txtBookQuickSearch = function () {       
+			            var submitval = ($.trim($('#r17TextBookSearch.DT #siteSearch').val()).replace(/[\W]/g,"+"));   //encodeURIComponent    
+			            var actionval = location.protocol + "//"+location.hostname+"/s/"+submitval+"/_/N-8q9";          
+			            r17_txtSearchDT.attr('action', actionval);   
+			            r17_txtSearchDT.attr('method', 'get');  
+			        };
+			    }
+			}); 
+        }
  
+        // r17 Textbooks Mobile Search funtionality  
+        if ($('form#r17TextBookSearch.MP').length) {
+            var r17_txtSearchMP = $('form#r17TextBookSearch.MP'); 
+            r17_txtSearchMP.submit(function(){txtBookQuickSearch();});        
+            txtBookQuickSearch = function () {       
+                var submitval = ($.trim($('#r17TextBookSearch.MP #siteSearch').val()).replace(/[\W]/g,"+"));   //encodeURIComponent    
+                var actionval = location.protocol + "//"+location.hostname+"/s/"+submitval+"/_/N-8q9";          
+                r17_txtSearchMP.attr('action', actionval);   
+                r17_txtSearchMP.attr('method', 'get');     
+            };  
+		    $(".cqTextBookSearch-isbn-link").on( "click", function(e) {  
+		    	e.preventDefault(); 
+		    	var isbnLink = $(".cqTextBookSearch-isbn-link"); 
+			    var isVisible = $(".cqTextBookSearch-isbn-sample").is(":visible"); 
+
+			    var el = $(this); 
+				if( el.hasClass('active') ) {
+					el.removeClass('active');
+					$("#r17TextBookSearch.MP #siteSearch").focus();
+				} else {  
+					el.addClass('active');
+				}
+				return false; 
+			});  
+		}
 
 
-		// Textbooks Search funtionality  
+		// Textbooks Search funtionality  *** PRE r17 Search *** 
 		if ($('form#cqTextBookSearch').length) {
 			var txtSearch = $('form#cqTextBookSearch');	
 				txtSearch.submit(function(){txtBookQuickSearch();});		
@@ -301,7 +412,7 @@
 					$("#searchTextBookBar").focus();
 				}
 				else
-				{ 
+				{  
 					el.addClass('active');
 				}
 				return false;
@@ -346,13 +457,153 @@
 	                } 
 
                   var icItem = "event_result-grid_"+ean+"_image";
-	              var imgPath = "http://prodimage.images-bn.com/pimages/"+ean+"_p0_v3_s118x184.jpg";
+	              var imgPath = "//prodimage.images-bn.com/pimages/"+ean+"_p0_v3_s118x184.jpg";
 	              var jsonItem = $('<div class="jsonGridItem"><a href="http://stores.barnesandnoble.com/" onclick="set_cookie('+icItem+');"><div class="jsonGridImage"><img src="'+imgPath+'" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridTitle">'+titleDisplayed+'</p><p class="jsonGridContributor">by '+contributor+'</p></div></a></div>'); 
 	             $('#jsonGridItems').append(jsonItem); 
 
 	            }
 	        });
 	    }
+
+	    // NOOK Device pricing 
+	 	if($('#compare').length || $('.comp-price').length || $('#nook-device-price').length){  
+	          $.ajax({   
+	          	  // url: "http://localhost:3000/HTML/gs/nook/nook-device.json?format=json", 
+	      		  url: "//"+window.location.host+"/web-services/nook-devices?format=json",
+	              type: "GET",
+	              dataType: "text",
+	          })
+	            // Code to run if the request succeeds (is done);
+	            // The response is passed to the function
+	            .done(function( xjson ) { 
+	              //data downloaded so we call parseJSON function  
+	              var json = $.parseJSON(xjson); //now json variable contains data in json format 
+
+	          			/* possible future data points */
+		              // var collectionTitle = json.mainContent[0].title;  
+		              // var seeAllLink = json.mainContent[0].seeAllLinkUrl;  
+		              // var seeAllLinkText = json.mainContent[0].seeAllLinkText;  
+	                $.each(json.mainContent[0].records, function(i) {   
+	                    //console.log(i);
+	                  if (i < 20){   
+						var ean= this.attributes["common.id"]; 
+	                    var pdpListPrice = this.attributes.P_List_Price; 
+						pdpListPrice='$'+Math.round(pdpListPrice*100)/100; 
+	                    var pdpSalePrice = this.attributes.P_Sale_Price; 
+						pdpSalePrice='$'+Math.round(pdpSalePrice*100)/100;
+	                    var pdpPctSave = this.attributes.P_Percentage_Save; 
+	          			/* possible future data points */
+	                    // var pdpTitle = this.attributes.P_Display_Name; 
+	                    // var imageURL = "http://prodimage.images-bn.com/pimages/"+this.attributes.P_Image_Url;
+	                    // var pdpURL = "/w/"+this.attributes.P_SEO_Keywords+"/"+this.attributes["sku.workId"]+"?ean="+this.attributes["common.id"];
+	                    // var imageURL = "http://prodimage.images-bn.com/pimages/"+this.attributes.P_Image_Url;
+						$("[data-bnprice='" + ean +"']").each(function(){ 
+						    if($(this).parent().hasClass("comp-price")){  
+						    // if comparison page  or show list & bnprice 
+						     	if (pdpSalePrice < pdpListPrice){
+						     		$(this).html('<s>'+pdpListPrice+'</s>');
+						     		$(this).next().html(pdpSalePrice); 
+								} else { 
+						     		$(this).html(pdpSalePrice); 
+								} 
+						     	$(this).attr("data-endeca-price","true"); 
+						    } else { 
+						     	$(this).html(pdpSalePrice); 
+							}
+						});                 
+	                  }
+	                });   
+		        
+	            }) 
+	            // Code to run if the request fails; the raw request and
+	            // status codes are passed to the function
+	            .fail(function( xhr, status, errorThrown ) {
+	              // console.log( "Error: " + errorThrown );
+	              // console.log( "Status: " + status );   
+	            })
+	            // status codes are passed to the function
+	            .success(function( xhr, status ) { 
+	                //console.log( "xhr: " + xhr );
+	                //console.log( "Status: " + status ); 
+	            })
+	            // Code to run regardless of success or failure;
+	            .complete(function( xhr, status ) {
+	             // alert( "The request is complete!" ); 
+	            });
+	     
+	    } // end NOOK pricing
+
+
+
+
+
+
+
+
+    	// r17 Coupon & Deals page - Render Promo Items fron CQ array on page
+    	// http://www.barnesandnoble.com/h/coupons-deals
+    	// Confirm dom wrapper to write to AND array are available! then...
+	  	if ($('#coupn-promo-container').length && (typeof cp_promo_items !== "undefined")){
+	      $.each(cp_promo_items, function(i) { // console.log(i); loop through each array line
+	      	//console.log(i);
+            var count = i +1;   
+            var promoIsCurrent = true;
+            if(count < 30){ // isolate this array line's items 	
+				var promoType = this.promoType.trim();
+				var promoStore = this.promoStore.trim();
+				var promoTitle = this.promoTitle.trim();
+				var promoCopy = this.promoCopy.trim();
+				var promoHref = this.promoURL.trim();
+				var promoExpSrc = this.promoExp.trim();
+				var promoExp = "";
+				if(promoExpSrc.length > 1){
+					promoExp = "Expires&nbsp;"+promoExpSrc; 
+					// lets compare Expiration date with today's date 
+					var splitDate = promoExpSrc.split("/");  
+					if (splitDate[2].length===2){splitDate[2]=20+splitDate[2];} 
+					var promoExpDate = splitDate[0]+'/'+splitDate[1]+'/'+splitDate[2];
+					var oExpDate = Date.parse(promoExpDate);
+					if (oToday > oExpDate) {promoIsCurrent=false;} 
+				} 
+	            if(promoIsCurrent){ // build internal campaign, check URL formating, and write promo item
+	               var ic_title = promoTitle.replace(/ /gi,'-').replace(/([^a-z0-9-]+)/gi, '').toLowerCase();
+	               var ic_param = "'couponsdeals_promotion_"+ic_title+"-shop-now_button'";
+				  if (promoHref.indexOf('www.')===0) {promoHref = 'https://'+promoHref;}
+				  // var promoLine = $('<div class="coupn-promo clearer">
+				  // 	<a href="'+promoHref+'" title="'+promoTitle+'" onclick="set_cookie('+ic_param+');">
+				  // 	<div class="coupn-promo-avatar">
+				  // 	<span class="table-cell">'+promoType+'</span></div>
+				  // 	<div class="coupn-promo-item">
+				  // 	<p class="coupn-promo-hdr">'+promoStore+'</p>
+				  // 	<p class="coupn-promo-title">'+promoTitle+'</p>
+				  // 	<p class="coupn-promo-copy">'+promoCopy+'</p>. 
+				  // 	<p class="coupn-promo-legalize">'+promoExp+'</p>
+				  // 	</div>
+				  // 	<div class="coupn-promo-cta"><span class="cq-bttn">Shop Now</span></div></a></div>');
+					var promoLine = $('<div class="coupon col-lg-6"><div class=" pl-s pt-xs pb-m bd-b-geyser coupon-promo"><a href="'+promoHref+'" onclick="set_cookie('+ic_param+');"><div class="brow text--uppercase color-coal">'+promoType+' | '+promoStore+'</div><div class="promo-item-name"><div class="header3 color-coal">'+promoTitle+'</div><div class="arrow"></div></div><div class="coupon-promo-copy-height text--medium color-coal mt-xxs">'+promoCopy+' '+promoExp+'</div><button class="btn btn--medium">Shop Now</button></a></div></div>');
+	              $('#coupn-promo-container').append(promoLine);  
+	           } 
+            } 
+
+	      });
+		} 
+  
+
+    	// Coupon & Deals page - control display of Featured Deal of the Day
+		// if ($('.coupn-featured-content[data-dotd]')) {
+		// 	if ( todaysDate.getDay() === 3 ) { // 3 is Wed
+		// 		$('.coupn-featured-content[data-dotd]').each(function(index, element) {
+		// 			$(this).removeClass('hideIt');
+		// 			$(this).attr('data-dotd', $(this).attr('data-dotd') === 'isVisible' ? 'isHidden' : 'isVisible');
+		// 			$('#dodd-expDate').text(todaysDisplayDate);
+		// 		});
+
+		// 	}
+		// }
+
+
+
+
 
 // $(window).scroll(function()
 // {
