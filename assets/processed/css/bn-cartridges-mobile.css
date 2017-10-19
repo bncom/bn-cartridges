@@ -1676,7 +1676,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .pmis-samplet-next-item,
 .html .pmis-samplet-prev-item {
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
   height: 25px;
@@ -1725,7 +1725,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 23px 0 28px;
 }
 .html .pmis-steps::before {
-  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
   top: 25px;
   content: "";
   display: block;
@@ -1735,7 +1735,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   width: 100%;
 }
 .html .pmis-steps::after {
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
   content: "";
   display: block;
   height: 6px;
@@ -1764,7 +1764,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
@@ -2081,7 +2081,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   bottom: 0px;
 }
 .html .bnapp-hero .itunes-icon {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
   float: left;
   height: 33px;
   margin: 2px 0 0 20px;
@@ -2098,7 +2098,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-rendering: optimizelegibility;
 }
 .html .bnapp-button {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
   clear: both;
   height: 41px;
   margin: 0 auto;
@@ -2115,7 +2115,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-button-small {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
   clear: both;
   float: left;
   height: 41px;
@@ -2132,11 +2132,11 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-categories .module-bn {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
   padding: 3% 0;
 }
 .html h2.bnapp-hdr-standard {
-  background: transparent url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
+  background: rgba(0, 0, 0, 0) url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
   letter-spacing: 0.5px;
   margin: 0 auto;
   text-align: center;
@@ -2172,14 +2172,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   line-height: 24px;
 }
 .html .bnapp-sbs {
-  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
   min-height: 232px;
   overflow: hidden;
 }
 .html .bnapp-sbs .bg-body-right {
-  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
   float: right;
   height: 17px;
   width: 202px;
@@ -3212,7 +3212,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -3228,7 +3228,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -3575,7 +3575,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -3820,7 +3820,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -3836,7 +3836,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -4259,7 +4259,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -5007,7 +5007,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-questions {
   margin: 25px auto 50px;
   /* new */
-  width: 900px;
+  width: 860px;
   /* new */
 }
 .html .mc-questions p {
@@ -5263,28 +5263,26 @@ section .editorial-collection .align-horizontal.row .col-lg-4 p {
 }
 section .editorial-collection .align-horizontal.row .col-lg-8 {
   width: 100%;
-}
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray {
   border: none;
 }
 section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray.pl-m {
   padding-left: 0px !important;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf {
   margin: 0px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list {
+section .editorial-collection .align-horizontal.row .col-lg-8 .slick-list {
   margin: 0px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track {
+section .editorial-collection .align-horizontal.row .col-lg-8 .slick-track {
   width: 100% !important;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-tile {
   display: table-cell;
   padding-right: 10px;
   width: 106px !important;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont {
   height: auto;
   max-height: 173px;
   margin-bottom: 5px;
@@ -5292,24 +5290,26 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-
   min-width: fit-content !important;
   padding: 0px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image a {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image a {
   display: -webkit-box;
   max-width: 114px !important;
   font-size: 13px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image a img {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image a img {
   max-height: 173px !important;
   max-width: auto;
   width: 100% !important;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image .product-shelf-favorite, section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image product-shelf-curl, section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image product-last-star {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image .product-shelf-favorite,
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image product-shelf-curl,
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image product-last-star {
   display: none;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-info {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-info {
   border-top: 0px;
   margin-bottom: 5px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-info a {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-info a {
   font-size: 13px;
 }
 
@@ -5328,7 +5328,7 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-
 @media only screen and (max-width: 699px) {
   #searchGrid section h2 #searchGrid section h2 {
     margin-bottom: 5px;
-    font-family: PoynterOSDisp-Semibold,Poynter;
+    font-family: PoynterOSDisp-Semibold, Poynter;
     font-size: 22px;
     color: #010101;
     position: relative;
@@ -5389,6 +5389,101 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-
   max-width: 114px;
 }
 
+/* Start Features Categories */
+.department-product-grid {
+  list-style: none;
+  padding: 0;
+  height: auto !important;
+  margin-top: 3rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #f1f3f1;
+}
+.department-product-grid .book-link {
+  display: none;
+}
+.department-product-grid .item {
+  padding: 0px;
+}
+.department-product-grid .item div {
+  border-right: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 .75rem;
+  -webkit-flex-direction: column;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.department-product-grid .item div .varieties {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.department-product-grid .item header {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  width: 100%;
+}
+
+.department-product-grid.columns-4 li.item[style] {
+  height: unset !important;
+}
+.department-product-grid.columns-4 .item {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.link-reset {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: GillSansMTPro-Medium;
+  padding: 18px 31px 16px 20px;
+  color: #002612;
+}
+.link-reset::before {
+  background: url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710112353p/img/sprite-categories_2x.png");
+  background-position: -38px -3px;
+  background-size: 276px 84px;
+  height: 16px;
+  width: 11px;
+  text-indent: 100%;
+  white-space: nowrap;
+  right: 18px;
+  position: absolute;
+  top: 19px;
+  content: " ";
+}
+
+/* End Featured Categories Code */
+/* Start Banner without image clean up */
+.banner-with-image .promo-pdp a {
+  font: 16px GillSansMTPro-Medium;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+.banner-with-image .promo-pdp a .promo-pdp__cta {
+  font-family: GillSansMTPro-Book, GillSansMTPro-Medium;
+  color: #346250;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  padding: 15px 0 0;
+}
+
+/* End  Banner with image Cleanup */
 /* textbooks */
 .mobile-only {
   display: none;
@@ -6019,7 +6114,7 @@ header .text--subheader {
 .promo-item-name .arrow:after {
   content: "";
   display: block;
-  background: transparent url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
+  background: rgba(0, 0, 0, 0) url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
   height: 17px;
   white-space: nowrap;
   width: 11px;
