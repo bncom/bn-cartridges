@@ -5389,6 +5389,18 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-inf
   max-width: 114px;
 }
 
+.product-shelf .slick-arrow {
+  display: none !important;
+}
+
+.product-shelf-info {
+  border-top: none !important;
+}
+
+.book .product-shelf-info {
+  min-height: 17.75rem !important;
+}
+
 /* Start Features Categories */
 .department-product-grid {
   list-style: none;
