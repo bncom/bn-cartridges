@@ -248,6 +248,10 @@ body {
   border-radius: 0;
 }
 
+#main-content.desktop .main-content.container {
+  padding: 0;
+}
+
 .html {
   position: relative;
   clear: left;
@@ -328,13 +332,12 @@ body {
   }
   */
   /*Browse page links*/
-  /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
-  /* end textbooks subppages */
   /*  Put Me In The Story */
   /*  // END Put Me In The Story */
-  /* persona  [ personalities mothersday fathersday ] */
-  /* store title design change  added to rich text editor */
-  /* // end persona  */
+  /* //Smart Gift   */
+  /* Sub header */
+  /* How it works steps */
+  /* //Smart Gift   */
   /* jsonGridItem -- result list from json array -- black-friday-signed-editions */
   /*  sticky nav */
   /* Privacy Policy */
@@ -999,6 +1002,10 @@ body {
 .html .element-shadow:hover {
   box-shadow: none;
 }
+.html .clearer {
+  clear: all;
+  overflow: hidden;
+}
 .html .hideIt {
   display: none;
 }
@@ -1022,6 +1029,9 @@ body {
 }
 .html .mOnly {
   display: none;
+}
+.html .break-desktop {
+  display: block;
 }
 .html .milo180 {
   font-family: Milo;
@@ -1187,7 +1197,7 @@ body {
   box-shadow: none;
 }
 .html .gift-card-list-r17 .tile {
-  height: auto;
+  height: 160px;
   margin-right: 30px;
   width: calc(33.3333% - 20px);
 }
@@ -1234,29 +1244,6 @@ body {
   line-height: 1.75;
   vertical-align: top;
   width: 238px;
-}
-.html .break-desktop {
-  display: block;
-}
-.html .cms .heroImage {
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-  border: 2px #fff solid;
-  font-size: 0;
-  line-height: 0;
-  max-width: 964px;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-.html .cms section.module {
-  border-radius: 4px;
-  border-top: 2px solid #fff;
-  box-shadow: 0 0 0 1px #d5d2d2;
-  font-size: 22px;
-  margin: 48px 0 36px 1px;
-  position: relative;
 }
 .html .pmis {
   max-width: 965px;
@@ -1374,7 +1361,7 @@ body {
 }
 .html .pmis-samplet-next-item,
 .html .pmis-samplet-prev-item {
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
   height: 25px;
@@ -1423,7 +1410,7 @@ body {
   margin: 23px 0 28px;
 }
 .html .pmis-steps::before {
-  background: rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
+  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
   top: 25px;
   content: "";
   display: block;
@@ -1433,7 +1420,7 @@ body {
   width: 100%;
 }
 .html .pmis-steps::after {
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
   content: "";
   display: block;
   height: 6px;
@@ -1462,7 +1449,7 @@ body {
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
@@ -1521,120 +1508,98 @@ body {
 .html .pmis-visible-sm {
   display: none;
 }
-.html #categoryHeaderContainer h1.persona-main-hdr {
-  font-size: 66px;
-  color: #000;
-  line-height: 1;
-  margin-top: 16px;
-}
-.html section#categoryHeaderContainer h2.persona-main-hdr {
-  color: #000;
-  font-family: PTSans, Arial, Helvetica, sans-serif;
-  font-size: 30.5px;
-  line-height: 1;
-  text-align: center;
-  display: block;
-  text-transform: none;
-  margin: 0 0 32px 0;
-}
-.html h2.persona-main-hdr:before,
-.html h2.persona-main-hdr:after {
-  content: "";
-  border-top: 1px #919190 solid;
-  width: 72px;
-  height: 1px;
-  padding: 5px 0;
-  display: inline-block;
-}
-.html h2.persona-main-hdr:before {
-  margin: 2px 10px 0 auto;
-}
-.html h2.persona-main-hdr:after {
-  margin: 2px auto 0 10px;
-}
-.html .persona-header {
+.html .smartgiftHero.desktop {
+  width: 1024px;
   position: relative;
 }
-.html .persona-header h2 {
-  margin: 8px 125px 8px 0;
-  font-family: milo;
-  font-size: 36px;
-  line-height: 1;
-  font-weight: normal;
-  border: 0px red dotted;
+.html .smartgiftHero.desktop img {
+  max-width: 100%;
 }
-.html .persona-header-cta {
-  display: block;
-  border: 1px #000 solid;
+.html .desktop .smartgiftHeroContent {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 8px 16px;
-  margin-bottom: 9px;
-  font-size: 14px;
-  color: #000;
+  top: 113px;
+  width: 650px;
 }
-.html .persona {
-  margin-bottom: 43px;
-  min-height: 134px;
+.html .desktop .smartgiftHeroContent {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 16.25px;
+  /* 1.25rem; */
+  line-height: 1.5;
 }
-.html .persona:last-of-type {
-  margin-bottom: 20px;
+.html .desktop .smartgiftHeroBrow {
+  color: #8f806b;
+  letter-spacing: 4px;
 }
-.html .persona figure {
-  font-size: 0;
-  line-height: 0;
-}
-.html .persona img {
-  width: 100%;
-}
-.html .persona a {
-  display: block;
-}
-.html .persona a:hover {
-  text-decoration: none;
-}
-.html .persona a:focus {
-  outline: 1px dashed #000;
-}
-.html .persona-header-gcbanner {
-  position: absolute;
-  right: 0;
-  text-align: center;
-  width: 318px;
-}
-.html .persona-header-gcbanner h2 {
-  margin: 22px 0 4px 0;
-  font-size: 26.29px;
+.html .desktop .smartgiftHeroHdr {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+  /* 3.23rem; */
+  letter-spacing: -.3px;
   line-height: 1;
-  font-weight: normal;
+  color: #21285d;
+  margin: 28px 0 29px;
 }
-.html .persona-header-gc-copy {
-  font-size: 18.78px;
-  color: #000;
+.html .desktop .smartgiftHerohdrCopy {
+  color: #21282d;
+  letter-spacing: 0;
 }
-.html .persona-header-gc-cta {
-  font-size: 14.08px;
-  text-transform: uppercase;
-  color: #000;
+.html .smartgifth2 {
+  margin: 29px 0 33px 0;
+}
+.html header.smartgifth2 h2 {
+  color: #525b5b;
+}
+.html .smartgifttable {
+  display: table;
+  margin: 0 0 54px 0;
+}
+.html .smartgiftSteps {
+  margin-left: 8px;
+  padding: 23px 23px 27px 23px;
+  background-color: #eeeeed;
+  width: 33%;
+  display: table-cell;
+  border-left: 8px #fff solid;
+}
+.html .smartgiftSteps:last-of-type {
+  border-right: 8px #fff solid;
+}
+.html .smartgiftStep {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 68px;
+  /* 5.25rem; */
+  line-height: .85;
+  color: #21282d;
+  float: left;
+}
+.html .smartgiftStepCopy {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* 1.23rem; */
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: #353535;
   display: block;
+  margin-left: 55px;
 }
-.html .persona-header-gc-cta:before {
-  content: "";
-  display: block;
-  border-top: 1px #000 solid;
-  width: 25px;
-  height: 1px;
-  margin: 11px auto;
+.html .smartgiftStepCopy h3 {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 600;
+  font-size: 16px;
+  /* 1.23rem; */
+  margin-bottom: 4px;
 }
-.html .persona-gcbanner {
-  height: 136px;
-  max-width: 964px;
-  margin: 0 auto;
-  position: relative;
+.html .smartgiftCTA {
+  margin-bottom: 48px;
 }
-.html .persona-gcbanner.mom {
-  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
+.html .smartgiftlegal {
+  color: #515b5b;
 }
 .html .jsonGridItem {
   display: block;
@@ -1779,7 +1744,7 @@ body {
   bottom: 0px;
 }
 .html .bnapp-hero .itunes-icon {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
   float: left;
   height: 33px;
   margin: 2px 0 0 20px;
@@ -1796,7 +1761,7 @@ body {
   text-rendering: optimizelegibility;
 }
 .html .bnapp-button {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
   clear: both;
   height: 41px;
   margin: 0 auto;
@@ -1813,7 +1778,7 @@ body {
   text-decoration: none;
 }
 .html .bnapp-button-small {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
   clear: both;
   float: left;
   height: 41px;
@@ -1830,11 +1795,11 @@ body {
   text-decoration: none;
 }
 .html .bnapp-categories .module-bn {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
   padding: 3% 0;
 }
 .html h2.bnapp-hdr-standard {
-  background: rgba(0, 0, 0, 0) url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
+  background: transparent url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
   letter-spacing: 0.5px;
   margin: 0 auto;
   text-align: center;
@@ -1870,14 +1835,14 @@ body {
   line-height: 24px;
 }
 .html .bnapp-sbs {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
   min-height: 232px;
   overflow: hidden;
 }
 .html .bnapp-sbs .bg-body-right {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
   float: right;
   height: 17px;
   width: 202px;
@@ -2357,7 +2322,7 @@ body {
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -2373,7 +2338,7 @@ body {
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -2720,7 +2685,7 @@ body {
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }

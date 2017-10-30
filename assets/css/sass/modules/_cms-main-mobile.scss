@@ -5,6 +5,10 @@
   left:0;
 } 
 
+@media only screen and (max-width: 875px) {
+    .break-desktop {display:none;}
+}
+
 /*Gift Cards */
 .gift-card-list {padding:0 20px;  }
 .gc-item figcaption {text-align:center; }
@@ -13,79 +17,101 @@
 }
 
 
-/* start textbooks subppages */
-@media only screen and (max-width: 749px) {  
-	.txtbk-column-main{width:63%; }
-   #cq-txtBookSearch.txtbkhome{ width: 75%;  margin:-20px auto 30px;}
-.txtbk-form-wrapper.txtbkhome{height:50px; } 
+
+
+/* //Smart Gift  */  
+.smartgiftHero {width: 100%; text-align: center; position: relative;}
+.smartgiftHero img{max-width: 100%; }
+.smartgiftHeroContent {position: absolute; 
+    top:5%;  
+    width: 100%; 
+    max-width: 650px;
 } 
-@media only screen and (max-width: 699px) {
-    .links-container.browse.textbooks  {display: none;}
+@media only screen and (min-width: 475px) {  
+   .smartgiftHeroContent { top:15%;   }    
 }
-@media only screen and (max-width: 649px) {   
-	.txtbk-column-main{width:59%; }
-}
-@media only screen and (max-width: 599px) {   
-	.txtbk-column-main{width:100%;float: none;  }
-	.txtbk-column-right{    
-		text-align: center;
-		width: 100%; 
-		float: none; 
-		margin:0 auto;
-	}
-}
-/* end textbooks subppages */
-
-
-
-
-@media only screen and (max-width: 875px) {
-    .break-desktop {display:none;}
-    // .cms section.module {margin-top:20px;}
-    .cms .module.textbook-options figure {
-        width:50%;  padding:18px 0; text-align: center; 
-        float: left; 
-        border-left: 1px #ccc solid; 
-        border-top: 1px #ccc solid;
-    }
-    .cms .module.textbook-options figure.first{border-left: none; border-top: none;   }
-    .cms .module.textbook-options a:nth-child(2) figure {  border-top: none;   }
-    .cms .module.textbook-options a:nth-child(3) figure{  border-left: none;   }
-     #txtBookSearch + .isbn-link-modal{ float: none; display: block;  margin: 40px 0 0 0; text-align: center; }
-    section.return-msg p {width: 65%;}
+.smartgiftHeroContent {  
+    font-family: Lato,sans-serif;
+    font-weight: 400; 
+    font-size: 13px; 
+    line-height: 1.5;
 }
 
-@media only screen and (max-width: 699px) {
-    // #txtBookSearch  {width: auto;}
-    // #txtBookSearch input[type="text"] {
-    //     width:400px;
-    //     left:50%;
-    //     margin-left:-200px;
-    // }
-    #txtBookSearch input[type="submit"] { position: relative; left: 77%; margin-left: 0;}
-    section.return-msg { text-align: center;
-        position: relative; 
-        padding: 0 15px;
-        padding-bottom: 160px;}
-    section.return-msg img {  position: absolute; right: 50%;   bottom: 0;   margin-right: -103px;z-index: 1;}
-    section.return-msg p {width: auto;}
-    .links-container.browse.textbooks  {display: none;}
+.smartgiftHeroBrow { 
+    color: #8f806b;
+    letter-spacing: 3.25px;
 }
-
-@media only screen and (max-width: 599px) {
-    .break-desktop {display:none;} 
-    .cms .module.textbook-options figure {width:100%;}
-    .cms .module.textbook-options figure {border-left: none;  }
-    .cms .module.textbook-options a:nth-child(2) figure {  border-top: 1px #ccc solid; } 
-    // #txtBookSearch  {width: auto;}
-    // #txtBookSearch input[type="text"] {
-    //     width:280px;
-    //     left:50%;
-    //     margin-left:-140px;
-    // }
-    // #txtBookSearch input[type="submit"] { position: relative; left: 52%; margin-left: 90px; }
-
+.smartgiftHeroHdr {
+    font-size: 35px; 
+    letter-spacing: -.25px;
+    line-height: 1.55;
+    color: #21285d;
+    margin: 8px 0 10px;
 }
+.smartgiftHerohdrCopy {  
+    color: #21282d;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+/* Sub header */
+header.text--center.smartgifth2 {
+  margin:40px 0 38px 0; 
+  text-align: center !important;
+}
+header.smartgifth2 h2.rule {
+  color:#21282d;
+  text-align: center !important;
+  display: block;
+  margin:0  ; 
+  line-height: 1;
+}
+/* How it works steps */
+.smartgifttable {
+  display: block;
+ margin-bottom:18px;
+}
+.smartgiftSteps {
+    margin-left:0;
+    padding: 0 20px 30px 20px; 
+    background-color: #fff; /* #eeeeed; */
+    width:100%;
+    display: block;
+    border:none; 
+} 
+.smartgiftSteps:last-of-type { border: none;}
+.smartgiftStep {
+    font-size:55px; 
+    text-align: center;
+    margin-bottom:8px;
+    float:none; 
+}
+.smartgiftStepCopy {
+    font-size: 13px; 
+    text-align: center;
+    color:#666666; 
+    display: block;
+    margin-left:0;
+ }
+ .smartgiftStepCopy h3{
+    font-size: 20px;
+    color:#21282d; 
+    margin-bottom:8px;
+ }
+ .smartgiftCTA {margin-bottom:48px;}
+ .smartgiftCTA .btn.btn--large{
+  font-size: 14px !important;
+  padding:15px 38px !important;
+}
+ .smartgiftlegal{
+  font-size: 12px;
+  color:#666666;
+  padding: 0 20px 7px;
+}
+/* //End Smart Gift   */
+
+
+
+
  
 
 
@@ -210,59 +236,7 @@
 /*   // END Put Me In The Story */
 
 
- /* persona  [ personalities mothersday fathersday ] */
-@media only screen and (max-width: 699px) {  /* store title design change  added to rich text editor */
-    #categoryHeaderContainer h1.persona-main-hdr { font-size: 27.43px; } 
-    section#categoryHeaderContainer h2.persona-main-hdr {
-        color: #000; 
-        font-size: 13.71px; 
-        margin: 1px 0 13px 0;
-        font-weight:normal;
-    }
-    h2.persona-main-hdr:before, h2.persona-main-hdr:after { padding: 2px 0; }
-    h2.persona-main-hdr:before {margin: 2px 5px 0 auto;width:26px; }
-    h2.persona-main-hdr:after {margin: 2px auto 0 5px; width:26px;} 
-}
- 
-@media only screen and (max-width: 699px) {   
-  .persona { margin-bottom:13px; 
-    &:last-of-type {  padding-top: 14px;} 
-  }
-  .persona-header {
-    padding:0 21px;
-    h2 { font-size:18.41px; margin-bottom: 4px;line-height: 1.2;}
-  }
-  .persona-header-cta {font-size:8.94px;  margin-bottom: 5px;  padding: 4px 10px; right:21px; }
- 
-  .persona-header-gcbanner h2 {
-    margin: 12% 0 4px 0; 
-    font-size: 15.4px; 
-  }
-  .persona-header-gc-copy{
-    font-size: 11px; 
-  }
-  .persona-header-gc-cta{
-    font-size: 8.25px; 
-    &:before{ 
-      width: 15px; 
-      margin: 4px auto;
-    }
-  }
-}
- 
-@media only screen and (max-width: 599px) {    
-  .persona-header-gcbanner { width: 50%; }
-  .persona-gcbanner.mom{
-    background:url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Mobile_Pod6_599.jpg) no-repeat top left;
-    background-size: 100%; 
-  }
-}
 
-@media only screen and (max-width: 370px) {     
-  .persona-header-gcbanner h2 { margin: 9% 0 4px 0;  } 
-}
- 
-/* // end persona   */
 
 
 /* black friday signed editions */

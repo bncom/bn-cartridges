@@ -43,6 +43,8 @@
     }
 }
 
+
+.clearer {clear:all; overflow: hidden;}
 .hideIt {
     display: none;
 }
@@ -75,6 +77,9 @@
     display: none;
 }
 
+.break-desktop {
+    display: block;
+}
 
 /*Font sizes initiated on coupon page*/
 
@@ -337,36 +342,7 @@
 }
 
 
-/*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
-
-.break-desktop {
-    display: block;
-}
-
-.cms .heroImage {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-    border: 2px #fff solid;
-    font-size: 0;
-    line-height: 0;
-    max-width: 964px;
-    overflow: hidden;
-    margin: 0 auto;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.cms section.module {
-    border-radius: 4px;
-    border-top: 2px solid #fff;
-    box-shadow: 0 0 0 1px #d5d2d2;
-    font-size: 22px;
-    margin: 48px 0 36px 1px;
-    position: relative;
-}
-
-
-/* end textbooks subppages */
+ 
 
 
 /*  Put Me In The Story */
@@ -678,148 +654,96 @@ li.pmisThree {
 /*  // END Put Me In The Story */
 
 
-/* persona  [ personalities mothersday fathersday ] */
 
 
-/* store title design change  added to rich text editor */
+/* //Smart Gift   */
+.smartgiftHero.desktop  {width: 1024px; position: relative;}
+.smartgiftHero.desktop  img{max-width: 100%; }
 
-#categoryHeaderContainer h1.persona-main-hdr {
-    font-size: 66px;
-    color: #000;
+
+.desktop .smartgiftHeroContent {
+    position: absolute; 
+    top:113px;
+    width:650px;
+}
+
+.desktop .smartgiftHeroContent {  
+    font-family: Lato,sans-serif;
+    font-weight: 400; 
+    font-size: 16.25px; /* 1.25rem; */
+    line-height: 1.5;
+}
+
+.desktop .smartgiftHeroBrow { 
+    color: #8f806b;
+    letter-spacing: 4px;
+
+}
+.desktop .smartgiftHeroHdr {
+    font-family: Poynter,Georgia,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px; /* 3.23rem; */
+    letter-spacing: -.3px;
     line-height: 1;
-    margin-top: 16px;
+    color: #21285d;
+    margin: 28px 0 29px;
+}
+.desktop .smartgiftHerohdrCopy {  
+    color: #21282d;
+    letter-spacing: 0;
 }
 
-section#categoryHeaderContainer h2.persona-main-hdr {
-    color: #000;
-    font-family: PTSans, Arial, Helvetica, sans-serif;
-    font-size: 30.5px;
-    line-height: 1;
-    text-align: center;
+/* Sub header */
+.smartgifth2 {margin:29px 0 33px 0;}
+header.smartgifth2 h2 {color:#525b5b;}
+
+/* How it works steps */
+.smartgifttable {display: table; margin:0 0 54px 0;}
+.smartgiftSteps {
+    margin-left:8px;
+    padding: 23px 23px 27px 23px; 
+    background-color: #eeeeed; 
+    width:33%;
+    display: table-cell;
+    border-left: 8px #fff solid;
+} 
+.smartgiftSteps:last-of-type { border-right: 8px #fff solid;}
+.smartgiftStep {
+    font-family: Poynter,Georgia,serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size:68px; /* 5.25rem; */  
+    line-height:.85;
+    color: #21282d; 
+    float:left; 
+}
+.smartgiftStepCopy {
+    font-family: Lato,sans-serif;
+    font-weight: 400; 
+    font-size: 16px; /* 1.23rem; */
+    letter-spacing: 0;
+    line-height: 1.5;
+    color:#353535;
     display: block;
-    text-transform: none;
-    margin: 0 0 32px 0;
-}
+    margin-left:55px;
+ }
+ .smartgiftStepCopy h3{
+    font-family: Poynter,Georgia,serif;
+    font-weight: 600; 
+    font-size: 16px; /* 1.23rem; */
+    margin-bottom:4px;
+ }
+ .smartgiftCTA {margin-bottom:48px;}
+ .smartgiftlegal{color:#515b5b;}
 
-h2.persona-main-hdr:before,
-h2.persona-main-hdr:after {
-    content: "";
-    border-top: 1px #919190 solid;
-    width: 72px;
-    height: 1px;
-    padding: 5px 0;
-    display: inline-block;
-}
-
-h2.persona-main-hdr:before {
-    margin: 2px 10px 0 auto;
-}
-
-h2.persona-main-hdr:after {
-    margin: 2px auto 0 10px;
-}
-
-.persona-header {
-    position: relative;
-    h2 {
-        margin: 8px 125px 8px 0;
-        font-family: milo;
-        font-size: 36px;
-        line-height: 1;
-        font-weight: normal;
-        border: 0px red dotted;
-    }
-}
-
-.persona-header-cta {
-    display: block;
-    border: 1px #000 solid;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 8px 16px;
-    margin-bottom: 9px;
-    font-size: 14px;
-    color: #000;
-}
-
-.persona {
-    margin-bottom: 43px;
-    min-height: 134px;
-    &:last-of-type {
-        margin-bottom: 20px;
-    }
-    figure {
-        font-size: 0;
-        line-height: 0;
-    }
-    img {
-        width: 100%;
-    }
-    a {
-        display: block;
-    }
-    a:hover {
-        text-decoration: none;
-    }
-    a:focus {
-        outline: 1px dashed #000;
-    }
-}
-
-.persona-header-gcbanner {
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 318px;
-    h2 {
-        margin: 22px 0 4px 0;
-        font-size: 26.29px;
-        line-height: 1;
-        font-weight: normal;
-    }
-}
-
-.persona-header-gc-copy {
-    font-size: 18.78px;
-    color: #000;
-}
-
-.persona-header-gc-cta {
-    font-size: 14.08px;
-    text-transform: uppercase;
-    color: #000;
-    display: block;
-    &:before {
-        content: "";
-        display: block;
-        border-top: 1px #000 solid;
-        width: 25px;
-        height: 1px;
-        margin: 11px auto;
-    }
-}
-
-.persona-gcbanner {
-    height: 136px;
-    max-width: 964px;
-    margin: 0 auto;
-    position: relative;
-    &.mom {
-        background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
-    }
-}
+/* //Smart Gift   */
 
 
-/* // end persona  */
 
 
 /* jsonGridItem -- result list from json array -- black-friday-signed-editions */
  
-
- 
-  
-
 #jsonGridItems {}
 
 .jsonGridItem {

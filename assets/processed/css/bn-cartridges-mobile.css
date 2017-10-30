@@ -554,13 +554,12 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
   */
   /*Browse page links*/
-  /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
-  /* end textbooks subppages */
   /*  Put Me In The Story */
   /*  // END Put Me In The Story */
-  /* persona  [ personalities mothersday fathersday ] */
-  /* store title design change  added to rich text editor */
-  /* // end persona  */
+  /* //Smart Gift   */
+  /* Sub header */
+  /* How it works steps */
+  /* //Smart Gift   */
   /* jsonGridItem -- result list from json array -- black-friday-signed-editions */
   /*  sticky nav */
   /* Privacy Policy */
@@ -568,14 +567,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* END iPhone App H page */
   /*CQ Module HTML PAGE adjustments */
   /*Gift Cards */
-  /* start textbooks subppages */
-  /* end textbooks subppages */
+  /* //Smart Gift  */
+  /* Sub header */
+  /* How it works steps */
+  /* //End Smart Gift   */
   /* My Favorite Teacher */
   /* End My Favorite Teacher */
   /*   // Put Me In The Story */
   /*   // END Put Me In The Story */
-  /* persona  [ personalities mothersday fathersday ] */
-  /* // end persona   */
   /* black friday signed editions */
   /* end black friday signed editions */
   /* iPhone Download App */
@@ -1301,6 +1300,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .element-shadow:hover {
   box-shadow: none;
 }
+.html .clearer {
+  clear: all;
+  overflow: hidden;
+}
 .html .hideIt {
   display: none;
 }
@@ -1324,6 +1327,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .mOnly {
   display: none;
+}
+.html .break-desktop {
+  display: block;
 }
 .html .milo180 {
   font-family: Milo;
@@ -1489,7 +1495,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   box-shadow: none;
 }
 .html .gift-card-list-r17 .tile {
-  height: auto;
+  height: 160px;
   margin-right: 30px;
   width: calc(33.3333% - 20px);
 }
@@ -1536,29 +1542,6 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   line-height: 1.75;
   vertical-align: top;
   width: 238px;
-}
-.html .break-desktop {
-  display: block;
-}
-.html .cms .heroImage {
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-  border: 2px #fff solid;
-  font-size: 0;
-  line-height: 0;
-  max-width: 964px;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-.html .cms section.module {
-  border-radius: 4px;
-  border-top: 2px solid #fff;
-  box-shadow: 0 0 0 1px #d5d2d2;
-  font-size: 22px;
-  margin: 48px 0 36px 1px;
-  position: relative;
 }
 .html .pmis {
   max-width: 965px;
@@ -1676,7 +1659,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .pmis-samplet-next-item,
 .html .pmis-samplet-prev-item {
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
   height: 25px;
@@ -1725,7 +1708,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 23px 0 28px;
 }
 .html .pmis-steps::before {
-  background: rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
+  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
   top: 25px;
   content: "";
   display: block;
@@ -1735,7 +1718,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   width: 100%;
 }
 .html .pmis-steps::after {
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
   content: "";
   display: block;
   height: 6px;
@@ -1764,7 +1747,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
@@ -1823,120 +1806,98 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-visible-sm {
   display: none;
 }
-.html #categoryHeaderContainer h1.persona-main-hdr {
-  font-size: 66px;
-  color: #000;
-  line-height: 1;
-  margin-top: 16px;
-}
-.html section#categoryHeaderContainer h2.persona-main-hdr {
-  color: #000;
-  font-family: PTSans, Arial, Helvetica, sans-serif;
-  font-size: 30.5px;
-  line-height: 1;
-  text-align: center;
-  display: block;
-  text-transform: none;
-  margin: 0 0 32px 0;
-}
-.html h2.persona-main-hdr:before,
-.html h2.persona-main-hdr:after {
-  content: "";
-  border-top: 1px #919190 solid;
-  width: 72px;
-  height: 1px;
-  padding: 5px 0;
-  display: inline-block;
-}
-.html h2.persona-main-hdr:before {
-  margin: 2px 10px 0 auto;
-}
-.html h2.persona-main-hdr:after {
-  margin: 2px auto 0 10px;
-}
-.html .persona-header {
+.html .smartgiftHero.desktop {
+  width: 1024px;
   position: relative;
 }
-.html .persona-header h2 {
-  margin: 8px 125px 8px 0;
-  font-family: milo;
-  font-size: 36px;
-  line-height: 1;
-  font-weight: normal;
-  border: 0px red dotted;
+.html .smartgiftHero.desktop img {
+  max-width: 100%;
 }
-.html .persona-header-cta {
-  display: block;
-  border: 1px #000 solid;
+.html .desktop .smartgiftHeroContent {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 8px 16px;
-  margin-bottom: 9px;
-  font-size: 14px;
-  color: #000;
+  top: 113px;
+  width: 650px;
 }
-.html .persona {
-  margin-bottom: 43px;
-  min-height: 134px;
+.html .desktop .smartgiftHeroContent {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 16.25px;
+  /* 1.25rem; */
+  line-height: 1.5;
 }
-.html .persona:last-of-type {
-  margin-bottom: 20px;
+.html .desktop .smartgiftHeroBrow {
+  color: #8f806b;
+  letter-spacing: 4px;
 }
-.html .persona figure {
-  font-size: 0;
-  line-height: 0;
-}
-.html .persona img {
-  width: 100%;
-}
-.html .persona a {
-  display: block;
-}
-.html .persona a:hover {
-  text-decoration: none;
-}
-.html .persona a:focus {
-  outline: 1px dashed #000;
-}
-.html .persona-header-gcbanner {
-  position: absolute;
-  right: 0;
-  text-align: center;
-  width: 318px;
-}
-.html .persona-header-gcbanner h2 {
-  margin: 22px 0 4px 0;
-  font-size: 26.29px;
+.html .desktop .smartgiftHeroHdr {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+  /* 3.23rem; */
+  letter-spacing: -.3px;
   line-height: 1;
-  font-weight: normal;
+  color: #21285d;
+  margin: 28px 0 29px;
 }
-.html .persona-header-gc-copy {
-  font-size: 18.78px;
-  color: #000;
+.html .desktop .smartgiftHerohdrCopy {
+  color: #21282d;
+  letter-spacing: 0;
 }
-.html .persona-header-gc-cta {
-  font-size: 14.08px;
-  text-transform: uppercase;
-  color: #000;
+.html .smartgifth2 {
+  margin: 29px 0 33px 0;
+}
+.html header.smartgifth2 h2 {
+  color: #525b5b;
+}
+.html .smartgifttable {
+  display: table;
+  margin: 0 0 54px 0;
+}
+.html .smartgiftSteps {
+  margin-left: 8px;
+  padding: 23px 23px 27px 23px;
+  background-color: #eeeeed;
+  width: 33%;
+  display: table-cell;
+  border-left: 8px #fff solid;
+}
+.html .smartgiftSteps:last-of-type {
+  border-right: 8px #fff solid;
+}
+.html .smartgiftStep {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 68px;
+  /* 5.25rem; */
+  line-height: .85;
+  color: #21282d;
+  float: left;
+}
+.html .smartgiftStepCopy {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* 1.23rem; */
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: #353535;
   display: block;
+  margin-left: 55px;
 }
-.html .persona-header-gc-cta:before {
-  content: "";
-  display: block;
-  border-top: 1px #000 solid;
-  width: 25px;
-  height: 1px;
-  margin: 11px auto;
+.html .smartgiftStepCopy h3 {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 600;
+  font-size: 16px;
+  /* 1.23rem; */
+  margin-bottom: 4px;
 }
-.html .persona-gcbanner {
-  height: 136px;
-  max-width: 964px;
-  margin: 0 auto;
-  position: relative;
+.html .smartgiftCTA {
+  margin-bottom: 48px;
 }
-.html .persona-gcbanner.mom {
-  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
+.html .smartgiftlegal {
+  color: #515b5b;
 }
 .html .jsonGridItem {
   display: block;
@@ -2081,7 +2042,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   bottom: 0px;
 }
 .html .bnapp-hero .itunes-icon {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
   float: left;
   height: 33px;
   margin: 2px 0 0 20px;
@@ -2098,7 +2059,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-rendering: optimizelegibility;
 }
 .html .bnapp-button {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
   clear: both;
   height: 41px;
   margin: 0 auto;
@@ -2115,7 +2076,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-button-small {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
   clear: both;
   float: left;
   height: 41px;
@@ -2132,11 +2093,11 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-categories .module-bn {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
   padding: 3% 0;
 }
 .html h2.bnapp-hdr-standard {
-  background: rgba(0, 0, 0, 0) url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
+  background: transparent url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
   letter-spacing: 0.5px;
   margin: 0 auto;
   text-align: center;
@@ -2172,14 +2133,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   line-height: 24px;
 }
 .html .bnapp-sbs {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
   min-height: 232px;
   overflow: hidden;
 }
 .html .bnapp-sbs .bg-body-right {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
   float: right;
   height: 17px;
   width: 202px;
@@ -2227,6 +2188,11 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   width: 0;
   left: 0;
 }
+@media only screen and (max-width: 875px) {
+  .html .break-desktop {
+    display: none;
+  }
+}
 .html .gift-card-list {
   padding: 0 20px;
 }
@@ -2241,111 +2207,103 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     margin: 0 20px 0 0;
   }
 }
-@media only screen and (max-width: 749px) {
-  .html .txtbk-column-main {
-    width: 63%;
-  }
-  .html #cq-txtBookSearch.txtbkhome {
-    width: 75%;
-    margin: -20px auto 30px;
-  }
-  .html .txtbk-form-wrapper.txtbkhome {
-    height: 50px;
+.html .smartgiftHero {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.html .smartgiftHero img {
+  max-width: 100%;
+}
+.html .smartgiftHeroContent {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  max-width: 650px;
+}
+@media only screen and (min-width: 475px) {
+  .html .smartgiftHeroContent {
+    top: 15%;
   }
 }
-@media only screen and (max-width: 699px) {
-  .html .links-container.browse.textbooks {
-    display: none;
-  }
+.html .smartgiftHeroContent {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
 }
-@media only screen and (max-width: 649px) {
-  .html .txtbk-column-main {
-    width: 59%;
-  }
+.html .smartgiftHeroBrow {
+  color: #8f806b;
+  letter-spacing: 3.25px;
 }
-@media only screen and (max-width: 599px) {
-  .html .txtbk-column-main {
-    width: 100%;
-    float: none;
-  }
-  .html .txtbk-column-right {
-    text-align: center;
-    width: 100%;
-    float: none;
-    margin: 0 auto;
-  }
+.html .smartgiftHeroHdr {
+  font-size: 35px;
+  letter-spacing: -.25px;
+  line-height: 1.55;
+  color: #21285d;
+  margin: 8px 0 10px;
 }
-@media only screen and (max-width: 875px) {
-  .html .break-desktop {
-    display: none;
-  }
-  .html .cms .module.textbook-options figure {
-    width: 50%;
-    padding: 18px 0;
-    text-align: center;
-    float: left;
-    border-left: 1px #ccc solid;
-    border-top: 1px #ccc solid;
-  }
-  .html .cms .module.textbook-options figure.first {
-    border-left: none;
-    border-top: none;
-  }
-  .html .cms .module.textbook-options a:nth-child(2) figure {
-    border-top: none;
-  }
-  .html .cms .module.textbook-options a:nth-child(3) figure {
-    border-left: none;
-  }
-  .html #txtBookSearch + .isbn-link-modal {
-    float: none;
-    display: block;
-    margin: 40px 0 0 0;
-    text-align: center;
-  }
-  .html section.return-msg p {
-    width: 65%;
-  }
+.html .smartgiftHerohdrCopy {
+  color: #21282d;
+  font-weight: 600;
+  letter-spacing: 0;
 }
-@media only screen and (max-width: 699px) {
-  .html #txtBookSearch input[type="submit"] {
-    position: relative;
-    left: 77%;
-    margin-left: 0;
-  }
-  .html section.return-msg {
-    text-align: center;
-    position: relative;
-    padding: 0 15px;
-    padding-bottom: 160px;
-  }
-  .html section.return-msg img {
-    position: absolute;
-    right: 50%;
-    bottom: 0;
-    margin-right: -103px;
-    z-index: 1;
-  }
-  .html section.return-msg p {
-    width: auto;
-  }
-  .html .links-container.browse.textbooks {
-    display: none;
-  }
+.html header.text--center.smartgifth2 {
+  margin: 40px 0 38px 0;
+  text-align: center !important;
 }
-@media only screen and (max-width: 599px) {
-  .html .break-desktop {
-    display: none;
-  }
-  .html .cms .module.textbook-options figure {
-    width: 100%;
-  }
-  .html .cms .module.textbook-options figure {
-    border-left: none;
-  }
-  .html .cms .module.textbook-options a:nth-child(2) figure {
-    border-top: 1px #ccc solid;
-  }
+.html header.smartgifth2 h2.rule {
+  color: #21282d;
+  text-align: center !important;
+  display: block;
+  margin: 0;
+  line-height: 1;
+}
+.html .smartgifttable {
+  display: block;
+  margin-bottom: 18px;
+}
+.html .smartgiftSteps {
+  margin-left: 0;
+  padding: 0 20px 30px 20px;
+  background-color: #fff;
+  /* #eeeeed; */
+  width: 100%;
+  display: block;
+  border: none;
+}
+.html .smartgiftSteps:last-of-type {
+  border: none;
+}
+.html .smartgiftStep {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 8px;
+  float: none;
+}
+.html .smartgiftStepCopy {
+  font-size: 13px;
+  text-align: center;
+  color: #666666;
+  display: block;
+  margin-left: 0;
+}
+.html .smartgiftStepCopy h3 {
+  font-size: 20px;
+  color: #21282d;
+  margin-bottom: 8px;
+}
+.html .smartgiftCTA {
+  margin-bottom: 48px;
+}
+.html .smartgiftCTA .btn.btn--large {
+  font-size: 14px !important;
+  padding: 15px 38px !important;
+}
+.html .smartgiftlegal {
+  font-size: 12px;
+  color: #666666;
+  padding: 0 20px 7px;
 }
 .html .mft-content {
   padding: 0 10px;
@@ -2504,81 +2462,6 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
   .html .pmis-hidden-sm {
     display: none;
-  }
-}
-@media only screen and (max-width: 699px) {
-  .html {
-    /* store title design change  added to rich text editor */
-  }
-  .html #categoryHeaderContainer h1.persona-main-hdr {
-    font-size: 27.43px;
-  }
-  .html section#categoryHeaderContainer h2.persona-main-hdr {
-    color: #000;
-    font-size: 13.71px;
-    margin: 1px 0 13px 0;
-    font-weight: normal;
-  }
-  .html h2.persona-main-hdr:before, .html h2.persona-main-hdr:after {
-    padding: 2px 0;
-  }
-  .html h2.persona-main-hdr:before {
-    margin: 2px 5px 0 auto;
-    width: 26px;
-  }
-  .html h2.persona-main-hdr:after {
-    margin: 2px auto 0 5px;
-    width: 26px;
-  }
-}
-@media only screen and (max-width: 699px) {
-  .html .persona {
-    margin-bottom: 13px;
-  }
-  .html .persona:last-of-type {
-    padding-top: 14px;
-  }
-  .html .persona-header {
-    padding: 0 21px;
-  }
-  .html .persona-header h2 {
-    font-size: 18.41px;
-    margin-bottom: 4px;
-    line-height: 1.2;
-  }
-  .html .persona-header-cta {
-    font-size: 8.94px;
-    margin-bottom: 5px;
-    padding: 4px 10px;
-    right: 21px;
-  }
-  .html .persona-header-gcbanner h2 {
-    margin: 12% 0 4px 0;
-    font-size: 15.4px;
-  }
-  .html .persona-header-gc-copy {
-    font-size: 11px;
-  }
-  .html .persona-header-gc-cta {
-    font-size: 8.25px;
-  }
-  .html .persona-header-gc-cta:before {
-    width: 15px;
-    margin: 4px auto;
-  }
-}
-@media only screen and (max-width: 599px) {
-  .html .persona-header-gcbanner {
-    width: 50%;
-  }
-  .html .persona-gcbanner.mom {
-    background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Mobile_Pod6_599.jpg) no-repeat top left;
-    background-size: 100%;
-  }
-}
-@media only screen and (max-width: 370px) {
-  .html .persona-header-gcbanner h2 {
-    margin: 9% 0 4px 0;
   }
 }
 .html .bfSignedEdIntroCopy {
@@ -3212,7 +3095,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -3228,7 +3111,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -3575,7 +3458,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -3820,7 +3703,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -3836,7 +3719,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -4259,7 +4142,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -5380,7 +5263,7 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-inf
   width: 2175px !important;
 }
 
-.text--center {
+header.text--center {
   text-align: left;
 }
 
@@ -6126,7 +6009,7 @@ header .text--subheader {
 .promo-item-name .arrow:after {
   content: "";
   display: block;
-  background: rgba(0, 0, 0, 0) url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
+  background: transparent url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
   height: 17px;
   white-space: nowrap;
   width: 11px;
