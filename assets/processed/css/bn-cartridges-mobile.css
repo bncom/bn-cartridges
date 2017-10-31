@@ -1852,7 +1852,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html header.smartgifth2 h2 {
   font-family: Poynter,Georgia,serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   color: #525b5b;
 }
@@ -2249,14 +2249,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   font-style: normal;
   font-size: 35px;
   letter-spacing: -.25px;
-  line-height: 1.55;
+  line-height: 1.25;
   color: #21285d;
-  margin: 8px 0 10px;
+  margin: 15px 0 8px;
 }
 .html .smartgiftHerohdrCopy {
   color: #21282d;
   font-weight: 600;
   letter-spacing: 0;
+  line-height: 1.75;
 }
 .html header.text--center.smartgifth2 {
   margin: 40px 0 38px 0;
@@ -2309,7 +2310,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .smartgiftCTA .btn.btn--large {
   font-size: 14px !important;
-  padding: 15px 38px !important;
+  padding: 12px 38px !important;
+  height: auto;
 }
 .html .smartgiftlegal {
   font-size: 12px;

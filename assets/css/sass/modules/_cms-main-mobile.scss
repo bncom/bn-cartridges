@@ -47,14 +47,15 @@
     font-style: normal;
     font-size: 35px; 
     letter-spacing: -.25px;
-    line-height: 1.55;
+    line-height: 1.25;
     color: #21285d;
-    margin: 8px 0 10px;
+    margin: 15px 0 8px;
 }
 .smartgiftHerohdrCopy {  
     color: #21282d;
     font-weight: 600;
     letter-spacing: 0;
+    line-height:1.75;
 }
 /* Sub header */
 header.text--center.smartgifth2 {
@@ -104,7 +105,8 @@ header.smartgifth2 h2.rule {
  .smartgiftCTA {margin-bottom:48px;}
  .smartgiftCTA .btn.btn--large{
   font-size: 14px !important;
-  padding:15px 38px !important;
+  padding:12px 38px !important;
+  height: auto;
 }
  .smartgiftlegal{
   font-size: 12px;
