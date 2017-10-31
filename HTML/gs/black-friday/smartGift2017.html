@@ -1854,42 +1854,58 @@ $('.ie-outdated').show();
 
 
 
- 
-		<div class="smartgiftHero clearer">
-			<a href="http://stores.barnesandnoble.com/" onclick="set_cookie('event_event-hero1600_black-friday-weekend-signed-editions_image');"> 
-				 <img id="eventHero" class="" alt="" /> 
-				 <noscript><img src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/smartgift/Smartgift_hero-DT.jpg" /></noscript> 
-				<div class="smartgiftHeroContent text--center">
-				 <div class="smartgiftHeroBrow">B&N SmartGift<sup>&trade;</sup></div>
-				 <h1 class="smartgiftHeroHdr">Take the Stress out of&nbsp;Gifting</h1> 
-				 <div class="smartgiftHerohdrCopy">Give them a gift they’re guaranteed to love<br>with B&amp;N&nbsp;SmartGift. </div>
-				</div>
-			</a> 
-<script type="text/javascript">
-var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
-if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com") {isMobile = true;}
-if ( isMobile ){
-document.getElementById("eventHero").src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/smartgift/Smartgift_hero-Mobile.jpg";
 
-	$( "#main-content",".smartgiftHero"  ).addClass("mobile");
-}else{
-document.getElementById("eventHero").src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/smartgift/Smartgift_hero-DT.jpg";
-	$( "#main-content , .smartgiftHero"  ).addClass("desktop");
-}
-</script> 
+
+
+https://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges.min.css?v=10
+https://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css?v=initial
+
+
+
+http://dispatch.barnesandnoble.com/content/dam/ccr/social/BN_facebook_1200x630.jpg
+
+//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges.min.css?x=2
+
+//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/bn-cartridges-js.min.js?x=2
+
+//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css?x=2
+
+
+
+
+
+
+		
+
+
+/content/ccr/h/seasonal/smartgift/smartgift2017.use.html
+
+
+ 
+<div class="smartgiftHero clearer">
+	<a href="http://stores.barnesandnoble.com/" onclick="set_cookie('event_event-hero1600_black-friday-weekend-signed-editions_image');"> 
+		 <img id="eventHero" class="" alt="" /> 
+		 <noscript><img src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/smartgift/Smartgift_hero-DT.jpg" /></noscript> 
+		<div class="smartgiftHeroContent text--center">
+		 <div class="smartgiftHeroBrow">B&N SMARTGIFT<sup>&trade;</sup></div>
+		 <h1 class="smartgiftHeroHdr">Take the Stress out of&nbsp;Gifting</h1> 
+		 <div class="smartgiftHerohdrCopy">Give them a gift they’re guaranteed to love<br>with B&amp;N&nbsp;SmartGift. </div>
 		</div>
-
-
- 
+	</a> 
+	<script type="text/javascript">var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
+	if (window.location.hostname === "m.barnesandnoble.com"|| window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "https://mpreprod.barnesandnoble.com" || URLpathArray[1].toLowerCase() === "mobile") {isMobile = true;}
+	if ( isMobile ){
+		document.getElementById("eventHero").src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/smartgift/Smartgift_hero-Mobile.jpg";
+		$( "#main-content, .smartgiftHero" ).addClass("mobile");
+	}else{
+		document.getElementById("eventHero").src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/smartgift/Smartgift_hero-DT.jpg";
+		$( "#main-content, .smartgiftHero"  ).addClass("desktop");
+	}</script> 
+</div>
 
 <header class="text--center smartgifth2">
 	<h2 class="rule mb-xs">How It Works</h2>
 </header>
-
-
-
-
-
  
 <div class="smartgifttable">
 
@@ -1904,41 +1920,30 @@ document.getElementById("eventHero").src="https://dispatch.barnesandnoble.com/co
 		</div> 
 	</div>
 
-
-
 	<div class="smartgiftSteps">
 		<div class="smartgiftStep">2</div>
 		<div class="smartgiftStepCopy">
-			<h3>Let them decide 
-				<!-- [for mobile: Recipient can either accept or exchange your gift] --></h3>
+			<h3>Let them decide</h3>
 			<p>Your recipient can accept your gift, or easily exchange it for another similarly priced item.</p>
 		</div> 
 	</div>
-
 
 	<div class="smartgiftSteps">
 		<div class="smartgiftStep">3</div>
 		<div class="smartgiftStepCopy">
 			<h3>Pay after they choose their gift</h3>
-			<p>We’ll send you their gift selection & shipping address. Then, all you have to do is checkout on BN.com and the gift will be on its way to your recipient.</p>
+			<p>We’ll send you their gift selection &amp; shipping address. Then, all you have to do is checkout on BN.com and the gift will be on its way to your recipient.</p>
 		</div> 
 	</div>
 
 </div>
 
-
-
-<div class="smartgiftCTA text--center">
-
-	<a href="https://bn.smartgiftit.com/" class="btn btn--large">Send a SmartGift</a>
-
+<div class="smartgiftCTA text--center"> 
+	<a href="https://bn.smartgiftit.com/" class="btn btn--large" onclick="set_cookie('promotional_smart-gift_send-a-SmartGift_button');">Send a SmartGift</a> 
 </div>
 
-
 <div class="smartgiftlegal text--center">
-	<p class="text--small">Note: Prices are subject to change between the time you send a gift and your recipient accepts it, due to BN.com discount cadence. </p>
-
-
+	<p class="text--small">Note: Prices are subject to change between the time you send a gift and your recipient accepts it, due to BN.com discount cadence. </p> 
 </div>
 
  

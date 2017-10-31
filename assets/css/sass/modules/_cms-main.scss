@@ -664,7 +664,7 @@ li.pmisThree {
 .desktop .smartgiftHeroContent {
     position: absolute; 
     top:113px;
-    width:650px;
+    width:677px;
 }
 
 .desktop .smartgiftHeroContent {  
@@ -673,7 +673,7 @@ li.pmisThree {
     font-size: 16.25px; /* 1.25rem; */
     line-height: 1.5;
 }
-
+.smartgiftHeroContent sup {top:-0.25em;}
 .desktop .smartgiftHeroBrow { 
     color: #8f806b;
     letter-spacing: 4px;
@@ -696,7 +696,12 @@ li.pmisThree {
 
 /* Sub header */
 .smartgifth2 {margin:29px 0 33px 0;}
-header.smartgifth2 h2 {color:#525b5b;}
+header.smartgifth2 h2 {
+    font-family: Poynter,Georgia,serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#525b5b;
+}
 
 /* How it works steps */
 .smartgifttable {display: table; margin:0 0 54px 0;}
@@ -721,7 +726,7 @@ header.smartgifth2 h2 {color:#525b5b;}
 .smartgiftStepCopy {
     font-family: Lato,sans-serif;
     font-weight: 400; 
-    font-size: 16px; /* 1.23rem; */
+    /*  font-size: 16px;  */     /* 1.23rem; */
     letter-spacing: 0;
     line-height: 1.5;
     color:#353535;
@@ -732,6 +737,7 @@ header.smartgifth2 h2 {color:#525b5b;}
     font-family: Poynter,Georgia,serif;
     font-weight: 600; 
     font-size: 16px; /* 1.23rem; */
+    color: #21282d; 
     margin-bottom:4px;
  }
  .smartgiftCTA {margin-bottom:48px;}
