@@ -1,0 +1,617 @@
+<!-- JD: ATG-19025: Adding Explicit Filter Droplet in Two Column Browse Page - Start -->
+<!-- JD: ATG-19025: Adding Explicit Filter Droplet in Two Column Browse Page - End  -->
+<!doctype html>
+<html class="no-js " lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta content="width=device-width" name="viewport">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="Barnes &amp; Noble">
+<title>Home page stuff  | Barnes &amp; Noble&reg;</title>
+<meta name="description" content="Explore our list of   at Barnes & Noble®. Shop now & receive FREE Shipping on orders $25 & up!" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@BNBuzz" />
+<meta property="og:title" content="B&N Exclusive Editions"/>
+<meta property="og:description" content="Explore our list of   at Barnes &amp; Noble®. Shop now &amp; receive FREE Shipping on orders $25 &amp; up!"/>
+<meta property="og:type" content="product"/>
+<meta property="og:url" content="https://www.barnesandnoble.com/b/bn-exclusive-editions/_/N-2dxq"/>
+<meta property="og:site_name" content="Barnes &amp; Noble"/>
+<link rel="icon" type="image/x-icon" href="//img.images-bn.com/static/redesign/srcs/images/favicon.ico" />
+<link rel="icon" sizes="192x192" href="//img.images-bn.com/static/redesign/srcs/images/bn-icon-192x192.png">
+<meta name="apple-mobile-web-app-title" content="Barnes & Noble">
+<link rel="apple-touch-icon" href="//img.images-bn.com/static/srcs/img/iphone-icon.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="//img.images-bn.com/static/redesign/srcs/images/bn-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="//img.images-bn.com/static/redesign/srcs/images/bn-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="//img.images-bn.com/static/redesign/srcs/images/bn-icon-180x180.png" />
+<!-- Lato font -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<!-- /Lato font -->
+<link rel="stylesheet" type="text/css" href="//css.css-bn.com/static/redesign/release/css/toolkit.min.css?v4.10.9&setviewtype=full" />
+<link href="//css.css-bn.com/static/redesign/release/css/toolkit-header-new.min.css?v4.10.9" rel="stylesheet" media="screen">
+<style>
+
+@-webkit-keyframes bugfix { from { padding: 0px; } to { padding: 0px; } }
+label span { -webkit-animation: bugfix infinite 1ms; }
+</style>
+<script>
+var SITE_PROTOCOL = document.location.protocol||window.location.protocol||'http:',
+SITE_DOMAIN = document.location.hostname||window.location.hostname||'www.barnesandnoble.com',
+SITE_PORT = document.location.port||window.location.port||'80',
+THIS_PATH = document.location.pathname||window.location.pathname||'/cartridges/PageSlot/PageSlot.jsp',
+SITE_DOMAIN_URL = THIS_PAGE = SITE_ROOT = port = "",
+STATIC_ASSETS_PATH = "/static",
+webContextRoot ='',
+staticAssetVersion = '?v4.10.9',
+XHR_FOLDER ='/xhr',
+XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp',
+PAGE_DEBUG_MODE = false;
+if(SITE_PROTOCOL=="https:") {
+XHR_FOLDER = '/xhr';
+XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp';
+}
+if(SITE_PORT.length > 0 && SITE_PORT!=80)
+port = ":"+SITE_PORT;
+SITE_DOMAIN_URL = SITE_PROTOCOL + "//" + SITE_DOMAIN + port;
+SITE_ROOT = SITE_DOMAIN_URL + webContextRoot;
+THIS_PAGE = SITE_DOMAIN_URL + THIS_PATH;
+port = null;
+function consoleLog() {
+if (PAGE_DEBUG_MODE!==true) return;
+if (typeof console != "undefined" && typeof console.log != "undefined") {
+if (typeof console.log.apply != "undefined") {
+console.log.apply(console,arguments);
+} else {
+for(var i=0;i<arguments.length;i++) {
+var arg = arguments[i];
+console.log(arg);
+}
+}
+}
+}
+function consoleWarn() {
+if (PAGE_DEBUG_MODE!==true) return;
+if (typeof console == "undefined") return;
+if (typeof console.warn != "undefined" && typeof console.warn.apply != "undefined") {
+console.warn.apply(console,arguments);
+} else {
+consoleLog.apply(console,arguments);
+}
+}
+function consoleError() {
+if (PAGE_DEBUG_MODE!==true) return;
+if (typeof console == "undefined") return;
+if (typeof console.error != "undefined" && typeof console.error.apply != "undefined") {
+console.error.apply(console,arguments);
+} else {
+consoleWarn.apply(console,arguments);
+}
+}
+var verifyCallbackToCaptcha = function() {
+grecaptcha.render('html_element', {
+'sitekey' : '6LctFgsTAAAAAJXPN_lYrGuAQiN8KDE_W84nWsjc',
+'expired-callback': function(){
+consoleLog("verify reset");
+grecaptcha.reset();
+}
+});
+};
+function addOnLoadEvent(func) {
+var oldonload = window.onload;
+if (typeof window.onload != 'function') {
+window.onload = func;
+} else {
+window.onload = function() {
+if (oldonload) {
+oldonload();
+}
+func();
+}
+}
+}
+</script>
+<!-- migration changes SLR-92 -->
+<script src="//js.js-bn.com/static/redesign/release/js/vendor/vendor.js?v4.10.9"></script>
+<!--// migration changes SLR-92 -->
+<script>
+function updateMiniCartCount(count) {
+if(typeof count != 'undefined' && count != $.trim($('.bagTotal').text())) {
+$('.bagTotal').text(count);
+}
+}
+function miniCartEvents($container) {
+var $spinner = $('<div class="spinner spinner__large"><img src="/static/redesign/srcs/images/spinner.svg" alt="" ></div>').addClass('mini-cart-spinner'),
+$quantityUpdateForms = $('.mini-cart-quantity-update');
+BN.MiniCart = new MiniCart('#miniCart', '#shoppingBag');
+// shopping bag flyout only
+$('#bagContentsContainer').find('.mini-cart-quantity-update').each(function() {
+BN.uXHR.Form.apply(this);
+});
+$quantityUpdateForms.find('.product-quantity').each(function() {
+var $this = $(this);
+$this.data('initial-value', $this.val());
+});
+$quantityUpdateForms.find('input[type=submit]').on('click', function(e) {
+var $theForm = $(this).closest('form'),
+$eleProductQuantity = $theForm.find('.product-quantity').first(),
+productQuantity = $eleProductQuantity.length ? $eleProductQuantity.val().trim() : '';
+if (productQuantity.length == 0) {
+e.preventDefault();
+/* reset to the initial quantity if the user tried to submit an empty value */
+if ($eleProductQuantity.length && $eleProductQuantity.data('initial-value')) {
+$eleProductQuantity.val($eleProductQuantity.data('initial-value'));
+}
+}
+});
+$quantityUpdateForms.on('submit', function() {
+var $this = $(this),
+$miniCartItem = $this.parents('#miniCart');
+$spinner.appendTo($miniCartItem);
+}).on('amplifiFormSuccess', function(e, response) {
+//Adobe Analytics: updates cart object
+if(typeof s_setP !== 'undefined') updateAnalyticsCart();
+// check to shopping bag reload flag is on page
+// if shopping bag is updated in dropdown and page
+// contains the items, it must be refreshed
+if ($("#shoppingBagReloadFlag").length){
+consoleLog("Reload Page to update shopping bag.");
+location.reload(true);
+} else {
+$('#miniCartItems .miniCartItems-list').load(webContextRoot+"/checkout/includes/get-mini-cart-commerce-items.jsp", miniCartEvents);
+$('#subtotalLine .subtotal-amount').html('$'+response.data.subtotal);
+$('#subtotalLine .item-count').html('('+response.data.totalQuantity+' items)');
+$('.bagTotal').html(response.data.totalQuantity);
+if(response.data.totalQuantity < 1) {
+//DONT SHOW CART IF TYPE AHEAD IS OPEN
+if($('#headSearchTypeAheadHolder').is(':visible')) {
+loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, true);
+} else {
+loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, false);
+}
+}
+}
+$spinner.remove();
+if(e.target.id && /remove/i.test(e.target.id) || $(this).data('form-type') === 'remove') {
+$(this).trigger('analytics-mini-cart-remove');
+} else {
+$(this).trigger('analytics-mini-cart-add');
+}
+}).on('amplifiFormError', function(e, response) {
+$spinner.remove();
+});
+}
+function loadHeaderElement($container, frag, miniCartLoaded, hideCart) {
+$.ajax({
+url: frag,
+cache: false,
+type: "get",
+beforeSend: function() {
+if(!$('#miniCart').length) {
+/*  if (hideCart) {
+$container.html('<div id="miniCart" style="height: 150px; display:none;"><div class="triangle-up"></div><div class="mini-cart-spinner"></div>');
+} else {
+$container.html('<div id="miniCart" style="height: 150px"><div class="triangle-up"></div><div class="mini-cart-spinner"></div>');
+}
+*/
+}
+}
+}).done(function(data) {
+$container.html(data);
+if (hideCart) {
+$("#miniCart").css("display", "none");
+}
+if (miniCartLoaded) {
+updateMiniCartCount($('#miniCartQuantityVal').val());
+miniCartEvents();
+}
+//to update the mini cart count after redesign
+$('.cart-slide-out__banner').find('.bagTotal').html($('#bagTotal').html());
+if($('body').hasClass('landingPage') || $('body').hasClass('shopping-bag') || $('body').hasClass('homepage')){
+$('#checkoutFormSB .sign-in-checkout').attr('data-params','{"tplParams":{"isCheckout":"true","isNew":"true"}}');
+}
+/*                 //to bind the spinner functionality
+$('[data-trigger="spinner"]').spinner('delay', 0).spinner('changed', function (e) {
+$(e.target).trigger('change');
+}); */
+});
+}
+function displayHeaderFooterData(dataObj) {
+try {
+if(typeof dataObj != 'undefined' && dataObj != '') {
+//set login status variables
+if(typeof BN != 'undefined') {
+BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
+BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
+} else {
+$(document).ready(function() {
+BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
+BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
+});
+}
+//populate sign in/account links data
+//$('#authBar').html(dataObj.signInHtml);
+if($('.account-links').find('#signInLink').length > 0){
+$('#signInLink').remove();
+}
+$('.account-links').prepend(dataObj.signInHtml);
+$('#myAccountMenu').html(dataObj.accountLinksHtml);
+$(document).on('click', '#myAccountMenu #myAccountLink', function(){
+$(this).addClass('focus');
+});
+updateMiniCartCount(dataObj.cartQuantity);
+HEADERLOADED = true;
+HEADERDATA = '';
+bnLoggingEnabled = dataObj.bnLoggingEnabled;
+$("#myAccountMenu").click(function(e) {
+if($(e.target).attr('id') == 'myAccountLink')
+e.preventDefault();
+$("#myAccountLinks").toggleClass("showMyAccountLinks");
+});
+}
+} catch(err) {
+console.log(err);
+}
+}
+function loadEmailSignUp() {
+// check for email signup class in CQ template
+if ($(".global-footer-email-signup").length){
+// bind form to framework
+var $form = $('#emailSignupForm');
+BN.Validate.Listen($form);
+BN.uXHR.Form.apply($form);
+// success action
+$('#emailSignupForm').on('amplifiFormSuccess', function() {
+$('#emailSignupDiv').html("<span>Thank you for submitting your email address.</span>");
+$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
+}).on("amplifiFormBeforeSerialize", function(){
+$('#emailSignupForm').find('.handler-email-signup').remove();
+$('#emailSignupForm').append('<input class="handler-email-signup" type="hidden" name="amplifiHandler" value="/atg/userprofiling/ProfileFormHandler.emailSignup">');
+}).on("amplifiFormError",function(event,err,xhr,status,msgs){
+var errors = msgs.items;
+BN.Validate.DisplayErrors(this, errors);
+$form.find('input[type=text]').addClass('user-error');
+$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
+}).on("amplifiFormBeforeSubmit",function(){
+consoleLog("Calling displaySpinner");
+$form.find('input[type=text]').removeClass('user-error');
+$('.global-footer-email-signup').append($('<div/>').addClass('mini-cart-spinner'));
+});
+}
+}
+/* ATG-10818: Pre-populate footer email field only when user is logged in */
+function populateEmailSignUp(data) {
+$(document).ready(function() {
+if(data.isSecureLogin){
+$('#emailAddr').val(data.email);
+}
+});
+}
+//load header elements for akamai caching
+//SIGN IN Links, PTA Link, EMAIL SIGN UP, CART DETAILS
+function loadDynamicHeaderElements(callback) {
+$.ajax({
+url: '/xhr/header-footer-data.jsp',
+cache: false,
+type: "get",
+dataType: 'json'
+}).done(function(data) {
+HEADERDATA = data;
+HEADERLOADED = false;
+if($('#userLinks').length) {
+displayHeaderFooterData(HEADERDATA);
+} else {
+$(document).ready(function() {
+displayHeaderFooterData(HEADERDATA);
+});
+}
+populateEmailSignUp(data);
+});
+$(document).ready(function() {
+loadEmailSignUp();
+miniCartEvents();
+});
+}
+</script>
+<script>
+
+loadDynamicHeaderElements();
+</script>
+<script src="//js.js-bn.com/static/redesign/release/js/head.js?v4.10.9"></script><script src="//js.js-bn.com/static/redesign/srcs/js/vendor/js-webshim-1.15/dev/extras/modernizr-custom.js?v4.10.9"></script>
+<script src="//js.js-bn.com/static/redesign/srcs/js/vendor/js-webshim-1.15/dev/polyfiller.js?v4.10.9"></script>
+<script src="//assets.adobedtm.com/a6ce917b5fc2d1d613b7b801115955bcaacab070/satelliteLib-c247216a2145ee58039f29269709adbc59bd1aa8.js"></script>
+ 
+<script type="text/javascript">
+$(document).ready(function() {
+/* $('#primaryNav').on('hover touchstart', function() {
+$('.nav-menu').css('display', 'block');
+});
+$('#primaryNav li.nav-item a').on('focus', function() {
+$('.nav-menu').css('display', 'block');
+}); */
+});
+function set_cookie (cvalue) {
+
+var cname = "internalCampaign";
+cvalue = cvalue.replace(/ /gi,'-').replace(/[`~!@#^&*()|+\=ï¿½ï¿½?;:'",<>\{\}\[\]\\\/]/gi, '').toLowerCase()
+cvalue = 'tcbp_' +  cvalue;
+//cvalue = encodeURI(cvalue);
+var d = new Date();
+d.setTime(d.getTime() + (1*24*60*60*1000));
+var curCookie = cname + "=" + cvalue +
+"; expires=" + d.toGMTString() +
+"; path=" + "/"  +
+"; domain=" + SITE_DOMAIN;
+document.cookie = curCookie;
+
+}
+</script>
+<script src="//js.js-bn.com/static/redesign/srcs/js/socialloginfunctions.js?v4.10.9"></script>
+<script>window['adrum-start-time'] = new Date().getTime();</script>
+<!-- ATG-10336 Tactical fix starts -->
+<!-- change for ATG-18885 -->
+<link rel="canonical" href="https://www.barnesandnoble.com/b/bn-exclusive-editions/_/N-2dxq">
+<!-- ATG-10336 Tactical fix starts -->
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.barnesandnoble.com/b/bn-exclusive-editions/_/N-2dxq">
+<link rel="next" href="https://www.barnesandnoble.com/b/bn-exclusive-editions/_/N-2dxq?page=2">
+</head>
+<body data-global-svg-assets-url="/static/redesign/srcs/images/global-assets.svg" class="landingPage">
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tile-grid">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
+<div class="tile-bg bg-peech-03"></div>
+<div class="tile-content">
+<div class="tile-header border-color-coal">
+<h1 class="color-coal">B&amp;N Top 100</h1>
+</div>
+<ol>
+<li><a href="/w/the-rooster-bar-john-grisham/1126941610?ean=9780385541176" onclick="set_cookie('ocrs_B&amp;N Top 100_The-Rooster-Bar/John-Grisham_text');">
+<div class="tile-list-item-title">The Rooster Bar</div>
+</a> <a href="/w/the-rooster-bar-john-grisham/1126941610?ean=9780385541176" onclick="set_cookie('ocrs_B&amp;N Top 100_The-Rooster-Bar/John-Grisham_text');">
+<div class="tile-list-item-author">by
+John Grisham</div>
+</a></li>
+<li><a href="/w/leonardo-da-vinci-walter-isaacson/1126051262?ean=9781501139154" onclick="set_cookie('ocrs_B&amp;N Top 100_Leonardo-da-Vinci/Walter-Isaacson_text');">
+<div class="tile-list-item-title">Leonardo da Vinci</div>
+</a> <a href="/w/leonardo-da-vinci-walter-isaacson/1126051262?ean=9781501139154" onclick="set_cookie('ocrs_B&amp;N Top 100_Leonardo-da-Vinci/Walter-Isaacson_text');">
+<div class="tile-list-item-author">by
+Walter Isaacson</div>
+</a></li>
+<li><a href="/w/origin-dan-brown/1124692403?ean=9780385514231" onclick="set_cookie('ocrs_B&amp;N Top 100_Origin/Dan Brown_text');">
+<div class="tile-list-item-title">Origin</div>
+</a> <a href="/w/origin-dan-brown/1124692403?ean=9780385514231" onclick="set_cookie('ocrs_B&amp;N Top 100_Origin/Dan Brown_text');">
+<div class="tile-list-item-author">by
+Dan Brown</div>
+</a></li>
+<li><a href="/w/the-noel-diary-richard-paul-evans/1126051625?ean=9781501189432" onclick="set_cookie('ocrs_B&amp;N Top 100_The-Noel-Diary/Richard-Paul-Evans_text');">
+<div class="tile-list-item-title">The Noel Diary (Signed Book)</div>
+</a> <a href="/w/the-noel-diary-richard-paul-evans/1126051625?ean=9781501189432" onclick="set_cookie('ocrs_B&amp;N Top 100_The-Noel-Diary/Richard-Paul-Evans_text');">
+<div class="tile-list-item-author">by
+Richard Paul Evans</div>
+</a></li>
+<li><a href="/w/the-sun-and-her-flowers-rupi-kaur/1126734852?ean=9781449486792" onclick="set_cookie('ocrs_B&amp;N Top 100_the-sun-and-her-flowers/Rupi-Kaur_text');">
+<div class="tile-list-item-title">The Sun and Her Flowers</div>
+</a> <a href="/w/the-sun-and-her-flowers-rupi-kaur/1126734852?ean=9781449486792" onclick="set_cookie('ocrs_B&amp;N Top 100_the-sun-and-her-flowers/Rupi-Kaur_text');">
+<div class="tile-list-item-author">by
+Rupi Kaur</div>
+</a></li>
+</ol>
+<a href="/b/books/_/N-1fZ29Z8q8" class="btn--tile-top100 hover-opacity" onclick="set_cookie('ocrs_B&amp;N Top 100_See All_text');">See All</a>
+</div>
+</div>
+
+
+
+
+/content/ccr/h/gs/dev/gateway-top100-curated.use.html
+
+	<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
+		<div class="tile-bg bg-peech-03"></div>
+		<div class="tile-content">
+			<div class="tile-header border-color-coal">
+				<h1 class="color-coal">Don't Miss These</h1>
+			</div>
+			<ol>
+				<li>
+					<a href="/w/the-rooster-bar-john-grisham/1126941610?ean=9780385541176" onclick="set_cookie('ocrs_B&amp;N Top 100_The-Rooster-Bar/John-Grisham_text');">
+					<div class="tile-list-item-title">
+						The Sara Rosoff Collection
+					</div></a> 
+					<!-- <a href="/w/the-rooster-bar-john-grisham/1126941610?ean=9780385541176" onclick="set_cookie('ocrs_B&amp;N Top 100_The-Rooster-Bar/John-Grisham_text');">
+					<div class="tile-list-item-author">
+						by John Grisham
+					</div></a> -->
+				</li>
+				<li>
+					<a href="/w/leonardo-da-vinci-walter-isaacson/1126051262?ean=9781501139154" onclick="set_cookie('ocrs_B&amp;N Top 100_Leonardo-da-Vinci/Walter-Isaacson_text');">
+					<div class="tile-list-item-title">
+						Dede Kinerk Recommends
+					</div></a> 
+					<!-- <a href="/w/leonardo-da-vinci-walter-isaacson/1126051262?ean=9781501139154" onclick="set_cookie('ocrs_B&amp;N Top 100_Leonardo-da-Vinci/Walter-Isaacson_text');">
+					<div class="tile-list-item-author">
+						by Walter Isaacson
+					</div></a> -->
+				</li>
+				<li>
+					<a href="/w/origin-dan-brown/1124692403?ean=9780385514231" onclick="set_cookie('ocrs_B&amp;N Top 100_Origin/Dan Brown_text');">
+					<div class="tile-list-item-title">
+						Liana Moncayo's Personal Favorites
+					</div></a> 
+					<!-- <a href="/w/origin-dan-brown/1124692403?ean=9780385514231" onclick="set_cookie('ocrs_B&amp;N Top 100_Origin/Dan Brown_text');">
+					<div class="tile-list-item-author">
+						by Dan Brown
+					</div></a> -->
+				</li>
+				<li>
+					<a href="/w/the-noel-diary-richard-paul-evans/1126051625?ean=9781501189432" onclick="set_cookie('ocrs_B&amp;N Top 100_The-Noel-Diary/Richard-Paul-Evans_text');">
+					<div class="tile-list-item-title">
+						You Don't Want to miss...
+					</div></a> 
+					<!-- <a href="/w/the-noel-diary-richard-paul-evans/1126051625?ean=9781501189432" onclick="set_cookie('ocrs_B&amp;N Top 100_The-Noel-Diary/Richard-Paul-Evans_text');">
+					<div class="tile-list-item-author">
+						by Richard Paul Evans
+					</div></a> -->
+				</li>
+				<li>
+					<a href="/w/the-sun-and-her-flowers-rupi-kaur/1126734852?ean=9781449486792" onclick="set_cookie('ocrs_B&amp;N Top 100_the-sun-and-her-flowers/Rupi-Kaur_text');">
+					<div class="tile-list-item-title">
+						The Truth About What You Thought You Knew
+					</div></a> 
+					<!-- <a href="/w/the-sun-and-her-flowers-rupi-kaur/1126734852?ean=9781449486792" onclick="set_cookie('ocrs_B&amp;N Top 100_the-sun-and-her-flowers/Rupi-Kaur_text');">
+					<div class="tile-list-item-author">
+						by Rupi Kaur
+					</div></a> -->
+				</li>
+			</ol><a class="btn--tile-top100 hover-opacity" href="/b/books/_/N-1fZ29Z8q8" onclick="set_cookie('ocrs_B&amp;N Top 100_See All_text');">See All</a>
+		</div>
+	</div>
+
+
+
+
+<style type="text/css">
+
+.tile-author{
+	height: 75px;
+	width: 75px;
+	margin: 0 auto;
+	background-image: url(https://prodimage.images-bn.com/cimages/0000000893877_p0_v1_s185x278.jpg);
+	background-size: 70px;
+	background-position:5px 0;
+	border-radius: 50%;
+
+}
+</style>
+<!-- 
+75 x 75
+
+
+https://prodimage.images-bn.com/cimages/0000000893877_p0_v1_s185x278.jpg
+
+ -->
+<span class="gateway-promo-tiles focus"> 
+	<!-- START tile  --> 
+	<a onclick="set_cookie('cqhppromotile_book-browsingbrjust-got-better_book-browsingbrjust-got-better_imagetext');" class="tile tile-promo no-image white-on-forest hover-opacity " href="//www.barnesandnoble.com/book-graph-recommendations" data-tile-shadow="��"> 
+		<div class="tile-bg"></div> 
+		<div class="tile-foreground"> 
+			<div class="tile-author"></div> 
+			<div class="tile-content"> 
+				<div class="tile-header"> 
+					<p class="tile-title">&nbsp;<br>&nbsp;<br>The B&amp;N<br>Podcast</p> 
+					<p class="tile-subtitle"></p> 
+				</div> 
+				<p class="tile-body">Discover intriguing conversations</p> 
+				<p class="tile-code">with Ron Chernow, Dan Brown,<br>and more of todays most<br>interesting writers.</p> 
+				<span class="tile-link ">LISTEN NOW</span> 
+			</div> 
+		</div> 
+	</a> 
+	<!-- END tile  -->
+</span>
+
+
+
+</div>
+
+	<br style="clear:left;">
+
+
+
+
+
+
+
+
+
+
+
+<!-- Implementation ATG-11199:bloomreach end -->
+<div class="container">
+<footer class="footer-normal"><ul class="footer-promo-container"><li class="footer-promo-item"><p>NOOK Press</p><p>Publish your book with B&amp;N</p><p><a href="https://www.nookpress.com/"> Learn More <span class="link-with-arrow"></span> </a> </p></li><li class="footer-promo-item"><p>The B&amp;N Mastercard®</p><p>5% Back on All B&amp;N Purchases</p><p><a href="//www.barnesandnoble.com/h/bn-mastercard"> Learn More <span class="link-with-arrow"></span> </a> </p></li><li class="footer-promo-item"><p>Barnes &amp; Noble Café</p><p>Relax and Refuel</p><p><a href="//www.barnesandnoble.com/h/cafe"> Visit BN Café <span class="link-with-arrow"></span> </a> </p></li><li class="footer-promo-item"><p>B&amp;N Membership</p><p>Don't Miss Out on Savings</p><p><a href="//www.barnesandnoble.com/membership"> Learn More <span class="link-with-arrow"></span> </a> </p></li></ul><div class="new-global-footer-link-container"><div class="footer-normal__column"><h6>B&amp;N Services</h6><ul><li><a href="http://www.barnesandnoble.com/h/bn-advertising">Advertise</a></li><li><a href="http://affiliates.barnesandnoble.com/">Affiliate Program</a></li><li><a href="https://help.barnesandnoble.com/app/publisher_author/list">Publisher &amp; Author Guidelines</a></li><li><a href="//www.barnesandnoble.com/customer-service/bulk-order.jsp">Bulk Order Discounts</a></li><li><a href="//www.barnesandnoble.com/membership/">B&amp;N Membership</a></li><li><a href="//www.barnesandnoble.com/h/bn-mastercard">B&amp;N Mastercard</a></li><li><a href="https://www.barnesandnoble.com/account/kidsclub/">B&amp;N Kids&#039; Club</a></li><li><a href="//www.barnesandnoble.com/h/bn-educators">B&amp;N Educators</a></li><li><a href="//www.barnesandnoble.com//h/bookfairs">B&amp;N Bookfairs</a></li></ul></div><div class="footer-normal__column"><h6>Shipping &amp;<br /> Delivery</h6><ul><li><a href="https://help.barnesandnoble.com/app/shipping_free_shipping/list">About Free Shipping</a></li><li><a href="https://help.barnesandnoble.com/app/shipping_free_shipping/list">About Shipping</a></li><li><a href="https://help.barnesandnoble.com/app/shipping_free_shipping/list">Shipping Rates</a></li></ul></div><div class="footer-normal__column"><h6>NOOK</h6><ul><li><a href="//www.barnesandnoble.com/b/nook/_/N-1pbl">NOOK Tablets &amp; eReaders</a></li><li><a href="//www.barnesandnoble.com/h/nook/apps">NOOK Mobile Apps</a></li></ul></div><div class="footer-normal__column"><h6>About Us</h6><ul><li><a href="//www.barnesandnoble.com/h/help/about/barnesandnoble">About B&amp;N</a></li><li><a href="http://investors.barnesandnobleinc.com/index.cfm">Investor Relations</a></li><li><a href="http://www.barnesandnobleinc.com/">Barnes &amp; Noble, Inc.</a></li><li><a href="http://careers.barnesandnoble.com/">Careers at B&amp;N</a></li></ul></div><div class="footer-normal__column"><h6>Quick Help</h6><ul><li><a href="https://help.barnesandnoble.com/">Customer Service</a></li><li><a href="http://www.barnesandnoble.com/account/">Order Status</a></li><li><a href="https://help.barnesandnoble.com/app/returns/list">Easy Returns</a></li><li><a href="//www.barnesandnoble.com/h/product-recalls">Product Recalls</a></li><li><a href="//www.barnesandnoble.com/h/ebook-settlement">eBook Settlement</a></li></ul></div><div class="footer-normal__forms"><aside class="error-msg alert alert--error mb-xs" id="footerStoreLocatorErr" style="display:none;"></aside><div class="footer-text-input text-input--location text-input filled"><form method="get" data-messaging="#footerStoreLocatorErr" action="https://stores.barnesandnoble.com/stores?storeFilter=all"><label data-target="text-input-label" for="findStore"> Find a Store </label> <input type="text" title="Please fill out this field" id="findStore" autocomplete="off" required="required" name="searchText" aria-label="Please fill out this field to find a Store" value="" placeholder="Store name, location, or ZIP code" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Store name, location, or ZIP code'" maxlength="" /> <input type="hidden" name="storeFilter" value="all" /> <input value="" type="hidden" /> </form></div><aside class="error-msg alert alert--error mb-xs" id="emailAddressErr" style="display:none;"></aside><div class="footer-text-input text-input filled text-input--email-signup"><form autocomplete="off" method="post" data-messaging="#emailAddressErr" action="/xhr/email-signup-submit.jsp" id="emailSignupForm"><label data-target="text-input-label" for="emailSignup">Sign up for savings, news, updates</label> <input type="text" title="Please fill out this field" id="emailSignup" autocomplete="off" required="required" name="email" maxlength="40" aria-label="Please fill out this field" aria-invalid="true" value="" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'" maxlength="" /> <input value="" type="hidden" /> </form></div><ul class="social-icons"><li><a href="https://www.facebook.com/barnesandnoble"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"> <use class="social-icons__icon" xlink:href="#facebook"></use> </svg> <span class="sr-only">Facebook</span> </a> </li><li><a href="https://twitter.com/bnbuzz"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"> <use class="social-icons__icon" xlink:href="#twitter"></use> </svg> <span class="sr-only">Twitter</span> </a> </li><li><a href="https://www.instagram.com/barnesandnoble/"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"> <use class="social-icons__icon" xlink:href="#instagram" /> </svg> <span class="sr-only">Instagram</span> </a> </li><li><a href="https://www.pinterest.com/barnesandnoble/"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"> <use class="social-icons__icon" xlink:href="#pinterest" /> </svg> <span class="sr-only">Pinterest</span> </a> </li><li><a href="https://plus.google.com/+barnesandnoble"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"> <use class="social-icons__icon" xlink:href="#google-plus" /> </svg> <span class="sr-only">Google Plus</span> </a> </li></ul></div></div><div class="footer-legal"><ul><li><a class="link" href="//www.barnesandnoble.com/h/help/about/terms-of-use">Terms of Use</a></li><li><a class="link" href="//www.barnesandnoble.com/h/copyright-policy">Copyright & Trademark</a></li><li><a class="link" href="//www.barnesandnoble.com/h/help/privacy-policy">Privacy Policy</a></li><li><a class="link" href="//www.barnesandnoble.com/h/sitemap">Sitemap</a></li><li><a class="link" href="//www.barnesandnoble.com/h/bn-accessibility-statement">Accessibility</a></li></ul><p class="copy-right">©1997-2017 Barnes & Noble Booksellers, Inc. <br /> 122 Fifth Avenue, New York, NY 10011</p></div></footer></div>
+<script type="text/javascript">
+if(!$('body').hasClass('thank-you')) {
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-11110821-1', {'cookieDomain': 'barnesandnoble.com'});
+ga('send', 'pageview');
+}
+</script>
+<!-- All Javascripts in js-scripts-ra.jsp has to be minified. ALl JS has to be moved to release dir as per grunt minification -->
+<script src="//js.js-bn.com/static/redesign/release/js/vendor.js?v4.10.9"></script><script src="//js.js-bn.com/static/redesign/release/js/contrib.js?v4.10.9"></script><script src="//js.js-bn.com/static/redesign/release/js/modal.modals-browse.js?v4.10.9"></script><script type="text/javascript" src="//js.js-bn.com/static/redesign/srcs/js/js-messaging.js?v4.10.9"></script>
+<script src="//js.js-bn.com/static/redesign/release/js/bn.js?v4.10.9"></script><script>
+$.webshims.polyfill('es5 forms forms-ext');
+</script>
+<script type="text/javascript"
+src="//js.js-bn.com/static/redesign/srcs/js/sections/search/search.js?v4.10.9"></script>
+<script type="text/javascript"
+src="//js.js-bn.com/static/redesign/srcs/js/vendor/jquery.scrollpane.min.js?v4.10.9"></script>
+<script type="text/javascript"
+src="//js.js-bn.com/static/redesign/srcs/js/vendor/jquery.mousewheel.js?v4.10.9"></script>
+<script type="text/javascript"
+src="//js.js-bn.com/static/redesign/srcs/js/sections/pdp/swfobject2.js?v4.10.9"></script>
+<script type="text/javascript"
+src="//js.js-bn.com/static/redesign/srcs/js/sections/pdp/kitcloud.js?v4.10.9"></script>
+<script type="text/javascript"
+src="//js.js-bn.com/static/redesign/srcs/js/sections/pdp/flashdetect.js?v4.10.9"></script>
+<script type="text/javascript"
+src="//js.js-bn.com/static/release/js/toolkit.js?v4.10.9"></script>
+<script type="text/javascript" src="//js.js-bn.com/static/redesign/srcs/js/js-countries.js?v4.10.9"></script>
+<script type="text/javascript" src="//js.js-bn.com/static/js/bn/bn.analytics.js?v4.10.9"></script>
+
+
+ 
+
+
+
+
+
+
+
+ 
