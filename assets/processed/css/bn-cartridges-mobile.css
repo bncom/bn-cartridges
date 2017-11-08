@@ -1,4 +1,5 @@
-#cq-html-renderer, .cq-html-renderer {
+#cq-html-renderer,
+.cq-html-renderer {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -469,7 +470,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     max-width: 100%;
   } */
 }
-#main-content, .PageContent {
+#main-content,
+.PageContent {
   overflow-y: initial;
   -webkit-overflow-scrolling: touch;
 }
@@ -5428,6 +5430,9 @@ section .editorial-collection .align-horizontal.row .col-lg-4 p {
 section .editorial-collection .align-horizontal.row .col-lg-8 {
   width: 100%;
   border: none;
+}
+section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray {
+  border-left: 0px;
 }
 section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray.pl-m {
   padding-left: 0px !important;

@@ -176,6 +176,7 @@ section {
                 .col-lg-8 {
                     width: 100%;
                     .bd-left-disabled-gray {
+                        border-left: 0px;
                         &.pl-m {
                             padding-left: 0px !important;
                         }
