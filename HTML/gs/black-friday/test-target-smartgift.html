@@ -386,71 +386,14 @@ banner
  
 
  
-
+<!-- 1,215px × 70px -->
 
 <style type="text/css"> 
 .tgt-global-banner#globalHeader {margin-bottom: 110px !important;}
 .pdpPage #globalHeader { margin-bottom: 125px !important;}
 /* #tgtNavBanner, #tgtNavBanner * {outline: none !important;} */
-#tgtNavBanner { 
-    height: 100px; 
-    max-width: 1215px;
-    width: 1215px;
-    margin: 0 auto; 
-    background-color: #e7e6e7; 
-    padding: 5px 5px; 
-}
-#tgtNavBanner > a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: #000;
-}
-#tgtContent { 
-    display: table; 
-    width: 100%;
-    margin: 0; 
-}
 
-.tgtPimg {
-    display: table-cell; 
-    vertical-align: middle;
-    text-align: right;
-    width: 190px; 
-}
-.tgtPimg img{
-    max-height:100%;
-    margin:0 ;
-}
-.tgtText {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-.tgtCTA {
-    display: table-cell;
-    vertical-align: middle;  
-    width: 215px;
-    text-align: left;
-}
- .tgtCTA span{ border-bottom: 1px #000 solid;}
-.tgtheader  {
-    font-size: 36px;   
-    font-family: Poynter,Georgia,serif;
-    font-weight: 600;
-    line-height: 1.1;
-    display: block;
-}
-.tgtheader i {font-family: inherit; font-weight: inherit;}
-.tgtDetails {
-    font-size: 24px; 
-    font-family: Poynter,Georgia,serif;
-    font-weight: 600;
-    line-height: 1.4;
-    display: block;
-}
-.tgtDetails i {font-family: inherit; font-weight: inherit;}
+
  
 </style>
  
@@ -468,7 +411,6 @@ banner
         sCall: function(name) {
             s.tl(true, 'o', name, null, null);
         },
-
         // returns object of all query params
         //Example if URL = www.google.com?test=a object will be {'test':'a'}
         queryParams: (function() {
@@ -584,7 +526,6 @@ banner
     bbi.sCallMobile = function(name) {
         s_tl.tl(true, 'o', name, null, null);
     }
-
     //BBI Object overrides
     //example: bbi.verbose = true;
 
@@ -594,15 +535,14 @@ banner
     bbi.pollCondition = function() {
         return jQuery('header#globalHeader .PageContent').length > 0 && jQuery('#globalHeader').length > 0;
     };
-
     bbi.offer = function() {
-        var tgtBannerHTML = '<div id="tgtNavBanner"><a href="https://www.barnesandnoble.com/w/behold-the-dreamers-imbolo-mbue/1113822989?ean=9780525509714"><div id="tgtContent"><div class="tgtPimg"><img src="https://simg1.imagesbn.com/presources/etc/designs/ccr/Oprah_Homepage_cover.jpg" alt="Book cover: Behold the Dreamers by Imbolo Mbue" /></div><div class="tgtText"><span class="tgtheader">The Latest Oprah’s Book Club Selection</i></span><span class="tgtDetails"> <i>Behold the Dreamers</i> by Imbolo Mbue </span></div><div class="tgtCTA"><span> SHOP NOW </span></div></div></a></div>';
+        var tgtBannerHTML = '<div id="tgtNavBanner"><a href="https://www.barnesandnoble.com/h/smartgift"><img src="http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10439_SmartGift_GlobalNav_Banner_v3.jpg" alt="Take the Stress out of Gifting With Barnes & Noble SmartGift. Learn More"/></a></div>';
 
         jQuery(tgtBannerHTML).insertAfter("header#globalHeader .PageContent");
         jQuery("#globalHeader").addClass("tgt-global-banner");
 
           jQuery(document).on('click', '#tgtNavBanner', function() {
-            s.tl(true, 'o', 'oprahBkClubBannerClick'); 
+            s.tl(true, 'o', 'smartGiftBannerClick'); 
           });
     };
 
@@ -612,8 +552,137 @@ banner
 
 
 
+<style type="text/css">
+.tgtNavBanner { 
+    height: 70px;
+    width: 1215px;
+    margin: 0 auto; 
+    padding: 18px 0 0; 
+    background: #1e3f33 url("http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10439_SmartGift_GlobalNav_Banner_v3.jpg");
+}
+.tgtNavBanner > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.tgtNavBannerText{
+    font-family: Poynter,Georgia,serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: .08px;
+    text-decoration: none;
+    margin: 0 240px; 
+}
+.tgtNavBannerDetails{
+    display: block;
+    padding-top: 10px;
+    float: right;
+    border-bottom: 1px #fff solid;
+    font-family: Lato,Arial,sans-serif; 
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing:.05px; 
+}
+</style>
+
+ 
+
+<div id="tgtNavBanner" class="tgtNavBanner"><a href="https://www.barnesandnoble.com/h/smartgift">
+<div class="tgtNavBannerText">Take the Stress out of Gifting With Barnes & Noble SmartGift <span class="tgtNavBannerDetails">LEARN MORE</span></div>
+</a></div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        
+
 
  http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10439_SmartGift_GlobalNav_Banner_v3.jpg
+
+
+
+https://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css?v=initial
+
+
+<!-- 
+oprah banner desk:
+        var tgtBannerHTML = '<div id="tgtNavBanner"><a href="https://www.barnesandnoble.com/w/behold-the-dreamers-imbolo-mbue/1113822989?ean=9780525509714"><div id="tgtContent"><div class="tgtPimg"><img src="https://simg1.imagesbn.com/presources/etc/designs/ccr/Oprah_Homepage_cover.jpg" alt="Book cover: Behold the Dreamers by Imbolo Mbue" /></div><div class="tgtText"><span class="tgtheader">The Latest Oprah’s Book Club Selection</i></span><span class="tgtDetails"> <i>Behold the Dreamers</i> by Imbolo Mbue </span></div><div class="tgtCTA"><span> SHOP NOW </span></div></div></a></div>';
+
+.tgt-global-banner#globalHeader {margin-bottom: 110px !important;}
+.pdpPage #globalHeader { margin-bottom: 125px !important;}
+/* #tgtNavBanner, #tgtNavBanner * {outline: none !important;} */
+#tgtNavBanner { 
+    height: 100px; 
+    max-width: 1215px;
+    width: 1215px;
+    margin: 0 auto; 
+    background-color: #e7e6e7; 
+    padding: 5px 5px; 
+}
+#tgtNavBanner > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+
+#tgtContent { 
+    display: table; 
+    width: 100%;
+    margin: 0; 
+}
+
+.tgtPimg {
+    display: table-cell; 
+    vertical-align: middle;
+    text-align: right;
+    width: 190px; 
+}
+.tgtPimg img{
+    max-height:100%;
+    margin:0 ;
+}
+.tgtText {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.tgtCTA {
+    display: table-cell;
+    vertical-align: middle;  
+    width: 215px;
+    text-align: left;
+}
+ .tgtCTA span{ border-bottom: 1px #000 solid;}
+.tgtheader  {
+    font-size: 36px;   
+    font-family: Poynter,Georgia,serif;
+    font-weight: 600;
+    line-height: 1.1;
+    display: block;
+}
+.tgtheader i {font-family: inherit; font-weight: inherit;}
+.tgtDetails {
+    font-size: 24px; 
+    font-family: Poynter,Georgia,serif;
+    font-weight: 600;
+    line-height: 1.4;
+    display: block;
+}
+.tgtDetails i {font-family: inherit; font-weight: inherit;}
+ -->
+
+
 
 
 

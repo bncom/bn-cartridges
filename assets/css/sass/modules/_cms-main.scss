@@ -656,17 +656,19 @@ li.pmisThree {
 
 
 
-/* //Smart Gift   */
+/* //Smart Gift */
 .smartgiftHero.desktop  {
-    width: 1024px; position: relative;
-    height: 400px; background-color: #f5f5f7; line-height: 0;
+    width: 100%; 
+    position: relative;
+    background-color: #f5f5f7; 
+    line-height: 0;
 }
 .smartgiftHero.desktop img{max-width: 100%; }
 
 .desktop .smartgiftHeroContent {
     position: absolute; 
-    top:113px;
-    width:677px;
+    top:28%; /* 113px; */
+    width:51.30769230769231rem; /* 677px; */
 }
 
 .desktop .smartgiftHeroContent {  
@@ -812,9 +814,10 @@ header.smartgifth2 h2 {
     padding:8px 1px 7px;
     overflow: hidden;
 } 
-.bfSignedEdHero.desktop{height: 304px; background-color: #000; }
+.bfSignedEdHero.desktop{ background-color: #000; }
+
 .bfSignedEdHero img { width:100%; }  
-.bfSignedEdHero {position: relative;font-size: 0; line-height: 0; padding-top: 0;text-align: center;}  
+.bfSignedEdHero,.bfSignedEdHero h1 {position: relative;font-size: 0; line-height: 0; padding-top: 0;text-align: center;}  
 
 /* 
     .bfSignedEdHeroContent {
@@ -974,7 +977,8 @@ zzz:target {
     font-size:1.152rem;   /* 15px; */
     color:#000;
     padding: 18px 20px 19px;
-    margin: 0 0 25px 0;
+    margin: 0 auto 25px;
+    width: 180px;
     clear: left;
 }
  .bfStoreLocatorlink:hover{
