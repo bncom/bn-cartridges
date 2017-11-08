@@ -657,9 +657,11 @@ li.pmisThree {
 
 
 /* //Smart Gift   */
-.smartgiftHero.desktop  {width: 1024px; position: relative;}
-.smartgiftHero.desktop  img{max-width: 100%; }
-
+.smartgiftHero.desktop  {
+    width: 1024px; position: relative;
+    height: 400px; background-color: #f5f5f7; line-height: 0;
+}
+.smartgiftHero.desktop img{max-width: 100%; }
 
 .desktop .smartgiftHeroContent {
     position: absolute; 
@@ -793,6 +795,222 @@ header.smartgifth2 h2 {
     line-height: 1.2;
     margin: 0;
 }
+
+
+
+
+
+
+
+/* black friday signed editions */
+#jsonBFSignedEditions{overflow: hidden;}
+.desktop.main-content.container {padding:0; } /* place on page */
+.signedEdIntroCopy{
+    font-size:1.695rem;
+    color:#000;
+    text-align: center;
+    padding:8px 1px 7px;
+    overflow: hidden;
+} 
+.bfSignedEdHero.desktop{height: 304px; background-color: #000; }
+.bfSignedEdHero img { width:100%; }  
+.bfSignedEdHero {position: relative;font-size: 0; line-height: 0; padding-top: 0;text-align: center;}  
+
+/* 
+    .bfSignedEdHeroContent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center; 
+        z-index: 2;  
+        padding-top:37px;
+        color: #fff; 
+        .brow{ 
+            height:50px;
+            margin-bottom:1.73rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+                 font-family: Authenia,sans-serif;
+            font-size: 3.07rem;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -2px;
+            font-style: normal;
+            text-transform: none;
+            padding: 0 15px;
+
+        }
+        .hdr {
+            font-size: 5.385rem; 
+            font-weight: 600;  
+            letter-spacing: 0.108rem;
+            line-height: 1; 
+            text-transform: uppercase;
+            span{
+                display: block;
+                font-size: 1.6rem; 
+                font-weight: 400; 
+                line-height: 1.75; 
+            }
+        } 
+        .note {
+            font-size:1.6rem;  
+            font-weight: 400; 
+            line-height: 1.65;
+            letter-spacing: .14rem;
+            margin-top: 2rem; 
+
+        } 
+    }
+ */
+
+
+.bfAuthorSectionLinksHdr {
+    font-size:1.36rem; /*   18.5px  */
+    line-height: 1.7;
+    color: #21282d;
+}
+
+.bfAuthorSectionLinks{
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.bfAuthorSectionLinks li{
+     display: inline-block;    
+    list-style: none;
+      margin: 0; 
+    text-align: center;
+    font-size: 1.31rem;  /* 17px; */
+    color:#ccc;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;  
+}
+ 
+.authorSectionLink {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    color:#21282d;
+    font-size: 1.31rem;  /* 17px; */
+    border: 1px transparent solid;
+} 
+.authorSectionLink.active {
+    border-color: #21282d;
+} 
+a.authorSectionLink:hover {
+    border-color: #ccc;
+    text-decoration: underline;
+} 
+a.authorSectionLink:focus {
+    border-color: #21282d;
+    text-decoration: none;
+} 
+/*
+zzz:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+*/ 
+
+.bfSignedEdContent{
+
+    padding: 13px 60px 0;  
+
+    .jsonGridItem {
+        display: none;
+        float: left;
+        position: relative;
+        width: 122px;
+        margin: 0 12.5px 0 16px;
+        font-size: 15px; 
+    }
+    .jsonGridItem.active {
+        display: block;
+    }
+    .jsonGridImage {
+        height: 200px;
+        position: relative;
+        width: 116px; 
+    }
+
+    .jsonGridDetails {
+        height: 103px; /* 125 */
+        position: relative; 
+    }
+    .jsonGridTitle {
+        color: #21282d;
+        font-size: 13px;
+        line-height: 1.2;
+        margin: 0;
+    }
+    .jsonGridContributor {
+        font-size: 12px;
+        color: #737373;
+        line-height: 1.2;
+        margin: 7px 0 4px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+.bfStoreLocator{
+    height: 52px;
+    text-align: center;
+    border-top: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    margin-bottom: 25px;
+    overflow: hidden;
+
+}
+ .bfStoreLocatorlink  { 
+    font-family: Lato,Arial,sans-serif;
+    font-size:1.152rem;   /* 15px; */
+    color:#000;
+    padding: 18px 20px 19px;
+    margin: 0 0 25px 0;
+    clear: left;
+}
+ .bfStoreLocatorlink:hover{
+    color: #3d6db5;
+ }
+ .bfStoreLocatorlink::before {
+    content: "";
+    padding: 7px;
+    margin-right: 8px;
+    background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/blck-friday-signed-editions/Storelocator_icon-Sprite_2x.png?v=2) no-repeat;
+    background-position: 1px 5px;    
+    background-size: 26px 22px; 
+    vertical-align: middle; 
+}
+  .bfStoreLocatorlink:hover::before { 
+    background-position: -13px 5px;     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*  sticky nav */

@@ -96,11 +96,11 @@ header.smartgifth2 h2.rule {
     color:#666666; 
     display: block;
     margin-left:0;
- }
- .smartgiftStepCopy h3{
-    font-size: 20px;
-    color:#21282d; 
-    margin-bottom:8px;
+   h3{
+      font-size: 20px;
+      color:#21282d; 
+      margin-bottom:8px;
+   }
  }
  .smartgiftCTA {margin-bottom:48px;}
  .smartgiftCTA .btn.btn--large{
@@ -246,7 +246,7 @@ header.smartgifth2 h2.rule {
 
 
 
-/* black friday signed editions */
+/* 2016 black friday signed editions */
 .bfSignedEdIntroCopy {  margin: 20px;  }
 @media only screen and (max-width: 805px) {  
     .jsonGridItem {  
@@ -268,7 +268,67 @@ header.smartgifth2 h2.rule {
     }
     .jsonGridImage { width:auto; max-width:120px; }
 }
+
+
+
+
+/*  2017  black friday signed editions  */ 
+.bfSignedEdHero{
+  min-height: 304px; 
+  max-width:640px;
+  margin:0 auto;
+  background-color: #000; 
+}
+.bfSignedEdHero.mobile img { max-width: 100%; height: auto; }  
+.signedEdIntroCopy{ font-size:18.5px !important; } 
+.authorSectionLink { font-size: 17px !important; }   
+.bfSignedEdContent{ padding:0;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* You can set flex-wrap and flex-direction individually */
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+
+  .jsonGridTitle {
+      color: #21282d;
+      font-size: 14px;
+      line-height: 1.2;
+      margin: 0;
+  }
+  .jsonGridContributor {
+      font-size: 12px;
+      color: #737373;
+      line-height: 1.2;
+      margin: 7px 0 4px;
+      text-transform: uppercase;
+  }
+} 
+ 
+.bfStoreLocator{ margin-bottom: 17px;  }
+.bfStoreLocatorlink  { font-size: 15px !important; }
+.bfAuthorSectionLinksHdr {font-size: 18px !important; margin-bottom: 5px; }
+.bfAuthorSectionLinks li{ font-size: 17px !important; width: 42px; height: 42px; } 
+
 /* end black friday signed editions */
+
+
+
+
+
+
 
 /* iPhone Download App */
  @media (max-width: 699px){

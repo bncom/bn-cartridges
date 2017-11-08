@@ -561,6 +561,65 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* How it works steps */
   /* //Smart Gift   */
   /* jsonGridItem -- result list from json array -- black-friday-signed-editions */
+  /* black friday signed editions */
+  /* place on page */
+  /* 
+      .bfSignedEdHeroContent {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          text-align: center; 
+          z-index: 2;  
+          padding-top:37px;
+          color: #fff; 
+          .brow{ 
+              height:50px;
+              margin-bottom:1.73rem;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+                   font-family: Authenia,sans-serif;
+              font-size: 3.07rem;
+              font-weight: 400;
+              line-height: 1;
+              letter-spacing: -2px;
+              font-style: normal;
+              text-transform: none;
+              padding: 0 15px;
+  
+          }
+          .hdr {
+              font-size: 5.385rem; 
+              font-weight: 600;  
+              letter-spacing: 0.108rem;
+              line-height: 1; 
+              text-transform: uppercase;
+              span{
+                  display: block;
+                  font-size: 1.6rem; 
+                  font-weight: 400; 
+                  line-height: 1.75; 
+              }
+          } 
+          .note {
+              font-size:1.6rem;  
+              font-weight: 400; 
+              line-height: 1.65;
+              letter-spacing: .14rem;
+              margin-top: 2rem; 
+  
+          } 
+      }
+   */
+  /*
+  zzz:target {
+      border: 2px solid #D4D4D4;
+      background-color: #e5eecc;
+  }
+  */
   /*  sticky nav */
   /* Privacy Policy */
   /* iPhone Mobile */
@@ -575,7 +634,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* End My Favorite Teacher */
   /*   // Put Me In The Story */
   /*   // END Put Me In The Story */
-  /* black friday signed editions */
+  /* 2016 black friday signed editions */
+  /*  2017  black friday signed editions  */
   /* end black friday signed editions */
   /* iPhone Download App */
   /* End iPhone */
@@ -1809,6 +1869,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .smartgiftHero.desktop {
   width: 1024px;
   position: relative;
+  height: 400px;
+  background-color: #f5f5f7;
+  line-height: 0;
 }
 .html .smartgiftHero.desktop img {
   max-width: 100%;
@@ -1941,6 +2004,144 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   color: #737373;
   line-height: 1.2;
   margin: 0;
+}
+.html #jsonBFSignedEditions {
+  overflow: hidden;
+}
+.html .desktop.main-content.container {
+  padding: 0;
+}
+.html .signedEdIntroCopy {
+  font-size: 1.695rem;
+  color: #000;
+  text-align: center;
+  padding: 8px 1px 7px;
+  overflow: hidden;
+}
+.html .bfSignedEdHero.desktop {
+  height: 304px;
+  background-color: #000;
+}
+.html .bfSignedEdHero img {
+  width: 100%;
+}
+.html .bfSignedEdHero {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 0;
+  text-align: center;
+}
+.html .bfAuthorSectionLinksHdr {
+  font-size: 1.36rem;
+  /*   18.5px  */
+  line-height: 1.7;
+  color: #21282d;
+}
+.html .bfAuthorSectionLinks {
+  text-align: center;
+  margin: 5px 0 10px 0;
+}
+.html .bfAuthorSectionLinks li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  font-size: 1.31rem;
+  /* 17px; */
+  color: #ccc;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+}
+.html .authorSectionLink {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  color: #21282d;
+  font-size: 1.31rem;
+  /* 17px; */
+  border: 1px transparent solid;
+}
+.html .authorSectionLink.active {
+  border-color: #21282d;
+}
+.html a.authorSectionLink:hover {
+  border-color: #ccc;
+  text-decoration: underline;
+}
+.html a.authorSectionLink:focus {
+  border-color: #21282d;
+  text-decoration: none;
+}
+.html .bfSignedEdContent {
+  padding: 13px 60px 0;
+}
+.html .bfSignedEdContent .jsonGridItem {
+  display: none;
+  float: left;
+  position: relative;
+  width: 122px;
+  margin: 0 12.5px 0 16px;
+  font-size: 15px;
+}
+.html .bfSignedEdContent .jsonGridItem.active {
+  display: block;
+}
+.html .bfSignedEdContent .jsonGridImage {
+  height: 200px;
+  position: relative;
+  width: 116px;
+}
+.html .bfSignedEdContent .jsonGridDetails {
+  height: 103px;
+  /* 125 */
+  position: relative;
+}
+.html .bfSignedEdContent .jsonGridTitle {
+  color: #21282d;
+  font-size: 13px;
+  line-height: 1.2;
+  margin: 0;
+}
+.html .bfSignedEdContent .jsonGridContributor {
+  font-size: 12px;
+  color: #737373;
+  line-height: 1.2;
+  margin: 7px 0 4px;
+  text-transform: uppercase;
+}
+.html .bfStoreLocator {
+  height: 52px;
+  text-align: center;
+  border-top: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.html .bfStoreLocatorlink {
+  font-family: Lato,Arial,sans-serif;
+  font-size: 1.152rem;
+  /* 15px; */
+  color: #000;
+  padding: 18px 20px 19px;
+  margin: 0 0 25px 0;
+  clear: left;
+}
+.html .bfStoreLocatorlink:hover {
+  color: #3d6db5;
+}
+.html .bfStoreLocatorlink::before {
+  content: "";
+  padding: 7px;
+  margin-right: 8px;
+  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/blck-friday-signed-editions/Storelocator_icon-Sprite_2x.png?v=2) no-repeat;
+  background-position: 1px 5px;
+  background-size: 26px 22px;
+  vertical-align: middle;
+}
+.html .bfStoreLocatorlink:hover::before {
+  background-position: -13px 5px;
 }
 .html .sticky-nav {
   position: fixed;
@@ -2506,6 +2707,71 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     width: auto;
     max-width: 120px;
   }
+}
+.html .bfSignedEdHero {
+  min-height: 304px;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #000;
+}
+.html .bfSignedEdHero.mobile img {
+  max-width: 100%;
+  height: auto;
+}
+.html .signedEdIntroCopy {
+  font-size: 18.5px !important;
+}
+.html .authorSectionLink {
+  font-size: 17px !important;
+}
+.html .bfSignedEdContent {
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* Or do it all in one line with flex flow */
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+}
+.html .bfSignedEdContent .jsonGridTitle {
+  color: #21282d;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+}
+.html .bfSignedEdContent .jsonGridContributor {
+  font-size: 12px;
+  color: #737373;
+  line-height: 1.2;
+  margin: 7px 0 4px;
+  text-transform: uppercase;
+}
+.html .bfStoreLocator {
+  margin-bottom: 17px;
+}
+.html .bfStoreLocatorlink {
+  font-size: 15px !important;
+}
+.html .bfAuthorSectionLinksHdr {
+  font-size: 18px !important;
+  margin-bottom: 5px;
+}
+.html .bfAuthorSectionLinks li {
+  font-size: 17px !important;
+  width: 42px;
+  height: 42px;
 }
 @media (max-width: 699px) {
   .html .bnapp-hero {
