@@ -1,14 +1,32 @@
 <html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="icon" sizes="192x192" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710252313p/img/bn-icon-192x192.png">
-<link rel="apple-touch-icon" sizes="72x72" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710252313p/img/bn-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710252313p/img/bn-icon-114x114.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710252313p/img/bn-icon-180x180.png" />
+<link rel="icon" sizes="192x192" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710302326p/img/bn-icon-192x192.png">
+<link rel="apple-touch-icon" sizes="72x72" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710302326p/img/bn-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710302326p/img/bn-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710302326p/img/bn-icon-180x180.png" />
 
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
 
 <script type='text/javascript'>
- 
+sm = {};
+sm.clientDomain = "m.barnesandnoble.com";
+sm.clientVersion = "v5";
+sm.clientPartner = "barnesandnoble";
+sm.campaignId = "772";
+sm.EXTERNAL_DOMAIN = "www.barnesandnoble.com";
+sm.INTERNAL_DOMAIN = "m.barnesandnoble.com";
+sm.STORES_DOMAIN = "mstores.barnesandnoble.com";
+sm.HELP_DOMAIN = "help.barnesandnoble.com";
+sm.GA_KEY = "UA-69761400-3";
+sm.appGAKey = "UA-69761400-6";
+sm.stream_url_prefix = "https://m.barnesandnoble.com:8444";
+sm.client_url_prefix = "https://www.barnesandnoble.com";
+brmSiteFlags = {};
+brmSiteFlags.trackAdtm = true;
+sm.client_API_Partner = "barnesandnobleapi";
+sm.redesign_clientPartner = "bandnredesign";
+sm.sk_paypalEnv = "production";
+sm.mobile_stream_domain = "https://m.barnesandnoble.com";
 </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,10 +43,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="MobileOptimized" content="320" />
 <meta name="format-detection" content="telephone=no" />
 <meta name="author" content="Barnes &amp; Noble" />
+<title>Signed Edition Books Black Friday | Barnes &amp; Noble&reg;</title>
+<meta name="description" content="Claim your very own signed edition book by a number of acclaimed authors this Black Friday! Find the Barnes &amp; Noble&reg; store nearest you." />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@BNBuzz" />
+<meta property="og:title" content="Signed Edition Books Black Friday" />
+<meta property="og:description" content="Claim your very own signed edition book by a number of acclaimed authors this Black Friday! Find the Barnes &amp; Noble&reg; store nearest you." />
 <meta property="og:type" content="product" />
-<meta property="og:url" content="https://www.barnesandnoble.com/h/gs/dev/smartgift" />
+<meta property="og:url" content="https://www.barnesandnoble.com/h/black-friday-signed-editions-books" />
+<meta property="og:image" content="http://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/black-friday-signed-editions/112016b_Signed_Editions_Header-mobile.jpg" />
 <meta property="og:site_name" content="Barnes &amp; Noble" />
 <meta name="apple-mobile-web-app-title" content="Barnes &amp; Noble" /><!-- Lato font -->
 <link type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" /><!-- /Lato font -->
@@ -43,11 +66,9 @@ label span { -webkit-animation: bugfix infinite 1ms; }
 
 
 
-
-
-
-https://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges.min.css?v=10
-https://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css?v=initial
+<!-- 
+<link href="//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges.min.css?v=11" rel="stylesheet" type="text/css" />
+ -->
 
 <!-- migration changes SLR-92 -->
 <script type="text/javascript" src="//js.js-bn.com/static/redesign/release/js/vendor/vendor.js?v4.11.14">
@@ -56,11 +77,210 @@ https://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridge
 </script>
 <!--// migration changes SLR-92 -->
 <script type="text/javascript">
- 
+//<![CDATA[
+function updateMiniCartCount(count) {
+if(typeof count != 'undefined' && count != $.trim($('.bagTotal').text())) {
+$('.bagTotal').text(count);
+}
+}
+function miniCartEvents($container) {
+var $spinner = $('<div class="spinner spinner__large"><img src="/static/redesign/srcs/images/spinner.svg" alt="" ><\/div>').addClass('mini-cart-spinner'),
+$quantityUpdateForms = $('.mini-cart-quantity-update');
+BN.MiniCart = new MiniCart('#miniCart', '#shoppingBag');
+// shopping bag flyout only
+$('#bagContentsContainer').find('.mini-cart-quantity-update').each(function() {
+BN.uXHR.Form.apply(this);
+});
+$quantityUpdateForms.find('.product-quantity').each(function() {
+var $this = $(this);
+$this.data('initial-value', $this.val());
+});
+$quantityUpdateForms.find('input[type=submit]').on('click', function(e) {
+var $theForm = $(this).closest('form'),
+$eleProductQuantity = $theForm.find('.product-quantity').first(),
+productQuantity = $eleProductQuantity.length ? $eleProductQuantity.val().trim() : '';
+if (productQuantity.length == 0) {
+e.preventDefault();
+/* reset to the initial quantity if the user tried to submit an empty value */
+if ($eleProductQuantity.length && $eleProductQuantity.data('initial-value')) {
+$eleProductQuantity.val($eleProductQuantity.data('initial-value'));
+}
+}
+});
+$quantityUpdateForms.on('submit', function() {
+var $this = $(this),
+$miniCartItem = $this.parents('#miniCart');
+$spinner.appendTo($miniCartItem);
+}).on('amplifiFormSuccess', function(e, response) {
+//Adobe Analytics: updates cart object
+if(typeof s_setP !== 'undefined') updateAnalyticsCart();
+// check to shopping bag reload flag is on page
+// if shopping bag is updated in dropdown and page
+// contains the items, it must be refreshed
+if ($("#shoppingBagReloadFlag").length){
+consoleLog("Reload Page to update shopping bag.");
+location.reload(true);
+} else {
+$('#miniCartItems .miniCartItems-list').load(webContextRoot+"/checkout/includes/get-mini-cart-commerce-items.jsp", miniCartEvents);
+$('#subtotalLine .subtotal-amount').html('$'+response.data.subtotal);
+$('#subtotalLine .item-count').html('('+response.data.totalQuantity+' items)');
+$('.bagTotal').html(response.data.totalQuantity);
+if(response.data.totalQuantity < 1) {
+//DONT SHOW CART IF TYPE AHEAD IS OPEN
+if($('#headSearchTypeAheadHolder').is(':visible')) {
+loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, true);
+} else {
+loadHeaderElement($("#bagContentsContainer"), webContextRoot+"/includes/shopping-bag.jsp", true, false);
+}
+}
+}
+$spinner.remove();
+if(e.target.id && /remove/i.test(e.target.id) || $(this).data('form-type') === 'remove') {
+$(this).trigger('analytics-mini-cart-remove');
+} else {
+$(this).trigger('analytics-mini-cart-add');
+}
+}).on('amplifiFormError', function(e, response) {
+$spinner.remove();
+});
+}
+function loadHeaderElement($container, frag, miniCartLoaded, hideCart) {
+$.ajax({
+url: frag,
+cache: false,
+type: "get",
+beforeSend: function() {
+if(!$('#miniCart').length) {
+/*  if (hideCart) {
+$container.html('<div id="miniCart" style="height: 150px; display:none;"><div class="triangle-up"><\/div><div class="mini-cart-spinner"><\/div>');
+} else {
+$container.html('<div id="miniCart" style="height: 150px"><div class="triangle-up"><\/div><div class="mini-cart-spinner"><\/div>');
+}
+*/
+}
+}
+}).done(function(data) {
+$container.html(data);
+if (hideCart) {
+$("#miniCart").css("display", "none");
+}
+if (miniCartLoaded) {
+updateMiniCartCount($('#miniCartQuantityVal').val());
+miniCartEvents();
+}
+//to update the mini cart count after redesign
+$('.cart-slide-out__banner').find('.bagTotal').html($('#bagTotal').html());
+if($('body').hasClass('landingPage') || $('body').hasClass('shopping-bag') || $('body').hasClass('homepage')){
+$('#checkoutFormSB .sign-in-checkout').attr('data-params','{"tplParams":{"isCheckout":"true","isNew":"true"}}');
+}
+/*                 //to bind the spinner functionality
+$('[data-trigger="spinner"]').spinner('delay', 0).spinner('changed', function (e) {
+$(e.target).trigger('change');
+}); */
+});
+}
+function displayHeaderFooterData(dataObj) {
+try {
+if(typeof dataObj != 'undefined' && dataObj != '') {
+//set login status variables
+if(typeof BN != 'undefined') {
+BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
+BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
+} else {
+$(document).ready(function() {
+BN.isExplicitlyLoggedIn = dataObj.isSecureLogin;
+BN.isSoftLoggedIn = dataObj.isSoftLoggedIn;
+});
+}
+//populate sign in/account links data
+//$('#authBar').html(dataObj.signInHtml);
+if($('.account-links').find('#signInLink').length > 0){
+$('#signInLink').remove();
+}
+$('.account-links').prepend(dataObj.signInHtml);
+$('#myAccountMenu').html(dataObj.accountLinksHtml);
+$(document).on('click', '#myAccountMenu #myAccountLink', function(){
+$(this).addClass('focus');
+});
+updateMiniCartCount(dataObj.cartQuantity);
+HEADERLOADED = true;
+HEADERDATA = '';
+bnLoggingEnabled = dataObj.bnLoggingEnabled;
+$("#myAccountMenu").click(function(e) {
+if($(e.target).attr('id') == 'myAccountLink')
+e.preventDefault();
+$("#myAccountLinks").toggleClass("showMyAccountLinks");
+});
+}
+} catch(err) {
+console.log(err);
+}
+}
+function loadEmailSignUp() {
+// check for email signup class in CQ template
+if ($(".global-footer-email-signup").length){
+// bind form to framework
+var $form = $('#emailSignupForm');
+BN.Validate.Listen($form);
+BN.uXHR.Form.apply($form);
+// success action
+$('#emailSignupForm').on('amplifiFormSuccess', function() {
+$('#emailSignupDiv').html("<span>Thank you for submitting your email address.<\/span>");
+$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
+}).on("amplifiFormBeforeSerialize", function(){
+$('#emailSignupForm').find('.handler-email-signup').remove();
+$('#emailSignupForm').append('<input class="handler-email-signup" type="hidden" name="amplifiHandler" value="/atg/userprofiling/ProfileFormHandler.emailSignup">');
+}).on("amplifiFormError",function(event,err,xhr,status,msgs){
+var errors = msgs.items;
+BN.Validate.DisplayErrors(this, errors);
+$form.find('input[type=text]').addClass('user-error');
+$('.global-footer-email-signup').find('.mini-cart-spinner').remove();
+}).on("amplifiFormBeforeSubmit",function(){
+consoleLog("Calling displaySpinner");
+$form.find('input[type=text]').removeClass('user-error');
+$('.global-footer-email-signup').append($('<div/>').addClass('mini-cart-spinner'));
+});
+}
+}
+/* ATG-10818: Pre-populate footer email field only when user is logged in */
+function populateEmailSignUp(data) {
+$(document).ready(function() {
+if(data.isSecureLogin){
+$('#emailAddr').val(data.email);
+}
+});
+}
+//load header elements for akamai caching
+//SIGN IN Links, PTA Link, EMAIL SIGN UP, CART DETAILS
+function loadDynamicHeaderElements(callback) {
+$.ajax({
+url: '/xhr/header-footer-data.jsp',
+cache: false,
+type: "get",
+dataType: 'json'
+}).done(function(data) {
+HEADERDATA = data;
+HEADERLOADED = false;
+if($('#userLinks').length) {
+displayHeaderFooterData(HEADERDATA);
+} else {
+$(document).ready(function() {
+displayHeaderFooterData(HEADERDATA);
+});
+}
+populateEmailSignUp(data);
+});
+$(document).ready(function() {
+loadEmailSignUp();
+miniCartEvents();
+});
+}
+//]]>
 </script>
 <script type="text/javascript">
 //<![CDATA[
- 
+
+loadDynamicHeaderElements();
 //]]>
 </script>
 <script type="text/javascript" src="//js.js-bn.com/static/redesign/release/js/head.js?v4.11.14">
@@ -211,7 +431,12 @@ document.cookie = curCookie;
 }
 //]]>
 </script>
- 
+
+<!-- 
+<script src="//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/bn-cartridges-js.min.js?v=11" type="text/javascript">
+</script>
+ -->
+
 <script type="text/javascript">
 //<![CDATA[
 window['adrum-start-time'] = new Date().getTime();
@@ -219,7 +444,7 @@ window['adrum-start-time'] = new Date().getTime();
 </script>
 <!-- ATG-10336 Tactical fix starts -->
 <!-- change for ATG-18885 -->
-<link rel="canonical" href="https://www.barnesandnoble.com/h/gs/dev/smartgift" /><!-- ATG-10336 Tactical fix starts -->
+<link rel="canonical" href="https://www.barnesandnoble.com/h/black-friday-signed-editions-books" /><!-- ATG-10336 Tactical fix starts -->
 <style type="text/css">
 /*<![CDATA[*/
 .cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#295a34;}.cls-4{fill:#a69f8c;}
@@ -229,44 +454,10 @@ window['adrum-start-time'] = new Date().getTime();
 
 
 
- 
-
-<title></title>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel='stylesheet' type='text/css' media='screen' href='//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710252313p/css/proxy.css'/>
-
+<link rel='stylesheet' type='text/css' media='screen' href='//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710302326p/css/proxy.css'/>
 <!-- 
-<link href="//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges.min.css?v=10" rel="stylesheet" type="text/css" />
 <link rel='stylesheet' type='text/css' media='screen' href='//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css?v=initial'/>
-
  -->
-
-
-<link rel="stylesheet" href="../../../assets/build/css/bn-cartridges.min.css?dev=1" type="text/css" media="screen"/>
-<link rel="stylesheet" href="../../../assets/build/css/bn-cartridges-mobile.min.css?dev=1" type="text/css" media="screen"/>
-
-
-<script type="text/javascript" src="../../../assets/build/js/bn-cartridges-js.min.js"></script>
-
-
-
-
-
-
-
 <style type="text/css">
 #main-content, .PageContent {
     overflow-y: initial;
@@ -373,24 +564,24 @@ func();
 <header class="treatment-a" id="globalHeader" style="display:none !important">
 <div class="grid">
 <ul id="upsellPromo">
+<li><a href="/w/nook-glow-light-3-barnes-noble/1127329365?ean=9780594777137" onclick="set_cookie('pc_Discover NOOK GlowLight&reg; 3, now featuring Night Mode_na_text');"><!-- Internal Component Tracking - Begin -->
+<!-- Internal Component Tracking - End -->
+Discover NOOK GlowLight&reg; 3, now featuring Night Mode&nbsp;&nbsp;</a></li>
+<li><a href="/b/the-criterion-collection-50-off/_/N-2o7e" onclick="set_cookie('pc_50% Off The Criterion Collection_na_text');"><!-- Internal Component Tracking - Begin -->
+<!-- Internal Component Tracking - End -->
+50% Off The Criterion Collection&nbsp;&nbsp;</a></li>
 <li><a href="/b/dc-and-marvel-graphic-novels-buy-2-get-the-3rd-free/_/N-2kv2" onclick="set_cookie('pc_DC and Marvel Graphic Novels: Buy 2, Get 1 Free_na_text');"><!-- Internal Component Tracking - Begin -->
 <!-- Internal Component Tracking - End -->
 DC and Marvel Graphic Novels: Buy 2, Get 1 Free&nbsp;&nbsp;</a></li>
-<li><a href="/b/select-cookbooks-2-for-30/_/N-2kug" onclick="set_cookie('pc_Select Cookbooks: 2 for $30_na_text');"><!-- Internal Component Tracking - Begin -->
-<!-- Internal Component Tracking - End -->
-Select Cookbooks: 2 for $30&nbsp;&nbsp;</a></li>
-<li><a href="/b/top-books-of-the-month/_/N-2luc" onclick="set_cookie('pc_Don't Miss this Month's Latest &amp; Greatest Releases_na_text');"><!-- Internal Component Tracking - Begin -->
-<!-- Internal Component Tracking - End -->
-Don't Miss this Month's Latest &amp; Greatest Releases&nbsp;&nbsp;</a></li>
 <li><a href="/b/barnes-noble-exclusives/_/N-2o2b" onclick="set_cookie('pc_Looking for Something Special? Discover B&amp;N Exclusives_na_text');"><!-- Internal Component Tracking - Begin -->
 <!-- Internal Component Tracking - End -->
 Looking for Something Special? Discover B&amp;N Exclusives&nbsp;&nbsp;</a></li>
 </ul>
-<div class="utility-links"><a href="/membership/"><span class="default-utility">Membership</span></a> <a href="/b/gift-cards/_/N-8rg"><span class="default-utility">Gift Cards</span></a> <a href="https://stores.barnesandnoble.com/"><span class="default-utility">Stores &amp; Events</span></a> <a href="https://help.barnesandnoble.com/"><span class="default-utility">Help</span></a></div>
+<div class="utility-links"><a href="//m.barnesandnoble.com/h/help/holiday-shipping"><span class="default-utility">Holiday Shipping</span></a> <a href="/membership/"><span class="default-utility">Membership</span></a> <a href="/b/gift-cards/_/N-8rg"><span class="default-utility">Gift Cards</span></a> <a href="https://stores.barnesandnoble.com/"><span class="default-utility">Stores &amp; Events</span></a> <a href="https://help.barnesandnoble.com/"><span class="default-utility">Help</span></a></div>
 </div>
 <div class="grid" id="logoAndSearch">
 <div><a href="/" class="logo"></a> 
-<form id="searchForm" name="searchFormName" action="https://m.barnesandnoble.com/includes/submit.jsp?_DARGS=/cartridges/HeaderSearchBox/HeaderSearchBox.jsp" class="search-signedin" method="post"><input name="_dyncharset" value="UTF-8" type="hidden" /><input value="-8454386138635536744" type="hidden" /><input name="/com/bn/endeca/base/SearchFormHandler.searchSuccessURL" value="https://m.barnesandnoble.com/s/" type="hidden" /><input name="_D:/com/bn/endeca/base/SearchFormHandler.searchSuccessURL" value=" " type="hidden" /><input name="/com/bn/endeca/base/SearchFormHandler.searchErrorURL" value="https://m.barnesandnoble.com/s/" type="hidden" /><input name="_D:/com/bn/endeca/base/SearchFormHandler.searchErrorURL" value=" " type="hidden" /><span id="autoCompleteInstr" class="hidden">Auto Suggestions are available once you type at least 3 letters. Use up and down arrow to review and enter to select.</span> <input aria-describedby="autoCompleteInstr" data-autosuggesturl="//ta.barnesandnoble.com/bntypeahead-service-authoring/json/pages/typeahead?" placeholder="Search" aria-autocomplete="list" type="text" autocomplete="off" aria-owns="headSearchTypeAheadHolder" data-maxautosuggestcount="8" id="searchBarBN" name="Ntt" value="" data-mininputcharactercount="2" aria-expanded="false" /><input name="_D:Ntt" value=" " type="hidden" /><input type="hidden" id="typeAheadValue" name="typeAheadValue" value="" /> 
+<form id="searchForm" name="searchFormName" action="https://m.barnesandnoble.com/includes/submit.jsp?_DARGS=/cartridges/HeaderSearchBox/HeaderSearchBox.jsp" class="search-signedin" method="post"><input name="_dyncharset" value="UTF-8" type="hidden" /><input value="-5080176438737575474" type="hidden" /><input name="/com/bn/endeca/base/SearchFormHandler.searchSuccessURL" value="https://m.barnesandnoble.com/s/" type="hidden" /><input name="_D:/com/bn/endeca/base/SearchFormHandler.searchSuccessURL" value=" " type="hidden" /><input name="/com/bn/endeca/base/SearchFormHandler.searchErrorURL" value="https://m.barnesandnoble.com/s/" type="hidden" /><input name="_D:/com/bn/endeca/base/SearchFormHandler.searchErrorURL" value=" " type="hidden" /><span id="autoCompleteInstr" class="hidden">Auto Suggestions are available once you type at least 3 letters. Use up and down arrow to review and enter to select.</span> <input aria-describedby="autoCompleteInstr" data-autosuggesturl="//ta.barnesandnoble.com/bntypeahead-service-authoring/json/pages/typeahead?" placeholder="Search" aria-autocomplete="list" type="text" autocomplete="off" aria-owns="headSearchTypeAheadHolder" data-maxautosuggestcount="8" id="searchBarBN" name="Ntt" value="" data-mininputcharactercount="2" aria-expanded="false" /><input name="_D:Ntt" value=" " type="hidden" /><input type="hidden" id="typeAheadValue" name="typeAheadValue" value="" /> 
 <div class="navigation-dropdown" aria-label="submenu"><input name="_D:/com/bn/endeca/base/SearchFormHandler.fs" value=" " type="hidden" /><select id="searchFilterSelect" name="/com/bn/endeca/base/SearchFormHandler.fs">
 <option value="0">All</option>
 <option value="8q8">Books</option>
@@ -500,21 +691,21 @@ displayHeaderFooterData(HEADERDATA);
 </div>
 <div class="header-tile"><!-- Internal Component Tracking - Begin -->
 <!-- Internal Component Tracking - End -->
-<a href="https://m.barnesandnoble.com/readouts/serial-reads" onclick="set_cookie('ppod_TopNav-Read for Free, Now on Serial Reads_Start Reading_imagetext');">
+<a href="/b/coming-soon/_/N-1oyfZ8q8" onclick="set_cookie('ppod_TopNav-Coming Soon_Shop Now_imagetext');">
 <div class="tile-wrapper"><!-- ATG-10227: Navigation flyout Optimization:start -->
 <input type="hidden" name="optimizationEnabled" value="true" /> <!-- ATG-10227-Code for optimization -->
-<input type="hidden" name="contentId" value="/content/dam/ccr/bnstores/nookbooks/topnav-promopod-images/2017/PROD-10250_BeautifulStorm_SerialReads_Flyout_image.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
+<input type="hidden" name="contentId" value="/content/dam/ccr/bnstores/books/topnav-promopod-images/2017/PROD-10196_Books_Flyout_10-24.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
 <div name="cq-renderer" class="header-tile-image"><!-- <div name="cq-renderer"></div> -->
 </div>
 <!--// CQ Content renderer div for performance optimization -->
 <div class="header-tile-content">
 <div class="promo-header-content">
-<h3 class="color-coal text--center">Read for Free, Now on Serial Reads</h3>
+<h3 class="color-coal text--center">Coming Soon</h3>
 </div>
 <div class="header-tile-text">
-<h6 class="color-coal text--center">Love, passion, and mystery abound in this month&rsquo;s Serial Reads pick.</h6>
+<h6 class="color-coal text--center">Pre-order tomorrow's bestsellers today.</h6>
 </div>
-<p class="color-coal text--uppercase text--center mt-0 mb-0"><u>Start Reading</u></p>
+<p class="color-coal text--uppercase text--center mt-0 mb-0"><u>Shop Now</u></p>
 </div>
 </div>
 <!-- ATG-10227: Navigation flyout Optimization : end -->
@@ -531,7 +722,7 @@ displayHeaderFooterData(HEADERDATA);
 <a href="/w/nook-tablet-7-inch-barnes-noble/1124589342?ean=9780594775201" role="menuitem" aria-setsize="10" aria-posinset="1">NOOK Tablet</a> <a href="/w/samsung-galaxy-tab-a-nook-7-inch-barnes-noble/1123826273?ean=9780594762157" role="menuitem" aria-setsize="10" aria-posinset="2">Samsung Galaxy Tab A NOOK</a> <a href="/w/avatar-8-barnes-noble/1122314016?ean=9780594699842" role="menuitem" aria-setsize="10" aria-posinset="3">Samsung Galaxy Tab S2 NOOK</a> <a href="/w/samsung-galaxy-tab-e-nook-9-inch-barnes-noble/1122750330?ean=9781400697601" role="menuitem" aria-setsize="10" aria-posinset="4">Samsung Galaxy Tab E NOOK</a></div>
 <div class="mb-s">
 <h2>NOOK eReaders</h2>
-<a href="/w/nook-glowlight-plus-barnes-noble/1122314015?ean=9780594680109" role="menuitem" aria-setsize="10" aria-posinset="1">NOOK GlowLight Plus</a></div>
+<a href="/w/nook-glow-light-3-barnes-noble/1300700828?ean=9780594777137" role="menuitem" aria-setsize="10" aria-posinset="1">NOOK GlowLight 3</a> <a href="/w/nook-glowlight-plus-barnes-noble/1122314015?ean=9780594680109" role="menuitem" aria-setsize="10" aria-posinset="2">NOOK GlowLight Plus</a></div>
 <div class="mb-s">
 <h2>NOOK Mobile Apps</h2>
 <a href="/h/nook/apps" role="menuitem" aria-setsize="10" aria-posinset="1">See All &gt;</a></div>
@@ -561,19 +752,19 @@ displayHeaderFooterData(HEADERDATA);
 </div>
 <div class="header-tile"><!-- Internal Component Tracking - Begin -->
 <!-- Internal Component Tracking - End -->
-<a href="/w/nook-tablet-7-inch-barnes-noble/1124589342?ean=9780594775201" onclick="set_cookie('ppod_TopNav-Our New NOOK Tablet&reg; Only $49.99_Shop Now_imagetext');">
+<a href="/w/books/1300305580?ean=9780594777137" onclick="set_cookie('ppod_TopNav-Read Comfortably, Day or Night_Shop Now_imagetext');">
 <div class="tile-wrapper"><!-- ATG-10227: Navigation flyout Optimization:start -->
 <input type="hidden" name="optimizationEnabled" value="true" /> <!-- ATG-10227-Code for optimization -->
-<input type="hidden" name="contentId" value="/content/dam/ccr/bnstores/nook/topnav-promopod-images/2017/NOOKTablet7_with_Legal_img.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
+<input type="hidden" name="contentId" value="/content/dam/ccr/bnstores/nook/topnav-promopod-images/2017/PROD-9338_NOOK_Glowlight3_Flyout.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
 <div name="cq-renderer" class="header-tile-image"><!-- <div name="cq-renderer"></div> -->
 </div>
 <!--// CQ Content renderer div for performance optimization -->
 <div class="header-tile-content">
 <div class="promo-header-content">
-<h3 class="color-coal text--center">Our New NOOK Tablet&reg; Only $49.99</h3>
+<h3 class="color-coal text--center">Read Comfortably, Day or Night</h3>
 </div>
 <div class="header-tile-text">
-<h6 class="color-coal text--center">Read forever&reg;, for less with our most affordable tablet ever.</h6>
+<h6 class="color-coal text--center">Discover NOOK GlowLight&reg; 3, now featuring Night Mode.</h6>
 </div>
 <p class="color-coal text--uppercase text--center mt-0 mb-0"><u>Shop Now</u></p>
 </div>
@@ -701,7 +892,7 @@ displayHeaderFooterData(HEADERDATA);
 <a href="/b/coming-soon/books/teens/_/N-1oyfZ8q8Z19r4" onclick="set_cookie('ppod_TopNav-Coming Soon_Shop Now_imagetext');">
 <div class="tile-wrapper"><!-- ATG-10227: Navigation flyout Optimization:start -->
 <input type="hidden" name="optimizationEnabled" value="true" /> <!-- ATG-10227-Code for optimization -->
-<input type="hidden" name="contentId" value="/content/dam/ccr/topnav/teens/2017/PROD-9995_TeenFlyout_10-10.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
+<input type="hidden" name="contentId" value="/content/dam/ccr/bnstores/teens/topnav-promopod-images/2017/PROD-10193_Teen_Flyout_10-31_comp.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
 <div name="cq-renderer" class="header-tile-image"><!-- <div name="cq-renderer"></div> -->
 </div>
 <!--// CQ Content renderer div for performance optimization -->
@@ -854,19 +1045,19 @@ displayHeaderFooterData(HEADERDATA);
 </div>
 <div class="header-tile"><!-- Internal Component Tracking - Begin -->
 <!-- Internal Component Tracking - End -->
-<a href="/b/jigsaw-puzzles-buy-1-get-1-50-off/_/N-2o3s" onclick="set_cookie('ppod_TopNav-Buy 1, Get 1 50% Off_Shop Now_imagetext');">
+<a href="/b/funko-pop/_/N-2ips" onclick="set_cookie('ppod_TopNav-New From Funko POP!_Shop Now_imagetext');">
 <div class="tile-wrapper"><!-- ATG-10227: Navigation flyout Optimization:start -->
 <input type="hidden" name="optimizationEnabled" value="true" /> <!-- ATG-10227-Code for optimization -->
-<input type="hidden" name="contentId" value="/content/dam/ccr/topnav/hobbies/2017/PROD-10165_HobbiesPuzzleBogo_Flyout_image.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
+<input type="hidden" name="contentId" value="/content/dam/ccr/topnav/hobbies/2017/PROD-10682_HobbiesCollectibles_Flyout_11-01.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
 <div name="cq-renderer" class="header-tile-image"><!-- <div name="cq-renderer"></div> -->
 </div>
 <!--// CQ Content renderer div for performance optimization -->
 <div class="header-tile-content">
 <div class="promo-header-content">
-<h3 class="color-coal text--center">Buy 1, Get 1 50% Off</h3>
+<h3 class="color-coal text--center">New From Funko POP!</h3>
 </div>
 <div class="header-tile-text">
-<h6 class="color-coal text--center">Save on hundreds of creative jigsaw puzzles for a limited time.</h6>
+<h6 class="color-coal text--center">Discover new Harry Potter collectibles and more favorites.</h6>
 </div>
 <p class="color-coal text--uppercase text--center mt-0 mb-0"><u>Shop Now</u></p>
 </div>
@@ -903,27 +1094,27 @@ displayHeaderFooterData(HEADERDATA);
 <div class="col-lg-3" role="group">
 <div class="mb-s">
 <h2>Seasonal Favorites</h2>
-<a href="/b/autumn-rose-collection/_/N-2nnh" role="menuitem" aria-setsize="10" aria-posinset="1">Autumn Rose Collection</a> <a href="/b/fall-tote-1295-with-purchase/_/N-1ptp" role="menuitem" aria-setsize="10" aria-posinset="2">Fall Tote: Now 30% Off</a> <a href="/b/halloween-collection/_/N-2k1z" role="menuitem" aria-setsize="10" aria-posinset="3">Halloween Collection</a> <a href="/b/30-off-holiday-boxed-cards/_/N-2g6y" role="menuitem" aria-setsize="10" aria-posinset="4">Holiday Box Cards</a> <a href="/b/mindfullness-collection/_/N-2obf" role="menuitem" aria-setsize="10" aria-posinset="5">Mindfulness Collection</a> <a href="/b/peace-collection/_/N-2obg" role="menuitem" aria-setsize="10" aria-posinset="6">Peace Collection</a></div>
+<a href="/b/holiday-tote-1295-with-purchase/_/N-2fyf" role="menuitem" aria-setsize="10" aria-posinset="1">Exclusive Holiday Tote: $12.95 with Purchase</a> <a href="/b/30-off-holiday-boxed-cards/_/N-2g6y" role="menuitem" aria-setsize="10" aria-posinset="2">30% Off Holiday Boxed Cards</a> <a href="/b/peace-collection/_/N-2obg" role="menuitem" aria-setsize="10" aria-posinset="3">Peace Collection</a> <a href="/b/mindfullness-collection/_/N-2obf" role="menuitem" aria-setsize="10" aria-posinset="4">Mindfulness Collection</a> <a href="/b/stocking-stuffers/_/N-2kxm?showMoreIds=11346" role="menuitem" aria-setsize="10" aria-posinset="5">Stocking Stuffers</a></div>
 </div>
 <div class="col-lg-3" role="group"></div>
 </div>
 <div class="header-tile"><!-- Internal Component Tracking - Begin -->
 <!-- Internal Component Tracking - End -->
-<a href="/b/fall-tote-1295-with-purchase/_/N-1ptp" onclick="set_cookie('ppod_TopNav-Fall Tote Now 30% Off!_Learn More_imagetext');">
+<a href="/b/holiday-tote-1295-with-purchase/_/N-2fyf" onclick="set_cookie('ppod_TopNav-Exclusive Holiday Tote Only $12.95 With Purchase_See Details_imagetext');">
 <div class="tile-wrapper"><!-- ATG-10227: Navigation flyout Optimization:start -->
 <input type="hidden" name="optimizationEnabled" value="true" /> <!-- ATG-10227-Code for optimization -->
-<input type="hidden" name="contentId" value="/content/dam/ccr/topnav/home-gift/2017/PROD-9845_HG_FallTote_flyout_9-10.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
+<input type="hidden" name="contentId" value="/content/dam/ccr/topnav/home-gift/2017/PROD-10761_H&amp;GHolidayTote_Flyout_image.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
 <div name="cq-renderer" class="header-tile-image"><!-- <div name="cq-renderer"></div> -->
 </div>
 <!--// CQ Content renderer div for performance optimization -->
 <div class="header-tile-content">
 <div class="promo-header-content">
-<h3 class="color-coal text--center">Fall Tote Now 30% Off!</h3>
+<h3 class="color-coal text--center">Exclusive Holiday Tote Only $12.95 With Purchase</h3>
 </div>
 <div class="header-tile-text">
-<h6 class="color-coal text--center">Save on our exclusive tote, available in four vibrant autumn colors.</h6>
+<h6 class="color-coal text--center">Carry your gifts in style this holiday season.</h6>
 </div>
-<p class="color-coal text--uppercase text--center mt-0 mb-0"><u>Learn More</u></p>
+<p class="color-coal text--uppercase text--center mt-0 mb-0"><u>See Details</u></p>
 </div>
 </div>
 <!-- ATG-10227: Navigation flyout Optimization : end -->
@@ -961,19 +1152,19 @@ displayHeaderFooterData(HEADERDATA);
 </div>
 <div class="header-tile"><!-- Internal Component Tracking - Begin -->
 <!-- Internal Component Tracking - End -->
-<a href="/b/classic-films-50-off/_/N-2n90" onclick="set_cookie('ppod_TopNav-Classic Films 50% Off_Shop Now_imagetext');">
+<a href="/b/the-criterion-collection-50-off/_/N-2o7e" onclick="set_cookie('ppod_TopNav-50% Off the Criterion Collection_Shop Now_imagetext');">
 <div class="tile-wrapper"><!-- ATG-10227: Navigation flyout Optimization:start -->
 <input type="hidden" name="optimizationEnabled" value="true" /> <!-- ATG-10227-Code for optimization -->
-<input type="hidden" name="contentId" value="/content/dam/ccr/topnav/movies-tv/2017/PROD-9630_MoviesTV_flyout_8-22.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
+<input type="hidden" name="contentId" value="/content/dam/ccr/topnav/movies-tv/2017/PROD-10388_MoviesTV_Hero_Flyout.png" /> <input type="hidden" name="type" value="imageUrl" /> <!-- CQ Content renderer div for performance optimization -->
 <div name="cq-renderer" class="header-tile-image"><!-- <div name="cq-renderer"></div> -->
 </div>
 <!--// CQ Content renderer div for performance optimization -->
 <div class="header-tile-content">
 <div class="promo-header-content">
-<h3 class="color-coal text--center">Classic Films 50% Off</h3>
+<h3 class="color-coal text--center">50% Off the Criterion Collection</h3>
 </div>
 <div class="header-tile-text">
-<h6 class="color-coal text--center">Save big on iconic films, including special anniversary editions.</h6>
+<h6 class="color-coal text--center">Save on deluxe editions of great films through 11/30/17.</h6>
 </div>
 <p class="color-coal text--uppercase text--center mt-0 mb-0"><u>Shop Now</u></p>
 </div>
@@ -1133,105 +1324,448 @@ $('.ie-outdated').show();
 </div>
 </div>
 </noscript> 
-
-
-
-
-
-
-
-
-
-
-
 <section id="main-content" class="landing-page-content">
 <div class="header"></div>
-
-
-
 <div class="main-content container pt-0">
 
 
-     
+
+
+
+
+
+
+
+<!-- 
+
+<script src="//dispatch.barnesandnoble.com/etc/designs/ccr/static/html/js/bn-cartridges-js.min.js?v=10" type="text/javascript"></script>
+ -->
+
+ 
+<link rel="stylesheet" href="../../../assets/build/css/bn-cartridges.min.css" type="text/css" media="screen"/>
+
+
+ 
+<link rel="stylesheet" href="../../../assets/build/css/bn-cartridges-mobile.min.css" type="text/css" media="screen"/>
+
+<script type="text/javascript" src="../../../assets/build/js/bn-cartridges-js.min.js"></script>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+  
+
+
+
+/*    
+.bfSignedEdContent .jsonGridItem {   margin: 0 10px 0 20px;}
+
+galaxy S5   360px    640 px
+nexus 5x    412px     732px
+nexus 6p    412 px.   732px
+iphone5.    320px     568px
+iphone6.    675px     667px
+iphone6plus 414px       736px
+
+ 
+
+320
+360
+412
+414
+568
+640
+667
+732
+736
+
+*/
+/*
+ @media only screen and (min-width: 567px) and (max-width: 668px) { 
+    .bfSignedEdContent{ padding: 13px 60px 0;  } 
+ }
+
+ @media only screen and (min-width: 416px) and (max-width: 567px) { 
+    .bfSignedEdContent{ padding: 13px 30px 0;  } 
+
+ }
+ @media only screen and (min-width: 362px) and (max-width: 415px) { 
+    .bfSignedEdContent{ padding: 13px 50px 0;  }
+
+
+ }
+ @media only screen and (min-width: 326px) and (max-width: 362px) { 
+    .bfSignedEdContent{ padding: 13px 35px 0;  }
+ 
+ }
+ @media only screen and (max-width: 325px) { 
+    .bfSignedEdContent{ padding: 13px 10px 0;  }
+ }
+
+*/
+
+/*
+
+.html .bfSignedEdHeroContent {
+
+	padding-top:12%;
+
+}
+.html .bfSignedEdHero {
+	min-height: 375px;
+	background-color:#000;
+}
+
+.html .bfSignedEdHeroContent .hdr {
+	font-size: 62px;
+	letter-spacing: 0.75px;
+
+}
+.html .bfSignedEdHeroContent .hdr span{
+	font-size:20px;
+	font-weight: normal;
+}
+
+
+@media only screen and (max-width: 350px) {  
+	.html .bfSignedEdHeroContent .brow{margin-bottom:13px;}
+    .html .bfSignedEdHeroContent .hdr {
+    	font-size: 50px;
+    	letter-spacing: 0.75px;
+	}
+	html .bfSignedEdHeroContent .brow{margin-bottom:13px;}
+	.html .bfSignedEdHeroContent .hdr span{font-size:16px;line-height: 2.4;}
+	.html .bfSignedEdHeroContent .note{font-size:14px;line-height: 3;}
+}
+*/
+</style>
+<!-- 
+    float: left;
+    position: relative;
+    width: 122px;
+    margin: 0 10px 0 15px;
+    font-size: 15px;
+    border: 0px red dotted;
+    padding:2px; 
+    text-align: left;
+     -->
+
  
 
 
 
 <div class="html">
-<div class="html-embed-container">
+  <div class="html-embed-container">
+
+    <div class="signedEdIntroCopy">
+      November&nbsp;25&#8209;28. Limited&nbsp;quantities.&nbsp;While&nbsp;supplies&nbsp;last.
+    </div>
 
 
-		<div class="smartgiftHero clearer"><a href="http://stores.barnesandnoble.com/" onclick="set_cookie('event_event-hero1600_black-friday-weekend-signed-editions_image');"><img id="eventHero" class="" alt="" /> <noscript><img src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/smartgift/Smartgift_hero-DT.jpg" /></noscript> 
-		<div class="smartgiftHeroContent text--center">
-		<div class="smartgiftHeroBrow">B&amp;N SmartGift<sup>&trade;</sup></div>
-		<h1 class="smartgiftHeroHdr">Take the Stress out of&nbsp;Gifting</h1>
-		<div class="smartgiftHerohdrCopy">Give them a gift they&rsquo;re guaranteed to love<br />
-		with B&amp;N&nbsp;SmartGift.</div>
-		</div>
-		</a> <script type="text/javascript">
-		//<![CDATA[
-		var isMobile = true; var URLpathArray = window.location.pathname.split( '/' );
-		if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com") {isMobile = true;}
-if ( isMobile ){
-document.getElementById("eventHero").src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/smartgift/Smartgift_hero-Mobile.jpg";
-
-	$( "#main-content,.smartgiftHero"  ).removeClass("desktop").addClass("mobile");
-}else{
-document.getElementById("eventHero").src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/smartgift/Smartgift_hero-DT.jpg";
-	$( "#main-content , .smartgiftHero"  ).addClass("desktop");
+ 
+    <div class="bfSignedEdHero clearer">
+      <a href="http://stores.barnesandnoble.com/" onclick="set_cookie('event_event-hero1600_black-friday-weekend-signed-editions_image');"> 
+				<h1> <img id="eventHero" class="" alt="Black Friday Weekend - Signed Editions By Acclaimed Authors - Exclusively in Stores" /> </h1>
+      </a> 
+<script type="text/javascript">
+  var isMobile = true; var URLpathArray = window.location.pathname.split( '/' );
+  if (window.location.hostname === "m.barnesandnoble.com"|| window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "https://mpreprod.barnesandnoble.com" || URLpathArray[1].toLowerCase() === "mobile") {isMobile = true;}
+  if ( isMobile ){
+    document.getElementById("eventHero").src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/blck-friday-signed-editions/Sign-edit_hero-mobile.png";
+    $( "#main-content, .bfSignedEdHero" ).addClass("mobile");
+  }else{
+    document.getElementById("eventHero").src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/blck-friday-signed-editions/Sign-edit_hero_2x_DT.png";
+    $( "#main-content, .bfSignedEdHero"  ).addClass("desktop");
 }
-		//]]>
-		</script>
-	</div>
+</script> 
+ 
 
 
-</div>
+    </div>
+
+
+  </div>
 </div>
 
 
 
 <div class="html">
-<div class="html-embed-container">
+  <div class="html-embed-container"> 
+ 
+
+    <div class="bfStoreLocator">
+      <a class="bfStoreLocatorlink" href="http://stores.barnesandnoble.com/" onclick="set_cookie('black-friday_signed-editions_find-a-store_text');">FIND A STORE</a>
+    </div>
 
 
-<header class="text--center smartgifth2">
-<h2 class="rule mb-xs">How It Works</h2>
-</header>
-<!-- 
-.dOnly {
-display: block;
-}
+    <div class="bfAuthorSectionLinksHdr text--center"> Browse by Author's Last Name </div>
+    <div > 
+      <ul id="bfAuthorNavPrimary" class="bfAuthorSectionLinks ">
+        <li data-section="all" >
+          <a class="authorSectionLink active" href="#all" role="menuitem" aria-posinset="1" tabindex="0">All</a>
+        </li>
+        <li data-section="A">A</li>
+        <li data-section="B">B</li>
+        <li data-section="C">C</li>
+        <li data-section="D">D</li>
+        <li data-section="E">E</li>
+        <li data-section="F">F</li>
+        <li data-section="G">G</li>
+        <li data-section="H">H</li>
+        <li data-section="I">I</li>
+        <li data-section="J">J</li>
+        <li data-section="K">K</li>
+        <li data-section="L">L</li>
+        <li data-section="M">M</li>
+        <li data-section="N">N</li>
+        <li data-section="O">O</li>
+        <li data-section="P">P</li>
+        <li data-section="Q">Q</li>
+        <li data-section="R">R</li>
+        <li data-section="S">S</li>
+        <li data-section="T">T</li>
+        <li data-section="U">U</li>
+        <li data-section="V">V</li>
+        <li data-section="W">W</li>
+        <li data-section="X">X</li>
+        <li data-section="Y">Y</li>
+        <li data-section="Z">Z</li>
+      </ul>
+    </div>
+ 
 
-.mOnly {
-display: none;
-}
--->
-<div class=" html clearer smartgifttable">
-<div class="smartgiftSteps">
-<div class="smartgiftStep">1</div>
-<div class="smartgiftStepCopy">
-<h3>Surprise them with your gift</h3>
-<p><span class="dOnly">Your recipient will instantly be notified of your gift via email, Facebook, or a gift link you can send directly to them.</span> <span class="mOnly">Your recipient will instantly be notified of your gift via text, WhatsApp, email, or a gift link you can send directly to them.</span></p>
+    <div id="jsonBFSignedEditions" class="bfSignedEdContent">
+      <div id="cq-html-renderer">
+        <p>json grid result list cq-html-renderer</p> 
+      </div>
+    </div>
+
+    <div class="bfStoreLocator">
+      <a class="bfStoreLocatorlink" href="http://stores.barnesandnoble.com/" onclick="set_cookie('black-friday_signed-editions_find-a-store_text');">FIND A STORE</a>
+    </div>
+
+    <div> 
+      <ul id="bfAuthorNavSecondary" class="bfAuthorSectionLinks">
+        <li data-section="all" >
+          <a class="authorSectionLink active" href="#all" role="menuitem" aria-posinset="1" tabindex="0">All</a>
+        </li>
+        <li data-section="A">A</li>
+        <li data-section="B">B</li>
+        <li data-section="C">C</li>
+        <li data-section="D">D</li>
+        <li data-section="E">E</li>
+        <li data-section="F">F</li>
+        <li data-section="G">G</li>
+        <li data-section="H">H</li>
+        <li data-section="I">I</li>
+        <li data-section="J">J</li>
+        <li data-section="K">K</li>
+        <li data-section="L">L</li>
+        <li data-section="M">M</li>
+        <li data-section="N">N</li>
+        <li data-section="O">O</li>
+        <li data-section="P">P</li>
+        <li data-section="Q">Q</li>
+        <li data-section="R">R</li>
+        <li data-section="S">S</li>
+        <li data-section="T">T</li>
+        <li data-section="U">U</li>
+        <li data-section="V">V</li>
+        <li data-section="W">W</li>
+        <li data-section="X">X</li>
+        <li data-section="Y">Y</li>
+        <li data-section="Z">Z</li>
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+
+
+    //https://shancarter.github.io/mr-data-converter/
+var jsonSignedEditions = [{"title":"You Don't Have to Say You Love Me","contributor":"Sherman Alexie","ean":9780316480727,"section":"A"},
+{"title":"In the Midst of Winter","contributor":"Isabel Allende","ean":9781501184239,"section":"A"},
+{"title":"The Christmas Room","contributor":"Catherine Anderson","ean":9780451490599,"section":"A"},
+{"title":"Wishtree","contributor":"Katherine Applegate","ean":9781250174901,"section":"A"},
+{"title":"Thirteen Reasons Why (10th Anniversary Edition)","contributor":"Jay Asher","ean":9780451479334,"section":"A"},
+{"title":"A Man Called Ove","contributor":"Fredrik Backman","ean":9781501184222,"section":"B"},
+{"title":"End Game (Will Robie Series #5)","contributor":"David Baldacci","ean":9781538712924,"section":"B"},
+{"title":"You Can't Spell America Without Me: The Really Tremendous Inside Story of My Fantastic First Year as President Donald J. Trump (A So-Called Parody)","contributor":"Alec Baldwin","ean":9780525558477,"section":"B"},
+{"title":"The Language of Thorns: Midnight Tales and Dangerous Magic","contributor":"Leigh Bardugo","ean":9781250177636,"section":"B"},
+{"title":"Serafina and the Splintered Heart (Serafina Series #3)","contributor":"Robert Beatty","ean":9781368022552,"section":"B"},
+{"title":"Girling Up: How to Be Strong, Smart and Spectacular","contributor":"Mayim Bialik","ean":9780525514800,"section":"B"},
+{"title":"One Dark Throne (Three Dark Crowns Series #2)","contributor":"Kendare Blake","ean":9780062797292,"section":"B"},
+{"title":"Hue 1968: A Turning Point of the American War in Vietnam","contributor":"Mark Bowden","ean":9780802127693,"section":"B"},
+{"title":"Gingerbread Christmas","contributor":"Jan Brett","ean":9780525514787,"section":"B"},
+{"title":"F*ck, That's Delicious: An Annotated Guide to Eating Well","contributor":"Action Bronson","ean":9781419730122,"section":"B"},
+{"title":"Minecraft: The Island","contributor":"Max Brooks","ean":9781524797355,"section":"B"},
+{"title":"The Wild Robot","contributor":"Peter Brown","ean":9780316518321,"section":"B"},
+{"title":"Sisters First: Stories from Our Wild and Wonderful Life","contributor":"Jenna & Barbara Bush","ean":9781538729298,"section":"B"},
+{"title":"The Twisted Ones (Five Nights at Freddy's Series #2)","contributor":"Scott Cawthon","ean":9781338233612,"section":"C"},
+{"title":"Going Into Town: A Love Letter to New York","contributor":"Roz Chast","ean":9781635571509,"section":"C"},
+{"title":"The Midnight Line (Jack Reacher Series #22)","contributor":"Lee Child","ean":9781101966273,"section":"C"},
+{"title":"Ready Player One","contributor":"Ernest Cline","ean":9780525572886,"section":"C"},
+{"title":"She Persisted: 13 American Women Who Changed the World","contributor":"Chelsea Clinton","ean":9780525514794,"section":"C"},
+{"title":"Don't Let Go","contributor":"Harlan Coben","ean":9781524742829,"section":"C"},
+{"title":"The Alchemist (25th Anniversary Edition)","contributor":"Paulo Coelho","ean":9780062439994,"section":"C"},
+{"title":"Worlds Collide (The Land of Stories Series #6)","contributor":"Chris Colfer","ean":9780316477741,"section":"C"},
+{"title":"Two Kinds of Truth (Harry Bosch Series #20)","contributor":"Michael Connelly","ean":9780316480758,"section":"C"},
+{"title":"Life in Motion: An Unlikely Ballerina Young Readers Edition","contributor":"Misty Copeland","ean":9781534417922,"section":"C"},
+{"title":"Leviathan Wakes (Expanse Series #1)","contributor":"James S. A. Corey","ean":9780316515986,"section":"C"},
+{"title":"Enigma (FBI Series #21)","contributor":"Catherine Coulter","ean":9781501183812,"section":"C"},
+{"title":"I'm Fine...And Other Lies","contributor":"Whitney Cummings","ean":9780525534556,"section":"C"},
+{"title":"Typhoon Fury (Oregon Files Series #12)","contributor":"Clive Cussler","ean":9780525534570,"section":"C"},
+{"title":"The Legend of Rock Paper Scissors","contributor":"Drew Daywalt","ean":9780062797261,"section":"D"},
+{"title":"The Brief Wondrous Life of Oscar Wao","contributor":"Junot Díaz","ean":9780525534501,"section":"D"},
+{"title":"Pete the Cat and the Missing Cupcakes","contributor":"James Dean","ean":9780062797254,"section":"D"},
+{"title":"The Cuban Affair: A Novel","contributor":"Nelson DeMille","ean":9781501183362,"section":"D"},
+{"title":"What Does This Button Do?: An Autobiography","contributor":"Bruce Dickinson","ean":9780062842251,"section":"D"},
+{"title":"The Pioneer Woman Cooks: Come and Get It!: Simple, Scrumptious Recipes for Crazy Busy Lives (B&N Exclusive Edition)","contributor":"Ree Drummond","ean":9780062836090,"section":"D"},
+{"title":"Through Your Eyes: My Child's Gift to Me","contributor":"Ainsley Earhardt","ean":9781534417946,"section":"E"},
+{"title":"Manhattan Beach","contributor":"Jennifer Egan","ean":9781501184321,"section":"E"},
+{"title":"Future Home of the Living God: A Novel","contributor":"Louise Erdrich","ean":9780062803856,"section":"E"},
+{"title":"Hardcore Twenty-Four (Stephanie Plum Series #24)","contributor":"Janet Evanovich","ean":9781101966259,"section":"E"},
+{"title":"Unqualified","contributor":"Anna Faris","ean":9781524742836,"section":"F"},
+{"title":"Dark Legacy (Dark Series #31)","contributor":"Christine Feehan","ean":9780451490605,"section":"F"},
+{"title":"Blessed Life: My Surprising Journey of Joy, Tears, and Tales from Harlem to Hollywood","contributor":"Kim Fields","ean":9781546027102,"section":"F"},
+{"title":"Growing Up Fisher: Musings, Memories, and Misadventures","contributor":"Joely Fisher","ean":9780062839428,"section":"F"},
+{"title":"Al Franken, Giant of the Senate","contributor":"Al Franken","ean":9781538712962,"section":"F"},
+{"title":"The Hollywood Commandments: A Spiritual Guide to Secular Success","contributor":"DeVon Franklin","ean":9780062803245,"section":"F"},
+{"title":"Note to Self","contributor":"Connor Franta","ean":9781501184215,"section":"F"},
+{"title":"Norse Mythology","contributor":"Neil Gaiman","ean":9780393651775,"section":"G"},
+{"title":"What Is It All but Luminous: Notes from an Underground Man","contributor":"Art Garfunkel","ean":9780525521266,"section":"G"},
+{"title":"Spy School Secret Service (B&N Exclusive Edition) (Spy School Series #5)","contributor":"Stuart Gibbs","ean":9781534418837,"section":"G"},
+{"title":"Vengeance","contributor":"Newt Gingrich","ean":9781546083252,"section":"G"},
+{"title":"An Inconvenient Sequel: Truth to Power","contributor":"Al Gore","ean":9781635652376,"section":"G"},
+{"title":"The Rise and Fall of Adam and Eve","contributor":"Stephen Greenblatt","ean":9780393651782,"section":"G"},
+{"title":"Camino Island","contributor":"John Grisham","ean":9780385543736,"section":"G"},
+{"title":"The Saboteur","contributor":"Andrew Gross","ean":9781250185105,"section":"G"},
+{"title":"Princesses Wear Pants","contributor":"Savannah Guthrie","ean":9781419730184,"section":"G"},
+{"title":"Uncommon Type: Some Stories","contributor":"Tom Hanks","ean":9780525520863,"section":"H"},
+{"title":"River Rose and the Magical Christmas","contributor":"HarperCollins","ean":9780062797247,"section":"H"},
+{"title":"The Magic Misfits (Magic Misfits Series #1)","contributor":"Neil Patrick Harris","ean":9780316518437,"section":"H"},
+{"title":"I Can't Make This Up: Life Lessons","contributor":"Kevin Hart","ean":9781501184246,"section":"H"},
+{"title":"Of Mess and Moxie: Wrangling Delight Out of This Wild and Glorious Life","contributor":"Jen Hatmaker","ean":9781400207923,"section":"H"},
+{"title":"Into the Water","contributor":"Paula Hawkins","ean":9780525534495,"section":"H"},
+{"title":"I Got This: To Gold and Beyond","contributor":"Laurie Hernandez","ean":9780062797230,"section":"H"},
+{"title":"Winter Solstice","contributor":"Elin Hilderbrand","ean":9780316480734,"section":"H"},
+{"title":"Strange Weather: Four Short Novels","contributor":"Joe Hill","ean":9780062837028,"section":"H"},
+{"title":"Vacationland: True Stories from Painful Beaches","contributor":"John Hodgman","ean":9780525558484,"section":"H"},
+{"title":"The Rules of Magic","contributor":"Alice Hoffman","ean":9781501183331,"section":"H"},
+{"title":"The Kite Runner","contributor":"Khaled Hosseini","ean":9780525534488,"section":"H"},
+{"title":"Pretty Fun: Creating and Celebrating a Lifetime of Tradition","contributor":"Kate Hudson","ean":9780062835574,"section":"H"},
+{"title":"Leonardo da Vinci","contributor":"Walter Isaacson","ean":9781501183348,"section":"I"},
+{"title":"Soar!: Build Your Vision from the Ground Up","contributor":"T. D. Jakes","ean":9781546027157,"section":"J"},
+{"title":"The Phantom Tollbooth","contributor":"Norton Juster","ean":9780375976810,"section":"J"},
+{"title":"To Be Where You Are (Mitford Series #14)","contributor":"Jan Karon","ean":9780525534563,"section":"K"},
+{"title":"Endurance: A Year in Space, A Lifetime of Discovery","contributor":"Scott Kelly","ean":9780525520696,"section":"K"},
+{"title":"My Journey to the Stars","contributor":"Scott Kelly","ean":9780375976834,"section":"K"},
+{"title":"Andrew Jackson and the Miracle of New Orleans: The Battle That Shaped America's Destiny","contributor":"Brian Kilmeade","ean":9780525534600,"section":"K"},
+{"title":"The Long Haul (Diary of a Wimpy Kid Series #9)","contributor":"Jeff Kinney","ean":9781419730214,"section":"K"},
+{"title":"The Whispering Room","contributor":"Dean Koontz","ean":9780525486244,"section":"K"},
+{"title":"Why We Don't Suck: And How All of Us Need to Stop Being Such Partisan Little Bitches","contributor":"Denis Leary","ean":9780525572916,"section":"L"},
+{"title":"Genuine Fraud","contributor":"E. Lockhart","ean":9780375976803,"section":"L"},
+{"title":"The Princess Saves Herself in this One","contributor":"Amanda Lovelace","ean":9781449490690,"section":"L"},
+{"title":"The Giver","contributor":"Lois Lowry","ean":9780544974630,"section":"L"},
+{"title":"Tower of Dawn (Throne of Glass Series #6)","contributor":"Sarah J. Maas","ean":9781681198583,"section":"M"},
+{"title":"Merry and Bright","contributor":"Debbie Macomber","ean":9781524797386,"section":"M"},
+{"title":"Hiddensee: A Tale of the Once and Future Nutcracker","contributor":"Gregory Maguire","ean":9780062837110,"section":"M"},
+{"title":"The Autobiography of Gucci Mane","contributor":"Gucci Mane","ean":9781501183379,"section":"M"},
+{"title":"Hunting Prince Dracula (Stalking Jack the Ripper Series #2)","contributor":"Kerri Maniscalco","ean":9780316477802,"section":"M"},
+{"title":"The Ninth Hour","contributor":"Alice McDermott","ean":9780374904043,"section":"M"},
+{"title":"Rhett & Link's Book of Mythicality: A Field Guide to Curiosity, Creativity, and Tomfoolery","contributor":"Rhett McLaughlin","ean":9780525572893,"section":"M"},
+{"title":"Make Your Bed: Little Things That Can Change Your Life...And Maybe the World","contributor":"William H. McRaven","ean":9781538712955,"section":"M"},
+{"title":"Renegades","contributor":"Marissa Meyer","ean":9781250174024,"section":"M"},
+{"title":"Little Fires Everywhere","contributor":"Celeste Ng","ean":9780525558460,"section":"N"},
+{"title":"The Sympathizer","contributor":"Viet Thanh Nguyen","ean":9780802127709,"section":"N"},
+{"title":"Born a Crime: Stories from a South African Childhood","contributor":"Trevor Noah","ean":9780399590979,"section":"N"},
+{"title":"Everything All at Once: How to Unleash Your Inner Nerd, Tap into Radical Curiosity and Solve Any Problem","contributor":"Bill Nye","ean":9781635652369,"section":"N"},
+{"title":"In the Deep Blue Sea (Jack and the Geniuses Series #2)","contributor":"Bill Nye","ean":9781419730191,"section":"N"},
+{"title":"The Things They Carried","contributor":"Tim O'Brien","ean":9781328483133,"section":"O"},
+{"title":"Blessed in the Darkness: How All Things Are Working for Your Good","contributor":"Joel Osteen","ean":9781546027126,"section":"O"},
+{"title":"Sweet: Desserts from London's Ottolenghi","contributor":"Yotam Ottolenghi","ean":9780399581205,"section":"O"},
+{"title":"Wonder","contributor":"R. J. Palacio","ean":9780375976827,"section":"O"},
+{"title":"Fight Club","contributor":"Chuck Palahniuk","ean":9780393651676,"section":"P"},
+{"title":"Eragon (Inheritance Cycle Series #1)","contributor":"Christopher Paolini","ean":9780375975783,"section":"P"},
+{"title":"Smitten Kitchen Every Day: Triumphant and Unfussy New Favorites","contributor":"Deb Perelman","ean":9780525520788,"section":"P"},
+{"title":"Mrs. Fletcher","contributor":"Tom Perrotta","ean":9781501184338,"section":"P"},
+{"title":"Small Great Things","contributor":"Jodi Picoult","ean":9780425286920,"section":"P"},
+{"title":"La Belle Sauvage (Book of Dust Series #1)","contributor":"Philip Pullman","ean":9780375976919,"section":"P"},
+{"title":"Long Way Down","contributor":"Jason Reynolds","ean":9781534419186,"section":"R"},
+{"title":"Be Brave Little One","contributor":"Marianne Richmond","ean":9781492663928,"section":"R"},
+{"title":"Mighty, Mighty Construction Site","contributor":"Sherri Duskey Rinker","ean":9781452188737,"section":"R"},
+{"title":"The Dark Prophecy (The Trials of Apollo Series #2)","contributor":"Rick Riordan","ean":9781368013765,"section":"R"},
+{"title":"The Ship of the Dead (Magnus Chase and the Gods of Asgard Series #3)","contributor":"Rick Riordan","ean":9781368021517,"section":"R"},
+{"title":"Bonfire","contributor":"Krysten Ritter","ean":9780525572824,"section":"R"},
+{"title":"Unshakeable: Your Financial Freedom Playbook","contributor":"Tony Robbins","ean":9781501183355,"section":"R"},
+{"title":"The Golden House","contributor":"Salman Rushdie","ean":9780525509745,"section":"R"},
+{"title":"Deep Freeze (Virgil Flowers Series #10)","contributor":"John Sandford","ean":9780525534549,"section":"S"},
+{"title":"Lincoln in the Bardo","contributor":"George Saunders","ean":9780525509806,"section":"S"},
+{"title":"It Takes Two: Our Story","contributor":"Jonathan Scott","ean":9781328967473,"section":"S"},
+{"title":"Exposed (Rosato & DiNunzio Series #5)","contributor":"Lisa Scottoline","ean":9781250190185,"section":"S"},
+{"title":"Otherworld (Otherworld Series #1)","contributor":"Jason Segel","ean":9780375976858,"section":"S"},
+{"title":"Basketball (and Other Things): A Collection of Questions Asked, Answered, Illustrated","contributor":"Shea Serrano","ean":9781419730375,"section":"S"},
+{"title":"Unstoppable: My Life So Far","contributor":"Maria Sharapova","ean":9780374904036,"section":"S"},
+{"title":"On Power: My Journey Through the Corridors of Power and How You Can Get More Power","contributor":"Gene Simmons","ean":9780062836823,"section":"S"},
+{"title":"Rest in the Mourning","contributor":"r.h. Sin","ean":9781449492823,"section":"S"},
+{"title":"A Beautiful Composition of Broken","contributor":"r.h. Sin","ean":9781449492830,"section":"S"},
+{"title":"Whiskey Words & a Shovel I","contributor":"r.h. Sin","ean":9781449493745,"section":"S"},
+{"title":"You are a Badass (Deluxe Edition): How to Stop Doubting Your Greatness and Start Living an Awesome Life","contributor":"Jen Sincero","ean":9780762464036,"section":"S"},
+{"title":"The Bad Beginning","contributor":"Lemony Snicket","ean":9780062797278,"section":"S"},
+{"title":"Two's Company: A Fifty-Year Romance with Lessons Learned in Love, Life & Business","contributor":"Suzanne Somers","ean":9780525572817,"section":"S"},
+{"title":"Where the Past Begins: A Writer's Memoir","contributor":"Amy Tan","ean":9780062846426,"section":"T"},
+{"title":"The Hate U Give","contributor":"Angie Thomas","ean":9780062797285,"section":"T"},
+{"title":"A Gentleman in Moscow","contributor":"Amor Towles","ean":9780735222984,"section":"T"},
+{"title":"Raising Trump","contributor":"Ivana Trump","ean":9781501183836,"section":"T"},
+{"title":"Unbelievable: My Front-Row Seat to the Craziest Campaign in American History","contributor":"Katy Tur","ean":9780062836816,"section":"T"},
+{"title":"Mistress of All Evil: A Tale of the Dark Fairy","contributor":"Serena Valentino","ean":9781368022569,"section":"V"},
+{"title":"The Polar Express 30th anniversary edition","contributor":"Chris Van Allsburg","ean":9780544704510,"section":"V"},
+{"title":"Hillbilly Elegy: A Memoir of a Family and Culture in Crisis","contributor":"J. D. Vance","ean":9780062803863,"section":"V"},
+{"title":"Liner Notes: On Parents & Children, Exes & Excess, Death & Decay, & a Few of My Other Favorite Things","contributor":"Loudon Wainwright","ean":9780525534532,"section":"W"},
+{"title":"The Glass Castle","contributor":"Jeannette Walls","ean":9781501184499,"section":"W"},
+{"title":"Sing, Unburied, Sing","contributor":"Jesmyn Ward","ean":9781501184345,"section":"W"},
+{"title":"The Lying Game","contributor":"Ruth Ware","ean":9781501183829,"section":"W"},
+{"title":"A Sick Life: TLC 'n Me: Stories from On and Off the Stage","contributor":"Tionne Watkins","ean":9781635652383,"section":"W"},
+{"title":"Little Bigfoot, Big City (B&N Exclusive Edition) (Littlest Bigfoot Series #2)","contributor":"Jennifer Weiner","ean":9781534417915,"section":"W"},
+{"title":"Soonish: Ten Emerging Technologies That'll Improve and/or Ruin Everything","contributor":"Zach Weinersmith","ean":9780525557951,"section":"W"},
+{"title":"Artemis","contributor":"Andy Weir","ean":9780525572985,"section":"W"},
+{"title":"The Underground Railroad (Oprah's Book Club)","contributor":"Colson Whitehead","ean":9780385542319,"section":"W"},
+{"title":"The Thank You Book (Elephant and Piggie Series)","contributor":"Mo Willems","ean":9781368023658,"section":"W"},
+{"title":"Discipline Equals Freedom: Field Manual","contributor":"Jocko Willink","ean":9781250184719,"section":"W"},
+{"title":"Everything, Everything","contributor":"Nicola Yoon","ean":9780375976797,"section":"Y"},
+{"title":"The Audition (Maddie Ziegler Series #1)","contributor":"Maddie Ziegler","ean":9781534418424,"section":"Z"},
+{"title":"The Seat of the Soul (25th Anniversary Edition with a Study Guide)","contributor":"Gary Zukav","ean":9781501184970,"section":"Z"},
+{"title":"The Book Thief (10th Anniversary Edition)","contributor":"Markus Zusak","ean":9780375976841,"section":"Z"}];
+
+
+
+</script> 
 </div>
-</div>
-<div class="smartgiftSteps">
-<div class="smartgiftStep">2</div>
-<div class="smartgiftStepCopy">
-<h3>Let them decide <!-- [for mobile: Recipient can either accept or exchange your gift] --></h3>
-<p>Your recipient can accept your gift, or easily exchange it for another similarly priced item.</p>
-</div>
-</div>
-<div class="smartgiftSteps">
-<div class="smartgiftStep">3</div>
-<div class="smartgiftStepCopy">
-<h3>Pay after they choose their gift</h3>
-<p>We&rsquo;ll send you their gift selection &amp; shipping address. Then, all you have to do is checkout on BN.com and the gift will be on its way to your recipient.</p>
-</div>
-</div>
-</div>
-<div class="smartgiftCTA text--center"><a href="https://bn.smartgiftit.com/" class="btn btn--large">Send a SmartGift</a></div>
-<div class="smartgiftlegal text--center">
-<p class="text--small">Note: Prices are subject to change between the time you send a gift and your recipient accepts it, due to BN.com discount cadence.</p>
 </div>
 
 
@@ -1239,15 +1773,59 @@ display: none;
 
 
 
-</div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div>
 <!-- Implementation ATG-11199:bloomreach start -->
 <!-- Implementation ATG-11199:bloomreach end -->
 <div class="container"></div>
- 
+<script type="text/javascript">
+//<![CDATA[
+if(!$('body').hasClass('thank-you')) {
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-11110821-1', {'cookieDomain': 'barnesandnoble.com'});
+ga('send', 'pageview');
+}
+//]]>
+</script>
  <!-- All Javascripts in js-scripts-ra.jsp has to be minified. ALl JS has to be moved to release dir as per grunt minification -->
 <script type="text/javascript" src="//js.js-bn.com/static/redesign/release/js/vendor.js?v4.11.14">
 //<![CDATA[
@@ -1269,7 +1847,11 @@ display: none;
 //<![CDATA[
 //]]>
 </script>
- 
+<script type="text/javascript">
+//<![CDATA[
+$.webshims.polyfill('es5 forms forms-ext');
+//]]>
+</script>
  <script type="text/javascript" src="//js.js-bn.com/static/redesign/srcs/js/sections/search/search.js?v4.11.14">
 //<![CDATA[
 //]]>
@@ -1306,7 +1888,29 @@ display: none;
 //<![CDATA[
 //]]>
 </script>
- 
+ <script type="text/javascript">
+//<![CDATA[
+if(!$.isEmptyObject(digitalData)){
+var digitalData1 = {"session":{"sessionID":"8CF76CFC0C1D07D31175361F2771065F","serverName":"prodny_store02"},"page":{"timestamp":"Sun Nov 05 08:58:32 EST 2017","category":{"primaryCategory":"black-friday-signed-editions-books","hierarchy":"/h/black-friday-signed-editions-books"},"pageInfo":{"pageType":"generic content","pageName":"generic content:black-friday-signed-editions-books","language":"en","geoRegion":"US","breadCrumbs":["home","h","black-friday-signed-editions-books"],"ipAddress":"73.80.123.6"},"attributes":{"internalCampaignCTA":"","internalCampaignElement":"","internalCampaignAdFormat":"","internalCampaignPageType":"","internalCampaignDescription":""}},"cart":{"price":{"shipping":0,"priceWithTax":0,"transationalTotal":0,"basePrice":0}}};
+$.extend(digitalData,digitalData1);
+}else{
+
+var digitalData = {"session":{"sessionID":"8CF76CFC0C1D07D31175361F2771065F","serverName":"prodny_store02"},"page":{"timestamp":"Sun Nov 05 08:58:32 EST 2017","category":{"primaryCategory":"black-friday-signed-editions-books","hierarchy":"/h/black-friday-signed-editions-books"},"pageInfo":{"pageType":"generic content","pageName":"generic content:black-friday-signed-editions-books","language":"en","geoRegion":"US","breadCrumbs":["home","h","black-friday-signed-editions-books"],"ipAddress":"73.80.123.6"},"attributes":{"internalCampaignCTA":"","internalCampaignElement":"","internalCampaignAdFormat":"","internalCampaignPageType":"","internalCampaignDescription":""}},"cart":{"price":{"shipping":0,"priceWithTax":0,"transationalTotal":0,"basePrice":0}}};
+
+}
+if (typeof s_setP !== 'undefined') { 
+}
+$(document).ready(function(){
+if (typeof s_setP !== 'undefined') {
+
+BN.Analytics.Search.init();
+
+BN.Analytics.Generic.GoogleAds();
+
+}
+});
+//]]>
+</script>
  <script type="text/javascript">
 //<![CDATA[
 //]]>
@@ -1319,11 +1923,26 @@ display: none;
 //<![CDATA[
 //]]>
 </script>
- 
+ <script type="text/javascript">
+//<![CDATA[
+var cname = "internalCampaign",
+cvalue = null;
+var curCookie = cname + "=" + cvalue +
+"; expires= Thu, 01 Jan 1970 00:00:01 GMT;" +
+"; path=" + "/"  +
+"; domain=" + SITE_DOMAIN;
+document.cookie = curCookie;
+//]]>
+</script>
+ <script type="text/javascript">
+//<![CDATA[
+_satellite.pageBottom();
+//]]>
+</script>
   </section>
 </main>
 
- 
+<script type='text/javascript' src='//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710302326p/js/proxy.js'></script>
 </body>
 </html>
 

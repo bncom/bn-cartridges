@@ -465,6 +465,132 @@
 	        });
 	    }
 
+
+	    // BlackFriday Signed Editions
+    	// Confirm dom wrapper to write to AND array are available! then... 
+	    if ($('#jsonBFSignedEditions').length && (typeof jsonSignedEditions !== "undefined")){
+			 
+			var insertAlphaNav = ($('#bfAuthorNavPrimary').length>0);
+			var alphaPosition=1; 
+
+
+		var signedEd = jsonSignedEditions.map(function (i,count) { 
+		// });
+
+	       // $.each(jsonGridItems, function(i) { // console.log(i); loop through each array line
+	        //   count = count +1;   
+	         // console.log(count);
+
+	            if(count >= 0){ // isolate this array line's items  
+	              var ean = i.ean;  // regular edition 
+	              var title = i.title.trim();
+	              var contributor = i.contributor.trim();  
+ 
+				  var sectionName = i.section;
+				  var sectionTarget = "";
+
+				  if(insertAlphaNav){
+					if (count === 0 || ( count>1 && (sectionName !== jsonSignedEditions[count-1].section) ) ) {  
+						alphaPosition=alphaPosition+1;
+						var sectionLink = '<a role="menuitem" aria-setsize="" aria-posinset="'+alphaPosition+'" href="#'+sectionName+'" class="authorSectionLink" tabindex="0">'+sectionName+'</a>';
+						sectionTarget = 'id="'+sectionName+'"'; 
+						$('#bfAuthorNavPrimary li[data-section='+sectionName+']').html(sectionLink); 
+						$('#bfAuthorNavSecondary li[data-section='+sectionName+']').html(sectionLink);   
+						//$('#jsonGridItemsNavList').append(sectionLink);    
+					} 
+				  }
+	              //console.log(seTitle.length) 
+	              var characterMaxLength = 50;// maximum number of characters to extract
+	              var titleDisplayed = title;
+	              if(title.length > characterMaxLength) {
+	                    var extHellip = '&hellip;';   
+	                    //trim the string to the maximum length
+	                    var trimmedString = title.substr(0, characterMaxLength);
+	                    //re-trim if we are in the middle of a word
+	                    trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))); 
+	                    titleDisplayed = trimmedString+extHellip;
+	                  // $(this).text(trimmedString); 
+	                  // $(this).append(extHellip);
+	               } 
+
+                   var icItem = "event_result-grid_"+ean+"_image";
+	               var imgPath = "//prodimage.images-bn.com/pimages/"+ean+"_p0_v3_s118x184.jpg";
+	               var jsonItem = $('<div '+sectionTarget+' class="jsonGridItem active sect_'+sectionName+'"><a aria-label="'+title+' - Signed Edition" href="http://stores.barnesandnoble.com/" onclick="set_cookie('+icItem+');"><div class="jsonGridImage"><img src="'+imgPath+'" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridContributor">'+contributor+'</p><p class="jsonGridTitle">'+titleDisplayed+'</p></div></a></div>'); 
+	               $('#jsonBFSignedEditions').append(jsonItem); 
+	            }
+	            
+	        });
+ 
+
+				var signedEditionsRenderer =function (section) {
+					var tgtSection = "sect_" + section;  
+					var theSpeed = 1000;
+					if(section === "all"){
+						$('.jsonGridItem').addClass('active').css('z-index',1).animate({
+                        	opacity: 1
+	                    }, {
+	                        duration:theSpeed,
+	                        easing: "swing",
+	                        complete: function(){ /*  $(this).after("<p>hidden</p>"); */ } 
+	                    }); 
+	                    $('#bfAuthorNavSecondary').fadeIn();
+					}else{  
+						$('.jsonGridItem').each(function(index) {
+							$(this).removeClass('active').css('z-index',-1).animate({
+		                        opacity: 0
+		                    }, {
+		                        duration: 0,
+		                        easing: "swing",
+	                        	complete: function(){ /*  $(this).after("<p>hidden</p>"); */ }
+		                    });
+							if($(this).hasClass( tgtSection )){
+								$(this).delay(index).addClass('active').css('z-index',1).animate({
+		                        opacity: 1
+			                    }, {
+			                        duration:theSpeed,
+			                        easing: "swing",
+	                        		complete: function(){ /*  $(this).after("<p>hidden</p>"); */ }
+			                    });
+							}
+						}); 
+	                	$('#bfAuthorNavSecondary').fadeOut();
+					}
+				}; 
+  
+ 	       	if(insertAlphaNav){ 
+ 	       		$('.authorSectionLink').attr("aria-setsize", $('.authorSectionLink').length); 
+				$('#bfAuthorNavSecondary .authorSectionLink').click(function(e) {
+					e.preventDefault();
+					//$('#bfAuthorNavPrimary .authorSectionLink').removeClass('active');
+					//$(this).addClass('active');
+					var section = $(this).parent().attr('data-section');  
+					$('#bfAuthorNavPrimary .authorSectionLink').removeClass('active'); 
+					$('#bfAuthorNavPrimary [data-section='+section+'] .authorSectionLink').addClass('active');
+ 						signedEditionsRenderer(section);
+					//$('.jsonGridItem').each(function(index, value){ 	});
+					$('html, body').animate({ scrollTop: ($('#bfAuthorNavPrimary').offset().top)},500);
+
+				});
+
+				$('#bfAuthorNavPrimary .authorSectionLink').click(function(e) {
+					e.preventDefault();
+					$('#bfAuthorNavPrimary .authorSectionLink').removeClass('active'); 
+					$(this).addClass('active');
+					var section = $(this).parent().attr('data-section');   
+					//$('.jsonGridItem').each(function(index, value){ 	});
+					signedEditionsRenderer(section);
+				});
+		     }
+
+	    }
+
+
+
+
+
+
+
+
 	    // NOOK Device pricing 
 	 	if($('#compare').length || $('.comp-price').length || $('#nook-device-price').length){  
 	          $.ajax({   

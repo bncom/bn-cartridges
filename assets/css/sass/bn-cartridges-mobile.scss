@@ -1,43 +1,57 @@
-#cq-html-renderer,.cq-html-renderer{height:0;width: 0;visibility: hidden; opacity: 0;}
+#cq-html-renderer,
+.cq-html-renderer {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+}
 
 @import "partials/var";
 @import "cartridges/overwrite-global";
 @import "cartridges/overwrite-global-mobile";
 @import "skava/skava-global-overwrite-mobile";
-#main-content, .PageContent{ 
-       overflow-y: initial;  
-       -webkit-overflow-scrolling: touch; 
+#main-content,
+.PageContent {
+    overflow-y: initial;
+    -webkit-overflow-scrolling: touch;
 }
-.html{position: relative;  clear: left;
-	* {
-	  -moz-box-sizing: border-box;
-	  box-sizing: border-box;
-	}
-	@import "partials/reset"; 
-	@import "partials/buttons";
-	@import "partials/shadows";
 
-	@import "modules/cms-main";	
- 	@import "modules/cms-main-mobile";
- 	@import "skava/skava-local-mobile";
-	@import "modules/coupons-deals";
-	@import "modules/coupons-deals-mobile";
-	@import "cartridges/apply-desktop";
-	@import "cartridges/apply-mobile";
+.html {
+    position: relative;
+    clear: left;
+    * {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    @import "partials/reset";
+    @import "partials/buttons";
+    @import "partials/shadows";
 
-	@import "modules/textbooks";
-	@import "modules/textbooks-mobile";
-	@import "modules/mastercard";
-	@import "modules/mastercard-mobile";
-	@import "modules/nook";
-	@import "modules/nook-mobile";
+    @import "modules/cms-main";
+    @import "modules/cms-main-mobile";
+    @import "skava/skava-local-mobile";
+    @import "modules/coupons-deals";
+    @import "modules/coupons-deals-mobile";
+    @import "cartridges/apply-desktop";
+    @import "cartridges/apply-mobile";
+
+    @import "modules/textbooks";
+    @import "modules/textbooks-mobile";
+    @import "modules/mastercard";
+    @import "modules/mastercard-mobile";
+    @import "modules/nook";
+    @import "modules/nook-mobile";
 }
- 
 
-.mobile-only{display: block !important; } 
-/* *** Redesign 2017 *** */  
+
+.mobile-only {
+    display: block !important;
+}
+
+/* *** Redesign 2017 *** */
+
 @import "r17/r17-skava";
 @import "r17/r17-textbooks";
-@import "r17/r17-textbooks-mobile"; 
+@import "r17/r17-textbooks-mobile";
 @import "r17/r17-coupons-deals";
 @import "r17/r17-coupons-deals-mobile";
