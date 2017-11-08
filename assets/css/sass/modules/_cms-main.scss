@@ -496,28 +496,23 @@ figcaption.desk {
 .pmis-samplet-prev-item {
     background-position: -65px 0;
     left: 37%;
-}
-
+} 
 .pmis-samplet-prev-item.disabled {
     background-position: 1px 0;
-}
-
+} 
 .pmis-samplet-next-item {
     background-position: -96px 0;
     right: 37%;
-}
-
+} 
 .pmis-samplet-next-item.disabled {
     background-position: -29px 0;
-}
-
+} 
 #pmis-samplet-status {
     height: 26px;
     font-family: Raleway, PTSans, Arial;
     color: #0d4563;
     font-size: 17px;
-}
-
+} 
 .pmis-steps {
     background-color: #d6eaa1;
     /*  -moz-box-shadow:  -2px 2px 1px 0 rgba(157, 176, 191, 0.55);
@@ -528,8 +523,7 @@ figcaption.desk {
     position: relative;
     font-size: 20px;
     line-height: 1.5;
-}
-
+} 
 h3.pmis-steps-hdr {
     text-align: center;
     font-family: Quicksand-Bold, PTSans, Arial;
@@ -538,8 +532,7 @@ h3.pmis-steps-hdr {
     font-size: 30px;
     text-transform: uppercase;
     margin: 23px 0 28px;
-}
-
+} 
 .pmis-steps::before {
     background: rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
     top: 25px;
@@ -549,8 +542,7 @@ h3.pmis-steps-hdr {
     left: 0;
     position: absolute;
     width: 100%;
-}
-
+} 
 .pmis-steps::after {
     background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
     content: "";
@@ -560,8 +552,7 @@ h3.pmis-steps-hdr {
     position: absolute;
     bottom: 25px;
     width: 100%;
-}
-
+} 
 .pmis-cta {
     margin-bottom: 25px;
     padding: 0 30px;
@@ -570,14 +561,12 @@ h3.pmis-steps-hdr {
     color: #0d4563;
     font-size: 20px;
     line-height: 1.5;
-}
-
+} 
 .pmis-steps-list {
     width: 33%;
     margin: 0 0 0 50px;
     padding: 0;
-}
-
+} 
 li.pmisOne,
 li.pmisTwo,
 li.pmisThree {
@@ -590,8 +579,7 @@ li.pmisThree {
     color: #0d4563;
     font-size: 20px;
     line-height: 1.2;
-}
-
+} 
 li.pmisOne {
     background-position: 0 -25px;
 }
@@ -602,14 +590,12 @@ li.pmisTwo {
 
 li.pmisThree {
     background-position: 0 -325px;
-}
-
+} 
 .pmis-child {
     float: right;
     margin-right: 32px;
     clear: both;
-}
-
+} 
 .pmis a.pmis-button,
 .pmis .pmis-button {
     border: 0 none;
@@ -630,27 +616,24 @@ li.pmisThree {
     letter-spacing: 1px;
     padding: 12px 20px;
     text-shadow: 2px 2px 2px rgba(250, 99, 99, 0.97), 2px 2px 1px rgba(50, 77, 57, 0.83);
-}
-
+} 
 .pmis-cta a.pmis-button {
     margin: 30px 0 16px 0;
-}
-
+} 
 .pmis-footnote {
     font-family: PTSans, Arial, Helvetica, sans-serif;
     color: #0d4563;
     font-size: 14px;
     line-height: 1.4;
-}
-
+} 
 .pmis-visible-md {
     display: block;
-}
-
+} 
 .pmis-hidden-md {
     display: none;
 }
  .pmis-visible-sm{display: none;}
+
 /*  // END Put Me In The Story */
 
 
@@ -674,20 +657,19 @@ li.pmisThree {
 .desktop .smartgiftHeroContent {  
     font-family: Lato,sans-serif;
     font-weight: 400; 
-    font-size: 16.25px; /* 1.25rem; */
+    font-size: 1.25rem; /* 16.25px; */
     line-height: 1.5;
 }
 .smartgiftHeroContent sup {top:-0.25em;}
 .desktop .smartgiftHeroBrow { 
     color: #8f806b;
-    letter-spacing: 4px;
-
+    letter-spacing: 4px; 
 }
 .desktop .smartgiftHeroHdr {
     font-family: Poynter,Georgia,serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 42px; /* 3.23rem; */
+    font-size: 3.23rem; /* 42px; */ 
     letter-spacing: -.3px;
     line-height: 1;
     color: #21285d;
@@ -722,7 +704,7 @@ header.smartgifth2 h2 {
     font-family: Poynter,Georgia,serif;
     font-weight: 600;
     font-style: normal;
-    font-size:68px; /* 5.25rem; */  
+    font-size: 5.25rem; /* 68px;  */  
     line-height:.85;
     color: #21282d; 
     float:left; 
@@ -730,7 +712,7 @@ header.smartgifth2 h2 {
 .smartgiftStepCopy {
     font-family: Lato,sans-serif;
     font-weight: 400; 
-    /*  font-size: 16px;  */     /* 1.23rem; */
+    /*  font-size: 1.23rem; */
     letter-spacing: 0;
     line-height: 1.5;
     color:#353535;
@@ -740,7 +722,7 @@ header.smartgifth2 h2 {
  .smartgiftStepCopy h3{
     font-family: Poynter,Georgia,serif;
     font-weight: 600; 
-    font-size: 16px; /* 1.23rem; */
+    font-size: 1.23rem; /* 16px; */
     color: #21282d; 
     margin-bottom:4px;
  }

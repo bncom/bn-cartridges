@@ -1887,8 +1887,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .desktop .smartgiftHeroContent {
   font-family: Lato,sans-serif;
   font-weight: 400;
-  font-size: 16.25px;
-  /* 1.25rem; */
+  font-size: 1.25rem;
+  /* 16.25px; */
   line-height: 1.5;
 }
 .html .smartgiftHeroContent sup {
@@ -1902,8 +1902,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   font-family: Poynter,Georgia,serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 42px;
-  /* 3.23rem; */
+  font-size: 3.23rem;
+  /* 42px; */
   letter-spacing: -.3px;
   line-height: 1;
   color: #21285d;
@@ -1941,8 +1941,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   font-family: Poynter,Georgia,serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 68px;
-  /* 5.25rem; */
+  font-size: 5.25rem;
+  /* 68px;  */
   line-height: .85;
   color: #21282d;
   float: left;
@@ -1950,8 +1950,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .smartgiftStepCopy {
   font-family: Lato,sans-serif;
   font-weight: 400;
-  /*  font-size: 16px;  */
-  /* 1.23rem; */
+  /*  font-size: 1.23rem; */
   letter-spacing: 0;
   line-height: 1.5;
   color: #353535;
@@ -1961,8 +1960,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .smartgiftStepCopy h3 {
   font-family: Poynter,Georgia,serif;
   font-weight: 600;
-  font-size: 16px;
-  /* 1.23rem; */
+  font-size: 1.23rem;
+  /* 16px; */
   color: #21282d;
   margin-bottom: 4px;
 }
