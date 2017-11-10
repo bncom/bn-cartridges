@@ -1719,8 +1719,8 @@ body {
   padding: 8px 1px 7px;
   overflow: hidden;
 }
-.html .bfSignedEdHero.desktop {
-  background-color: #000;
+.html .bfSignedEdHero {
+  background-color: #202020;
 }
 .html .bfSignedEdHero img {
   width: 100%;

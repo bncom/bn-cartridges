@@ -2020,8 +2020,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   padding: 8px 1px 7px;
   overflow: hidden;
 }
-.html .bfSignedEdHero.desktop {
-  background-color: #000;
+.html .bfSignedEdHero {
+  background-color: #202020;
 }
 .html .bfSignedEdHero img {
   width: 100%;
@@ -2711,17 +2711,21 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
 }
 .html .bfSignedEdHero {
-  min-height: 304px;
+  min-height: 275px;
   max-width: 640px;
   margin: 0 auto;
-  background-color: #000;
 }
 .html .bfSignedEdHero.mobile img {
   max-width: 100%;
   height: auto;
 }
 .html .signedEdIntroCopy {
-  font-size: 18.5px !important;
+  font-size: 18.5px;
+}
+@media only screen and (max-width: 359px) {
+  .html .signedEdIntroCopy {
+    font-size: 17px;
+  }
 }
 .html .authorSectionLink {
   font-size: 17px !important;

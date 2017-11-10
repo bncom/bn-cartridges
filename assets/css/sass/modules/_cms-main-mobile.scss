@@ -274,13 +274,16 @@ header.smartgifth2 h2.rule {
 
 /*  2017  black friday signed editions  */ 
 .bfSignedEdHero{
-  min-height: 304px; 
+  min-height: 275px; 
   max-width:640px;
   margin:0 auto;
-  background-color: #000; 
 }
 .bfSignedEdHero.mobile img { max-width: 100%; height: auto; }  
-.signedEdIntroCopy{ font-size:18.5px !important; } 
+.signedEdIntroCopy{ font-size:18.5px; } 
+@media only screen and (max-width: 359px) {
+    .signedEdIntroCopy{ font-size:17px; } 
+}
+
 .authorSectionLink { font-size: 17px !important; }   
 .bfSignedEdContent{ padding:0;
    display: -webkit-flex;

@@ -466,7 +466,7 @@
 	    }
 
 
-	    // BlackFriday Signed Editions
+	    // BlackFriday Signed Editions 2017
     	// Confirm dom wrapper to write to AND array are available! then... 
 	    if ($('#jsonBFSignedEditions').length && (typeof jsonSignedEditions !== "undefined")){
 			 
@@ -474,12 +474,9 @@
 			var alphaPosition=1; 
 
 
-		var signedEd = jsonSignedEditions.map(function (i,count) { 
-		// });
-
-	       // $.each(jsonGridItems, function(i) { // console.log(i); loop through each array line
-	        //   count = count +1;   
-	         // console.log(count);
+			var signedEd = jsonSignedEditions.map(function (i,count) { 
+			// });
+	        // $.each(jsonGridItems, function(i) { // console.log(i); loop through each array line
 
 	            if(count >= 0){ // isolate this array line's items  
 	              var ean = i.ean;  // regular edition 
@@ -522,40 +519,40 @@
 	        });
  
 
-				var signedEditionsRenderer =function (section) {
-					var tgtSection = "sect_" + section;  
-					var theSpeed = 1000;
-					if(section === "all"){
-						$('.jsonGridItem').addClass('active').css('z-index',1).animate({
-                        	opacity: 1
+			var signedEditionsRenderer =function (section) {
+				var tgtSection = "sect_" + section;  
+				var theSpeed = 1000;
+				if(section === "all"){
+					$('.jsonGridItem').addClass('active').css('z-index',1).animate({
+                    	opacity: 1
+                    }, {
+                        duration:theSpeed,
+                        easing: "swing",
+                        complete: function(){ /*  $(this).after("<p>hidden</p>"); */ } 
+                    }); 
+                    $('#bfAuthorNavSecondary').fadeIn();
+				}else{  
+					$('.jsonGridItem').each(function(index) {
+						$(this).removeClass('active').css('z-index',-1).animate({
+	                        opacity: 0
 	                    }, {
-	                        duration:theSpeed,
+	                        duration: 0,
 	                        easing: "swing",
-	                        complete: function(){ /*  $(this).after("<p>hidden</p>"); */ } 
-	                    }); 
-	                    $('#bfAuthorNavSecondary').fadeIn();
-					}else{  
-						$('.jsonGridItem').each(function(index) {
-							$(this).removeClass('active').css('z-index',-1).animate({
-		                        opacity: 0
+                        	complete: function(){ /*  $(this).after("<p>hidden</p>"); */ }
+	                    });
+						if($(this).hasClass( tgtSection )){
+							$(this).delay(index).addClass('active').css('z-index',1).animate({
+	                        opacity: 1
 		                    }, {
-		                        duration: 0,
+		                        duration:theSpeed,
 		                        easing: "swing",
-	                        	complete: function(){ /*  $(this).after("<p>hidden</p>"); */ }
+                        		complete: function(){ /*  $(this).after("<p>hidden</p>"); */ }
 		                    });
-							if($(this).hasClass( tgtSection )){
-								$(this).delay(index).addClass('active').css('z-index',1).animate({
-		                        opacity: 1
-			                    }, {
-			                        duration:theSpeed,
-			                        easing: "swing",
-	                        		complete: function(){ /*  $(this).after("<p>hidden</p>"); */ }
-			                    });
-							}
-						}); 
-	                	$('#bfAuthorNavSecondary').fadeOut();
-					}
-				}; 
+						}
+					}); 
+                	$('#bfAuthorNavSecondary').fadeOut();
+				}
+			}; 
   
  	       	if(insertAlphaNav){ 
  	       		$('.authorSectionLink').attr("aria-setsize", $('.authorSectionLink').length); 
@@ -580,7 +577,7 @@
 					//$('.jsonGridItem').each(function(index, value){ 	});
 					signedEditionsRenderer(section);
 				});
-		     }
+		    }
 
 	    }
 
@@ -713,7 +710,7 @@
 
 	      });
 		} 
-  
+   
 
     	// Coupon & Deals page - control display of Featured Deal of the Day
 		// if ($('.coupn-featured-content[data-dotd]')) {
