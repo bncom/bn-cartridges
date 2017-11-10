@@ -366,13 +366,7 @@ document.cookie = curCookie;
 
 
 
-
-
-
  
-
- 
-
 <!-- 
 
 alternate version
@@ -381,27 +375,66 @@ banner
   /*background: url("http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/HPCC/HP_Homepage_Banner_Desktop.jpg") no-repeat center #000;*/ 
  -->
 
-
-
- 
-
  
 <!-- 1,215px × 70px -->
 
-<style type="text/css"> 
+
+?at_preview_token=rdh3pM0UOR3OgJEdRmKut5jFYj%2F4ooGw4WvzEFRD27s%3D&at_preview_index=1_1&at_preview_listed_activities_only=true&at_preview_evaluate_as_true_audience_ids=674258&bbitest=bnqa
+
+?at_preview_token=rdh3pM0UOR3OgJEdRmKut5jFYj%2F4ooGw4WvzEFRD27s%3D&at_preview_index=1_1&at_preview_listed_activities_only=true&at_preview_evaluate_as_true_audience_ids=674258
+
+
+
 .tgt-global-banner#globalHeader {margin-bottom: 110px !important;}
-.pdpPage #globalHeader { margin-bottom: 125px !important;}
-/* #tgtNavBanner, #tgtNavBanner * {outline: none !important;} */
+.pdpPage #globalHeader { margin-bottom: 125px !important;} 
 
 
- 
+
+
+
+<style type="text/css">
+.tgtNavBanner { 
+    height: 70px;
+    max-width: 1024px;
+    margin: 0 auto 3px; 
+    padding: 0; 
+    background: #1e3f33 url("https://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10878_SmartGift_GlobalNavBar_v2.jpg") center center no-repeat;
+    overflow: hidden;
+}
+.tgtNavBanner > a,
+.tgtNavBannerWrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.tgtNavBannerText{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Poynter,Georgia,serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 24px;
+/*    font-size: 1.846rem; */
+    letter-spacing: .08px;
+    text-decoration: none; 
+   text-align: center;
+}
+.tgtNavBannerDetails{ 
+    border-bottom: 1px #fff solid;
+    font-family: Lato,Arial,sans-serif; 
+    font-size: 14px;
+/*    font-size: 1.077rem;*/
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing:.05px; 
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
 </style>
- 
-
-
-
 <script type="text/javascript">
-
     window.bbi = window.bbi || {
         // TODO: Manually put in if not target
         campaign: "${campaign.name}",
@@ -533,24 +566,75 @@ banner
     bbi.model = {
     };
     bbi.pollCondition = function() {
-        return jQuery('header#globalHeader .PageContent').length > 0 && jQuery('#globalHeader').length > 0;
+        return jQuery('header#globalHeader .PageContent').length > 0;
     };
     bbi.offer = function() {
-        var tgtBannerHTML = '<div id="tgtNavBanner"><a href="https://www.barnesandnoble.com/h/smartgift"><img src="http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10439_SmartGift_GlobalNav_Banner_v3.jpg" alt="Take the Stress out of Gifting With Barnes & Noble SmartGift. Learn More"/></a></div>';
+        var tgtBannerHTML = '<div id="tgtNavBanner" class="tgtNavBanner"><a href="https://www.barnesandnoble.com/h/smartgift"><div class="tgtNavBannerWrap"><div class="tgtNavBannerText">Take the Stress out of Gifting With Barnes&nbsp;&amp;&nbsp;Noble SmartGift <span class="tgtNavBannerDetails">LEARN MORE</span></div></div></a></div>';
 
         jQuery(tgtBannerHTML).insertAfter("header#globalHeader .PageContent");
-        jQuery("#globalHeader").addClass("tgt-global-banner");
+       // jQuery("#globalHeader").addClass("tgt-global-banner");
 
-          jQuery(document).on('click', '#tgtNavBanner', function() {
+        jQuery(document).on('click', '#tgtNavBanner', function() {
             s.tl(true, 'o', 'smartGiftBannerClick'); 
-          });
+        });
     };
 
     bbi.runPoll(bbi.pollCondition, bbi.offer);
-    </script>
+</script>
 
 
 
+
+
+
+
+
+
+
+www.barnesandnoble.com/checkout/
+www.barnesandnoble.com/checkout/0
+www.barnesandnoble.com/checkout/1
+www.barnesandnoble.com/checkout/2
+www.barnesandnoble.com/checkout/3
+www.barnesandnoble.com/checkout/4
+www.barnesandnoble.com/checkout/5
+www.barnesandnoble.com/checkout/6
+www.barnesandnoble.com/checkout/7
+www.barnesandnoble.com/checkout/8
+www.barnesandnoble.com/checkout/9
+www.barnesandnoble.com/checkout/a
+www.barnesandnoble.com/checkout/b
+www.barnesandnoble.com/checkout/c
+www.barnesandnoble.com/checkout/d
+www.barnesandnoble.com/checkout/e
+www.barnesandnoble.com/checkout/f
+www.barnesandnoble.com/checkout/g
+www.barnesandnoble.com/checkout/h
+www.barnesandnoble.com/checkout/i
+www.barnesandnoble.com/checkout/j
+www.barnesandnoble.com/checkout/k
+www.barnesandnoble.com/checkout/l
+www.barnesandnoble.com/checkout/m
+www.barnesandnoble.com/checkout/n
+www.barnesandnoble.com/checkout/o
+www.barnesandnoble.com/checkout/p
+www.barnesandnoble.com/checkout/q
+www.barnesandnoble.com/checkout/r
+www.barnesandnoble.com/checkout/s
+www.barnesandnoble.com/checkout/t
+www.barnesandnoble.com/checkout/u
+www.barnesandnoble.com/checkout/v
+www.barnesandnoble.com/checkout/w
+www.barnesandnoble.com/checkout/x
+www.barnesandnoble.com/checkout/y
+www.barnesandnoble.com/checkout/z
+
+
+
+
+
+<!-- 
+ 
 
 <style type="text/css">
 .tgtNavBanner { 
@@ -558,7 +642,7 @@ banner
     width: 1215px;
     margin: 0 auto; 
     padding: 18px 0 0; 
-    background: #1e3f33 url("http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10439_SmartGift_GlobalNav_Banner_v3.jpg");
+    background: #1e3f33 url("http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10878_SmartGift_GlobalNavBar.jpg");
 }
 .tgtNavBanner > a {
     display: block;
@@ -588,14 +672,11 @@ banner
     letter-spacing:.05px; 
 }
 </style>
+ -->
+ 
+<div id="tgtNavBanner" class="tgtNavBanner"><a href="https://www.barnesandnoble.com/h/smartgift"><div class="tgtNavBannerWrap"><div class="tgtNavBannerText">Take the Stress out of Gifting With Barnes&nbsp;&amp;&nbsp;Noble SmartGift <span class="tgtNavBannerDetails">LEARN MORE</span></div></div></a></div>
 
  
-
-<div id="tgtNavBanner" class="tgtNavBanner"><a href="https://www.barnesandnoble.com/h/smartgift">
-<div class="tgtNavBannerText">Take the Stress out of Gifting With Barnes & Noble SmartGift <span class="tgtNavBannerDetails">LEARN MORE</span></div>
-</a></div>
-
-
 <br>
 <br>
 <br>
@@ -604,7 +685,7 @@ banner
 <br>
 <br>
         
-
+http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10439_SmartGift_GlobalNav_Banner_v3.jpg
 
  http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10439_SmartGift_GlobalNav_Banner_v3.jpg
 
