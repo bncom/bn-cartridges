@@ -2,6 +2,9 @@
 ###################
 .sass-cache/
 *.css.map
+assets/processed/css/maps/bn-cartridges-mobile.min.css.map
+assets/processed/css/maps/bn-cartridges.min.css.map
+
 
 # NODE    #
 ###################
