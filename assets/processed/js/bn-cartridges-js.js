@@ -557,35 +557,28 @@
  	       	if(insertAlphaNav){ 
  	       		$('.authorSectionLink').attr("aria-setsize", $('.authorSectionLink').length); 
 				$('#bfAuthorNavSecondary .authorSectionLink').click(function(e) {
-					e.preventDefault();
-					//$('#bfAuthorNavPrimary .authorSectionLink').removeClass('active');
-					//$(this).addClass('active');
+					e.preventDefault(); 
 					var section = $(this).parent().attr('data-section');  
 					$('#bfAuthorNavPrimary .authorSectionLink').removeClass('active'); 
 					$('#bfAuthorNavPrimary [data-section='+section+'] .authorSectionLink').addClass('active');
- 						signedEditionsRenderer(section);
-					//$('.jsonGridItem').each(function(index, value){ 	});
+ 						signedEditionsRenderer(section); 
 					$('html, body').animate({ scrollTop: ($('#bfAuthorNavPrimary').offset().top)},500);
-
 				});
 
 				$('#bfAuthorNavPrimary .authorSectionLink').click(function(e) {
 					e.preventDefault();
-					$('#bfAuthorNavPrimary .authorSectionLink').removeClass('active'); 
-					$(this).addClass('active');
-					var section = $(this).parent().attr('data-section');   
-					//$('.jsonGridItem').each(function(index, value){ 	});
-					signedEditionsRenderer(section);
+					var section = $(this).parent().attr('data-section');
+					if( $('.authorSectionLink.active').parent().attr('data-section')!== section){
+						$('#bfAuthorNavPrimary .authorSectionLink').removeClass('active'); 
+						$(this).addClass('active'); 
+						signedEditionsRenderer(section); 
+					}
 				});
 		    }
 
 	    }
 
-
-
-
-
-
+ 
 
 
 	    // NOOK Device pricing 
