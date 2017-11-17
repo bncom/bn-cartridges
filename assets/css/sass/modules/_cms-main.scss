@@ -727,8 +727,23 @@ header.smartgifth2 h2 {
     margin-bottom:4px;
  }
  .smartgiftCTA {margin-bottom:48px;}
- .smartgiftlegal{color:#515b5b;}
+ .smartgiftlegal{color:#515b5b;margin-top:33px;}
 
+ .smartgiftinstructions{
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color:#666;
+    max-width: 900px;
+    padding:0 20px;
+    margin: 0 auto 33px;
+}
+
+.smartgiftinstructions .smartgifth2 {margin-bottom:15px;}
+ 
+ 
 /* //Smart Gift   */
 
 

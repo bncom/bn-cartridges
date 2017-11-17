@@ -1669,6 +1669,21 @@ body {
 }
 .html .smartgiftlegal {
   color: #515b5b;
+  margin-top: 33px;
+}
+.html .smartgiftinstructions {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #666;
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 0 auto 33px;
+}
+.html .smartgiftinstructions .smartgifth2 {
+  margin-bottom: 15px;
 }
 .html .jsonGridItem {
   display: block;
