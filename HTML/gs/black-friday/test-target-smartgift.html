@@ -361,11 +361,231 @@ document.cookie = curCookie;
 
 
 
+ 
+?at_preview_token=rdh3pM0UOR3OgJEdRmKut%2BeKIqfsfecVqwKgc4ElRWM%3D&at_preview_index=1_1&at_preview_listed_activities_only=true&at_preview_evaluate_as_true_audience_ids=674258&bbitest=bnqa
+
+
+
+
+<style type="text/css">
+.tgtNavBanner { 
+    height: 70px;
+    max-width: 1024px;
+    margin: 0 auto 3px; 
+    padding: 0; 
+    background: #1e3f33 url("http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/giftguide/PROD-10416_HGG_GlobalNav_Banner_v4.jpg") center center no-repeat; 
+}
+.tgtNavBanner > a,
+.tgtNavBannerWrap {
+    display: table;
+    width: 100%;
+    height: 70px;
+    text-decoration: none;
+    color: #fff;
+}
+.tgtNavBannerText{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Poynter,Georgia,serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 24px;
+/*    font-size: 1.846rem; */
+    letter-spacing: .08px;
+    text-decoration: none; 
+   text-align: center;
+}
+.tgtNavBannerDetails{ 
+    border-bottom: 1px #fff solid;
+    font-family: Lato,Arial,sans-serif; 
+    font-size: 14px;
+/*    font-size: 1.077rem;*/
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing:.05px; 
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+</style>
+<script type="text/javascript">
+    window.bbi = window.bbi || {
+        // TODO: Manually put in if not target
+        campaign: "${campaign.name}",
+        offerName: "${campaign.recipe.name}",
+        eVar: "eVar00",
+        //site catalyst click tracking function
+        sCall: function(name) {
+            s.tl(true, 'o', name, null, null);
+        },
+        // returns object of all query params
+        //Example if URL = www.google.com?test=a object will be {'test':'a'}
+        queryParams: (function() {
+
+            var search = window.location.search.substring(1).split('&'),
+                tempSearch, searchObj = {};
+            for (var i = 0; i < search.length; i++) {
+                tempSearch = search[i].split('=');
+                searchObj[tempSearch[0]] = tempSearch[1];
+            }
+            return searchObj;
+        })(),
+        // If query params include the letters bbi show console.log statements
+        verbose: window.location.search.indexOf('bbi') !== -1,
+        debug: function(msg, color) {
+            if (window.console && msg && bbi.verbose === true) {
+                var isMSIE = /*@cc_on!@*/ false;
+                if (isMSIE) {
+                    console.log(msg);
+                } else {
+                    console.log("%c" + msg, "color:" + color + ";font-weight:normal;");
+                }
+            }
+        },
+        cookie: {
+            set: function(cookieName, cookieValue, expireDays) {
+                expireDays = expireDays || 30;
+                var vDate = new Date();
+                vDate.setTime(vDate.getTime() + (expireDays * 24 * 60 * 60 * 1000));
+                var vExpires = 'expires=' + vDate.toUTCString();
+                document.cookie = cookieName + '=' + cookieValue + '; ' + vExpires + ";domain=" + document.domain + ";path=/";
+            },
+            get: function(cookieName) {
+                var vName = cookieName + '=';
+                var vCookies = document.cookie.split(';');
+                for (var i = 0; i < vCookies.length; i++) {
+                    var vCookie = vCookies[i];
+                    while (vCookie.charAt(0) == ' ') vCookie = vCookie.substring(1);
+                    if (vCookie.indexOf(vName) === 0) return vCookie.substring(vName.length, vCookie.length);
+                }
+                return "";
+            },
+            delete: function(cookieName) {
+                document.cookie = cookieName + "= ; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/";
+            }
+        },
+        runPoll: function(selector, pollFunction, duration, count, failureCallback) {
+            var pollLimit = 100;
+            var pollDuration = duration || 50;
+            var curCount = count || 0;
+            var pollCondition;
+            failureCallback = failureCallback || function() {
+                bbi.debug('Poll' + selector + ' Timed out');
+            };
+            if (typeof jQuery !== 'undefined') {
+                if (typeof(selector) === 'function') {
+                    pollCondition = selector();
+                } else {
+                    pollCondition = jQuery(selector).length > 0;
+                }
+            } else {
+                pollCondition = false;
+            }
+
+            if (pollCondition) {
+                pollFunction();
+                return true;
+            } else {
+                if (curCount > pollLimit) {
+                    //console.log('poll timed out ' + typeof(failureCallback));
+                    if (typeof failureCallback === 'function') {
+                        failureCallback();
+                    }
+                    return false;
+                } else {
+                    curCount++;
+                    setTimeout(function() {
+                        bbi.runPoll(selector, pollFunction, pollDuration, curCount, failureCallback);
+                    }, pollDuration);
+                }
+            }
+        },
+        setEvar: function(_e) {
+            if (!bbi.eVar)
+                throw new Error('bbi.eVar is not defined');
+
+            s.linkTrackVars = bbi.eVar;
+            var eVar_str = _e || bbi.campaign + ' - ' + bbi.offerName;
+
+            if (!bbi.cookie.get('bbi_' + bbi.eVar)) {
+                if (!bbi.offerName)
+                    throw new Error('bbi.offerName is not defined');
+                if (!bbi.campaign)
+                    throw new Error('bbi.campaign is not defined');
+
+                bbi.cookie.set('bbi_' + bbi.eVar, eVar_str);
+                eVar_str = bbi.cookie.get('bbi_' + bbi.eVar);
+            } else {
+                if (bbi.cookie.get('bbi_' + bbi.eVar).indexOf(eVar_str) === -1) {
+                    eVar_str += "|" + bbi.cookie.get('bbi_' + bbi.eVar);
+                    bbi.cookie.set('bbi_' + bbi.eVar, eVar_str);
+                } else {
+                    eVar_str = bbi.cookie.get('bbi_' + bbi.eVar);
+                }
+            }
+            s[bbi.eVar] = eVar_str;
+            // fire custom event to set eVar
+            s.tl(this, 'o', eVar_str, null, null);
+        }
+    };
+ 
+    //sitecatalyst calls on m.toysrus.com and t.toysrus.com
+    bbi.sCallMobile = function(name) {
+        s_tl.tl(true, 'o', name, null, null);
+    }
+    //BBI Object overrides
+    //example: bbi.verbose = true;
+
+    //Static content - static html, list of information, strings
+    bbi.model = {
+    };
+    bbi.pollCondition = function() {
+        return jQuery('header#globalHeader .PageContent').length > 0;
+    };
+    bbi.offer = function() {
+        var tgtBannerHTML = '<div id="tgtNavBanner" class="tgtNavBanner giftguide"><a href="https://giftguide.barnesandnoble.com/holiday-gift-ideas"><div class="tgtNavBannerWrap"><div class="tgtNavBannerText">Spread the Cheer with Perfect Gifts for Everyone. Who&rsquo;s&nbsp;on&nbsp;Your&nbsp;List?<span class="tgtNavBannerDetails">SHOP GIFTS</span></div></div></a></div>';
+
+        jQuery(tgtBannerHTML).insertAfter("header#globalHeader .PageContent");
+       // jQuery("#globalHeader").addClass("tgt-global-banner");
+
+        jQuery(document).on('click', '#tgtNavBanner', function() {
+            s.tl(true, 'o', 'giftGuideBannerClick'); 
+        });
+    };
+
+    bbi.runPoll(bbi.pollCondition, bbi.offer);
+</script>
 
 
 
 
 
+
+
+
+
+
+<style type="text/css">.tgtNavBanner {height:70px;max-width: 1024px;margin: 0 auto 3px;padding: 0;background: #1e3f33 url("http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/giftguide/PROD-10416_HGG_GlobalNav_Banner_v4.jpg") center center no-repeat; }
+.tgtNavBanner > a,.tgtNavBannerWrap {display: table;width: 100%;height: 70px;text-decoration: none;color: #fff;}
+.tgtNavBannerText{display: table-cell;vertical-align: middle;font-family: Poynter,Georgia,serif;font-weight: 400;color: #fff;font-size: 24px;letter-spacing: .08px;text-decoration: none; text-align: center;}
+.tgtNavBannerDetails{ border-bottom: 1px #fff solid;font-family: Lato,Arial,sans-serif; font-size: 14px;font-weight: normal;line-height: 1.25;letter-spacing:.05px; margin-left: 10px;display: inline-block;vertical-align: middle;}</style><script type="text/javascript">window.bbi=window.bbi||{campaign:"${campaign.name}",offerName:"${campaign.recipe.name}",eVar:"eVar00",sCall:function(e){s.tl(!0,"o",e,null,null)},queryParams:function(){for(var e,i=window.location.search.substring(1).split("&"),n={},o=0;o<i.length;o++)n[(e=i[o].split("="))[0]]=e[1];return n}(),verbose:-1!==window.location.search.indexOf("bbi"),debug:function(e,i){if(window.console&&e&&!0===bbi.verbose){console.log("%c"+e,"color:"+i+";font-weight:normal;")}},cookie:{set:function(e,i,n){n=n||30;var o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);var t="expires="+o.toUTCString();document.cookie=e+"="+i+"; "+t+";domain="+document.domain+";path=/"},get:function(e){for(var i=e+"=",n=document.cookie.split(";"),o=0;o<n.length;o++){for(var t=n[o];" "==t.charAt(0);)t=t.substring(1);if(0===t.indexOf(i))return t.substring(i.length,t.length)}return""},delete:function(e){document.cookie=e+"= ; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/"}},runPoll:function(e,i,n,o,t){var b=n||50,r=o||0;return t=t||function(){bbi.debug("Poll"+e+" Timed out")},"undefined"!=typeof jQuery&&("function"==typeof e?e():jQuery(e).length>0)?(i(),!0):r>100?("function"==typeof t&&t(),!1):(r++,void setTimeout(function(){bbi.runPoll(e,i,b,r,t)},b))},setEvar:function(e){if(!bbi.eVar)throw new Error("bbi.eVar is not defined");s.linkTrackVars=bbi.eVar;var i=e||bbi.campaign+" - "+bbi.offerName;if(bbi.cookie.get("bbi_"+bbi.eVar))-1===bbi.cookie.get("bbi_"+bbi.eVar).indexOf(i)?(i+="|"+bbi.cookie.get("bbi_"+bbi.eVar),bbi.cookie.set("bbi_"+bbi.eVar,i)):i=bbi.cookie.get("bbi_"+bbi.eVar);else{if(!bbi.offerName)throw new Error("bbi.offerName is not defined");if(!bbi.campaign)throw new Error("bbi.campaign is not defined");bbi.cookie.set("bbi_"+bbi.eVar,i),i=bbi.cookie.get("bbi_"+bbi.eVar)}s[bbi.eVar]=i,s.tl(this,"o",i,null,null)}},bbi.sCallMobile=function(e){s_tl.tl(!0,"o",e,null,null)},bbi.model={},bbi.pollCondition=function(){return jQuery("header#globalHeader .PageContent").length>0},bbi.offer=function(){jQuery('<div id="tgtNavBanner" class="tgtNavBanner giftguide"><a href="https://giftguide.barnesandnoble.com/holiday-gift-ideas"><div class="tgtNavBannerWrap"><div class="tgtNavBannerText">Spread the Cheer with Perfect Gifts for Everyone. Who&rsquo;s&nbsp;on&nbsp;Your&nbsp;List?<span class="tgtNavBannerDetails">SHOP GIFTS</span></div></div></a></div>').insertAfter("header#globalHeader .PageContent"),jQuery(document).on("click","#tgtNavBanner",function(){s.tl(!0,"o","giftGuideBannerClick")})},bbi.runPoll(bbi.pollCondition,bbi.offer);</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
  
 <!-- 
 
@@ -387,6 +607,8 @@ banner
 
 .tgt-global-banner#globalHeader {margin-bottom: 110px !important;}
 .pdpPage #globalHeader { margin-bottom: 125px !important;} 
+
+
 
 
 
@@ -569,7 +791,7 @@ banner
         return jQuery('header#globalHeader .PageContent').length > 0;
     };
     bbi.offer = function() {
-        var tgtBannerHTML = '<div id="tgtNavBanner" class="tgtNavBanner"><a href="https://www.barnesandnoble.com/h/smartgift"><div class="tgtNavBannerWrap"><div class="tgtNavBannerText">Take the Stress out of Gifting With Barnes&nbsp;&amp;&nbsp;Noble SmartGift <span class="tgtNavBannerDetails">LEARN MORE</span></div></div></a></div>';
+        var tgtBannerHTML = '<div id="tgtNavBanner" class="tgtNavBanner"><a href="https://www.barnesandnoble.com/h/smartgift"><div class="tgtNavBannerWrap"><div class="tgtNavBannerText">Take the Stress out of Gifting with Barnes&nbsp;&amp;&nbsp;Noble SmartGift <span class="tgtNavBannerDetails">LEARN MORE</span></div></div></a></div>';
 
         jQuery(tgtBannerHTML).insertAfter("header#globalHeader .PageContent");
        // jQuery("#globalHeader").addClass("tgt-global-banner");
@@ -586,6 +808,17 @@ banner
 
 
 
+
+
+
+https://jscompress.com/
+
+
+<style type="text/css">.tgtNavBanner {height: 70px;max-width: 1024px;margin: 0 auto 3px;padding: 0; background: #1e3f33 url("https://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PROD-10878_SmartGift_GlobalNavBar_v2.jpg") center center no-repeat;overflow: hidden;}
+.tgtNavBanner > a,.tgtNavBannerWrap {display: table;width: 100%;height: 100%;text-decoration: none;color: #fff;}
+.tgtNavBannerText{display: table-cell;vertical-align: middle;font-family: Poynter,Georgia,serif;font-weight: 400;color: #fff;font-size: 24px;letter-spacing: .08px;text-decoration: none; text-align: center;}
+.tgtNavBannerDetails{border-bottom: 1px #fff solid;font-family: Lato,Arial,sans-serif; font-size: 14px;font-weight: normal;line-height: 1.25;letter-spacing:.05px; margin-left: 10px;display:inline-block;vertical-align: middle;}</style>
+<script type="text/javascript">window.bbi=window.bbi||{campaign:"${campaign.name}",offerName:"${campaign.recipe.name}",eVar:"eVar00",sCall:function(e){s.tl(!0,"o",e,null,null)},queryParams:function(){for(var e,i=window.location.search.substring(1).split("&"),n={},o=0;o<i.length;o++)n[(e=i[o].split("="))[0]]=e[1];return n}(),verbose:-1!==window.location.search.indexOf("bbi"),debug:function(e,i){if(window.console&&e&&!0===bbi.verbose){console.log("%c"+e,"color:"+i+";font-weight:normal;")}},cookie:{set:function(e,i,n){n=n||30;var o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);var t="expires="+o.toUTCString();document.cookie=e+"="+i+"; "+t+";domain="+document.domain+";path=/"},get:function(e){for(var i=e+"=",n=document.cookie.split(";"),o=0;o<n.length;o++){for(var t=n[o];" "==t.charAt(0);)t=t.substring(1);if(0===t.indexOf(i))return t.substring(i.length,t.length)}return""},delete:function(e){document.cookie=e+"= ; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/"}},runPoll:function(e,i,n,o,t){var b=n||50,r=o||0;return t=t||function(){bbi.debug("Poll"+e+" Timed out")},"undefined"!=typeof jQuery&&("function"==typeof e?e():jQuery(e).length>0)?(i(),!0):r>100?("function"==typeof t&&t(),!1):(r++,void setTimeout(function(){bbi.runPoll(e,i,b,r,t)},b))},setEvar:function(e){if(!bbi.eVar)throw new Error("bbi.eVar is not defined");s.linkTrackVars=bbi.eVar;var i=e||bbi.campaign+" - "+bbi.offerName;if(bbi.cookie.get("bbi_"+bbi.eVar))-1===bbi.cookie.get("bbi_"+bbi.eVar).indexOf(i)?(i+="|"+bbi.cookie.get("bbi_"+bbi.eVar),bbi.cookie.set("bbi_"+bbi.eVar,i)):i=bbi.cookie.get("bbi_"+bbi.eVar);else{if(!bbi.offerName)throw new Error("bbi.offerName is not defined");if(!bbi.campaign)throw new Error("bbi.campaign is not defined");bbi.cookie.set("bbi_"+bbi.eVar,i),i=bbi.cookie.get("bbi_"+bbi.eVar)}s[bbi.eVar]=i,s.tl(this,"o",i,null,null)}},bbi.sCallMobile=function(e){s_tl.tl(!0,"o",e,null,null)},bbi.model={},bbi.pollCondition=function(){return jQuery("header#globalHeader .PageContent").length>0},bbi.offer=function(){jQuery('<div id="tgtNavBanner" class="tgtNavBanner"><a href="https://www.barnesandnoble.com/h/smartgift"><div class="tgtNavBannerWrap"><div class="tgtNavBannerText">Take the Stress out of Gifting with Barnes&nbsp;&amp;&nbsp;Noble SmartGift <span class="tgtNavBannerDetails">LEARN MORE</span></div></div></a></div>').insertAfter("header#globalHeader .PageContent"),jQuery(document).on("click","#tgtNavBanner",function(){s.tl(!0,"o","smartGiftBannerClick")})},bbi.runPoll(bbi.pollCondition,bbi.offer);</script>
 
 
 
@@ -692,6 +925,12 @@ http://dispatch.barnesandnoble.com/content/dam/ccr/brooksbell/2017/smartgift/PRO
 
 
 https://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css?v=initial
+
+
+
+
+
+
 
 
 <!-- 

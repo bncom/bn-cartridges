@@ -2008,11 +2008,10 @@ section header h2.rule:not(.howitworksh2) {display:none;}
  /* MOBILE */
  
 /* hide header with rules  */
+section header h2.rule:not(.howitworksh2) {display:none;} 
 #main-content.mobile .department-product-grid.columns-4 .item {
     width: 100%;
-    height: auto !important;
 }
-
 </style>
 
  
@@ -2165,21 +2164,61 @@ section header h2.rule:not(.howitworksh2) {display:none;}
 
 
 
+<br style="clear:left;">
+
+
+
+<style type="text/css">
+
+.hpframe {width:1024px; height:526px; position: relative;}
+ .bf1{max-width: 1024px; z-index: 3; opacity: 0;}
+ .bf2{max-width: 510px;z-index: 2;opacity: 0;}
+ .bf3{max-width: 510px ;z-index: 2;opacity: 0; right: 0; }
+
+.hpframe img {position: absolute;}
+</style>
+
+
+<div class="hpframe">
+<a href="#"><img class="bf1" src="http://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2017/test/Homepage_Billboard_11-23_1.png" /></a>
+<a href="#"><img  class="bf2" src="http://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2017/test/Homepage_Billboard_11-23_2.png" /></a>
+<a href="#"><img  class="bf3" src="http://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2017/test/Homepage_Billboard_11-23_3.png" /></a>	
+
+</div>
+
+
+
+
+<br style="clear:left;">
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+<script> 
+$(document).ready(function(){
+            $("div.x").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+        });
+        $(".bf1").animate({opacity: 1}, 1500);
+        $(".bf2").delay(400).animate({opacity: 1, top: '303px'}, 3000);
+        $(".bf3").delay(2000).animate({opacity: 1, top: '303px'}, 5000);
+    
+});
+</script> 
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        var div = $("div");  
+        div.animate({left: '100px'}, "slow");
+        div.animate({fontSize: '3em'}, "slow");
+    });
+});
+</script> 
 
 
 
