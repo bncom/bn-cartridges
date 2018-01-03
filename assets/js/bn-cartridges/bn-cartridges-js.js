@@ -584,7 +584,7 @@
 	    // NOOK Device pricing 
 	 	if($('#compare').length || $('.comp-price').length || $('#nook-device-price').length){  
 	          $.ajax({   
-	          	  // url: "http://localhost:3000/HTML/gs/nook/nook-device.json?format=json", 
+	          	//   url: "http://localhost:3000/HTML/gs/nook/web-services/nook-device.json?format=json", 
 	      		  url: "//"+window.location.host+"/web-services/nook-devices?format=json",
 	              type: "GET",
 	              dataType: "text",
@@ -604,9 +604,9 @@
 	                  if (i < 20){   
 						var ean= this.attributes["common.id"]; 
 	                    var pdpListPrice = this.attributes.P_List_Price; 
-						pdpListPrice='$'+Math.round(pdpListPrice*100)/100; 
+						pdpListPrice=Math.round(pdpListPrice*100)/100; 
 	                    var pdpSalePrice = this.attributes.P_Sale_Price; 
-						pdpSalePrice='$'+Math.round(pdpSalePrice*100)/100;
+						pdpSalePrice=Math.round(pdpSalePrice*100)/100;
 	                    var pdpPctSave = this.attributes.P_Percentage_Save; 
 	          			/* possible future data points */
 	                    // var pdpTitle = this.attributes.P_Display_Name; 
@@ -616,15 +616,15 @@
 						$("[data-bnprice='" + ean +"']").each(function(){ 
 						    if($(this).parent().hasClass("comp-price")){  
 						    // if comparison page  or show list & bnprice 
-						     	if (pdpSalePrice < pdpListPrice){
-						     		$(this).html('<s>'+pdpListPrice+'</s>');
-						     		$(this).next().html(pdpSalePrice); 
+						     	if (pdpSalePrice < pdpListPrice){ 
+						     		$(this).html('<s>$'+pdpListPrice+'</s>');
+						     		$(this).next().html('$'+pdpSalePrice); 
 								} else { 
-						     		$(this).html(pdpSalePrice); 
+						     		$(this).html('$'+pdpSalePrice); 
 								} 
 						     	$(this).attr("data-endeca-price","true"); 
 						    } else { 
-						     	$(this).html(pdpSalePrice); 
+						     	$(this).html('$'+pdpSalePrice); 
 							}
 						});                 
 	                  }

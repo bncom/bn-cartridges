@@ -36,7 +36,7 @@
         },
         "numRecords": 1,
         "attributes": {
-          "P_Sale_Price": ["199.990000"],
+          "P_Sale_Price": ["189.990000"],
           "P_List_Price": ["199.990000"],
           "P_SEO_Keywords": ["samsung-galaxy-tab-e-nook-9-inch-barnes-noble"],
           "P_Srch_Contributor_Links": [{}],
@@ -66,7 +66,7 @@
           },
           "numRecords": 0,
           "attributes": {
-            "P_Sale_Price": ["199.990000"],
+            "P_Sale_Price": ["189.990000"],
             "P_List_Price": ["199.990000"],
             "P_SEO_Keywords": ["samsung-galaxy-tab-e-nook-9-inch-barnes-noble"],
             "P_Srch_Contributor_Links": [{}],
@@ -99,7 +99,7 @@
         },
         "numRecords": 1,
         "attributes": {
-          "P_Sale_Price": ["49.990000"],
+          "P_Sale_Price": ["39.990000"],
           "P_List_Price": ["49.990000"],
           "P_SEO_Keywords": ["NOOK-Tablet-7-inch/Barnes-Noble"],
           "P_Srch_Contributor_Links": [{}],
@@ -129,7 +129,7 @@
           },
           "numRecords": 0,
           "attributes": {
-            "P_Sale_Price": ["49.990000"],
+            "P_Sale_Price": ["39.990000"],
             "P_List_Price": ["49.990000"],
             "P_SEO_Keywords": ["NOOK-Tablet-7-inch/Barnes-Noble"],
             "P_Srch_Contributor_Links": [{}],
