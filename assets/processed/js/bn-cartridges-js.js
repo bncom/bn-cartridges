@@ -588,13 +588,9 @@
 	      		  url: "//"+window.location.host+"/web-services/nook-devices?format=json",
 	              type: "GET",
 	              dataType: "text",
-	          })
-	            // Code to run if the request succeeds (is done);
-	            // The response is passed to the function
-	            .done(function( xjson ) { 
+    			  success: function (xjson) { 
 	              //data downloaded so we call parseJSON function  
 	              var json = $.parseJSON(xjson); //now json variable contains data in json format 
-
 	          			/* possible future data points */
 		              // var collectionTitle = json.mainContent[0].title;  
 		              // var seeAllLink = json.mainContent[0].seeAllLinkUrl;  
@@ -628,24 +624,10 @@
 							}
 						});                 
 	                  }
-	                });   
-		        
-	            }) 
-	            // Code to run if the request fails; the raw request and
-	            // status codes are passed to the function
-	            .fail(function( xhr, status, errorThrown ) {
-	              // console.log( "Error: " + errorThrown );
-	              // console.log( "Status: " + status );   
-	            })
-	            // status codes are passed to the function
-	            .success(function( xhr, status ) { 
-	                //console.log( "xhr: " + xhr );
-	                //console.log( "Status: " + status ); 
-	            })
-	            // Code to run regardless of success or failure;
-	            .complete(function( xhr, status ) {
-	             // alert( "The request is complete!" ); 
-	            });
+	                });    
+	            } 
+    		});
+	          
 	     
 	    } // end NOOK pricing
 
