@@ -1,0 +1,134 @@
+// Bootstrap Grid only
+@import "bootsrap/bootstrap-grid";
+// Positions
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.float-left {
+    float: left;
+}
+
+float-right {
+    float: right;
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-block {
+    display: block;
+}
+
+.rounded {
+    border-radius: .25rem;
+}
+
+// Cafe
+.prod-container {
+    padding: 0px;
+}
+
+.cafe {
+    .cafe-carousel {
+        margin: 0 40px 0 0;
+        ul {
+            &.slick-dots {
+                display: -webkit-inline-flex;
+                display: inline-flex;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                align-items: center;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                bottom: 1.875rem;
+                left: 0;
+                width: 100%;
+                li {
+                    float: left;
+                    vertical-align: middle;
+                }
+                button {
+                    border-radius: 100%;
+                    width: 10px;
+                    height: 10px;
+                    padding: 0;
+                    margin: 0 .3125rem;
+                    color: transparent;
+                    background-color: #fff;
+                    border: 1px solid #21282d;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    figure {
+        width: auto;
+        max-width: 100%;
+        margin: 0 0 40px 0;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-style: italic;
+            display: block;
+        }
+        img {
+            box-shadow: 1px 1px 8px #DCD8CD;
+            border: 1px solid #DCD8CD;
+            padding: 2px;
+            max-width: 100%;
+            width: 100%;
+        }
+        figcaption {
+            z-index: 1000;
+            position: relative;
+            bottom: 40px;
+            text-align: center;
+            color: #fff;
+            font-style: italics;
+            font-family: Milo;
+            font-size: 1.2em;
+        }
+    }
+    .reasons {
+        padding: 15px;
+        border: 1px solid #DCD8CD;
+        h1 {
+            color: #6a6a69;
+            margin-bottom: 40px;
+        }
+        h2 {
+            margin-top: 0px;
+        }
+        p {
+            line-height: 24px;
+        }
+        a {
+            color: #347d56;
+            text-decoration: none;
+            line-height: 1;
+            margin-left: 2px;
+            display: block;
+        }
+        .row {
+            div {
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
