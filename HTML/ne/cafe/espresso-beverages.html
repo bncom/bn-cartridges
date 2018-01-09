@@ -1,226 +1,30 @@
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .row-cafe-menu {
-        overflow: hidden;
-        width: 753px;
-        padding: 2.25rem 0;
-    }
-
-    .row-cafe-menu-grey {
-        overflow: hidden;
-        width: 753px;
-        padding: 2.25rem 0;
-    }
-
-    .page-content {
-        width: 735px;
-    }
-
-    .cafe-banner-img {
-        margin: 0 0 55px 0;
-    }
-
-    .espresso-menu-item {
-        float: left;
-    }
-
-    .cafe-menu-border {
-        border-bottom: 1px solid #ccc;
+    .pageshell .row {
         border-top: 1px solid #ccc;
-        position: relative;
-        z-index: 10
+        font-family: Poynter, sans-serif;
     }
 
-    .cafe-menu-border:before {
-        content: "";
-        display: block;
-        position: absolute;
-        z-index: -1;
-        top: 2px;
-        bottom: 2px;
-        top: 2px;
-        left: 2px;
-        right: 2px;
-        border-top: 3px solid #ffffff;
-        border-bottom: 3px solid #ffffff;
-    }
-
-    .row-cafe-espresso-header {
-        overflow: hidden;
-    }
-
-    .item-espresso-header {
-        float: left;
-        width: 348px;
-        padding: 0 19px 0 0;
+    .pageshell .row.cafe-table-header {
+        border-top: none;
         text-transform: uppercase;
-    }
-
-    .item-espresso-header-btm {
-        float: left;
-        width: 370px;
-        padding: 0 19px 0 0;
-    }
-
-    .item-espresso-header-size {
-        float: left;
-        padding: 0 18px 0 0;
-        text-transform: uppercase;
-        width: 105px;
-    }
-
-    .item-espresso-header-sizebtm {
-        float: left;
-        padding: 0 18px 0 0;
-        text-transform: uppercase;
-        width: 112px;
-    }
-
-    .item-espresso-header-sizemid {
-        float: left;
-        padding: 0 38px 0 0;
-        text-transform: uppercase;
-        width: 130px;
-    }
-
-    .item-espresso-header-sizemidbtm {
-        float: left;
-        padding: 0 18px 0 0;
-        width: 112px;
-        text-transform: uppercase;
-    }
-
-    .item-espresso-header-sizesm {
-        float: left;
-        text-transform: uppercase;
-        padding: 0 8px 0 0;
-        width: 88px;
-    }
-
-    .item-espresso-size {
-        float: left;
-        width: 115px;
-        padding: 30px 18px 0 0;
-    }
-
-    .item-espresso-sizesm {
-        float: left;
-        width: 100px;
-        padding: 30px 18px 0 0;
-    }
-
-    .item-espresso-text {
-        float: left;
-        width: 260px;
-        padding: 30px 19px 0 14px;
-        font-size: 16px;
-    }
-
-    .espresso-text-smfont {
-        font-family: Poynter, Lato, sans-serif;
-        font-size: 11px;
-    }
-
-    .espresso-text-lrgfont {
-        font-family: Poynter, Lato, sans-serif;
-        font-size: 18px;
-        font-weight: normal;
-        line-height: 20px;
-    }
-
-    .espresso-header-font {
         font-family: Lato, sans-serif;
         font-size: 12px;
         font-weight: 600;
     }
 
-    .cafe-espresso-thumb img {
-        float: left;
+    .cafe-item {
+        font-family: Lato, sans-serif;
+    }
+
+    .cafe-banner-img img {
+        width: 100%;
+    }
+
+    .pageshell .row span{
         vertical-align: middle;
-    }
-
-    .cafe-espresso-clearRow {
-        clear: both;
-    }
-
-    hr.cafe-espresso-grey-border {
-        border: 1px thin solid #dfddd0;
-        margin: 0 0 82px 0;
-        width: 770px;
-    }
-
-    /* form styles*/
-
-    #storeform {
-        display: block;
-        height: 30px;
-        margin: 73px 0 0 467px;
-        position: absolute;
-        width: 474px;
-    }
-
-    #zip-search-button {
-        background: url("none") no-repeat scroll 0 0 transparent;
-        border: 0 none;
-        cursor: pointer;
-        float: left;
-        height: 38px;
-        left: 341px;
-        position: absolute;
-        text-indent: -9999px;
-        top: -2px;
-        width: 132px;
-    }
-
-    .zip_label {
-        background: none no-repeat scroll 0 0 transparent;
-        color: #888888;
-        display: block;
-        font-family: MiloSerifOffcMedium;
-        font-size: 15px;
-        position: relative;
-        top: 7px;
-    }
-
-    #zip-input {
-        background: none no-repeat scroll 0 0 transparent;
-        border: medium none;
-        color: #888888;
-        display: block;
-        font-family: MiloSerifOffcMedium, serif;
-        font-size: 15px;
-        height: 26px;
-        position: absolute;
-        top: 4px;
-        width: 336px;
-        left: 6px;
-    }
-
-    #zip_placeholder {
-        background: none no-repeat scroll 0 0 transparent;
-        color: #888888;
-        display: block;
-        font-family: MiloSerifOffcMedium;
-        font-size: 15px;
-        position: relative;
-        top: 3px;
-        left: 6px;
-    }
-
-    .text-field-wrapper {
-        background-color: transparent !important;
-        display: inline-block;
-        position: relative;
-    }
-
-    div#TurnOuter {
-        margin: 60px 0 0 -200px;
-        position: relative;
-        z-index: 100;
+        height: 75px;
+        text-align: center;
+        display: table-cell;
     }
 
 </style>
@@ -232,130 +36,131 @@
         <div class="copy">
 
             <div class="cafe-banner-img">
-                <img width="735" alt="Enjoy a range of exceptional beverages in our stores, at home, or on the go." src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6892_EspressoBeveragesUpdate_hero_comp.jpeg"></div>
-            <div class="pb-ss pt-0 row-cafe-espresso-header espresso-header-font" id="yui_3_8_1_1_1402423529995_143">
-                <div class="item-espresso-header">Item</div>
-                <div class="item-espresso-header-size">Tall (12oz)</div>
-                <div class="item-espresso-header-sizemid" id="yui_3_8_1_1_1402423529995_144">Grande (16oz)</div>
-                <div class="item-espresso-header-sizesm">Venti (20oz)</div>
+                <img width="735" alt="Enjoy a range of exceptional beverages in our stores, at home, or on the go." src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6892_EspressoBeveragesUpdate_hero_comp.jpeg">
+            </div>
+            <!-- row headers-->
+            <div class="row cafe-table-header pb-s pt-0">
+                <div class="col-lg-5"><span>Item</span></div>
+                <div class="col-lg-2"><span>Tall (12oz)</span></div>
+                <div class="col-lg-2"><span>Grande (16oz)</span></div>
+                <div class="col-lg-3"><span class="text--center">Venti <br>(H:20oz, C:24oz)</span></div>
             </div>
             <!-- row 1 grey background -->
-            <div class="row-cafe-menu espresso-text-lrgfont" id="yui_3_8_1_1_1402423529995_128">
-                <div class="cafe-espresso-thumb" id="yui_3_8_1_1_1402423529995_132"><img width="89" height="75" alt="Caramel Macchiato" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_CaramelMacchiato_P1.jpg" id="yui_3_8_1_1_1402423529995_131"></div>
-                <div class="item-espresso-text">Caramel Macchiato</div>
-                <div class="item-espresso-size" id="yui_3_8_1_1_1402423529995_142">180 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">240 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">300 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m" id="yui_3_8_1_1_1402423529995_128">
+                <div class="col-lg-2" id="yui_3_8_1_1_1402423529995_132"><img width="89" height="75" alt="Caramel Macchiato" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_CaramelMacchiato_P1.jpg" id="yui_3_8_1_1_1402423529995_131"></div>
+                <div class="col-lg-3 cafe-item"><span>Caramel Macchiato</span></div>
+                <div class="col-lg-2" id="yui_3_8_1_1_1402423529995_142"><span>180 Calories</span></div>
+                <div class="col-lg-2"><span>240 Calories</span></div>
+                <div class="col-lg-3"><span>300 Calories</span></div>
             </div>
 
 
 
             <!-- row 3 grey background -->
-            <div class="row-cafe-menu-grey espresso-text-lrgfont cafe-menu-border">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="White Chocolate Mocha" src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_16.jpg"></div>
-                <div class="item-espresso-text">White Chocolate Mocha</div>
-                <div class="item-espresso-size">370 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">470 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">580 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="White Chocolate Mocha" src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_16.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>White Chocolate Mocha</span></div>
+                <div class="col-lg-2"><span>370 Calories</span></div>
+                <div class="col-lg-2"><span>470 Calories</span></div>
+                <div class="col-lg-3"><span>580 Calories</span></div>
             </div>
 
             <!-- row 4 grey background -->
-            <div class="row-cafe-menu espresso-text-lrgfont">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Caffe Latte*" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_CaffeLatte_P3.jpg"></div>
-                <div class="item-espresso-text">Caffe Latte*</div>
-                <div class="item-espresso-size">150 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">190 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">240 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Caffe Latte*" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_CaffeLatte_P3.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Caffe Latte*</span></div>
+                <div class="col-lg-2"><span>150 Calories</span></div>
+                <div class="col-lg-2"><span>190 Calories</span></div>
+                <div class="col-lg-3"><span>240 Calories</span></div>
             </div>
 
             <!-- row 5-->
-            <div class="row-cafe-menu-grey espresso-text-lrgfont cafe-menu-border">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Cappuccino*" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_Cappuccino_P4.jpg"></div>
-                <div class="item-espresso-text">Cappuccino*</div>
-                <div class="item-espresso-size">90 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">120 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">150 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Cappuccino*" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_Cappuccino_P4.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Cappuccino*</span></div>
+                <div class="col-lg-2"><span>90 Calories</span></div>
+                <div class="col-lg-2"><span>120 Calories</span></div>
+                <div class="col-lg-3"><span>150 Calories</span></div>
             </div>
 
             <!-- row 6 grey background -->
-            <div class="row-cafe-menu espresso-text-lrgfont">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Caffe Mocha*" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_CaffeMocha_P5.jpg"></div>
-                <div class="item-espresso-text">Caffe Mocha*</div>
-                <div class="item-espresso-size">270 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">330 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">410 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Caffe Mocha*" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_CaffeMocha_P5.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Caffe Mocha*</span></div>
+                <div class="col-lg-2"><span>270 Calories</span></div>
+                <div class="col-lg-2"><span>330 Calories</span></div>
+                <div class="col-lg-3"><span>410 Calories</span></div>
             </div>
 
             <!-- row 7 grey background -->
-            <div class="row-cafe-menu-grey espresso-text-lrgfont cafe-menu-border">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Caffe Americano" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_CaffeAmericano_P6.jpg"></div>
-                <div class="item-espresso-text">Caffe Americano</div>
-                <div class="item-espresso-size">10 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">15 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">25 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Caffe Americano" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_CaffeAmericano_P6.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Caffe Americano</span></div>
+                <div class="col-lg-2"><span>10 Calories</span></div>
+                <div class="col-lg-2"><span>15 Calories</span></div>
+                <div class="col-lg-3"><span>25 Calories</span></div>
             </div>
 
             <!-- row 8 -->
-            <div class="row-cafe-menu espresso-text-lrgfont">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Coffee" src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_26.jpg"></div>
-                <div class="item-espresso-text">Coffee</div>
-                <div class="item-espresso-size">5 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">5 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">5 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Coffee" src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_26.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Coffee</span></div>
+                <div class="col-lg-2"><span>5 Calories</span></div>
+                <div class="col-lg-2"><span>5 Calories</span></div>
+                <div class="col-lg-3"><span>5 Calories</span></div>
             </div>
 
             <!-- row 9 grey background -->
-            <div class="row-cafe-menu-grey espresso-text-lrgfont cafe-menu-border">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Iced Coffee" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_IcedCoffee_P8.jpg"></div>
-                <div class="item-espresso-text">Iced Coffee</div>
-                <div class="item-espresso-size">60 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">90 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">130 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Iced Coffee" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_IcedCoffee_P8.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Iced Coffee</span></div>
+                <div class="col-lg-2"><span>60 Calories</span></div>
+                <div class="col-lg-2"><span>90 Calories</span></div>
+                <div class="col-lg-3"><span>130 Calories</span></div>
             </div>
 
             <!-- row 10 grey background -->
-            <div class="row-cafe-menu espresso-text-lrgfont">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Chai Tea Latte " src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_30.jpg"></div>
-                <div class="item-espresso-text">Chai Tea Latte</div>
-                <div class="item-espresso-size">180 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">240 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">300 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Chai Tea Latte " src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_30.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Chai Tea Latte</span></div>
+                <div class="col-lg-2"><span>180 Calories</span></div>
+                <div class="col-lg-2"><span>240 Calories</span></div>
+                <div class="col-lg-3"><span>300 Calories</span></div>
             </div>
 
             <!-- row 11 -->
-            <div class="row-cafe-menu-grey espresso-text-lrgfont cafe-menu-border">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Tazo Iced Tea" src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_32.jpg"></div>
-                <div class="item-espresso-text">Iced Tea </div>
-                <div class="item-espresso-size">60 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">80 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">130 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Tazo Iced Tea" src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_32.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Iced Tea</span></div>
+                <div class="col-lg-2"><span>60 Calories</span></div>
+                <div class="col-lg-2"><span>80 Calories</span></div>
+                <div class="col-lg-3"><span>130 Calories</span></div>
             </div>
 
             <!-- row 12 grey background -->
-            <div class="row-cafe-menu espresso-text-lrgfont">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Tazo Iced Tea Lemonade" src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_32.jpg"></div>
-                <div class="item-espresso-text">Iced Tea Lemonade </div>
-                <div class="item-espresso-size">100 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-size">130 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">190 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Tazo Iced Tea Lemonade" src="//img1.imagesbn.com/pImages/cafe/subpages/expresso/images/expresso_32.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Iced Tea Lemonade</span></div>
+                <div class="col-lg-2"><span>100 Calories</span></div>
+                <div class="col-lg-2"><span>130 Calories</span></div>
+                <div class="col-lg-3"><span>190 Calories</span></div>
             </div>
-            <!-- bottom grey border section -->
-            <hr class="cafe-espresso-grey-border">
 
-            <!--  Solo item -->
-            <div class="row-cafe-espresso-header espresso-header-font">
-                <div class="item-espresso-header">Item</div>
-                <div class="item-espresso-header-sizebtm">&nbsp;</div>
-                <div class="item-espresso-header-sizemidbtm">Solo</div>
-                <div class="item-espresso-header-sizesm">Doppio</div>
+            <!-- row headers-->
+            <div class="row cafe-table-header pb-s pt-0">
+                <div class="col-lg-5"><span>Item</span></div>
+                <div class="col-lg-2"><span>Tall (12oz)</span></div>
+                <div class="col-lg-2"><span>Grande (16oz)</span></div>
+                <div class="col-lg-3"><span>Venti <br>(H:20oz, C:24oz)</span></div>
             </div>
+            
             <!-- Solo graphic grey background -->
-            <div class="row-cafe-menu-grey espresso-text-lrgfont cafe-menu-border">
-                <div class="cafe-espresso-thumb"><img width="89" height="75" alt="Espresso" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_espresso.jpg"></div>
-                <div class="item-espresso-text">Espresso</div>
-                <div class="item-espresso-size">&nbsp;</div>
-                <div class="item-espresso-size">5 <span class="espresso-text-smfont">Calories</span></div>
-                <div class="item-espresso-sizesm">10 <span class="espresso-text-smfont">Calories</span></div>
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2"><img width="89" height="75" alt="Espresso" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/misc/2016/PROD-6891_CafeUpdateEspressoBeverages_espresso.jpg"></div>
+                <div class="col-lg-3 cafe-item"><span>Espresso</span></div>
+                <div class="col-lg-2">&nbsp;</div>
+                <div class="col-lg-2"><span>5 Calories</span></div>
+                <div class="col-lg-3"><span>10 Calories</span></div>
             </div>
         </div>
     </div>
