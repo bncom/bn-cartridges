@@ -382,6 +382,16 @@ document.cookie = curCookie;
 
 
 
+In the Gateway Tiles, the height of the top 100 pod (tile tile-list tile-row-2) needs to be adjusted.
+
+With the the latest Firefox release (57.0), the browser rendering a shorter height causing a mis-alignment of the floated tiles. 
+
+Suggested update:
+(.tile-row-2 may also need to be slightly different from .tile-row-2.tile-right)
+.tile-grid .tile-row-2 { height: calc(36.5625rem * 2 + 0.559rem) !important; } 
+.tile-grid .tile-row-2.tile-right {height: calc(36.5625rem * 2 + 0.563rem) !important;}
+
+
 
 
 
@@ -466,56 +476,406 @@ https://www.barnesandnoble.com/b/30-off-holiday-boxed-cards/_/N-2g6y
 
 /content/ccr/gateway/promo-tile-plus/2017/11/tile-top-promotions.use.html
  
-
-	<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
-		<div class="tile-bg bg-peech-03"></div>
-		<div class="tile-content">
-			<div class="tile-header border-color-coal">
-				<h1 class="color-coal">Special Offers</h1>
-			</div>
-			<ol>
-				<li>
-					<a href="//www.barnesandnoble.com/b/little-books-buy-two-get-the-3rd-free/_/N-2m01" onclick="set_cookie('ocrs_B&amp;N-Top-100_Little-Books-to-Build-Big-Libraries-Buy-2-Get-1-Free_text');">
-					<div class="tile-list-item-title">
-						Little Books to Build Big Libraries: Buy 2, Get 1 Free
-					</div></a>
-				</li>
-				<li>
-					<a href="//www.barnesandnoble.com/b/favorite-paperbacks-buy-2-get-the-3rd-free/_/N-2ixw" onclick="set_cookie('ocrs_B&amp;N-Top-100_Favorite-Paperbacks-Buy-2-Get-1-Free_text');">
-					<div class="tile-list-item-title">
-						Favorite Paperbacks:<br>Buy 2, Get 1 Free
-					</div></a> 
-				</li>
-				<li>
-					<a href="//www.barnesandnoble.com/b/disney-classics-2-for-10/_/N-2m4p" onclick="set_cookie('ocrs_B&amp;N-Top-100_Disney Classics: 2 for $10_text');">
-					<div class="tile-list-item-title">
-						Disney Classics:<br>2 for $10
-					</div></a> 
-				</li>
-				<li>
-					<a href="//www.barnesandnoble.com/b/barnsie-noble-special-offer/_/N-1gvf" onclick="set_cookie('ocrs_B&amp;N-Top-100_Get-Barnsie-or-Noble-for-only-9-95-with-Purchase_text');">
-					<div class="tile-list-item-title">
-						Get Barnsie or Noble for only $9.95 with&nbsp;Purchase
-					</div></a> 
-				</li>
-				<li>
-					<a href="//www.barnesandnoble.com/b/30-off-holiday-boxed-cards/_/N-2g6y" onclick="set_cookie('ocrs_B&amp;N-Top-100_30-Off-Holiday-Boxed-Cards_text');">
-					<div class="tile-list-item-title">
-						30% Off Holiday Boxed&nbsp;Cards
-					</div></a> 
-				</li>
-			</ol><a class="btn--tile-top100 hover-opacity" href="//www.barnesandnoble.com/h/coupons-deals" onclick="set_cookie('ocrs_B&amp;N-Top-100_See-All_text');">See All</a>
-		</div>
-	</div>
-
-
+ 
+<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
+  <div class="tile-bg bg-peech-03"></div>
+  <div class="tile-content">
+    <div class="tile-header border-color-coal">
+      <h1 class="color-coal">Special Offers</h1>
+    </div>
+    <ol>
+      <li>
+        <a href="//www.barnesandnoble.com/b/little-books-buy-two-get-the-3rd-free/_/N-2m01" onclick="set_cookie('ocrs_B&amp;N-Top-100_Little-Books-to-Build-Big-Libraries-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title">
+          Buy 2, Get 1 Free: Little Books to Build Big Libraries
+        </div></a>
+      </li>
+      <li>
+        <a href="/b/dc-and-marvel-graphic-novels-buy-2-get-the-3rd-free/_/N-2kv2" onclick="set_cookie('ocrs_B&amp;N-Top-100_DC-Marvel-Graphic-Novels-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title"> 
+          Buy 2, Get 1 Free:<br>DC and Marvel Graphic Novels
+        </div></a> 
+      </li>
+      <li>
+        <a href="//www.barnesandnoble.com/b/disney-classics-2-for-10/_/N-2m4p" onclick="set_cookie('ocrs_B&amp;N-Top-100_Disney Classics: 2 for $10_text');">
+        <div class="tile-list-item-title">
+          2 for $10:<br>Disney Classics
+        </div></a> 
+      </li>
+      <li>
+        <a href="//www.barnesandnoble.com/b/barnsie-noble-special-offer/_/N-1gvf" onclick="set_cookie('ocrs_B&amp;N-Top-100_Get-Barnsie-or-Noble-for-only-9-95-with-Purchase_text');">
+        <div class="tile-list-item-title">
+          Only $9.95 with Purchase: Barnsie or Noble
+        </div></a> 
+      </li>
+      <li>
+        <a href="//www.barnesandnoble.com/b/30-off-holiday-boxed-cards/_/N-2g6y" onclick="set_cookie('ocrs_B&amp;N-Top-100_30-Off-Holiday-Boxed-Cards_text');">
+        <div class="tile-list-item-title">
+          30% Off Holiday Boxed&nbsp;Cards
+        </div></a> 
+      </li>
+    </ol><a class="btn--tile-top100 hover-opacity" href="//www.barnesandnoble.com/h/coupons-deals" onclick="set_cookie('ocrs_B&amp;N-Top-100_See-All_text');">See All</a>
+  </div>
+</div>
 
 
+1 Little Books to Build Big Libraries: Buy 2, Get 1 Free
+https://www.barnesandnoble.com/b/little-books-buy-two-get-the-3rd-free/_/N-2m01
+
+2 Chapter Books Buy 2, Get 1 Free
+https://www.barnesandnoble.com/b/chapter-books-buy-2-get-the-3rd-free/_/N-2l69
+
+3 Get Barnsie or Noble for only $9.95 with Purchase
+https://www.barnesandnoble.com/b/barnsie-noble-special-offer/_/N-1gvf
+
+4 30% Off Holiday Boxed Cards
+https://www.barnesandnoble.com/b/30-off-holiday-boxed-cards/_/N-2g6y
+
+5 Favorite Paperbacks: Buy 2, Get the 3rd Free
+https://www.barnesandnoble.com/b/favorite-paperbacks-buy-2-get-the-3rd-free/_/N-2ixw
+
+12/5
+<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
+  <div class="tile-bg bg-peech-03"></div>
+  <div class="tile-content">
+    <div class="tile-header border-color-coal">
+      <h1 class="color-coal">Special Offers</h1>
+    </div>
+    <ol>
+      <li>
+        <a href="//www.barnesandnoble.com/b/little-books-buy-two-get-the-3rd-free/_/N-2m01" onclick="set_cookie('ocrs_B&amp;N-Top-100_Little-Books-to-Build-Big-Libraries-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title">
+          Buy 2, Get 1 Free: Little Books to Build Big Libraries
+        </div></a>
+      </li>
+      <li>
+        <a href="/b/chapter-books-buy-2-get-the-3rd-free/_/N-2l69" onclick="set_cookie('ocrs_B&amp;N-Top-100_2-chapter-books-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title"> 
+          Buy 2, Get 1 Free:<br>Chapter Books  
+        </div></a> 
+      </li>
+      <li>
+        <a href="//www.barnesandnoble.com/b/barnsie-noble-special-offer/_/N-1gvf" onclick="set_cookie('ocrs_B&amp;N-Top-100_Get-Barnsie-or-Noble-for-only-9-95-with-Purchase_text');">
+        <div class="tile-list-item-title">
+          Only $9.95 with Purchase: Barnsie or Noble
+        </div></a> 
+      </li>
+      <li>
+        <a href="//www.barnesandnoble.com/b/30-off-holiday-boxed-cards/_/N-2g6y" onclick="set_cookie('ocrs_B&amp;N-Top-100_30-Off-Holiday-Boxed-Cards_text');">
+        <div class="tile-list-item-title">
+          30% Off Holiday Boxed&nbsp;Cards
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/favorite-paperbacks-buy-2-get-the-3rd-free/_/N-2ixw" onclick="set_cookie('ocrs_B&amp;N-Top-100_favorite-paperbacks-buy2get3rdfree_text');">
+        <div class="tile-list-item-title">
+          Buy 2, Get 1 Free:<br>Favorite Paperbacks
+        </div></a> 
+      </li>
+    </ol><a class="btn--tile-top100 hover-opacity" href="//www.barnesandnoble.com/h/coupons-deals" onclick="set_cookie('ocrs_B&amp;N-Top-100_See-All_text');">See All</a>
+  </div>
+</div>
 
 
 
 
 
+#4
+50% Off Cookbooks
+https://www.barnesandnoble.com/b/great-cookbooks-great-values-50-off/_/N-2oid
+
+#5
+Up to 30% Off Favorite Toy Brands
+https://www.barnesandnoble.com/b/hot-deals-toys-games/_/N-1p5e
+
+
+
+
+
+
+
+
+ 
+12/7
+<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
+  <div class="tile-bg bg-peech-03"></div>
+  <div class="tile-content">
+    <div class="tile-header border-color-coal">
+      <h1 class="color-coal">Special Offers</h1>
+    </div>
+    <ol>
+      <li>
+        <a href="//www.barnesandnoble.com/b/little-books-buy-two-get-the-3rd-free/_/N-2m01" onclick="set_cookie('ocrs_B&amp;N-Top-100_Little-Books-to-Build-Big-Libraries-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title">
+          Buy 2, Get 1 Free: Little Books to Build Big Libraries
+        </div></a>
+      </li>
+      <li>
+        <a href="/b/chapter-books-buy-2-get-the-3rd-free/_/N-2l69" onclick="set_cookie('ocrs_B&amp;N-Top-100_2-chapter-books-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title"> 
+          Buy 2, Get 1 Free:<br>Chapter Books  
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/favorite-paperbacks-buy-2-get-the-3rd-free/_/N-2ixw" onclick="set_cookie('ocrs_B&amp;N-Top-100_favorite-paperbacks-buy2get3rdfree_text');">
+        <div class="tile-list-item-title">
+          Buy 2, Get 1 Free:<br>Favorite Paperbacks
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/great-cookbooks-great-values-50-off/_/N-2oid" onclick="set_cookie('ocrs_B&amp;N-Top-100_50-Off-Cookbooks_text');">
+        <div class="tile-list-item-title">
+          50% Off Cookbooks
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/hot-deals-toys-games/_/N-1p5e" onclick="set_cookie('ocrs_B&amp;N-Top-100_30-off-favorite-toy-brands_text');">
+        <div class="tile-list-item-title">
+          Up to 30% Off<br>Favorite Toy Brands
+        </div></a> 
+      </li>
+    </ol><a class="btn--tile-top100 hover-opacity" href="//www.barnesandnoble.com/b/books/_/N-1fZ29Z8q8" onclick="set_cookie('ocrs_B&amp;N-Top-100_See-All_text');">See All</a>
+  </div>
+</div>
+
+
+
+
+
+
+12/12
+
+1 Up to 30% Off Toys & Games
+https://www.barnesandnoble.com/b/hot-deals-toys-games/_/N-1p5e
+
+2 Little Golden Books: Buy 2, Get 1 Free
+https://www.barnesandnoble.com/b/little-golden-books-buy-2-get-the-3rd-free/_/N-2mhn
+
+3  Buy 2, Get 1 Free: Favorite Paperbacks 
+https://www.barnesandnoble.com/b/favorite-paperbacks-buy-2-get-the-3rd-free/_/N-2ixw
+
+4 Up to 40% Off Bookshelf Essentials for Young Readers
+https://www.barnesandnoble.com/b/bookshelf-essentials-for-young-readers/_/N-2l7g
+
+
+5 Buy 2, Get 1 Free: Chapter Books
+https://www.barnesandnoble.com/b/chapter-books-buy-2-get-the-3rd-free/_/N-2l69
+
+
+
+
+<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
+  <div class="tile-bg bg-peech-03"></div>
+  <div class="tile-content">
+    <div class="tile-header border-color-coal">
+      <h1 class="color-coal">Special Offers</h1>
+    </div>
+    <ol>
+      <li>
+        <a href="/b/hot-deals-toys-games/_/N-1p5e" onclick="set_cookie('ocrs_B&amp;N-Top-100_30-off-favorite-toy-brands_text');">
+        <div class="tile-list-item-title">
+          Up to 30% Off<br>Favorite Toy Brands
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/50-off-select-new-releases/_/N-2lcd" onclick="set_cookie('ocrs_B&amp;N-Top-100_50off-select-books_text');">
+        <div class="tile-list-item-title">
+          50% Off Select&nbsp;Books
+        </div></a>
+      </li>
+      <li>
+        <a href="/b/favorite-paperbacks-buy-2-get-the-3rd-free/_/N-2ixw" onclick="set_cookie('ocrs_B&amp;N-Top-100_favorite-paperbacks-buy2get3rdfree_text');">
+        <div class="tile-list-item-title">
+          Buy 2, Get 1 Free:<br>Favorite Paperbacks
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/bookshelf-essentials-for-young-readers/_/N-2l7g" onclick="set_cookie('ocrs_B&amp;N-Top-100_50-Off-Cookbooks_text');">
+        <div class="tile-list-item-title">
+           Up to 40% Off Bookshelf Essentials for Young&nbsp;Readers 
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/chapter-books-buy-2-get-the-3rd-free/_/N-2l69" onclick="set_cookie('ocrs_B&amp;N-Top-100_2-chapter-books-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title"> 
+          Buy 2, Get 1 Free:<br>Chapter Books  
+        </div></a> 
+      </li>
+    </ol><a class="btn--tile-top100 hover-opacity" href="//www.barnesandnoble.com/h/coupons-deals" onclick="set_cookie('ocrs_B&amp;N-Top-100_See-All_text');">See All</a>
+  </div>
+</div>
+
+
+
+
+
+
+50% Off Select&nbsp;Books
+https://www.barnesandnoble.com/b/50-off-select-new-releases/_/N-2lcd
+
+12-15
+
+<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
+  <div class="tile-bg bg-peech-03"></div>
+  <div class="tile-content">
+    <div class="tile-header border-color-coal">
+      <h1 class="color-coal">Special Offers</h1>
+    </div>
+    <ol>
+      <li>
+        <a href="/b/hot-deals-toys-games/_/N-1p5e" onclick="set_cookie('ocrs_B&amp;N-Top-100_30-off-favorite-toy-brands_text');">
+        <div class="tile-list-item-title">
+          Up to 30% Off<br>Favorite Toy Brands
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/50-off-select-new-releases/_/N-2lcd" onclick="set_cookie('ocrs_B&amp;N-Top-100_50off-select-books_text');">
+        <div class="tile-list-item-title">
+          50% Off Select&nbsp;Books
+        </div></a>
+      </li>
+      <li>
+        <a href="/b/favorite-paperbacks-buy-2-get-the-3rd-free/_/N-2ixw" onclick="set_cookie('ocrs_B&amp;N-Top-100_favorite-paperbacks-buy2get3rdfree_text');">
+        <div class="tile-list-item-title">
+          Buy 2, Get 1 Free:<br>Favorite Paperbacks
+        </div></a> 
+      </li>
+      <li>
+        <a href="/w/thirty-dollar-gift-card-multipack-barnes-noble/1127524937?ean=2000003505579" onclick="set_cookie('ocrs_B&amp;N-Top-100_giftcard-multipack_text');">
+        <div class="tile-list-item-title">
+           Get a $30 Gift Card Multipack for $25
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/chapter-books-buy-2-get-the-3rd-free/_/N-2l69" onclick="set_cookie('ocrs_B&amp;N-Top-100_2-chapter-books-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title"> 
+          Buy 2, Get 1 Free:<br>Chapter Books  
+        </div></a> 
+      </li>
+    </ol><a class="btn--tile-top100 hover-opacity" href="//www.barnesandnoble.com/h/coupons-deals" onclick="set_cookie('ocrs_B&amp;N-Top-100_See-All_text');">See All</a>
+  </div>
+</div>
+
+
+ 
+
+
+
+
+
+12/18 
+<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
+  <div class="tile-bg bg-peech-03"></div>
+  <div class="tile-content">
+    <div class="tile-header border-color-coal">
+      <h1 class="color-coal">Special Offers</h1>
+    </div>
+    <ol>
+      <li>
+        <a href="/b/hot-deals-toys-games/_/N-1p5e" onclick="set_cookie('ocrs_B&amp;N-Top-100_30-off-favorite-toy-brands_text');">
+        <div class="tile-list-item-title">
+          Up to 30% Off<br>Favorite Toy Brands
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/50-off-select-new-releases/_/N-2lcd" onclick="set_cookie('ocrs_B&amp;N-Top-100_50off-select-books_text');">
+        <div class="tile-list-item-title">
+          50% Off Select&nbsp;Books
+        </div></a>
+      </li>
+      <li>
+        <a href="/b/favorite-paperbacks-buy-2-get-the-3rd-free/_/N-2ixw" onclick="set_cookie('ocrs_B&amp;N-Top-100_favorite-paperbacks-buy2get3rdfree_text');">
+        <div class="tile-list-item-title">
+          Buy 2, Get 1 Free:<br>Favorite Paperbacks
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/bookshelf-essentials-for-young-readers/_/N-2l7g" onclick="set_cookie('ocrs_B&amp;N-Top-100_40off-for0young-readers_text');">
+        <div class="tile-list-item-title">
+           Up to 40% Off Bookshelf Essentials for Young Readers 
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/chapter-books-buy-2-get-the-3rd-free/_/N-2l69" onclick="set_cookie('ocrs_B&amp;N-Top-100_2-chapter-books-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title"> 
+          Buy 2, Get 1 Free:<br>Chapter Books  
+        </div></a> 
+      </li>
+    </ol><a class="btn--tile-top100 hover-opacity" href="//www.barnesandnoble.com/h/coupons-deals" onclick="set_cookie('ocrs_B&amp;N-Top-100_See-All_text');">See All</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+12/19
+<div class="tile tile-list tile-row-2 tile-right hover-opacity top100-white-on-forest">
+  <div class="tile-bg bg-peech-03"></div>
+  <div class="tile-content">
+    <div class="tile-header border-color-coal">
+      <h1 class="color-coal">Special Offers</h1>
+    </div>
+    <ol>
+      <li>
+        <a href="/b/manga-mania-sale-buy-2-get-the-3rd-free/_/N-1gn4" onclick="set_cookie('ocrs_B&amp;N-Top-100_mange-buy2get1free_text');">
+        <div class="tile-list-item-title">
+          Manga: Buy 2, Get 1 Free
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/50-off-select-new-releases/_/N-2lcd" onclick="set_cookie('ocrs_B&amp;N-Top-100_50off-select-books_text');">
+        <div class="tile-list-item-title">
+          50% Off Select&nbsp;Books
+        </div></a>
+      </li>
+      <li>
+        <a href="/b/chapter-books-buy-2-get-the-3rd-free/_/N-2l69" onclick="set_cookie('ocrs_B&amp;N-Top-100_2-chapter-books-Buy-2-Get-1-Free_text');">
+        <div class="tile-list-item-title"> 
+          Buy 2, Get 1 Free:<br>Chapter Books  
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/bookshelf-essentials-for-young-readers/_/N-2l7g" onclick="set_cookie('ocrs_B&amp;N-Top-100_40off-for-young-readers_text');">
+        <div class="tile-list-item-title">
+           Up to 40% Off Bookshelf Essentials for Young Readers 
+        </div></a> 
+      </li>
+      <li>
+        <a href="/b/great-cookbooks-great-values-50-off/_/N-2oid" onclick="set_cookie('ocrs_B&amp;N-Top-100_50off-great-cookbooks_text');">
+        <div class="tile-list-item-title">
+          50% Off <br> Great Cookbooks
+        </div></a> 
+      </li>
+    </ol><a class="btn--tile-top100 hover-opacity" href="//www.barnesandnoble.com/h/coupons-deals" onclick="set_cookie('ocrs_B&amp;N-Top-100_See-All_text');">See All</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
 
 
 
