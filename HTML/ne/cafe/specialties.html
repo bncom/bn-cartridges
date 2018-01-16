@@ -1,447 +1,337 @@
+<style>
+    .pageshell .row {
+        border-top: 1px solid #ccc;
+        font-family: Poynter, sans-serif;
+    }
+
+    .pageshell .row.cafe-table-header {
+        border-top: none;
+        text-transform: uppercase;
+        font-family: Lato, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .cafe-item {
+        font-family: Lato, sans-serif;
+    }
+
+    .cafe-banner-img img {
+        width: 100%;
+    }
+
+    .pageshell .row span {
+        padding-top: 30px;
+        display: block;
+        text-align: center
+    }
+
+</style>
 
 
 <section class="page-content column">
 
     <div class="pageshell">
         <div class="copy">
-<style>
-body {
-    margin: 0;
-    padding: 0;         
-}
 
-.row-cafe-menu {
-    overflow: hidden;
-    width: 753px;
-    padding: 10px 0 9px 17px;
-    min-height:89px;
-}
+            <!--  hero graphic -->
+            <div class="cafe-banner-img" id="yui_3_8_1_1_1402435311346_131">
+                <img alt="It's true. The perfect cup of coffee and a wholesome, delicious snack can make your day. So we make sure everything you choose is of the finest quality." src="//dispatch.barnesandnoble.com/content/dam/ccr/stores/cafe/banners/PROD-3214_BNCafe_TurkeyBrieChickenNoodleSoup_MenuPageHero.jpg" id="yui_3_8_1_1_1402435311346_130">
+            </div>
+            <!-- header -->
+            <div class="row cafe-table-header pb-m pt-m" id="yui_3_8_1_1_1402435311346_113">
+                <div class="col-lg-9">Caf&eacute; Sandwiches</div>
+                <div class="col-lg-3 text--center">Calories in each</div>
+            </div>
+            <!-- row 1 grey background -->
+            <div class="row pb-m pt-m" id="yui_3_8_1_1_1402435311346_106">
+                <div class="col-lg-2" id="yui_3_8_1_1_1402435311346_117"><img width="89" height="75" alt="Philly CheeseSteak" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/PhillyCheeseSteak.jpg" id="yui_3_8_1_1_1402435311346_116"></div>
+                <div class="col-lg-7">
+                    <h3>Philly Cheesesteak</h3>
+                    <p>Thinly sliced beef, sautéed onions, white American cheese, pretzel roll.</p>
+                </div>
+                <div class="col-lg-3" id="yui_3_8_1_1_1402435311346_115"><span>420 calories</span></div>
+            </div>
 
-.row-cafe-menu-grey {
-    overflow: hidden;
-    width: 753px;
-    padding: 10px 0 9px 17px;
-    background: #faf9f7;            
-    min-height:89px;
-}
-
-.cafe-banner-img {margin: 0 0 55px 0;}
-    
-.bakery-menu-item { float: left; }
-
-.cafe-menu-border {
-    border-bottom:1px solid #dfddd0; 
-    border-top:1px solid #dfddd0;
-    position:relative;
-    z-index:10
-}
-
-.cafe-menu-border:before {
-    content:"";
-    display:block;
-    position:absolute;
-    z-index:-1;
-    top:2px;            
-    bottom:2px;
-    top:2px;
-    left:2px;
-    right:2px;  
-    border-top:3px solid #ffffff;       
-    border-bottom:3px solid #ffffff;
-}
-
-.row-cafe-bakery-header {
-    overflow: hidden;
-    padding: 10px 9px 17px 17px;
-}
-
-.row-cafe-bakery-header-section {
-    overflow: hidden;
-    padding: 82px 9px 17px 17px;
-}
-.item-bakery-header {
-    float: left;
-    width: 554px;
-    padding: 0 52px 0 0;
-}
-.item-bakery-header-short {
-    float: left;
-    width: 520px;
-    padding: 0 52px 0 0;
-}
-.item-bakery-header-btm {
-    float: left;
-    width: 370px;
-    padding: 0 19px 0 0;
-}
-
-.item-bakery-header-size {
-    float: left;
-    width:120px;
-    /*padding: 0 18px 0 4px;*/
-}
-
-.item-bakery-header-sizelng {
-    float: left;
-    width:150px;
-    padding: 0 18px 0 4px;
-}
-
-.item-bakery-header-sizesm {
-    float: left;
-    width: 68px;
-    padding: 0 18px 0 0;
-}
-.item-bakery-size {
-    float: left;
-    width:117px;
-    padding: 30px 18px 0 0;
-}
-/*width:68px;*/
-.item-bakery-sizesm {
-    float: left;
-    padding: 8px 18px 0 0;
-}
-
-.item-bakery-text {
-    float: left;
-    width:520px;
-    padding: 8px 26px 0 14px;
-    font-size: 16px;        
-}
-
-.item-specialty-text {
-    float: left;
-    width:610px;
-    padding: 8px 26px 0 0;
-    font-size: 16px;        
-}
-
-.bakery-text-smfont {           
-    font-family: Arial,Georgia,serif;
-    font-size: 11px;
-    font-color: #000000;
-}
-
-.bakery-text-medfont {          
-    font-family: Arial,Georgia,serif;
-    font-size: 12px;
-    font-color: #000000;
-    line-height: 18px;  
-    padding:13px 0 0 0;
-}
-
-.bakery-text-lrgfont {          
-    font-family: MiloSerifOffcMedium,Georgia,serif;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 20px;  
-    font-weight: normal;            
-}
-.bakery-header-font {           
-    font-family: MiloSerifOffcMediumItalic,Georgia,serif;
-    font-size: 16px;
-    font-weight: normal;
-}       
-
-.cafe-bakery-thumb img { float: left; vertical-align:middle; border: 1px solid #bdbaaf; margin-top: 3px; padding: 3px; -webkit-box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.25); }
+            <!-- row 2-->
+            <div class="row bp-m pt-m" id="yui_3_8_1_1_1402435311346_126">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Chicken Bacon Ranch" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/FarmersWrap.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Farmer's Wrap</h3>
+                    <p>Scrambled eggs, cheddar cheese, bell peppers, tomatoes, spinach, mushrooms, lavash wrap.</p>
+                </div>
+                <div class="col-lg-3" id="yui_3_8_1_1_1402435311346_129"><span>360 calories</span></div>
+            </div>
 
 
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Tomato Caprese" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/CDS-1432_BNCafeThumb_TomatoSandwich.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Tomato Caprese</h3>
+                    <p>Fresh mozzarella, roasted tomatoes, provolone cheese, basil pesto, artisan Italian baguette.</p>
+                </div>
+                <div class="col-lg-3"><span>630 calories</span></div>
+            </div>
 
-hr.cafe-bakery-grey-border {
-border: 1px thin solid #dfddd0;
-margin: 0 0 82px 0;
-width: 100%;
-border-width: 1px thin;
-float: none;
-}
+            <!-- row 5 grey background -->
+            <div class="row bp-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Chicken Club" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/ChickenClub.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Chicken Club</h3>
+                    <p>Grilled chicken, Applewood smoked bacon, tomatoes, mayonnaise, ciabatta roll.</p>
+                </div>
+                <div class="col-lg-3"><span>530 calorie</span></div>
+            </div>
 
-    /* form styles*/
-
-#storeform {
-display: block;
-height: 30px;
-margin: 73px 0 0 467px;
-position: absolute;
-width: 474px;
-}
-#zip-search-button {
-background: url("none") no-repeat scroll 0 0 transparent;
-border: 0 none;
-cursor: pointer;
-float: left;
-height: 38px;
-left: 341px;
-position: absolute;
-text-indent: -9999px;
-top: -2px;
-width: 132px;
-}
-.zip_label {
-background: none no-repeat scroll 0 0 transparent;
-color: #888888;
-display: block;
-font-family: MiloSerifOffcMedium;
-font-size: 15px;
-position: relative;
-top: 7px;
-}
-#zip-input {
-background: none no-repeat scroll 0 0 transparent;
-border: medium none;
-color: #888888;
-display: block;
-font-family: MiloSerifOffcMedium,serif;
-font-size: 15px;
-height: 26px;
-position: absolute;
-top: 4px;
-width: 336px;
-left:6px;
-}
-#zip_placeholder {
-background: none no-repeat scroll 0 0 transparent;
-color: #888888;
-display: block;
-font-family: MiloSerifOffcMedium;
-font-size: 15px;
-position: relative;
-top: 3px;
-left:6px;
-}
-.text-field-wrapper {
-background-color: transparent !important;
-display: inline-block;
-position: relative;
-}
-
-div#TurnOuter {
-margin: 60px 0 0 -200px;
-position:relative;
-z-index: 100;
-}
-</style>
+            <!-- row 6-->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Turkey &amp; Brie" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/TurkeyBrie.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Turkey &amp; Brie</h3>
+                    <p>Smoked turkey breast and Brie cheese, 9-grain bread.</p>
+                </div>
+                <div class="col-lg-3"><span>450 calories</span></div>
+            </div>
+            <!-- bottom grey border section
+    <hr class="cafe-bakery-grey-border"/>
+     -->
+            <!-- section 2 -->
+            <!-- header -->
+            <div class="row pb-m pt-m cafe-table-header">
+                <div class="col-lg-9">Pizza</div>
+                <div class="col-lg-3 text--center">Calories in each</div>
+            </div>
 
 
+            <!-- row 21 -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Cheese Pizza" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/CDS-1432_BNCafeThumb_PizzaCheese.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Cheese Pizza</h3>
+                    <p>Rustic Italian, hand-stretched, wood-fired crust, extra virgin olive oil, part-skim mozzarella cheese, tomato sauce, basil, Parmesan cheese.</p>
+                </div>
+                <div class="col-lg-3"><span>520 calories</span></div>
+            </div>
 
-<!--  hero graphic -->                                                          
-     <div class="cafe-banner-img" id="yui_3_8_1_1_1402435311346_131">
-        <img width="735" alt="It's true. The perfect cup of coffee and a wholesome, delicious snack can make your day. So we make sure everything you choose is of the finest quality." src="//dispatch.barnesandnoble.com/content/dam/ccr/stores/cafe/banners/PROD-3214_BNCafe_TurkeyBrieChickenNoodleSoup_MenuPageHero.jpg" id="yui_3_8_1_1_1402435311346_130"></div>
-    <!-- header -->
-     <div class="row-cafe-bakery-header bakery-header-font" id="yui_3_8_1_1_1402435311346_113">
-        <div class="item-bakery-header">Caf&eacute; Sandwiches</div>
-        <div class="item-bakery-header-size" id="yui_3_8_1_1_1402435311346_112">Calories in each</div>      
-    </div>
-<!-- row 1 grey background -->
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Turkey Chipotle" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/PROD-8187_Cafe_TurkeyChipotleSandwich.jpg"></div>
-        <div class="item-bakery-text">Turkey Chipotle <div class="bakery-text-medfont">Peppered turkey breast, mozzarella cheese, cheddar cheese, and chipotle ranch spread on tomato basil bread.</div></div>
-        <div class="item-bakery-sizesm">520 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-    
-    <!-- row 2-->
-    <div class="row-cafe-menu bakery-text-lrgfont" id="yui_3_8_1_1_1402435311346_126">
-        <div class="cafe-bakery-thumb" id="yui_3_8_1_1_1402435311346_117"><img width="89" height="75" alt="Philly CheeseSteak" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/PhillyCheeseSteak.jpg" id="yui_3_8_1_1_1402435311346_116"></div>
-        <div class="item-bakery-text" id="yui_3_8_1_1_1402435311346_105">Philly Cheesesteak <div class="bakery-text-medfont" id="yui_3_8_1_1_1402435311346_111">Thinly sliced beef, sautéed onions, white American cheese, pretzel roll.</div></div>
-        <div class="item-bakery-sizesm" id="yui_3_8_1_1_1402435311346_115">420 <span class="bakery-text-smfont">calories</span></div>
+            <!-- row 22 -->
+            <div class="row bp-m pt-m cafe-menu-border">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Italian Meatlovers Pizza" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/CDS-1432_BNCafeThumb_PizzaMeatlovers.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Italian Meatlovers Pizza</h3>
+                    <p>Rustic Italian, hand-stretched, wood-fired crust, part-skim mozzarella cheese, tomato sauce, crumbled sausage, diced prosciutto, sliced artisanal pepperoni, basil, Parmesan cheese. </p>
+                </div>
+                <div class="col-lg-3"><span>610 calories</span></div>
+            </div>
 
-        
-    </div>
-    
-    <!-- row 3 grey background -->
-    <!--
-    <div class="row-cafe-menu-grey bakery-text-lrgfont" id="yui_3_8_1_1_1402435311346_124">
-        <div class="cafe-bakery-thumb" id="yui_3_8_1_1_1402435311346_123"><img width="89" height="75" alt="Veggie Wrap " 
-            src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/VeggieWraps.jpg" ></div>
-        <div class="item-bakery-text" id="yui_3_8_1_1_1402435311346_125">Veggie Wrap <div class="bakery-text-medfont">Red pepper hummus, grilled zucchini, grilled eggplant, roasted yellow squash, whole wheat lavash wrap.</div></div>
-        <div class="item-bakery-sizesm">320 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-    -->
-    
-    <!-- row 4 grey background -->
-    <!-- 
-    http://dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/
-    -->    
+            <!-- row 22 -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Veggie Pizza" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/CDS-1432_BNCafeThumb_PizzaVeggie.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Veggie Pizza</h3>
+                    <p>Rustic Italian, hand-stretched, wood-fired crust, part-skim mozzarella cheese, broccoli, spinach, tomatoes, roasted garlic, extra virgin olive oil, Parmesan cheese.</p>
+                </div>
+                <div class="col-lg-3"><span>520 calories</span></div>
+            </div>
 
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Chicken Bacon Ranch" 
-            src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/FarmersWrap.jpg"></div>
-        <div class="item-bakery-text" id="yui_3_8_1_1_1402435311346_128">Farmer's Wrap <div class="bakery-text-medfont" id="yui_3_8_1_1_1402435311346_127">Scrambled eggs, cheddar cheese, bell peppers, tomatoes, spinach, mushrooms, lavash wrap.</div></div>
-        <div class="item-bakery-sizesm" id="yui_3_8_1_1_1402435311346_129">360 <span class="bakery-text-smfont">calories</span></div>
-
-        
-    </div>
-    
-    <!-- row 5 grey background -->
-    <div class="row-cafe-menu bakery-text-lrgfont">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Tomato Caprese" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/CDS-1432_BNCafeThumb_TomatoSandwich.jpg"></div>
-        <div class="item-bakery-text">Tomato Caprese <div class="bakery-text-medfont">Fresh mozzarella, roasted tomatoes, provolone cheese, basil pesto, artisan Italian baguette.
-        </div></div>
-        <div class="item-bakery-sizesm">630 <span class="bakery-text-smfont">calories</span></div>
-
-        
-    </div>      
-    
-    <!-- row 6-->
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Chicken Club" 
-            src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/ChickenClub.jpg"></div>
-        <div class="item-bakery-text">Chicken Club <div class="bakery-text-medfont">Grilled chicken, Applewood smoked bacon, tomatoes, mayonnaise, ciabatta roll.</div></div>
-        <div class="item-bakery-sizesm">530 <span class="bakery-text-smfont"> calories</span></div>
-
-        
-    </div>
-
-    <div class="row-cafe-menu bakery-text-lrgfont">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Turkey &amp; Brie" 
-            src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/TurkeyBrie.jpg"></div>
-        <div class="item-bakery-text">Turkey &amp; Brie <div class="bakery-text-medfont">Smoked turkey breast and Brie cheese, 9-grain bread.</div></div>
-        <div class="item-bakery-sizesm">450 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-
-    <!-- header -->
-    <div class="row-cafe-bakery-header-section bakery-header-font">
-        <div class="item-bakery-header">Try a lighter option: 1/2 Caf&eacute; sandwich and soup!</div>
-        <div class="item-bakery-header-size">Calories in each</div>     
-    </div>
-   
-    
-    <!-- row 7 -->
-    <div class="row-cafe-menu bakery-text-lrgfont">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Broccoli and Cheese" src="https://simg1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_20.jpg"></div>
-        <div class="item-bakery-text">Broccoli Cheddar <div class="bakery-text-medfont">Generous florets of broccoli in a rich and creamy Cheddar cheese sauce with a savory hint of sautéed onion.</div></div>
-        <div class="item-bakery-sizesm">190 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-    
-    <!-- row 8  -->
-  
-    <!-- row 11 -->
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Roasted Chicken Noodle" src="https://simg1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_32.jpg"></div>
-        <div class="item-bakery-text">Roasted Chicken Noodle <div class="bakery-text-medfont">Generous amounts of tender chicken, enriched egg noodles, celery, carrots, and peas in a rich chicken broth seasoned with onion, garlic, and parsley.</div></div>
-        <div class="item-bakery-sizesm">80 <span class="bakery-text-smfont">calories</span></div>
-    </div>  
-    
-    <!-- row 14-->
-   
-    
-    <!-- row 15-->
-    <div class="row-cafe-menu bakery-text-lrgfont">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Italian Wedding" src="https://simg1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_36.jpg"></div>
-        <div class="item-bakery-text">Italian Wedding <div class="bakery-text-medfont">Savory beef meatballs married with a rich garlic and onion scented chicken broth. Accented in the traditional Napoli style, with blanched spinach and acini di pepe.</div></div>
-        <div class="item-bakery-sizesm">90 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-        
-    <!-- row 14 -->
-    
-
-    <!-- row 15 -->
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Corn Chowder" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/PROD-8187_Cafe_CornChowder.jpg"></div>
-        <div class="item-bakery-text">Corn Chowder <div class="bakery-text-medfont">Sweet corn base with a mixture of carrots, celery, red bell peppers, potatoes and bacon in a light-bodied cream stock packed with satisfying flavor.</div></div>
-        <div class="item-bakery-sizesm">278 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-    
-    <!-- row 16-->
-    <div class="row-cafe-menu bakery-text-lrgfont">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Potato and Bacon" src="https://simg1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_42.jpg"></div>
-        <div class="item-bakery-text">Potato and Bacon <div class="bakery-text-medfont">Diced potatoes, sliced onions, tender carrots and crisp celery are cooked in a heavy cream stock that's seasoned with garlic, parsley and savory pieces of bacon</div></div>
-        <div class="item-bakery-sizesm">90 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-  
-    
-    <!-- row 18 -->
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Cheesy Chicken Tortilla" src="https://simg1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_46.jpg"></div>
-        <div class="item-bakery-text">Cheesy Chicken Tortilla <div class="bakery-text-medfont">This zesty Mexican-inspired soup brings together a colorful medley of vegetables including diced tomatoes, corn, red and green peppers, along with black beans and tender fresh chunks of chicken in a tomato cheese broth with a little spice to it, created by a blend of jalapeño, peppers, and masa.</div></div>
-        <div class="item-bakery-sizesm">160 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-    
-    <!-- row 19 -->
-    <div class="row-cafe-menu bakery-text-lrgfont">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Timberline Chili" src="https://simg1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_48.jpg"></div>
-        <div class="item-bakery-text">Timberline Chili <div class="bakery-text-medfont">Seasoned red beans, roasted beef, Spanish onions, and diced tomatoes slowly simmered in an authentic tomato-chili broth finished with chili powder, garlic, cayenne, and paprika.</div></div>
-        <div class="item-bakery-sizesm">250 <span class="bakery-text-smfont">calories</span></div>
-    </div>  
-    
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Chicken Pot Pie" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/cafe/specialties/01ChickenPotPie.jpg"></div>
-        <div class="item-bakery-text">Chicken Pot Pie<div class="bakery-text-medfont">This hearty soup combines chunks of chicken, potatoes and noodles with carrots, peas, mushrooms, pearl onions and red bell peppers.</div></div>
-        <div class="item-bakery-sizesm">360 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-
-    <div class="row-cafe-menu bakery-text-lrgfont">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Beef Steak and Black Bean" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/cafe/specialties/02BeefSteakandBlackBeanSoup.jpg"></div>
-        <div class="item-bakery-text">Beef Steak and Black Bean<div class="bakery-text-medfont">A spicy soup flavored with a splash of lime juice-- a blend of flame-broiled steak, black beans, corn, peppers and onion.</div></div>
-        <div class="item-bakery-sizesm">300 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Mediterranean Lentil" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/PROD-8187_Cafe_MediterraneanLentil.jpg"></div>
-        <div class="item-bakery-text">Mediterranean Lentil <div class="bakery-text-medfont">Whole lentils are cooked in a light broth infused with garlic, lemon grass, cumin, basil and a splash of olive oil, with the addition of red and green peppers, fresh tomatoes, diced carrots and sweet onions.</div></div>
-        <div class="item-bakery-sizesm">260 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-
-    <div class="row-cafe-menu bakery-text-lrgfont">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Tomato Basil" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/PROD-8187_Cafe_TomatoBasil.jpg"></div>
-        <div class="item-bakery-text">Tomato Basil <div class="bakery-text-medfont">Fresh, ripe tomatoes, basil and onions with a hint of ground white pepper. A touch of heavy cream gives this soup a smooth, rich finish that lingers on the palate.</div></div>
-        <div class="item-bakery-sizesm">140 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Wisconsin Cheese" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/PROD-8187_Cafe_WisconsinCheese.jpg"></div>
-        <div class="item-bakery-text">Wisconsin Cheese <div class="bakery-text-medfont">Mild American and sharp Cheddar cheeses are expertly blended into a creamy sauce seasoned with parsley and garlic—featuring generous amounts of bacon, green bell pepper, celery crescents and onions.</div></div>
-        <div class="item-bakery-sizesm">240 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-
-    <div class="row-cafe-menu bakery-text-lrgfont">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Harvest Grain with Portabella Mushrooms" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/PROD-8187_Cafe_HarvestGrainwPortabellaMushrooms.jpg"></div>
-        <div class="item-bakery-text">Harvest Grain with Portabella Mushrooms <div class="bakery-text-medfont">A hearty and flavorful soup featuring the unique taste combination of Portobello mushrooms, carrots, corn and earthy grains. A full and satisfying vegetarian treat!</div></div>
-        <div class="item-bakery-sizesm">300 <span class="bakery-text-smfont">calories</span></div>
-    </div>
+            <!-- section -->
 
 
+            <!-- header -->
+            <div class="row pb-m pt-m cafe-table-header">
+                <div class="col-lg-9">Try a lighter option: 1/2 Caf&eacute; sandwich and soup!</div>
+                <div class="col-lg-3 text--center">Calories in each</div>
+            </div>
 
-    
-        <!-- section -->
-    <!-- header -->
-     <div class="row-cafe-bakery-header-section bakery-header-font">
-        <div class="item-bakery-header">Quiche</div>
-        <div class="item-bakery-header-size">Calories in each</div>     
-    </div>
-    
-    <!-- row -->
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Broccoli Cheddar" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/cafe/specialties/03QUICHEBroccoliCheddar.jpg"></div>
-        <div class="item-bakery-text">Broccoli Cheddar <div class="bakery-text-medfont">Fire Roasted tomatoes, artichokes, onions, mascarpone and aged Cheddar a mingle with silken custard and bread cubes.</div></div>
-        <div class="item-bakery-sizesm">530 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-    
-    <!-- row -->
-    <div class="row-cafe-menu bakery-text-lrgfont cafe-menu-border">
-        <div class="cafe-bakery-thumb"><img width="89" height="75" alt="Southwest Quiche" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/cafe/specialities/PROD-8187_Cafe_SouthwestQuiche.jpg"></div>
-        <div class="item-bakery-text">Southwest <div class="bakery-text-medfont">Charred sweet corn, chilies, garlic sautéed onions, croissant and savory custard with a chimichurri sauce.</div></div>
-        <div class="item-bakery-sizesm">470 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-    
+
+            <!-- row 7 -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Broccoli and Cheese" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_20.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Broccoli and Cheese</h3>
+                    <p>Generous florets of broccoli in a rich and creamy Cheddar cheese sauce with a savory hint of sautéed onion.</p>
+                </div>
+                <div class="col-lg-3"><span>190 calories</span></div>
+            </div>
+
+            <!-- row 8  -->
+            <div class="row bp-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Chicken and Dumpling" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_22.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Chicken and Dumpling</h3>
+                    <p>Spaetzel dumpling married in a rich and creamy chicken broth with slow-cooked chicken, braised carrots, celery, and parsley.</p>
+                </div>
+                <div class="col-lg-3"><span>130 calories</span></div>
+            </div>
+
+            <!-- row 9 -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Chicken and Wild Rice" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_24.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Chicken and Wild Rice</h3>
+                    <p>All white-meat chicken paired with wholesome and hearty wild rice, brown rice, and carrots in a creamy chicken velouté with onions and parsley</p>
+                </div>
+                <div class="col-lg-3"><span>190 calories</span></div>
+            </div>
+
+            <!-- row 10-->
+            <div class="row bp-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Chicken Noodle" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_26.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Chicken Noodle</h3>
+                    <p>An American Classic for generations! Slow-cooked chicken meat and tender egg noodles in delicately seasoned chicken broth with carrots, celery, and parsley.</p>
+                </div>
+                <div class="col-lg-3"><span>80 calories</span></div>
+            </div>
+
+            <!-- row 11 -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Roasted Chicken Noodle" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_32.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Roasted Chicken Noodle</h3>
+                    <p>Generous amounts of tender chicken, enriched egg noodles, celery, carrots, and peas in a rich chicken broth seasoned with onion, garlic, and parsley.</p>
+                </div>
+                <div class="col-lg-3"><span>80 calories</span></div>
+            </div>
+
+            <!-- row 14-->
+
+
+            <!-- row 15-->
+            <div class="row bp-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Italian Wedding" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_36.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Italian Wedding</h3>
+                    <p>Savory beef meatballs married with a rich garlic and onion scented chicken broth. Accented in the traditional Napoli style, with blanched spinach and acini di pepe.</p>
+                </div>
+                <div class="col-lg-3"><span>90 calories</span></div>
+            </div>
+
+            <!-- row 14 -->
+
+
+            <!-- row 15 -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Boston Clam Chowder" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_40.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Boston Clam Chowder</h3>
+                    <p>Nothing's better on a blustery day than a generous bowl of this timeless combination of cooked clams and hearty potatoes in a rich and creamy béchamel accented with onions, celery, and parsley.</p>
+                </div>
+                <div class="col-lg-3"><span>160 calories</span></div>
+            </div>
+
+            <!-- row 16-->
+            <div class="row bp-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Potato and Bacon" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_42.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Potato and Bacon</h3>
+                    <p>Diced potatoes, sliced onions, tender carrots and crisp celery are cooked in a heavy cream stock that's seasoned with garlic, parsley and savory pieces of bacon</p>
+                </div>
+                <div class="col-lg-3"><span>90 calories</span></div>
+            </div>
+            <!-- row 17-->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Tomato Florentine" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_44.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Tomato Florentine</h3>
+                    <p>A delightfully enticing combination of red ripe tomatoes, conchigliette pasta, spinach, and Parmesan cheese in a light tomato-beef broth scented with Italian herbs and a touch of garlic.</p>
+                </div>
+                <div class="col-lg-3"><span>80 calories</span></div>
+            </div>
+
+
+            <!-- row 18 -->
+            <div class="row bp-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Cheesy Chicken Enchilada" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_46.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Cheesy Chicken Enchilada</h3>
+                    <p>This zesty Mexican-inspired soup brings together a colorful medley of vegetables including diced tomatoes, corn, red and green peppers, along with black beans and tender fresh chunks of chicken in a tomato cheese broth with a little spice to it, created by a blend of jalapeño, peppers, and masa.</p>
+                </div>
+                <div class="col-lg-3"><span>160 calories</span></div>
+            </div>
+
+            <!-- row 19 -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Timberline Chili" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_48.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Timberline Chili</h3>
+                    <p>Seasoned red beans, roasted beef, Spanish onions, and diced tomatoes slowly simmered in an authentic tomato-chili broth finished with chili powder, garlic, cayenne, and paprika.</p>
+                </div>
+                <div class="col-lg-3"><span>250 calories</span></div>
+            </div>
+
+            <!-- section -->
+            <!-- header -->
+            <div class="row cafe-table-header pb-m pt-m">
+                <div class="col-lg-9">Quiche</div>
+                <div class="col-lg-3 text--center">Calories in each</div>
+            </div>
+
+            <!-- row -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Spinach and Artichoke Quiche" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_56.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Spinach &amp; Artichoke Quiche</h3>
+                    <p>Fire Roasted tomatoes, artichokes, onions, mascarpone and aged Cheddar a mingle with silken custard and bread cubes.</p>
+                </div>
+                <div class="col-lg-3"><span>530 calories</span></div>
+            </div>
+
+            <!-- row -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-2">
+                    <img width="89" height="75" alt="Broccoli Cheddar Quiche" src="http://img1.imagesbn.com/pImages/cafe/subpages/cafe_specialties/images/cafe_specialties_58.jpg"></div>
+                <div class="col-lg-7">
+                    <h3>Broccoli Cheddar Quiche</h3>
+                    <p>Broccoli, onions, and cheddar cheese in a prepared custard with a touch of Dijon mustard.</p>
+                </div>
+                <div class="col-lg-3"><span>540 calories</span></div>
+            </div>
+
             <!-- section text -->
-    <!-- header -->
-     <div class="row-cafe-bakery-header-section bakery-header-font">
-        <div class="item-bakery-header-short">Kim &amp; Scotts Stuffed Pretzels</div>
-        <div class="item-bakery-header-sizelng">Calories for 1 Pretzel</div>        
-    </div>
-    
-    <!-- row -->
-    <div class="row-cafe-menu-grey bakery-text-lrgfont cafe-menu-border">
-        <div class="item-specialty-text">Grilled Spinach &amp; Feta Pretzel  <div class="bakery-text-medfont">Hand-twisted gourmet pretzel stuffed with real chopped spinach, crumbles of feta cheese and a touch of garlic.</div></div>
-        <div class="item-bakery-sizesm">400 <span class="bakery-text-smfont">calories</span></div>
-    </div>
-    
-    <!-- row-->
-    <div class="row-cafe-menu bakery-text-lrgfont cafe-menu-border">
-        <div class="item-specialty-text">Stuffed Pizza Pretzel <div class="bakery-text-medfont">Stuffed with freshly shredded mozzarella cheese &amp; homemade pizza sauce. Topped off with more cheese &amp; Italian spices.</div></div>
-        <div class="item-bakery-sizesm">390 <span class="bakery-text-smfont">calories</span></div>
-    </div></div></div>
+            <!-- header -->
+            <div class="row pb-m pt-m cafe-table-header">
+                <div class="col-lg-8">Kim &amp; Scotts Stuffed Pretzels</div>
+                <div class="col-lg-3 text--center">Calories for 1 Pretzel</div>
+            </div>
 
- 
+            <!-- row -->
+            <div class="row pb-m pt-m">
+                <div class="col-lg-9">
+                    <h3>Grilled Spinach &amp; Feta Pretzel</h3>
+                    <p>Hand-twisted gourmet pretzel stuffed with real chopped spinach, crumbles of feta cheese and a touch of garlic.</p>
+                </div>
+                <div class="col-lg-3"><span>400 calories</span></div>
+            </div>
+
+            <!-- row-->
+            <div class="row bp-m pt-m">
+                <div class="col-lg-9">
+                    <h3>Stuffed Pizza Pretzel</h3>
+                    <p>Stuffed with freshly shredded mozzarella cheese &amp; homemade pizza sauce. Topped off with more cheese &amp; Italian spices.</p>
+                </div>
+                <div class="col-lg-3"><span>390 calories</span></div>
+            </div>
+        </div>
+    </div>
+
+
 </section>

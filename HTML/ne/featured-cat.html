@@ -1,0 +1,81 @@
+<script>
+    $(document).ready(function() {
+
+        $('.fat-cat').slick();
+        var fatCatClass = function() {
+            var ww = $(window).width();
+            if (ww <= 700) {
+                $(".row.featured-link-container").addClass("fat-cat");
+            } else if (ww >= 701){
+                $(".row.featured-link-container").removeClass("fat-cat");
+            };
+        };
+        $(window).resize(function() {
+            fatCatClass();
+        });
+        //Fire it when the page first loads:
+        fatCatClass();
+    });
+
+</script>
+<style>
+    @media only screen and (max-width: 768px) {}
+
+</style>
+<div class="row featured-link-container fat-cat">
+    <div class="col-lg-4">
+        <div class="genre-tile">
+            <div class="genre-tile-header">
+                <a href="/b/series/jack-reacher-series/_/N-2k2l" class="genre-tile-img"><img src="//qa-adobe-dispatch.bn-web.com/content/dam/ccr/bnstores/Series/SeriesLP_JackReacher.jpg" alt="Lee Child’s Jack Reacher Series" onclick="set_cookie('fs_featured-discover-category_Lee Child’s Jack Reacher Series_image');"></a>
+                <div class="genre-tile-info">
+                    <div>
+                        <h3 class="genre-tile-title">FEATURED SERIES</h3>
+                        <!-- >>>>>>> redesign/Author-Series-Final-feature -->
+                        <h4 class="genre-tile-tag" data-match-height="genre-tile-tag" style="height: 72px;">Lee Child’s Jack Reacher Series</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="genre-tile-footer">
+            <p>
+                Lee Child’s unstoppable former military policeman first appeared in <em>The Killing Floor</em> and, more than twenty novels later, shows no signs of slowing down.</p><a href="/b/series/jack-reacher-series/_/N-2k2l" class="genre-tile-link">See More</a>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="genre-tile">
+            <div class="genre-tile-header">
+                <a href="/b/series/outlander-series/_/N-2kqk" class="genre-tile-img"><img src="//qa-adobe-dispatch.bn-web.com/content/dam/ccr/bnstores/Series/SeriesLP_TheOutlander.jpg" alt="Diana Gabaldon’s Outlander Series" onclick="set_cookie('fs_featured-discover-category_Diana Gabaldon’s Outlander Series_image');"></a>
+                <div class="genre-tile-info">
+                    <div>
+                        <h3 class="genre-tile-title">FEATURED SERIES</h3>
+                        <!-- >>>>>>> redesign/Author-Series-Final-feature -->
+                        <h4 class="genre-tile-tag" data-match-height="genre-tile-tag" style="height: 72px;">Diana Gabaldon’s Outlander Series</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="genre-tile-footer">
+            <p>
+                With Outlander, Diana Gabaldon invented a whole new kind of storytelling, a series in which time travel between 18th-century Scotland and the present day sparks a love affair for the ages.</p><a href="/b/series/outlander-series/_/N-2kqk" class="genre-tile-link">See More</a>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="genre-tile">
+            <div class="genre-tile-header">
+                <a href="/b/series/mortal-instruments-series/_/N-2k2n" class="genre-tile-img"><img src="//qa-adobe-dispatch.bn-web.com/content/dam/ccr/bnstores/Series/SeriesLP_TheMortalInstruments.jpg" alt="Cassandra Claire’s The Mortal Instruments Series" onclick="set_cookie('fs_featured-discover-category_Cassandra Claire’s The Mortal Instruments Series_image');"></a>
+                <div class="genre-tile-info">
+                    <div>
+                        <h3 class="genre-tile-title">FEATURED SERIES</h3>
+                        <!-- >>>>>>> redesign/Author-Series-Final-feature -->
+                        <h4 class="genre-tile-tag" data-match-height="genre-tile-tag" style="height: 72px;">Cassandra Claire’s The Mortal Instruments Series</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="genre-tile-footer">
+            <p>
+                Cassandra Claire’s blockbuster teen paranormal series follows Clary Fray’s search for her mother in an alternate New York City called Downward, filled with faeries, warlocks, vampires, and demons.</p><a href="/b/series/mortal-instruments-series/_/N-2k2n" class="genre-tile-link">See More</a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
