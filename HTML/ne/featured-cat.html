@@ -1,28 +1,7 @@
-<script>
-    $(document).ready(function() {
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="fat-cat.css">
+<div class="row featured-link-container slick">
 
-        $('.fat-cat').slick();
-        var fatCatClass = function() {
-            var ww = $(window).width();
-            if (ww <= 700) {
-                $(".row.featured-link-container").addClass("fat-cat");
-            } else if (ww >= 701){
-                $(".row.featured-link-container").removeClass("fat-cat");
-            };
-        };
-        $(window).resize(function() {
-            fatCatClass();
-        });
-        //Fire it when the page first loads:
-        fatCatClass();
-    });
-
-</script>
-<style>
-    @media only screen and (max-width: 768px) {}
-
-</style>
-<div class="row featured-link-container fat-cat">
     <div class="col-lg-4">
         <div class="genre-tile">
             <div class="genre-tile-header">
@@ -41,6 +20,7 @@
                 Lee Child’s unstoppable former military policeman first appeared in <em>The Killing Floor</em> and, more than twenty novels later, shows no signs of slowing down.</p><a href="/b/series/jack-reacher-series/_/N-2k2l" class="genre-tile-link">See More</a>
         </div>
     </div>
+
     <div class="col-lg-4">
         <div class="genre-tile">
             <div class="genre-tile-header">
@@ -59,6 +39,7 @@
                 With Outlander, Diana Gabaldon invented a whole new kind of storytelling, a series in which time travel between 18th-century Scotland and the present day sparks a love affair for the ages.</p><a href="/b/series/outlander-series/_/N-2kqk" class="genre-tile-link">See More</a>
         </div>
     </div>
+
     <div class="col-lg-4">
         <div class="genre-tile">
             <div class="genre-tile-header">
@@ -77,5 +58,10 @@
                 Cassandra Claire’s blockbuster teen paranormal series follows Clary Fray’s search for her mother in an alternate New York City called Downward, filled with faeries, warlocks, vampires, and demons.</p><a href="/b/series/mortal-instruments-series/_/N-2k2n" class="genre-tile-link">See More</a>
         </div>
     </div>
-    <div class="clearfix"></div>
+
+
+
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="slick.js"></script>
+<script src="featured-cat.js"></script>
