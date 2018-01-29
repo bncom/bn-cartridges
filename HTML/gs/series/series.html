@@ -548,11 +548,15 @@ html, body {
 }
 </style>
 </head>
-<body data-global-svg-assets-url="/static/redesign/srcs/images/global-assets.svg" class="sk_TextbookLanding landingPage searchResultsPage sk_passthroughPage" skbody="true">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGFDLFK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+
+
+<body data-global-svg-assets-url="/static/redesign/srcs/images/global-assets.svg" class="sk_TextbookLanding landingPage searchResultsPage sk_passthroughPage  " skbody="true">
+ 
 <div class="sk_header_cont">
     <div class="sk_prmBnrDv"></div>
     <div class="sk_hdrDv"></div>
@@ -766,62 +770,77 @@ $('.ie-outdated').show();
 
 
 
+<script type="text/javascript">
+ 
+</script>
 
 
 
 
 
+<!-- temp code to be moved into bn_cartridges CSS & JS -->
+<script type="text/javascript">
+// //<![CDATA[
+//   (function() {
+//     var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
+//     if ( URLpathArray[1].toLowerCase() === "mobile" || URLpathArray[2].toLowerCase() === "gs" || window.location.hostname === "m.barnesandnoble.com"|| window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname==="mpreprod.barnesandnoble.com" || window.location.hostname==="mpreview.barnesandnoble.com" ) {isMobile = true;}
+//     if (isMobile){ 
+//     	$('body').addClass('isMobile');
+//     	if ( URLpathArray[2].toLowerCase() === "series" || URLpathArray[3].toLowerCase() === "series") {$('body').addClass('mobileSeries');}
+//     	$(function() { //document.ready    
 
+// 			$('h2.index-heading').addClass('rule');  
 
+//     	});// END Document ready  
+//     }
+
+//   })();
+// //]]>
+</script>
 
 
 <style type="text/css">
+/*
+.container.author-series-indexes--series {
+    max-width: 100%;
+    padding: 0 !important;
+} 
+.author-series-indexes--series h2.index-heading {
+    padding: 0;
+    margin: 0 0 15px;
+    border-bottom: none;  
+    text-align: center;
+    font-size: 24px; 
 
-.index-grid .col ul li {
-    -webkit-flex-basis: 100%;       /* 25%; */
-    flex-basis: 100%;       /* 25%; */
-    padding-bottom: .8rem;
-    text-align: center; /* */
+} 
+.author-series-indexes--series .index-grid { padding: 10px 20px;} 
+.author-series-indexes--series .index-grid .col ul li {
+    -webkit-flex-basis: 100%;  
+    flex-basis: 100%;  
+    padding-bottom: 0;
+    text-align: center; 
     list-style: none;
 }
+.author-series-indexes--series.index-grid .col ul li a{padding:10px 20px; font-size:16px;line-height:1.3;}
+  
+.author-series-indexes--series .rule:after,
+.author-series-indexes--series .rule:before { display: block !important;}
 
-.index-heading {
-    padding: 0;
-    margin: 0 0 1.5rem;
-    border-bottom: none;  /* 1px solid #ccc */
-    text-align: center;
-}
-#searchGrid section h2.index-heading {padding:0;margin-bottom:10px; line-height: .3;}
-.index-grid {
-    padding: .75rem .75rem .75rem;
-}
-.index-grid .col ul li {padding:0;}
-.index-grid .col ul li a{padding:0 20px; font-size: 14px;line-height:2;}
+*/
 
 
 
-
-
-
-/* adjust main css file */
-.rule:after,
-.rule:before {
-    display: block;
-}
-
-.rule:not(.index-heading):after,
-.rule:not(.index-heading):before {
-    display: none;
-}
-
-
+/*.mobileSeries #searchGrid section h2.index-heading {
+	padding-left:0 !important;
+	line-height: .25!important;
+}*/
+/*.author-series-indexes--series .rule:not(.index-heading):after,
+.author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
 </style>
 
 
 
-
-
-<script type="text/javascript">
+ 
 
 
 
@@ -829,9 +848,8 @@ $('.ie-outdated').show();
 
 
  
-    $(function() { //document.ready   
+<!-- 
 
-			$('h2.index-heading').addClass('rule'); 
 
 			// $('.card a').each(function () {
 			//   if (!$(this).hasClass('ended')) {
@@ -847,19 +865,16 @@ $('.ie-outdated').show();
 			//     $('.card #info-spot1').addClass('current'); 
 			//   }
 			// });
+
+ -->
+
  
-    });// END Document ready  
-
-
-
-</script>
 
 
 
 
 
-
-<section class="container mb-xxxl">
+<section class="container mb-xxxl author-series-indexes--series">
 <h2 class="index-heading rule">A</h2>
 <div class="index-grid">
 <div class="col">

@@ -48,10 +48,12 @@
     display: block !important;
 }
 
-/* *** Redesign 2017 *** */
-
+/* *** Redesign 2017 *** */ 
 @import "r17/r17-skava";
 @import "r17/r17-textbooks";
 @import "r17/r17-textbooks-mobile";
 @import "r17/r17-coupons-deals";
-@import "r17/r17-coupons-deals-mobile";
+@import "r17/r17-coupons-deals-mobile"; 
+
+/* *** Discover - Contributor - Series pages 2018 *** */ 
+@import "r17/discover-contrib-series";

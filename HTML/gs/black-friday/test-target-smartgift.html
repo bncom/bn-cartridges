@@ -933,6 +933,284 @@ https://dispatch.barnesandnoble.com/etc/designs/ccr/static/html/css/bn-cartridge
 
 
 
+
+
+
+
+
+
+
+
+
+HOMEPAGE CAROUSEL ADJUSTMENT
+
+ 
+<script type="text/javascript">
+  (function() {
+    var __BN = {};
+    
+    __BN.runPoll = function (selector, pollFunction, duration, count, failureCallback) {
+      var pollLimit = 100;
+      var pollDuration = duration || 50;
+      var curCount = count || 0;
+      var pollCondition;
+      failureCallback = failureCallback || function () {
+        console.log('poll timed out');
+      };
+      if (typeof jQuery !== 'undefined') {
+        if (typeof (selector) === 'function') {
+          pollCondition = selector();
+        } else {
+          pollCondition = jQuery(selector).length > 0;
+        }
+      } else {
+        pollCondition = false;
+      }
+
+      if (pollCondition) {
+        pollFunction();
+        return true;
+      } else {
+        if (curCount > pollLimit) {
+          // console.log('poll timed out ' + typeof(failureCallback));
+          if (typeof failureCallback === 'function') {
+            failureCallback();
+          }
+          return false;
+        } else {
+          curCount++;
+          setTimeout(function () {
+            __BN.runPoll(selector, pollFunction, pollDuration, curCount, failureCallback);
+          }, pollDuration);
+        }
+      }
+    };
+
+    __BN.pollCondition = function () {
+      return jQuery('.homepage .featuredCategories.book h2.rule:eq(0)').length > 0;
+    };
+  
+    __BN.offer = function () {
+      if (jQuery('.homepage .featuredCategories.book h2.rule:eq(0)').length > 0) {
+        jQuery('.homepage .featuredCategories.book > header.text--center:eq(0) > h2.rule:eq(0)').html('Popular This Week');
+      }
+
+    };
+
+    __BN.runPoll(__BN.pollCondition, __BN.offer);
+  })();
+</script>
+
+
+Popular This Week
+https://www.barnesandnoble.com?at_preview_token=rdh3pM0UOR3OgJEdRmKut6uLjSERYjj6IVxGIh5gLnE%3D&at_preview_index=1_1&at_preview_listed_activities_only=true
+
+2017's Best Fiction!
+http://www.barnesandnoble.com/?at_preview_token=rdh3pM0UOR3OgJEdRmKutycSLHs4SmFYxM%2FLD41RvSE%3D&at_preview_index=1_1&at_preview_listed_activities_only=true
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  (function() {
+    var __BN = {};
+    
+    __BN.runPoll = function (selector, pollFunction, duration, count, failureCallback) {
+      var pollLimit = 100;
+      var pollDuration = duration || 50;
+      var curCount = count || 0;
+      var pollCondition;
+      failureCallback = failureCallback || function () {
+        console.log('poll timed out');
+      };
+      if (typeof jQuery !== 'undefined') {
+        if (typeof (selector) === 'function') {
+          pollCondition = selector();
+        } else {
+          pollCondition = jQuery(selector).length > 0;
+        }
+      } else {
+        pollCondition = false;
+      }
+
+      if (pollCondition) {
+        pollFunction();
+        return true;
+      } else {
+        if (curCount > pollLimit) {
+          // console.log('poll timed out ' + typeof(failureCallback));
+          if (typeof failureCallback === 'function') {
+            failureCallback();
+          }
+          return false;
+        } else {
+          curCount++;
+          setTimeout(function () {
+            __BN.runPoll(selector, pollFunction, pollDuration, curCount, failureCallback);
+          }, pollDuration);
+        }
+      }
+    };
+
+    var targetPath = '#skPageLayoutCell_1_id-3 > .cls_customWidgetAPI:eq(0) > .skcCellContainer:eq(0) > .carouselMainWrappr:eq(0) > .carouselTitle:eq(0)'; 
+
+    __BN.pollCondition = function () {
+      return jQuery(targetPath).length > 0;
+    };
+  
+    __BN.offer = function () {
+      if (jQuery(targetPath).length > 0) {
+        jQuery(targetPath).html('Best Fiction of 2017');
+      }
+
+    };
+
+    __BN.runPoll(__BN.pollCondition, __BN.offer);
+  })();
+</script>
+
+
+
+
+MOBILE path
+#skPageLayoutCell_1_id-4 > .cls_customWidgetAPI:eq(0) > .skcCellContainer:eq(0) > .carouselMainWrappr:eq(0) > .carouselTitle:eq(0)
+
+#skPageLayoutCell_1_id-3 > DIV.cls_customWidgetAPI:eq(0) > DIV.skcCellContainer:eq(0) > DIV.carouselMainWrappr:eq(0) > DIV.carouselTitle:eq(0)
+
+
+
+
+
+<!-- 
+HTML > BODY > MAIN.home:eq(0) > DIV.PageContent:eq(0) > DIV.container:eq(0) > SECTION.featuredCategories:eq(0) > HEADER.text--center:eq(0) > H2.rule:eq(0)
+
+
+    __BN.pollCondition = function () {
+      return jQuery('.homepage SECTION.featuredCategories:eq(0) > HEADER.text--center:eq(0) > H2.rule:eq(0)').length > 0;
+    };
+  
+    __BN.offer = function () {
+      if (jQuery('.homepage SECTION.featuredCategories:eq(0) > HEADER.text--center:eq(0) > H2.rule:eq(0)').length > 0) {
+        jQuery('.homepage SECTION.featuredCategories:eq(0) > HEADER.text--center:eq(0) > H2.rule:eq(0)').html('Popular This Week');
+      }
+
+
+ -->
+
+
+
+
+
+
+
+
+
+<style class="bbiStyleSheet">
+    .multiCarouselTit {
+        margin-bottom: 20px;
+        font-family: PoynterOSDisp-Semibold, Poynter;
+        font-size: 24px;
+        color: #000;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 20px;
+        text-align: center
+    }
+</style>
+<script>
+    var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+        return typeof e
+    } : function(e) {
+        return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+    };
+    ! function() {
+        var e = {};
+        e.campaign = "${campaign.name}", e.offerName = "${campaign.recipe.name}", e.eVar = "eVar00", window.bbMETA = window.bbMETA || {}, void 0 === window.bbMETA[e.campaign + " - " + e.offerName] && (window.bbMETA[e.campaign + " - " + e.offerName] = {
+            log: []
+        }), e.sCall = function(o) {
+            e.runPoll(function() {
+                return "object" === ("undefined" == typeof s ? "undefined" : _typeof(s)) && "function" == typeof s.tl
+            }, function() {
+                s.tl(void 0, "o", o, null, null)
+            })
+        }, e.log = function(o, n) {
+            window.bbMETA[e.campaign + " - " + e.offerName].log.push("[" + Math.floor(performance.now()) + "ms] - " + o), n && ("string" == typeof o ? console.log("%c " + o + " ", "background: #222; color: #bada55") : console.log(o))
+        }, e.queryParams = function() {
+            for (var e = window.location.search.substring(1).split("&"), o = {}, n = {}, i = 0; i < e.length; i++) o = e[i].split("="), n[o[0]] = o[1];
+            return n
+        }, e.cookie = {
+            set: function(e, o, n) {
+                n = n || 30;
+                var i = new Date;
+                i.setTime(i.getTime() + 24 * n * 60 * 60 * 1e3);
+                var t = "expires=" + i.toUTCString();
+                document.cookie = e + "=" + o + ";" + t + ";domain=" + document.domain + ";path=/"
+            },
+            get: function(e) {
+                for (var o = e + "=", n = document.cookie.split(";"), i = 0; i < n.length; i++) {
+                    for (var t = n[i];
+                        " " === t.charAt(0);) t = t.substring(1);
+                    if (0 === t.indexOf(o)) return t.substring(o.length, t.length)
+                }
+                return ""
+            },
+            "delete": function(e) {
+                document.cookie = e + "= ; expires=Thu, 01-Jan-1970 00:00:01 GMT;domain=" + document.domain + ";path=/"
+            }
+        }, e.setEvar = function(o) {
+            if (!e.eVar) throw new Error("bbi.eVar is not defined");
+            s.linkTrackVars = e.eVar;
+            var n = o || e.campaign + " - " + e.offerName;
+            if (e.cookie.get("bbi_" + e.eVar)) e.cookie.get("bbi_" + e.eVar).indexOf(n) === -1 ? (n += "|" + e.cookie.get("bbi_" + e.eVar), e.cookie.set("bbi_" + e.eVar, n)) : n = e.cookie.get("bbi_" + e.eVar);
+            else {
+                if (!e.offerName) throw new Error("bbi.offerName is not defined");
+                if (!e.campaign) throw new Error("bbi.campaign is not defined");
+                e.cookie.set("bbi_" + e.eVar, n), n = e.cookie.get("bbi_" + e.eVar)
+            }
+            s[e.eVar] = n, s.tl(void 0, "o", n, null, null)
+        }, e.runPoll = function(o, n, i, t, r) {
+            var a = 100,
+                l = i || 50,
+                f = t || 0,
+                c = void 0;
+            return r = r || function() {
+                e.log("Poll " + o + " Timed out")
+            }, (c = "undefined" != typeof jQuery && ("function" == typeof o ? o() : jQuery(o).length > 0)) ? (n(), !0) : f > a ? ("function" == typeof r && r(), !1) : (f++, void setTimeout(function() {
+                e.runPoll(o, n, l, f, r)
+            }, l))
+        }, e.model = {}, e.grabDataForNewReleases = function() {
+            var e = '<div id="bb_newReleasesCarouselContainer"></div>';
+            $("#skPageLayoutCell_1_id-3").after(e), $("#bb_newReleasesCarouselContainer").load("https://m.barnesandnoble.com/b/books/_/N-29Z8q8 #skPageLayoutCell_9_id-8")
+        }, e.metrics = function(o) {
+            o(document).on("click", "#skPageLayoutCell_9_id-8", function() {
+                e.sCall("bbMPSeg4_NewReleasesProduct")
+            })
+        }, e.pollCondition1 = function() {
+            return jQuery("#skPageLayoutCell_1_id-1").length > 0
+        }, e.offer1 = function() {
+            e.grabDataForNewReleases(), e.metrics(jQuery)
+        }, e.fail1 = function() {
+            e.log("poll 1 failed (" + e.campaign + " - " + e.offerName + ")", !0)
+        }, e.runPoll(e.pollCondition1, e.offer1, 50, 0, e.fail1)
+    }();
+</script>
+
+
+
+
+
+<style class="bbiStyleSheet">.multiCarouselTit{margin-bottom:20px;font-family:PoynterOSDisp-Semibold,Poynter;font-size:24px;color:#000;position:relative;width:100%;box-sizing:border-box;padding-left:20px;text-align:center}</style><script>var _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){var e={};e.campaign="${campaign.name}",e.offerName="${campaign.recipe.name}",e.eVar="eVar00",window.bbMETA=window.bbMETA||{},void 0===window.bbMETA[e.campaign+" - "+e.offerName]&&(window.bbMETA[e.campaign+" - "+e.offerName]={log:[]}),e.sCall=function(o){e.runPoll(function(){return"object"===("undefined"==typeof s?"undefined":_typeof(s))&&"function"==typeof s.tl},function(){s.tl(void 0,"o",o,null,null)})},e.log=function(o,n){window.bbMETA[e.campaign+" - "+e.offerName].log.push("["+Math.floor(performance.now())+"ms] - "+o),n&&("string"==typeof o?console.log("%c "+o+" ","background: #222; color: #bada55"):console.log(o))},e.queryParams=function(){for(var e=window.location.search.substring(1).split("&"),o={},n={},i=0;i<e.length;i++)o=e[i].split("="),n[o[0]]=o[1];return n},e.cookie={set:function(e,o,n){n=n||30;var i=new Date;i.setTime(i.getTime()+24*n*60*60*1e3);var t="expires="+i.toUTCString();document.cookie=e+"="+o+";"+t+";domain="+document.domain+";path=/"},get:function(e){for(var o=e+"=",n=document.cookie.split(";"),i=0;i<n.length;i++){for(var t=n[i];" "===t.charAt(0);)t=t.substring(1);if(0===t.indexOf(o))return t.substring(o.length,t.length)}return""},"delete":function(e){document.cookie=e+"= ; expires=Thu, 01-Jan-1970 00:00:01 GMT;domain="+document.domain+";path=/"}},e.setEvar=function(o){if(!e.eVar)throw new Error("bbi.eVar is not defined");s.linkTrackVars=e.eVar;var n=o||e.campaign+" - "+e.offerName;if(e.cookie.get("bbi_"+e.eVar))e.cookie.get("bbi_"+e.eVar).indexOf(n)===-1?(n+="|"+e.cookie.get("bbi_"+e.eVar),e.cookie.set("bbi_"+e.eVar,n)):n=e.cookie.get("bbi_"+e.eVar);else{if(!e.offerName)throw new Error("bbi.offerName is not defined");if(!e.campaign)throw new Error("bbi.campaign is not defined");e.cookie.set("bbi_"+e.eVar,n),n=e.cookie.get("bbi_"+e.eVar)}s[e.eVar]=n,s.tl(void 0,"o",n,null,null)},e.runPoll=function(o,n,i,t,r){var a=100,l=i||50,f=t||0,c=void 0;return r=r||function(){e.log("Poll "+o+" Timed out")},(c="undefined"!=typeof jQuery&&("function"==typeof o?o():jQuery(o).length>0))?(n(),!0):f>a?("function"==typeof r&&r(),!1):(f++,void setTimeout(function(){e.runPoll(o,n,l,f,r)},l))},e.model={},e.grabDataForNewReleases=function(){var e='<div id="bb_newReleasesCarouselContainer"></div>';$("#skPageLayoutCell_1_id-3").after(e),$("#bb_newReleasesCarouselContainer").load("https://m.barnesandnoble.com/b/books/_/N-29Z8q8 #skPageLayoutCell_9_id-8")},e.metrics=function(o){o(document).on("click","#skPageLayoutCell_9_id-8",function(){e.sCall("bbMPSeg4_NewReleasesProduct")})},e.pollCondition1=function(){return jQuery("#skPageLayoutCell_1_id-1").length>0},e.offer1=function(){e.grabDataForNewReleases(),e.metrics(jQuery)},e.fail1=function(){e.log("poll 1 failed ("+e.campaign+" - "+e.offerName+")",!0)},e.runPoll(e.pollCondition1,e.offer1,50,0,e.fail1)}();</script>
+
+
+
+
+
+
 <!-- 
 oprah banner desk:
         var tgtBannerHTML = '<div id="tgtNavBanner"><a href="https://www.barnesandnoble.com/w/behold-the-dreamers-imbolo-mbue/1113822989?ean=9780525509714"><div id="tgtContent"><div class="tgtPimg"><img src="https://simg1.imagesbn.com/presources/etc/designs/ccr/Oprah_Homepage_cover.jpg" alt="Book cover: Behold the Dreamers by Imbolo Mbue" /></div><div class="tgtText"><span class="tgtheader">The Latest Oprah’s Book Club Selection</i></span><span class="tgtDetails"> <i>Behold the Dreamers</i> by Imbolo Mbue </span></div><div class="tgtCTA"><span> SHOP NOW </span></div></div></a></div>';

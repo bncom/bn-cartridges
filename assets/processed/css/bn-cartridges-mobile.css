@@ -6345,3 +6345,58 @@ header .text--subheader {
 .rose, .color-rose {
   color: #a36b6c;
 }
+
+/* *** Discover - Contributor - Series pages 2018 *** */
+/* SERIES List */
+.isMobile.mobileSeries .container {
+  max-width: 100%;
+}
+
+.mobileSeries .container.author-series-indexes--series {
+  max-width: 100%;
+  padding: 0 !important;
+}
+
+.mobileSeries .author-series-indexes--series h2.index-heading {
+  padding: 0;
+  margin: 0 0 15px;
+  border-bottom: none;
+  /* 1px solid #ccc */
+  text-align: center;
+  font-size: 24px;
+}
+
+.mobileSeries #searchGrid section h2.index-heading {
+  padding-left: 0 !important;
+  line-height: 0.25 !important;
+}
+
+.mobileSeries .author-series-indexes--series .index-grid {
+  padding: 10px 20px;
+}
+
+.mobileSeries .author-series-indexes--series .index-grid .col ul li {
+  -webkit-flex-basis: 100%;
+  /* 25%; */
+  flex-basis: 100%;
+  /* 25%; */
+  padding-bottom: 0;
+  text-align: center;
+  /* */
+  list-style: none;
+}
+
+.mobileSeries .author-series-indexes--series .index-grid .col ul li a {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+/* adjust main css file */
+.mobileSeries .author-series-indexes--series .rule:after,
+.mobileSeries .author-series-indexes--series .rule:before {
+  display: block !important;
+}
+
+/*.author-series-indexes--series .rule:not(.index-heading):after,
+.author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
