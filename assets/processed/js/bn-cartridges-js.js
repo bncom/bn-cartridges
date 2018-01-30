@@ -1,23 +1,5 @@
 (function() {
-
-    var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
-    if ( URLpathArray[1].toLowerCase() === "mobile" || URLpathArray[2].toLowerCase() === "gs" || window.location.hostname === "m.barnesandnoble.com"|| window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname==="mpreprod.barnesandnoble.com" || window.location.hostname==="mpreview.barnesandnoble.com" ) {isMobile = true;}
-    if (isMobile){ 
-    	$('body').addClass('isMobile');
-
-    	if ( URLpathArray[2].toLowerCase() === "series" || URLpathArray[3].toLowerCase() === "series") {$('body').addClass('mobileSeries');}
-    	$(function() { //document.ready     
-
-			$('h2.index-heading').addClass('rule');   
-    	
-    	});// END Document ready  
-    }
-
-
-
-
-
-
+ 
 
 
 // Utilities... 
@@ -105,13 +87,7 @@
  
  
     $(function() { //document.ready   
-/*
-		 $(window).resize(function(){
-
-		 });  
-   
-		 $(window).resize(); 
-*/
+ 
 
 		// load adaptive images 
 		var winWidth = $(window).width();
@@ -123,11 +99,23 @@
 		    loadRWDimg('data-img-src-tablet');
 		}
   
+  
+	  var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
+	  if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com"|| window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname==="mpreprod.barnesandnoble.com" || window.location.hostname==="mpreview.barnesandnoble.com" ) {isMobile = true;}
+		if ( isMobile ){ // ***  Applies to Mobile Only  ***  
+			$('body').addClass('isMobile');
+			// identify Series pages:
+			if ( URLpathArray[2].toLowerCase() === "series" || URLpathArray[3].toLowerCase() === "series") {$('body').addClass('mobileSeries');$('h2.index-heading').addClass('rule');}
+   
 
-      var isMobile = false; var URLpathArray = window.location.pathname.split( '/' );
-      if ( URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com"|| window.location.hostname === "mbarnesandnoble.skavaone.com") {isMobile = true;}
-      if ( isMobile ){ // ***  Applies to Mobile Only  ***  
-	  //if ($('.main-body').length) { // ***  Applies to Mobile Only  ***  removed: class may not be available post SKAVA
+			 
+    	
+     
+ 
+
+
+
+
 	  	// event carousel for mobile 
 		var initCarouFredSelect = function (cfg) {
 		    // check for carousels
@@ -246,9 +234,21 @@
 
 
 
+
+
+
+
+
+
+
  		// ***  End Mobile Only  ***
 	  } else { 
-	  	// ***  desktop Only  *** 
+	  	// ***  start desktop Only  *** 
+
+
+
+
+
 
 	  	// Event Info pods AND Event Carousel
 			var startAt = null;  
