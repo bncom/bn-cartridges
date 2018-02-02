@@ -787,7 +787,7 @@
             sectionLinkContainer.append(sectionLink);
         });
 
-        $('section.container.mb-xxxl').prepend(sectionLinkContainer);
+        $('.isMobile section.container.mb-xxxl').prepend(sectionLinkContainer);
 
 
         //Discover Categories functionality
