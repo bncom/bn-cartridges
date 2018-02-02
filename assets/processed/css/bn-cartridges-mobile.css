@@ -1,4 +1,5 @@
-#cq-html-renderer, .cq-html-renderer {
+#cq-html-renderer,
+.cq-html-renderer {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -469,7 +470,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     max-width: 100%;
   } */
 }
-#main-content, .PageContent {
+#main-content,
+.PageContent {
   overflow-y: initial;
   -webkit-overflow-scrolling: touch;
 }
@@ -554,29 +556,88 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
   */
   /*Browse page links*/
-  /*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
-  /* end textbooks subppages */
   /*  Put Me In The Story */
   /*  // END Put Me In The Story */
-  /* persona  [ personalities mothersday fathersday ] */
-  /* store title design change  added to rich text editor */
-  /* // end persona  */
+  /* //Smart Gift */
+  /* Sub header */
+  /* How it works steps */
+  /* //Smart Gift   */
   /* jsonGridItem -- result list from json array -- black-friday-signed-editions */
+  /* black friday signed editions */
+  /* place on page */
+  /* 
+      .bfSignedEdHeroContent {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          text-align: center; 
+          z-index: 2;  
+          padding-top:37px;
+          color: #fff; 
+          .brow{ 
+              height:50px;
+              margin-bottom:1.73rem;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+                   font-family: Authenia,sans-serif;
+              font-size: 3.07rem;
+              font-weight: 400;
+              line-height: 1;
+              letter-spacing: -2px;
+              font-style: normal;
+              text-transform: none;
+              padding: 0 15px;
+  
+          }
+          .hdr {
+              font-size: 5.385rem; 
+              font-weight: 600;  
+              letter-spacing: 0.108rem;
+              line-height: 1; 
+              text-transform: uppercase;
+              span{
+                  display: block;
+                  font-size: 1.6rem; 
+                  font-weight: 400; 
+                  line-height: 1.75; 
+              }
+          } 
+          .note {
+              font-size:1.6rem;  
+              font-weight: 400; 
+              line-height: 1.65;
+              letter-spacing: .14rem;
+              margin-top: 2rem; 
+  
+          } 
+      }
+   */
+  /*
+  zzz:target {
+      border: 2px solid #D4D4D4;
+      background-color: #e5eecc;
+  }
+  */
   /*  sticky nav */
   /* Privacy Policy */
   /* iPhone Mobile */
   /* END iPhone App H page */
   /*CQ Module HTML PAGE adjustments */
   /*Gift Cards */
-  /* start textbooks subppages */
-  /* end textbooks subppages */
+  /* //Smart Gift  */
+  /* Sub header */
+  /* How it works steps */
+  /* //End Smart Gift   */
   /* My Favorite Teacher */
   /* End My Favorite Teacher */
   /*   // Put Me In The Story */
   /*   // END Put Me In The Story */
-  /* persona  [ personalities mothersday fathersday ] */
-  /* // end persona   */
-  /* black friday signed editions */
+  /* 2016 black friday signed editions */
+  /*  2017  black friday signed editions  */
   /* end black friday signed editions */
   /* iPhone Download App */
   /* End iPhone */
@@ -880,8 +941,8 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .bttn-base, .html .bttn, .html .bttn-sibling, .html .bttn-action, .html .bttn-action-sibling, .html .bttn-commerce, .html .bttn-commerce-sibling {
   display: inline-block;
-  font-family: GillSans,Arial,sans-serif;
-  font-size: 18px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
   line-height: 1.6;
   font-weight: 500;
   min-width: 210px;
@@ -1301,6 +1362,10 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .element-shadow:hover {
   box-shadow: none;
 }
+.html .clearer {
+  clear: all;
+  overflow: hidden;
+}
 .html .hideIt {
   display: none;
 }
@@ -1324,6 +1389,9 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .mOnly {
   display: none;
+}
+.html .break-desktop {
+  display: block;
 }
 .html .milo180 {
   font-family: Milo;
@@ -1489,7 +1557,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   box-shadow: none;
 }
 .html .gift-card-list-r17 .tile {
-  height: auto;
+  height: 160px;
   margin-right: 30px;
   width: calc(33.3333% - 20px);
 }
@@ -1536,29 +1604,6 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   line-height: 1.75;
   vertical-align: top;
   width: 238px;
-}
-.html .break-desktop {
-  display: block;
-}
-.html .cms .heroImage {
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-  border: 2px #fff solid;
-  font-size: 0;
-  line-height: 0;
-  max-width: 964px;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-.html .cms section.module {
-  border-radius: 4px;
-  border-top: 2px solid #fff;
-  box-shadow: 0 0 0 1px #d5d2d2;
-  font-size: 22px;
-  margin: 48px 0 36px 1px;
-  position: relative;
 }
 .html .pmis {
   max-width: 965px;
@@ -1823,120 +1868,123 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .pmis-visible-sm {
   display: none;
 }
-.html #categoryHeaderContainer h1.persona-main-hdr {
-  font-size: 66px;
-  color: #000;
-  line-height: 1;
-  margin-top: 16px;
-}
-.html section#categoryHeaderContainer h2.persona-main-hdr {
-  color: #000;
-  font-family: PTSans, Arial, Helvetica, sans-serif;
-  font-size: 30.5px;
-  line-height: 1;
-  text-align: center;
-  display: block;
-  text-transform: none;
-  margin: 0 0 32px 0;
-}
-.html h2.persona-main-hdr:before,
-.html h2.persona-main-hdr:after {
-  content: "";
-  border-top: 1px #919190 solid;
-  width: 72px;
-  height: 1px;
-  padding: 5px 0;
-  display: inline-block;
-}
-.html h2.persona-main-hdr:before {
-  margin: 2px 10px 0 auto;
-}
-.html h2.persona-main-hdr:after {
-  margin: 2px auto 0 10px;
-}
-.html .persona-header {
+.html .smartgiftHero.desktop {
+  width: 100%;
   position: relative;
-}
-.html .persona-header h2 {
-  margin: 8px 125px 8px 0;
-  font-family: milo;
-  font-size: 36px;
-  line-height: 1;
-  font-weight: normal;
-  border: 0px red dotted;
-}
-.html .persona-header-cta {
-  display: block;
-  border: 1px #000 solid;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 8px 16px;
-  margin-bottom: 9px;
-  font-size: 14px;
-  color: #000;
-}
-.html .persona {
-  margin-bottom: 43px;
-  min-height: 134px;
-}
-.html .persona:last-of-type {
-  margin-bottom: 20px;
-}
-.html .persona figure {
-  font-size: 0;
+  background-color: #f5f5f7;
   line-height: 0;
 }
-.html .persona img {
-  width: 100%;
+.html .smartgiftHero.desktop img {
+  max-width: 100%;
 }
-.html .persona a {
-  display: block;
-}
-.html .persona a:hover {
-  text-decoration: none;
-}
-.html .persona a:focus {
-  outline: 1px dashed #000;
-}
-.html .persona-header-gcbanner {
+.html .desktop .smartgiftHeroContent {
   position: absolute;
-  right: 0;
-  text-align: center;
-  width: 318px;
+  top: 28%;
+  /* 113px; */
+  width: 51.30769230769231rem;
+  /* 677px; */
 }
-.html .persona-header-gcbanner h2 {
-  margin: 22px 0 4px 0;
-  font-size: 26.29px;
+.html .desktop .smartgiftHeroContent {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  /* 16.25px; */
+  line-height: 1.5;
+}
+.html .smartgiftHeroContent sup {
+  top: -0.25em;
+}
+.html .desktop .smartgiftHeroBrow {
+  color: #8f806b;
+  letter-spacing: 4px;
+}
+.html .desktop .smartgiftHeroHdr {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.23rem;
+  /* 42px; */
+  letter-spacing: -.3px;
   line-height: 1;
-  font-weight: normal;
+  color: #21285d;
+  margin: 28px 0 29px;
 }
-.html .persona-header-gc-copy {
-  font-size: 18.78px;
-  color: #000;
+.html .desktop .smartgiftHerohdrCopy {
+  color: #21282d;
+  letter-spacing: 0;
 }
-.html .persona-header-gc-cta {
-  font-size: 14.08px;
-  text-transform: uppercase;
-  color: #000;
+.html .smartgifth2 {
+  margin: 29px 0 33px 0;
+}
+.html header.smartgifth2 h2 {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #525b5b;
+}
+.html .smartgifttable {
+  display: table;
+  margin: 0 0 54px 0;
+}
+.html .smartgiftSteps {
+  margin-left: 8px;
+  padding: 23px 23px 27px 23px;
+  background-color: #eeeeed;
+  width: 33%;
+  display: table-cell;
+  border-left: 8px #fff solid;
+}
+.html .smartgiftSteps:last-of-type {
+  border-right: 8px #fff solid;
+}
+.html .smartgiftStep {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 5.25rem;
+  /* 68px;  */
+  line-height: .85;
+  color: #21282d;
+  float: left;
+}
+.html .smartgiftStepCopy {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  /*  font-size: 1.23rem; */
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: #353535;
   display: block;
+  margin-left: 55px;
 }
-.html .persona-header-gc-cta:before {
-  content: "";
-  display: block;
-  border-top: 1px #000 solid;
-  width: 25px;
-  height: 1px;
-  margin: 11px auto;
+.html .smartgiftStepCopy h3 {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 600;
+  font-size: 1.23rem;
+  /* 16px; */
+  color: #21282d;
+  margin-bottom: 4px;
 }
-.html .persona-gcbanner {
-  height: 136px;
-  max-width: 964px;
-  margin: 0 auto;
-  position: relative;
+.html .smartgiftCTA {
+  margin-bottom: 48px;
 }
-.html .persona-gcbanner.mom {
-  background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
+.html .smartgiftlegal {
+  color: #515b5b;
+  margin-top: 33px;
+}
+.html .smartgiftinstructions {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #666;
+  max-width: 900px;
+  padding: 0 20px;
+  margin: 0 auto 33px;
+}
+.html .smartgiftinstructions .smartgifth2 {
+  margin-bottom: 15px;
 }
 .html .jsonGridItem {
   display: block;
@@ -1973,6 +2021,144 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   color: #737373;
   line-height: 1.2;
   margin: 0;
+}
+.html #jsonBFSignedEditions {
+  overflow: hidden;
+}
+.html .desktop.main-content.container {
+  padding: 0;
+}
+.html .signedEdIntroCopy {
+  font-size: 1.695rem;
+  color: #000;
+  text-align: center;
+  padding: 8px 1px 7px;
+  overflow: hidden;
+}
+.html .bfSignedEdHero {
+  background-color: #202020;
+}
+.html .bfSignedEdHero img {
+  width: 100%;
+}
+.html .bfSignedEdHero, .html .bfSignedEdHero h1 {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 0;
+  text-align: center;
+}
+.html .bfAuthorSectionLinksHdr {
+  font-size: 1.36rem;
+  /*   18.5px  */
+  line-height: 1.7;
+  color: #21282d;
+}
+.html .bfAuthorSectionLinks {
+  text-align: center;
+  margin: 5px 0 10px 0;
+}
+.html .bfAuthorSectionLinks li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  font-size: 1.31rem;
+  /* 17px; */
+  color: #ccc;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+}
+.html .authorSectionLink {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  color: #21282d;
+  font-size: 1.31rem;
+  /* 17px; */
+  border: 1px transparent solid;
+}
+.html .authorSectionLink.active {
+  border-color: #21282d;
+}
+.html a.authorSectionLink:hover {
+  border-color: #ccc;
+  text-decoration: underline;
+}
+.html a.authorSectionLink:focus {
+  border-color: #21282d;
+  text-decoration: none;
+}
+.html .bfSignedEdContent {
+  padding: 13px 60px 0;
+}
+.html .bfSignedEdContent .jsonGridItem {
+  display: none;
+  float: left;
+  position: relative;
+  width: 122px;
+  margin: 0 12.5px 0 16px;
+  font-size: 15px;
+}
+.html .bfSignedEdContent .jsonGridItem.active {
+  display: block;
+}
+.html .bfSignedEdContent .jsonGridImage {
+  height: 200px;
+  position: relative;
+  width: 116px;
+}
+.html .bfSignedEdContent .jsonGridDetails {
+  height: 103px;
+  /* 125 */
+  position: relative;
+}
+.html .bfSignedEdContent .jsonGridTitle {
+  color: #21282d;
+  font-size: 13px;
+  line-height: 1.2;
+  margin: 0;
+}
+.html .bfSignedEdContent .jsonGridContributor {
+  font-size: 12px;
+  color: #737373;
+  line-height: 1.2;
+  margin: 7px 0 4px;
+  text-transform: uppercase;
+}
+.html .bfStoreLocator {
+  height: 52px;
+  text-align: center;
+  border-top: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.html .bfStoreLocatorlink {
+  font-family: Lato,Arial,sans-serif;
+  font-size: 1.152rem;
+  /* 15px; */
+  color: #000;
+  padding: 18px 20px 19px;
+  margin: 0 auto 25px;
+  width: 180px;
+  clear: left;
+}
+.html .bfStoreLocatorlink:hover {
+  color: #3d6db5;
+}
+.html .bfStoreLocatorlink::before {
+  content: "";
+  padding: 7px;
+  margin-right: 8px;
+  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/blck-friday-signed-editions/Storelocator_icon-Sprite_2x.png?v=2) no-repeat;
+  background-position: 1px 5px;
+  background-size: 26px 22px;
+  vertical-align: middle;
+}
+.html .bfStoreLocatorlink:hover::before {
+  background-position: -13px 5px;
 }
 .html .sticky-nav {
   position: fixed;
@@ -2227,6 +2413,11 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   width: 0;
   left: 0;
 }
+@media only screen and (max-width: 875px) {
+  .html .break-desktop {
+    display: none;
+  }
+}
 .html .gift-card-list {
   padding: 0 20px;
 }
@@ -2241,111 +2432,110 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     margin: 0 20px 0 0;
   }
 }
-@media only screen and (max-width: 749px) {
-  .html .txtbk-column-main {
-    width: 63%;
-  }
-  .html #cq-txtBookSearch.txtbkhome {
-    width: 75%;
-    margin: -20px auto 30px;
-  }
-  .html .txtbk-form-wrapper.txtbkhome {
-    height: 50px;
+.html .smartgiftHero {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.html .smartgiftHero img {
+  max-width: 100%;
+}
+.html .smartgiftHeroContent {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  max-width: 650px;
+}
+@media only screen and (min-width: 475px) {
+  .html .smartgiftHeroContent {
+    top: 15%;
   }
 }
-@media only screen and (max-width: 699px) {
-  .html .links-container.browse.textbooks {
-    display: none;
-  }
+.html .smartgiftHeroContent {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
 }
-@media only screen and (max-width: 649px) {
-  .html .txtbk-column-main {
-    width: 59%;
-  }
+.html .smartgiftHeroBrow {
+  color: #8f806b;
+  letter-spacing: 3.25px;
 }
-@media only screen and (max-width: 599px) {
-  .html .txtbk-column-main {
-    width: 100%;
-    float: none;
-  }
-  .html .txtbk-column-right {
-    text-align: center;
-    width: 100%;
-    float: none;
-    margin: 0 auto;
-  }
+.html .smartgiftHeroHdr {
+  font-family: Poynter,Georgia,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  letter-spacing: -.25px;
+  line-height: 1.25;
+  color: #21285d;
+  margin: 15px 0 8px;
 }
-@media only screen and (max-width: 875px) {
-  .html .break-desktop {
-    display: none;
-  }
-  .html .cms .module.textbook-options figure {
-    width: 50%;
-    padding: 18px 0;
-    text-align: center;
-    float: left;
-    border-left: 1px #ccc solid;
-    border-top: 1px #ccc solid;
-  }
-  .html .cms .module.textbook-options figure.first {
-    border-left: none;
-    border-top: none;
-  }
-  .html .cms .module.textbook-options a:nth-child(2) figure {
-    border-top: none;
-  }
-  .html .cms .module.textbook-options a:nth-child(3) figure {
-    border-left: none;
-  }
-  .html #txtBookSearch + .isbn-link-modal {
-    float: none;
-    display: block;
-    margin: 40px 0 0 0;
-    text-align: center;
-  }
-  .html section.return-msg p {
-    width: 65%;
-  }
+.html .smartgiftHerohdrCopy {
+  color: #21282d;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.75;
 }
-@media only screen and (max-width: 699px) {
-  .html #txtBookSearch input[type="submit"] {
-    position: relative;
-    left: 77%;
-    margin-left: 0;
-  }
-  .html section.return-msg {
-    text-align: center;
-    position: relative;
-    padding: 0 15px;
-    padding-bottom: 160px;
-  }
-  .html section.return-msg img {
-    position: absolute;
-    right: 50%;
-    bottom: 0;
-    margin-right: -103px;
-    z-index: 1;
-  }
-  .html section.return-msg p {
-    width: auto;
-  }
-  .html .links-container.browse.textbooks {
-    display: none;
-  }
+.html header.text--center.smartgifth2 {
+  margin: 40px 0 38px 0;
+  text-align: center !important;
 }
-@media only screen and (max-width: 599px) {
-  .html .break-desktop {
-    display: none;
-  }
-  .html .cms .module.textbook-options figure {
-    width: 100%;
-  }
-  .html .cms .module.textbook-options figure {
-    border-left: none;
-  }
-  .html .cms .module.textbook-options a:nth-child(2) figure {
-    border-top: 1px #ccc solid;
-  }
+.html header.smartgifth2 h2.rule {
+  color: #21282d;
+  font-size: 24px;
+  text-align: center !important;
+  display: block;
+  margin: 0;
+  line-height: 1;
+}
+.html .smartgifttable {
+  display: block;
+  margin-bottom: 18px;
+}
+.html .smartgiftSteps {
+  margin-left: 0;
+  padding: 0 20px 30px 20px;
+  background-color: #fff;
+  /* #eeeeed; */
+  width: 100%;
+  display: block;
+  border: none;
+}
+.html .smartgiftSteps:last-of-type {
+  border: none;
+}
+.html .smartgiftStep {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 8px;
+  float: none;
+}
+.html .smartgiftStepCopy {
+  font-size: 13px;
+  text-align: center;
+  color: #666666;
+  display: block;
+  margin-left: 0;
+}
+.html .smartgiftStepCopy h3 {
+  font-size: 20px;
+  color: #21282d;
+  margin-bottom: 8px;
+}
+.html .smartgiftCTA {
+  margin-bottom: 48px;
+}
+.html .smartgiftCTA .btn.btn--large {
+  font-size: 14px !important;
+  padding: 12px 38px !important;
+  height: auto;
+}
+.html .smartgiftlegal {
+  font-size: 12px;
+  color: #666666;
+  padding: 0 20px 65px;
+  border-bottom: 1px solid #999;
 }
 .html .mft-content {
   padding: 0 10px;
@@ -2506,81 +2696,6 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     display: none;
   }
 }
-@media only screen and (max-width: 699px) {
-  .html {
-    /* store title design change  added to rich text editor */
-  }
-  .html #categoryHeaderContainer h1.persona-main-hdr {
-    font-size: 27.43px;
-  }
-  .html section#categoryHeaderContainer h2.persona-main-hdr {
-    color: #000;
-    font-size: 13.71px;
-    margin: 1px 0 13px 0;
-    font-weight: normal;
-  }
-  .html h2.persona-main-hdr:before, .html h2.persona-main-hdr:after {
-    padding: 2px 0;
-  }
-  .html h2.persona-main-hdr:before {
-    margin: 2px 5px 0 auto;
-    width: 26px;
-  }
-  .html h2.persona-main-hdr:after {
-    margin: 2px auto 0 5px;
-    width: 26px;
-  }
-}
-@media only screen and (max-width: 699px) {
-  .html .persona {
-    margin-bottom: 13px;
-  }
-  .html .persona:last-of-type {
-    padding-top: 14px;
-  }
-  .html .persona-header {
-    padding: 0 21px;
-  }
-  .html .persona-header h2 {
-    font-size: 18.41px;
-    margin-bottom: 4px;
-    line-height: 1.2;
-  }
-  .html .persona-header-cta {
-    font-size: 8.94px;
-    margin-bottom: 5px;
-    padding: 4px 10px;
-    right: 21px;
-  }
-  .html .persona-header-gcbanner h2 {
-    margin: 12% 0 4px 0;
-    font-size: 15.4px;
-  }
-  .html .persona-header-gc-copy {
-    font-size: 11px;
-  }
-  .html .persona-header-gc-cta {
-    font-size: 8.25px;
-  }
-  .html .persona-header-gc-cta:before {
-    width: 15px;
-    margin: 4px auto;
-  }
-}
-@media only screen and (max-width: 599px) {
-  .html .persona-header-gcbanner {
-    width: 50%;
-  }
-  .html .persona-gcbanner.mom {
-    background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Mobile_Pod6_599.jpg) no-repeat top left;
-    background-size: 100%;
-  }
-}
-@media only screen and (max-width: 370px) {
-  .html .persona-header-gcbanner h2 {
-    margin: 9% 0 4px 0;
-  }
-}
 .html .bfSignedEdIntroCopy {
   margin: 20px;
 }
@@ -2609,6 +2724,75 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     width: auto;
     max-width: 120px;
   }
+}
+.html .bfSignedEdHero {
+  min-height: 275px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.html .bfSignedEdHero.mobile img {
+  max-width: 100%;
+  height: auto;
+}
+.html .signedEdIntroCopy {
+  font-size: 18.5px;
+}
+@media only screen and (max-width: 359px) {
+  .html .signedEdIntroCopy {
+    font-size: 17px;
+  }
+}
+.html .authorSectionLink {
+  font-size: 17px !important;
+}
+.html .bfSignedEdContent {
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* Or do it all in one line with flex flow */
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+}
+.html .bfSignedEdContent .jsonGridTitle {
+  color: #21282d;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+}
+.html .bfSignedEdContent .jsonGridContributor {
+  font-size: 12px;
+  color: #737373;
+  line-height: 1.2;
+  margin: 7px 0 4px;
+  text-transform: uppercase;
+}
+.html .bfStoreLocator {
+  margin-bottom: 17px;
+}
+.html .bfStoreLocatorlink {
+  font-size: 15px !important;
+}
+.html .bfAuthorSectionLinksHdr {
+  font-size: 18px !important;
+  margin-bottom: 5px;
+}
+.html .bfAuthorSectionLinks li {
+  font-size: 17px !important;
+  width: 42px;
+  height: 42px;
 }
 @media (max-width: 699px) {
   .html .bnapp-hero {
@@ -4931,7 +5115,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-hdr-sub {
   font-family: Lato, Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.7;
   color: #000;
 }
@@ -5007,7 +5191,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 .html .mc-questions {
   margin: 25px auto 50px;
   /* new */
-  width: 900px;
+  width: 860px;
   /* new */
 }
 .html .mc-questions p {
@@ -5263,28 +5447,29 @@ section .editorial-collection .align-horizontal.row .col-lg-4 p {
 }
 section .editorial-collection .align-horizontal.row .col-lg-8 {
   width: 100%;
+  border: none;
 }
 section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray {
-  border: none;
+  border-left: 0px;
 }
 section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray.pl-m {
   padding-left: 0px !important;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf {
   margin: 0px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list {
+section .editorial-collection .align-horizontal.row .col-lg-8 .slick-list {
   margin: 0px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track {
+section .editorial-collection .align-horizontal.row .col-lg-8 .slick-track {
   width: 100% !important;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-tile {
   display: table-cell;
   padding-right: 10px;
   width: 106px !important;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont {
   height: auto;
   max-height: 173px;
   margin-bottom: 5px;
@@ -5292,24 +5477,26 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-
   min-width: fit-content !important;
   padding: 0px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image a {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image a {
   display: -webkit-box;
   max-width: 114px !important;
   font-size: 13px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image a img {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image a img {
   max-height: 173px !important;
   max-width: auto;
   width: 100% !important;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image .product-shelf-favorite, section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image product-shelf-curl, section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-image-cont .product-shelf-image product-last-star {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image .product-shelf-favorite,
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image product-shelf-curl,
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-image-cont .product-shelf-image product-last-star {
   display: none;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-info {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-info {
   border-top: 0px;
   margin-bottom: 5px;
 }
-section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-gray .product-shelf .slick-list .slick-track .product-shelf-tile .product-shelf-info a {
+section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-info a {
   font-size: 13px;
 }
 
@@ -5328,7 +5515,7 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-
 @media only screen and (max-width: 699px) {
   #searchGrid section h2 #searchGrid section h2 {
     margin-bottom: 5px;
-    font-family: PoynterOSDisp-Semibold,Poynter;
+    font-family: PoynterOSDisp-Semibold, Poynter;
     font-size: 22px;
     color: #010101;
     position: relative;
@@ -5380,7 +5567,7 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-
   width: 2175px !important;
 }
 
-.text--center {
+header.text--center {
   text-align: left;
 }
 
@@ -5389,6 +5576,113 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .bd-left-disabled-
   max-width: 114px;
 }
 
+.product-shelf .slick-arrow {
+  display: none !important;
+}
+
+.product-shelf-info {
+  border-top: none !important;
+}
+
+.book .product-shelf-info {
+  min-height: 17.75rem !important;
+}
+
+/* Start Features Categories */
+.department-product-grid {
+  list-style: none;
+  padding: 0;
+  height: auto !important;
+  margin-top: 3rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #f1f3f1;
+}
+.department-product-grid .book-link {
+  display: none;
+}
+.department-product-grid .item {
+  padding: 0px;
+}
+.department-product-grid .item div {
+  border-right: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 .75rem;
+  -webkit-flex-direction: column;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.department-product-grid .item div .varieties {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.department-product-grid .item header {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  width: 100%;
+}
+
+.department-product-grid.columns-4 li.item[style] {
+  height: unset !important;
+}
+.department-product-grid.columns-4 .item {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.link-reset {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: GillSansMTPro-Medium;
+  padding: 18px 31px 16px 20px;
+  color: #002612;
+}
+.link-reset::before {
+  background: url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201710112353p/img/sprite-categories_2x.png");
+  background-position: -38px -3px;
+  background-size: 276px 84px;
+  height: 16px;
+  width: 11px;
+  text-indent: 100%;
+  white-space: nowrap;
+  right: 18px;
+  position: absolute;
+  top: 19px;
+  content: " ";
+}
+
+/* End Featured Categories Code */
+/* Start Banner without image clean up */
+.banner-with-image .promo-pdp a {
+  font: 16px GillSansMTPro-Medium;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+.banner-with-image .promo-pdp a .promo-pdp__cta {
+  font-family: GillSansMTPro-Book, GillSansMTPro-Medium;
+  color: #346250;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  padding: 15px 0 0;
+}
+
+/* End  Banner with image Cleanup */
 /* textbooks */
 .mobile-only {
   display: none;
@@ -6051,3 +6345,58 @@ header .text--subheader {
 .rose, .color-rose {
   color: #a36b6c;
 }
+
+/* *** Discover - Contributor - Series pages 2018 *** */
+/* SERIES List */
+.isMobile.mobileSeries .container {
+  max-width: 100%;
+}
+
+.mobileSeries .container.author-series-indexes--series {
+  max-width: 100%;
+  padding: 0 !important;
+}
+
+.mobileSeries .author-series-indexes--series h2.index-heading {
+  padding: 0;
+  margin: 0 0 15px;
+  border-bottom: none;
+  /* 1px solid #ccc */
+  text-align: center;
+  font-size: 24px;
+}
+
+.mobileSeries #searchGrid section h2.index-heading {
+  padding-left: 0 !important;
+  line-height: 0.25 !important;
+}
+
+.mobileSeries .author-series-indexes--series .index-grid {
+  padding: 10px 20px;
+}
+
+.mobileSeries .author-series-indexes--series .index-grid .col ul li {
+  -webkit-flex-basis: 100%;
+  /* 25%; */
+  flex-basis: 100%;
+  /* 25%; */
+  padding-bottom: 0;
+  text-align: center;
+  /* */
+  list-style: none;
+}
+
+.mobileSeries .author-series-indexes--series .index-grid .col ul li a {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+/* adjust main css file */
+.mobileSeries .author-series-indexes--series .rule:after,
+.mobileSeries .author-series-indexes--series .rule:before {
+  display: block !important;
+}
+
+/*.author-series-indexes--series .rule:not(.index-heading):after,
+.author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/

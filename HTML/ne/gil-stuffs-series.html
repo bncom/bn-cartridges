@@ -1,0 +1,78 @@
+<!-- temp code to be moved into bn_cartridges CSS & JS -->
+<script type="text/javascript">
+    //<![CDATA[
+    (function() {
+        var isMobile = false;
+        var URLpathArray = window.location.pathname.split('/');
+        if (URLpathArray[1].toLowerCase() === "mobile" || URLpathArray[2].toLowerCase() === "gs" || window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com") {
+            isMobile = true;
+        }
+        if (isMobile) {
+            $('body').addClass('isMobile');
+            if (URLpathArray[2].toLowerCase() === "series" || URLpathArray[3].toLowerCase() === "series") {
+                $('body').addClass('mobileSeries');
+            }
+            $(function() { //document.ready    
+
+                $('h2.index-heading').addClass('rule');
+
+            }); // END Document ready  
+        }
+
+    })();
+    //]]>
+
+</script>
+<style type="text/css">
+    .mobileSeries .container {
+        max-width: 100%;
+        padding: 0 !important;
+    }
+
+    .mobileSeries h2.index-heading {
+        padding: 0;
+        margin: 0 0 15px;
+        border-bottom: none;
+        /* 1px solid #ccc */
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .mobileSeries .index-grid {
+        padding: 10px 20px;
+    }
+
+    .mobileSeries .index-grid .col ul li {
+        -webkit-flex-basis: 100%;
+        /* 25%; */
+        flex-basis: 100%;
+        /* 25%; */
+        padding-bottom: 0;
+        text-align: center;
+        /* */
+        list-style: none;
+    }
+
+    .mobileSeries .index-grid .col ul li a {
+        padding: 10px 20px;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    /* adjust main css file */
+
+    .mobileSeries .rule:after,
+    .mobileSeries .rule:before {
+        display: block;
+    }
+
+    .mobileSeries .rule:not(.index-heading):after,
+    .mobileSeries .rule:not(.index-heading):before {
+        display: none;
+    }
+
+</style>
+
+
+
+

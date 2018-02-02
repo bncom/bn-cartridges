@@ -43,6 +43,8 @@
     }
 }
 
+
+.clearer {clear:all; overflow: hidden;}
 .hideIt {
     display: none;
 }
@@ -75,6 +77,9 @@
     display: none;
 }
 
+.break-desktop {
+    display: block;
+}
 
 /*Font sizes initiated on coupon page*/
 
@@ -283,7 +288,7 @@
 */ 
 
 .gift-card-list-r17 .tile{
-    height:auto;  
+    height:160px;  
     margin-right: 30px; 
     width: calc(33.3333% - 20px); 
 }
@@ -337,36 +342,7 @@
 }
 
 
-/*textbooks landing carryover  http://img1.imagesbn.com/css/bn-cq/cq-global.css?v=08062015a  */
-
-.break-desktop {
-    display: block;
-}
-
-.cms .heroImage {
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-    border: 2px #fff solid;
-    font-size: 0;
-    line-height: 0;
-    max-width: 964px;
-    overflow: hidden;
-    margin: 0 auto;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.cms section.module {
-    border-radius: 4px;
-    border-top: 2px solid #fff;
-    box-shadow: 0 0 0 1px #d5d2d2;
-    font-size: 22px;
-    margin: 48px 0 36px 1px;
-    position: relative;
-}
-
-
-/* end textbooks subppages */
+ 
 
 
 /*  Put Me In The Story */
@@ -520,28 +496,23 @@ figcaption.desk {
 .pmis-samplet-prev-item {
     background-position: -65px 0;
     left: 37%;
-}
-
+} 
 .pmis-samplet-prev-item.disabled {
     background-position: 1px 0;
-}
-
+} 
 .pmis-samplet-next-item {
     background-position: -96px 0;
     right: 37%;
-}
-
+} 
 .pmis-samplet-next-item.disabled {
     background-position: -29px 0;
-}
-
+} 
 #pmis-samplet-status {
     height: 26px;
     font-family: Raleway, PTSans, Arial;
     color: #0d4563;
     font-size: 17px;
-}
-
+} 
 .pmis-steps {
     background-color: #d6eaa1;
     /*  -moz-box-shadow:  -2px 2px 1px 0 rgba(157, 176, 191, 0.55);
@@ -552,8 +523,7 @@ figcaption.desk {
     position: relative;
     font-size: 20px;
     line-height: 1.5;
-}
-
+} 
 h3.pmis-steps-hdr {
     text-align: center;
     font-family: Quicksand-Bold, PTSans, Arial;
@@ -562,8 +532,7 @@ h3.pmis-steps-hdr {
     font-size: 30px;
     text-transform: uppercase;
     margin: 23px 0 28px;
-}
-
+} 
 .pmis-steps::before {
     background: rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
     top: 25px;
@@ -573,8 +542,7 @@ h3.pmis-steps-hdr {
     left: 0;
     position: absolute;
     width: 100%;
-}
-
+} 
 .pmis-steps::after {
     background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
     content: "";
@@ -584,8 +552,7 @@ h3.pmis-steps-hdr {
     position: absolute;
     bottom: 25px;
     width: 100%;
-}
-
+} 
 .pmis-cta {
     margin-bottom: 25px;
     padding: 0 30px;
@@ -594,14 +561,12 @@ h3.pmis-steps-hdr {
     color: #0d4563;
     font-size: 20px;
     line-height: 1.5;
-}
-
+} 
 .pmis-steps-list {
     width: 33%;
     margin: 0 0 0 50px;
     padding: 0;
-}
-
+} 
 li.pmisOne,
 li.pmisTwo,
 li.pmisThree {
@@ -614,8 +579,7 @@ li.pmisThree {
     color: #0d4563;
     font-size: 20px;
     line-height: 1.2;
-}
-
+} 
 li.pmisOne {
     background-position: 0 -25px;
 }
@@ -626,14 +590,12 @@ li.pmisTwo {
 
 li.pmisThree {
     background-position: 0 -325px;
-}
-
+} 
 .pmis-child {
     float: right;
     margin-right: 32px;
     clear: both;
-}
-
+} 
 .pmis a.pmis-button,
 .pmis .pmis-button {
     border: 0 none;
@@ -654,172 +616,141 @@ li.pmisThree {
     letter-spacing: 1px;
     padding: 12px 20px;
     text-shadow: 2px 2px 2px rgba(250, 99, 99, 0.97), 2px 2px 1px rgba(50, 77, 57, 0.83);
-}
-
+} 
 .pmis-cta a.pmis-button {
     margin: 30px 0 16px 0;
-}
-
+} 
 .pmis-footnote {
     font-family: PTSans, Arial, Helvetica, sans-serif;
     color: #0d4563;
     font-size: 14px;
     line-height: 1.4;
-}
-
+} 
 .pmis-visible-md {
     display: block;
-}
-
+} 
 .pmis-hidden-md {
     display: none;
 }
  .pmis-visible-sm{display: none;}
+
 /*  // END Put Me In The Story */
 
 
-/* persona  [ personalities mothersday fathersday ] */
 
 
-/* store title design change  added to rich text editor */
-
-#categoryHeaderContainer h1.persona-main-hdr {
-    font-size: 66px;
-    color: #000;
-    line-height: 1;
-    margin-top: 16px;
-}
-
-section#categoryHeaderContainer h2.persona-main-hdr {
-    color: #000;
-    font-family: PTSans, Arial, Helvetica, sans-serif;
-    font-size: 30.5px;
-    line-height: 1;
-    text-align: center;
-    display: block;
-    text-transform: none;
-    margin: 0 0 32px 0;
-}
-
-h2.persona-main-hdr:before,
-h2.persona-main-hdr:after {
-    content: "";
-    border-top: 1px #919190 solid;
-    width: 72px;
-    height: 1px;
-    padding: 5px 0;
-    display: inline-block;
-}
-
-h2.persona-main-hdr:before {
-    margin: 2px 10px 0 auto;
-}
-
-h2.persona-main-hdr:after {
-    margin: 2px auto 0 10px;
-}
-
-.persona-header {
+/* //Smart Gift */
+.smartgiftHero.desktop  {
+    width: 100%; 
     position: relative;
-    h2 {
-        margin: 8px 125px 8px 0;
-        font-family: milo;
-        font-size: 36px;
-        line-height: 1;
-        font-weight: normal;
-        border: 0px red dotted;
-    }
+    background-color: #f5f5f7; 
+    line-height: 0;
+}
+.smartgiftHero.desktop img{max-width: 100%; }
+
+.desktop .smartgiftHeroContent {
+    position: absolute; 
+    top:28%; /* 113px; */
+    width:51.30769230769231rem; /* 677px; */
 }
 
-.persona-header-cta {
+.desktop .smartgiftHeroContent {  
+    font-family: Lato,sans-serif;
+    font-weight: 400; 
+    font-size: 1.25rem; /* 16.25px; */
+    line-height: 1.5;
+}
+.smartgiftHeroContent sup {top:-0.25em;}
+.desktop .smartgiftHeroBrow { 
+    color: #8f806b;
+    letter-spacing: 4px; 
+}
+.desktop .smartgiftHeroHdr {
+    font-family: Poynter,Georgia,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.23rem; /* 42px; */ 
+    letter-spacing: -.3px;
+    line-height: 1;
+    color: #21285d;
+    margin: 28px 0 29px;
+}
+.desktop .smartgiftHerohdrCopy {  
+    color: #21282d;
+    letter-spacing: 0;
+}
+
+/* Sub header */
+.smartgifth2 {margin:29px 0 33px 0;}
+header.smartgifth2 h2 {
+    font-family: Poynter,Georgia,serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#525b5b;
+}
+
+/* How it works steps */
+.smartgifttable {display: table; margin:0 0 54px 0;}
+.smartgiftSteps {
+    margin-left:8px;
+    padding: 23px 23px 27px 23px; 
+    background-color: #eeeeed; 
+    width:33%;
+    display: table-cell;
+    border-left: 8px #fff solid;
+} 
+.smartgiftSteps:last-of-type { border-right: 8px #fff solid;}
+.smartgiftStep {
+    font-family: Poynter,Georgia,serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5.25rem; /* 68px;  */  
+    line-height:.85;
+    color: #21282d; 
+    float:left; 
+}
+.smartgiftStepCopy {
+    font-family: Lato,sans-serif;
+    font-weight: 400; 
+    /*  font-size: 1.23rem; */
+    letter-spacing: 0;
+    line-height: 1.5;
+    color:#353535;
     display: block;
-    border: 1px #000 solid;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 8px 16px;
-    margin-bottom: 9px;
-    font-size: 14px;
-    color: #000;
+    margin-left:55px;
+ }
+ .smartgiftStepCopy h3{
+    font-family: Poynter,Georgia,serif;
+    font-weight: 600; 
+    font-size: 1.23rem; /* 16px; */
+    color: #21282d; 
+    margin-bottom:4px;
+ }
+ .smartgiftCTA {margin-bottom:48px;}
+ .smartgiftlegal{color:#515b5b;margin-top:33px;}
+
+ .smartgiftinstructions{
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color:#666;
+    max-width: 900px;
+    padding:0 20px;
+    margin: 0 auto 33px;
 }
 
-.persona {
-    margin-bottom: 43px;
-    min-height: 134px;
-    &:last-of-type {
-        margin-bottom: 20px;
-    }
-    figure {
-        font-size: 0;
-        line-height: 0;
-    }
-    img {
-        width: 100%;
-    }
-    a {
-        display: block;
-    }
-    a:hover {
-        text-decoration: none;
-    }
-    a:focus {
-        outline: 1px dashed #000;
-    }
-}
-
-.persona-header-gcbanner {
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 318px;
-    h2 {
-        margin: 22px 0 4px 0;
-        font-size: 26.29px;
-        line-height: 1;
-        font-weight: normal;
-    }
-}
-
-.persona-header-gc-copy {
-    font-size: 18.78px;
-    color: #000;
-}
-
-.persona-header-gc-cta {
-    font-size: 14.08px;
-    text-transform: uppercase;
-    color: #000;
-    display: block;
-    &:before {
-        content: "";
-        display: block;
-        border-top: 1px #000 solid;
-        width: 25px;
-        height: 1px;
-        margin: 11px auto;
-    }
-}
-
-.persona-gcbanner {
-    height: 136px;
-    max-width: 964px;
-    margin: 0 auto;
-    position: relative;
-    &.mom {
-        background: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2016/mothersday/MothersDay_Pod6.jpg) no-repeat top right;
-    }
-}
+.smartgiftinstructions .smartgifth2 {margin-bottom:15px;}
+ 
+ 
+/* //Smart Gift   */
 
 
-/* // end persona  */
 
 
 /* jsonGridItem -- result list from json array -- black-friday-signed-editions */
  
-
- 
-  
-
 #jsonGridItems {}
 
 .jsonGridItem {
@@ -863,6 +794,223 @@ h2.persona-main-hdr:after {
     line-height: 1.2;
     margin: 0;
 }
+
+
+
+
+
+
+
+/* black friday signed editions */
+#jsonBFSignedEditions{overflow: hidden;}
+.desktop.main-content.container {padding:0; } /* place on page */
+.signedEdIntroCopy{
+    font-size:1.695rem;
+    color:#000;
+    text-align: center;
+    padding:8px 1px 7px;
+    overflow: hidden;
+} 
+.bfSignedEdHero{ background-color: #202020; }
+.bfSignedEdHero img { width:100%; }  
+.bfSignedEdHero,.bfSignedEdHero h1 {position: relative;font-size: 0; line-height: 0; padding-top: 0;text-align: center;}  
+
+/* 
+    .bfSignedEdHeroContent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center; 
+        z-index: 2;  
+        padding-top:37px;
+        color: #fff; 
+        .brow{ 
+            height:50px;
+            margin-bottom:1.73rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+                 font-family: Authenia,sans-serif;
+            font-size: 3.07rem;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -2px;
+            font-style: normal;
+            text-transform: none;
+            padding: 0 15px;
+
+        }
+        .hdr {
+            font-size: 5.385rem; 
+            font-weight: 600;  
+            letter-spacing: 0.108rem;
+            line-height: 1; 
+            text-transform: uppercase;
+            span{
+                display: block;
+                font-size: 1.6rem; 
+                font-weight: 400; 
+                line-height: 1.75; 
+            }
+        } 
+        .note {
+            font-size:1.6rem;  
+            font-weight: 400; 
+            line-height: 1.65;
+            letter-spacing: .14rem;
+            margin-top: 2rem; 
+
+        } 
+    }
+ */
+
+
+.bfAuthorSectionLinksHdr {
+    font-size:1.36rem; /*   18.5px  */
+    line-height: 1.7;
+    color: #21282d;
+}
+
+.bfAuthorSectionLinks{
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.bfAuthorSectionLinks li{
+     display: inline-block;    
+    list-style: none;
+      margin: 0; 
+    text-align: center;
+    font-size: 1.31rem;  /* 17px; */
+    color:#ccc;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;  
+}
+ 
+.authorSectionLink {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    color:#21282d;
+    font-size: 1.31rem;  /* 17px; */
+    border: 1px transparent solid;
+} 
+.authorSectionLink.active {
+    border-color: #21282d;
+} 
+a.authorSectionLink:hover {
+    border-color: #ccc;
+    text-decoration: underline;
+} 
+a.authorSectionLink:focus {
+    border-color: #21282d;
+    text-decoration: none;
+} 
+/*
+zzz:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+*/ 
+
+.bfSignedEdContent{
+
+    padding: 13px 60px 0;  
+
+    .jsonGridItem {
+        display: none;
+        float: left;
+        position: relative;
+        width: 122px;
+        margin: 0 12.5px 0 16px;
+        font-size: 15px; 
+    }
+    .jsonGridItem.active {
+        display: block;
+    }
+    .jsonGridImage {
+        height: 200px;
+        position: relative;
+        width: 116px; 
+    }
+
+    .jsonGridDetails {
+        height: 103px; /* 125 */
+        position: relative; 
+    }
+    .jsonGridTitle {
+        color: #21282d;
+        font-size: 13px;
+        line-height: 1.2;
+        margin: 0;
+    }
+    .jsonGridContributor {
+        font-size: 12px;
+        color: #737373;
+        line-height: 1.2;
+        margin: 7px 0 4px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+.bfStoreLocator{
+    height: 52px;
+    text-align: center;
+    border-top: 1px #000 solid;
+    border-bottom: 1px #000 solid;
+    margin-bottom: 25px;
+    overflow: hidden;
+
+}
+ .bfStoreLocatorlink  { 
+    font-family: Lato,Arial,sans-serif;
+    font-size:1.152rem;   /* 15px; */
+    color:#000;
+    padding: 18px 20px 19px;
+    margin: 0 auto 25px;
+    width: 180px;
+    clear: left;
+}
+ .bfStoreLocatorlink:hover{
+    color: #3d6db5;
+ }
+ .bfStoreLocatorlink::before {
+    content: "";
+    padding: 7px;
+    margin-right: 8px;
+    background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/occasion/2017/blck-friday-signed-editions/Storelocator_icon-Sprite_2x.png?v=2) no-repeat;
+    background-position: 1px 5px;    
+    background-size: 26px 22px; 
+    vertical-align: middle; 
+}
+  .bfStoreLocatorlink:hover::before { 
+    background-position: -13px 5px;     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*  sticky nav */
