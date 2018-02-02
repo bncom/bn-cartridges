@@ -2,7 +2,7 @@
 
 
 
-    // Utilities... 
+    // Utilities...
 
     // retrieve querystring params
     var BNgetQSParams = function (sParam) {
@@ -73,7 +73,7 @@
 
     //var tomorrowsDate = new Date();
     //   add a day to the date
-    //tomorrowsDate.setDate(tomorrowsDate.getDate() + 1); 
+    //tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 
     // format the date to display
     var twoDigitMonth = todaysDate.getMonth() + 1;
@@ -102,10 +102,10 @@
     };
 
 
-    $(function () { //document.ready   
+    $(function () { //document.ready
 
 
-        // load adaptive images 
+        // load adaptive images
         var winWidth = $(window).width();
         if (winWidth > 1279) {
             loadRWDimg('data-img-src-desktop');
@@ -121,7 +121,7 @@
         if (URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com") {
             isMobile = true;
         }
-        if (isMobile) { // ***  Applies to Mobile Only  ***  
+        if (isMobile) { // ***  Applies to Mobile Only  ***
             $('body').addClass('isMobile');
 
             // identify Series pages:
@@ -130,7 +130,7 @@
                 $('h2.index-heading').addClass('rule');
             }
 
-            // event carousel for mobile 
+            // event carousel for mobile
             var initCarouFredSelect = function (cfg) {
                 // check for carousels
                 var carousels = $(cfg.selector),
@@ -268,7 +268,7 @@
 
             // ***  End Mobile Only  ***
         } else {
-            // ***  start desktop Only  *** 
+            // ***  start desktop Only  ***
 
             // Event Info pods AND Event Carousel
             var startAt = null;
@@ -360,7 +360,7 @@
             }
 
             if ($('.lt-ie9').length) {
-                // Alt Image load for IE8 that doesn't support document.getElementsByClassName();  
+                // Alt Image load for IE8 that doesn't support document.getElementsByClassName();
                 loadRWDimg('data-img-src-lt-ie9');
             }
 
@@ -374,7 +374,7 @@
 
 
 
-        // r17 Textbooks Desktop Search funtionality  
+        // r17 Textbooks Desktop Search funtionality
         if ($('form#r17TextBookSearch.DT').length) {
             $("#r17TextBookSearch.DT #siteSearch").keypress(function (event) {
                 if (event.which === 13) {
@@ -383,7 +383,7 @@
                         txtBookQuickSearch();
                     });
                     txtBookQuickSearch = function () {
-                        var submitval = ($.trim($('#r17TextBookSearch.DT #siteSearch').val()).replace(/[\W]/g, "+")); //encodeURIComponent    
+                        var submitval = ($.trim($('#r17TextBookSearch.DT #siteSearch').val()).replace(/[\W]/g, "+")); //encodeURIComponent
                         var actionval = location.protocol + "//" + location.hostname + "/s/" + submitval + "/_/N-8q9";
                         r17_txtSearchDT.attr('action', actionval);
                         r17_txtSearchDT.attr('method', 'get');
@@ -392,14 +392,14 @@
             });
         }
 
-        // r17 Textbooks Mobile Search funtionality  
+        // r17 Textbooks Mobile Search funtionality
         if ($('form#r17TextBookSearch.MP').length) {
             var r17_txtSearchMP = $('form#r17TextBookSearch.MP');
             r17_txtSearchMP.submit(function () {
                 txtBookQuickSearch();
             });
             txtBookQuickSearch = function () {
-                var submitval = ($.trim($('#r17TextBookSearch.MP #siteSearch').val()).replace(/[\W]/g, "+")); //encodeURIComponent    
+                var submitval = ($.trim($('#r17TextBookSearch.MP #siteSearch').val()).replace(/[\W]/g, "+")); //encodeURIComponent
                 var actionval = location.protocol + "//" + location.hostname + "/s/" + submitval + "/_/N-8q9";
                 r17_txtSearchMP.attr('action', actionval);
                 r17_txtSearchMP.attr('method', 'get');
@@ -421,14 +421,14 @@
         }
 
 
-        // Textbooks Search funtionality  *** PRE r17 Search *** 
+        // Textbooks Search funtionality  *** PRE r17 Search ***
         if ($('form#cqTextBookSearch').length) {
             var txtSearch = $('form#cqTextBookSearch');
             txtSearch.submit(function () {
                 txtBookQuickSearch();
             });
             txtBookQuickSearch = function () {
-                var submitval = ($.trim($('#searchTextBookBar').val()).replace(/[\W]/g, "+")); //encodeURIComponent	
+                var submitval = ($.trim($('#searchTextBookBar').val()).replace(/[\W]/g, "+")); //encodeURIComponent
                 var actionval = location.protocol + "//" + location.hostname + "/s/" + submitval + "/_/N-8q9";
                 txtSearch.attr('action', actionval);
                 txtSearch.attr('method', 'get');
@@ -441,13 +441,13 @@
                 //$(".cqTextBookSearch-isbn-sample").toggle();
                 var isbnLink = $(".cqTextBookSearch-isbn-link");
                 var isVisible = $(".cqTextBookSearch-isbn-sample").is(":visible");
-                // var isVisible = $(".cqTextBookSearch-isbn-sample").is(":visible"); 
+                // var isVisible = $(".cqTextBookSearch-isbn-sample").is(":visible");
                 // if (!isVisible) {
                 //     $(".cqTextBookSearch-isbn-link").addClass('active');
                 // } else {
                 // 	$(".cqTextBookSearch-isbn-link").removeClass('active');
                 // 	//$("#searchTextBookBar").focus();
-                // } 
+                // }
 
                 var el = $(this);
                 if (el.hasClass('active')) {
@@ -466,7 +466,7 @@
             //    	return false;
             //         if($(this+":focus")){alert('"focus');}
             //         	//$(this).fadeOut();
-            //         // $("#searchTextBookBar").focus();}  
+            //         // $("#searchTextBookBar").focus();}
             // });
 
         }
@@ -479,11 +479,11 @@
             $.each(jsonGridItems, function (i) { // console.log(i); loop through each array line
                 var count = i + 1;
                 var promoIsCurrent = true;
-                if (count > 0) { // isolate this array line's items  
-                    var ean = this.ean; // regular edition 
+                if (count > 0) { // isolate this array line's items
+                    var ean = this.ean; // regular edition
                     var title = this.title.trim();
                     var contributor = this.contributor.trim();
-                    //console.log(seTitle.length) 
+                    //console.log(seTitle.length)
                     var characterMaxLength = 50; // maximum number of characters to extract
                     var titleDisplayed = title;
                     if (title.length > characterMaxLength) {
@@ -493,7 +493,7 @@
                         //re-trim if we are in the middle of a word
                         trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
                         titleDisplayed = trimmedString + extHellip;
-                        // $(this).text(trimmedString); 
+                        // $(this).text(trimmedString);
                         // $(this).append(extHellip);
                     }
 
@@ -508,7 +508,7 @@
 
 
         // BlackFriday Signed Editions 2017
-        // Confirm dom wrapper to write to AND array are available! then... 
+        // Confirm dom wrapper to write to AND array are available! then...
         if ($('#jsonBFSignedEditions').length && (typeof jsonSignedEditions !== "undefined")) {
 
             var insertAlphaNav = ($('#bfAuthorNavPrimary').length > 0);
@@ -519,8 +519,8 @@
                 // });
                 // $.each(jsonGridItems, function(i) { // console.log(i); loop through each array line
 
-                if (count >= 0) { // isolate this array line's items  
-                    var ean = i.ean; // regular edition 
+                if (count >= 0) { // isolate this array line's items
+                    var ean = i.ean; // regular edition
                     var title = i.title.trim();
                     var contributor = i.contributor.trim();
 
@@ -534,10 +534,10 @@
                             sectionTarget = 'id="' + sectionName + '"';
                             $('#bfAuthorNavPrimary li[data-section=' + sectionName + ']').html(sectionLink);
                             $('#bfAuthorNavSecondary li[data-section=' + sectionName + ']').html(sectionLink);
-                            //$('#jsonGridItemsNavList').append(sectionLink);    
+                            //$('#jsonGridItemsNavList').append(sectionLink);
                         }
                     }
-                    //console.log(seTitle.length) 
+                    //console.log(seTitle.length)
                     var characterMaxLength = 50; // maximum number of characters to extract
                     var titleDisplayed = title;
                     if (title.length > characterMaxLength) {
@@ -547,7 +547,7 @@
                         //re-trim if we are in the middle of a word
                         trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
                         titleDisplayed = trimmedString + extHellip;
-                        // $(this).text(trimmedString); 
+                        // $(this).text(trimmedString);
                         // $(this).append(extHellip);
                     }
 
@@ -624,20 +624,20 @@
 
 
 
-        // NOOK Device pricing 
+        // NOOK Device pricing
         if ($('#compare').length || $('.comp-price').length || $('#nook-device-price').length) {
             $.ajax({
-                //   url: "http://localhost:3000/HTML/gs/nook/web-services/nook-device.json?format=json", 
+                //   url: "http://localhost:3000/HTML/gs/nook/web-services/nook-device.json?format=json",
                 url: "//" + window.location.host + "/web-services/nook-devices?format=json",
                 type: "GET",
                 dataType: "text",
                 success: function (xjson) {
-                    //data downloaded so we call parseJSON function  
-                    var json = $.parseJSON(xjson); //now json variable contains data in json format 
+                    //data downloaded so we call parseJSON function
+                    var json = $.parseJSON(xjson); //now json variable contains data in json format
                     /* possible future data points */
-                    // var collectionTitle = json.mainContent[0].title;  
-                    // var seeAllLink = json.mainContent[0].seeAllLinkUrl;  
-                    // var seeAllLinkText = json.mainContent[0].seeAllLinkText;  
+                    // var collectionTitle = json.mainContent[0].title;
+                    // var seeAllLink = json.mainContent[0].seeAllLinkUrl;
+                    // var seeAllLinkText = json.mainContent[0].seeAllLinkText;
                     $.each(json.mainContent[0].records, function (i) {
                         //console.log(i);
                         if (i < 20) {
@@ -648,13 +648,13 @@
                             pdpSalePrice = Math.round(pdpSalePrice * 100) / 100;
                             var pdpPctSave = this.attributes.P_Percentage_Save;
                             /* possible future data points */
-                            // var pdpTitle = this.attributes.P_Display_Name; 
+                            // var pdpTitle = this.attributes.P_Display_Name;
                             // var imageURL = "http://prodimage.images-bn.com/pimages/"+this.attributes.P_Image_Url;
                             // var pdpURL = "/w/"+this.attributes.P_SEO_Keywords+"/"+this.attributes["sku.workId"]+"?ean="+this.attributes["common.id"];
                             // var imageURL = "http://prodimage.images-bn.com/pimages/"+this.attributes.P_Image_Url;
                             $("[data-bnprice='" + ean + "']").each(function () {
                                 if ($(this).parent().hasClass("comp-price")) {
-                                    // if comparison page  or show list & bnprice 
+                                    // if comparison page  or show list & bnprice
                                     if (pdpSalePrice < pdpListPrice) {
                                         $(this).html('<s>$' + pdpListPrice + '</s>');
                                         $(this).next().html('$' + pdpSalePrice);
@@ -689,7 +689,7 @@
                 //console.log(i);
                 var count = i + 1;
                 var promoIsCurrent = true;
-                if (count < 30) { // isolate this array line's items 	
+                if (count < 30) { // isolate this array line's items
                     var promoType = this.promoType.trim();
                     var promoStore = this.promoStore.trim();
                     var promoTitle = this.promoTitle.trim();
@@ -699,7 +699,7 @@
                     var promoExp = "";
                     if (promoExpSrc.length > 1) {
                         promoExp = "Expires&nbsp;" + promoExpSrc;
-                        // lets compare Expiration date with today's date 
+                        // lets compare Expiration date with today's date
                         var splitDate = promoExpSrc.split("/");
                         if (splitDate[2].length === 2) {
                             splitDate[2] = 20 + splitDate[2];
@@ -723,7 +723,7 @@
                         // 	<div class="coupn-promo-item">
                         // 	<p class="coupn-promo-hdr">'+promoStore+'</p>
                         // 	<p class="coupn-promo-title">'+promoTitle+'</p>
-                        // 	<p class="coupn-promo-copy">'+promoCopy+'</p>. 
+                        // 	<p class="coupn-promo-copy">'+promoCopy+'</p>.
                         // 	<p class="coupn-promo-legalize">'+promoExp+'</p>
                         // 	</div>
                         // 	<div class="coupn-promo-cta"><span class="cq-bttn">Shop Now</span></div></a></div>');
@@ -776,8 +776,8 @@
         // Contributor functionality
 
         var sectionLinkContainer = $('<div id="sectionLinkContainer"></div>');
-        $('.author-series-indexes--contributor h2.index-heading, .author-series-indexes--contributor .index-grid').hide();
-        $('.author-series-indexes--contributor h2.index-heading').each(function (i, val) {
+        $('.isMobile .author-series-indexes--contributor h2.index-heading,.isMobile  .author-series-indexes--contributor .index-grid').hide();
+        $('.isMobile .author-series-indexes--contributor h2.index-heading').each(function (i, val) {
             var sectionName = $(this).text();
             //$(this).attr("id", 'header'+sectionName);
             $(this.nextElementSibling).attr("id", 'header' + sectionName);
@@ -806,18 +806,18 @@
         });
 
 
-    }); // END Document ready  
+    }); // END Document ready
 
 
 
 
 
-    // $(window).load(function(){  
+    // $(window).load(function(){
 
 
 
 
-    // }); 
+    // });
 
 
 
