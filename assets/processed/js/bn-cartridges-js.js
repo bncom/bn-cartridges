@@ -792,16 +792,14 @@
 
         //Discover Categories functionality
 
-        $(".genre-index-refinements--discover-categories .index-grid").hide();
-        var baseHeaders = document.getElementsByClassName('.genre-index-refinements--discover-categories h2.index-heading');
-        var headerContentGrid = document.getElementsByClassName('.genre-index-refinements--discover-categories h2.index-grid');
-        var numBaseHeaders = baseHeaders.length;
-        var numheaderContentGrid = headerContentGrid.length;
-        for (var i = 0; i < numBaseHeaders; i += 1) {
-            baseHeaders[i].addEventListener('click', discoverContentGrid, false);
-            /*headerContentGrid[i].addClass("index-grid", function(0,"indexGrid") );*/
-        }
-        $(".genre-index-refinements--discover-categories h2.index-heading").text(function () {
+        $(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();
+        $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").show();
+
+        $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").click(function() {
+            $(this).next(".isMobile .genre-index-refinements--discover-categories div.index-grid").slideToggle();
+            $(this).toggleClass("active");
+        });
+        $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").text(function () {
             return $(this).text().replace(/\bDiscover \b/, "");
         });
 
@@ -839,15 +837,3 @@ function discoverContentGrid() {
     $(this).addClass("active");
     this.nextElementSibling.style.display = "block";
 }
-
-// Discover Categories accordion
-
-$(document).ready(function() {
-    $(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();
-    $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").show();
-
-    $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").click(function() {
-        $(this).next(".isMobile .genre-index-refinements--discover-categories div.index-grid").slideToggle();
-        $(this).toggleClass("active");
-    });
-});
