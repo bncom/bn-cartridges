@@ -847,7 +847,7 @@ $(document).ready(function() {
     $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").show();
 
     $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").click(function() {
-        $(this).next(".genre-index-refinements--discover-categories div.index-grid").slideToggle();
+        $(this).next(".isMobile .genre-index-refinements--discover-categories div.index-grid").slideToggle();
         $(this).toggleClass("active");
     });
 });
