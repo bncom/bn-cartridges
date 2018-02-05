@@ -839,3 +839,15 @@ function discoverContentGrid() {
     $(this).addClass("active");
     this.nextElementSibling.style.display = "block";
 }
+
+// Discover Categories accordion
+
+$(document).ready(function() {
+    $(".genre-index-refinements--discover-categories div.index-grid").hide();
+    $(".genre-index-refinements--discover-categories h2.index-heading").show();
+
+    $(".genre-index-refinements--discover-categories h2.index-heading").click(function() {
+        $(this).next(".genre-index-refinements--discover-categories div.index-grid").slideToggle();
+        $(this).toggleClass("active");
+    });
+});

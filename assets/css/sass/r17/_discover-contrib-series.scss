@@ -91,70 +91,75 @@
 /* Discover Category */
 
 .container.genre-index-refinements--discover-categories  {
-        max-width: 1024px;
-        padding: 0;
-        margin-bottom: 0 !important;
-        margin-top: 40px;
-    }
+    max-width: 1024px;
+    padding: 0;
+    margin-bottom: 0 !important;
+    margin-top: 40px;
+}
 
-    .genre-index-refinements--discover-categories h2.index-heading {
-        float: left;
-        width: 100%;
-        box-sizing: border-box;
-        border-bottom: 1px solid #d0d4d5;
-        height: 56px;
-        padding: 17px 0px 0px 20px !important;
-        font-family: GillSansMTPro-Medium;
-        font-size: 16px;
-        color: rgb(0, 38, 18);
-        position: relative;
-        background: rgb(224, 224, 224);
-        outline: 0px;
-        transition: all 0.1s linear 0.1s;
-        line-height: 1.8;
-    	display: inline-block;
-    }
+.genre-index-refinements--discover-categories h2.index-heading {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d0d4d5;
+    height: 56px;
+    padding: 17px 0px 0px 20px !important;
+    font-family: GillSansMTPro-Medium;
+    font-size: 16px;
+    color: rgb(0, 38, 18);
+    position: relative;
+    background: rgb(224, 224, 224);
+    outline: 0px;
+    transition: all 0.1s linear 0.1s;
+    line-height: 1.8;
+	display: inline-block;
+}
 
-    .genre-index-refinements--discover-categories .index-grid {
-        display: none;
-    }
-    .genre-index-refinements--discover-categories .index-heading {
-        margin: 0;
-    }
-    .genre-index-refinements--discover-categories .index-grid .col ul li {
-    	flex-basis: 100%;
-    }
-    .genre-index-refinements--discover-categories .index-grid .col ul li a {
-    	padding-left: 0;
-    }
-    .genre-index-refinements--discover-categories .index-grid {
-      padding: .75rem .75rem 3.25rem 1.6rem;
-      border-bottom: 1px solid #d0d4d5;
-    }
-    .genre-index-refinements--discover-categories h2.index-heading:first-of-type {
-    	border-top: 1px solid #d0d4d5;
-    }
-    .genre-index-refinements--discover-categories h2.index-heading.active {
-    	background-color: #ffffff;
-    	border-bottom: none;
-    }
-	.genre-index-refinements--discover-categories h2:after {
-		float: right;
-		margin-right: 15px;
-		user-select: none;
-		width: 21px;
-		height: 21px;
-		background-image: url(//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201801050221p/img/pdp_selected_2x.png);
-		background-size: 189px 81px;
-		background-repeat: no-repeat;
-		background-position: -22px 0px;
-		display: inline-block;
-		background-color: transparent;
-        content: "";
-	}
-	.genre-index-refinements--discover-categories h2.active:after {
-		background-position: -43px 0px;
-	}
+.genre-index-refinements--discover-categories .index-grid {
+    display: none;
+}
+.genre-index-refinements--discover-categories .index-heading {
+    margin: 0;
+}
+.genre-index-refinements--discover-categories .index-grid .col ul li {
+	flex-basis: 100%;
+}
+.genre-index-refinements--discover-categories .index-grid .col ul li a {
+	padding-left: 0;
+}
+.genre-index-refinements--discover-categories .index-grid {
+    padding: .75rem .75rem 3.25rem 1.6rem;
+    border-bottom: 1px solid #d0d4d5;
+}
+.genre-index-refinements--discover-categories h2.index-heading:first-of-type {
+	border-top: 1px solid #d0d4d5;
+}
+.genre-index-refinements--discover-categories h2.index-heading.active {
+	background-color: #ffffff;
+	border-bottom: none;
+}
+.genre-index-refinements--discover-categories h2:after {
+	float: right;
+	margin-right: 15px;
+	user-select: none;
+	width: 21px;
+	height: 21px;
+	background-image: url(//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201801050221p/img/pdp_selected_2x.png);
+	background-size: 189px 81px;
+	background-repeat: no-repeat;
+	background-position: -22px 0px;
+	display: inline-block;
+	background-color: transparent;
+    content: "";
+}
+.genre-index-refinements--discover-categories h2.active:after {
+	background-position: -43px 0px;
+}
+
+.isMobile .genre-index-refinements--discover-categories .index-grid .col ul {
+    text-align: left;
+}
+
 // Slick Featured Categories - Pages: Dicover Categories / Series / Author
 .slick-feat-cat {
     h3 {
