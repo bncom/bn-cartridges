@@ -783,7 +783,7 @@
             $(this.nextElementSibling).attr("id", 'header' + sectionName);
             //console.log(sectionName);
             var aPos = i + 1;
-            var sectionLink = '<a role="menuitem" aria-setsize="" aria-posinset="' + aPos + '" href="#header' + sectionName + '" onClick="contribGridContents(header' + sectionName + ')" class="authorSectionLink" tabindex="0">' + sectionName + '</a>';
+            var sectionLink = '<a role="menuitem" aria-setsize="" aria-posinset="' + aPos + '" href="#header' + sectionName + '" onClick="contribGridContents(header' + sectionName + ', false)" class="authorSectionLink" tabindex="0">' + sectionName + '</a>';
             sectionLinkContainer.append(sectionLink);
         });
 
@@ -826,9 +826,10 @@
 //Contributor onClick
 
 function contribGridContents(x) {
+    event.preventDefault();
     $(".index-grid").hide();
     x.style.display = "block";
-};
+}
 
 function discoverContentGrid() {
     /*console.log(this.innerText);
@@ -837,4 +838,4 @@ function discoverContentGrid() {
     $("h2.index-heading").removeClass("active");
     $(this).addClass("active");
     this.nextElementSibling.style.display = "block";
-};
+}
