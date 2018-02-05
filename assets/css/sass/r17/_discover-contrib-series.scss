@@ -90,14 +90,14 @@
 
 /* Discover Category */
 
-.container.genre-index-refinements--discover-categories  {
+.isMobile .container.genre-index-refinements--discover-categories  {
     max-width: 1024px;
     padding: 0;
     margin-bottom: 0 !important;
     margin-top: 40px;
 }
 
-.genre-index-refinements--discover-categories h2.index-heading {
+.isMobile .genre-index-refinements--discover-categories h2.index-heading {
     float: left;
     width: 100%;
     box-sizing: border-box;
@@ -115,30 +115,30 @@
 	display: inline-block;
 }
 
-.genre-index-refinements--discover-categories .index-grid {
+.isMobile .genre-index-refinements--discover-categories .index-grid {
     display: none;
 }
-.genre-index-refinements--discover-categories .index-heading {
+.isMobile .genre-index-refinements--discover-categories .index-heading {
     margin: 0;
 }
-.genre-index-refinements--discover-categories .index-grid .col ul li {
+.isMobile .genre-index-refinements--discover-categories .index-grid .col ul li {
 	flex-basis: 100%;
 }
-.genre-index-refinements--discover-categories .index-grid .col ul li a {
+.isMobile .genre-index-refinements--discover-categories .index-grid .col ul li a {
 	padding-left: 0;
 }
-.genre-index-refinements--discover-categories .index-grid {
+.isMobile .genre-index-refinements--discover-categories .index-grid {
     padding: .75rem .75rem 3.25rem 1.6rem;
     border-bottom: 1px solid #d0d4d5;
 }
-.genre-index-refinements--discover-categories h2.index-heading:first-of-type {
+.isMobile .genre-index-refinements--discover-categories h2.index-heading:first-of-type {
 	border-top: 1px solid #d0d4d5;
 }
-.genre-index-refinements--discover-categories h2.index-heading.active {
+.isMobile .genre-index-refinements--discover-categories h2.index-heading.active {
 	background-color: #ffffff;
 	border-bottom: none;
 }
-.genre-index-refinements--discover-categories h2:after {
+.isMobile .genre-index-refinements--discover-categories h2:after {
 	float: right;
 	margin-right: 15px;
 	user-select: none;
@@ -152,7 +152,7 @@
 	background-color: transparent;
     content: "";
 }
-.genre-index-refinements--discover-categories h2.active:after {
+.isMobile .genre-index-refinements--discover-categories h2.active:after {
 	background-position: -43px 0px;
 }
 
