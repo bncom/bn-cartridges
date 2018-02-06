@@ -253,9 +253,10 @@
             });
             $('a.mf-cta').off(); // unbind cta links just in case
 
-            // This call the slick function in Featured Categories - Pages: Dicover Categories / Series / Author
+            // BEGIN slick function in FEATURED CATEGORIES - Pages: Dicover Categories / Series / Author
             $('.row.featured-link-container .clearfix').remove();
             $('.row.featured-link-container').addClass('slick-feat-cat');
+            $('.slick-feat-cat .genre-tile-footer p').removeClass('genre-tile-caption');
             $('.slick-feat-cat').slick({
                 dots: true,
                 arrows: false,
@@ -265,7 +266,8 @@
                 respondTo: 'window',
                 infinite: false
             });
-
+            // END Slick for FEATURED CATEGORIES
+            
             // ***  End Mobile Only  ***
         } else {
             // ***  start desktop Only  ***
