@@ -56,41 +56,47 @@
 .author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
 
 /* Contributor Page */
+
 .isMobile #sectionLinkContainer {
-	font-size: 17px;
-	color: #ccc;
-	text-align: center;
-	margin-bottom: 30px;
+    font-size: 17px;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 30px;
 }
+
 .isMobile .authorSectionLink {
-	width: 42px;
-	text-align: center;
-	padding: 10px 0;
-	color: #21282d;
-  border: 1px solid white;
+    width: 42px;
+    text-align: center;
+    padding: 10px 0;
+    color: #21282d;
+    border: 1px solid white;
 }
-.isMobile .authorSectionLink:hover, .isMobile a.authorSectionLink.active {
-	width: 42px;
-	text-align: center;
-	padding: 10px 0;
-	color: #21282d;
-  border: 1px solid #21282d;
-  text-decoration: none;
+
+.isMobile .authorSectionLink:hover,
+.isMobile a.authorSectionLink.active {
+    width: 42px;
+    text-align: center;
+    padding: 10px 0;
+    color: #21282d;
+    border: 1px solid #21282d;
+    text-decoration: none;
 }
+
 .isMobile .index-grid .col ul {
-  font-size: 14px;
-	margin-bottom: .75rem;
-	width: 100%;
-	display: block;
-  display: block;
-	-webkit-flex-wrap: unset;
-	flex-flow: unset;
-  text-align: center
+    font-size: 14px;
+    margin-bottom: .75rem;
+    width: 100%;
+    display: block;
+    display: block;
+    -webkit-flex-wrap: unset;
+    flex-flow: unset;
+    text-align: center
 }
+
 
 /* Discover Category */
 
-.isMobile .container.genre-index-refinements--discover-categories  {
+.isMobile .container.genre-index-refinements--discover-categories {
     max-width: 1024px;
     padding: 0;
     margin-bottom: 0 !important;
@@ -112,48 +118,56 @@
     outline: 0px;
     transition: all 0.1s linear 0.1s;
     line-height: 1.8;
-	display: inline-block;
+    display: inline-block;
 }
 
 .isMobile .genre-index-refinements--discover-categories .index-grid {
     display: none;
 }
+
 .isMobile .genre-index-refinements--discover-categories .index-heading {
     margin: 0;
 }
+
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul li {
-	flex-basis: 100%;
+    flex-basis: 100%;
 }
+
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul li a {
-	padding-left: 0;
+    padding-left: 0;
 }
+
 .isMobile .genre-index-refinements--discover-categories .index-grid {
     padding: .75rem .75rem 3.25rem 4.6rem;
     border-bottom: 1px solid #d0d4d5;
 }
+
 .isMobile .genre-index-refinements--discover-categories h2.index-heading:first-of-type {
-	border-top: 1px solid #d0d4d5;
+    border-top: 1px solid #d0d4d5;
 }
+
 .isMobile .genre-index-refinements--discover-categories h2.index-heading.active {
-	background-color: #ffffff;
-	border-bottom: none;
+    background-color: #ffffff;
+    border-bottom: none;
 }
+
 .isMobile .genre-index-refinements--discover-categories h2:after {
-	float: right;
-	margin-right: 15px;
-	user-select: none;
-	width: 21px;
-	height: 21px;
-	background-image: url(//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201801050221p/img/pdp_selected_2x.png);
-	background-size: 189px 81px;
-	background-repeat: no-repeat;
-	background-position: -22px 0px;
-	display: inline-block;
-	background-color: transparent;
+    float: right;
+    margin-right: 15px;
+    user-select: none;
+    width: 21px;
+    height: 21px;
+    background-image: url(//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201801050221p/img/pdp_selected_2x.png);
+    background-size: 189px 81px;
+    background-repeat: no-repeat;
+    background-position: -22px 0px;
+    display: inline-block;
+    background-color: transparent;
     content: "";
 }
+
 .isMobile .genre-index-refinements--discover-categories h2.active:after {
-	background-position: -43px 0px;
+    background-position: -43px 0px;
 }
 
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul {
@@ -161,7 +175,6 @@
 }
 
 // Slick Featured Categories - Pages: Dicover Categories / Series / Authors
-
 .slick-feat-cat {
     overflow: hidden;
     h3 {
@@ -202,17 +215,17 @@
         }
 
         li button {
-             font-size: 0;
-        line-height: 0;
-        display: block;
-        width: 20px;
-        height: 20px;
-        padding: 5px;
-        cursor: pointer;
-        color: transparent;
-        border: 0;
-        outline: none;
-        background: transparent;
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
         }
 
         li button:hover {
@@ -221,20 +234,20 @@
         }
 
         li button:before {
-         font-family: 'slick';
-        font-size: 60px;
-        line-height: 20px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        content: '•';
-        text-align: center;
-        opacity: .25;
-        color: black;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+            font-family: 'slick';
+            font-size: 60px;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: '•';
+            text-align: center;
+            opacity: .25;
+            color: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         li.slick-active button:before {
