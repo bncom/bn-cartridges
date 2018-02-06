@@ -69,7 +69,7 @@
 	color: #21282d;
   border: 1px solid white;
 }
-.isMobile .authorSectionLink:hover {
+.isMobile .authorSectionLink:hover, .isMobile a.authorSectionLink.active {
 	width: 42px;
 	text-align: center;
 	padding: 10px 0;

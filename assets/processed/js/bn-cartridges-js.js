@@ -267,7 +267,7 @@
                 infinite: false
             });
             // END Slick for FEATURED CATEGORIES
-            
+
             // ***  End Mobile Only  ***
         } else {
             // ***  start desktop Only  ***
@@ -790,6 +790,11 @@
         });
 
         $('.isMobile section.container.mb-xxxl').prepend(sectionLinkContainer);
+
+        $(".authorSectionLink").click(function() {
+            $(".authorSectionLink").removeClass("active");
+            $(this).toggleClass("active");
+        });
 
 
         //Discover Categories functionality
