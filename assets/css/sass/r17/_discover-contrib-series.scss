@@ -160,8 +160,10 @@
     text-align: left;
 }
 
-// Slick Featured Categories - Pages: Dicover Categories / Series / Author
+// Slick Featured Categories - Pages: Dicover Categories / Series / Authors
+
 .slick-feat-cat {
+    overflow: hidden;
     h3 {
         font-size: 15px;
     }
@@ -189,7 +191,7 @@
             position: relative;
             display: inline-block;
             width: 20px;
-            s height: 20px;
+            height: 20px;
             margin: 0 5px;
             padding: 0;
             cursor: pointer;
@@ -200,18 +202,17 @@
         }
 
         li button {
-            font-size: 0;
-            line-height: 0;
-            display: block;
-            width: 10px;
-            height: 10px;
-            padding: 5px;
-            cursor: pointer;
-            color: transparent;
-            border: 0;
-            outline: none;
-            background: gray;
-            border-radius: 50%;
+             font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
         }
 
         li button:hover {
@@ -220,20 +221,20 @@
         }
 
         li button:before {
-            font-family: 'slick';
-            font-size: 6px;
-            line-height: 20px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            content: '•';
-            text-align: center;
-            opacity: .25;
-            color: black;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+         font-family: 'slick';
+        font-size: 60px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        opacity: .25;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         }
 
         li.slick-active button:before {
@@ -253,7 +254,6 @@
         display: none;
         visibility: hidden;
     }
-
     .clearfix.slick-slide {
         display: none;
         visibility: hidden;
