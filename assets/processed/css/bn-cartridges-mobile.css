@@ -6527,8 +6527,11 @@ header .text--subheader {
   font-size: 19px;
 }
 .slick-feat-cat .genre-tile-footer {
+  text-align: center;
+  margin-top: 0px;
+  padding: 0 25px 30px;
   font-size: 16px;
-  height: 150px;
+  min-height: 150px;
 }
 .slick-feat-cat .slick-dots {
   /*    position: inherit;*/
@@ -6588,11 +6591,6 @@ header .text--subheader {
 .slick-feat-cat .slick-dots li.slick-active button:before {
   opacity: .75;
   color: black;
-}
-.slick-feat-cat .genre-tile-footer {
-  text-align: center;
-  margin-top: 0px;
-  padding: 0 25px 30px;
 }
 .slick-feat-cat .clearfix.slick-slide,
 .slick-feat-cat .clearfix:before.slick-slide {

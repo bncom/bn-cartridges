@@ -185,9 +185,12 @@
         font-size: 19px;
     }
 
-    .genre-tile-footer {
+      .genre-tile-footer {
+        text-align: center;
+        margin-top: 0px;
+        padding: 0 25px 30px;
         font-size: 16px;
-        height: 150px;
+        min-height: 150px;
     }
 
     .slick-dots {
@@ -256,11 +259,7 @@
         }
     }
 
-    .genre-tile-footer {
-        text-align: center;
-        margin-top: 0px;
-        padding: 0 25px 30px;
-    }
+  
 
     .clearfix.slick-slide,
     .clearfix:before.slick-slide {
