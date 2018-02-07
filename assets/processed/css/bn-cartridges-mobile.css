@@ -6490,11 +6490,6 @@ header .text--subheader {
   /* position: relative; */
 }
 
-.isMobile section.author-image-carousel {
-  height: auto;
-  width: auto;
-}
-
 .isMobile .container {
   width: auto;
   overflow-x: scroll;
