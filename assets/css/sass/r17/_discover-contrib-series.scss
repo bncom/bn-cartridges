@@ -173,6 +173,13 @@
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul {
     text-align: left;
 }
+.isMobile #main-content .main-content.container h2 {
+    font-size: 22px;
+}
+.isMobile #main-content .main-content.container h2.rule:after,
+.isMobile #main-content .main-content.container h2.rule:before {
+    display: block !important;
+}
 
 // Slick Featured Categories - Pages: Dicover Categories / Series / Authors
 .slick-feat-cat {
