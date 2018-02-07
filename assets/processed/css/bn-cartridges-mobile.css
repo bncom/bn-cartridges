@@ -5269,6 +5269,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 @media only screen and (max-width: 699px) {
   .html {
     /* NOOK Comparison */
+    /* NOOK in Business */
   }
   .html .n-comp-2015 .n-comp-scroll .module-bn {
     width: 100%;
@@ -5282,6 +5283,17 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   }
   .html .main-content .n-comp-2015 [class*=btn] {
     padding: 10px;
+  }
+  .html #main-content div#copy-block {
+    font-size: 14.5px;
+    padding: 0 20px;
+    line-height: 1.5;
+  }
+  .html #main-content div#copy-block h3 {
+    font-size: 18.5px;
+  }
+  .html #main-content div#copy-block a {
+    line-height: 1.5;
   }
 }
 
@@ -6436,6 +6448,56 @@ header .text--subheader {
   -webkit-flex-wrap: unset;
   flex-flow: unset;
   text-align: center;
+}
+
+/* Popular Authors carousel */
+.isMobile h2.rule {
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  margin: 20px 0 0px 0;
+  padding: 0 0 0 21px;
+  box-sizing: border-box;
+  width: calc(100% - 20px);
+  display: block;
+  line-height: unset;
+  height: unset;
+}
+
+.isMobile .author-image-carousel .carousel.init {
+  overflow-x: scroll;
+  height: auto;
+  /* float: left; */
+  /* opacity: 1; */
+  /* width: 100%; */
+  /* flex-direction: row; */
+  width: auto;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.isMobile .product-shelf-tile {
+  width: 135px;
+  padding: 0;
+  margin: 0;
+  /* float: left; */
+  /* display: table-cell; */
+  font-size: 14px;
+  vertical-align: bottom;
+  /* position: relative; */
+}
+
+.isMobile section.author-image-carousel {
+  height: auto;
+  width: auto;
+}
+
+.isMobile .container {
+  width: auto;
+  overflow-x: scroll;
 }
 
 /* Discover Category */

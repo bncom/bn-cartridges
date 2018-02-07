@@ -777,6 +777,8 @@
 
         // Contributor functionality
 
+        $('.isMobile .author-image-carousel .carousel').slick('unslick');
+
         var sectionLinkContainer = $('<div id="sectionLinkContainer"></div>');
         $('.isMobile .author-series-indexes--contributor h2.index-heading, .isMobile .author-series-indexes--contributor .index-grid').hide();
         $('.isMobile .author-series-indexes--contributor h2.index-heading').each(function (i, val) {
@@ -798,6 +800,9 @@
             $(this).toggleClass("active");
         });
 
+        /* Popular Authors carousel */
+
+        $('.isMobile .author-image-carousel .carousel').slick('unslick');
 
         //Discover Categories functionality
 
