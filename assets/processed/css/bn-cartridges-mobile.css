@@ -6517,6 +6517,15 @@ header .text--subheader {
   text-align: left;
 }
 
+.isMobile #main-content .main-content.container h2 {
+  font-size: 22px;
+}
+
+.isMobile #main-content .main-content.container h2.rule:after,
+.isMobile #main-content .main-content.container h2.rule:before {
+  display: block !important;
+}
+
 .slick-feat-cat {
   overflow: hidden;
 }
@@ -6542,6 +6551,7 @@ header .text--subheader {
   text-align: center;
   z-index: 2;
   bottom: 0px;
+  height: 30px;
 }
 .slick-feat-cat .slick-dots li {
   position: relative;

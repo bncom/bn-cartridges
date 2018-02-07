@@ -209,6 +209,7 @@
         text-align: center;
         z-index: 2;
         bottom: 0px;
+        height: 30px;
 
         li {
             position: relative;
@@ -265,8 +266,6 @@
             color: black;
         }
     }
-
-  
 
     .clearfix.slick-slide,
     .clearfix:before.slick-slide {
