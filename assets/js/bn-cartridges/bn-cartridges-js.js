@@ -790,6 +790,7 @@
         });
 
         $('.isMobile section.container.mb-xxxl').prepend(sectionLinkContainer);
+        $('.isMobile #headerA').toggle();
 
         $(".authorSectionLink").click(function() {
             $(".authorSectionLink").removeClass("active");
