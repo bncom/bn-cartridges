@@ -6670,3 +6670,7 @@ header .text--subheader {
 .series-detail .about-series {
   padding: 0px;
 }
+
+.author-hero-product-shelf .product-shelf-tile.product-shelf-tile-book {
+  widows: 245px;
+}
