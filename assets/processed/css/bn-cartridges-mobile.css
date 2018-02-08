@@ -6409,6 +6409,7 @@ header .text--subheader {
 .mobileSeries .author-series-indexes--series .rule:after,
 .mobileSeries .author-series-indexes--series .rule:before {
   display: block !important;
+  background: none;
 }
 
 /*.author-series-indexes--series .rule:not(.index-heading):after,
@@ -6488,11 +6489,6 @@ header .text--subheader {
   font-size: 14px;
   vertical-align: bottom;
   /* position: relative; */
-}
-
-.isMobile .container {
-  width: auto;
-  overflow-x: scroll;
 }
 
 /* Discover Category */

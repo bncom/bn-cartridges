@@ -39,6 +39,7 @@
     list-style: none;
 }
 
+
 .mobileSeries .author-series-indexes--series .index-grid .col ul li a {
     padding: 10px 20px;
     font-size: 16px;
@@ -50,6 +51,7 @@
 .mobileSeries .author-series-indexes--series .rule:after,
 .mobileSeries .author-series-indexes--series .rule:before {
     display: block !important;
+    background: none;
 }
 
 /*.author-series-indexes--series .rule:not(.index-heading):after,
@@ -135,10 +137,6 @@
     /* position: relative; */
 }
 
-.isMobile .container {
-    width: auto;
-    overflow-x: scroll;
-}
 
 /* Discover Category */
 
