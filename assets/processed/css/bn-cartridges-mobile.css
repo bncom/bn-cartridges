@@ -6581,6 +6581,7 @@ header .text--subheader {
 .isMobile #main-content .main-content.container h2.rule:after,
 .isMobile #main-content .main-content.container h2.rule:before {
   display: block !important;
+  background: none;
 }
 
 .slick-feat-cat {
@@ -6665,4 +6666,11 @@ header .text--subheader {
 .slick-feat-cat .clearfix.slick-slide {
   display: none;
   visibility: hidden;
+}
+
+.series-detail .author-header {
+  widows: 100%;
+}
+.series-detail .about-series {
+  padding: 0px;
 }

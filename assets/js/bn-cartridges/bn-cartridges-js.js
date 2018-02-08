@@ -267,6 +267,9 @@
                 infinite: false
             });
             // END Slick for FEATURED CATEGORIES
+            
+            // BEGIN Discover Record Spotlight
+             $('.discoverFeaturedBook').slick('unslick');
 
             // ***  End Mobile Only  ***
         } else {

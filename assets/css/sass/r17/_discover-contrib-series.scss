@@ -225,6 +225,7 @@
 .isMobile #main-content .main-content.container h2.rule:after,
 .isMobile #main-content .main-content.container h2.rule:before {
     display: block !important;
+    background: none;
 }
 
 // Slick Featured Categories - Pages: Dicover Categories / Series / Authors
@@ -319,5 +320,15 @@
     .clearfix.slick-slide {
         display: none;
         visibility: hidden;
+    }
+}
+
+// Recover Discover Record Spotlight
+.series-detail {
+    .author-header{
+        widows: 100%;
+    }
+    .about-series{
+        padding: 0px;
     }
 }
