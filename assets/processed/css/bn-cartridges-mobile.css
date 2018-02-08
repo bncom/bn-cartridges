@@ -6490,11 +6490,6 @@ header .text--subheader {
   /* position: relative; */
 }
 
-.isMobile .container {
-  width: auto;
-  overflow-x: scroll;
-}
-
 /* Discover Category */
 .isMobile .container.genre-index-refinements--discover-categories {
   max-width: 1024px;
