@@ -6538,7 +6538,7 @@ header .text--subheader {
 .slick-feat-cat .genre-tile-footer {
   text-align: center;
   margin-top: 0px;
-  padding: 0 25px 30px;
+  padding: 0 25px 25px;
   font-size: 16px;
   min-height: 150px;
 }
@@ -6551,7 +6551,6 @@ header .text--subheader {
   text-align: center;
   z-index: 2;
   bottom: 0px;
-  height: 30px;
 }
 .slick-feat-cat .slick-dots li {
   position: relative;
@@ -6579,7 +6578,6 @@ header .text--subheader {
   background: transparent;
 }
 .slick-feat-cat .slick-dots li button:hover {
-  border: #000 1px solid;
   background: white;
 }
 .slick-feat-cat .slick-dots li button:before {
