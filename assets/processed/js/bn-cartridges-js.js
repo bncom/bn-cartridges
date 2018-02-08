@@ -798,6 +798,9 @@
             $(this).toggleClass("active");
         });
 
+        /* Popular Authors carousel */
+
+        $('.isMobile .author-image-carousel .carousel').slick('unslick');
 
         //Discover Categories functionality
 

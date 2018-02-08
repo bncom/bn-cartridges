@@ -93,6 +93,52 @@
     text-align: center
 }
 
+/* Popular Authors carousel */
+
+.isMobile h2.rule {
+    font-size:24px;
+    text-align: center;
+    position: relative;
+    margin: 20px 0 0px 0;
+    padding: 0 0 0 21px;
+    box-sizing: border-box;
+    width: calc(100% - 20px);
+    display: block;
+    line-height: unset;
+    height: unset;
+}
+
+
+.isMobile .author-image-carousel .carousel.init {
+    overflow-x: scroll;
+    height: auto;
+    /* float: left; */
+    /* opacity: 1; */
+    /* width: 100%; */
+    /* flex-direction: row; */
+    width: auto;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.isMobile .product-shelf-tile {
+    width: 135px;
+    padding: 0;
+    margin: 0;
+    /* float: left; */
+    /* display: table-cell; */
+    font-size: 14px;
+    vertical-align: bottom;
+    /* position: relative; */
+}
+
+.isMobile .container {
+    width: auto;
+    overflow-x: scroll;
+}
 
 /* Discover Category */
 
@@ -265,7 +311,6 @@
             color: black;
         }
     }
-
     .clearfix.slick-slide,
     .clearfix:before.slick-slide {
         display: none;
