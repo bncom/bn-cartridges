@@ -223,6 +223,9 @@ h2.rule:after, h2.rule:before {
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul {
     text-align: left;
 }
+.isMobile .genre-index-refinements--discover-categories section {
+    overflow: hidden;
+}
 .isMobile #main-content .main-content.container h2 {
     font-size: 22px;
 }
