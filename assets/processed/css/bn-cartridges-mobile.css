@@ -5539,11 +5539,6 @@ section .editorial-collection .align-horizontal.row .col-lg-8 .product-shelf-inf
   }
 }
 
-.rule:after,
-.rule:before {
-  display: none;
-}
-
 .record-spotlight-title a {
   font-family: PoynterOSDisp-Semibold, Poynter;
   color: #010101;
@@ -6360,6 +6355,11 @@ header .text--subheader {
 }
 
 /* *** Discover - Contributor - Series pages 2018 *** */
+/* Container */
+.isMobile .container {
+  padding: 0 20px;
+}
+
 /* SERIES List */
 .isMobile.mobileSeries .container {
   max-width: 100%;
@@ -6454,15 +6454,6 @@ header .text--subheader {
 /* Popular Authors carousel */
 .isMobile h2.rule {
   font-size: 24px;
-  text-align: center;
-  position: relative;
-  margin: 20px 0 0px 0;
-  padding: 0 0 0 21px;
-  box-sizing: border-box;
-  width: calc(100% - 20px);
-  display: block;
-  line-height: unset;
-  height: unset;
 }
 
 .isMobile .author-image-carousel .carousel.init {
@@ -6577,9 +6568,9 @@ header .text--subheader {
 .isMobile #main-content .main-content.container h2.rule:after,
 .isMobile #main-content .main-content.container h2.rule:before {
   display: block !important;
-  background: none;
 }
 
+/* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
 .slick-feat-cat {
   overflow: hidden;
 }
@@ -6597,7 +6588,6 @@ header .text--subheader {
   min-height: 150px;
 }
 .slick-feat-cat .slick-dots {
-  /*    position: inherit;*/
   display: block;
   width: 100%;
   padding: 0;
@@ -6664,13 +6654,18 @@ header .text--subheader {
   visibility: hidden;
 }
 
+heder {
+  text-align: center;
+  width: 100%;
+}
+
 .series-detail .author-header {
-  widows: 100%;
+  width: 100%;
 }
 .series-detail .about-series {
-  padding: 0px;
+  padding: 0px !important s;
 }
 
 .author-hero-product-shelf .product-shelf-tile.product-shelf-tile-book {
-  widows: 245px;
+  width: 245px !important;
 }

@@ -1,3 +1,7 @@
+/* Container */
+.isMobile .container{
+    padding: 0 20px;
+}
 /* SERIES List */
 
 .isMobile.mobileSeries .container {
@@ -98,16 +102,16 @@
 /* Popular Authors carousel */
 
 .isMobile h2.rule {
-    font-size:24px;
-    text-align: center;
-    position: relative;
-    margin: 20px 0 0px 0;
-    padding: 0 0 0 21px;
-    box-sizing: border-box;
-    width: calc(100% - 20px);
-    display: block;
-    line-height: unset;
-    height: unset;
+    font-size: 24px;
+//    text-align: center;
+//    position: relative;
+//    margin: 20px 0 0px 0;
+//    padding: 0 0 0 21px;
+//    box-sizing: border-box;
+//    width: calc(100% - 20px);
+//    display: block;
+//    line-height: unset;
+//    height: unset;
 }
 
 
@@ -223,10 +227,9 @@
 .isMobile #main-content .main-content.container h2.rule:after,
 .isMobile #main-content .main-content.container h2.rule:before {
     display: block !important;
-    background: none;
 }
 
-// Slick Featured Categories - Pages: Dicover Categories / Series / Authors
+/* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
 .slick-feat-cat {
     overflow: hidden;
     h3 {
@@ -246,7 +249,6 @@
     }
 
     .slick-dots {
-        /*    position: inherit;*/
         display: block;
         width: 100%;
         padding: 0;
@@ -284,7 +286,6 @@
         }
 
         li button:hover {
-//            border: #000 1px solid;
             background: white;
         }
 
@@ -321,17 +322,22 @@
     }
 }
 
-// Recover Discover Record Spotlight
-.series-detail {
+// Recover Record Spotlight
+heder{
+    text-align: center;
+    width: 100%;
+}
+     .series-detail {
     .author-header{
-        widows: 100%;
+        width: 100%;
     }
     .about-series{
-        padding: 0px;
+        padding: 0px !importants;
     }
 }
 .author-hero-product-shelf{
+   
     .product-shelf-tile.product-shelf-tile-book{
-        widows: 245px;
+        width: 245px !important;
     }
 }
