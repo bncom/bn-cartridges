@@ -1,12 +1,16 @@
 /* Container */
-.isMobile .container{
+
+.isMobile .container {
     padding: 0 20px;
 }
-h2.rule:after, h2.rule:before {
+
+h2.rule:after,
+h2.rule:before {
     display: block;
 }
- 
+
 /* SERIES List */
+
 .isMobile.mobileSeries .container {
     max-width: 100%;
 }
@@ -104,16 +108,15 @@ h2.rule:after, h2.rule:before {
 /* Popular Authors carousel */
 
 .isMobile h2.rule {
-    font-size: 24px;
-//    text-align: center;
-//    position: relative;
-//    margin: 20px 0 0px 0;
-//    padding: 0 0 0 21px;
-//    box-sizing: border-box;
-//    width: calc(100% - 20px);
-//    display: block;
-//    line-height: unset;
-//    height: unset;
+    font-size: 24px; //    text-align: center;
+    //    position: relative;
+    //    margin: 20px 0 0px 0;
+    //    padding: 0 0 0 21px;
+    //    box-sizing: border-box;
+    //    width: calc(100% - 20px);
+    //    display: block;
+    //    line-height: unset;
+    //    height: unset;
 }
 
 
@@ -223,123 +226,148 @@ h2.rule:after, h2.rule:before {
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul {
     text-align: left;
 }
+
 .isMobile #main-content .main-content.container h2 {
     font-size: 22px;
 }
+
 .isMobile #main-content .main-content.container h2.rule:after,
 .isMobile #main-content .main-content.container h2.rule:before {
     display: block !important;
 }
 
 /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
-.slick-feat-cat {
-    overflow: hidden;
-    h3 {
-        font-size: 15px;
-    }
 
-    h4 {
-        font-size: 19px;
-    }
-
-      .genre-tile-footer {
-        text-align: center;
-        margin-top: 0px;
-        padding: 0 25px 25px;
-        font-size: 16px;
-        min-height: 150px;
-    }
-
-    .slick-dots {
-        display: block;
-        width: 100%;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        z-index: 2;
-        bottom: 0px;
-
-        li {
-            position: relative;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin: 0 5px;
-            padding: 0;
-            cursor: pointer;
+.isMobile {
+    .slick-feat-cat {
+        overflow: hidden;
+        h3 {
+            font-size: 15px;
         }
 
-        li:last-child {
-            display: none;
+        h4 {
+            font-size: 19px;
         }
 
-        li button {
-            font-size: 0;
-            line-height: 0;
-            display: block;
-            width: 20px;
-            height: 20px;
-            padding: 5px;
-            cursor: pointer;
-            color: transparent;
-            border: 0;
-            outline: none;
-            background: transparent;
-        }
-
-        li button:hover {
-            background: white;
-        }
-
-        li button:before {
-            font-family: 'slick';
-            font-size: 60px;
-            line-height: 20px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            content: '•';
+        .genre-tile-footer {
             text-align: center;
-            opacity: .25;
-            color: black;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            margin-top: 0px;
+            padding: 0 25px 25px;
+            font-size: 16px;
+            min-height: 150px;
         }
 
-        li.slick-active button:before {
-            opacity: .75;
-            color: black;
+        .slick-dots {
+            display: block;
+            width: 100%;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            z-index: 2;
+            bottom: 0px;
+
+            li {
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+                padding: 0;
+                cursor: pointer;
+            }
+
+            li:last-child {
+                display: none;
+            }
+
+            li button {
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+            }
+
+            li button:hover {
+                background: white;
+            }
+
+            li button:before {
+                font-family: 'slick';
+                font-size: 60px;
+                line-height: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                content: '•';
+                text-align: center;
+                opacity: .25;
+                color: black;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            li.slick-active button:before {
+                opacity: .75;
+                color: black;
+            }
+        }
+        .clearfix.slick-slide,
+        .clearfix:before.slick-slide {
+            display: none;
+            visibility: hidden;
+        }
+        .clearfix.slick-slide {
+            display: none;
+            visibility: hidden;
         }
     }
-    .clearfix.slick-slide,
-    .clearfix:before.slick-slide {
-        display: none;
-        visibility: hidden;
-    }
-    .clearfix.slick-slide {
-        display: none;
-        visibility: hidden;
-    }
-}
 
-// Recover Record Spotlight
-heder{
-    text-align: center;
-    width: 100%;
-}
-     .series-detail {
-    .author-header{
+    // Recover Record Spotlight
+    .series-detail .author-header {
         width: 100%;
+        .author-header__details {
+            font-size: 15px;
+            p {
+                padding: 0px !important;
+                font-size: 16px !important;
+            }
+        }
     }
-    .about-series{
-        padding: 0px !importants;
-    }
-}
-.author-hero-product-shelf{
-   
-    .product-shelf-tile.product-shelf-tile-book{
-        width: 245px !important;
+
+
+    .author-hero-product-shelf {
+        .discoverFeaturedBook {
+            width: 100%;
+            padding: 0px;
+            .product-shelf-tile {
+                width: 215px !important;
+                .product-image-container {
+                    float: left;
+                    width: 190px;
+                    .product-shelf-image-cont {
+                        max-height: none !important;
+                        max-width: initial
+                    }
+                }
+            }
+            .product-shelf-image {
+                max-width: initial;
+                a img {
+                    max-width: 200px !important;
+                    float: left;
+                    width: 100%;
+                    max-height: none !important;
+                }
+            }
+        }
     }
 }

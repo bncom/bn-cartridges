@@ -1722,7 +1722,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .pmis-samplet-next-item,
 .html .pmis-samplet-prev-item {
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
   height: 25px;
@@ -1771,7 +1771,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 23px 0 28px;
 }
 .html .pmis-steps::before {
-  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
   top: 25px;
   content: "";
   display: block;
@@ -1781,7 +1781,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   width: 100%;
 }
 .html .pmis-steps::after {
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
   content: "";
   display: block;
   height: 6px;
@@ -1810,7 +1810,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
@@ -2268,7 +2268,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   bottom: 0px;
 }
 .html .bnapp-hero .itunes-icon {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
   float: left;
   height: 33px;
   margin: 2px 0 0 20px;
@@ -2285,7 +2285,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-rendering: optimizelegibility;
 }
 .html .bnapp-button {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
   clear: both;
   height: 41px;
   margin: 0 auto;
@@ -2302,7 +2302,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-button-small {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
   clear: both;
   float: left;
   height: 41px;
@@ -2319,11 +2319,11 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-categories .module-bn {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
   padding: 3% 0;
 }
 .html h2.bnapp-hdr-standard {
-  background: transparent url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
+  background: rgba(0, 0, 0, 0) url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
   letter-spacing: 0.5px;
   margin: 0 auto;
   text-align: center;
@@ -2359,14 +2359,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   line-height: 24px;
 }
 .html .bnapp-sbs {
-  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
   min-height: 232px;
   overflow: hidden;
 }
 .html .bnapp-sbs .bg-body-right {
-  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
   float: right;
   height: 17px;
   width: 202px;
@@ -3397,7 +3397,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -3413,7 +3413,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -3760,7 +3760,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -4005,7 +4005,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -4021,7 +4021,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -4444,7 +4444,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -6321,7 +6321,7 @@ header .text--subheader {
 .promo-item-name .arrow:after {
   content: "";
   display: block;
-  background: transparent url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
+  background: rgba(0, 0, 0, 0) url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
   height: 17px;
   white-space: nowrap;
   width: 11px;
@@ -6360,7 +6360,8 @@ header .text--subheader {
   padding: 0 20px;
 }
 
-h2.rule:after, h2.rule:before {
+h2.rule:after,
+h2.rule:before {
   display: block;
 }
 
@@ -6574,23 +6575,23 @@ h2.rule:after, h2.rule:before {
 }
 
 /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
-.slick-feat-cat {
+.isMobile .slick-feat-cat {
   overflow: hidden;
 }
-.slick-feat-cat h3 {
+.isMobile .slick-feat-cat h3 {
   font-size: 15px;
 }
-.slick-feat-cat h4 {
+.isMobile .slick-feat-cat h4 {
   font-size: 19px;
 }
-.slick-feat-cat .genre-tile-footer {
+.isMobile .slick-feat-cat .genre-tile-footer {
   text-align: center;
   margin-top: 0px;
   padding: 0 25px 25px;
   font-size: 16px;
   min-height: 150px;
 }
-.slick-feat-cat .slick-dots {
+.isMobile .slick-feat-cat .slick-dots {
   display: block;
   width: 100%;
   padding: 0;
@@ -6599,7 +6600,7 @@ h2.rule:after, h2.rule:before {
   z-index: 2;
   bottom: 0px;
 }
-.slick-feat-cat .slick-dots li {
+.isMobile .slick-feat-cat .slick-dots li {
   position: relative;
   display: inline-block;
   width: 20px;
@@ -6608,10 +6609,10 @@ h2.rule:after, h2.rule:before {
   padding: 0;
   cursor: pointer;
 }
-.slick-feat-cat .slick-dots li:last-child {
+.isMobile .slick-feat-cat .slick-dots li:last-child {
   display: none;
 }
-.slick-feat-cat .slick-dots li button {
+.isMobile .slick-feat-cat .slick-dots li button {
   font-size: 0;
   line-height: 0;
   display: block;
@@ -6624,10 +6625,10 @@ h2.rule:after, h2.rule:before {
   outline: none;
   background: transparent;
 }
-.slick-feat-cat .slick-dots li button:hover {
+.isMobile .slick-feat-cat .slick-dots li button:hover {
   background: white;
 }
-.slick-feat-cat .slick-dots li button:before {
+.isMobile .slick-feat-cat .slick-dots li button:before {
   font-family: 'slick';
   font-size: 60px;
   line-height: 20px;
@@ -6643,32 +6644,50 @@ h2.rule:after, h2.rule:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.slick-feat-cat .slick-dots li.slick-active button:before {
+.isMobile .slick-feat-cat .slick-dots li.slick-active button:before {
   opacity: .75;
   color: black;
 }
-.slick-feat-cat .clearfix.slick-slide,
-.slick-feat-cat .clearfix:before.slick-slide {
+.isMobile .slick-feat-cat .clearfix.slick-slide,
+.isMobile .slick-feat-cat .clearfix:before.slick-slide {
   display: none;
   visibility: hidden;
 }
-.slick-feat-cat .clearfix.slick-slide {
+.isMobile .slick-feat-cat .clearfix.slick-slide {
   display: none;
   visibility: hidden;
 }
-
-heder {
-  text-align: center;
+.isMobile .series-detail .author-header {
   width: 100%;
 }
-
-.series-detail .author-header {
+.isMobile .series-detail .author-header .author-header__details {
+  font-size: 15px;
+}
+.isMobile .series-detail .author-header .author-header__details p {
+  padding: 0px !important;
+  font-size: 16px !important;
+}
+.isMobile .author-hero-product-shelf .discoverFeaturedBook {
   width: 100%;
+  padding: 0px;
 }
-.series-detail .about-series {
-  padding: 0px !important s;
+.isMobile .author-hero-product-shelf .discoverFeaturedBook .product-shelf-tile {
+  width: 215px !important;
 }
-
-.author-hero-product-shelf .product-shelf-tile.product-shelf-tile-book {
-  width: 245px !important;
+.isMobile .author-hero-product-shelf .discoverFeaturedBook .product-shelf-tile .product-image-container {
+  float: left;
+  width: 190px;
+}
+.isMobile .author-hero-product-shelf .discoverFeaturedBook .product-shelf-tile .product-image-container .product-shelf-image-cont {
+  max-height: none !important;
+  max-width: initial;
+}
+.isMobile .author-hero-product-shelf .discoverFeaturedBook .product-shelf-image {
+  max-width: initial;
+}
+.isMobile .author-hero-product-shelf .discoverFeaturedBook .product-shelf-image a img {
+  max-width: 200px !important;
+  float: left;
+  width: 100%;
+  max-height: none !important;
 }
