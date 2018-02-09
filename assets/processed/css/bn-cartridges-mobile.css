@@ -5284,15 +5284,15 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   .html .main-content .n-comp-2015 [class*=btn] {
     padding: 10px;
   }
-  .html #main-content div#copy-block {
+  .html .html-embed-container div#copy-block {
     font-size: 14.5px;
     padding: 0 20px;
     line-height: 1.5;
   }
-  .html #main-content div#copy-block h3 {
+  .html .html-embed-container div#copy-block h3 {
     font-size: 18.5px;
   }
-  .html #main-content div#copy-block a {
+  .html .html-embed-container div#copy-block a {
     line-height: 1.5;
   }
 }

@@ -273,7 +273,6 @@
             
             // BEGIN Detail Pages
             $('.discoverFeaturedBook').slick('unslick');
-             
             // END Detail Pages
 
             // ***  End Mobile Only  ***
