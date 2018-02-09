@@ -56,4 +56,9 @@
 @import "r17/r17-coupons-deals-mobile"; 
 
 /* *** Discover - Contributor - Series pages 2018 *** */ 
-@import "r17/discover-contrib-series";
+.isMobile {  
+    .mobile-only {
+        display: block !important;
+    }
+    @import "r17/discover-contrib-series";
+}

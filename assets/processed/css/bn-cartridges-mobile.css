@@ -6355,26 +6355,34 @@ header .text--subheader {
 }
 
 /* *** Discover - Contributor - Series pages 2018 *** */
-/* Container */
+.isMobile {
+  /* Container */
+  /* SERIES List */
+  /* adjust main css file *** can be removed after ver-wrte in production *** */
+  /*.author-series-indexes--series .rule:not(.index-heading):after,
+  .author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
+  /* Contributor Page */
+  /* Popular Authors carousel */
+  /* Discover Category */
+  /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
+}
+.isMobile .mobile-only {
+  display: block !important;
+}
 .isMobile .container {
   padding: 0 20px;
 }
-
-h2.rule:after, h2.rule:before {
+.isMobile h2.rule:after, .isMobile h2.rule:before {
   display: block;
 }
-
-/* SERIES List */
 .isMobile.mobileSeries .container {
   max-width: 100%;
 }
-
-.mobileSeries .container.author-series-indexes--series {
+.isMobile.mobileSeries .container.author-series-indexes--series {
   max-width: 100%;
   padding: 0 !important;
 }
-
-.mobileSeries .author-series-indexes--series h2.index-heading {
+.isMobile.mobileSeries .author-series-indexes--series h2.index-heading {
   padding: 0;
   margin: 0 0 15px;
   border-bottom: none;
@@ -6382,49 +6390,34 @@ h2.rule:after, h2.rule:before {
   text-align: center;
   font-size: 24px;
 }
-
-.mobileSeries #searchGrid section h2.index-heading {
+.isMobile.mobileSeries #searchGrid section h2.index-heading {
   padding-left: 0 !important;
   line-height: 0.25 !important;
 }
-
-.mobileSeries .author-series-indexes--series .index-grid {
+.isMobile.mobileSeries .author-series-indexes--series .index-grid {
   padding: 10px 20px;
 }
-
-.mobileSeries .author-series-indexes--series .index-grid .col ul li {
+.isMobile.mobileSeries .author-series-indexes--series .index-grid .col ul li {
   -webkit-flex-basis: 100%;
-  /* 25%; */
   flex-basis: 100%;
-  /* 25%; */
   padding-bottom: 0;
   text-align: center;
-  /* */
   list-style: none;
 }
-
-.mobileSeries .author-series-indexes--series .index-grid .col ul li a {
+.isMobile.mobileSeries .author-series-indexes--series .index-grid .col ul li a {
   padding: 10px 20px;
   font-size: 16px;
   line-height: 1.3;
 }
-
-/* adjust main css file */
-.mobileSeries .author-series-indexes--series .rule:after,
-.mobileSeries .author-series-indexes--series .rule:before {
+.isMobile.mobileSeries .author-series-indexes--series .rule:after, .isMobile.mobileSeries .author-series-indexes--series .rule:before {
   display: block !important;
 }
-
-/*.author-series-indexes--series .rule:not(.index-heading):after,
-.author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
-/* Contributor Page */
 .isMobile #sectionLinkContainer {
   font-size: 17px;
   color: #ccc;
   text-align: center;
   margin-bottom: 30px;
 }
-
 .isMobile .authorSectionLink {
   width: 42px;
   text-align: center;
@@ -6432,7 +6425,6 @@ h2.rule:after, h2.rule:before {
   color: #21282d;
   border: 1px solid white;
 }
-
 .isMobile .authorSectionLink:hover,
 .isMobile a.authorSectionLink.active {
   width: 42px;
@@ -6442,7 +6434,6 @@ h2.rule:after, h2.rule:before {
   border: 1px solid #21282d;
   text-decoration: none;
 }
-
 .isMobile .index-grid .col ul {
   font-size: 14px;
   margin-bottom: .75rem;
@@ -6453,12 +6444,9 @@ h2.rule:after, h2.rule:before {
   flex-flow: unset;
   text-align: center;
 }
-
-/* Popular Authors carousel */
 .isMobile h2.rule {
   font-size: 24px;
 }
-
 .isMobile .author-image-carousel .carousel.init {
   overflow-x: scroll;
   height: auto;
@@ -6473,7 +6461,6 @@ h2.rule:after, h2.rule:before {
   vertical-align: baseline;
   position: relative;
 }
-
 .isMobile .product-shelf-tile {
   width: 135px;
   padding: 0;
@@ -6484,15 +6471,12 @@ h2.rule:after, h2.rule:before {
   vertical-align: bottom;
   /* position: relative; */
 }
-
-/* Discover Category */
 .isMobile .container.genre-index-refinements--discover-categories {
   max-width: 1024px;
   padding: 0;
   margin-bottom: 0 !important;
   margin-top: 40px;
 }
-
 .isMobile .genre-index-refinements--discover-categories h2.index-heading {
   float: left;
   width: 100%;
@@ -6510,37 +6494,29 @@ h2.rule:after, h2.rule:before {
   line-height: 1.8;
   display: inline-block;
 }
-
 .isMobile .genre-index-refinements--discover-categories .index-grid {
   display: none;
 }
-
 .isMobile .genre-index-refinements--discover-categories .index-heading {
   margin: 0;
 }
-
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul li {
   flex-basis: 100%;
 }
-
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul li a {
   padding-left: 0;
 }
-
 .isMobile .genre-index-refinements--discover-categories .index-grid {
   padding: .75rem .75rem 3.25rem 4.6rem;
   border-bottom: 1px solid #d0d4d5;
 }
-
 .isMobile .genre-index-refinements--discover-categories h2.index-heading:first-of-type {
   border-top: 1px solid #d0d4d5;
 }
-
 .isMobile .genre-index-refinements--discover-categories h2.index-heading.active {
   background-color: #ffffff;
   border-bottom: none;
 }
-
 .isMobile .genre-index-refinements--discover-categories h2:after {
   float: right;
   margin-right: 15px;
@@ -6555,42 +6531,39 @@ h2.rule:after, h2.rule:before {
   background-color: transparent;
   content: "";
 }
-
 .isMobile .genre-index-refinements--discover-categories h2.active:after {
   background-position: -43px 0px;
 }
-
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul {
   text-align: left;
 }
-
+.isMobile .genre-index-refinements--discover-categories section {
+  overflow: hidden;
+}
 .isMobile #main-content .main-content.container h2 {
   font-size: 22px;
 }
-
 .isMobile #main-content .main-content.container h2.rule:after,
 .isMobile #main-content .main-content.container h2.rule:before {
   display: block !important;
 }
-
-/* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
-.slick-feat-cat {
+.isMobile .slick-feat-cat {
   overflow: hidden;
 }
-.slick-feat-cat h3 {
+.isMobile .slick-feat-cat h3 {
   font-size: 15px;
 }
-.slick-feat-cat h4 {
+.isMobile .slick-feat-cat h4 {
   font-size: 19px;
 }
-.slick-feat-cat .genre-tile-footer {
+.isMobile .slick-feat-cat .genre-tile-footer {
   text-align: center;
   margin-top: 0px;
   padding: 0 25px 25px;
   font-size: 16px;
   min-height: 150px;
 }
-.slick-feat-cat .slick-dots {
+.isMobile .slick-feat-cat .slick-dots {
   display: block;
   width: 100%;
   padding: 0;
@@ -6599,7 +6572,7 @@ h2.rule:after, h2.rule:before {
   z-index: 2;
   bottom: 0px;
 }
-.slick-feat-cat .slick-dots li {
+.isMobile .slick-feat-cat .slick-dots li {
   position: relative;
   display: inline-block;
   width: 20px;
@@ -6608,10 +6581,10 @@ h2.rule:after, h2.rule:before {
   padding: 0;
   cursor: pointer;
 }
-.slick-feat-cat .slick-dots li:last-child {
+.isMobile .slick-feat-cat .slick-dots li:last-child {
   display: none;
 }
-.slick-feat-cat .slick-dots li button {
+.isMobile .slick-feat-cat .slick-dots li button {
   font-size: 0;
   line-height: 0;
   display: block;
@@ -6624,10 +6597,10 @@ h2.rule:after, h2.rule:before {
   outline: none;
   background: transparent;
 }
-.slick-feat-cat .slick-dots li button:hover {
+.isMobile .slick-feat-cat .slick-dots li button:hover {
   background: white;
 }
-.slick-feat-cat .slick-dots li button:before {
+.isMobile .slick-feat-cat .slick-dots li button:before {
   font-family: 'slick';
   font-size: 60px;
   line-height: 20px;
@@ -6643,32 +6616,29 @@ h2.rule:after, h2.rule:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.slick-feat-cat .slick-dots li.slick-active button:before {
+.isMobile .slick-feat-cat .slick-dots li.slick-active button:before {
   opacity: .75;
   color: black;
 }
-.slick-feat-cat .clearfix.slick-slide,
-.slick-feat-cat .clearfix:before.slick-slide {
+.isMobile .slick-feat-cat .clearfix.slick-slide,
+.isMobile .slick-feat-cat .clearfix:before.slick-slide {
   display: none;
   visibility: hidden;
 }
-.slick-feat-cat .clearfix.slick-slide {
+.isMobile .slick-feat-cat .clearfix.slick-slide {
   display: none;
   visibility: hidden;
 }
-
-heder {
+.isMobile heder {
   text-align: center;
   width: 100%;
 }
-
-.series-detail .author-header {
+.isMobile .series-detail .author-header {
   width: 100%;
 }
-.series-detail .about-series {
+.isMobile .series-detail .about-series {
   padding: 0px !important s;
 }
-
-.author-hero-product-shelf .product-shelf-tile.product-shelf-tile-book {
+.isMobile .author-hero-product-shelf .product-shelf-tile.product-shelf-tile-book {
   width: 245px !important;
 }
