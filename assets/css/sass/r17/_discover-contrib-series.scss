@@ -1,25 +1,13 @@
 /* Container */
-<<<<<<< HEAD
-
-.isMobile .container {
-=======
 .container{
->>>>>>> 7853d4c9c782c59c9ff0e5f3574f61279ed0ea6c
     padding: 0 20px;
 }
-
-h2.rule:after,
-h2.rule:before {
+h2.rule:after, h2.rule:before {
     display: block;
 }
-
+ 
 /* SERIES List */
-<<<<<<< HEAD
-
-.isMobile.mobileSeries .container {
-=======
 &.mobileSeries .container { 
->>>>>>> 7853d4c9c782c59c9ff0e5f3574f61279ed0ea6c
     max-width: 100%;
 }
 
@@ -111,17 +99,17 @@ a.authorSectionLink.active {
 
 /* Popular Authors carousel */
 
-.isMobile h2.rule {
-    font-size: 24px; //    text-align: center;
-    //    position: relative;
-    //    margin: 20px 0 0px 0;
-    //    padding: 0 0 0 21px;
-    //    box-sizing: border-box;
-    //    width: calc(100% - 20px);
-    //    display: block;
-    //    line-height: unset;
-    //    height: unset;
-
+h2.rule {
+    font-size: 24px;
+//    text-align: center;
+//    position: relative;
+//    margin: 20px 0 0px 0;
+//    padding: 0 0 0 21px;
+//    box-sizing: border-box;
+//    width: calc(100% - 20px);
+//    display: block;
+//    line-height: unset;
+//    height: unset;
 }
 
 
@@ -230,13 +218,6 @@ a.authorSectionLink.active {
 .genre-index-refinements--discover-categories .index-grid .col ul {
     text-align: left;
 }
-
-.isMobile #main-content .main-content.container h2 {
-    font-size: 22px;
-}
-
-.isMobile #main-content .main-content.container h2.rule:after,
-.isMobile #main-content .main-content.container h2.rule:before {
 .genre-index-refinements--discover-categories section {
     overflow: hidden;
 }
@@ -249,9 +230,7 @@ a.authorSectionLink.active {
 }
 
 /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
-
-.isMobile {
-    .slick-feat-cat {
+ .slick-feat-cat {
         overflow: hidden;
         h3 {
             font-size: 15px;
@@ -382,4 +361,3 @@ a.authorSectionLink.active {
             }
         }
     }
-}
