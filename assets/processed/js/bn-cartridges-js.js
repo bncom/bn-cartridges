@@ -1,9 +1,12 @@
 (function () {
 
 
+    // Utilities... 
+    if ( window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com" ) {
+        $('head').append('<link rel="stylesheet" type="text/css" href="https://qa-adobe-dispatch.bn-web.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css">');
+    }
 
-    // Utilities...
-
+ 
     // retrieve querystring params
     var BNgetQSParams = function (sParam) {
         var sPageURL = window.location.search.substring(1);
