@@ -6372,7 +6372,8 @@ header .text--subheader {
 .isMobile .container {
   padding: 0 20px;
 }
-.isMobile h2.rule:after, .isMobile h2.rule:before {
+.isMobile h2.rule:after,
+.isMobile h2.rule:before {
   display: block;
 }
 .isMobile.mobileSeries .container {
@@ -6640,8 +6641,14 @@ header .text--subheader {
   font-size: 16px !important;
 }
 .isMobile .author-hero-product-shelf .discoverFeaturedBook {
-  width: 100%;
-  padding: 0px;
+  overflow-x: scroll;
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  vertical-align: baseline;
+  position: relative;
 }
 .isMobile .author-hero-product-shelf .discoverFeaturedBook .product-shelf-tile {
   width: 215px !important;
