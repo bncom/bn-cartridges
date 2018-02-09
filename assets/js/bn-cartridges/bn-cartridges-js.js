@@ -270,6 +270,11 @@
                 infinite: false
             });
             // END Slick for FEATURED CATEGORIES
+            
+            // BEGIN Detail Pages
+            $('.discoverFeaturedBook').slick('unslick');
+             
+            // END Detail Pages
 
             // ***  End Mobile Only  ***
         } else {
