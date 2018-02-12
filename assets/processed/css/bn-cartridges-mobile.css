@@ -6362,6 +6362,7 @@ header .text--subheader {
   /*.author-series-indexes--series .rule:not(.index-heading):after,
   .author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
   /* Contributor Page */
+  /* Tabs */
   /* Popular Authors carousel */
   /* Discover Category */
   /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
@@ -6444,6 +6445,27 @@ header .text--subheader {
   -webkit-flex-wrap: unset;
   flex-flow: unset;
   text-align: center;
+}
+.isMobile .tab-container .tab-list-container .tab-list .tab {
+  font-size: 22px;
+}
+.isMobile .tab-list .tab {
+  font-size: 22px;
+  overflow-x: hidden;
+  background-color: blueviolet;
+}
+.isMobile ul#productInfoTabs {
+  /* background-color: purple; */
+  overflow-x: scroll;
+  width: auto;
+  height: 34px;
+  display: flex;
+}
+.isMobile .tab-container .tabpanels-container {
+  margin: 0 5%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  outline: 0;
 }
 .isMobile h2.rule {
   font-size: 24px;

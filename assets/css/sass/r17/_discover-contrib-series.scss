@@ -102,6 +102,32 @@ a.authorSectionLink.active {
     text-align: center
 }
 
+/* Tabs */
+.tab-container .tab-list-container .tab-list .tab {
+    font-size:22px;
+}
+
+.tab-list .tab {
+    font-size: 22px;
+    overflow-x:hidden;
+    background-color:blueviolet;
+}
+
+ul#productInfoTabs {
+    /* background-color: purple; */
+    overflow-x: scroll;
+    width: auto;
+    height: 34px;
+    display: flex;
+}
+.tab-container .tabpanels-container {
+    margin: 0 5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    outline: 0;
+}
+
+
 /* Popular Authors carousel */
 
 h2.rule {
