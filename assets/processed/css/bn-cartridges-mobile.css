@@ -6452,10 +6452,8 @@ header .text--subheader {
 .isMobile .tab-list .tab {
   font-size: 22px;
   overflow-x: hidden;
-  background-color: blueviolet;
 }
 .isMobile ul#productInfoTabs {
-  /* background-color: purple; */
   overflow-x: scroll;
   width: auto;
   height: 34px;
