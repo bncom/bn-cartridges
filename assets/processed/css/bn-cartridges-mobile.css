@@ -6670,3 +6670,8 @@ header .text--subheader {
   width: 100%;
   max-height: none !important;
 }
+.isMobile .author-hero-product-shelf .discoverFeaturedBook .slick-track.product-shelf-grid {
+  max-width: 670px;
+  margin-top: 20px;
+  widows: auto !important;
+}
