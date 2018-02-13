@@ -6469,7 +6469,7 @@ header .text--subheader {
   background-color: #ccc;
 }
 .isMobile .tab-container .tab-list-container .tab-highlight {
-  display: none;
+  display: none !important;
 }
 .isMobile h2.rule {
   font-size: 24px;
