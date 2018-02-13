@@ -1,0 +1,332 @@
+  .category_info em,
+    .category_info i {
+        font-family: Milo;
+    }
+
+    .st-page-hdr span {
+        background-color: white;
+        padding: 0 20px;
+        font-family: MiloSerifOffcMedium;
+    }
+
+    #cafe_category {
+        width: 970px;
+        margin-top: 4px;
+    }
+
+    .mod8_first {
+        float: left;
+        padding: 0 35px 30px 0;
+    }
+
+    .mod8_third {
+        float: left;
+        padding-bottom: 36px;
+    }
+
+    .mod8_first img,
+    .mod8_second img,
+    .mod8_third img {
+        border: 1px solid #ccc;
+/*        padding: 2px;*/
+        /*        border-radius: 5px;*/
+        width: 298px;
+    }
+
+    .mod8_first img:hover,
+    .mod8_second img:hover,
+    .mod8_third img:hover {
+/*        padding: 2px;*/
+        border: 1px solid #347d56;
+    }
+
+    h1.st-hdr-main,
+    * h1.st-hdr-main {
+        background: url("//img1.imagesbn.com/pImages/cafe/cafe_rule.jpg") no-repeat scroll 0 33px transparent;
+        color: #6A6A69;
+        font-family: MiloSerifOffcMedium, serif !important;
+        font-size: 60px;
+        height: 90px;
+        letter-spacing: -1px;
+        margin: 0;
+        padding-top: 29px;
+        text-align: center;
+        width: 970px;
+        word-spacing: -2px;
+    }
+
+    .page-content-wrapper.l2r>.column+.column {
+        margin-left: 0px;
+    }
+
+    #wifi img,
+    #member img {
+        float: left;
+    }
+
+    #cafe_category {
+        /*        border: 1px solid #ccc;*/
+    }
+
+    #cafe_category img {
+        /*        border: 1px solid #ccc;*/
+    }
+
+    #giftsofnook {
+        height: 324px;
+        overflow: hidden;
+        width: 970px;
+    }
+
+    section.page-content:before,
+    section.page-content:after {
+        display: none;
+    }
+
+    .category_info {
+        background: #000;
+        opacity: .7;
+        color: #FFFFFF;
+        display: -moz-grid;
+        font-size: 17px;
+        height: 36px;
+        margin: 168px 0 0 1px;
+        padding-top: 8px;
+        position: absolute;
+        text-align: center;
+        width: 296px;
+        font-family: poynter, serif;
+        font-weight: 600;
+    }
+
+    .navigation {
+        height: 13px;
+        left: 470px;
+        position: absolute;
+        top: 396px;
+        width: 84px;
+    }
+
+    .navigation a {
+        background: url("//img1.imagesbn.com/pImages/cafe/rotator_off.png") no-repeat scroll 0 0px transparent;
+        display: block;
+        float: left;
+        font-size: 1px;
+        height: 13px;
+        margin: 0 8px 0 0;
+        width: 13px;
+    }
+
+    .navigation a.current {
+        background: url("//img1.imagesbn.com/pImages/cafe/rotator_on.png") no-repeat scroll 0 0px transparent;
+    }
+
+    #storeform {
+        display: block;
+        height: 30px;
+        margin: 73px 0 0 467px;
+        position: absolute;
+        width: 474px;
+    }
+
+    #zip-search-button {
+        background: url("none") no-repeat scroll 0 0 transparent;
+        border: 0 none;
+        cursor: pointer;
+        float: left;
+        height: 38px;
+        left: 341px;
+        position: absolute;
+        text-indent: -9999px;
+        top: -2px;
+        width: 132px;
+    }
+
+    .zip_label {
+        background: none no-repeat scroll 0 0 transparent;
+        color: #888888;
+        display: block;
+        font-family: MiloSerifOffcMedium;
+        font-size: 15px;
+        position: relative;
+        top: 7px;
+    }
+
+    #zip-input {
+        background: none no-repeat scroll 0 0 transparent;
+        border: medium none;
+        color: #888888;
+        display: block;
+        font-size: 15px;
+        height: 26px;
+        width: 336px;
+        position: absolute;
+        box-shadow: none;
+        top: 1px;
+        left: 80px;
+        font-family: Milo;
+    }
+
+    #zip_placeholder {
+        background: none no-repeat scroll 0 0 transparent;
+        color: #888888;
+        display: block;
+        font-family: MiloSerifOffcMedium;
+        font-size: 15px;
+        position: relative;
+        top: 3px;
+        left: 6px;
+    }
+
+    .text-field-wrapper {
+        background-color: transparent !important;
+        display: inline-block;
+        position: relative;
+    }
+
+    #reasons {
+        border: 1px solid #dcd8cd;
+        width: 970px;
+        display: inline-block;
+        width: 964px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    #headline {
+        text-align: center;
+        color: #6a6a69;
+        margin: 30px auto 10px;
+        font: 37px Milo, serif;
+    }
+
+    #duo_content {
+        background-image: url(//img1.imagesbn.com/pImages/cafe/BNCafe_design2_landing_HL_v2_25.jpg);
+        height: 181px;
+        width: 970px;
+        background-repeat: no-repeat;
+        background-position: 485px;
+    }
+
+    #wifi {
+        width: 455px;
+        display: inline-block;
+        padding: 30px 0 0 18px;
+        float: left;
+    }
+
+    #member {
+        width: 455px;
+        padding: 30px 0 0 12px;
+        float: right;
+    }
+
+    .reason_content {
+        display: block;
+        width: 485px;
+    }
+
+    .reason_header {
+        display: block;
+    }
+
+    #wifi #member,
+    .reason_content {
+        display: inline;
+        width: 304px;
+    }
+
+    .reason_text {
+        display: inline-block;
+        margin: 0 0 0 11px;
+        width: 304px;
+        font: 12.35px Lato, sans-serif;
+        color: #000000;
+        line-height: 26px;
+    }
+
+    .reason_header {
+        display: inline-block;
+        margin: 0 0 0 11px;
+        font: 24px Milo, serif;
+        color: #000000;
+    }
+
+    /* rotator CSS */
+
+    #store-wifi-f1-img {
+        width: 964px;
+        height: 325px;
+        border: 1px solid #ccc;
+        padding: 1px;
+        /*        box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;*/
+        /*        border-radius: 5px;*/
+        margin-bottom: 30px;
+    }
+
+    #store-wifi-f1-img img {
+        max-width: 960px;
+        /*        border-radius: 3px;*/
+    }
+
+    #store-wifi-f1-img .paging-control {
+        height: 10px;
+        right: 10px;
+        position: relative;
+        top: 17px;
+        /* width: 84px; */
+        z-index: 1000;
+    }
+
+    .paging-control ul {
+        float: left;
+        left: 50%;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .paging-control li {
+        display: block;
+        float: left;
+        margin-right: 6px;
+        position: relative;
+    }
+
+    .paging-control a {
+        display: block;
+        height: 15px;
+        outline: 0 none;
+        text-indent: -9999px;
+        width: 15px;
+        background-image: url(//bncss.barnesandnoble.com/static/release/img/sprites/map.png);
+    }
+
+    .paging-control .ctf-on a,
+    .paging-control a.ctf-on {
+        background-position: -155px -106px;
+    }
+
+    .paging-control .ctf-off a,
+    .paging-control a.ctf-off {
+        background-position: -136px -107px;
+    }
+
+    /* ROTATOR */
+
+    .rotate-fade {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .ctf-on {
+        display: block;
+    }
+
+    .cafe-container {
+        left: -3em;
+        position: relative;
+    }
