@@ -3618,7 +3618,7 @@ body {
   display: -moz-grid;
   font-size: 17px;
   height: 36px;
-  margin: 168px 0 0 1px;
+  bottom: bottom;
   padding-top: 8px;
   position: absolute;
   text-align: center;
@@ -3761,7 +3761,6 @@ body {
   color: #000000;
 }
 .html #store-wifi-f1-img {
-  width: 964px;
   height: 325px;
   border: 1px solid #ccc;
   padding: 1px;
@@ -3770,7 +3769,7 @@ body {
   margin-bottom: 30px;
 }
 .html #store-wifi-f1-img img {
-  max-width: 960px;
+  max-width: 884px;
   /*        border-radius: 3px;*/
 }
 .html #store-wifi-f1-img .paging-control {
@@ -3820,9 +3819,10 @@ body {
 .html .ctf-on {
   display: block;
 }
-.html .cafe-container {
-  left: -3em;
-  position: relative;
+.html s
+.pageshell .img-responsive {
+  width: 100%;
+  max-width: 100%;
 }
 
 .mobile-only {

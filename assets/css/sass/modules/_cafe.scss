@@ -90,7 +90,7 @@
         display: -moz-grid;
         font-size: 17px;
         height: 36px;
-        margin: 168px 0 0 1px;
+bottom: bottom;
         padding-top: 8px;
         position: absolute;
         text-align: center;
@@ -255,7 +255,6 @@
     /* rotator CSS */
 
     #store-wifi-f1-img {
-        width: 964px;
         height: 325px;
         border: 1px solid #ccc;
         padding: 1px;
@@ -265,7 +264,7 @@
     }
 
     #store-wifi-f1-img img {
-        max-width: 960px;
+        max-width: 884px;
         /*        border-radius: 3px;*/
     }
 
@@ -324,9 +323,11 @@
 
     .ctf-on {
         display: block;
-    }
+    }s
 
-    .cafe-container {
-        left: -3em;
-        position: relative;
+.pageshell{
+    .img-responsive{
+        width: 100%;
+        max-width: 100%;
     }
+}
