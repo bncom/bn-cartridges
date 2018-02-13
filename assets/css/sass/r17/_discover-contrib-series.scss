@@ -105,11 +105,8 @@ a.authorSectionLink.active {
 /* Tabs */
 .tab-container .tab-list-container .tab-list .tab {
     font-size:22px;
-}
-
-.tab-list .tab {
-    font-size: 22px;
     overflow-x:hidden;
+    width: max-content;
 }
 
 ul#productInfoTabs {
@@ -117,6 +114,7 @@ ul#productInfoTabs {
     width: auto;
     height: 34px;
     display: flex;
+    border-bottom: 1px solid #ccc;
 }
 .tab-container .tabpanels-container {
     margin: 0 5%;
@@ -124,6 +122,14 @@ ul#productInfoTabs {
     overflow-y: hidden;
     outline: 0;
 }
+.tab-list li:hover,
+.tab-list li:active {
+  background-color: #ccc;
+}
+.tab-container .tab-list-container .tab-highlight {
+    display: none !important;
+}
+
 
 
 /* Popular Authors carousel */

@@ -6448,22 +6448,28 @@ header .text--subheader {
 }
 .isMobile .tab-container .tab-list-container .tab-list .tab {
   font-size: 22px;
-}
-.isMobile .tab-list .tab {
-  font-size: 22px;
   overflow-x: hidden;
+  width: max-content;
 }
 .isMobile ul#productInfoTabs {
   overflow-x: scroll;
   width: auto;
   height: 34px;
   display: flex;
+  border-bottom: 1px solid #ccc;
 }
 .isMobile .tab-container .tabpanels-container {
   margin: 0 5%;
   overflow-x: hidden;
   overflow-y: hidden;
   outline: 0;
+}
+.isMobile .tab-list li:hover,
+.isMobile .tab-list li:active {
+  background-color: #ccc;
+}
+.isMobile .tab-container .tab-list-container .tab-highlight {
+  display: none !important;
 }
 .isMobile h2.rule {
   font-size: 24px;
