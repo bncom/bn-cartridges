@@ -6469,8 +6469,24 @@ header .text--subheader {
 .isMobile .tab-list li:active {
   background-color: #ccc;
 }
-.isMobile .tab-container .tab-list-container .tab-highlight {
+.isMobile .tab-container .tab-list-container .tab-highlight, .isMobile #pdp-tabs .tabpanel div:last-of-type {
   display: none !important;
+}
+.isMobile .tab-container {
+  padding: 25px 0px;
+}
+.isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
+  width: 68rem;
+}
+.isMobile .tab-container .tabpanels-container .tabpanel h2 {
+  font-size: 5rem;
+}
+.isMobile #pdp-tabs .tabpanel div:first-of-type {
+  overflow-y: scroll;
+  column-width: unset;
+}
+.isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
+  width: 76vw;
 }
 .isMobile h2.rule {
   font-size: 24px;

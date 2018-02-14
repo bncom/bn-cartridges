@@ -126,10 +126,23 @@ ul#productInfoTabs {
 .tab-list li:active {
   background-color: #ccc;
 }
-.tab-container .tab-list-container .tab-highlight {
+.tab-container .tab-list-container .tab-highlight, #pdp-tabs .tabpanel div:last-of-type {
     display: none !important;
 }
-
+.tab-container {padding: 25px 0px;}
+#pdp-tabs .tab-container .tabpanels-container .tabpanel {
+    width: 68rem;
+}
+.tab-container .tabpanels-container .tabpanel h2 {
+    font-size: 5rem;
+    }
+#pdp-tabs .tabpanel div:first-of-type {
+    overflow-y: scroll;
+    column-width: unset;
+}
+#pdp-tabs .tab-container .tabpanels-container .tabpanel {
+    width: 76vw;
+}
 
 
 /* Popular Authors carousel */
@@ -418,7 +431,7 @@ h2.rule {
 
 .author-header {
 
-    .col-lg-3 { 
+    .col-lg-3 {
         width: auto; float: none;
     }
 
@@ -434,9 +447,9 @@ h2.rule {
         height: 160px;
     }
 
-    .author-header__details { 
+    .author-header__details {
         margin-top: 32px;
-        header h1 { 
+        header h1 {
             margin: 0;
             font-size: 36px;
         }
@@ -452,4 +465,3 @@ h2.rule {
         }
     }
 }
-
