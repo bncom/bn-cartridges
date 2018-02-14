@@ -6469,7 +6469,7 @@ header .text--subheader {
 .isMobile .tab-list li:active {
   background-color: #ccc;
 }
-.isMobile .tab-container .tab-list-container .tab-highlight, .isMobile #pdp-tabs .tabpanel div:last-of-type {
+.isMobile .tab-container .tab-list-container .tab-highlight {
   display: none !important;
 }
 .isMobile .tab-container {

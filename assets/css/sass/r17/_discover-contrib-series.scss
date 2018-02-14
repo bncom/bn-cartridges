@@ -126,7 +126,7 @@ ul#productInfoTabs {
 .tab-list li:active {
   background-color: #ccc;
 }
-.tab-container .tab-list-container .tab-highlight, #pdp-tabs .tabpanel div:last-of-type {
+.tab-container .tab-list-container .tab-highlight {
     display: none !important;
 }
 .tab-container {padding: 25px 0px;}
