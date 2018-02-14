@@ -6472,19 +6472,6 @@ header .text--subheader {
 .isMobile .tab-container .tab-list-container .tab-highlight {
   display: none !important;
 }
-.isMobile .tab-container {
-  padding: 25px 0px;
-}
-.isMobile .tab-container .tabpanels-container .tabpanel h2 {
-  font-size: 5rem;
-}
-.isMobile #pdp-tabs .tabpanel div:first-of-type {
-  overflow-y: scroll;
-  column-width: 100vw;
-}
-.isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
-  width: 76vw;
-}
 .isMobile h2.rule {
   font-size: 24px;
 }
