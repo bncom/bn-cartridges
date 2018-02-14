@@ -6475,9 +6475,6 @@ header .text--subheader {
 .isMobile .tab-container {
   padding: 25px 0px;
 }
-.isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
-  width: 68rem;
-}
 .isMobile .tab-container .tabpanels-container .tabpanel h2 {
   font-size: 5rem;
 }
