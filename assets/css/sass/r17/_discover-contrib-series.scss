@@ -136,7 +136,7 @@ ul#productInfoTabs {
     }
 #pdp-tabs .tabpanel div:first-of-type {
     overflow-y: scroll;
-    column-width: unset;
+    column-width: 100vw;
 }
 #pdp-tabs .tab-container .tabpanels-container .tabpanel {
     width: 76vw;
