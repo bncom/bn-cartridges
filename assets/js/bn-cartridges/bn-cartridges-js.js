@@ -856,3 +856,8 @@ function discoverContentGrid() {
     $(this).addClass("active");
     this.nextElementSibling.style.display = "block";
 }
+
+
+// Cafe Slick
+
+$('.cafe-slick').slick();
