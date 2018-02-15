@@ -3540,44 +3540,9 @@ body {
   font-size: inherit;
   color: #346250;
 }
-.html .category_info em,
-.html .category_info i {
-  font-family: Milo;
-}
-.html .st-page-hdr span {
-  background-color: white;
-  padding: 0 20px;
-  font-family: MiloSerifOffcMedium;
-}
-.html #cafe_category {
-  width: 970px;
-  margin-top: 4px;
-}
-.html .mod8_first {
-  float: left;
-  padding: 0 35px 30px 0;
-}
-.html .mod8_third {
-  float: left;
-  padding-bottom: 36px;
-}
-.html .mod8_first img,
-.html .mod8_second img,
-.html .mod8_third img {
-  border: 1px solid #ccc;
-  /*        padding: 2px;*/
-  /*        border-radius: 5px;*/
-  width: 298px;
-}
-.html .mod8_first img:hover,
-.html .mod8_second img:hover,
-.html .mod8_third img:hover {
-  /*        padding: 2px;*/
-  border: 1px solid #347d56;
-}
 .html h1.st-hdr-main,
 .html * h1.st-hdr-main {
-  background: url("//img1.imagesbn.com/pImages/cafe/cafe_rule.jpg") no-repeat scroll 0 33px transparent;
+  background: url("https://simg1.imagesbn.com/pImages/cafe/cafe_rule.jpg") no-repeat scroll 0 33px transparent;
   color: #6A6A69;
   font-family: MiloSerifOffcMedium, serif !important;
   font-size: 60px;
@@ -3596,11 +3561,8 @@ body {
 .html #member img {
   float: left;
 }
-.html #cafe_category {
-  /*        border: 1px solid #ccc;*/
-}
 .html #cafe_category img {
-  /*        border: 1px solid #ccc;*/
+  border: 1px solid #DCD8CD;
 }
 .html #giftsofnook {
   height: 324px;
@@ -3612,19 +3574,16 @@ body {
   display: none;
 }
 .html .category_info {
-  background: #000;
-  opacity: .7;
+  background: url("https://simg1.imagesbn.com/pimages/storefronts/000_70_op.png") repeat scroll 0 0 transparent;
   color: #FFFFFF;
   display: -moz-grid;
   font-size: 17px;
-  height: 36px;
-  bottom: bottom;
+  height: 35px;
+  margin: 168px 0 0 3px;
   padding-top: 8px;
   position: absolute;
   text-align: center;
-  width: 296px;
-  font-family: poynter, serif;
-  font-weight: 600;
+  width: 292px;
 }
 .html .navigation {
   height: 13px;
@@ -3634,7 +3593,7 @@ body {
   width: 84px;
 }
 .html .navigation a {
-  background: url("//img1.imagesbn.com/pImages/cafe/rotator_off.png") no-repeat scroll 0 0px transparent;
+  background: url("https://simg1.imagesbn.com/pImages/cafe/rotator_off.png") no-repeat scroll 0 0px transparent;
   display: block;
   float: left;
   font-size: 1px;
@@ -3643,7 +3602,7 @@ body {
   width: 13px;
 }
 .html .navigation a.current {
-  background: url("//img1.imagesbn.com/pImages/cafe/rotator_on.png") no-repeat scroll 0 0px transparent;
+  background: url("https://simg1.imagesbn.com/pImages/cafe/rotator_on.png") no-repeat scroll 0 0px transparent;
 }
 .html #storeform {
   display: block;
@@ -3717,7 +3676,7 @@ body {
   font: 37px Milo, serif;
 }
 .html #duo_content {
-  background-image: url(//img1.imagesbn.com/pImages/cafe/BNCafe_design2_landing_HL_v2_25.jpg);
+  background-image: url(https://simg1.imagesbn.com/pImages/cafe/BNCafe_design2_landing_HL_v2_25.jpg);
   height: 181px;
   width: 970px;
   background-repeat: no-repeat;
@@ -3731,7 +3690,7 @@ body {
 }
 .html #member {
   width: 455px;
-  padding: 30px 0 0 12px;
+  padding: 30px 0 0 29px;
   float: right;
 }
 .html .reason_content {
@@ -3750,7 +3709,7 @@ body {
   display: inline-block;
   margin: 0 0 0 11px;
   width: 304px;
-  font: 12.35px Lato, sans-serif;
+  font: 14px PTSans, serif;
   color: #000000;
   line-height: 26px;
 }
@@ -3761,16 +3720,16 @@ body {
   color: #000000;
 }
 .html #store-wifi-f1-img {
-  height: 325px;
-  border: 1px solid #ccc;
-  padding: 1px;
-  /*        box-shadow: 1px 1px 0 #e4e4e4, -1px -1px 0 #e4e4e4, 0 0 7px #dfdfdf;*/
-  /*        border-radius: 5px;*/
+  width: auto;
+  height: 300px;
+  border: 2px solid #fff;
   margin-bottom: 30px;
 }
 .html #store-wifi-f1-img img {
-  max-width: 884px;
-  /*        border-radius: 3px;*/
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  padding: 3px;
 }
 .html #store-wifi-f1-img .paging-control {
   height: 10px;
@@ -3780,7 +3739,7 @@ body {
   /* width: 84px; */
   z-index: 1000;
 }
-.html .paging-control ul {
+.html #store-wifi-f1-img .paging-control ul {
   float: left;
   left: 50%;
   list-style: none outside none;
@@ -3789,13 +3748,13 @@ body {
   position: relative;
   text-align: center;
 }
-.html .paging-control li {
+.html #store-wifi-f1-img .paging-control li {
   display: block;
   float: left;
   margin-right: 6px;
   position: relative;
 }
-.html .paging-control a {
+.html #store-wifi-f1-img .paging-control a {
   display: block;
   height: 15px;
   outline: 0 none;
@@ -3814,15 +3773,48 @@ body {
 .html .rotate-fade {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 .html .ctf-on {
   display: block;
 }
-.html s
-.pageshell .img-responsive {
+.html .pageshell figure .img-responsive {
   width: 100%;
   max-width: 100%;
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+.html .pageshell figure .img-responsive:hover {
+  border: 1px solid #5b965e;
+}
+.html .pageshell figure figcaption {
+  font-style: italic;
+  width: 91%;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 4px;
+  padding: 5px 15px;
+  position: absolute;
+  bottom: 5px;
+  color: #ccc;
+  font-size: 16px;
+}
+.html .cafe-reasons {
+  margin: 40px 0;
+  border: 1px solid #ccc;
+  padding: 40px 3px;
+}
+.html .cafe-reasons h1 {
+  padding-bottom: 20px;
+}
+.html .cafe-reasons img {
+  margin: 5px;
+  float: left;
+}
+.html .cafe-reasons h2 {
+  margin: 10px 0;
+}
+.html .cafe-reasons .border-left {
+  border-left: 1px solid #ccc;
 }
 
 .mobile-only {
