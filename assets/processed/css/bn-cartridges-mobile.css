@@ -5691,6 +5691,25 @@ header.text--center {
 }
 
 /* End  Banner with image Cleanup */
+@media (min-width: 600px) {
+  figure {
+    margin: 37px 8px;
+  }
+  figure a {
+    width: 100%;
+  }
+  figure figcaption {
+    background: none;
+    font-style: normal;
+    margin: 4px;
+    padding: 5px 15px;
+    position: inherit;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: .025px;
+  }
+}
 /* textbooks */
 .mobile-only {
   display: none;

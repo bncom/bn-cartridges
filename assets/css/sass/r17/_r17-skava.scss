@@ -426,3 +426,27 @@ $background_color_1: #f1f3f1;
 }
 
 /* End  Banner with image Cleanup */
+
+// CAFE 
+
+@media (min-width: 600px) {
+    
+    figure{
+        margin: 37px 8px;
+        a{
+            width: 100%;
+        }
+        figcaption{
+            background: none;
+            font-style: normal;
+            margin: 4px;
+            padding: 5px 15px;
+            position: inherit;
+            color: #000;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: .025px;
+        }
+    }
+    
+}
