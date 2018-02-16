@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #cq-html-renderer,
 .cq-html-renderer {
   height: 0;
@@ -467,8 +468,6 @@ body {
   /* MasterCard  FEATURES */
   /* MasterCard QUESTIONS */
   /* NOOK Microsite - Mobile */
-  /* rotator CSS */
-  /* ROTATOR */
 }
 .html * {
   -moz-box-sizing: border-box;
@@ -3540,244 +3539,6 @@ body {
   font-size: inherit;
   color: #346250;
 }
-.html h1.st-hdr-main,
-.html * h1.st-hdr-main {
-  background: url("https://simg1.imagesbn.com/pImages/cafe/cafe_rule.jpg") no-repeat scroll 0 33px transparent;
-  color: #6A6A69;
-  font-family: MiloSerifOffcMedium, serif !important;
-  font-size: 60px;
-  height: 90px;
-  letter-spacing: -1px;
-  margin: 0;
-  padding-top: 29px;
-  text-align: center;
-  width: 970px;
-  word-spacing: -2px;
-}
-.html .page-content-wrapper.l2r > .column + .column {
-  margin-left: 0px;
-}
-.html #wifi img,
-.html #member img {
-  float: left;
-}
-.html #cafe_category img {
-  border: 1px solid #DCD8CD;
-}
-.html #giftsofnook {
-  height: 324px;
-  overflow: hidden;
-  width: 970px;
-}
-.html section.page-content:before,
-.html section.page-content:after {
-  display: none;
-}
-.html .category_info {
-  background: url("https://simg1.imagesbn.com/pimages/storefronts/000_70_op.png") repeat scroll 0 0 transparent;
-  color: #FFFFFF;
-  display: -moz-grid;
-  font-size: 17px;
-  height: 35px;
-  margin: 168px 0 0 3px;
-  padding-top: 8px;
-  position: absolute;
-  text-align: center;
-  width: 292px;
-}
-.html .navigation {
-  height: 13px;
-  left: 470px;
-  position: absolute;
-  top: 396px;
-  width: 84px;
-}
-.html .navigation a {
-  background: url("https://simg1.imagesbn.com/pImages/cafe/rotator_off.png") no-repeat scroll 0 0px transparent;
-  display: block;
-  float: left;
-  font-size: 1px;
-  height: 13px;
-  margin: 0 8px 0 0;
-  width: 13px;
-}
-.html .navigation a.current {
-  background: url("https://simg1.imagesbn.com/pImages/cafe/rotator_on.png") no-repeat scroll 0 0px transparent;
-}
-.html #storeform {
-  display: block;
-  height: 30px;
-  margin: 73px 0 0 467px;
-  position: absolute;
-  width: 474px;
-}
-.html #zip-search-button {
-  background: url("none") no-repeat scroll 0 0 transparent;
-  border: 0 none;
-  cursor: pointer;
-  float: left;
-  height: 38px;
-  left: 341px;
-  position: absolute;
-  text-indent: -9999px;
-  top: -2px;
-  width: 132px;
-}
-.html .zip_label {
-  background: none no-repeat scroll 0 0 transparent;
-  color: #888888;
-  display: block;
-  font-family: MiloSerifOffcMedium;
-  font-size: 15px;
-  position: relative;
-  top: 7px;
-}
-.html #zip-input {
-  background: none no-repeat scroll 0 0 transparent;
-  border: medium none;
-  color: #888888;
-  display: block;
-  font-size: 15px;
-  height: 26px;
-  width: 336px;
-  position: absolute;
-  box-shadow: none;
-  top: 1px;
-  left: 80px;
-  font-family: Milo;
-}
-.html #zip_placeholder {
-  background: none no-repeat scroll 0 0 transparent;
-  color: #888888;
-  display: block;
-  font-family: MiloSerifOffcMedium;
-  font-size: 15px;
-  position: relative;
-  top: 3px;
-  left: 6px;
-}
-.html .text-field-wrapper {
-  background-color: transparent !important;
-  display: inline-block;
-  position: relative;
-}
-.html #reasons {
-  border: 1px solid #dcd8cd;
-  width: 970px;
-  display: inline-block;
-  width: 964px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-.html #headline {
-  text-align: center;
-  color: #6a6a69;
-  margin: 30px auto 10px;
-  font: 37px Milo, serif;
-}
-.html #duo_content {
-  background-image: url(https://simg1.imagesbn.com/pImages/cafe/BNCafe_design2_landing_HL_v2_25.jpg);
-  height: 181px;
-  width: 970px;
-  background-repeat: no-repeat;
-  background-position: 485px;
-}
-.html #wifi {
-  width: 455px;
-  display: inline-block;
-  padding: 30px 0 0 18px;
-  float: left;
-}
-.html #member {
-  width: 455px;
-  padding: 30px 0 0 29px;
-  float: right;
-}
-.html .reason_content {
-  display: block;
-  width: 485px;
-}
-.html .reason_header {
-  display: block;
-}
-.html #wifi #member,
-.html .reason_content {
-  display: inline;
-  width: 304px;
-}
-.html .reason_text {
-  display: inline-block;
-  margin: 0 0 0 11px;
-  width: 304px;
-  font: 14px PTSans, serif;
-  color: #000000;
-  line-height: 26px;
-}
-.html .reason_header {
-  display: inline-block;
-  margin: 0 0 0 11px;
-  font: 24px Milo, serif;
-  color: #000000;
-}
-.html #store-wifi-f1-img {
-  width: auto;
-  height: 300px;
-  border: 2px solid #fff;
-  margin-bottom: 30px;
-}
-.html #store-wifi-f1-img img {
-  width: 100%;
-  max-width: 100%;
-  border: 1px solid #ccc;
-  padding: 3px;
-}
-.html #store-wifi-f1-img .paging-control {
-  height: 10px;
-  right: 10px;
-  position: relative;
-  top: 17px;
-  /* width: 84px; */
-  z-index: 1000;
-}
-.html #store-wifi-f1-img .paging-control ul {
-  float: left;
-  left: 50%;
-  list-style: none outside none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  text-align: center;
-}
-.html #store-wifi-f1-img .paging-control li {
-  display: block;
-  float: left;
-  margin-right: 6px;
-  position: relative;
-}
-.html #store-wifi-f1-img .paging-control a {
-  display: block;
-  height: 15px;
-  outline: 0 none;
-  text-indent: -9999px;
-  width: 15px;
-  background-image: url(//bncss.barnesandnoble.com/static/release/img/sprites/map.png);
-}
-.html .paging-control .ctf-on a,
-.html .paging-control a.ctf-on {
-  background-position: -155px -106px;
-}
-.html .paging-control .ctf-off a,
-.html .paging-control a.ctf-off {
-  background-position: -136px -107px;
-}
-.html .rotate-fade {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.html .ctf-on {
-  display: block;
-}
 .html .pageshell figure .img-responsive {
   width: 100%;
   max-width: 100%;
@@ -3785,7 +3546,7 @@ body {
   padding: 3px;
 }
 .html .pageshell figure .img-responsive:hover {
-  border: 1px solid #5b965e;
+  border-color: #5b965e;
 }
 .html .pageshell figure figcaption {
   font-style: italic;
@@ -3815,6 +3576,84 @@ body {
 }
 .html .cafe-reasons .border-left {
   border-left: 1px solid #ccc;
+}
+.html .cafe-slick {
+  margin-bottom: 40px;
+}
+.html .cafe-slick img {
+  width: 100%;
+  max-width: 100%;
+}
+.html .cafe-slick .slick-list {
+  overflow: hidden;
+}
+.html .cafe-slick .slick-slide {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 3px;
+  height: 302px;
+}
+.html .cafe-slick .slick-slide:hover {
+  border-color: #5b965e;
+}
+.html .cafe-slick .slick-dots {
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  z-index: 2;
+  bottom: 0px;
+}
+.html .cafe-slick .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.html .cafe-slick .slick-dots li:last-child {
+  display: none;
+}
+.html .cafe-slick .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.html .cafe-slick .slick-dots li button:hover {
+  background: white;
+}
+.html .cafe-slick .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 60px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.html .cafe-slick .slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
 }
 
 .mobile-only {

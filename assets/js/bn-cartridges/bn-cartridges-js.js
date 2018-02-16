@@ -2,11 +2,11 @@
 
 
     // Utilities... 
-    if ( window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com" ) {
+    if (window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com") {
         $('head').append('<link rel="stylesheet" type="text/css" href="https://qa-adobe-dispatch.bn-web.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css">');
     }
 
- 
+
     // retrieve querystring params
     var BNgetQSParams = function (sParam) {
         var sPageURL = window.location.search.substring(1);
@@ -270,7 +270,7 @@
                 infinite: false
             });
             // END Slick for FEATURED CATEGORIES
-            
+
             // BEGIN Detail Pages
             $('.discoverFeaturedBook').slick('unslick');
             // END Detail Pages
@@ -800,7 +800,7 @@
         $('.isMobile #headerA').toggle();
         $('.isMobile .authorSectionLink:first-child').toggleClass("active");
 
-        $(".authorSectionLink").click(function() {
+        $(".authorSectionLink").click(function () {
             $(".authorSectionLink").removeClass("active");
             $(this).toggleClass("active");
         });
@@ -814,7 +814,7 @@
         $(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();
         $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").show();
 
-        $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").click(function() {
+        $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").click(function () {
             $(this).next(".isMobile .genre-index-refinements--discover-categories div.index-grid").slideToggle();
             $(this).toggleClass("active");
         });
@@ -823,6 +823,16 @@
         });
 
 
+    // Cafe Slick
+
+    $('.cafe-slick').slick({  dots: true,
+                arrows: false,
+                speed: 500,
+                cssEase: 'linear',
+                adaptiveHeight: true,
+                respondTo: 'window',
+                infinite: false});
+        
     }); // END Document ready
 
 
@@ -835,7 +845,6 @@
 
 
     // });
-
 
 
 
@@ -858,6 +867,3 @@ function discoverContentGrid() {
 }
 
 
-// Cafe Slick
-
-$('.cafe-slick').slick();
