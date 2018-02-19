@@ -129,6 +129,35 @@ ul#productInfoTabs {
 .tab-container .tab-list-container .tab-highlight {
     display: none !important;
 }
+.tab-container {
+  margin: 25px 0px;
+}
+
+#pdp-tabs .tab-container .tabpanels-container .tabpanel {
+    width: auto;
+    float: left;
+    height: 400px;
+    overflow-y: scroll;
+}
+#pdp-tabs .expandable-section {
+    overflow-y: scroll;
+    height: auto !important;
+    column-width: 74vw;
+}
+
+.tabpanel div.text--center {
+    display: none;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 6px;
+}
+
+.author-tabs .tabpanel {
+    position: unset;
+    left: unset;
+}
 
 
 
@@ -360,7 +389,7 @@ h2.rule {
         display: none;
         visibility: hidden;
     }
-} 
+}
 
 // Recover Record Spotlight
 .series-detail .author-header {
