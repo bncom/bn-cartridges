@@ -6499,7 +6499,7 @@ header .text--subheader {
 .isMobile .tab-container {
   margin: 25px 0px;
 }
-.isMobile .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
+.isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
   width: auto;
   float: left;
   height: 400px;
@@ -6515,11 +6515,6 @@ header .text--subheader {
 .isMobile .author-tabs .tabpanel {
   position: unset;
   left: unset;
-}
-.isMobile #pdp-tabs .expandable-section {
-  overflow-y: scroll;
-  height: auto;
-  column-width: 74vw;
 }
 .isMobile h2.rule {
   font-size: 24px;

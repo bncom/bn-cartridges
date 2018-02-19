@@ -133,7 +133,7 @@ ul#productInfoTabs {
   margin: 25px 0px;
 }
 
-.isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
+#pdp-tabs .tab-container .tabpanels-container .tabpanel {
     width: auto;
     float: left;
     height: 400px;
@@ -154,11 +154,6 @@ h2 {
     left: unset;
 }
 
-#pdp-tabs .expandable-section {
-    overflow-y: scroll;
-    height: auto;
-    column-width: 74vw;
-}
 
 
 /* Popular Authors carousel */
