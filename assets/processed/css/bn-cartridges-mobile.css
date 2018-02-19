@@ -6496,6 +6496,31 @@ header .text--subheader {
 .isMobile .tab-container .tab-list-container .tab-highlight {
   display: none !important;
 }
+.isMobile .tab-container {
+  margin: 25px 0px;
+}
+.isMobile .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
+  width: auto;
+  float: left;
+  height: 400px;
+  overflow-y: scroll;
+}
+.isMobile .tabpanel div.text--center {
+  display: none;
+}
+.isMobile h2 {
+  font-size: 4rem;
+  margin-bottom: 6px;
+}
+.isMobile .author-tabs .tabpanel {
+  position: unset;
+  left: unset;
+}
+.isMobile #pdp-tabs .expandable-section {
+  overflow-y: scroll;
+  height: auto;
+  column-width: 74vw;
+}
 .isMobile h2.rule {
   font-size: 24px;
 }
