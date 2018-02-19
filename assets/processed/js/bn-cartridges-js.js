@@ -823,30 +823,23 @@
         });
 
 
-    // Cafe Slick
+        // Cafe Slick
 
-    $('.cafe-slick').slick({  dots: true,
-                arrows: false,
-                speed: 500,
-                cssEase: 'linear',
-                adaptiveHeight: true,
-                respondTo: 'window',
-                infinite: false});
-        
+        $('.cafe-slick').slick({
+            dots: true,
+            arrows: false,
+            speed: 500,
+            cssEase: 'linear',
+            adaptiveHeight: true,
+            respondTo: 'window',
+            infinite: false
+        });
+
     }); // END Document ready
-
-
-
-
 
     // $(window).load(function(){
 
-
-
-
     // });
-
-
 
 })();
 //Contributor onClick
@@ -865,5 +858,3 @@ function discoverContentGrid() {
     $(this).addClass("active");
     this.nextElementSibling.style.display = "block";
 }
-
-

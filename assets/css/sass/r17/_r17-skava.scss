@@ -308,9 +308,18 @@ header.text--center {
     max-height: 173px;
     max-width: 114px;
 }
-.product-shelf .slick-arrow {display: none !important;}
-.product-shelf-info {border-top: none !important;}
-.book .product-shelf-info {min-height: 17.75rem !important;}
+
+.product-shelf .slick-arrow {
+    display: none !important;
+}
+
+.product-shelf-info {
+    border-top: none !important;
+}
+
+.book .product-shelf-info {
+    min-height: 17.75rem !important;
+}
 
 /* Start Features Categories */
 
@@ -428,15 +437,21 @@ $background_color_1: #f1f3f1;
 /* End  Banner with image Cleanup */
 
 // CAFE 
+.pageshell {
 
-@media (min-width: 600px) {
-    
-    figure{
-        margin: 37px 8px;
-        a{
+    figure {
+        margin: 37px 0;
+        a {
             width: 100%;
+            .img-responsive {
+                border: none;
+                &:hover {
+                    border: none;
+                }
+
+            }
         }
-        figcaption{
+        figcaption {
             background: none;
             font-style: normal;
             margin: 4px;
@@ -448,5 +463,6 @@ $background_color_1: #f1f3f1;
             letter-spacing: .025px;
         }
     }
-    
+
+
 }
