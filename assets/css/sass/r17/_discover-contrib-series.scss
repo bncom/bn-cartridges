@@ -139,6 +139,11 @@ ul#productInfoTabs {
     height: 400px;
     overflow-y: scroll;
 }
+#pdp-tabs .expandable-section {
+    overflow-y: scroll;
+    height: auto;
+    column-width: 74vw;
+}
 
 .tabpanel div.text--center {
     display: none;

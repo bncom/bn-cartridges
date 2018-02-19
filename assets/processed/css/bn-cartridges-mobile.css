@@ -6505,6 +6505,11 @@ header .text--subheader {
   height: 400px;
   overflow-y: scroll;
 }
+.isMobile #pdp-tabs .expandable-section {
+  overflow-y: scroll;
+  height: auto;
+  column-width: 74vw;
+}
 .isMobile .tabpanel div.text--center {
   display: none;
 }
