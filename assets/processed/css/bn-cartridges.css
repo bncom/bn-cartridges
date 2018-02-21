@@ -3539,126 +3539,6 @@ body {
   font-size: inherit;
   color: #346250;
 }
-.html .pageshell .hidden-lg {
-  display: none;
-}
-.html .pageshell figure .img-responsive {
-  width: 100%;
-  max-width: 100%;
-  border: 1px solid #ccc;
-  padding: 3px;
-}
-.html .pageshell figure .img-responsive:hover {
-  border-color: #5b965e;
-}
-.html .pageshell figure figcaption {
-  font-style: italic;
-  width: 91%;
-  background: rgba(0, 0, 0, 0.8);
-  margin: 4px;
-  padding: 5px 15px;
-  position: absolute;
-  bottom: 5px;
-  color: #ccc;
-  font-size: 16px;
-}
-.html .cafe-reasons {
-  margin: 40px 0;
-  border: 1px solid #ccc;
-  padding: 40px 3px;
-}
-.html .cafe-reasons h1 {
-  padding-bottom: 20px;
-}
-.html .cafe-reasons img {
-  margin: 5px;
-  float: left;
-}
-.html .cafe-reasons h2 {
-  margin: 10px 0;
-}
-.html .cafe-reasons .border-left {
-  border-left: 1px solid #ccc;
-}
-.html .cafe-slick {
-  margin-bottom: 40px;
-}
-.html .cafe-slick img {
-  width: 100%;
-  max-width: 100%;
-}
-.html .cafe-slick .slick-list {
-  overflow: hidden;
-}
-.html .cafe-slick .slick-slide {
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  padding: 3px;
-  height: 302px;
-}
-.html .cafe-slick .slick-slide:hover {
-  border-color: #5b965e;
-}
-.html .cafe-slick .slick-dots {
-  display: block;
-  width: 100%;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  z-index: 2;
-  bottom: 0px;
-  margin-top: 20px;
-}
-.html .cafe-slick .slick-dots li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-.html .cafe-slick .slick-dots li:last-child {
-  display: none;
-}
-.html .cafe-slick .slick-dots li button {
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  color: transparent;
-  border: 0;
-  outline: none;
-  background: transparent;
-}
-.html .cafe-slick .slick-dots li button:hover {
-  background: white;
-}
-.html .cafe-slick .slick-dots li button:before {
-  font-family: 'slick';
-  font-size: 60px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: '•';
-  text-align: center;
-  opacity: .25;
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.html .cafe-slick .slick-dots li.slick-active button:before {
-  opacity: .75;
-  color: black;
-}
 
 .mobile-only {
   display: none;
@@ -3758,3 +3638,125 @@ body {
     margin-left: -884px;
 } 
 */
+.pageshell .hidden-lg {
+  display: none;
+}
+.pageshell figure .img-responsive {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+.pageshell figure .img-responsive:hover {
+  border-color: #5b965e;
+}
+.pageshell figure figcaption {
+  font-style: italic;
+  width: 91%;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 4px;
+  padding: 5px 15px;
+  position: absolute;
+  bottom: 5px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.cafe-reasons {
+  margin: 40px 0;
+  border: 1px solid #ccc;
+  padding: 40px 3px;
+}
+.cafe-reasons h1 {
+  padding-bottom: 20px;
+}
+.cafe-reasons img {
+  margin: 5px;
+  float: left;
+}
+.cafe-reasons h2 {
+  margin: 10px 0;
+}
+.cafe-reasons .border-left {
+  border-left: 1px solid #ccc;
+}
+
+.cafe-slick {
+  margin-bottom: 40px;
+}
+.cafe-slick img {
+  width: 100%;
+  max-width: 100%;
+}
+.cafe-slick .slick-list {
+  overflow: hidden;
+}
+.cafe-slick .slick-slide {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 3px;
+  height: 302px;
+}
+.cafe-slick .slick-slide:hover {
+  border-color: #5b965e;
+}
+.cafe-slick .slick-dots {
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  z-index: 2;
+  bottom: 0px;
+  margin-top: 20px;
+}
+.cafe-slick .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.cafe-slick .slick-dots li:last-child {
+  display: none;
+}
+.cafe-slick .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.cafe-slick .slick-dots li button:hover {
+  background: white;
+}
+.cafe-slick .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 60px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cafe-slick .slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}

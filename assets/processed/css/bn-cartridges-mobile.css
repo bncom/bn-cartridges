@@ -5691,72 +5691,6 @@ header.text--center {
 }
 
 /* End  Banner with image Cleanup */
-@media (max-width: 700px) {
-  .hidden-xs {
-    display: none;
-  }
-
-  .hidden-sm {
-    display: none;
-  }
-
-  .pageshell figure {
-    margin: 37px 0;
-  }
-  .pageshell figure a {
-    width: 100%;
-  }
-  .pageshell figure a .img-responsive {
-    padding: 0px;
-  }
-  .pageshell figure figcaption {
-    background: none;
-    font-style: normal;
-    margin: 4px;
-    padding: 5px 15px;
-    position: inherit;
-    color: #000;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: .025px;
-    text-align: center;
-  }
-  .pageshell .cafe-reasons {
-    border-left: none;
-    border-right: none;
-    margin: 40px 0px 50px 0;
-    padding: 40px 20px;
-  }
-  .pageshell .cafe-reasons h1 {
-    padding-bottom: 50px;
-  }
-  .pageshell .cafe-reasons:first-child .col-md-12 {
-    border-bottom: 1px solid #ccc;
-  }
-  .pageshell .cafe-reasons h2 {
-    font-weight: 300;
-    letter-spacing: .025;
-    font-size: 16px;
-    line-height: 19px;
-  }
-  .pageshell .cafe-reasons p {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 19px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
-  .pageshell .cafe-reasons a {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 19px;
-    color: #056937;
-  }
-
-  .clearfix-sm {
-    clear: both;
-  }
-}
 /* textbooks */
 .mobile-only {
   display: none;
@@ -6420,6 +6354,75 @@ header .text--subheader {
   color: #a36b6c;
 }
 
+@media (max-width: 700px) {
+  .hidden-xs {
+    display: none;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+
+  .pageshell figure {
+    margin: 37px 0;
+  }
+  .pageshell figure a {
+    width: 100%;
+  }
+  .pageshell figure a .img-responsive {
+    padding: 0px;
+  }
+  .pageshell figure figcaption {
+    background: none;
+    font-style: normal;
+    margin: 4px;
+    padding: 5px 15px;
+    position: inherit;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: .025px;
+    text-align: center;
+  }
+  .pageshell.cafe-reasons {
+    border-left: none;
+    border-right: none;
+    margin: 40px 0px 50px 0;
+    padding: 40px 20px;
+  }
+  .pageshell.cafe-reasons h1 {
+    padding-bottom: 50px;
+    font-size: 24px;
+    font-family: PoynterOSDisp-Semibold, Poynter;
+    line-height: 28px;
+  }
+  .pageshell.cafe-reasons:first-child .col-md-12 {
+    border-bottom: 1px solid #ccc;
+  }
+  .pageshell.cafe-reasons h2 {
+    font-weight: 300;
+    letter-spacing: .025;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .pageshell.cafe-reasons p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .pageshell.cafe-reasons a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #056937;
+  }
+
+  .clearfix-sm {
+    clear: both;
+  }
+}
 /* *** Discover - Contributor - Series pages 2018 *** */
 .isMobile {
   /* Container */

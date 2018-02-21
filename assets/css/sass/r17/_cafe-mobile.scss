@@ -1,0 +1,77 @@
+//mobile
+// CAFE 
+@media (max-width: 700px) {
+    .hidden-xs {
+        display: none;
+    }
+    .hidden-sm {
+        display: none;
+    }
+    .pageshell {
+
+        figure {
+            margin: 37px 0;
+            a {
+                width: 100%;
+                .img-responsive {
+                    padding: 0px;
+                }
+            }
+            figcaption {
+                background: none;
+                font-style: normal;
+                margin: 4px;
+                padding: 5px 15px;
+                position: inherit;
+                color: #000;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: .025px;
+                text-align: center;
+            }
+        }
+        
+        &.cafe-reasons {
+            border-left: none;
+            border-right: none;
+            margin: 40px 0px 50px 0;
+            padding: 40px 20px;
+            h1 {
+                padding-bottom: 50px;
+                font-size: 24px;
+                font-family: PoynterOSDisp-Semibold, Poynter;
+                line-height: 28px;
+            }
+            &:first-child {
+                .col-md-12 {
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+
+            h2 {
+                font-weight: 300;
+                letter-spacing: .025;
+                font-size: 16px;
+                line-height: 19px;
+
+            }
+            p {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 19px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+            a {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 19px;
+                color: #056937;
+            }
+        }
+
+    }
+    .clearfix-sm {
+        clear: both;
+    }
+}
