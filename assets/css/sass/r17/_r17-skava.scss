@@ -452,11 +452,7 @@ $background_color_1: #f1f3f1;
             a {
                 width: 100%;
                 .img-responsive {
-                    border: none;
-                    &:hover {
-                        border: none;
-                    }
-
+                
                 }
             }
             figcaption {
@@ -475,7 +471,29 @@ $background_color_1: #f1f3f1;
         .cafe-reasons {
             border: none;
         }
+        h2{
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: .025;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 15px 20px;
+        }
+        p{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 19px;
+            padding: 20px;
+        }
+        a{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            color: #056937;
+        }
 
-
+    }
+    .clearfix-sm{
+        clear: both;
     }
 }
