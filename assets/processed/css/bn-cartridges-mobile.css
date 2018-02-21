@@ -5706,6 +5706,9 @@ header.text--center {
   .pageshell figure a {
     width: 100%;
   }
+  .pageshell figure a .img-responsive {
+    padding: 0px;
+  }
   .pageshell figure figcaption {
     background: none;
     font-style: normal;
@@ -5719,23 +5722,31 @@ header.text--center {
     text-align: center;
   }
   .pageshell .cafe-reasons {
-    border: none;
+    border-left: none;
+    border-right: none;
+    margin: 40px 0px 50px 0;
+    padding: 40px 20px;
   }
-  .pageshell h2 {
-    text-align: center;
+  .pageshell .cafe-reasons h1 {
+    padding-bottom: 50px;
+  }
+  .pageshell .cafe-reasons:first-child .col-md-12 {
+    border-bottom: 1px solid #ccc;
+  }
+  .pageshell .cafe-reasons h2 {
     font-weight: 300;
     letter-spacing: .025;
     font-size: 16px;
     line-height: 19px;
-    padding: 15px 20px;
   }
-  .pageshell p {
+  .pageshell .cafe-reasons p {
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
-    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
-  .pageshell a {
+  .pageshell .cafe-reasons a {
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
