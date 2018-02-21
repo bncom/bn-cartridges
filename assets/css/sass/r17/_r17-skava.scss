@@ -436,4 +436,46 @@ $background_color_1: #f1f3f1;
 
 /* End  Banner with image Cleanup */
 
+//mobile
+// CAFE 
+@media (max-width: 700px) {
+    .hidden-xs {
+        display: none;
+    }
+    .hidden-sm {
+        display: none;
+    }
+    .pageshell {
 
+        figure {
+            margin: 37px 0;
+            a {
+                width: 100%;
+                .img-responsive {
+                    border: none;
+                    &:hover {
+                        border: none;
+                    }
+
+                }
+            }
+            figcaption {
+                background: none;
+                font-style: normal;
+                margin: 4px;
+                padding: 5px 15px;
+                position: inherit;
+                color: #000;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: .025px;
+                text-align: center;
+            }
+        }
+        .cafe-reasons {
+            border: none;
+        }
+
+
+    }
+}

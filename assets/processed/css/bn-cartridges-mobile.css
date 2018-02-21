@@ -5691,6 +5691,43 @@ header.text--center {
 }
 
 /* End  Banner with image Cleanup */
+@media (max-width: 700px) {
+  .hidden-xs {
+    display: none;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+
+  .pageshell figure {
+    margin: 37px 0;
+  }
+  .pageshell figure a {
+    width: 100%;
+  }
+  .pageshell figure a .img-responsive {
+    border: none;
+  }
+  .pageshell figure a .img-responsive:hover {
+    border: none;
+  }
+  .pageshell figure figcaption {
+    background: none;
+    font-style: normal;
+    margin: 4px;
+    padding: 5px 15px;
+    position: inherit;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: .025px;
+    text-align: center;
+  }
+  .pageshell .cafe-reasons {
+    border: none;
+  }
+}
 /* textbooks */
 .mobile-only {
   display: none;

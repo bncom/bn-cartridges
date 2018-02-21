@@ -3609,6 +3609,7 @@ body {
   text-align: center;
   z-index: 2;
   bottom: 0px;
+  margin-top: 20px;
 }
 .html .cafe-slick .slick-dots li {
   position: relative;
@@ -3657,41 +3658,6 @@ body {
 .html .cafe-slick .slick-dots li.slick-active button:before {
   opacity: .75;
   color: black;
-}
-@media (max-width: 700px) {
-  .html .hidden-xs {
-    display: none;
-  }
-  .html .hidden-sm {
-    display: none;
-  }
-  .html .pageshell figure {
-    margin: 37px 0;
-  }
-  .html .pageshell figure a {
-    width: 100%;
-  }
-  .html .pageshell figure a .img-responsive {
-    border: none;
-  }
-  .html .pageshell figure a .img-responsive:hover {
-    border: none;
-  }
-  .html .pageshell figure figcaption {
-    background: none;
-    font-style: normal;
-    margin: 4px;
-    padding: 5px 15px;
-    position: inherit;
-    color: #000;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: .025px;
-    text-align: center;
-  }
-  .html .pageshell .cafe-reasons {
-    border: none;
-  }
 }
 
 .mobile-only {
