@@ -102,7 +102,50 @@ a.authorSectionLink.active {
     text-align: center
 }
 
-/* Tabs */
+/* Tabulation */
+
+div a.read-more.show-more-pdp {
+    display: none;
+}
+
+.tab-container .tab-list-container .tab-list .tab {
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+    font-size: 4.0625rem;
+    font-style: normal;
+    padding: 1.25rem 3.125rem;
+    margin: 0;
+    text-align: center;
+    color: #347d56;
+    background: linear-gradient(center,rgba(226,226,226,0) 0,rgba(226,226,226,0) 50%,rgba(226,226,226,0) 100%);
+    transition: background .4s cubic-bezier(0.5,0,.3,1);
+}
+
+.tab-container {
+    margin-top: 3rem!important;
+}
+.author-tabs .tabpanel {
+    position: unset;
+    left: unset;
+    overflow-y: scroll;
+    height: 329px;
+    float: left;
+}
+
+#author h2, .tabpanel h2 {
+    font-size: 4rem;
+}
+
+.text--medium.expandable-section.ml-m.mr-m {
+    display: inline;
+}
+
+.tabpanels .tabpanel div {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Tabs
 .tab-container .tab-list-container .tab-list .tab {
     font-size:22px;
     overflow-x:hidden;
@@ -129,7 +172,36 @@ ul#productInfoTabs {
 .tab-container .tab-list-container .tab-highlight {
     display: none !important;
 }
+.tab-container {
+  margin: 25px 0px;
+}
 
+#pdp-tabs .tab-container .tabpanels-container .tabpanel {
+    width: auto;
+    float: left;
+    height: 400px;
+    overflow-y: scroll;
+}
+#pdp-tabs .expandable-section {
+    overflow-y: scroll;
+    height: auto !important;
+    column-width: 74vw;
+}
+
+.tabpanel div.text--center {
+    display: none;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 6px;
+}
+
+.author-tabs .tabpanel {
+    position: unset;
+    left: unset;
+}
+*/
 
 
 /* Popular Authors carousel */
@@ -360,7 +432,9 @@ h2.rule {
         display: none;
         visibility: hidden;
     }
-} // Recover Record Spotlight
+}
+
+// Recover Record Spotlight
 .series-detail .author-header {
     width: 100%;
     .author-header__details {
@@ -412,13 +486,13 @@ h2.rule {
 }
 
 
-/* CONTRIBUTOR DETAILS PAGE */
+/* CONTRIBUTOR DETAILS PAGE (Bill) */
 
 .container > .author-header { display: none; }
 
 .author-header {
 
-    .col-lg-3 { 
+    .col-lg-3 {
         width: auto; float: none;
     }
 
@@ -434,13 +508,13 @@ h2.rule {
         height: 160px;
     }
 
-    .author-header__details { 
+    .author-header__details {
         margin-top: 32px;
-        header h1 { 
+        header h1 {
             margin: 0;
             font-size: 36px;
         }
-        header h1 .text--left { text-align: center; }
+        header h1.text--left { text-align: center; }
         .about-author {
             font-family: GillSans,sans-serif;
             font-weight: 600;
@@ -452,4 +526,3 @@ h2.rule {
         }
     }
 }
-

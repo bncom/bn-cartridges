@@ -1,28 +1,45 @@
-#cq-html-renderer,.cq-html-renderer{height:0;width: 0;visibility: hidden;opacity: 0;  display: flex;} 
- 
-@import "partials/var"; 
-@import "cartridges/overwrite-global";
-#main-content.desktop .main-content.container {padding:0; }
-.html{ position: relative;  clear: left;
-	* {
-	  -moz-box-sizing: border-box;
-	  box-sizing: border-box; 
-	}
-	
-	@import "partials/reset"; 
-	@import "partials/buttons";
-	@import "partials/shadows";
-	@import "modules/cms-main";	
-	@import "modules/coupons-deals";
-	@import "cartridges/apply-desktop";
-	
-	@import "modules/textbooks";
-	@import "modules/mastercard";
-	@import "modules/nook";
-}  
+#cq-html-renderer,
+.cq-html-renderer {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+}
 
-.mobile-only{display: none; }
- 
-/* *** Redesign 2017 *** */   
-@import "r17/r17-textbooks"; 
-@import "r17/r17-coupons-deals"; 
+@import "partials/var";
+@import "cartridges/overwrite-global";
+#main-content.desktop .main-content.container {
+    padding: 0;
+}
+
+.html {
+    position: relative;
+    clear: left;
+    * {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    @import "partials/reset";
+    @import "partials/buttons";
+    @import "partials/shadows";
+    @import "modules/cms-main";
+    @import "modules/coupons-deals";
+    @import "cartridges/apply-desktop";
+
+    @import "modules/textbooks";
+    @import "modules/mastercard";
+    @import "modules/nook";
+
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* *** Redesign 2017 *** */
+
+@import "r17/r17-textbooks";
+@import "r17/r17-coupons-deals";
+@import "r17/cafe";
