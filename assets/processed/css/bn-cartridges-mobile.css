@@ -6354,6 +6354,7 @@ header .text--subheader {
   color: #a36b6c;
 }
 
+/* CAFE */
 @media (max-width: 700px) {
   .hidden-xs {
     display: none;
@@ -6361,6 +6362,10 @@ header .text--subheader {
 
   .hidden-sm {
     display: none;
+  }
+
+  .clearfix-sm {
+    clear: both;
   }
 
   .pageshell figure {
@@ -6422,9 +6427,9 @@ header .text--subheader {
   .pageshell.cafe-reasons .row .member {
     padding-top: 50px;
   }
-
-  .clearfix-sm {
-    clear: both;
+  .pageshell .cafe-slick img {
+    position: absolute;
+    widows: 800px;
   }
 }
 /* *** Discover - Contributor - Series pages 2018 *** */

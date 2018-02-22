@@ -1,12 +1,17 @@
-//mobile
-// CAFE 
+/* CAFE */
 @media (max-width: 700px) {
+
+    // Responsive tools 
     .hidden-xs {
         display: none;
     }
     .hidden-sm {
         display: none;
     }
+     .clearfix-sm {
+        clear: both;
+    }
+    // Pageshell
     .pageshell {
 
         figure {
@@ -73,9 +78,15 @@
             }
             
         }
+        .cafe-slick{
+            img{
+                position: absolute;
+                widows: 800px;
+            }
+            
+        }
+        
 
     }
-    .clearfix-sm {
-        clear: both;
-    }
+   
 }
