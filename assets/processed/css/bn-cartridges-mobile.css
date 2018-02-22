@@ -6570,6 +6570,9 @@ header .text--subheader {
   flex-flow: unset;
   text-align: center;
 }
+.isMobile div a.read-more.show-more-pdp {
+  display: none;
+}
 .isMobile .tab-container .tab-list-container .tab-list .tab {
   font-family: Lato,sans-serif;
   font-weight: 400;

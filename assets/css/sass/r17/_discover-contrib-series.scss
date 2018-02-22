@@ -104,6 +104,10 @@ a.authorSectionLink.active {
 
 /* Tabulation */
 
+div a.read-more.show-more-pdp {
+    display: none;
+}
+
 .tab-container .tab-list-container .tab-list .tab {
     font-family: Lato,sans-serif;
     font-weight: 400;
