@@ -6392,29 +6392,26 @@ header .text--subheader {
   }
   .pageshell.cafe-reasons h1 {
     padding-bottom: 50px;
-    font-size: 24px;
+    font-size: 24px !important;
     font-family: PoynterOSDisp-Semibold, Poynter;
     line-height: 28px;
-  }
-  .pageshell.cafe-reasons:first-child .col-md-12 {
-    border-bottom: 1px solid #ccc;
   }
   .pageshell.cafe-reasons h2 {
     font-weight: 300;
     letter-spacing: .025;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 19px;
   }
   .pageshell.cafe-reasons p {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 14px !important;
     line-height: 19px;
     margin-top: 15px;
     margin-bottom: 20px;
   }
   .pageshell.cafe-reasons a {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 15px !important;
     line-height: 19px;
     color: #056937;
   }
