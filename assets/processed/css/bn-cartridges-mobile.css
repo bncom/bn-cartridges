@@ -6366,6 +6366,7 @@ header .text--subheader {
   /* Popular Authors carousel */
   /* Discover Category */
   /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
+  /* CONTRIBUTOR DETAILS PAGE */
 }
 .isMobile .mobile-only {
   display: block !important;
@@ -6700,4 +6701,41 @@ header .text--subheader {
   max-width: 670px;
   margin-top: 20px;
   widows: auto !important;
+}
+.isMobile .container > .author-header {
+  display: none;
+}
+.isMobile .author-header .col-lg-3 {
+  width: auto;
+  float: none;
+}
+.isMobile .author-header .col-lg-8 {
+  width: 100%;
+}
+.isMobile .author-header .circle-image {
+  float: none;
+  margin: 0 auto;
+}
+.isMobile .author-header .circle-image--large {
+  width: 160px;
+  height: 160px;
+}
+.isMobile .author-header .author-header__details {
+  margin-top: 32px;
+}
+.isMobile .author-header .author-header__details header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+.isMobile .author-header .author-header__details header h1 .text--left {
+  text-align: center;
+}
+.isMobile .author-header .author-header__details .about-author {
+  font-family: GillSans,sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 20px 0;
+  padding: 0 10px;
+  text-align: center;
 }
