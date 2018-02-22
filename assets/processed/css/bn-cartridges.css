@@ -3680,6 +3680,9 @@ body {
 .cafe-reasons .border-left {
   border-left: 1px solid #ccc;
 }
+.cafe-reasons .row .member {
+  border-left: 1px solid #ccc;
+}
 
 .cafe-slick {
   margin-bottom: 40px;

@@ -6415,6 +6415,13 @@ header .text--subheader {
     line-height: 19px;
     color: #056937;
   }
+  .pageshell.cafe-reasons .row .in-store {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 35px;
+  }
+  .pageshell.cafe-reasons .row .member {
+    padding-top: 50px;
+  }
 
   .clearfix-sm {
     clear: both;
