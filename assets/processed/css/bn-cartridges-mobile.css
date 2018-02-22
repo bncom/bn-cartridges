@@ -6435,6 +6435,7 @@ header .text--subheader {
   /*.author-series-indexes--series .rule:not(.index-heading):after,
   .author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
   /* Contributor Page */
+  /* Tabulation */
   /* Tabs
   .tab-container .tab-list-container .tab-list .tab {
       font-size:22px;
@@ -6575,6 +6576,41 @@ header .text--subheader {
   -webkit-flex-wrap: unset;
   flex-flow: unset;
   text-align: center;
+}
+.isMobile div a.read-more.show-more-pdp {
+  display: none;
+}
+.isMobile .tab-container .tab-list-container .tab-list .tab {
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 4.0625rem;
+  font-style: normal;
+  padding: 1.25rem 3.125rem;
+  margin: 0;
+  text-align: center;
+  color: #347d56;
+  background: linear-gradient(center, rgba(226, 226, 226, 0) 0, rgba(226, 226, 226, 0) 50%, rgba(226, 226, 226, 0) 100%);
+  transition: background 0.4s cubic-bezier(0.5, 0, 0.3, 1);
+}
+.isMobile .tab-container {
+  margin-top: 3rem !important;
+}
+.isMobile .author-tabs .tabpanel {
+  position: unset;
+  left: unset;
+  overflow-y: scroll;
+  height: 329px;
+  float: left;
+}
+.isMobile #author h2, .isMobile .tabpanel h2 {
+  font-size: 4rem;
+}
+.isMobile .text--medium.expandable-section.ml-m.mr-m {
+  display: inline;
+}
+.isMobile .tabpanels .tabpanel div {
+  font-size: 14px;
+  line-height: 1.5;
 }
 .isMobile h2.rule {
   font-size: 24px;
