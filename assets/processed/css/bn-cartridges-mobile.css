@@ -6432,6 +6432,19 @@ header .text--subheader {
     widows: 800px;
     max-width: inherit;
   }
+  .pageshell .cafe-slick .cafe-info {
+    position: inherit;
+    transform: none;
+    text-align: center;
+    width: auto;
+    padding: 20px;
+  }
+  .pageshell .cafe-slick .cafe-info h2 {
+    color: #000;
+  }
+  .pageshell .cafe-slick .cafe-info p {
+    color: #000;
+  }
 }
 /* *** Discover - Contributor - Series pages 2018 *** */
 .isMobile {

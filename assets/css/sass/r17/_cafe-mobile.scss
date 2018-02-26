@@ -84,7 +84,20 @@
                 widows: 800px;
                 max-width: inherit;
             }
-           
+            .cafe-info {
+                position: inherit;
+                transform: none;
+                text-align: center;
+                width: auto;
+                padding: 20px;
+                h2 {
+                    color: #000;
+                }
+                p {
+                    color: #000;
+                }
+            }
+
 
         }
 

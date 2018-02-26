@@ -3696,6 +3696,18 @@ body {
   top: 50%;
   transform: translate(90%, 50%);
   text-align: center;
+  width: 430px;
+}
+.cafe-slick .cafe-info h2 {
+  font-family: PoynterOSDisp-Semibold, Poynter;
+  font-size: 30px;
+  color: #fff;
+}
+.cafe-slick .cafe-info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
 }
 .cafe-slick .slick-list {
   overflow: hidden;
