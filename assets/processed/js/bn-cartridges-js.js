@@ -823,16 +823,8 @@
         });
 
 
-    // Cafe Slick
 
-    $('.cafe-slick').slick({  dots: true,
-                arrows: false,
-                speed: 500,
-                cssEase: 'linear',
-                adaptiveHeight: true,
-                respondTo: 'window',
-                infinite: false});
-        
+
     }); // END Document ready
 
 
@@ -866,4 +858,17 @@ function discoverContentGrid() {
     this.nextElementSibling.style.display = "block";
 }
 
+var slickCafe = function ({
+    // Cafe Slick
+    $('.cafe-slick').slick({
+        dots: true,
+        arrows: false,
+        speed: 500,
+        cssEase: 'linear',
+        adaptiveHeight: true,
+        respondTo: 'window',
+        infinite: false
+    });
+});
 
+slickCafe();

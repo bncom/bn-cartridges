@@ -1,4 +1,5 @@
 /* CAFE */
+
 @media (max-width: 700px) {
 
     // Responsive tools 
@@ -8,10 +9,9 @@
     .hidden-sm {
         display: none;
     }
-     .clearfix-sm {
+    .clearfix-sm {
         clear: both;
-    }
-    // Pageshell
+    } // Pageshell
     .pageshell {
 
         figure {
@@ -35,7 +35,7 @@
                 text-align: center;
             }
         }
-        
+
         &.cafe-reasons {
             border-left: none;
             border-right: none;
@@ -67,27 +67,29 @@
                 line-height: 19px;
                 color: #056937;
             }
-            .row{
-                .in-store{
+            .row {
+                .in-store {
                     border-bottom: 1px solid #ccc;
                     padding-bottom: 35px;
                 }
-                .member{
+                .member {
                     padding-top: 50px;
                     border-left: none !important;
                 }
             }
-            
+
         }
-        .cafe-slick{
-            img{
+        .cafe-slick {
+            img {
                 widows: 800px;
                 max-width: inherit;
             }
-            
+           
+
         }
-        
+
+
 
     }
-   
+
 }

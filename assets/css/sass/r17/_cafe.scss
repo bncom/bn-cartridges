@@ -49,12 +49,12 @@
     .border-left {
         border-left: 1px solid #ccc;
     }
-    .row{
-        .member{
+    .row {
+        .member {
             border-left: 1px solid #ccc;
         }
     }
-    
+
 }
 
 .cafe-slick {
@@ -62,6 +62,12 @@
     img {
         width: 100%;
         max-width: 100%;
+    }
+    .cafe-info {
+        position: absolute;
+        top: 50%;
+        transform: translate(90%, 50%);
+        text-align: center;
     }
     .slick-list {
         overflow: hidden;
@@ -141,5 +147,3 @@
         }
     }
 }
-
-

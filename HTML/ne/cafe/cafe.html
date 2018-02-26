@@ -1,12 +1,26 @@
 <style>
-    $( document).ready(function() {
+    var slickCafe=function ( {
+        // Cafe Slick
         $('.cafe-slick').slick( {
             dots: true,
-            arrows: false
+            arrows: false,
+            speed: 500,
+            cssEase: 'linear',
+            adaptiveHeight: true,
+            respondTo: 'window',
+            infinite: false
         }
         );
     }
+
     );
+
+    $( document).ready(function() {
+        slickCafe();
+    }
+
+    );
+
 </style>
 <div class="page-content-wrapper box centered-width l2r trim cafe-container">
     <section class="page-content column">
@@ -14,18 +28,23 @@
         <div class="cafe-slick">
 
             <div>
-                <img alt="Winter Warms Up - Beat the chill with a Cinnamon Dolce Latte or a Caffè Latte. Available hot, iced, or blended. MEMBERS SAVE 10%" title="Winter Warms Up - Beat the chill with a Cinnamon Dolce Latte or a Caffè Latte. Available hot, iced, or blended. MEMBERS SAVE 10%" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/hero1/2017/PROD-7423_CafeHeroUpdate_Hero_comp.jpg">
-                <p>Winter Warms Up - Beat the chill with a Cinnamon Dolce Latte or a Caffè Latte. Available hot, iced, or blended. MEMBERS SAVE 10%</p>
-
-
+                <img title="This Week's Best Books" alt="Title:Bobby Flay's Barbecue Addiction,Author:Bobby Flay" class="cover" src="https://qa-adobe-dispatch.bn-web.com/content/dam/ccr/h/cafe/2018/02/CafePage_Landing_banner1-D.png">
+                <div class="cafe-info">
+                    <h2>Winter Warms Up</h2>
+                    <p class="mb-s">Beat the chill with a Cinnamon Dolce Latte or a Caffè Latte. Available hot, iced, or blended.</p>
+                    <a href="/b/books/fiction/_/N-29Z8q8Z10h8" class="btn btn--ghost">MEMBERS SAVE 10%</a>
+                </div>
             </div>
 
-            <div><img alt="NEW! Valentine's Day Gifts. From Heart-shaped boxes to gorgeous chocolate assortments. GODIVA Belgian chocolates make the sweetest gifts. While supplies last. Members save 10%." title="NEW! Valentine's Day Gifts. From Heart-shaped boxes to gorgeous chocolate assortments. GODIVA Belgian chocolates make the sweetest gifts. While supplies last. Members save 10%." src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/hero1/2017/PROD-7425_Cafe_HeroUpdate1_GodivaValentines.jpg">
-            <p>NEW! Valentine's Day Gifts. From Heart-shaped boxes to gorgeous chocolate assortments. GODIVA Belgian chocolates make the sweetest gifts. While supplies last. Members save 10%.</p>
+            <div>
+                <img alt="NEW! Valentine's Day Gifts. From Heart-shaped boxes to gorgeous chocolate assortments. GODIVA Belgian chocolates make the sweetest gifts. While supplies last. Members save 10%." title="NEW! Valentine's Day Gifts. From Heart-shaped boxes to gorgeous chocolate assortments. GODIVA Belgian chocolates make the sweetest gifts. While supplies last. Members save 10%." src="https://qa-adobe-dispatch.bn-web.com/content/dam/ccr/h/cafe/2018/02/CafePages_Landing_banner3_D.png">
+                <!--                <p>NEW! Valentine's Day Gifts. From Heart-shaped boxes to gorgeous chocolate assortments. GODIVA Belgian chocolates make the sweetest gifts. While supplies last. Members save 10%.</p>-->
             </div>
 
-            <div><img alt="Chocolate Cookie Made With Ghirardelli. A delicious, melt-in-your-mouth treat. Available for a litimited time. Members save 10%" title="Chocolate Cookie Made With Ghirardelli. A delicious, melt-in-your-mouth treat. Available for a litimited time. Members save 10%" src="//dispatch.barnesandnoble.com/content/dam/ccr/bnstores/cafe/hero1/2017/PROD-7426_BNCafeChocCookie_Hero_comp.jpg">
-            <p>Chocolate Cookie Made With Ghirardelli. A delicious, melt-in-your-mouth treat. Available for a litimited time. Members save 10%</p></div>
+            <div>
+                <img alt="Chocolate Cookie Made With Ghirardelli. A delicious, melt-in-your-mouth treat. Available for a litimited time. Members save 10%" title="Chocolate Cookie Made With Ghirardelli. A delicious, melt-in-your-mouth treat. Available for a litimited time. Members save 10%" src="https://qa-adobe-dispatch.bn-web.com/content/dam/ccr/h/cafe/2018/02/CafePages__Landing_banner2_D.png">
+                <!--                <p>Chocolate Cookie Made With Ghirardelli. A delicious, melt-in-your-mouth treat. Available for a litimited time. Members save 10%</p>-->
+            </div>
 
         </div>
 

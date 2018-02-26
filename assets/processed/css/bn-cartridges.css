@@ -3691,6 +3691,12 @@ body {
   width: 100%;
   max-width: 100%;
 }
+.cafe-slick .cafe-info {
+  position: absolute;
+  top: 50%;
+  transform: translate(90%, 50%);
+  text-align: center;
+}
 .cafe-slick .slick-list {
   overflow: hidden;
 }
