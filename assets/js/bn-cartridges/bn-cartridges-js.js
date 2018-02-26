@@ -128,7 +128,7 @@
             $('body').addClass('isMobile');
 
             // identify Series pages:
-            if (URLpathArray[2].toLowerCase() === "series" || URLpathArray[3].toLowerCase() === "series") {
+            if (URLpathArray[2].toLowerCase() === "series") {
                 $('body').addClass('mobileSeries');
                 $('h2.index-heading').addClass('rule');
             }
