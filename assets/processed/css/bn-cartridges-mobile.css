@@ -6426,10 +6426,11 @@ header .text--subheader {
   }
   .pageshell.cafe-reasons .row .member {
     padding-top: 50px;
+    border-left: none !important;
   }
   .pageshell .cafe-slick img {
-    position: absolute;
     widows: 800px;
+    max-width: inherit;
   }
 }
 /* *** Discover - Contributor - Series pages 2018 *** */

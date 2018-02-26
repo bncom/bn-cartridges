@@ -74,14 +74,15 @@
                 }
                 .member{
                     padding-top: 50px;
+                    border-left: none !important;
                 }
             }
             
         }
         .cafe-slick{
             img{
-                position: absolute;
                 widows: 800px;
+                max-width: inherit;
             }
             
         }
