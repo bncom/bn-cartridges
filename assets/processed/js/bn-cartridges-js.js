@@ -128,7 +128,7 @@
             $('body').addClass('isMobile');
 
             // identify Series pages:
-            if (URLpathArray[2].toLowerCase() === "series" || URLpathArray[3].toLowerCase() === "series") {
+            if (URLpathArray[2].toLowerCase() === "series") {
                 $('body').addClass('mobileSeries');
                 $('h2.index-heading').addClass('rule');
             }
@@ -823,8 +823,16 @@
         });
 
 
+    // Cafe Slick
 
-
+    $('.cafe-slick').slick({  dots: true,
+                arrows: false,
+                speed: 500,
+                cssEase: 'linear',
+                adaptiveHeight: true,
+                respondTo: 'window',
+                infinite: false});
+        
     }); // END Document ready
 
 
@@ -858,17 +866,4 @@ function discoverContentGrid() {
     this.nextElementSibling.style.display = "block";
 }
 
-var slickCafe = function ({
-    // Cafe Slick
-    $('.cafe-slick').slick({
-        dots: true,
-        arrows: false,
-        speed: 500,
-        cssEase: 'linear',
-        adaptiveHeight: true,
-        respondTo: 'window',
-        infinite: false
-    });
-});
 
-slickCafe();
