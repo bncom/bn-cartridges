@@ -80,38 +80,35 @@
             }
 
         }
-        .cafe-slick {
-            img {
-                width: auto;
-                max-width: 215%;
+    }
+    .cafe-slick {
+        img {
+            width: auto !important;
+            max-width: 215% !important; 
+        }
+        .cafe-info {
+            position: inherit;
+            transform: none;
+            text-align: center;
+            width: auto;
+            padding: 20px;
+            h2 {
+                color: #000 !important;
             }
-            .cafe-info {
-                position: inherit;
-                transform: none;
-                text-align: center;
-                width: auto;
-                padding: 20px;
-                h2 {
-                    color: #000;
-                }
-                p {
-                    color: #000;
-                    padding-top: 25px;
-                    padding-bottom: 18px;
-                }
-                a {
-                    font-size: 15px;
-                    line-height: 22px;
-                    color: #000;
-                    font-weight: 400;
-                }
+            p {
+                color: #000 !important;
+                padding-top: 25px;
+                padding-bottom: 18px;
             }
-
-
+            a {
+                font-size: 15px;
+                line-height: 22px;
+                color: #000 !important;
+                font-weight: 400;
+            }
         }
 
 
-
-    }
+    } // End .cafe-slick
 
 }

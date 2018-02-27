@@ -6428,29 +6428,30 @@ header .text--subheader {
     padding-top: 50px;
     border-left: none !important;
   }
-  .pageshell .cafe-slick img {
-    width: auto;
-    max-width: 215%;
+
+  .cafe-slick img {
+    width: auto !important;
+    max-width: 215% !important;
   }
-  .pageshell .cafe-slick .cafe-info {
+  .cafe-slick .cafe-info {
     position: inherit;
     transform: none;
     text-align: center;
     width: auto;
     padding: 20px;
   }
-  .pageshell .cafe-slick .cafe-info h2 {
-    color: #000;
+  .cafe-slick .cafe-info h2 {
+    color: #000 !important;
   }
-  .pageshell .cafe-slick .cafe-info p {
-    color: #000;
+  .cafe-slick .cafe-info p {
+    color: #000 !important;
     padding-top: 25px;
     padding-bottom: 18px;
   }
-  .pageshell .cafe-slick .cafe-info a {
+  .cafe-slick .cafe-info a {
     font-size: 15px;
     line-height: 22px;
-    color: #000;
+    color: #000 !important;
     font-weight: 400;
   }
 }
