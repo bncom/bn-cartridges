@@ -486,7 +486,7 @@ h2.rule {
 }
 
 
-/* CONTRIBUTOR DETAILS PAGE (Bill)
+/* CONTRIBUTOR DETAILS PAGE (Bill) */
 
 .container > .author-header { display: none; }
 
@@ -526,8 +526,6 @@ h2.rule {
         }
     }
 }
-
- */
 
 /* CONTRIBUTOR DETAILS PAGE (BY) */
 
@@ -709,7 +707,8 @@ h2.rule {
     }
 
     .results-listing-options .results-icons .icons a#list-view {
-        float: right;
+        float: left;
+        margin-right: 14px;
     }
 
     #listView .row .col-lg-3 {
