@@ -87,28 +87,34 @@
                 padding: 10px 30px;
                 color: #fff;
                 display: inline-block;
+                position: relative;
                 text-align: left;
             }
-            &.arrow-box {
-                position: relative;
+            &.arrow-box-green {
                 &:after {
                     content: "";
                     display: inline-block;
                     position: absolute;
-                    border: 9px solid white;
-                    border-color: transparent transparent transparent white;
-                    top: 41px;
-                    left: -1px;
+                    border: 9px solid;
+                    border-color: #2d5444 transparent #2d5444 #2d5444;
+                    top: 0px;
+                    left: 169px;
+                    border-width: 16px;
                 }
-                &:before {
+            }
+            &.arrow-box-red{
+                 &:after {
                     content: "";
                     display: inline-block;
                     position: absolute;
-                    border: 10px solid black;
-                    border-color: transparent transparent transparent black;
-                    top: 40px;
+                    border: 9px solid;
+                    border-color: #ff0000 transparent #ff0000 #ff0000;
+                    top: 0px;
+                    left: 169px;
+                    border-width: 16px;
                 }
-            }
+            } 
+            
         }
     }
     .slick-list {
@@ -120,7 +126,6 @@
         overflow: hidden;
         border: 1px solid #ccc;
         padding: 3px;
-        height: 302px;
         &:hover {
             border-color: #5b965e;
         }
