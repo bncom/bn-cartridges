@@ -112,13 +112,6 @@ div a.read-more.show-more-pdp {
     font-family: Lato,sans-serif;
     font-weight: 400;
     font-size: 4.0625rem;
-    font-style: normal;
-    padding: 1.25rem 3.125rem;
-    margin: 0;
-    text-align: center;
-    color: #347d56;
-    background: linear-gradient(center,rgba(226,226,226,0) 0,rgba(226,226,226,0) 50%,rgba(226,226,226,0) 100%);
-    transition: background .4s cubic-bezier(0.5,0,.3,1);
 }
 
 .tab-container {
@@ -136,72 +129,11 @@ div a.read-more.show-more-pdp {
     font-size: 4rem;
 }
 
-.text--medium.expandable-section.ml-m.mr-m {
-    display: inline;
-}
-
-.tabpanels .tabpanel div {
+.isMobile .tabpanels .tabpanel, .isMobile .expandable-section {
     font-size: 14px;
     line-height: 1.5;
+    display: inline;
 }
-
-/* Tabs
-.tab-container .tab-list-container .tab-list .tab {
-    font-size:22px;
-    overflow-x:hidden;
-    width: max-content;
-}
-
-ul#productInfoTabs {
-    overflow-x: scroll;
-    width: auto;
-    height: 34px;
-    display: flex;
-    border-bottom: 1px solid #ccc;
-}
-.tab-container .tabpanels-container {
-    margin: 0 5%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    outline: 0;
-}
-.tab-list li:hover,
-.tab-list li:active {
-  background-color: #ccc;
-}
-.tab-container .tab-list-container .tab-highlight {
-    display: none !important;
-}
-.tab-container {
-  margin: 25px 0px;
-}
-
-#pdp-tabs .tab-container .tabpanels-container .tabpanel {
-    width: auto;
-    float: left;
-    height: 400px;
-    overflow-y: scroll;
-}
-#pdp-tabs .expandable-section {
-    overflow-y: scroll;
-    height: auto !important;
-    column-width: 74vw;
-}
-
-.tabpanel div.text--center {
-    display: none;
-}
-
-h2 {
-    font-size: 4rem;
-    margin-bottom: 6px;
-}
-
-.author-tabs .tabpanel {
-    position: unset;
-    left: unset;
-}
-*/
 
 
 /* Popular Authors carousel */
@@ -752,5 +684,5 @@ h2.rule {
     #listView .product-shelf-list .product-shelf-pricing .format {
         font-size: 12px;
     }
-    
+
 }
