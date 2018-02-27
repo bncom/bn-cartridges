@@ -6570,7 +6570,7 @@ header .text--subheader {
 .isMobile #author h2, .isMobile .tabpanel h2 {
   font-size: 4rem;
 }
-.isMobile .isMobile .tabpanels .tabpanel, .isMobile .isMobile .expandable-section {
+.isMobile .tabpanels .tabpanel, .isMobile .expandable-section {
   font-size: 14px;
   line-height: 1.5;
   display: inline;
