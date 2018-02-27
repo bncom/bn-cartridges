@@ -1,3 +1,4 @@
+//mobile
 /* CAFE */
 
 @media (max-width: 700px) {
@@ -81,8 +82,8 @@
         }
         .cafe-slick {
             img {
-                widows: 800px;
-                max-width: inherit;
+                width: auto;
+                max-width: 215%;
             }
             .cafe-info {
                 position: inherit;
@@ -95,6 +96,14 @@
                 }
                 p {
                     color: #000;
+                    padding-top: 25px;
+                    padding-bottom: 18px;
+                }
+                a {
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #000;
+                    font-weight: 400;
                 }
             }
 

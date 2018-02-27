@@ -823,32 +823,17 @@
         });
 
 
-    // Cafe Slick
+      
 
-    $('.cafe-slick').slick({  dots: true,
-                arrows: false,
-                speed: 500,
-                cssEase: 'linear',
-                adaptiveHeight: true,
-                respondTo: 'window',
-                infinite: false});
-        
     }); // END Document ready
 
-
-
-
-
     // $(window).load(function(){
-
-
-
 
     // });
 
 
-
 })();
+
 //Contributor onClick
 
 function contribGridContents(x) {
@@ -865,5 +850,18 @@ function discoverContentGrid() {
     $(this).addClass("active");
     this.nextElementSibling.style.display = "block";
 }
-
-
+  // Cafe Slick
+var slickCafe = function(){
+    $('.cafe-slick').slick({
+            dots: true,
+            arrows: false,
+            speed: 500,
+            cssEase: 'linear',
+            adaptiveHeight: true,
+            respondTo: 'window',
+            infinite: false
+        }); 
+    console.log('hey');
+}
+       
+slickCafe();
