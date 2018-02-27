@@ -3717,21 +3717,8 @@ body {
   display: inline-block;
   text-align: left;
 }
-.cafe-slick .cafe-info a.cafe-btn-a-green {
-  background: #2D5444;
-}
-.cafe-slick .cafe-info a.cafe-btn-a-red {
-  background: #b90507;
-}
 .cafe-slick .cafe-info a.arrow-box {
   position: relative;
-  background: #2D5444;
-  border: 1px solid #c2e1f5;
-  position: relative;
-  display: block;
-  height: 100px;
-  width: 100px;
-  margin-left: 5px;
 }
 .cafe-slick .cafe-info a.arrow-box:after {
   content: "";
