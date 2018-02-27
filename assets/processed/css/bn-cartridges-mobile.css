@@ -7048,7 +7048,8 @@ header .text--subheader {
   float: left;
 }
 .isMobile .resultsListContainer .results-listing-options .results-icons .icons a#list-view {
-  float: right;
+  float: left;
+  margin-right: 14px;
 }
 .isMobile .resultsListContainer #listView .row .col-lg-3 {
   width: 45%;
