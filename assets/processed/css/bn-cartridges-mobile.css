@@ -6467,63 +6467,6 @@ header .text--subheader {
   .author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
   /* Contributor Page */
   /* Tabulation */
-  /* Tabs
-  .tab-container .tab-list-container .tab-list .tab {
-      font-size:22px;
-      overflow-x:hidden;
-      width: max-content;
-  }
-  
-  ul#productInfoTabs {
-      overflow-x: scroll;
-      width: auto;
-      height: 34px;
-      display: flex;
-      border-bottom: 1px solid #ccc;
-  }
-  .tab-container .tabpanels-container {
-      margin: 0 5%;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      outline: 0;
-  }
-  .tab-list li:hover,
-  .tab-list li:active {
-    background-color: #ccc;
-  }
-  .tab-container .tab-list-container .tab-highlight {
-      display: none !important;
-  }
-  .tab-container {
-    margin: 25px 0px;
-  }
-  
-  #pdp-tabs .tab-container .tabpanels-container .tabpanel {
-      width: auto;
-      float: left;
-      height: 400px;
-      overflow-y: scroll;
-  }
-  #pdp-tabs .expandable-section {
-      overflow-y: scroll;
-      height: auto !important;
-      column-width: 74vw;
-  }
-  
-  .tabpanel div.text--center {
-      display: none;
-  }
-  
-  h2 {
-      font-size: 4rem;
-      margin-bottom: 6px;
-  }
-  
-  .author-tabs .tabpanel {
-      position: unset;
-      left: unset;
-  }
-  */
   /* Popular Authors carousel */
   /* Discover Category */
   /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
@@ -6616,13 +6559,6 @@ header .text--subheader {
   font-family: Lato,sans-serif;
   font-weight: 400;
   font-size: 4.0625rem;
-  font-style: normal;
-  padding: 1.25rem 3.125rem;
-  margin: 0;
-  text-align: center;
-  color: #347d56;
-  background: linear-gradient(center, rgba(226, 226, 226, 0) 0, rgba(226, 226, 226, 0) 50%, rgba(226, 226, 226, 0) 100%);
-  transition: background 0.4s cubic-bezier(0.5, 0, 0.3, 1);
 }
 .isMobile .tab-container {
   margin-top: 3rem !important;
@@ -6637,12 +6573,10 @@ header .text--subheader {
 .isMobile #author h2, .isMobile .tabpanel h2 {
   font-size: 4rem;
 }
-.isMobile .text--medium.expandable-section.ml-m.mr-m {
-  display: inline;
-}
-.isMobile .tabpanels .tabpanel div {
+.isMobile .tabpanels .tabpanel, .isMobile .expandable-section {
   font-size: 14px;
   line-height: 1.5;
+  display: inline;
 }
 .isMobile h2.rule {
   font-size: 24px;
@@ -7050,10 +6984,10 @@ header .text--subheader {
 }
 .isMobile .resultsListContainer .results-listing-options .results-icons .icons a#grid-view {
   float: left;
+  margin-right: 14px;
 }
 .isMobile .resultsListContainer .results-listing-options .results-icons .icons a#list-view {
   float: left;
-  margin-right: 14px;
 }
 .isMobile .resultsListContainer #listView .row .col-lg-3 {
   width: 45%;
