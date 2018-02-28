@@ -6368,6 +6368,9 @@ header .text--subheader {
     clear: both;
   }
 
+  .pageshell .col-lg-4 {
+    width: 50%;
+  }
   .pageshell figure {
     margin: 37px 0;
   }
@@ -6375,7 +6378,7 @@ header .text--subheader {
     width: 100%;
   }
   .pageshell figure a .img-responsive {
-    padding: 0px;
+    padding: 1px;
   }
   .pageshell figure figcaption {
     background: none;

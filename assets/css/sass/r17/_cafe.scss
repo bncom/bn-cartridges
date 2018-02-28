@@ -91,30 +91,30 @@
                 text-align: left;
             }
             &.arrow-box-green {
+                background: #2d5444;
+               
                 &:after {
                     content: "";
                     display: inline-block;
                     position: absolute;
                     border: 9px solid;
-                    border-color: #2d5444 transparent #2d5444 #2d5444;
+                    border-color: #2d5444 transparent #2d5444 #2d5444; 
                     top: 0px;
-                    left: 169px;
-                    border-width: 16px;
+                right: -16px;
+                border-width: 16px;
                 }
             }
-            &.arrow-box-red{
-                 &:after {
+            &.arrow-box-red {
+                background: #ff0000;
+                &:after {
                     content: "";
                     display: inline-block;
                     position: absolute;
                     border: 9px solid;
                     border-color: #ff0000 transparent #ff0000 #ff0000;
-                    top: 0px;
-                    left: 169px;
-                    border-width: 16px;
                 }
-            } 
-            
+            }
+
         }
     }
     .slick-list {
