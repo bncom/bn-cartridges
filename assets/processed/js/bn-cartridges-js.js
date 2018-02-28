@@ -106,8 +106,9 @@
 
 
     $(function () { //document.ready
-
-
+        // Call function slick
+        slickCafe();
+        
         // load adaptive images
         var winWidth = $(window).width();
         if (winWidth > 1279) {
@@ -861,7 +862,5 @@ var slickCafe = function () {
         respondTo: 'window',
         infinite: false
     });
-    console.log('hello');
 };
 
-slickCafe();
