@@ -14,7 +14,7 @@
         clear: both;
     } // Pageshell
     .pageshell {
-        .col-lg-4{
+        .col-lg-4 {
             width: 50%;
         }
         figure {
@@ -86,7 +86,7 @@
     .cafe-slick {
         img {
             width: auto !important;
-            max-width: 215% !important; 
+            max-width: 215% !important;
         }
         .cafe-info {
             position: inherit;
@@ -107,9 +107,15 @@
                 line-height: 22px;
                 color: #000 !important;
                 font-weight: 400;
+                &.cafe-slick-btn {
+                    color: #fff;
+                    padding: 5.2px 30px;
+                }
+
             }
+
+        } // End .cafe-slick
+        .slick-slide{
+            border: none;
         }
-
-    } // End .cafe-slick
-
-}
+    }
