@@ -6862,30 +6862,30 @@ header .text--subheader {
 .isMobile #searchGrid {
   padding: 0;
 }
-.isMobile .resultsListContainer .product-shelf-grid .product-shelf-tile {
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-tile {
   height: 345px !important;
   min-height: 345px !important;
   width: 50% !important;
 }
-.isMobile .resultsListContainer .product-shelf-grid .product-info-view {
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-info-view {
   text-align: center;
 }
-.isMobile .resultsListContainer .product-shelf-grid .product-shelf-info .product-shelf-link a {
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-info .product-shelf-link a {
   display: none;
 }
-.isMobile .resultsListContainer .product-shelf-grid .product-shelf-title a, .isMobile .resultsListContainer #listView .row .listView-h2 {
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-title a, .isMobile .resultsListContainer #gridView #listView .row .listView-h2 {
   font-size: 16px;
   color: #000;
   font-family: PoynterOSDisp-Semibold;
   font-weight: normal;
 }
-.isMobile .resultsListContainer .product-shelf-grid .product-shelf-pricing a.link > span:nth-child(1) {
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-pricing a.link > span:nth-child(1) {
   color: #346250;
 }
-.isMobile .resultsListContainer .product-shelf-grid .product-info-view .product-shelf-title {
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-info-view .product-shelf-title {
   padding-top: 5rem !important;
 }
-.isMobile .resultsListContainer .product-shelf-tile .product-shelf-info .product-shelf-ratings {
+.isMobile .resultsListContainer #gridView .product-shelf-tile .product-shelf-info .product-shelf-ratings {
   padding: 3rem 0px;
 }
 .isMobile .resultsListContainer .pagination li span, .isMobile .resultsListContainer .pagination li a {
