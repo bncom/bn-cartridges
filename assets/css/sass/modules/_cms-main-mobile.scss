@@ -9,12 +9,29 @@
     .break-desktop {display:none;}
 }
 
-/*Gift Cards */
-.gift-card-list {padding:0 20px;  }
-.gc-item figcaption {text-align:center; }
-@media only screen and (max-width: 599px) {  
-   .gc-item {max-width: 100%;  width: 43%; text-align:center; margin:0 20px 0 0;  }    
+/*Gift Cards R17. */ 
+
+
+.gift-card-list-r17{padding-left:20px;}
+.gift-card-list-r17 a.tile{
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin: 0 5px;
+    margin-bottom: 0px;
+    text-align: center;
+    height: auto;
+    padding: 0; 
+    float: none;
+    vertical-align: top;
 }
+.gift-card-list-r17 .tile:nth-child(3n) {
+    margin-right: 0;
+}
+.gift-card-list-r17 h2{
+  font-size:22px;
+}
+
+
 
 
 
