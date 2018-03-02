@@ -6922,6 +6922,24 @@ header .text--subheader {
   width: 65px !important;
   float: left;
 }
+.isMobile .resultsListContainer .results-listing-options .row .col-lg-3 div.results-num {
+  width: 50%;
+}
+.isMobile .resultsListContainer .results-listing-options .results-icons .icons a.selected {
+  width: 7rem;
+  color: #346250;
+  border-bottom: 2px solid #346250;
+}
+.isMobile .resultsListContainer .results-listing-options .results-icons .icons a {
+  color: #21282d;
+}
+.isMobile .resultsListContainer .results-listing-options .results-icons .icons a#grid-view {
+  float: left;
+  margin-right: 14px;
+}
+.isMobile .resultsListContainer .results-listing-options .results-icons .icons a#list-view {
+  float: left;
+}
 .isMobile .resultsListContainer .icon-gallery:before, .isMobile .resultsListContainer .icon-list:before {
   font-size: 7rem;
 }
@@ -6976,24 +6994,6 @@ header .text--subheader {
 }
 .isMobile .resultsListContainer .selectBox#view1-replacement .selectBox-label {
   text-align: center;
-}
-.isMobile .resultsListContainer .results-listing-options .row .col-lg-3 div.results-num {
-  width: 50%;
-}
-.isMobile .resultsListContainer .results-listing-options .results-icons .icons a.selected {
-  width: 7rem;
-  color: #346250;
-  border-bottom: 2px solid #346250;
-}
-.isMobile .resultsListContainer .results-listing-options .results-icons .icons a {
-  color: #21282d;
-}
-.isMobile .resultsListContainer .results-listing-options .results-icons .icons a#grid-view {
-  float: left;
-  margin-right: 14px;
-}
-.isMobile .resultsListContainer .results-listing-options .results-icons .icons a#list-view {
-  float: left;
 }
 .isMobile .resultsListContainer #listView .row .col-lg-3 {
   width: 45%;

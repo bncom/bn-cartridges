@@ -517,36 +517,63 @@ h2.rule {
         width: 30px;
     }
 
-    .results-listing-options .row .col-lg-6 {
+    .results-listing-options {
+
+        .row .col-lg-6 {
         width: 100%;
         text-align: center;
         font-size: 3.5rem;
         margin: 10px 0 20px !important;
-    }
+        }
 
-    .results-listing-options .row .col-lg-3 {
-        width: 40%;
-    }
+        .row .col-lg-3 {
+            width: 40%;
+        }
 
-    .results-listing-options .row .col-lg-3:nth-child(2) {
+        .row .col-lg-3:nth-child(2) {
+            width: 50%;
+            padding-right: 19px !important;
+        }
+
+        .row .col-lg-3:nth-child(3) {
+            width: auto;
+        }
+
+        .row .col-lg-3 > div:first-child {
+            width: 100%;
+            float: right;
+        }
+
+        .results-icons {left: 21rem;top: 3.2rem;}
+
+        .results-icons .icons {
+            width: 65px !important;
+            float: left;
+        }
+
+        .row .col-lg-3 div.results-num {
         width: 50%;
-        padding-right: 19px !important;
-    }
+        }
 
-    .results-listing-options .row .col-lg-3:nth-child(3) {
-        width: auto;
-    }
+        .results-icons .icons a.selected {
+            width: 7rem;
+            color: #346250;
+            border-bottom: 2px solid #346250;
+        }
 
-    .results-listing-options .row .col-lg-3 > div:first-child {
-        width: 100%;
-        float: right;
-    }
+        .results-icons .icons a {
+            color: #21282d;
+        }
 
-    .results-listing-options .results-icons {left: 21rem;top: 3.2rem;}
+        .results-icons .icons a#grid-view {
+            float: left;
+            margin-right: 14px;
+        }
 
-    .results-listing-options .results-icons .icons {
-        width: 65px !important;
-        float: left;
+        .results-icons .icons a#list-view {
+            float: left;
+        }
+
     }
 
     .icon-gallery:before, .icon-list:before {
@@ -617,71 +644,50 @@ h2.rule {
         text-align: center;
     }
 
-    .selectBox#view1 {}
+    #listView {
 
-    .results-listing-options .row .col-lg-3 div.results-num {
-        width: 50%;
-    }
+        .row .col-lg-3 {
+            width: 45%;
+        }
 
-    .results-listing-options .results-icons .icons a.selected {
-        width: 7rem;
-        color: #346250;
-        border-bottom: 2px solid #346250;
-    }
+        .row .col-lg-8 {
+            width: 55%;
+        }
 
-    .results-listing-options .results-icons .icons a {
-        color: #21282d;
-    }
+        .row .listView-h2 {
+            padding-left: 0;
+        }
 
-    .results-listing-options .results-icons .icons a#grid-view {
-        float: left;
-        margin-right: 14px;
-    }
+        .row .publ-date {
+            display: none;
+        }
 
-    .results-listing-options .results-icons .icons a#list-view {
-        float: left;
-    }
+        .row .product-shelf-ratings .product-last-star {
+            margin: 10px 0;
+        }
 
-    #listView .row .col-lg-3 {
-        width: 45%;
-    }
+        .row .product-shelf-ratings .product-shelf-reviews a {
+            display: block;
+            font-size: 16px;
+        }
 
-    #listView .row .col-lg-8 {
-        width: 55%;
-    }
+        .row .product-shelf-ratings .product-shelf-reviews {
+            margin-bottom: 10px;
+        }
 
-    #listView .row .listView-h2 {
-        padding-left: 0;
-    }
+        .row .product-shelf-ratings {
+            display: block;
+        }
 
-    #listView .row .publ-date {
-        display: none;
-    }
+        .row .product-shelf-formats {
+            font-size: 11px;
+            line-height: 17px;
+        }
 
-    #listView .row .product-shelf-ratings .product-last-star {
-        margin: 10px 0;
-    }
+        .product-shelf-list .product-shelf-pricing .format {
+            font-size: 12px;
+        }
 
-    #listView .row .product-shelf-ratings .product-shelf-reviews a {
-        display: block;
-        font-size: 16px;
-    }
-
-    #listView .row .product-shelf-ratings .product-shelf-reviews {
-        margin-bottom: 10px;
-    }
-
-    #listView .row .product-shelf-ratings {
-        display: block;
-    }
-
-    #listView .row .product-shelf-formats {
-        font-size: 11px;
-        line-height: 17px;
-    }
-
-    #listView .product-shelf-list .product-shelf-pricing .format {
-        font-size: 12px;
     }
 
 }
