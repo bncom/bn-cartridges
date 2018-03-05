@@ -117,7 +117,29 @@
         .slick-slide {
             border: none;
         }
-        .cafe-item{
+       
+    } 
+    // CAFE TABLE
+    .cafe-hero{
+        .hero-img-anchor{
+            img{
+                width: 300%;
+                position: relative;
+                transform: translateY(-60%);
+            }
+        }
+    }
+     .cafe-table{
+         .cafe-item{
+             text-align: center;
+             div{
+                 margin: 20px 0;
+                 span{
+                     background: #ccc;
+                     display: block;
+                     padding: 10px 20px;
+                 }
+             }
             .cafe-item-img{
                 width: 250px;
                 height: 250px;
@@ -125,6 +147,6 @@
                 margin: 0 auto;
             }
         }
-    } 
+    }
    
 }

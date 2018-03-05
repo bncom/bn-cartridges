@@ -6473,7 +6473,25 @@ header .text--subheader {
   .cafe-slick .slick-slide {
     border: none;
   }
-  .cafe-slick .cafe-item .cafe-item-img {
+
+  .cafe-hero .hero-img-anchor img {
+    width: 300%;
+    position: relative;
+    transform: translateY(-60%);
+  }
+
+  .cafe-table .cafe-item {
+    text-align: center;
+  }
+  .cafe-table .cafe-item div {
+    margin: 20px 0;
+  }
+  .cafe-table .cafe-item div span {
+    background: #ccc;
+    display: block;
+    padding: 10px 20px;
+  }
+  .cafe-table .cafe-item .cafe-item-img {
     width: 250px;
     height: 250px;
     text-align: center;

@@ -3661,6 +3661,11 @@ body {
   color: #ccc;
   font-size: 16px;
 }
+.pageshell .cafe-table-header {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
 
 .cafe-reasons {
   margin: 40px 0;
@@ -3687,7 +3692,6 @@ body {
 /* CAFE SLICK CAROUSEL */
 .cafe-slick {
   margin-bottom: 40px;
-  /*  CAFE HEADER  */
   /* CAFE ITEMS TABLE */
 }
 .cafe-slick img {
@@ -3817,10 +3821,6 @@ body {
   width: 16px;
   height: 15px;
 }
-.cafe-slick .cafe-hero.hero {
-  margin: 0 auto;
-  text-align: center;
-}
 .cafe-slick .cafe-table .pageshell .row {
   border-top: 1px solid #ccc;
   font-family: Poynter, sans-serif;
@@ -3847,4 +3847,10 @@ body {
 }
 .cafe-slick .cafe-table .pageshell .cafe-chesecake-tiny {
   font-size: 10px;
+}
+
+/*  CAFE HEADER  */
+.cafe-hero.hero {
+  margin: 0 auto;
+  text-align: center;
 }
