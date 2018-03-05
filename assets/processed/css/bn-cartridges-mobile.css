@@ -6472,6 +6472,12 @@ header .text--subheader {
   .cafe-slick .slick-slide {
     border: none;
   }
+  .cafe-slick .cafe-item .cafe-item-img {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+  }
 
   .cafe-bakery .pageshell .row {
     border-top: 1px solid #ccc;

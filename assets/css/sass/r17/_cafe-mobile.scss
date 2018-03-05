@@ -12,7 +12,8 @@
     }
     .clearfix-sm {
         clear: both;
-    } // Pageshell
+    } 
+    // Pageshell
     .pageshell {
         .col-lg-4 {
             width: 50%;
@@ -116,7 +117,16 @@
         .slick-slide {
             border: none;
         }
-    } // Cafe Bakery page
+        .cafe-item{
+            .cafe-item-img{
+                width: 250px;
+                height: 250px;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    } 
+    // Cafe Bakery page
     .cafe-bakery {
         .pageshell {
             .row {
@@ -147,6 +157,6 @@
             .cafe-chesecake-tiny {
                 font-size: 10px;
             }
-        } // End Cage Bakery Page
-    }
+        } 
+    }// End Cage Bakery Page
 }
