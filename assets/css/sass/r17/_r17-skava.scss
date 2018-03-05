@@ -3,7 +3,9 @@
 .skavahide {
     display: none !important;
 }
-
+.sk_passthroughPage .parbase.page-hero {
+    display: none;
+}
 .main-content.container,
 .container.container--no-padding-bottom {
     padding: 0 !important;
