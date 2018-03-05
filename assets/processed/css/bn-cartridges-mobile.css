@@ -6493,11 +6493,6 @@ header .text--subheader {
   /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
   /* CONTRIBUTOR DETAILS PAGE (Bill) */
   /* CONTRIBUTOR DETAILS PAGE (BY) */
-  /*
-  .col-lg-2 {
-      display: none;
-  }
-  */
 }
 .isMobile .mobile-only {
   display: block !important;
@@ -6883,6 +6878,9 @@ header .text--subheader {
   margin: 20px 0;
   padding: 0 10px;
   text-align: center;
+}
+.isMobile #view-more-discover .col-lg-2 {
+  display: none;
 }
 .isMobile .col-lg-10.pl-l {
   width: 100%;
