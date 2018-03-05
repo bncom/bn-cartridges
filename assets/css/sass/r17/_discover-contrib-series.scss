@@ -134,7 +134,7 @@ div a.read-more.show-more-pdp {
     line-height: 1.5;
     display: inline;
 }
-@media only screen and (min-width: 601px)
+@media only screen and (min-width: 299px)
     and (max-width: 899px) {
 
 .tab-container .tab-list-container .tab-list .tab {
@@ -481,7 +481,7 @@ h2.rule {
 /* CONTRIBUTOR DETAILS PAGE (BY) */
 
 #view-more-discover {
-    
+
     .col-lg-2 {
         display: none;
     }
