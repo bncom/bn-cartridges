@@ -27,6 +27,10 @@
             font-size: 16px;
         }
     }
+    .hero{
+        margin: 0 auto;
+        text-align: center;
+    }
 
 }
 
@@ -157,8 +161,8 @@
             font-size: 0;
             line-height: 0;
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 14px;
+            height: 14px;
             padding: 5px;
             cursor: pointer;
             color: transparent;
@@ -172,14 +176,14 @@
         }
 
         li button:before {
-            font-family: 'slick';
-            font-size: 60px;
+            border-radius: 50%;
+            border: 1px solid #21282d;
             line-height: 20px;
             position: absolute;
             top: 0;
             left: 0;
-            width: 20px;
-            height: 20px;
+            width: 14px;
+            height: 14px;
             content: '•';
             text-align: center;
             opacity: .25;
@@ -191,6 +195,8 @@
         li.slick-active button:before {
             opacity: .75;
             color: black;
+            width: 16px;
+            height: 15px;
         }
     }
 }

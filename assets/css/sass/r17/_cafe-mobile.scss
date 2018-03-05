@@ -82,7 +82,7 @@
             }
 
         }
-        
+
     }
     .cafe-slick {
         img {
@@ -105,19 +105,48 @@
             a {
                 font-size: 15px;
                 line-height: 22px;
-                color: #000 !important;
                 font-weight: 400;
                 &.cafe-slick-btn {
                     color: #fff;
                     padding: 5.2px 30px;
                 }
-
             }
 
         } // End .cafe-slick
-        .slick-slide{
+        .slick-slide {
             border: none;
         }
+    } // Cafe Bakery page
+    .cafe-bakery {
+        .pageshell {
+            .row {
+                border-top: 1px solid #ccc;
+                font-family: Poynter, sans-serif;
+                span {
+                    padding-top: 20px;
+                    display: block;
+                }
+                &.cafe-table-header {
+                    border-top: none;
+                    text-transform: uppercase;
+                    font-family: Lato, sans-serif;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+            .text--small {
+                border-top: 1px solid #ccc;
+            }
+
+            .cafe-item {
+                font-family: Lato, sans-serif;
+            }
+            .cafe-banner-img img {
+                width: 100%;
+            }
+            .cafe-chesecake-tiny {
+                font-size: 10px;
+            }
+        } // End Cage Bakery Page
     }
 }
-

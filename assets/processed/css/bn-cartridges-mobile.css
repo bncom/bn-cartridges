@@ -6463,7 +6463,6 @@ header .text--subheader {
   .cafe-slick .cafe-info a {
     font-size: 15px;
     line-height: 22px;
-    color: #000 !important;
     font-weight: 400;
   }
   .cafe-slick .cafe-info a.cafe-slick-btn {
@@ -6472,6 +6471,34 @@ header .text--subheader {
   }
   .cafe-slick .slick-slide {
     border: none;
+  }
+
+  .cafe-bakery .pageshell .row {
+    border-top: 1px solid #ccc;
+    font-family: Poynter, sans-serif;
+  }
+  .cafe-bakery .pageshell .row span {
+    padding-top: 20px;
+    display: block;
+  }
+  .cafe-bakery .pageshell .row.cafe-table-header {
+    border-top: none;
+    text-transform: uppercase;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .cafe-bakery .pageshell .text--small {
+    border-top: 1px solid #ccc;
+  }
+  .cafe-bakery .pageshell .cafe-item {
+    font-family: Lato, sans-serif;
+  }
+  .cafe-bakery .pageshell .cafe-banner-img img {
+    width: 100%;
+  }
+  .cafe-bakery .pageshell .cafe-chesecake-tiny {
+    font-size: 10px;
   }
 }
 /* *** Discover - Contributor - Series pages 2018 *** */
