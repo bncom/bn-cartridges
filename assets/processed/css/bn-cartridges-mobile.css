@@ -6594,7 +6594,7 @@ header .text--subheader {
 .isMobile #author h2, .isMobile .tabpanel h2 {
   font-size: 4rem;
 }
-.isMobile .tabpanels .tabpanel, .isMobile .expandable-section {
+.isMobile .tabpanels .tabpanel, .isMobile .tabpanels .tabpanel div, .isMobile .expandable-section {
   font-size: 14px;
   line-height: 1.5;
   display: inline;
@@ -6608,7 +6608,7 @@ header .text--subheader {
     width: 85vw !important;
     /* margin: 10px 0 0 0; */
   }
-  .isMobile #author h2, .isMobile .isMobile .tabpanel h2 {
+  .isMobile #author h2, .isMobile .tabpanel h2 {
     font-size: 2.2rem;
   }
 }
@@ -6879,7 +6879,7 @@ header .text--subheader {
   padding: 0 10px;
   text-align: center;
 }
-.isMobile #view-more-discover .col-lg-2 {
+.isMobile .col-lg-2 {
   display: none;
 }
 .isMobile .col-lg-10.pl-l {
