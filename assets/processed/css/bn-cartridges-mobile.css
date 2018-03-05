@@ -6478,34 +6478,6 @@ header .text--subheader {
     text-align: center;
     margin: 0 auto;
   }
-
-  .cafe-bakery .pageshell .row {
-    border-top: 1px solid #ccc;
-    font-family: Poynter, sans-serif;
-  }
-  .cafe-bakery .pageshell .row span {
-    padding-top: 20px;
-    display: block;
-  }
-  .cafe-bakery .pageshell .row.cafe-table-header {
-    border-top: none;
-    text-transform: uppercase;
-    font-family: Lato, sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .cafe-bakery .pageshell .text--small {
-    border-top: 1px solid #ccc;
-  }
-  .cafe-bakery .pageshell .cafe-item {
-    font-family: Lato, sans-serif;
-  }
-  .cafe-bakery .pageshell .cafe-banner-img img {
-    width: 100%;
-  }
-  .cafe-bakery .pageshell .cafe-chesecake-tiny {
-    font-size: 10px;
-  }
 }
 /* *** Discover - Contributor - Series pages 2018 *** */
 .isMobile {
@@ -6521,6 +6493,11 @@ header .text--subheader {
   /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
   /* CONTRIBUTOR DETAILS PAGE (Bill) */
   /* CONTRIBUTOR DETAILS PAGE (BY) */
+  /*
+  .col-lg-2 {
+      display: none;
+  }
+  */
 }
 .isMobile .mobile-only {
   display: block !important;
@@ -6906,9 +6883,6 @@ header .text--subheader {
   margin: 20px 0;
   padding: 0 10px;
   text-align: center;
-}
-.isMobile .col-lg-2 {
-  display: none;
 }
 .isMobile .col-lg-10.pl-l {
   width: 100%;
