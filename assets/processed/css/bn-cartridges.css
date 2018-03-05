@@ -3817,7 +3817,7 @@ body {
   width: 16px;
   height: 15px;
 }
-.cafe-slick .cafe-hero {
+.cafe-slick .cafe-hero.hero {
   margin: 0 auto;
   text-align: center;
 }
