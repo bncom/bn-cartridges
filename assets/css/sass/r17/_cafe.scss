@@ -119,7 +119,7 @@
 
         }
     }
-    
+
     .slick-list {
         overflow: hidden;
     }
@@ -201,8 +201,10 @@
 
     /*  CAFE HEADER  */
     .cafe-hero {
-        margin: 0 auto;
-        text-align: center;
+        &.hero {
+            margin: 0 auto;
+            text-align: center;
+        }
     }
     /* CAFE ITEMS TABLE */
     .cafe-table {
