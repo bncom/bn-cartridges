@@ -6599,7 +6599,7 @@ header .text--subheader {
   line-height: 1.5;
   display: inline;
 }
-@media only screen and (min-width: 601px) and (max-width: 899px) {
+@media only screen and (min-width: 299px) and (max-width: 899px) {
   .isMobile .tab-container .tab-list-container .tab-list .tab {
     font-size: 2rem;
     padding: 1rem;
