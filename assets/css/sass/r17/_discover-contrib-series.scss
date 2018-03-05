@@ -129,7 +129,7 @@ div a.read-more.show-more-pdp {
     font-size: 4rem;
 }
 
-.tabpanels .tabpanel, .expandable-section {
+.tabpanels .tabpanel, .tabpanels .tabpanel div, .expandable-section {
     font-size: 14px;
     line-height: 1.5;
     display: inline;
@@ -147,7 +147,7 @@ div a.read-more.show-more-pdp {
     /* margin: 10px 0 0 0; */
 }
 
-#author h2, .isMobile .tabpanel h2 {
+#author h2, .tabpanel h2 {
     font-size: 2.2rem;
 }
 
@@ -480,6 +480,7 @@ h2.rule {
 
 /* CONTRIBUTOR DETAILS PAGE (BY) */
 
+<<<<<<< HEAD
 #view-more-discover {
     
     .col-lg-2 {
@@ -490,6 +491,11 @@ h2.rule {
         width: 100%;
         padding: 0 !important;
     }
+=======
+.col-lg-2 {
+    display: none;
+}
+>>>>>>> 5310c963244690b44035eb416aa1c19cd828abb5
 
 }
 
