@@ -480,13 +480,17 @@ h2.rule {
 
 /* CONTRIBUTOR DETAILS PAGE (BY) */
 
-#view-more-discover .col-lg-2 {
-    display: none;
-}
+#view-more-discover {
+    
+    .col-lg-2 {
+        display: none;
+    }
 
-.col-lg-10.pl-l {
-    width: 100%;
-    padding: 0 !important;
+    .col-lg-10.pl-l {
+        width: 100%;
+        padding: 0 !important;
+    }
+
 }
 
 #searchGrid {

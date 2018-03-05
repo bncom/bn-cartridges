@@ -6882,7 +6882,7 @@ header .text--subheader {
 .isMobile #view-more-discover .col-lg-2 {
   display: none;
 }
-.isMobile .col-lg-10.pl-l {
+.isMobile #view-more-discover .col-lg-10.pl-l {
   width: 100%;
   padding: 0 !important;
 }
