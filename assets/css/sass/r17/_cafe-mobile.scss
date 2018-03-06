@@ -138,6 +138,9 @@
     .cafe-table {
         .cafe-item {
             text-align: center;
+            div{
+                margin: 20px auto;
+            }
             h3 {
                 font-size: 16px;
                 font-weight: 400;
@@ -157,14 +160,14 @@
             margin: 0 auto;
         }
     }
+    
     .cafe-calories {
         padding: 0px;
         span {
             background: #ccc;
             display: block;
             padding: 10px 20px;
-
-            ::before {
+            &:before {
                 content: 'calories';
                 float: left;
                 width: 50%;
@@ -176,4 +179,4 @@
     }
 }
 
-}
+

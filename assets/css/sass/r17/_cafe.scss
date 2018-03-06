@@ -3,7 +3,7 @@
         display: none;
     }
     .row{
-        border-top: 1ps solid #ccc;
+        border-top: 1px solid #ccc;
     }
 
     figure {
@@ -249,8 +249,9 @@
     }
 }
 
+// CAFE TABLE
 .cafe-calories{
-    ::after{
+    &:after{
         content: ' calories';
         text-transform: uppercase;
     }

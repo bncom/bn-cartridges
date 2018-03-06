@@ -6484,18 +6484,41 @@ header .text--subheader {
     text-align: center;
   }
   .cafe-table .cafe-item div {
-    margin: 20px 0;
+    margin: 20px auto;
   }
-  .cafe-table .cafe-item div span {
+  .cafe-table .cafe-item h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: .025px;
+  }
+  .cafe-table .cafe-item p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+  .cafe-table .cafe-item-img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .cafe-calories {
+    padding: 0px;
+  }
+  .cafe-calories span {
     background: #ccc;
     display: block;
     padding: 10px 20px;
   }
-  .cafe-table .cafe-item .cafe-item-img {
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    margin: 0 auto;
+  .cafe-calories span:before {
+    content: 'calories';
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    text-align: left;
+    display: inline-block;
   }
 }
 /* *** Discover - Contributor - Series pages 2018 *** */
