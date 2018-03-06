@@ -2,7 +2,7 @@
     .hidden-lg {
         display: none;
     }
-    .row{
+    .row {
         border-top: 1px solid #ccc;
     }
 
@@ -29,10 +29,11 @@
             font-size: 16px;
         }
     }
-    .cafe-table-header{
+    .cafe-table-header {
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 600;
+        border: none;
     }
 }
 
@@ -205,39 +206,7 @@
     }
 
 
-    /* CAFE ITEMS TABLE */
-    .cafe-table {
-        .pageshell {
-            .row {
-                border-top: 1px solid #ccc;
-                font-family: Poynter, sans-serif;
-                span {
-                    padding-top: 20px;
-                    display: block;
-                }
-                &.cafe-table-header {
-                    border-top: none;
-                    text-transform: uppercase;
-                    font-family: Lato, sans-serif;
-                    font-size: 12px;
-                    font-weight: 600;
-                }
-            }
-            .text--small {
-                border-top: 1px solid #ccc;
-            }
 
-            .cafe-item {
-                font-family: Lato, sans-serif;
-            }
-            .cafe-banner-img img {
-                width: 100%;
-            }
-            .cafe-chesecake-tiny {
-                font-size: 10px;
-            }
-        }
-    } // End Cage Table Item
 }
 
 /*  CAFE HEADER  */
@@ -250,9 +219,36 @@
 }
 
 // CAFE TABLE
-.cafe-calories{
-    &:after{
-        content: ' calories';
+.cafe-table {
+    .cafe-table-header {
+        border-top: none;
         text-transform: uppercase;
+        font-family: Lato, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
     }
-}
+
+    .text--small {
+        border-top: 1px solid #ccc;
+    }
+
+    .cafe-item {
+        h3 {
+            font-family: Poynter, Georgia, serif;
+            font-weight: 600;
+        }
+        .cafe-item-img {
+            width: 89px;
+            height: 75px;
+        }
+        .cafe-calories {
+            &:after {
+                content: ' calories';
+                text-transform: uppercase;
+            }
+        }
+    }
+    .cafe-chesecake-tiny {
+        font-size: 10px;
+    }
+} // End Cage Table Item

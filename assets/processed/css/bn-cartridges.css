@@ -3668,6 +3668,7 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
+  border: none;
 }
 
 .cafe-reasons {
@@ -3695,7 +3696,6 @@ body {
 /* CAFE SLICK CAROUSEL */
 .cafe-slick {
   margin-bottom: 40px;
-  /* CAFE ITEMS TABLE */
 }
 .cafe-slick img {
   width: 100%;
@@ -3824,33 +3824,6 @@ body {
   width: 16px;
   height: 15px;
 }
-.cafe-slick .cafe-table .pageshell .row {
-  border-top: 1px solid #ccc;
-  font-family: Poynter, sans-serif;
-}
-.cafe-slick .cafe-table .pageshell .row span {
-  padding-top: 20px;
-  display: block;
-}
-.cafe-slick .cafe-table .pageshell .row.cafe-table-header {
-  border-top: none;
-  text-transform: uppercase;
-  font-family: Lato, sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-}
-.cafe-slick .cafe-table .pageshell .text--small {
-  border-top: 1px solid #ccc;
-}
-.cafe-slick .cafe-table .pageshell .cafe-item {
-  font-family: Lato, sans-serif;
-}
-.cafe-slick .cafe-table .pageshell .cafe-banner-img img {
-  width: 100%;
-}
-.cafe-slick .cafe-table .pageshell .cafe-chesecake-tiny {
-  font-size: 10px;
-}
 
 /*  CAFE HEADER  */
 .cafe-hero.hero {
@@ -3858,7 +3831,28 @@ body {
   text-align: center;
 }
 
-.cafe-calories:after {
+.cafe-table .cafe-table-header {
+  border-top: none;
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.cafe-table .text--small {
+  border-top: 1px solid #ccc;
+}
+.cafe-table .cafe-item h3 {
+  font-family: Poynter, Georgia, serif;
+  font-weight: 600;
+}
+.cafe-table .cafe-item .cafe-item-img {
+  width: 89px;
+  height: 75px;
+}
+.cafe-table .cafe-item .cafe-calories:after {
   content: ' calories';
   text-transform: uppercase;
+}
+.cafe-table .cafe-chesecake-tiny {
+  font-size: 10px;
 }

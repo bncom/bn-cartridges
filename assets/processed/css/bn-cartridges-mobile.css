@@ -6497,7 +6497,7 @@ header .text--subheader {
     font-weight: 300;
     line-height: 19px;
   }
-  .cafe-table .cafe-item-img {
+  .cafe-table .cafe-item .cafe-item-img {
     width: 200px;
     height: 200px;
     text-align: center;
