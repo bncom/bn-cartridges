@@ -245,3 +245,8 @@
         text-align: center;
     }
 }
+.cafe-calories{
+    ::after{
+        content: 'CALORIES';
+    }
+}

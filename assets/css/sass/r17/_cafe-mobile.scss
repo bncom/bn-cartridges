@@ -147,6 +147,17 @@
                 margin: 0 auto;
             }
         }
+         .cafe-calories{
+             padding: 0px;
+             ::before{
+                 content: 'calories';
+                 float: left;
+                 width: 50%;
+                 text-transform: uppercase;
+                 text-align: left;
+                 display: inline-block;
+             }
+         }
     }
    
 }
