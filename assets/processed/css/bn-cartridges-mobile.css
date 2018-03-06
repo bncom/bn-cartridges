@@ -6379,6 +6379,9 @@ header .text--subheader {
     clear: both;
   }
 
+  .pageshell .row {
+    border-top: none;
+  }
   .pageshell .col-lg-4 {
     width: 50%;
   }
@@ -6487,10 +6490,11 @@ header .text--subheader {
     margin: 20px auto;
   }
   .cafe-table .cafe-item h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 24px;
     letter-spacing: .025px;
+    margin-bottom: 15px;
   }
   .cafe-table .cafe-item p {
     font-size: 14px;
@@ -6508,9 +6512,13 @@ header .text--subheader {
     padding: 0px;
   }
   .cafe-calories span {
-    background: #ccc;
+    background: #f5f5f5;
     display: block;
-    padding: 10px 20px;
+    padding: 16px 20px;
+    font-size: 14px;
+  }
+  .cafe-calories span:after {
+    content: none;
   }
   .cafe-calories span:before {
     content: 'calories';

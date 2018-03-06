@@ -3849,7 +3849,7 @@ body {
   width: 89px;
   height: 75px;
 }
-.cafe-table .cafe-item .cafe-calories:after {
+.cafe-table .cafe-item .cafe-calories span:after {
   content: ' calories';
   text-transform: uppercase;
 }

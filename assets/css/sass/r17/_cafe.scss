@@ -242,9 +242,11 @@
             height: 75px;
         }
         .cafe-calories {
-            &:after {
-                content: ' calories';
-                text-transform: uppercase;
+            span {
+                &:after {
+                    content: ' calories';
+                    text-transform: uppercase;
+                }
             }
         }
     }
