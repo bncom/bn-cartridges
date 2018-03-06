@@ -2,6 +2,9 @@
     .hidden-lg {
         display: none;
     }
+    .row{
+        border-top: 1ps solid #ccc;
+    }
 
     figure {
         .img-responsive {
@@ -245,8 +248,10 @@
         text-align: center;
     }
 }
+
 .cafe-calories{
     ::after{
-        content: 'CALORIES';
+        content: ' calories';
+        text-transform: uppercase;
     }
 }

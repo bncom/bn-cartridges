@@ -13,11 +13,13 @@
     .clearfix-sm {
         clear: both;
     } 
+    
     // Pageshell
     .pageshell {
         .col-lg-4 {
             width: 50%;
         }
+        
         figure {
             margin: 37px 0;
             a {
@@ -85,6 +87,8 @@
         }
 
     }
+    
+    // CAFE SLICK
     .cafe-slick {
         img {
             width: auto !important;
@@ -117,47 +121,59 @@
         .slick-slide {
             border: none;
         }
-       
+
     } 
+    // END CAFE SLICK
+    
     // CAFE TABLE
-    .cafe-hero{
-        .hero-img-anchor{
-            img{
+    .cafe-hero {
+        .hero-img-anchor {
+            img {
                 width: 300%;
                 position: relative;
                 transform: translateY(-60%);
             }
         }
     }
-     .cafe-table{
-         .cafe-item{
-             text-align: center;
-             div{
-                 margin: 20px 0;
-                 span{
-                     background: #ccc;
-                     display: block;
-                     padding: 10px 20px;
-                 }
-             }
-            .cafe-item-img{
-                width: 250px;
-                height: 250px;
-                text-align: center;
-                margin: 0 auto;
+    .cafe-table {
+        .cafe-item {
+            text-align: center;
+            h3 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: .025px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 19px;
             }
         }
-         .cafe-calories{
-             padding: 0px;
-             ::before{
-                 content: 'calories';
-                 float: left;
-                 width: 50%;
-                 text-transform: uppercase;
-                 text-align: left;
-                 display: inline-block;
-             }
-         }
+        .cafe-item-img {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: 0 auto;
+        }
     }
-   
+    .cafe-calories {
+        padding: 0px;
+        span {
+            background: #ccc;
+            display: block;
+            padding: 10px 20px;
+
+            ::before {
+                content: 'calories';
+                float: left;
+                width: 50%;
+                text-transform: uppercase;
+                text-align: left;
+                display: inline-block;
+            }
+        }
+    }
+}
+
 }
