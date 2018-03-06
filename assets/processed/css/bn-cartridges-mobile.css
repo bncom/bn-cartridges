@@ -6650,16 +6650,9 @@ header .text--subheader {
   display: inline;
 }
 @media only screen and (max-width: 600px) {
-  .isMobile .tab-container .tab-list-container .tab-list .tab {
-    font-size: 2rem;
-    padding: 1rem;
-  }
   .isMobile .author-tabs .tabpanels-container, .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
     width: 85vw !important;
     /* margin: 10px 0 0 0; */
-  }
-  .isMobile #author h2, .isMobile .tabpanel h2 {
-    font-size: 2.2rem;
   }
 }
 .isMobile h2.rule {
