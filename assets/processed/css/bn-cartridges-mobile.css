@@ -6661,7 +6661,7 @@ header .text--subheader {
   width: 30%;
 }
 .isMobile .author-image a {
-  font-size: 2.7rem;
+  font-size: 14px;
   text-align: center;
 }
 .isMobile h2.rule {
