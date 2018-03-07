@@ -6967,6 +6967,9 @@ header .text--subheader {
 .isMobile .resultsListContainer #gridView .product-shelf-tile .product-shelf-info .product-shelf-ratings {
   padding: 3rem 0px;
 }
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-pricing > div {
+  margin-bottom: 1.5rem;
+}
 .isMobile .resultsListContainer .pagination li span, .isMobile .resultsListContainer .pagination li a {
   font-size: 5rem;
 }
