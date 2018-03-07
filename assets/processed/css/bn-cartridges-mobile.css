@@ -6643,7 +6643,7 @@ header .text--subheader {
   float: left;
 }
 .isMobile #author h2, .isMobile .tabpanel h2 {
-  font-size: 4rem;
+  font-size: 24px;
 }
 .isMobile .tabpanels .tabpanel, .isMobile .tabpanels .tabpanel div, .isMobile .expandable-section {
   font-size: 14px;
