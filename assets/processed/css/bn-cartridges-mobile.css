@@ -6659,7 +6659,7 @@ header .text--subheader {
   display: inline;
 }
 @media only screen and (max-width: 600px) {
-  .isMobile .author-tabs .tabpanels-container, .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
+  .isMobile .author-tabs .tabpanels-container, .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel, .isMobile .multi-author-carousel .multi-author-slide {
     width: 85vw !important;
     /* margin: 10px 0 0 0; */
   }
