@@ -6538,6 +6538,7 @@ header .text--subheader {
   .author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
   /* Contributor Page */
   /* Tabulation */
+  /* Related Authors */
   /* Popular Authors carousel */
   /* Discover Category */
   /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
@@ -6654,6 +6655,14 @@ header .text--subheader {
     width: 85vw !important;
     /* margin: 10px 0 0 0; */
   }
+}
+.isMobile .carousel .author-image {
+  padding-top: 5rem;
+  width: 30%;
+}
+.isMobile .author-image a {
+  font-size: 2.7rem;
+  text-align: center;
 }
 .isMobile h2.rule {
   font-size: 24px;
