@@ -606,6 +606,10 @@ h2.rule {
             float: left;
         }
 
+        .results-icons .icons a#list-view.selected {
+            float: right;
+        }
+
     }
 
     .icon-gallery:before, .icon-list:before {
@@ -716,7 +720,15 @@ h2.rule {
             line-height: 17px;
         }
 
-        .product-shelf-list .product-shelf-pricing .format {
+        .product-shelf-list .product-shelf-pricing th.format, .product-shelf-list .product-shelf-pricing th.buy-new, .product-shelf-list .product-shelf-pricing th.new-used {
+            font-size: 12px;
+        }
+
+        .product-shelf-list .product-shelf-pricing td a.format {
+            font-size: 12px;
+        }
+
+        .product-shelf-list .product-shelf-pricing td a.current, .product-shelf-list .product-shelf-pricing td a.other {
             font-size: 12px;
         }
 
