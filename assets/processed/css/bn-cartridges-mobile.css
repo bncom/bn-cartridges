@@ -7106,3 +7106,20 @@ header .text--subheader {
 .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing .format {
   font-size: 12px;
 }
+.isMobile button#view-more-discover-btn {
+  width: 132px;
+  height: 52px;
+  font-size: 14px;
+}
+.isMobile button#view-more-discover-btn span.link-show-more--open {
+  font-size: 2rem;
+  top: -3px;
+}
+.isMobile button#view-more-discover-btn span.link-show-more {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+}
+.isMobile button#view-more-discover-btn span.link-show-more:after {
+  font-size: 2rem;
+}
