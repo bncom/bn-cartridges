@@ -7075,7 +7075,7 @@ header .text--subheader {
   width: 60px;
 }
 .isMobile .resultsListContainer .selectBox#view1-replacement .selectBox-label {
-  text-align: center;
+  padding-left: 12px;
 }
 .isMobile .resultsListContainer #listView .row .col-lg-3 {
   width: 45%;
