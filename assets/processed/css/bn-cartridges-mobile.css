@@ -6478,9 +6478,14 @@ header .text--subheader {
   }
 
   .cafe-hero .hero-img-anchor img {
-    width: 300%;
+    width: 300% !important;
     position: relative;
-    transform: translateY(-60%);
+    transform: translateX(-60%);
+  }
+  .cafe-hero .hero-info {
+    position: inherit;
+    font-size: 14px;
+    padding: 30px;
   }
 
   .cafe-table .cafe-item {
