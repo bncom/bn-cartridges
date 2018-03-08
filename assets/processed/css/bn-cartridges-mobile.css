@@ -6365,7 +6365,6 @@ header .text--subheader {
   color: #a36b6c;
 }
 
-/* CAFE */
 @media (max-width: 700px) {
   .hidden-xs {
     display: none;
@@ -6480,12 +6479,14 @@ header .text--subheader {
   .cafe-hero .hero-img-anchor img {
     width: 300% !important;
     position: relative;
-    transform: translateX(-60%);
+    transform: translateX(-58%);
   }
-  .cafe-hero .hero-info {
+  .cafe-hero .hero-slide .cafe-hero {
     position: inherit;
-    font-size: 14px;
-    padding: 30px;
+    margin: 20px 30px;
+  }
+  .cafe-hero .hero-slide .cafe-hero p {
+    font-size: 16px;
   }
 
   .cafe-table .cafe-item {
@@ -6495,20 +6496,32 @@ header .text--subheader {
     margin: 20px auto;
   }
   .cafe-table .cafe-item h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: .025px;
-    margin-bottom: 15px;
+    margin: 15px 30px;
+    overflow-wrap: break-word;
   }
   .cafe-table .cafe-item p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 19px;
+    margin: auto 30px;
   }
-  .cafe-table .cafe-item .cafe-item-img {
-    width: 200px;
+  .cafe-table .cafe-hero .hero-img-anchor img {
+    width: 300% !important;
+    position: relative;
+    transform: translateX(-60%);
+  }
+  .cafe-table .cafe-hero .hero-info {
+    position: inherit;
+    font-size: 14px;
+    padding: 30px;
+  }
+  .cafe-table .cafe-hero .cafe-item-img {
     height: 200px;
+    width: 200px;
     text-align: center;
     margin: 0 auto;
   }
@@ -6517,21 +6530,46 @@ header .text--subheader {
     padding: 0px;
   }
   .cafe-calories span {
+    font-size: 14px;
     background: #f5f5f5;
     display: block;
     padding: 16px 20px;
-    font-size: 14px;
   }
-  .cafe-calories span:after {
-    content: none;
+  .cafe-calories span::after {
+    content: none !important;
   }
-  .cafe-calories span:before {
+  .cafe-calories span::before {
     content: 'calories';
-    float: left;
-    width: 50%;
-    text-transform: uppercase;
-    text-align: left;
     display: inline-block;
+    float: left;
+    text-align: left;
+    text-transform: uppercase;
+    width: 50%;
+    padding-left: 20px;
+  }
+
+  .cafe-item span {
+    font-size: 14px;
+    background: #f5f5f5;
+    display: block;
+    padding: 16px 20px;
+  }
+  div:nth-child(odd) .cafe-item span {
+    background: #fff;
+  }
+  .cafe-item span:before {
+    width: 50%;
+    float: left;
+    text-align: left;
+  }
+  div:nth-child(3) .cafe-item span:before {
+    content: "Tall (12oz)";
+  }
+  div:nth-child(4) .cafe-item span:before {
+    content: "Grande (16oz)";
+  }
+  div:nth-child(5) .cafe-item span:before {
+    content: "Venti (H:20oz, C:24oz)";
   }
 }
 /* *** Discover - Contributor - Series pages 2018 *** */
@@ -6543,6 +6581,7 @@ header .text--subheader {
   .author-series-indexes--series .rule:not(.index-heading):before {display: none;}*/
   /* Contributor Page */
   /* Tabulation */
+  /* Related Authors */
   /* Popular Authors carousel */
   /* Discover Category */
   /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
@@ -6647,7 +6686,7 @@ header .text--subheader {
   float: left;
 }
 .isMobile #author h2, .isMobile .tabpanel h2 {
-  font-size: 4rem;
+  font-size: 16px;
 }
 .isMobile .tabpanels .tabpanel, .isMobile .tabpanels .tabpanel div, .isMobile .expandable-section {
   font-size: 14px;
@@ -6655,17 +6694,18 @@ header .text--subheader {
   display: inline;
 }
 @media only screen and (max-width: 600px) {
-  .isMobile .tab-container .tab-list-container .tab-list .tab {
-    font-size: 2rem;
-    padding: 1rem;
-  }
-  .isMobile .author-tabs .tabpanels-container, .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel {
+  .isMobile .author-tabs .tabpanels-container, .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel, .isMobile .multi-author-carousel .multi-author-slide {
     width: 85vw !important;
     /* margin: 10px 0 0 0; */
   }
-  .isMobile #author h2, .isMobile .tabpanel h2 {
-    font-size: 2.2rem;
-  }
+}
+.isMobile .carousel .author-image {
+  padding-top: 5rem;
+  width: 30%;
+}
+.isMobile .author-image a {
+  font-size: 14px;
+  text-align: center;
 }
 .isMobile h2.rule {
   font-size: 24px;
@@ -6970,6 +7010,9 @@ header .text--subheader {
 .isMobile .resultsListContainer #gridView .product-shelf-tile .product-shelf-info .product-shelf-ratings {
   padding: 3rem 0px;
 }
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-pricing > div {
+  margin-bottom: 1.5rem;
+}
 .isMobile .resultsListContainer .pagination li span, .isMobile .resultsListContainer .pagination li a {
   font-size: 5rem;
 }
@@ -7021,6 +7064,9 @@ header .text--subheader {
 }
 .isMobile .resultsListContainer .results-listing-options .results-icons .icons a#list-view {
   float: left;
+}
+.isMobile .resultsListContainer .results-listing-options .results-icons .icons a#list-view.selected {
+  float: right;
 }
 .isMobile .resultsListContainer .icon-gallery:before, .isMobile .resultsListContainer .icon-list:before {
   font-size: 7rem;
@@ -7075,7 +7121,7 @@ header .text--subheader {
   width: 60px;
 }
 .isMobile .resultsListContainer .selectBox#view1-replacement .selectBox-label {
-  text-align: center;
+  padding-left: 12px;
 }
 .isMobile .resultsListContainer #listView .row .col-lg-3 {
   width: 45%;
@@ -7106,6 +7152,29 @@ header .text--subheader {
   font-size: 11px;
   line-height: 17px;
 }
-.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing .format {
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing th.format, .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing th.buy-new, .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing th.new-used {
   font-size: 12px;
+}
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.format {
+  font-size: 12px;
+}
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.current, .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.other {
+  font-size: 12px;
+}
+.isMobile button#view-more-discover-btn {
+  width: 132px;
+  height: 52px;
+  font-size: 14px;
+}
+.isMobile button#view-more-discover-btn span.link-show-more--open {
+  font-size: 2rem;
+  top: -3px;
+}
+.isMobile button#view-more-discover-btn span.link-show-more {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+}
+.isMobile button#view-more-discover-btn span.link-show-more:after {
+  font-size: 2rem;
 }

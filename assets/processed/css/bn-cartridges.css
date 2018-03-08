@@ -3850,7 +3850,7 @@ body {
   height: 75px;
 }
 .cafe-table .cafe-item .cafe-calories span:after {
-  content: ' calories';
+  content: 'calories';
   text-transform: uppercase;
 }
 .cafe-table .cafe-chesecake-tiny {

@@ -126,7 +126,7 @@ div a.read-more.show-more-pdp {
 }
 
 #author h2, .tabpanel h2 {
-    font-size: 4rem;
+    font-size: 16px;
 }
 
 .tabpanels .tabpanel, .tabpanels .tabpanel div, .expandable-section {
@@ -136,23 +136,25 @@ div a.read-more.show-more-pdp {
 }
 @media only screen and (max-width: 600px) {
 
-.tab-container .tab-list-container .tab-list .tab {
-    font-size: 2rem;
-    padding: 1rem;
-}
 
-.author-tabs .tabpanels-container, #pdp-tabs .tab-container .tabpanels-container .tabpanel {
+.author-tabs .tabpanels-container, #pdp-tabs .tab-container .tabpanels-container .tabpanel, .multi-author-carousel .multi-author-slide {
     width: 85vw !important;
     /* margin: 10px 0 0 0; */
 }
 
-#author h2, .tabpanel h2 {
-    font-size: 2.2rem;
 }
 
+/* Related Authors */
 
-
+.carousel .author-image {
+    padding-top: 5rem;
+    width: 30%;
 }
+.author-image a {
+    font-size: 14px;
+    text-align: center;
+}
+
 
 /* Popular Authors carousel */
 
@@ -533,6 +535,10 @@ h2.rule {
             padding: 3rem 0px;
         }
 
+        .product-shelf-grid .product-shelf-pricing>div {
+            margin-bottom: 1.5rem;
+        }
+
     }
 
     .pagination li span, .pagination li a {
@@ -598,6 +604,10 @@ h2.rule {
 
         .results-icons .icons a#list-view {
             float: left;
+        }
+
+        .results-icons .icons a#list-view.selected {
+            float: right;
         }
 
     }
@@ -667,7 +677,7 @@ h2.rule {
     }
 
     .selectBox#view1-replacement .selectBox-label {
-        text-align: center;
+        padding-left: 12px;
     }
 
     #listView {
@@ -710,10 +720,40 @@ h2.rule {
             line-height: 17px;
         }
 
-        .product-shelf-list .product-shelf-pricing .format {
+        .product-shelf-list .product-shelf-pricing th.format, .product-shelf-list .product-shelf-pricing th.buy-new, .product-shelf-list .product-shelf-pricing th.new-used {
             font-size: 12px;
         }
 
+        .product-shelf-list .product-shelf-pricing td a.format {
+            font-size: 12px;
+        }
+
+        .product-shelf-list .product-shelf-pricing td a.current, .product-shelf-list .product-shelf-pricing td a.other {
+            font-size: 12px;
+        }
+
+    }
+
+}
+
+button#view-more-discover-btn {
+    width: 132px;
+    height: 52px;
+    font-size: 14px;
+
+    span.link-show-more--open {
+        font-size: 2rem;
+        top: -3px;
+    }
+
+    span.link-show-more {
+        position: relative;
+        top: -1px;
+        display: inline-block;
+    }
+
+    span.link-show-more:after {
+        font-size: 2rem;
     }
 
 }
