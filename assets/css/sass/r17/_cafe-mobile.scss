@@ -12,8 +12,7 @@
 
   .clearfix-sm {
     clear: both;
-  } 
-  // Pageshell
+  } // Pageshell
   .pageshell {
     .row {
       border-top: none;
@@ -132,11 +131,13 @@
         transform: translateX(-58%);
       }
     }
-    .cafe-hero {
-      position: inherit;
-      margin: 20px 30px;
-      p {
-        font-size: 16px;
+    .hero-slide {
+      .cafe-hero {
+        position: inherit;
+        margin: 20px 30px;
+        p {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -147,15 +148,15 @@
         margin: 20px auto;
       }
       h3 {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: .025px;
         margin: 15px 30px;
-        overflow-wrap: wrap;
+        overflow-wrap: break-word;
       }
       p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
         line-height: 19px;
         margin: auto 30px;
@@ -164,7 +165,6 @@
       .cafe-item-img {
         height: 200px;
         width: 200px;
-        
         text-align: center;
         margin: 0 auto;
       }
@@ -173,11 +173,13 @@
 
   .cafe-calories {
     padding: 0px;
+
     span {
       font-size: 14px;
       background: #f5f5f5;
       display: block;
       padding: 16px 20px;
+
       &::after {
         content: none !important;
       }
@@ -185,10 +187,37 @@
         content: 'calories';
         display: inline-block;
         float: left;
+        text-align: left;
         text-transform: uppercase;
         width: 50%;
         padding-left: 20px;
       }
     }
+  } // CAFE Beverage
+  .cafe-item {
+    span {
+      font-size: 14px;
+      background: #f5f5f5;
+      display: block;
+      padding: 16px 20px;
+      div:nth-child(odd) & {
+        background: #fff;
+      }
+      &:before {
+        width: 50%;
+        float: left;
+        text-align: left;
+        div:nth-child(3) & {
+          content: "Tall (12oz)";
+        }
+        div:nth-child(4) & {
+          content: "Grande (16oz)";
+        }
+        div:nth-child(5) & {
+          content: "Venti (H:20oz, C:24oz)";
+        }
+      }
+    }
   }
-}
+
+} // CLOSE MEdia querie
