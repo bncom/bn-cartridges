@@ -134,14 +134,17 @@ div a.read-more.show-more-pdp {
     line-height: 1.5;
     display: inline;
 }
-@media only screen and (max-width: 600px) {
-
-
-.author-tabs .tabpanels-container, #pdp-tabs .tab-container .tabpanels-container .tabpanel, .multi-author-carousel .multi-author-slide {
-    width: 85vw !important;
-    /* margin: 10px 0 0 0; */
+@media screen and (min-width: 601px) {
+    .isMobile .tab-container .tab-list-container .tab-list .tab {
+      font-family: Lato,sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+  }
 }
-
+@media screen and (max-width: 600px) {
+  .author-tabs .tabpanels-container, #pdp-tabs .tab-container .tabpanels-container .tabpanel, .multi-author-carousel .multi-author-slide {
+    width: 85vw !important;
+  }
 }
 
 /* Related Authors */

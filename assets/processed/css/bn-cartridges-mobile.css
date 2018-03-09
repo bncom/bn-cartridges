@@ -6697,10 +6697,16 @@ header .text--subheader {
   line-height: 1.5;
   display: inline;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 601px) {
+  .isMobile .isMobile .tab-container .tab-list-container .tab-list .tab {
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
   .isMobile .author-tabs .tabpanels-container, .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel, .isMobile .multi-author-carousel .multi-author-slide {
     width: 85vw !important;
-    /* margin: 10px 0 0 0; */
   }
 }
 .isMobile .carousel .author-image {
