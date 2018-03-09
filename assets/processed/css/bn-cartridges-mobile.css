@@ -6947,9 +6947,6 @@ header .text--subheader {
   margin-top: 20px;
   widows: auto !important;
 }
-.isMobile .container > .author-header {
-  display: none;
-}
 .isMobile .author-header .col-lg-3 {
   width: auto;
   float: none;
@@ -7187,4 +7184,7 @@ header .text--subheader {
 }
 .isMobile button#view-more-discover-btn span.link-show-more:after {
   font-size: 2rem;
+}
+.isMobile .author-header .author-header__details header h1 {
+  font-size: 30px !important;
 }
