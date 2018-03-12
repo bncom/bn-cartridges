@@ -7018,8 +7018,8 @@ header .text--subheader {
   width: 100%;
   padding: 0 !important;
 }
-.isMobile #searchGrid {
-  padding: 0;
+.isMobile #view-more-discover #searchGrid.bd-left-disabled-gray.pl-xxl {
+  padding: 0 15px !important;
 }
 .isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-tile {
   height: 345px !important;
