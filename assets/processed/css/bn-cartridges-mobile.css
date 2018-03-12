@@ -6671,6 +6671,10 @@ header .text--subheader {
   flex-flow: unset;
   text-align: center;
 }
+.isMobile .discover-record-spotlight--popular-author .author-image {
+  padding-top: 5rem;
+  width: 100%;
+}
 .isMobile div a.read-more.show-more-pdp {
   display: none;
 }
@@ -6709,7 +6713,7 @@ header .text--subheader {
     width: 85vw !important;
   }
 }
-.isMobile .author-image-carousel .carousel .author-image {
+.isMobile .carousel .author-image {
   padding-top: 5rem;
   width: 30%;
 }
