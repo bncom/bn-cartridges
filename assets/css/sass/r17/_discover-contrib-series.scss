@@ -492,10 +492,10 @@ h2.rule {
         padding: 0 !important;
     }
 
-}
+    #searchGrid.bd-left-disabled-gray.pl-xxl {
+        padding: 0 15px !important;
+    }
 
-#searchGrid {
-    padding: 0;
 }
 
 .resultsListContainer {
@@ -760,3 +760,19 @@ button#view-more-discover-btn {
     }
 
 }
+
+/* DISCOVER CATEGORIES PAGE TITLE */
+
+.author-header .author-header__details header h1 {
+    font-size: 30px;
+}
+
+.container>.author-header {
+    display: block;
+}
+
+.author-header .author-header__details {
+    margin-top: 15px;
+}
+
+

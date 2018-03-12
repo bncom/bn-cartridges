@@ -6610,6 +6610,7 @@ header .text--subheader {
   /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
   /* CONTRIBUTOR DETAILS PAGE (Bill) */
   /* CONTRIBUTOR DETAILS PAGE (BY) */
+  /* DISCOVER CATEGORIES PAGE TITLE */
 }
 .isMobile .mobile-only {
   display: block !important;
@@ -7017,8 +7018,8 @@ header .text--subheader {
   width: 100%;
   padding: 0 !important;
 }
-.isMobile #searchGrid {
-  padding: 0;
+.isMobile #view-more-discover #searchGrid.bd-left-disabled-gray.pl-xxl {
+  padding: 0 15px !important;
 }
 .isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-tile {
   height: 345px !important;
@@ -7213,4 +7214,13 @@ header .text--subheader {
 }
 .isMobile button#view-more-discover-btn span.link-show-more:after {
   font-size: 2rem;
+}
+.isMobile .author-header .author-header__details header h1 {
+  font-size: 30px;
+}
+.isMobile .container > .author-header {
+  display: block;
+}
+.isMobile .author-header .author-header__details {
+  margin-top: 15px;
 }
