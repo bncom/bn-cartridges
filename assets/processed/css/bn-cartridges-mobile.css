@@ -6378,11 +6378,14 @@ header .text--subheader {
     clear: both;
   }
 
+  .pageshell {
+    padding: 0px !important;
+  }
   .pageshell .row {
-    border-top: 1px solid #ccc;
+    border-top: 0px;
   }
   .pageshell figure {
-    margin: 37px 0;
+    padding: 30px 15px;
   }
   .pageshell figure a {
     width: 100%;
@@ -6394,7 +6397,6 @@ header .text--subheader {
     background: none;
     font-style: normal;
     margin: 4px;
-    padding: 5px 15px;
     position: inherit;
     color: #000;
     font-size: 16px;
@@ -6406,7 +6408,7 @@ header .text--subheader {
     border-left: none;
     border-right: none;
     margin: 40px 0px 50px 0;
-    padding: 40px 20px;
+    padding-bottom: 20px;
   }
   .pageshell.cafe-reasons h1 {
     padding: 30px 0;
@@ -6446,20 +6448,21 @@ header .text--subheader {
     width: auto !important;
     max-width: 300% !important;
   }
-  .cafe-slick .cafe-info {
-    position: relative;
-    transform: none;
-    text-align: center;
-    width: auto;
-  }
-  .cafe-slick .cafe-info h2 {
-    font-family: Poynter,Georgia,serif;
+  .cafe-slick .genre-tile-header h2 {
+    font-family: Poynter, Georgia, serif;
     color: #fff;
     width: 101%;
     position: absolute;
     bottom: 0px;
     padding: 30px;
     background: linear-gradient(rgba(158, 158, 158, 0), black);
+    text-align: center;
+  }
+  .cafe-slick .cafe-info {
+    position: relative;
+    transform: none;
+    text-align: center;
+    width: auto;
   }
   .cafe-slick .cafe-info p {
     color: #000 !important;
@@ -6473,14 +6476,20 @@ header .text--subheader {
   }
   .cafe-slick .cafe-info a.cafe-slick-btn {
     color: #fff;
-    padding: 5.2px 30px;
+    float: left;
+    padding: 5px 30px;
+    margin: 15px 0;
   }
   .cafe-slick .slick-slide {
     border: none;
   }
+  .cafe-slick .slick-list {
+    min-height: 460px;
+  }
 
   .cafe-hero .hero-img-anchor {
     border: none;
+    margin-bottom: 30px;
   }
   .cafe-hero .hero-img-anchor:hover {
     border: none;
