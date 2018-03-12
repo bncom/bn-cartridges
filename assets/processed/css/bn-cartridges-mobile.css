@@ -6671,7 +6671,7 @@ header .text--subheader {
   flex-flow: unset;
   text-align: center;
 }
-.isMobile .discover-record-spotlight--popular-author .author-image {
+.isMobile .author-image-carousel .discover-record-spotlight--popular-author .author-image {
   padding-top: 5rem;
   width: 100%;
 }
