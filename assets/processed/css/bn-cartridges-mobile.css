@@ -6709,7 +6709,7 @@ header .text--subheader {
     width: 85vw !important;
   }
 }
-.isMobile .carousel .author-image {
+.isMobile .author-image-carousel .carousel .author-image {
   padding-top: 5rem;
   width: 30%;
 }
@@ -6723,10 +6723,6 @@ header .text--subheader {
 .isMobile .author-image-carousel .carousel.init {
   overflow-x: scroll;
   height: auto;
-  /* float: left; */
-  /* opacity: 1; */
-  /* width: 100%; */
-  /* flex-direction: row; */
   width: auto;
   padding: 0;
   margin: 0;
@@ -6734,15 +6730,22 @@ header .text--subheader {
   vertical-align: baseline;
   position: relative;
 }
+.isMobile .product-shelf-image-cont {
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 .75rem;
+  outline: 0;
+}
 .isMobile .product-shelf-tile {
   width: 135px;
   padding: 0;
   margin: 0;
-  /* float: left; */
-  /* display: table-cell; */
   font-size: 14px;
-  vertical-align: bottom;
-  /* position: relative; */
 }
 .isMobile .container.genre-index-refinements--discover-categories {
   max-width: 1024px;
@@ -6946,6 +6949,9 @@ header .text--subheader {
   max-width: 670px;
   margin-top: 20px;
   widows: auto !important;
+}
+.isMobile .container > .author-header {
+  display: none;
 }
 .isMobile .author-header .col-lg-3 {
   width: auto;
@@ -7184,7 +7190,4 @@ header .text--subheader {
 }
 .isMobile button#view-more-discover-btn span.link-show-more:after {
   font-size: 2rem;
-}
-.isMobile .author-header .author-header__details header h1 {
-  font-size: 30px !important;
 }

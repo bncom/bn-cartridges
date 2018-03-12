@@ -149,7 +149,7 @@ div a.read-more.show-more-pdp {
 
 /* Related Authors */
 
-.carousel .author-image {
+.author-image-carousel .carousel .author-image {
     padding-top: 5rem;
     width: 30%;
 }
@@ -163,25 +163,12 @@ div a.read-more.show-more-pdp {
 
 h2.rule {
     font-size: 24px;
-    //    text-align: center;
-    //    position: relative;
-    //    margin: 20px 0 0px 0;
-    //    padding: 0 0 0 21px;
-    //    box-sizing: border-box;
-    //    width: calc(100% - 20px);
-    //    display: block;
-    //    line-height: unset;
-    //    height: unset;
 }
 
 
 .author-image-carousel .carousel.init {
     overflow-x: scroll;
     height: auto;
-    /* float: left; */
-    /* opacity: 1; */
-    /* width: 100%; */
-    /* flex-direction: row; */
     width: auto;
     padding: 0;
     margin: 0;
@@ -189,18 +176,24 @@ h2.rule {
     vertical-align: baseline;
     position: relative;
 }
+.product-shelf-image-cont {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 .75rem;
+    outline: 0;
+}
 
 .product-shelf-tile {
     width: 135px;
     padding: 0;
     margin: 0;
-    /* float: left; */
-    /* display: table-cell; */
     font-size: 14px;
-    vertical-align: bottom;
-    /* position: relative; */
 }
-
 
 /* Discover Category */
 
@@ -443,7 +436,7 @@ h2.rule {
 
 /* CONTRIBUTOR DETAILS PAGE (Bill) */
 
-// .container > .author-header { display: none; }
+.container > .author-header { display: none; }
 
 .author-header {
 
@@ -762,8 +755,4 @@ button#view-more-discover-btn {
         font-size: 2rem;
     }
 
-}
-
-.author-header .author-header__details header h1 {
-    font-size: 30px !important;
 }
