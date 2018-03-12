@@ -3844,6 +3844,7 @@ body {
 .cafe-table .cafe-item h3 {
   font-family: Poynter, Georgia, serif;
   font-weight: 600;
+  text-transform: capitalize;
 }
 .cafe-table .cafe-item .cafe-item-img {
   width: 89px;

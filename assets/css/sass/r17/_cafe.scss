@@ -1,209 +1,209 @@
 .pageshell {
-    .hidden-lg {
-        display: none;
-    }
-    .row {
-        border-top: 1px solid #ccc;
+  .hidden-lg {
+    display: none;
+  }
+  .row {
+    border-top: 1px solid #ccc;
+  }
+
+  figure {
+    .img-responsive {
+      width: 100%;
+      max-width: 100%;
+      border: 1px solid #ccc;
+      padding: 3px;
+      &:hover {
+        border-color: #5b965e;
+      }
     }
 
-    figure {
-        .img-responsive {
-            width: 100%;
-            max-width: 100%;
-            border: 1px solid #ccc;
-            padding: 3px;
-            &:hover {
-                border-color: #5b965e;
-            }
-        }
-
-        figcaption {
-            font-style: italic;
-            width: 91%;
-            background: rgba(0, 0, 0, 0.8);
-            margin: 4px;
-            padding: 5px 15px;
-            position: absolute;
-            bottom: 5px;
-            color: #ccc;
-            font-size: 16px;
-        }
+    figcaption {
+      font-style: italic;
+      width: 91%;
+      background: rgba(0, 0, 0, 0.8);
+      margin: 4px;
+      padding: 5px 15px;
+      position: absolute;
+      bottom: 5px;
+      color: #ccc;
+      font-size: 16px;
     }
-    .cafe-table-header {
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 600;
-        border: none;
-    }
+  }
+  .cafe-table-header {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+  }
 }
 
 .cafe-reasons {
-    margin: 40px 0;
-    border: 1px solid #ccc;
-    padding: 40px 3px;
-    h1 {
-        padding-bottom: 20px;
-    }
-    img {
+  margin: 40px 0;
+  border: 1px solid #ccc;
+  padding: 40px 3px;
+  h1 {
+    padding-bottom: 20px;
+  }
+  img {
 
-        margin: 5px;
-        float: left;
+    margin: 5px;
+    float: left;
+  }
+  h2 {
+    margin: 10px 0;
+  }
+  .border-left {
+    border-left: 1px solid #ccc;
+  }
+  .row {
+    .member {
+      border-left: 1px solid #ccc;
     }
-    h2 {
-        margin: 10px 0;
-    }
-    .border-left {
-        border-left: 1px solid #ccc;
-    }
-    .row {
-        .member {
-            border-left: 1px solid #ccc;
-        }
-    }
+  }
 
 }
 
 /* CAFE SLICK CAROUSEL */
 
 .cafe-slick {
-    margin-bottom: 40px;
-    img {
-        width: 100%;
-        max-width: 100%;
+  margin-bottom: 40px;
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cafe-info {
+    position: absolute;
+    top: 50%;
+    transform: translate(100%, 50%);
+    text-align: center;
+    width: 400px;
+    h2 {
+      font-family: PoynterOSDisp-Semibold, Poynter;
+      font-size: 30px;
+      color: #fff;
+      padding-bottom: 15px;
     }
-    .cafe-info {
-        position: absolute;
-        top: 50%;
-        transform: translate(100%, 50%);
-        text-align: center;
-        width: 400px;
-        h2 {
-            font-family: PoynterOSDisp-Semibold, Poynter;
-            font-size: 30px;
-            color: #fff;
-            padding-bottom: 15px;
-        }
-        p {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 22px;
-            color: #fff;
-            padding-bottom: 10px;
-        }
-        a {
-            &.cafe-slick-btn {
-                padding: 10px 30px;
-                color: #fff !important;
-                display: inline-block;
-                position: relative;
-                text-align: left;
-            }
-            &.arrow-box-green {
-                background: #2d5444;
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #fff;
+      padding-bottom: 10px;
+    }
+    a {
+      &.cafe-slick-btn {
+        padding: 10px 30px;
+        color: #fff !important;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+      }
+      &.arrow-box-green {
+        background: #2d5444;
 
-                &:after {
-                    content: "";
-                    display: inline-block;
-                    position: absolute;
-                    border: 9px solid;
-                    border-color: #2d5444 transparent #2d5444 #2d5444;
-                    top: 0px;
-                    right: -16px;
-                    border-width: 16px;
-                }
-            }
-            &.arrow-box-red {
-                background: #ff0000;
-                &:after {
-                    content: "";
-                    display: inline-block;
-                    position: absolute;
-                    border: 9px solid;
-                    border-color: #ff0000 transparent #ff0000 #ff0000;
-                }
-            }
-
+        &:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          border: 9px solid;
+          border-color: #2d5444 transparent #2d5444 #2d5444;
+          top: 0px;
+          right: -16px;
+          border-width: 16px;
         }
+      }
+      &.arrow-box-red {
+        background: #ff0000;
+        &:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          border: 9px solid;
+          border-color: #ff0000 transparent #ff0000 #ff0000;
+        }
+      }
+
+    }
+  }
+
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-slide {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 3px;
+    &:hover {
+      border-color: #5b965e;
+    }
+  }
+  .slick-dots {
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 2;
+    bottom: 0px;
+    margin-top: 20px;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
     }
 
-    .slick-list {
-        overflow: hidden;
+    li:last-child {
+      display: none;
     }
-    .slick-slide {
-        float: left;
-        width: 100%;
-        overflow: hidden;
-        border: 1px solid #ccc;
-        padding: 3px;
-        &:hover {
-            border-color: #5b965e;
-        }
+
+    li button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 14px;
+      height: 14px;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
     }
-    .slick-dots {
-        display: block;
-        width: 100%;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        z-index: 2;
-        bottom: 0px;
-        margin-top: 20px;
-        li {
-            position: relative;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin: 0 5px;
-            padding: 0;
-            cursor: pointer;
-        }
 
-        li:last-child {
-            display: none;
-        }
-
-        li button {
-            font-size: 0;
-            line-height: 0;
-            display: block;
-            width: 14px;
-            height: 14px;
-            padding: 5px;
-            cursor: pointer;
-            color: transparent;
-            border: 0;
-            outline: none;
-            background: transparent;
-        }
-
-        li button:hover {
-            background: white;
-        }
-
-        li button:before {
-            border-radius: 50%;
-            border: 1px solid #21282d;
-            line-height: 20px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 14px;
-            height: 14px;
-            content: '•';
-            text-align: center;
-            opacity: .25;
-            color: black;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        li.slick-active button:before {
-            opacity: .75;
-            color: black;
-            width: 16px;
-            height: 15px;
-        }
+    li button:hover {
+      background: white;
     }
+
+    li button:before {
+      border-radius: 50%;
+      border: 1px solid #21282d;
+      line-height: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      content: '•';
+      text-align: center;
+      opacity: .25;
+      color: black;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    li.slick-active button:before {
+      opacity: .75;
+      color: black;
+      width: 16px;
+      height: 15px;
+    }
+  }
 
 
 
@@ -212,46 +212,47 @@
 /*  CAFE HEADER  */
 
 .cafe-hero {
-    &.hero {
-        margin: 0 auto;
-        text-align: center;
-    }
+  &.hero {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 // CAFE TABLE
 .cafe-table {
-    .cafe-table-header {
-        border-top: none;
-        text-transform: uppercase;
-        font-family: Lato, sans-serif;
-        font-size: 12px;
-        font-weight: 600;
+  .cafe-table-header {
+    border-top: none;
+    text-transform: uppercase;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .text--small {
+    border-top: 1px solid #ccc;
+  }
+
+  .cafe-item {
+    h3 {
+      font-family: Poynter, Georgia, serif;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    .cafe-item-img {
+      width: 89px;
+      height: 75px;
+    }
+    .cafe-calories {
+      span {
+        &:after {
+          content: 'calories';
+          text-transform: uppercase;
+        }
+      }
     }
 
-    .text--small {
-        border-top: 1px solid #ccc;
-    }
-
-    .cafe-item {
-        h3 {
-            font-family: Poynter, Georgia, serif;
-            font-weight: 600;
-        }
-        .cafe-item-img {
-            width: 89px;
-            height: 75px;
-        }
-        .cafe-calories {
-            span {
-                &:after {
-                    content: 'calories';
-                    text-transform: uppercase;
-                }
-            }
-        }
-        
-    }
-    .cafe-chesecake-tiny {
-        font-size: 10px;
-    }
+  }
+  .cafe-chesecake-tiny {
+    font-size: 10px;
+  }
 } // End Cage Table Item

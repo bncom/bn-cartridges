@@ -14,7 +14,7 @@
     clear: both;
   } // Pageshell
   .pageshell {
-    padding: 0px;
+    padding: 0px !important;
     .row {
       border-top: none;
     }
@@ -124,10 +124,15 @@
   // CAFE TABLE
   .cafe-hero {
     .hero-img-anchor {
+      border: none;
+      &:hover{
+        border: none;
+      }
       img {
         width: 300% !important;
         position: relative;
         transform: translateX(-58%);
+        margin-bottom: 50px;
       }
     }
     .hero-slide {
@@ -136,8 +141,8 @@
         top: unset;
         transition: unset;
         width: auto;
-        margin: 50px 30px 30px 30px;
-        s p {
+        margin: 0px 30px;
+        p {
           font-size: 16px;
         }
       }
@@ -151,7 +156,7 @@
         font-family: "Poynter", serif;
         font-size: 22px;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 30px;
         letter-spacing: .025px;
         margin: 30px 35px 15px;
         overflow-wrap: break-word;
@@ -198,7 +203,6 @@
       font-size: 14px;
       display: block;
       padding: 16px 20px;
-      text-align: right;
 
       &::after {
         content: none !important;
@@ -231,6 +235,7 @@
       font-size: 14px;
       background: #fff;
       display: block;
+      text-align: right;
       padding: 16px 20px;
 
       &:before {

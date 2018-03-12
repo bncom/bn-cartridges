@@ -6379,7 +6379,7 @@ header .text--subheader {
   }
 
   .pageshell {
-    padding: 0px;
+    padding: 0px !important;
   }
   .pageshell .row {
     border-top: none;
@@ -6476,19 +6476,26 @@ header .text--subheader {
     border: none;
   }
 
+  .cafe-hero .hero-img-anchor {
+    border: none;
+  }
+  .cafe-hero .hero-img-anchor:hover {
+    border: none;
+  }
   .cafe-hero .hero-img-anchor img {
     width: 300% !important;
     position: relative;
     transform: translateX(-58%);
+    margin-bottom: 50px;
   }
   .cafe-hero .hero-slide .hero-info {
     position: inherit;
     top: unset;
     transition: unset;
     width: auto;
-    margin: 50px 30px 30px 30px;
+    margin: 0px 30px;
   }
-  .cafe-hero .hero-slide .hero-info s p {
+  .cafe-hero .hero-slide .hero-info p {
     font-size: 16px;
   }
 
@@ -6499,7 +6506,7 @@ header .text--subheader {
     font-family: "Poynter", serif;
     font-size: 22px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 30px;
     letter-spacing: .025px;
     margin: 30px 35px 15px;
     overflow-wrap: break-word;
@@ -6537,7 +6544,6 @@ header .text--subheader {
     font-size: 14px;
     display: block;
     padding: 16px 20px;
-    text-align: right;
   }
   .cafe-calories span::after {
     content: none !important;
@@ -6568,6 +6574,7 @@ header .text--subheader {
     font-size: 14px;
     background: #fff;
     display: block;
+    text-align: right;
     padding: 16px 20px;
   }
   .cafe-item span:before {
