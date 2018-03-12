@@ -2,9 +2,10 @@
   .hidden-lg {
     display: none;
   }
-  .row {
-    border-top: 1px solid #ccc;
+  .hidden-md{
+    display: none;
   }
+
 
   figure {
     .img-responsive {
@@ -71,6 +72,7 @@
     width: 100%;
     max-width: 100%;
   }
+  
   .cafe-info {
     position: absolute;
     top: 50%;

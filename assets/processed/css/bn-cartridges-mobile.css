@@ -6378,11 +6378,8 @@ header .text--subheader {
     clear: both;
   }
 
-  .pageshell {
-    padding: 0px !important;
-  }
   .pageshell .row {
-    border-top: none;
+    border-top: 1px solid #ccc;
   }
   .pageshell figure {
     margin: 37px 0;
@@ -6412,7 +6409,7 @@ header .text--subheader {
     padding: 40px 20px;
   }
   .pageshell.cafe-reasons h1 {
-    padding-bottom: 50px;
+    padding: 30px 0;
     font-size: 24px !important;
     font-family: PoynterOSDisp-Semibold, Poynter;
     line-height: 28px;
@@ -6447,7 +6444,7 @@ header .text--subheader {
 
   .cafe-slick img {
     width: auto !important;
-    max-width: 215% !important;
+    max-width: 300% !important;
   }
   .cafe-slick .cafe-info {
     position: relative;
@@ -6456,7 +6453,13 @@ header .text--subheader {
     width: auto;
   }
   .cafe-slick .cafe-info h2 {
-    color: #000 !important;
+    font-family: Poynter,Georgia,serif;
+    color: #fff;
+    width: 101%;
+    position: absolute;
+    bottom: 0px;
+    padding: 30px;
+    background: linear-gradient(rgba(158, 158, 158, 0), black);
   }
   .cafe-slick .cafe-info p {
     color: #000 !important;

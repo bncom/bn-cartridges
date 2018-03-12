@@ -12,12 +12,12 @@
 
   .clearfix-sm {
     clear: both;
-  } // Pageshell
+  } 
+  // Pageshell
   .pageshell {
-    padding: 0px !important;
     .row {
-      border-top: none;
-    }
+    border-top: 1px solid #ccc;
+  }
     
     figure {
       margin: 37px 0;
@@ -48,7 +48,7 @@
       margin: 40px 0px 50px 0;
       padding: 40px 20px;
       h1 {
-        padding-bottom: 50px;
+        padding: 30px 0;
         font-size: 24px !important;
         font-family: PoynterOSDisp-Semibold, Poynter;
         line-height: 28px;
@@ -90,7 +90,7 @@
   .cafe-slick {
     img {
       width: auto !important;
-      max-width: 215% !important;
+      max-width: 300% !important;
     }
     .cafe-info {
       position: relative;
@@ -98,7 +98,13 @@
       text-align: center;
       width: auto;
       h2 {
-        color: #000 !important;
+        font-family: Poynter,Georgia,serif;
+        color: #fff;
+        width: 101%;
+        position: absolute;
+        bottom: 0px;
+        padding: 30px;
+        background: linear-gradient(rgba(158, 158, 158, 0), black);
       }
       p {
         color: #000 !important;

@@ -3641,8 +3641,8 @@ body {
 .pageshell .hidden-lg {
   display: none;
 }
-.pageshell .row {
-  border-top: 1px solid #ccc;
+.pageshell .hidden-md {
+  display: none;
 }
 .pageshell figure .img-responsive {
   width: 100%;
