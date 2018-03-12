@@ -1,14 +1,23 @@
-.pageshell {
-  .hidden-lg {
-    display: none;
-  }
-  .hidden-md{
-    display: none;
-  }
-  .row{
-       border-top: 1px solid #ccc;
-  }
+// Resposive Tools
+.hidden-lg {
+  display: none;
+}
 
+.hidden-md {
+  display: none;
+}
+
+// Cafe CSS
+.pageshell {
+
+  .row {
+    border-top: 1px solid #ccc;
+  }
+  .copy {
+    .row {
+      border-top: 0px;
+    }
+  }
   figure {
     .img-responsive {
       width: 100%;
@@ -44,6 +53,9 @@
   margin: 40px 0;
   border: 1px solid #ccc;
   padding: 40px 3px;
+  .row {
+    border-top: none;
+  }
   h1 {
     padding-bottom: 20px;
   }
@@ -74,7 +86,7 @@
     width: 100%;
     max-width: 100%;
   }
-  
+
   .cafe-info {
     position: absolute;
     top: 50%;

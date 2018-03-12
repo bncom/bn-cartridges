@@ -3638,14 +3638,19 @@ body {
     margin-left: -884px;
 } 
 */
-.pageshell .hidden-lg {
+.hidden-lg {
   display: none;
 }
-.pageshell .hidden-md {
+
+.hidden-md {
   display: none;
 }
+
 .pageshell .row {
   border-top: 1px solid #ccc;
+}
+.pageshell .copy .row {
+  border-top: 0px;
 }
 .pageshell figure .img-responsive {
   width: 100%;
@@ -3678,6 +3683,9 @@ body {
   margin: 40px 0;
   border: 1px solid #ccc;
   padding: 40px 3px;
+}
+.cafe-reasons .row {
+  border-top: none;
 }
 .cafe-reasons h1 {
   padding-bottom: 20px;
