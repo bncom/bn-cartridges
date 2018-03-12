@@ -212,9 +212,21 @@
 /*  CAFE HEADER  */
 
 .cafe-hero {
+
   &.hero {
     margin: 0 auto;
     text-align: center;
+  }
+  .genre-tile-footer {
+    width: 29.5625rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translate(100%, 100%);
+    padding: 0;
+    margin: -.625rem 5.25rem 0;
+    text-align: center;
+    color: #ccc;
   }
 }
 

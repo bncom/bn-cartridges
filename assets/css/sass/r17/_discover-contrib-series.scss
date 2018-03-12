@@ -101,6 +101,10 @@ a.authorSectionLink.active {
     flex-flow: unset;
     text-align: center
 }
+.author-image-carousel .discover-record-spotlight--popular-author .author-image {
+    padding-top: 5rem;
+    width: 100%;
+}
 
 /* Tabulation */
 
@@ -134,14 +138,17 @@ div a.read-more.show-more-pdp {
     line-height: 1.5;
     display: inline;
 }
-@media only screen and (max-width: 600px) {
-
-
-.author-tabs .tabpanels-container, #pdp-tabs .tab-container .tabpanels-container .tabpanel, .multi-author-carousel .multi-author-slide {
-    width: 85vw !important;
-    /* margin: 10px 0 0 0; */
+@media screen and (min-width: 601px) {
+    .tab-container .tab-list-container .tab-list .tab {
+      font-family: Lato,sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+  }
 }
-
+@media screen and (max-width: 600px) {
+  .author-tabs .tabpanels-container, #pdp-tabs .tab-container .tabpanels-container .tabpanel, .multi-author-carousel .multi-author-slide {
+    width: 85vw !important;
+  }
 }
 
 /* Related Authors */
@@ -160,25 +167,12 @@ div a.read-more.show-more-pdp {
 
 h2.rule {
     font-size: 24px;
-    //    text-align: center;
-    //    position: relative;
-    //    margin: 20px 0 0px 0;
-    //    padding: 0 0 0 21px;
-    //    box-sizing: border-box;
-    //    width: calc(100% - 20px);
-    //    display: block;
-    //    line-height: unset;
-    //    height: unset;
 }
 
 
 .author-image-carousel .carousel.init {
     overflow-x: scroll;
     height: auto;
-    /* float: left; */
-    /* opacity: 1; */
-    /* width: 100%; */
-    /* flex-direction: row; */
     width: auto;
     padding: 0;
     margin: 0;
@@ -186,18 +180,24 @@ h2.rule {
     vertical-align: baseline;
     position: relative;
 }
+.product-shelf-image-cont {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 .75rem;
+    outline: 0;
+}
 
 .product-shelf-tile {
     width: 135px;
     padding: 0;
     margin: 0;
-    /* float: left; */
-    /* display: table-cell; */
     font-size: 14px;
-    vertical-align: bottom;
-    /* position: relative; */
 }
-
 
 /* Discover Category */
 
@@ -576,10 +576,13 @@ h2.rule {
             float: right;
         }
 
-        .results-icons {left: 21rem;top: 3.2rem;}
+        .results-icons {
+            left: 18.5rem;
+            top: 2.4rem;
+        }
 
         .results-icons .icons {
-            width: 65px !important;
+            width: 78px !important;
             float: left;
         }
 

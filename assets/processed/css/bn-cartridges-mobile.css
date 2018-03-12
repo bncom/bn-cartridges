@@ -6678,6 +6678,10 @@ header .text--subheader {
   flex-flow: unset;
   text-align: center;
 }
+.isMobile .author-image-carousel .discover-record-spotlight--popular-author .author-image {
+  padding-top: 5rem;
+  width: 100%;
+}
 .isMobile div a.read-more.show-more-pdp {
   display: none;
 }
@@ -6704,10 +6708,16 @@ header .text--subheader {
   line-height: 1.5;
   display: inline;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 601px) {
+  .isMobile .tab-container .tab-list-container .tab-list .tab {
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
   .isMobile .author-tabs .tabpanels-container, .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel, .isMobile .multi-author-carousel .multi-author-slide {
     width: 85vw !important;
-    /* margin: 10px 0 0 0; */
   }
 }
 .isMobile .carousel .author-image {
@@ -6724,10 +6734,6 @@ header .text--subheader {
 .isMobile .author-image-carousel .carousel.init {
   overflow-x: scroll;
   height: auto;
-  /* float: left; */
-  /* opacity: 1; */
-  /* width: 100%; */
-  /* flex-direction: row; */
   width: auto;
   padding: 0;
   margin: 0;
@@ -6735,15 +6741,22 @@ header .text--subheader {
   vertical-align: baseline;
   position: relative;
 }
+.isMobile .product-shelf-image-cont {
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0 .75rem;
+  outline: 0;
+}
 .isMobile .product-shelf-tile {
   width: 135px;
   padding: 0;
   margin: 0;
-  /* float: left; */
-  /* display: table-cell; */
   font-size: 14px;
-  vertical-align: bottom;
-  /* position: relative; */
 }
 .isMobile .container.genre-index-refinements--discover-categories {
   max-width: 1024px;
@@ -7051,11 +7064,11 @@ header .text--subheader {
   float: right;
 }
 .isMobile .resultsListContainer .results-listing-options .results-icons {
-  left: 21rem;
-  top: 3.2rem;
+  left: 18.5rem;
+  top: 2.4rem;
 }
 .isMobile .resultsListContainer .results-listing-options .results-icons .icons {
-  width: 65px !important;
+  width: 78px !important;
   float: left;
 }
 .isMobile .resultsListContainer .results-listing-options .row .col-lg-3 div.results-num {
