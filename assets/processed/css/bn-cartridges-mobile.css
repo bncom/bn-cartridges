@@ -6691,7 +6691,7 @@ header .text--subheader {
   font-size: 4.0625rem;
 }
 .isMobile .tab-container {
-  margin-top: 3rem !important;
+  margin-top: 5rem !important;
 }
 .isMobile .author-tabs .tabpanel {
   position: unset;
