@@ -3644,6 +3644,9 @@ body {
 .pageshell .hidden-md {
   display: none;
 }
+.pageshell .row {
+  border-top: 1px solid #ccc;
+}
 .pageshell figure .img-responsive {
   width: 100%;
   max-width: 100%;

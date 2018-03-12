@@ -12,15 +12,16 @@
 
   .clearfix-sm {
     clear: both;
-  } 
-  // Pageshell
+  } // Pageshell
   .pageshell {
+    padding: 0px !important;
     .row {
-    border-top: 1px solid #ccc;
-  }
-    
+      border-top: 0px;
+    }
+
     figure {
-      margin: 37px 0;
+      padding: 30px 15px;
+      ;
 
       a {
         width: 100%;
@@ -32,7 +33,6 @@
         background: none;
         font-style: normal;
         margin: 4px;
-        padding: 5px 15px;
         position: inherit;
         color: #000;
         font-size: 16px;
@@ -46,7 +46,7 @@
       border-left: none;
       border-right: none;
       margin: 40px 0px 50px 0;
-      padding: 40px 20px;
+      padding-bottom: 20px;
       h1 {
         padding: 30px 0;
         font-size: 24px !important;
@@ -92,20 +92,24 @@
       width: auto !important;
       max-width: 300% !important;
     }
-    .cafe-info {
-      position: relative;
-      transform: none;
-      text-align: center;
-      width: auto;
+    .genre-tile-header {
       h2 {
-        font-family: Poynter,Georgia,serif;
+        font-family: Poynter, Georgia, serif;
         color: #fff;
         width: 101%;
         position: absolute;
         bottom: 0px;
         padding: 30px;
         background: linear-gradient(rgba(158, 158, 158, 0), black);
+        text-align: center;
       }
+    }
+    .cafe-info {
+      position: relative;
+      transform: none;
+      text-align: center;
+      width: auto;
+
       p {
         color: #000 !important;
         padding-top: 25px;
@@ -117,7 +121,9 @@
         font-weight: 400;
         &.cafe-slick-btn {
           color: #fff;
-          padding: 5.2px 30px;
+          float: left;
+          padding: 5px 30px;
+          margin: 15px 0;
         }
       }
 
@@ -125,13 +131,17 @@
     .slick-slide {
       border: none;
     }
+    .slick-list {
+      min-height: 460px;
+    }
 
   } // END CAFE SLICK
   // CAFE TABLE
   .cafe-hero {
     .hero-img-anchor {
       border: none;
-      &:hover{
+      margin-bottom: 30px;
+      &:hover {
         border: none;
       }
       img {
@@ -194,7 +204,7 @@
         position: inherit;
         font-size: 14px;
         padding: 30px;
-        p{
+        p {
           font-size: 14px;
         }
       }
