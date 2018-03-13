@@ -7219,7 +7219,9 @@ header .text--subheader {
   font-size: 12px;
 }
 .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.current,
-.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.other {
+.isMobile .resultsListContainer #listView .previous,
+.isMobile .resultsListContainer #listView .discount,
+.isMobile .resultsListContainer #listView .other {
   font-size: 12px;
 }
 .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-author a {

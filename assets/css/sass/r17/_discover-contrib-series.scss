@@ -752,7 +752,9 @@ h2.rule {
     }
 
     .product-shelf-list .product-shelf-pricing td a.current,
-    .product-shelf-list .product-shelf-pricing td a.other {
+    .previous,
+    .discount,
+    .other {
       font-size: 12px;
     }
 
