@@ -6390,6 +6390,7 @@ header .text--subheader {
   }
   .pageshell .row {
     border-top: 0px;
+    margin: 0px;
   }
   .pageshell figure {
     padding: 30px 15px;
@@ -6545,6 +6546,9 @@ header .text--subheader {
     text-align: center;
     margin: 0 auto;
   }
+  .cafe-table .cafe-item .col-sm-12 {
+    padding: 0px;
+  }
   .cafe-table .cafe-hero .hero-img-anchor img {
     width: 300% !important;
     position: relative;
@@ -6565,7 +6569,7 @@ header .text--subheader {
   .cafe-calories span {
     font-size: 14px;
     display: block;
-    padding: 16px 20px;
+    padding: 16px 60px;
   }
   .cafe-calories span::after {
     content: none !important;
@@ -6577,7 +6581,6 @@ header .text--subheader {
     text-align: left;
     text-transform: uppercase;
     width: 50%;
-    padding-left: 20px;
   }
 
   .cafe-item div:nth-child(odd) span {
