@@ -6712,7 +6712,7 @@ header .text--subheader {
   display: none;
 }
 .isMobile .tab-container .tab-list-container .tab-list .tab {
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 4.0625rem;
 }
@@ -6726,23 +6726,28 @@ header .text--subheader {
   height: 329px;
   float: left;
 }
-.isMobile #author h2, .isMobile .tabpanel h2 {
+.isMobile #author h2,
+.isMobile .tabpanel h2 {
   font-size: 16px;
 }
-.isMobile .tabpanels .tabpanel, .isMobile .tabpanels .tabpanel div, .isMobile .expandable-section {
+.isMobile .tabpanels .tabpanel,
+.isMobile .tabpanels .tabpanel div,
+.isMobile .expandable-section {
   font-size: 14px;
   line-height: 1.5;
   display: inline;
 }
 @media screen and (min-width: 601px) {
   .isMobile .tab-container .tab-list-container .tab-list .tab {
-    font-family: Lato,sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 400;
     font-size: 16px;
   }
 }
 @media screen and (max-width: 600px) {
-  .isMobile .author-tabs .tabpanels-container, .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel, .isMobile .multi-author-carousel .multi-author-slide {
+  .isMobile .author-tabs .tabpanels-container,
+  .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel,
+  .isMobile .multi-author-carousel .multi-author-slide {
     width: 85vw !important;
   }
 }
@@ -6952,6 +6957,10 @@ header .text--subheader {
   padding: 0px !important;
   font-size: 16px !important;
 }
+.isMobile .author-hero-product-shelf {
+  padding-top: 40px !important;
+  margin-bottom: 40px !important;
+}
 .isMobile .author-hero-product-shelf .discoverFeaturedBook {
   overflow-x: scroll;
   height: auto;
@@ -7016,7 +7025,7 @@ header .text--subheader {
   text-align: center;
 }
 .isMobile .author-header .author-header__details .about-author {
-  font-family: GillSans,sans-serif;
+  font-family: GillSans, sans-serif;
   font-weight: 600;
   font-size: 17px;
   line-height: 1.5;
@@ -7045,10 +7054,9 @@ header .text--subheader {
 .isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-info .product-shelf-link a {
   display: none;
 }
-.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-title a, .isMobile .resultsListContainer #gridView #listView .row .listView-h2 {
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-title a {
   font-size: 16px;
   color: #000;
-  font-family: PoynterOSDisp-Semibold;
   font-weight: normal;
 }
 .isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-pricing a.link > span:nth-child(1) {
@@ -7063,7 +7071,8 @@ header .text--subheader {
 .isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-pricing > div {
   margin-bottom: 1.5rem;
 }
-.isMobile .resultsListContainer .pagination li span, .isMobile .resultsListContainer .pagination li a {
+.isMobile .resultsListContainer .pagination li span,
+.isMobile .resultsListContainer .pagination li a {
   font-size: 5rem;
 }
 .isMobile .resultsListContainer .pagination li {
@@ -7102,11 +7111,6 @@ header .text--subheader {
 }
 .isMobile .resultsListContainer .results-listing-options .results-icons .icons a.selected {
   width: 7rem;
-  color: #346250;
-  border-bottom: 2px solid #346250;
-}
-.isMobile .resultsListContainer .results-listing-options .results-icons .icons a {
-  color: #21282d;
 }
 .isMobile .resultsListContainer .results-listing-options .results-icons .icons a#grid-view {
   float: left;
@@ -7118,7 +7122,8 @@ header .text--subheader {
 .isMobile .resultsListContainer .results-listing-options .results-icons .icons a#list-view.selected {
   float: right;
 }
-.isMobile .resultsListContainer .icon-gallery:before, .isMobile .resultsListContainer .icon-list:before {
+.isMobile .resultsListContainer .icon-gallery:before,
+.isMobile .resultsListContainer .icon-list:before {
   font-size: 7rem;
 }
 .isMobile .resultsListContainer .selectBox {
@@ -7181,6 +7186,9 @@ header .text--subheader {
 }
 .isMobile .resultsListContainer #listView .row .listView-h2 {
   padding-left: 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
 }
 .isMobile .resultsListContainer #listView .row .publ-date {
   display: none;
@@ -7202,14 +7210,23 @@ header .text--subheader {
   font-size: 11px;
   line-height: 17px;
 }
-.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing th.format, .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing th.buy-new, .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing th.new-used {
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing th.format,
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing th.buy-new,
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing th.new-used {
   font-size: 12px;
 }
 .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.format {
   font-size: 12px;
 }
-.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.current, .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.other {
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.current,
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.other {
   font-size: 12px;
+}
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-author a {
+  font-family: Lato, sans-serif;
+}
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-title h2.product-info-title a {
+  font-size: 18px;
 }
 .isMobile button#view-more-discover-btn {
   width: 132px;
