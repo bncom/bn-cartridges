@@ -7210,6 +7210,12 @@ header .text--subheader {
 .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.current, .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-pricing td a.other {
   font-size: 12px;
 }
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-author a {
+  font-family: Lato,sans-serif;
+}
+.isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-title h2.product-info-title a {
+  font-size: 18px;
+}
 .isMobile button#view-more-discover-btn {
   width: 132px;
   height: 52px;
