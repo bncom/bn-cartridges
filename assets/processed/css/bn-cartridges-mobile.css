@@ -6374,12 +6374,19 @@ header .text--subheader {
     display: none;
   }
 
+  .visible-sm {
+    display: block;
+  }
+
   .clearfix-sm {
     clear: both;
   }
 
   .pageshell {
     padding: 0px !important;
+  }
+  .pageshell .copy {
+    padding: 20px 30px;
   }
   .pageshell .row {
     border-top: 0px;
@@ -6434,6 +6441,9 @@ header .text--subheader {
     font-size: 15px !important;
     line-height: 19px;
     color: #056937;
+  }
+  .pageshell.cafe-reasons .row {
+    padding: 0 30px;
   }
   .pageshell.cafe-reasons .row .in-store {
     border-bottom: 1px solid #ccc;
