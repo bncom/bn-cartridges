@@ -134,6 +134,15 @@
                 $('h2.index-heading').addClass('rule');
             }
 
+            // Author Page break Skava cache for Grid / List view results 
+            $(document).on('click', '#grid-view,#list-view', function(e) {
+                e.preventDefault();
+                var thisId = $(this).attr('id'); 
+                var newUrl = location.pathname +'?'+ thisId;
+                window.location.href = newUrl;
+                return false;
+            }); 
+
             // event carousel for mobile
             var initCarouFredSelect = function (cfg) {
                 // check for carousels
