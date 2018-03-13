@@ -7042,10 +7042,9 @@ header .text--subheader {
 .isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-info .product-shelf-link a {
   display: none;
 }
-.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-title a, .isMobile .resultsListContainer #gridView #listView .row .listView-h2 {
+.isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-title a {
   font-size: 16px;
   color: #000;
-  font-family: PoynterOSDisp-Semibold;
   font-weight: normal;
 }
 .isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-pricing a.link > span:nth-child(1) {
@@ -7178,6 +7177,9 @@ header .text--subheader {
 }
 .isMobile .resultsListContainer #listView .row .listView-h2 {
   padding-left: 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
 }
 .isMobile .resultsListContainer #listView .row .publ-date {
   display: none;

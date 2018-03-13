@@ -516,10 +516,9 @@ h2.rule {
             display: none;
         }
 
-        .product-shelf-grid .product-shelf-title a, #listView .row .listView-h2 {
+        .product-shelf-grid .product-shelf-title a {
             font-size: 16px;
             color: #000;
-            font-family: PoynterOSDisp-Semibold;
             font-weight: normal;
         }
 
@@ -695,6 +694,9 @@ h2.rule {
 
         .row .listView-h2 {
             padding-left: 0;
+            font-size: 16px;
+            color: #000;
+            font-weight: normal;
         }
 
         .row .publ-date {
