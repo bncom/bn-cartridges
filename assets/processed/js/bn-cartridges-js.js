@@ -137,11 +137,30 @@
             // Author Page break Skava cache for Grid / List view results 
             $(document).on('click', '#grid-view,#list-view', function(e) {
                 e.preventDefault();
+                var newUrl;
                 var thisId = $(this).attr('id'); 
-                var newUrl = location.pathname +'?'+ thisId;
+                var qs = window.location.search.substring(1);
+                if(qs.indexOf("list-view") > -1){
+                   var listview = qs.indexOf("list-view");
+                   qs = qs.substring(0, listview-1); 
+                }  
+                if(qs.indexOf("grid-view") > -1){
+                   var gridview = qs.indexOf("grid-view");
+                   qs = qs.substring(0, gridview-1);  
+                }          
+                if(qs.length > 1){
+                    newUrl = location.pathname +'?'+ qs+'&'+thisId;
+                }else{
+                    newUrl = location.pathname +'?'+thisId;
+                }
                 window.location.href = newUrl;
                 return false;
-            }); 
+            });  
+
+ 
+
+
+
 
             // event carousel for mobile
             var initCarouFredSelect = function (cfg) {
