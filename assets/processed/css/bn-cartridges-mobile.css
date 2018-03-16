@@ -6393,7 +6393,7 @@ header .text--subheader {
     margin: 0px;
   }
   .pageshell figure {
-    padding: 30px 15px;
+    padding: 15px 0px !important;
   }
   .pageshell figure a {
     width: 100%;
@@ -6419,9 +6419,9 @@ header .text--subheader {
     padding-bottom: 20px;
   }
   .pageshell.cafe-reasons h1 {
-    padding: 30px 0;
     font-size: 24px !important;
     font-family: PoynterOSDisp-Semibold, Poynter;
+    padding: 30px 0;
     line-height: 28px;
   }
   .pageshell.cafe-reasons h2 {
@@ -6448,10 +6448,10 @@ header .text--subheader {
   }
   .pageshell.cafe-reasons .row .in-store {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 35px;
+    padding: 0 0 35px;
   }
   .pageshell.cafe-reasons .row .member {
-    padding-top: 50px;
+    padding: 50px 0;
     border-left: none !important;
   }
 
@@ -6586,6 +6586,9 @@ header .text--subheader {
   .cafe-item div:nth-child(odd) span {
     background: #f5f5f5;
   }
+  .cafe-item div:nth-child(even) span {
+    background: #fff;
+  }
   .cafe-item div:nth-child(3) span:before {
     content: "Tall (12oz)";
   }
@@ -6596,13 +6599,14 @@ header .text--subheader {
     content: "Venti (H:20oz, C:24oz)";
   }
   .cafe-item span {
+    content: 'calories' !important;
     font-size: 14px;
-    background: #fff;
+    background: #f5f5f5;
     display: block;
     text-align: right;
     padding: 16px 20px;
   }
-  .cafe-item span:before {
+  .cafe-item span::before {
     width: 50%;
     float: left;
     text-align: left;
