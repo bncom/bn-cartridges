@@ -151,7 +151,7 @@
   .cafe-hero {
     .hero-img-anchor {
       border: none;
-      margin-bottom: 30px;
+      height: 340px;
       &:hover {
         border: none;
       }
@@ -168,7 +168,7 @@
         top: unset;
         transition: unset;
         width: auto;
-        margin: 0px 30px;
+        margin: 20px 30px;
         p {
           font-size: 16px;
         }
