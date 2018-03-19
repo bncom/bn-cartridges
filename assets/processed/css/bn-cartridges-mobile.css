@@ -5646,6 +5646,7 @@ header.text--center {
 }
 .department-product-grid .item div a {
   text-align: left;
+  height: auto !important;
 }
 .department-product-grid .item header {
   margin-top: 0rem;
