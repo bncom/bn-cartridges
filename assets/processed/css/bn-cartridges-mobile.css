@@ -6529,13 +6529,19 @@ header .text--subheader {
   .cafe-table .cafe-item {
     text-align: center;
   }
+  .cafe-table .cafe-item.row {
+    padding-top: 40px;
+  }
+  .cafe-table .cafe-item div {
+    display: inline-block;
+  }
   .cafe-table .cafe-item h3 {
     font-family: "Poynter", serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: .025px;
-    margin: 30px 35px 15px;
+    padding: 30px 30px 15px;
     overflow-wrap: break-word;
   }
   .cafe-table .cafe-item p {
@@ -6571,7 +6577,7 @@ header .text--subheader {
     padding: 0px;
   }
   .cafe-calories span {
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     padding: 16px 60px;
   }

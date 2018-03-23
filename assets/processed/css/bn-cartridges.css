@@ -3863,10 +3863,20 @@ body {
 .cafe-table .text--small {
   border-top: 1px solid #ccc;
 }
+.cafe-table .cafe-item div {
+  display: table;
+  height: 70px;
+}
 .cafe-table .cafe-item h3 {
   font-family: Poynter, Georgia, serif;
   font-weight: 600;
   text-transform: capitalize;
+  display: table-cell;
+  vertical-align: middle;
+}
+.cafe-table .cafe-item span {
+  display: table-cell;
+  vertical-align: middle;
 }
 .cafe-table .cafe-item .cafe-item-img {
   width: 89px;

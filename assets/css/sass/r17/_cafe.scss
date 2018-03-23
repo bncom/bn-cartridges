@@ -261,10 +261,20 @@
   }
 
   .cafe-item {
+    div{
+      display: table;
+      height: 70px;
+    }
     h3 {
       font-family: Poynter, Georgia, serif;
       font-weight: 600;
       text-transform: capitalize;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    span{
+      display: table-cell;
+      vertical-align: middle;
     }
     .cafe-item-img {
       width: 89px;
