@@ -6533,7 +6533,8 @@ header .text--subheader {
     padding-top: 40px;
   }
   .cafe-table .cafe-item div {
-    display: inline-block;
+    height: 40px;
+    display: inherit;
   }
   .cafe-table .cafe-item h3 {
     font-family: "Poynter", serif;
@@ -6555,6 +6556,7 @@ header .text--subheader {
     width: 200px;
     text-align: center;
     margin: 0 auto;
+    padding-top: 40px;
   }
   .cafe-table .cafe-item .col-sm-12 {
     padding: 0px;
@@ -6610,11 +6612,11 @@ header .text--subheader {
   }
   .cafe-item span {
     content: 'calories' !important;
-    font-size: 14px;
+    font-size: 13px;
     background: #f5f5f5;
     display: block;
     text-align: right;
-    padding: 16px 60px;
+    padding: 0 10%;
   }
   .cafe-item span::before {
     width: 50%;
