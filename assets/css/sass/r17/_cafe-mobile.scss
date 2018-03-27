@@ -25,7 +25,6 @@
       padding: 0 8px;
     }
     .row {
-      border-top: 0px;
       margin: 0px;
       .col-sm-6{
         padding: 0px;
@@ -160,8 +159,9 @@
       }
     }
 
-  } // END CAFE SLICK
-  // CAFE TABLE
+  } 
+  //CAFE Hero
+ 
   .cafe-hero {
     .hero-img-anchor {
       border: none;
@@ -189,12 +189,14 @@
       }
     }
   }
+   // CAFE TABLE
   .cafe-table {
     .cafe-item {
       text-align: center;
       &.row{
         padding-bottom: 40px !important;
         border-bottom: 1px solid #ccc;
+        border-top: 0px;
       }
       div{
         height: auto;
@@ -228,8 +230,8 @@
         padding: 0px;
       }
 
-    } // END CAFE SLICK
-    // CAFE TABLE
+    } 
+    // CAFE hero
     .cafe-hero {
       .hero-img-anchor {
         img {

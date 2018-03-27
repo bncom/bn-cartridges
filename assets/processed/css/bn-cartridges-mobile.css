@@ -6393,7 +6393,6 @@ header .text--subheader {
     padding: 0 8px;
   }
   .pageshell .row {
-    border-top: 0px;
     margin: 0px;
   }
   .pageshell .row .col-sm-6 {
@@ -6546,6 +6545,7 @@ header .text--subheader {
   .cafe-table .cafe-item.row {
     padding-bottom: 40px !important;
     border-bottom: 1px solid #ccc;
+    border-top: 0px;
   }
   .cafe-table .cafe-item div {
     height: auto;
