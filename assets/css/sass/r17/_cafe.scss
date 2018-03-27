@@ -163,7 +163,7 @@
       display: inline-block;
       margin: 0 5px;
       cursor: pointer;
-        &:last-child {
+      &:last-child {
         display: none;
       }
 
@@ -203,71 +203,70 @@
   }
 }
 
-  /*  CAFE HEADER  */
-  .cafe-hero {
+/*  CAFE HEADER  */
 
-    &.hero {
-      margin: 0 auto;
-      text-align: center;
-    }
-    .genre-tile-footer {
-      width: 29.5625rem;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      transform: translate(100%, 100%);
-      padding: 0;
-      margin: -.625rem 5.25rem 0;
-      text-align: center;
-      color: #ccc;
-    }
+.cafe-hero {
+
+  &.hero {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .genre-tile-footer {
+    width: 29.5625rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translate(100%, 100%);
+    padding: 0;
+    margin: -.625rem 5.25rem 0;
+    text-align: center;
+    color: #ccc;
+  }
+} // CAFE TABLE
+.cafe-table {
+  .cafe-table-header {
+    border-top: none;
+    text-transform: uppercase;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
   }
 
-  // CAFE TABLE
-  .cafe-table {
-    .cafe-table-header {
-      border-top: none;
-      text-transform: uppercase;
-      font-family: Lato, sans-serif;
-      font-size: 12px;
+  .text--small {
+    border-top: 1px solid #ccc;
+  }
+
+  .cafe-item {
+    div {
+      display: table;
+      height: 70px;
+    }
+    h3 {
+      font-family: Poynter, Georgia, serif;
       font-weight: 600;
+      text-transform: capitalize;
+      display: table-cell;
+      vertical-align: middle;
     }
-
-    .text--small {
-      border-top: 1px solid #ccc;
+    span {
+      display: table-cell;
+      vertical-align: middle;
     }
-
-    .cafe-item {
-      div {
-        display: table;
-        height: 70px;
-      }
-      h3 {
-        font-family: Poynter, Georgia, serif;
-        font-weight: 600;
-        text-transform: capitalize;
-        display: table-cell;
-        vertical-align: middle;
-      }
+    .cafe-item-img {
+      width: 89px;
+      height: 75px;
+    }
+    .cafe-calories {
       span {
-        display: table-cell;
-        vertical-align: middle;
-      }
-      .cafe-item-img {
-        width: 89px;
-        height: 75px;
-      }
-      .cafe-calories {
-        span {
-          &:after {
-            content: 'calories';
-            text-transform: uppercase;
-          }
+        &:after {
+          content: 'calories';
+          text-transform: uppercase;
         }
       }
+    }
 
-    }
-    .cafe-chesecake-tiny {
-      font-size: 10px;
-    }
-  } // End Cage Table Item
+  }
+  .cafe-chesecake-tiny {
+    font-size: 10px;
+  }
+} // End Cage Table Item

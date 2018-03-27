@@ -6518,7 +6518,7 @@ header .text--subheader {
 
   .cafe-hero .hero-img-anchor {
     border: none;
-    height: 340px;
+    height: 300px;
   }
   .cafe-hero .hero-img-anchor:hover {
     border: none;
@@ -6532,7 +6532,7 @@ header .text--subheader {
   .cafe-hero .hero-slide .hero-info {
     position: inherit;
     top: unset;
-    transition: unset;
+    transform: unset;
     width: auto;
     margin: 20px 30px;
   }
@@ -6545,7 +6545,7 @@ header .text--subheader {
   }
   .cafe-table .cafe-item.row {
     padding-bottom: 40px !important;
-    border-bottom: 1ps solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
   .cafe-table .cafe-item div {
     height: auto;

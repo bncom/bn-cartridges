@@ -165,7 +165,7 @@
   .cafe-hero {
     .hero-img-anchor {
       border: none;
-      height: 340px;
+      height: 300px;
       &:hover {
         border: none;
       }
@@ -180,7 +180,7 @@
       .hero-info {
         position: inherit;
         top: unset;
-        transition: unset;
+        transform: unset;
         width: auto;
         margin: 20px 30px;
         p {
@@ -194,7 +194,7 @@
       text-align: center;
       &.row{
         padding-bottom: 40px !important;
-        border-bottom: 1ps solid #ccc;
+        border-bottom: 1px solid #ccc;
       }
       div{
         height: auto;
