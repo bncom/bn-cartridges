@@ -21,34 +21,37 @@
 
   .pageshell {
     padding: 0px !important;
-
-    .copy {
-      padding: 20px 30px;
+    .copy{
+      padding: 0 8px;
     }
     .row {
       border-top: 0px;
       margin: 0px;
+      .col-sm-6{
+        padding: 0px;
+      }
     }
 
     figure {
-      padding: 15px 0px !important;
-
       a {
         width: 100%;
+        padding: 8px;
         .img-responsive {
-          padding: 1px;
+          padding: 0px;
         }
       }
       figcaption {
+        width: auto;
         background: none;
         font-style: normal;
-        margin: 4px;
+        margin: 0px;
         position: inherit;
         color: #000;
         font-size: 16px;
         line-height: 19px;
         letter-spacing: .025px;
         text-align: center;
+        padding:0 0 10px 0;
       }
     }
 
@@ -64,7 +67,7 @@
         line-height: 28px;
       }
       h2 {
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: .025;
         font-size: 16px !important;
         line-height: 19px;
@@ -84,7 +87,7 @@
         color: #056937;
       }
       .row {
-        padding: 0 30px;
+        padding: 0 16px;
         .in-store {
           border-bottom: 1px solid #ccc;
           padding: 0 0 35px;
@@ -99,6 +102,7 @@
 
   } // CAFE SLICK
   .cafe-slick {
+    margin-bottom: 37px;
     img {
       width: auto !important;
       max-width: 300% !important;
@@ -145,6 +149,16 @@
     .slick-list {
       min-height: 460px;
     }
+    .slick-dots{
+      padding-top: 18px;
+      padding-bottom: 25px;
+      border-bottom: 1ps solid #d8dcdd;
+      button{
+        &::after{
+          border: none;
+        }
+      }
+    }
 
   } // END CAFE SLICK
   // CAFE TABLE
@@ -179,11 +193,12 @@
     .cafe-item {
       text-align: center;
       &.row{
-        padding-top: 40px;
+        padding-bottom: 40px !important;
+        border-bottom: 1ps solid #ccc;
       }
       div{
-        height: 40px;
-        display: inherit;
+        height: auto;
+        display: inline-grid;
       }
       h3 {
         font-family: "Poynter", serif;
@@ -203,8 +218,8 @@
       }
 
       .cafe-item-img {
-        height: 200px;
         width: 200px;
+        height: auto;
         text-align: center;
         margin: 0 auto;
         padding-top: 40px;
@@ -277,7 +292,7 @@
       background: #f5f5f5;
       display: block;
       text-align: right;
-      padding: 0 10%;
+      padding: 10px 10%;
       &::before {
         width: 50%;
         float: left;
