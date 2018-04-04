@@ -849,10 +849,12 @@
         });
         */
 
-        $(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();
-        $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").removeClass("active");
-        $(this).addClass("active");
-        this.nextElementSibling.style.display = "block";
+        $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").click(function () {
+            $(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();
+            $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").removeClass("active");
+            $(this).addClass("active");
+            this.nextElementSibling.style.display = "block";
+        });
 
         $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").text(function () {
             return $(this).text().replace(/\bDiscover \b/, "");
