@@ -248,7 +248,8 @@ h2.rule {
 
 .genre-index-refinements--discover-categories .index-grid .col ul li {
   flex-basis: 100%;
-  padding-bottom: 3.125rem;
+  padding-bottom: 13px;
+  overflow: hidden;
 }
 
 .genre-index-refinements--discover-categories .index-grid .col ul li a {
@@ -283,6 +284,8 @@ h2.rule {
   display: inline-block;
   background-color: transparent;
   content: "";
+  position: relative;
+  top: 3px;
 }
 
 .genre-index-refinements--discover-categories h2.active:after {

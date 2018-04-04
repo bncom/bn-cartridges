@@ -6852,9 +6852,12 @@ header .text--subheader {
 }
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul li {
   flex-basis: 100%;
+  padding-bottom: 13px;
+  overflow: hidden;
 }
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul li a {
   padding-left: 0;
+  color: #346250;
 }
 .isMobile .genre-index-refinements--discover-categories .index-grid {
   padding: .75rem .75rem 3.25rem 4.6rem;
@@ -6880,6 +6883,8 @@ header .text--subheader {
   display: inline-block;
   background-color: transparent;
   content: "";
+  position: relative;
+  top: 3px;
 }
 .isMobile .genre-index-refinements--discover-categories h2.active:after {
   background-position: -43px 0px;
