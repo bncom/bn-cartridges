@@ -839,7 +839,7 @@
         $('.isMobile .author-image-carousel .carousel').slick('unslick');
 
         //Discover Categories functionality
-
+        /*
         $(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();
         $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").show();
 
@@ -847,6 +847,13 @@
             $(this).next(".isMobile .genre-index-refinements--discover-categories div.index-grid").slideToggle();
             $(this).toggleClass("active");
         });
+        */
+
+        $(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();
+        $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").removeClass("active");
+        $(this).addClass("active");
+        this.nextElementSibling.style.display = "block";
+
         $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").text(function () {
             return $(this).text().replace(/\bDiscover \b/, "");
         });
