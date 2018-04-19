@@ -66,6 +66,11 @@ h2.rule:before {
 
 /* Contributor Page */
 
+header h1.header-with-brackets {
+  /* BB fix for Contributor landing page title */
+  margin: 10px 10px 20px 10px;
+}
+
 #sectionLinkContainer {
   font-size: 17px;
   color: #ccc;
@@ -216,7 +221,7 @@ h2.rule {
   max-width: 1024px;
   padding: 0;
   margin-bottom: 0 !important;
-  margin-top: 40px;
+  margin-top: 18px;
 }
 
 .genre-index-refinements--discover-categories h2.index-heading {
@@ -318,21 +323,49 @@ h2.rule {
   }
 
   h4 {
-    font-size: 19px;
+    font-size: 30px;
   }
 
+  .genre-tile-title {
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 0 0 12px 0;
+    margin: 0 0 6px 0; /* adjusted from 12px for line-height */
+    border-bottom: none;
+    position: relative;
+  }
+  .genre-tile-title:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: white;
+    width: 40px;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
   .genre-tile-footer {
     text-align: center;
     margin-top: 0px;
-    padding: 0 25px 25px;
+    padding: 0 20px 20px 20px;
     font-size: 16px;
     min-height: 150px;
+  }
+  .genre-tile-footer p {
+    font-size: 15px;
+    margin: 15px 0 12px 0;
+    padding: 0 20px;
+  }
+  .genre-tile-link {
+    font-size: 15px;
+    color: #346250;
+    margin: 0;
   }
 
   .slick-dots {
     display: block;
     width: 100%;
     padding: 0;
+    margin: 0 0 6px 0;
     list-style: none;
     text-align: center;
     z-index: 2;

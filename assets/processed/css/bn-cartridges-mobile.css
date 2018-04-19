@@ -1722,7 +1722,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .pmis-samplet-next-item,
 .html .pmis-samplet-prev-item {
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
   height: 25px;
@@ -1771,7 +1771,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 23px 0 28px;
 }
 .html .pmis-steps::before {
-  background: rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
+  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
   top: 25px;
   content: "";
   display: block;
@@ -1781,7 +1781,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   width: 100%;
 }
 .html .pmis-steps::after {
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
   content: "";
   display: block;
   height: 6px;
@@ -1810,7 +1810,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
@@ -2268,7 +2268,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   bottom: 0px;
 }
 .html .bnapp-hero .itunes-icon {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
   float: left;
   height: 33px;
   margin: 2px 0 0 20px;
@@ -2285,7 +2285,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-rendering: optimizelegibility;
 }
 .html .bnapp-button {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
   clear: both;
   height: 41px;
   margin: 0 auto;
@@ -2302,7 +2302,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-button-small {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
   clear: both;
   float: left;
   height: 41px;
@@ -2319,11 +2319,11 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-categories .module-bn {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
+  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
   padding: 3% 0;
 }
 .html h2.bnapp-hdr-standard {
-  background: rgba(0, 0, 0, 0) url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
+  background: transparent url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
   letter-spacing: 0.5px;
   margin: 0 auto;
   text-align: center;
@@ -2359,14 +2359,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   line-height: 24px;
 }
 .html .bnapp-sbs {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
   min-height: 232px;
   overflow: hidden;
 }
 .html .bnapp-sbs .bg-body-right {
-  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
+  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
   float: right;
   height: 17px;
   width: 202px;
@@ -3403,7 +3403,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -3419,7 +3419,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -3766,7 +3766,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -4011,7 +4011,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -4027,7 +4027,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -4450,7 +4450,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -6336,7 +6336,7 @@ header .text--subheader {
 .promo-item-name .arrow:after {
   content: "";
   display: block;
-  background: rgba(0, 0, 0, 0) url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
+  background: transparent url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
   height: 17px;
   white-space: nowrap;
   width: 11px;
@@ -6703,6 +6703,10 @@ header .text--subheader {
 .isMobile.mobileSeries .author-series-indexes--series .rule:after, .isMobile.mobileSeries .author-series-indexes--series .rule:before {
   display: block !important;
 }
+.isMobile header h1.header-with-brackets {
+  /* BB fix for Contributor landing page title */
+  margin: 10px 10px 20px 10px;
+}
 .isMobile #sectionLinkContainer {
   font-size: 17px;
   color: #ccc;
@@ -6824,7 +6828,7 @@ header .text--subheader {
   max-width: 1024px;
   padding: 0;
   margin-bottom: 0 !important;
-  margin-top: 40px;
+  margin-top: 18px;
 }
 .isMobile .genre-index-refinements--discover-categories h2.index-heading {
   float: left;
@@ -6909,19 +6913,48 @@ header .text--subheader {
   font-size: 15px;
 }
 .isMobile .slick-feat-cat h4 {
-  font-size: 19px;
+  font-size: 30px;
+}
+.isMobile .slick-feat-cat .genre-tile-title {
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding: 0 0 12px 0;
+  margin: 0 0 6px 0;
+  /* adjusted from 12px for line-height */
+  border-bottom: none;
+  position: relative;
+}
+.isMobile .slick-feat-cat .genre-tile-title:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: white;
+  width: 40px;
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 .isMobile .slick-feat-cat .genre-tile-footer {
   text-align: center;
   margin-top: 0px;
-  padding: 0 25px 25px;
+  padding: 0 20px 20px 20px;
   font-size: 16px;
   min-height: 150px;
+}
+.isMobile .slick-feat-cat .genre-tile-footer p {
+  font-size: 15px;
+  margin: 15px 0 12px 0;
+  padding: 0 20px;
+}
+.isMobile .slick-feat-cat .genre-tile-link {
+  font-size: 15px;
+  color: #346250;
+  margin: 0;
 }
 .isMobile .slick-feat-cat .slick-dots {
   display: block;
   width: 100%;
   padding: 0;
+  margin: 0 0 6px 0;
   list-style: none;
   text-align: center;
   z-index: 2;
