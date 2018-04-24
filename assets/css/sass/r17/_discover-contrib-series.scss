@@ -761,6 +761,7 @@ h2.rule {
       font-size: 16px;
       color: #000;
       font-weight: normal;
+      margin-top: 0px;
     }
 
     .row .publ-date {
@@ -812,6 +813,15 @@ h2.rule {
 
     .product-shelf-list .product-shelf-title h2.product-info-title a {
       font-size: 18px;
+      font-family: PoynterOSDisp-Semibold,Poynter;
+    }
+
+    .product-shelf-list .mt-m {
+      margin-top: 28px !important;
+    }
+
+    .product-shelf-list .pb-m {
+      padding-bottom: 30px !important;
     }
 
   }

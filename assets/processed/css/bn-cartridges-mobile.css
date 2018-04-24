@@ -7266,6 +7266,7 @@ header .text--subheader {
   font-size: 16px;
   color: #000;
   font-weight: normal;
+  margin-top: 0px;
 }
 .isMobile .resultsListContainer #listView .row .publ-date {
   display: none;
@@ -7306,6 +7307,13 @@ header .text--subheader {
 }
 .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-title h2.product-info-title a {
   font-size: 18px;
+  font-family: PoynterOSDisp-Semibold,Poynter;
+}
+.isMobile .resultsListContainer #listView .product-shelf-list .mt-m {
+  margin-top: 28px !important;
+}
+.isMobile .resultsListContainer #listView .product-shelf-list .pb-m {
+  padding-bottom: 30px !important;
 }
 .isMobile button#view-more-discover-btn {
   width: 132px;
