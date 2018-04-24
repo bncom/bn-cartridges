@@ -7110,9 +7110,6 @@ header .text--subheader {
   width: 100%;
   padding: 0 !important;
 }
-.isMobile #view-more-discover #searchGrid.bd-left-disabled-gray.pl-xxl {
-  padding: 0 15px !important;
-}
 .isMobile #view-more-discover div#searchGrid, .isMobile #view-more-discover div#searchGrid section#searchGrid {
   padding: 0 !important;
 }
