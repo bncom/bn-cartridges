@@ -744,46 +744,52 @@ h2.rule {
 
   #listView {
 
-    .row .col-lg-3 {
-      width: 45%;
-    }
+    .row {
 
-    .row .col-lg-8 {
-      width: 55%;
-    }
+      .col-lg-3 {
+        width: 45%;
+      }
 
-    .row .listView-h2 {
-      padding-left: 0;
-      font-size: 16px;
-      color: #000;
-      font-weight: normal;
-      margin-top: 0px;
-    }
+      .col-lg-8 {
+        width: 55%;
+      }
 
-    .row .publ-date {
-      display: none;
-    }
+      .listView-h2 {
+        padding-left: 0;
+        font-size: 16px;
+        color: #000;
+        font-weight: normal;
+        margin-top: 0px;
+      }
 
-    .row .product-shelf-ratings .product-last-star {
-      margin: 10px 0;
-    }
+      .publ-date {
+        display: none;
+      }
 
-    .row .product-shelf-ratings .product-shelf-reviews a {
-      display: block;
-      font-size: 16px;
-    }
+      .product-shelf-ratings .product-last-star {
+        margin: 10px 0;
+      }
 
-    .row .product-shelf-ratings .product-shelf-reviews {
-      margin-bottom: 10px;
-    }
+      .product-shelf-ratings .product-shelf-reviews a {
+        display: block;
+        color: #000;
+        text-decoration: underline;
+        font-size: 14px;
+      }
 
-    .row .product-shelf-ratings {
-      display: block;
-    }
+      .product-shelf-ratings .product-shelf-reviews {
+        margin-bottom: 10px;
+      }
 
-    .row .product-shelf-formats {
-      font-size: 11px;
-      line-height: 17px;
+      .product-shelf-ratings {
+        display: block;
+      }
+
+      .product-shelf-formats {
+        font-size: 11px;
+        line-height: 17px;
+      }
+
     }
 
     .product-shelf-list .product-shelf-pricing th.format,
@@ -808,7 +814,7 @@ h2.rule {
     }
 
     .product-shelf-list .product-shelf-title h2.product-info-title a {
-      font-size: 18px;
+      font-size: 16px;
       font-family: PoynterOSDisp-Semibold,Poynter;
     }
 

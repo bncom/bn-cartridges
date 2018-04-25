@@ -7273,7 +7273,9 @@ header .text--subheader {
 }
 .isMobile .resultsListContainer #listView .row .product-shelf-ratings .product-shelf-reviews a {
   display: block;
-  font-size: 16px;
+  color: #000;
+  text-decoration: underline;
+  font-size: 14px;
 }
 .isMobile .resultsListContainer #listView .row .product-shelf-ratings .product-shelf-reviews {
   margin-bottom: 10px;
@@ -7303,7 +7305,7 @@ header .text--subheader {
   font-family: Lato, sans-serif;
 }
 .isMobile .resultsListContainer #listView .product-shelf-list .product-shelf-title h2.product-info-title a {
-  font-size: 18px;
+  font-size: 16px;
   font-family: PoynterOSDisp-Semibold,Poynter;
 }
 .isMobile .resultsListContainer #listView .product-shelf-list .mt-m {
