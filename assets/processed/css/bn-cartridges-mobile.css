@@ -7276,6 +7276,7 @@ header .text--subheader {
   color: #000;
   text-decoration: underline;
   font-size: 14px;
+  font-family: GillSansMTPro-Book,GillSansMTPro-Medium;
 }
 .isMobile .resultsListContainer #listView .row .product-shelf-ratings .product-shelf-reviews {
   margin-bottom: 10px;
