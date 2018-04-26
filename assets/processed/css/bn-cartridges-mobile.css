@@ -7194,11 +7194,18 @@ header .text--subheader {
 .isMobile .resultsListContainer #gridView .product-shelf-grid .product-shelf-pricing > div {
   margin-bottom: 1.5rem;
 }
-.isMobile .resultsListContainer .pagination li span,
-.isMobile .resultsListContainer .pagination li a {
-  font-size: 5rem;
+.isMobile .resultsListContainer section.text--center.mt-m {
+  margin-top: 20px;
 }
-.isMobile .resultsListContainer .pagination li {
+.isMobile .resultsListContainer section.text--center.mt-m .pagination li span,
+.isMobile .resultsListContainer section.text--center.mt-m .pagination li a {
+  font-size: 20px;
+  font-family: GillSansMTPro-Book,GillSansMTPro-Medium;
+}
+.isMobile .resultsListContainer section.text--center.mt-m .pagination li.pagination__active {
+  text-decoration: underline;
+}
+.isMobile .resultsListContainer section.text--center.mt-m .pagination li {
   width: 30px;
 }
 .isMobile .resultsListContainer .results-listing-options .row .col-lg-6 {

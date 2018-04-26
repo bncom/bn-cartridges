@@ -651,16 +651,24 @@ section.mb-xl {
     }
 
   }
+  
+  section.text--center.mt-m {
+    margin-top: 20px;
 
-  .pagination li span,
-  .pagination li a {
-    font-size: 5rem;
+    .pagination li span,
+    .pagination li a {
+      font-size: 20px;
+      font-family: GillSansMTPro-Book,GillSansMTPro-Medium;
+    }
+    .pagination li.pagination__active {
+      text-decoration: underline;
+    }
+    .pagination li {
+      width: 30px;
+    }
+
   }
-
-  .pagination li {
-    width: 30px;
-  }
-
+  
   .results-listing-options {
 
     .row .col-lg-6 {
