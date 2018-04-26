@@ -657,8 +657,9 @@ section.mb-xl {
 
     .pagination li span,
     .pagination li a {
-      font-size: 20px;
+      font-size: 20px !important;
       font-family: GillSansMTPro-Book,GillSansMTPro-Medium;
+      color: #21282d;
     }
     .pagination li.pagination__active {
       text-decoration: underline;
@@ -668,7 +669,7 @@ section.mb-xl {
     }
 
   }
-  
+
   .results-listing-options {
 
     .row .col-lg-6 {

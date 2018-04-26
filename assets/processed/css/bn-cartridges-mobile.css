@@ -7199,8 +7199,9 @@ header .text--subheader {
 }
 .isMobile .resultsListContainer section.text--center.mt-m .pagination li span,
 .isMobile .resultsListContainer section.text--center.mt-m .pagination li a {
-  font-size: 20px;
+  font-size: 20px !important;
   font-family: GillSansMTPro-Book,GillSansMTPro-Medium;
+  color: #21282d;
 }
 .isMobile .resultsListContainer section.text--center.mt-m .pagination li.pagination__active {
   text-decoration: underline;
