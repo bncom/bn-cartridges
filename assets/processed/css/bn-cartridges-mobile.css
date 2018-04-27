@@ -6780,18 +6780,12 @@ header .text--subheader {
     font-weight: 400;
     font-size: 16px;
   }
-  .isMobile .authorHeading {
-    display: unset;
-  }
 }
 @media screen and (max-width: 600px) {
   .isMobile .author-tabs .tabpanels-container,
   .isMobile #pdp-tabs .tab-container .tabpanels-container .tabpanel,
   .isMobile .multi-author-carousel .multi-author-slide {
     width: 85vw !important;
-  }
-  .isMobile .authorHeading {
-    display: unset;
   }
 }
 .isMobile .carousel .author-image {
@@ -6801,9 +6795,6 @@ header .text--subheader {
 .isMobile .author-image a {
   font-size: 14px;
   text-align: center;
-}
-.isMobile .authorHeading {
-  display: none;
 }
 .isMobile .authorHeading p {
   margin-bottom: 24px;

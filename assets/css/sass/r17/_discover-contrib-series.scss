@@ -157,9 +157,6 @@ div a.read-more.show-more-pdp {
     font-weight: 400;
     font-size: 16px;
   }
-  .authorHeading {
-    display: unset;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -168,9 +165,7 @@ div a.read-more.show-more-pdp {
   .multi-author-carousel .multi-author-slide {
     width: 85vw !important;
   }
-  .authorHeading {
-    display: unset;
-  }
+
 }
 
 /* Related Authors */
@@ -184,9 +179,7 @@ div a.read-more.show-more-pdp {
   font-size: 14px;
   text-align: center;
 }
-.authorHeading {
-  display: none;
-}
+
 .authorHeading p {
     margin-bottom: 24px;
 }
@@ -651,7 +644,7 @@ section.mb-xl {
     }
 
   }
-  
+
   section.text--center.mt-m {
     margin-top: 20px !important;
 
@@ -849,7 +842,7 @@ section.mb-xl {
       }
 
     }
-    
+
     .product-shelf-list .product-shelf-pricing th {
       padding-right: 5px;
     }
@@ -858,7 +851,7 @@ section.mb-xl {
     .product-shelf-list .product-shelf-pricing th.new-used {
       font-size: 12px;
     }
-    
+
     .product-shelf-list .product-shelf-pricing td {
       padding: 5px 0;
     }
