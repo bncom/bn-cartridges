@@ -6796,9 +6796,6 @@ header .text--subheader {
   font-size: 14px;
   text-align: center;
 }
-.isMobile .authorHeading p {
-  margin-bottom: 24px;
-}
 .isMobile h2.rule {
   font-size: 24px;
   margin-top: 20px;
@@ -6823,7 +6820,7 @@ header .text--subheader {
   object-position: top left;
 }
 .isMobile section.mb-xl {
-  margin-bottom: 13.75rem !important;
+  margin-bottom: 30px !important;
   border-bottom: 1px solid #ccc;
   padding-bottom: 35px;
 }
@@ -6863,6 +6860,13 @@ header .text--subheader {
   -webkit-flex-basis: 25%;
   flex-basis: 25%;
   padding-bottom: 3.125rem;
+}
+.isMobile .authorHeading h2 {
+  font-size: 24px;
+}
+.isMobile .authorHeading p {
+  font-size: 14px;
+  font-style: italic;
 }
 .isMobile .container.genre-index-refinements--discover-categories {
   max-width: 1024px;
