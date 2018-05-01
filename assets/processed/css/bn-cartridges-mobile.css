@@ -6739,7 +6739,7 @@ header .text--subheader {
   flex-flow: unset;
   text-align: center;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .isMobile .author-image-carousel .discover-record-spotlight--popular-author .author-image {
   padding-top: 5rem;
@@ -6820,7 +6820,7 @@ header .text--subheader {
   object-position: top left;
 }
 .isMobile section.mb-xl {
-  margin-bottom: 30px !important;
+  margin-bottom: 25px !important;
   border-bottom: 1px solid #ccc;
   padding-bottom: 35px;
 }
@@ -6860,6 +6860,9 @@ header .text--subheader {
   -webkit-flex-basis: 25%;
   flex-basis: 25%;
   padding-bottom: 3.125rem;
+}
+.isMobile .authorHeading {
+  margin-bottom: 22px;
 }
 .isMobile .authorHeading h2 {
   font-size: 24px;
