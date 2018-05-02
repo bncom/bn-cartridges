@@ -108,6 +108,16 @@ a.authorSectionLink.active {
   border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
 }
+.index-grid .col ul {
+  font-size: 14px;
+  margin-bottom: .75rem;
+  width: 100%;
+  display: block;
+  display: block;
+  -webkit-flex-wrap: unset;
+  flex-flow: unset;
+  text-align: center;
+}
 
 .author-image-carousel .discover-record-spotlight--popular-author .author-image {
   padding-top: 5rem;
