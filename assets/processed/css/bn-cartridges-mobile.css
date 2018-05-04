@@ -6775,12 +6775,13 @@ header .text--subheader {
 }
 .isMobile #author h2,
 .isMobile .tabpanel h2 {
-  font-size: 16px;
+  font-size: 22px;
+  margin-bottom: 12px;
 }
 .isMobile .tabpanels .tabpanel,
 .isMobile .tabpanels .tabpanel div,
 .isMobile .expandable-section {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   display: inline;
 }
