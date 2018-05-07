@@ -372,6 +372,10 @@ section.mb-xl {
   display: block !important;
 }
 
+.isMobile #main-content .main-content.container h2.rule {
+  display: none;
+}
+
 /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
 
 .slick-feat-cat {
@@ -940,6 +944,7 @@ button#view-more-discover-btn {
 
 .container > .author-header {
   display: block;
+  margin-bottom: 20px !important;
 }
 
 .author-header .author-header__details {

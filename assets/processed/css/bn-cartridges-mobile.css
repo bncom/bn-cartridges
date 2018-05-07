@@ -6963,6 +6963,9 @@ header .text--subheader {
 .isMobile #main-content .main-content.container h2.rule:before {
   display: block !important;
 }
+.isMobile .isMobile #main-content .main-content.container h2.rule {
+  display: none;
+}
 .isMobile .slick-feat-cat {
   overflow: hidden;
 }
@@ -7413,6 +7416,7 @@ header .text--subheader {
 }
 .isMobile .container > .author-header {
   display: block;
+  margin-bottom: 20px !important;
 }
 .isMobile .author-header .author-header__details {
   margin-top: 15px;
