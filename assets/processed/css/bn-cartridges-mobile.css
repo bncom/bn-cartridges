@@ -6741,7 +6741,7 @@ header .text--subheader {
   padding-bottom: 15px;
 }
 .isMobile .index-grid .col ul {
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: .75rem;
   width: 100%;
   display: block;
@@ -6919,6 +6919,7 @@ header .text--subheader {
 .isMobile .genre-index-refinements--discover-categories .index-grid .col ul li a {
   padding-left: 0;
   color: #346250;
+  font-size: 15px;
 }
 .isMobile .genre-index-refinements--discover-categories .index-grid {
   padding: .75rem .75rem 3.25rem 4.6rem;
