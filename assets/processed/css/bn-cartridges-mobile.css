@@ -6963,7 +6963,7 @@ header .text--subheader {
 .isMobile #main-content .main-content.container h2.rule:before {
   display: block !important;
 }
-.isMobile .isMobile #main-content .main-content.container h2.rule {
+.isMobile #main-content .main-content.container h2.rule {
   display: none;
 }
 .isMobile .slick-feat-cat {
