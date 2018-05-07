@@ -21,10 +21,9 @@ h2.rule:before {
 }
 
 &.mobileSeries .author-series-indexes--series h2.index-heading {
-  padding: 0;
+  padding: 54px, 0, 0;
   margin: 0 0 15px;
   border-bottom: none;
-  /* 1px solid #ccc */
   text-align: center;
   font-size: 24px;
 
@@ -500,6 +499,7 @@ section.mb-xl {
   width: 100%;
   .author-header__details {
     font-size: 15px;
+    margin-top: -6px;
     p {
       padding: 0px !important;
       font-size: 16px !important;
