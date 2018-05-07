@@ -7081,9 +7081,13 @@ header .text--subheader {
   font-size: 15px;
   margin-top: -6px;
 }
+.isMobile .series-detail .author-header .author-header__details div.text--center {
+  margin: 10px 0;
+}
 .isMobile .series-detail .author-header .author-header__details p {
+  font-family: Lato,sans-serif;
   padding: 0px !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
 }
 .isMobile .author-hero-product-shelf {
   padding-top: 40px !important;
