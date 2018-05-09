@@ -6674,7 +6674,7 @@ header .text--subheader {
   padding: 0 !important;
 }
 .isMobile.mobileSeries .author-series-indexes--series h2.index-heading {
-  padding: 54px, 0, 0;
+  padding: 54px 0 0;
   margin: 0 0 15px;
   border-bottom: none;
   text-align: center;
@@ -7088,6 +7088,9 @@ header .text--subheader {
   font-family: Lato,sans-serif;
   padding: 0px !important;
   font-size: 15px !important;
+}
+.isMobile .author-hero-product-shelf .product-shelf-image, .isMobile .series-product-shelf .product-shelf-image {
+  box-shadow: unset;
 }
 .isMobile .author-hero-product-shelf {
   padding-top: 40px !important;

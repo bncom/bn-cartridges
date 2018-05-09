@@ -21,7 +21,7 @@ h2.rule:before {
 }
 
 &.mobileSeries .author-series-indexes--series h2.index-heading {
-  padding: 54px, 0, 0;
+  padding: 54px 0 0;
   margin: 0 0 15px;
   border-bottom: none;
   text-align: center;
@@ -511,6 +511,9 @@ section.mb-xl {
   }
 }
 
+.author-hero-product-shelf .product-shelf-image, .series-product-shelf .product-shelf-image {
+  box-shadow: unset;
+}
 
 .author-hero-product-shelf {
   padding-top: 40px !important;
