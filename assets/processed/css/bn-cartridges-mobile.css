@@ -6666,6 +6666,11 @@ header .text--subheader {
 .isMobile h2.rule:before {
   display: block;
 }
+.isMobile .genre-tile-info > * {
+  width: 100%;
+  color: #fff;
+  padding: 0 3rem 4.75rem;
+}
 .isMobile.mobileSeries .container {
   max-width: 100%;
 }
@@ -7003,6 +7008,7 @@ header .text--subheader {
   font-size: 15px;
   color: #346250;
   margin: 0;
+  padding: 10px;
 }
 .isMobile .slick-feat-cat .slick-dots {
   display: block;
