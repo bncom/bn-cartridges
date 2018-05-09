@@ -201,7 +201,6 @@ h2.rule {
 .rule:after, .rule:before {
     content: " ";
     position: relative;
-    background-color: unset;
     display: block;
     height: 1px;
     -webkit-flex-grow: .5;

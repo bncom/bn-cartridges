@@ -6815,7 +6815,6 @@ header .text--subheader {
 .isMobile .rule:after, .isMobile .rule:before {
   content: " ";
   position: relative;
-  background-color: unset;
   display: block;
   height: 1px;
   -webkit-flex-grow: .5;
