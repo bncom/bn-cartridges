@@ -6711,9 +6711,12 @@ header .text--subheader {
 .isMobile.mobileSeries .author-series-indexes--series .rule:after, .isMobile.mobileSeries .author-series-indexes--series .rule:before {
   display: block !important;
 }
-.isMobile header h1.header-with-brackets {
+.isMobile #main-content .main-content header h1 {
   /* BB fix for Contributor landing page title */
   margin: 10px 10px 20px 10px;
+}
+.isMobile #main-content .series-detail .main-content .author-header .author-header__details header h1 {
+  margin: 15px 10px 5px 10px;
 }
 .isMobile #sectionLinkContainer {
   font-size: 17px;

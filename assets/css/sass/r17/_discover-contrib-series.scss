@@ -75,9 +75,13 @@ margin-right: unset;
 
 /* Contributor Page */
 
-header h1.header-with-brackets {
+#main-content .main-content header h1 {
   /* BB fix for Contributor landing page title */
   margin: 10px 10px 20px 10px;
+}
+
+#main-content .series-detail .main-content .author-header .author-header__details header h1 {
+  margin: 15px 10px 5px 10px;
 }
 
 #sectionLinkContainer {
