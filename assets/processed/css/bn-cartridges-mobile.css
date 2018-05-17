@@ -6675,6 +6675,9 @@ header .text--subheader {
   margin-left: unset;
   margin-right: unset;
 }
+.isMobile .series-detail p.about-series {
+  font-weight: 600;
+}
 .isMobile.mobileSeries .container {
   max-width: 100%;
 }
