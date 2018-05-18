@@ -1,0 +1,498 @@
+ 
+
+
+<!-- START 'search-promo' -->
+<!-- EXAMPLE MARKUP -->
+
+<div id="ListView" >
+	<!-- #listView #gridView testing wrapper -->
+
+ 
+
+<!-- 
+ 
+sample promo
+
+<div class="search-promo-atg-container" >
+	<div class="html content-node focus">
+		<div class="html-embed-container">
+			<div class="search-results-promo ed-promo">
+				<div class="search-promo-container">
+					<div class="search-promo">
+						<a class="sp-link" href="/h/book-club" onclick="set_cookie('searchpromo_editorial_BNBookClub-TheFemalePersuasion_imagetext');"> 
+							<figure class="sp-image"> 
+							<img src="http://dispatch.barnesandnoble.com/content/dam/ccr/search/search-promos/2018/PROD_12366_04122018_FemalePersuasion_SerialReads_SearchPromoContent_2.jpg" alt="Barnes &amp; Noble Book Club Title: The Female Persuasion (The Barnes &amp; Noble Book Club Edition), by Meg Wolitzer" width="100%"> </figure> 
+							<div class="sp-copy"> 
+								<div class="sp-header">Join the B&amp;N Book Club!</div> 
+								<p>Get the B&amp;N Book Club Exclusive Edition of our first pick, <i>The Female Persuasion</i> by Meg Wolitzer, and join us in stores on May 2nd for a lively discussion of the book.</p> 
+								<div class="sp-cta">Learn More</div> 
+							</div> 
+						</a> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+ -->
+
+Sample coupon
+<div class="search-promo-atg-container" style="height: 331.422px; min-height: 331.422px;">
+	<div class="html content-node">
+		<div class="html-embed-container">
+			<div class="search-results-promo cpn-promo theme-default">
+				<div class="search-promo-container">
+					<div class="search-promo">
+						<div class="sp-location">Online Only</div>
+						<div class="sp-pretext" style="font-size: 2.7rem;">$5 Off $40 | $10 Off $75 </div>
+						<div class="sp-copy1">Code: APRILSHOWERS</div>
+						<div class="sp-copy2">Hurry, Offer Ends 4/11/18</div>
+						<a class="sp-link" href="/h/terms-and-conditions?m=3&amp;y=2018&amp;f=aprilshowers-details" onclick="set_cookie('searchpromo_coupon_APRILSHOWERS_text');">See Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<style type="text/css">
+#gridView .search-promo-atg-container {
+ width:40%;
+ float:left;
+ margin-bottom:1rem
+}
+#listView .search-promo-atg-container {
+ padding-top:2.25rem;
+ padding-bottom:2.25rem;
+ border-bottom:1px solid #ccc
+}
+
+.search-results-promo.cpn-promo .search-promo-container {
+ font-size:1.3rem;
+ border:1px solid #fff;
+ position:absolute;
+ top:1.6rem;
+ left:1.6rem;
+ bottom:1.6rem;
+ right:1.6rem
+}
+.search-results-promo.cpn-promo .search-promo {
+ position:relative;
+ height:100%
+}
+.search-results-promo.cpn-promo .search-promo * {
+ width:100%;
+ text-align:center;
+ font-family:Lato,sans-serif;
+ font-weight:400;
+ font-style:normal
+}
+.search-results-promo.cpn-promo .search-promo .sp-location {
+ padding-top:1.5625rem;
+ text-transform:uppercase;
+ letter-spacing:.0625rem;
+ font-size:.8125rem
+}
+.search-results-promo.cpn-promo .search-promo .sp-pretext {
+ padding-top:22%;
+ font-family:Poynter,Georgia,serif;
+ font-weight:400;
+ font-style:normal;
+ font-size:1.875rem
+}
+.search-results-promo.cpn-promo .search-promo .sp-amount {
+ padding-top:0;
+ font-family:Poynter,Georgia,serif;
+ font-weight:700;
+ font-style:normal;
+ font-size:3.75rem
+}
+.search-results-promo.cpn-promo .search-promo .sp-copy1 {
+ padding-top:0;
+ font-size:.8125rem
+}
+.search-results-promo.cpn-promo .search-promo .sp-copy2 {
+ padding-top:.25rem;
+ font-size:.8125rem
+}
+.search-results-promo.cpn-promo .search-promo a.sp-link,.search-results-promo.cpn-promo .search-promo a.sp-link:hover {
+ position:absolute;
+ bottom:1.5625rem;
+ text-decoration:underline;
+ font-size:.8125rem
+}
+.search-results-promo.cpn-promo.theme-default {
+ background-color:#465547
+}
+.search-results-promo.cpn-promo.theme-default .sp-location,.search-results-promo.cpn-promo.theme-default .sp-pretext {
+ color:#f4cc63
+}
+.search-results-promo.cpn-promo.theme-default .sp-amount {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-default .sp-copy1,.search-results-promo.cpn-promo.theme-default .sp-copy2 {
+ color:#f4cc63
+}
+.search-results-promo.cpn-promo.theme-default a.sp-link,.search-results-promo.cpn-promo.theme-default a.sp-link:hover {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-peach {
+ background-color:#efd1bc
+}
+.search-results-promo.cpn-promo.theme-peach .sp-location,.search-results-promo.cpn-promo.theme-peach .sp-pretext {
+ color:#a36b6c
+}
+.search-results-promo.cpn-promo.theme-peach .sp-amount {
+ color:#21282d
+}
+.search-results-promo.cpn-promo.theme-peach .sp-copy1,.search-results-promo.cpn-promo.theme-peach .sp-copy2 {
+ color:#a36b6c
+}
+.search-results-promo.cpn-promo.theme-peach a.sp-link,.search-results-promo.cpn-promo.theme-peach a.sp-link:hover {
+ color:#21282d
+}
+.search-results-promo.cpn-promo.theme-mist {
+ background-color:#c9dbe2
+}
+.search-results-promo.cpn-promo.theme-mist .sp-location,.search-results-promo.cpn-promo.theme-mist .sp-pretext {
+ color:#054f72
+}
+.search-results-promo.cpn-promo.theme-mist .sp-amount {
+ color:#21282d
+}
+.search-results-promo.cpn-promo.theme-mist .sp-copy1,.search-results-promo.cpn-promo.theme-mist .sp-copy2 {
+ color:#054f72
+}
+.search-results-promo.cpn-promo.theme-mist a.sp-link,.search-results-promo.cpn-promo.theme-mist a.sp-link:hover {
+ color:#21282d
+}
+.search-results-promo.cpn-promo.theme-haze {
+ background-color:#6c8892
+}
+.search-results-promo.cpn-promo.theme-haze .sp-location,.search-results-promo.cpn-promo.theme-haze .sp-pretext {
+ color:#c9dbe2
+}
+.search-results-promo.cpn-promo.theme-haze .sp-amount {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-haze .sp-copy1,.search-results-promo.cpn-promo.theme-haze .sp-copy2 {
+ color:#c9dbe2
+}
+.search-results-promo.cpn-promo.theme-haze a.sp-link,.search-results-promo.cpn-promo.theme-haze a.sp-link:hover {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-peony {
+ background-color:#d8685d
+}
+.search-results-promo.cpn-promo.theme-peony .sp-location,.search-results-promo.cpn-promo.theme-peony .sp-pretext {
+ color:#efd1bc
+}
+.search-results-promo.cpn-promo.theme-peony .sp-amount {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-peony .sp-copy1,.search-results-promo.cpn-promo.theme-peony .sp-copy2 {
+ color:#efd1bc
+}
+.search-results-promo.cpn-promo.theme-peony a.sp-link,.search-results-promo.cpn-promo.theme-peony a.sp-link:hover {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-moss {
+ background-color:#465547
+}
+.search-results-promo.cpn-promo.theme-moss .sp-location,.search-results-promo.cpn-promo.theme-moss .sp-pretext {
+ color:#f4cc63
+}
+.search-results-promo.cpn-promo.theme-moss .sp-amount {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-moss .sp-copy1,.search-results-promo.cpn-promo.theme-moss .sp-copy2 {
+ color:#f4cc63
+}
+.search-results-promo.cpn-promo.theme-moss a.sp-link,.search-results-promo.cpn-promo.theme-moss a.sp-link:hover {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-walnutolive {
+ background-color:#353535
+}
+.search-results-promo.cpn-promo.theme-walnutolive .sp-location,.search-results-promo.cpn-promo.theme-walnutolive .sp-pretext {
+ color:#9e966b
+}
+.search-results-promo.cpn-promo.theme-walnutolive .sp-amount {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-walnutolive .sp-copy1,.search-results-promo.cpn-promo.theme-walnutolive .sp-copy2 {
+ color:#9e966b
+}
+.search-results-promo.cpn-promo.theme-walnutolive a.sp-link,.search-results-promo.cpn-promo.theme-walnutolive a.sp-link:hover {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-walnutsalmon {
+ background-color:#353535
+}
+.search-results-promo.cpn-promo.theme-walnutsalmon .sp-location,.search-results-promo.cpn-promo.theme-walnutsalmon .sp-pretext {
+ color:#f79e7f
+}
+.search-results-promo.cpn-promo.theme-walnutsalmon .sp-amount {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-walnutsalmon .sp-copy1,.search-results-promo.cpn-promo.theme-walnutsalmon .sp-copy2 {
+ color:#f79e7f
+}
+.search-results-promo.cpn-promo.theme-walnutsalmon a.sp-link,.search-results-promo.cpn-promo.theme-walnutsalmon a.sp-link:hover {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-deepblue {
+ background-color:#112d4d
+}
+.search-results-promo.cpn-promo.theme-deepblue .sp-location,.search-results-promo.cpn-promo.theme-deepblue .sp-pretext {
+ color:#f79e7f
+}
+.search-results-promo.cpn-promo.theme-deepblue .sp-amount {
+ color:#fff
+}
+.search-results-promo.cpn-promo.theme-deepblue .sp-copy1,.search-results-promo.cpn-promo.theme-deepblue .sp-copy2 {
+ color:#f79e7f
+}
+.search-results-promo.cpn-promo.theme-deepblue a.sp-link,.search-results-promo.cpn-promo.theme-deepblue a.sp-link:hover {
+ color:#fff
+}
+#gridView .search-results-promo.cpn-promo {
+ width:100%;
+ position:relative;
+ padding-top:122.4%
+}
+#listView .search-results-promo.cpn-promo {
+ font-size:1rem;
+ width:100%;
+ padding:1rem
+}
+#listView .search-results-promo.cpn-promo .search-promo-container {
+ position:static;
+ height:5.5rem;
+ font-size:1rem
+}
+#listView .search-results-promo.cpn-promo .search-promo * {
+ width:100%;
+ text-align:left;
+ font-family:Lato,sans-serif;
+ font-weight:400;
+ font-style:normal
+}
+#listView .search-results-promo.cpn-promo .search-promo .sp-location {
+ position:absolute;
+ padding-top:.9rem;
+ padding-left:1.5rem;
+ text-transform:uppercase;
+ letter-spacing:.0625rem;
+ font-size:.8125rem
+}
+#listView .search-results-promo.cpn-promo .search-promo .sp-pretext {
+ position:absolute;
+ bottom:.75rem;
+ padding-left:1.5rem;
+ font-family:Poynter,Georgia,serif;
+ font-weight:400;
+ font-style:normal;
+ font-size:2.25rem;
+ line-height:2.25rem
+}
+#listView .search-results-promo.cpn-promo .search-promo .sp-amount {
+ display:inline;
+ font-family:Poynter,Georgia,serif;
+ font-weight:400;
+ font-style:normal;
+ font-size:inherit;
+ line-height:inherit
+}
+#listView .search-results-promo.cpn-promo .search-promo .sp-copy1 {
+ position:absolute;
+ padding-top:.9rem;
+ padding-right:1.5rem;
+ text-align:right;
+ font-size:.8125rem
+}
+#listView .search-results-promo.cpn-promo .search-promo .sp-copy2 {
+ position:absolute;
+ padding-top:2rem;
+ padding-right:1.5rem;
+ text-align:right;
+ font-size:.8125rem
+}
+#listView .search-results-promo.cpn-promo .search-promo a.sp-link,#listView .search-results-promo.cpn-promo .search-promo a.sp-link:hover {
+ position:absolute;
+ bottom:1rem;
+ padding-right:1.5rem;
+ text-align:right;
+ text-decoration:underline;
+ font-size:.8125rem
+}
+
+.search-results-promo.ed-promo .search-promo-container {
+ font-size:1.3rem;
+ border:1px solid #eeeeed;
+ position:absolute;
+ top:0;
+ left:0;
+ bottom:0;
+ right:0;
+ height:100%
+}
+.search-results-promo.ed-promo .search-promo {
+ position:relative;
+ background-color:#fff;
+ height:100%
+}
+.search-results-promo.ed-promo .search-promo * {
+ font-family:Lato,sans-serif;
+ font-weight:400;
+ font-style:normal
+}
+.search-results-promo.ed-promo .search-promo a {
+ text-decoration:none;
+ display:block;
+ height:100%;
+ overflow:hidden
+}
+.search-results-promo.ed-promo .search-promo .sp-image {
+ margin:0 0 1.5rem;
+ float:left;
+ height:11.875rem;
+ height:50%;
+ width:100%;
+ max-width:100%;
+ overflow:hidden
+}
+.search-results-promo.ed-promo .search-promo .sp-image img {
+ display:block;
+ width:100%;
+ overflow:hidden
+}
+.search-results-promo.ed-promo .search-promo .sp-copy {
+ position:relative;
+ padding:1rem 1.5rem 0;
+ height:100%;
+ color:#21282d
+}
+.search-results-promo.ed-promo .search-promo .sp-copy .sp-header {
+ padding-bottom:.5rem;
+ font-size:1.0625rem
+}
+.search-results-promo.ed-promo .search-promo .sp-copy p {
+ margin:0;
+ font-size:.875rem;
+ line-height:1.5
+}
+.search-results-promo.ed-promo .search-promo .sp-copy .sp-cta {
+ text-align:center;
+ font-size:.875rem;
+ padding-top:1.5rem;
+ text-decoration:underline;
+ color:#347d56
+}
+#gridView .search-results-promo.ed-promo {
+ width:100%;
+ position:relative;
+ padding-top:122.4%
+}
+#listView .search-results-promo.ed-promo {
+ width:100%;
+ height:8.75rem
+}
+#listView .search-results-promo.ed-promo .search-promo-container {
+ position:static;
+ font-size:1rem
+}
+#listView .search-results-promo.ed-promo .search-promo {
+ height:100%
+}
+#listView .search-results-promo.ed-promo .search-promo .sp-image {
+ margin:0 1.5rem 0 0;
+ float:left;
+ height:8.75rem;
+ width:19.5rem;
+ max-width:19.5rem
+}
+#listView .search-results-promo.ed-promo .search-promo .sp-copy {
+ padding:1.5rem 1.5rem 0
+}
+#listView .search-results-promo.ed-promo .search-promo .sp-copy .sp-header {
+ font-size:1.0625rem
+}
+#listView .search-results-promo.ed-promo .search-promo .sp-copy p {
+ margin:0;
+ font-size:.8125rem;
+ line-height:1.5
+}
+#listView .search-results-promo.ed-promo .search-promo .sp-copy .sp-cta {
+ position:absolute;
+ bottom:1.5rem;
+ right:1.5rem;
+ text-align:right;
+ padding-top:0;
+ font-size:.8125rem
+}
+
+
+</style>
+
+
+
+
+</div>
+<!-- end #listView #gridView testing wrapper -->
+<!-- END 'search-promo' -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

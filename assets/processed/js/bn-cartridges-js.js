@@ -117,10 +117,9 @@
             loadRWDimg('data-img-src-mobile');
         } else {
             loadRWDimg('data-img-src-tablet');
-        }
+        } 
 
-
-        var isMobile = false;
+        var isMobile = false; 
         var URLpathArray = window.location.pathname.split('/');
         if (URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com") {
             isMobile = true;
@@ -132,8 +131,34 @@
             if (URLpathArray[2].toLowerCase() === "series") {
                 $('body').addClass('mobileSeries');
                 $('h2.index-heading').addClass('rule');
+                if($('#view-more-discover').length){ // series sub pages...
+                    if(!$('#view-more-discover').is(':visible')){ 
+                       $('#view-more-discover').show();    // show the results
+                    }
+                    $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles
+                } 
             }
-
+            // identify Contributor Sub pages:
+            if (URLpathArray[2].toLowerCase() === "contributor"){
+                $('body').addClass('mobileContributor'); 
+                if (URLpathArray[3] === null || URLpathArray[3].toLowerCase() !== "contributor" ) { 
+                    if(!$('#view-more-discover').is(':visible')){ 
+                       $('#view-more-discover').show();    // show the results
+                    }
+                    $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles
+                }      
+            }
+            // identify Discover Categories: 
+            if (URLpathArray[2].toLowerCase() === "discover-categories") {
+                $('body').addClass('mobileDiscoverCat'); 
+                if($('#view-more-discover').length){ // series sub pages... 
+                    if(!$('#view-more-discover').is(':visible')){ 
+                       $('#view-more-discover').show();    // show the results
+                    }
+                    $('div.bg-whole-site-color > .series-detail > div.container > section:eq(1)').hide();  //hide the featured titles
+ 
+                } 
+            }
             // Author Page break Skava cache for Grid / List view results 
             $(document).on('click', '#grid-view,#list-view', function(e) {
                 e.preventDefault();
@@ -811,8 +836,10 @@
         // 	});
         // }
 
-        // Contributor functionality
 
+
+        // Contributor functionality
+        // Contributor Landing Page "Alpha" Navigation  
         var sectionLinkContainer = $('<div id="sectionLinkContainer"></div>');
         $('.isMobile .author-series-indexes--contributor h2.index-heading, .isMobile .author-series-indexes--contributor .index-grid').hide();
         $('.isMobile .author-series-indexes--contributor h2.index-heading').each(function (i, val) {
@@ -834,9 +861,12 @@
             $(this).toggleClass("active");
         });
 
-        /* Popular Authors carousel */
 
+
+
+        /* Popular Authors carousel */
         $('.isMobile .author-image-carousel .carousel').slick('unslick');
+
 
         //Discover Categories functionality
         /*
@@ -859,6 +889,13 @@
         $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").text(function () {
             return $(this).text().replace(/\bDiscover \b/, "");
         });
+
+
+
+
+
+
+// id="view-more-discover
 
 
 
