@@ -440,6 +440,7 @@ section.mb-xl {
     padding: 10px;
   }
 
+  /* NAVIGATION to match global style */
   .slick-dots {
     display: block;
     width: 100%;
@@ -449,61 +450,54 @@ section.mb-xl {
     text-align: center;
     z-index: 2;
     bottom: 0px;
-
     li {
       position: relative;
       display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin: 0 5px;
+      width: 14px;
+      height: 14px;
+      margin: 0 4px;
       padding: 0;
       cursor: pointer;
     }
-
     li:last-child {
       display: none;
     }
-
     li button {
       font-size: 0;
       line-height: 0;
       display: block;
-      width: 20px;
-      height: 20px;
-      padding: 5px;
+      width: 10px;
+      height: 10px;
+      padding: 0;
       cursor: pointer;
       color: transparent;
-      border: 0;
+      border: 1px solid #21282d;
+      border-radius: 100%;
       outline: none;
-      background: transparent;
+      background-color: white;
     }
-
     li button:hover {
-      background: white;
+      background-color: white;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #21282d;
     }
-
-    li button:before {
-      font-family: 'slick';
-      font-size: 60px;
-      line-height: 20px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      content: '•';
-      text-align: center;
-      opacity: .25;
-      color: black;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+    li.slick-active {
+      margin-right: 8px;
     }
-
-    li.slick-active button:before {
-      opacity: .75;
-      color: black;
+    li.slick-active button {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #21282d;
+      background-color: transparent;
+    }
+    li.slick-active button:hover {
+      width: 14px;
+      height: 14px;
+      background-color: white;
     }
   }
+
   .clearfix.slick-slide,
   .clearfix:before.slick-slide {
     display: none;
