@@ -131,37 +131,44 @@
             if (URLpathArray[2].toLowerCase() === "series") {
                 $('body').addClass('mobileSeries');
                 $('h2.index-heading').addClass('rule');
-            }
-                /*
+                // identify Series Sub pages:
                 if($('#view-more-discover').length){ // series sub pages...
-                    if(!$('#view-more-discover').is(':visible')){ 
-                       $('#view-more-discover').show();    // show the results
-                    }
-                    $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles
-                } 
-         
+                  $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles 
+                    $(window).on('load', function () { 
+                      if(!$('#view-more-discover').is(':visible')){ 
+                        $('#view-more-discover').show();    // show the results
+                      } 
+                    });
+                }
+            }       
             // identify Contributor Sub pages:
             if (URLpathArray[2].toLowerCase() === "contributor"){
                 $('body').addClass('mobileContributor'); 
                 if (URLpathArray[3] === null || URLpathArray[3].toLowerCase() !== "contributor" ) { 
-                    if(!$('#view-more-discover').is(':visible')){ 
-                       $('#view-more-discover').show();    // show the results
+                    if($('#view-more-discover').length){ // series sub pages...
+                      $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles 
+                        $(window).on('load', function () { 
+                          if(!$('#view-more-discover').is(':visible')){ 
+                            $('#view-more-discover').show();    // show the results
+                          } 
+                        });
                     }
-                    $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles
                 }      
             }
             // identify Discover Categories: 
             if (URLpathArray[2].toLowerCase() === "discover-categories") {
                 $('body').addClass('mobileDiscoverCat'); 
-                if($('#view-more-discover').length){ // series sub pages... 
-                    if(!$('#view-more-discover').is(':visible')){ 
-                       $('#view-more-discover').show();    // show the results
-                    }
-                    $('div.bg-whole-site-color > .series-detail > div.container > section:eq(1)').hide();  //hide the featured titles
- 
+
+                if($('#view-more-discover').length){ // series sub pages...
+                  $('div.bg-whole-site-color > .series-detail > div.container > section:eq(1)').hide();  //hide the featured titles
+                    $(window).on('load', function () { 
+                      if(!$('#view-more-discover').is(':visible')){ 
+                        $('#view-more-discover').show();    // show the results
+                      } 
+                    });
                 } 
             }
-            */
+ 
             // Author Page break Skava cache for Grid / List view results 
             $(document).on('click', '#grid-view,#list-view', function(e) {
                 e.preventDefault();
