@@ -7080,6 +7080,9 @@ header .text--subheader {
   height: 14px;
   background-color: white;
 }
+.isMobile .slick-feat-cat .slick-dots li.slick-active button:focus:focus:after {
+  border: none;
+}
 .isMobile .slick-feat-cat .clearfix.slick-slide,
 .isMobile .slick-feat-cat .clearfix:before.slick-slide {
   display: none;

@@ -496,6 +496,9 @@ section.mb-xl {
       height: 14px;
       background-color: white;
     }
+    li.slick-active button:focus:focus:after {
+      border: none;
+    }
   }
 
   .clearfix.slick-slide,
