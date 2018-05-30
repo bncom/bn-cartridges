@@ -1,7 +1,7 @@
 (function () {
 
 
-    // Utilities... 
+    // Utilities...
     if (window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com") {
         $('head').append('<link rel="stylesheet" type="text/css" href="https://qa-adobe-dispatch.bn-web.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css">');
     }
@@ -108,7 +108,7 @@
     $(function () { //document.ready
         // Call function slick
         slickCafe();
-        
+
         // load adaptive images
         var winWidth = $(window).width();
         if (winWidth > 1279) {
@@ -117,9 +117,9 @@
             loadRWDimg('data-img-src-mobile');
         } else {
             loadRWDimg('data-img-src-tablet');
-        } 
+        }
 
-        var isMobile = false; 
+        var isMobile = false;
         var URLpathArray = window.location.pathname.split('/');
         if (URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com") {
             isMobile = true;
@@ -133,56 +133,56 @@
                 $('h2.index-heading').addClass('rule');
                 // identify Series Sub pages:
                 if($('#view-more-discover').length){ // series sub pages...
-                  $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles 
-                    $(window).on('load', function () { 
-                      if(!$('#view-more-discover').is(':visible')){ 
+                  $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles
+                    $(window).on('load', function () {
+                      if(!$('#view-more-discover').is(':visible')){
                         $('#view-more-discover').show();    // show the results
-                      } 
+                      }
                     });
                 }
-            }       
+            }
             // identify Contributor Sub pages:
             if (URLpathArray[2].toLowerCase() === "contributor"){
-                $('body').addClass('mobileContributor'); 
-                if (URLpathArray[3] === null || URLpathArray[3].toLowerCase() !== "contributor" ) { 
+                $('body').addClass('mobileContributor');
+                if (URLpathArray[3] === null || URLpathArray[3].toLowerCase() !== "contributor" ) {
                     if($('#view-more-discover').length){ // series sub pages...
-                      $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles 
-                        $(window).on('load', function () { 
-                          if(!$('#view-more-discover').is(':visible')){ 
+                      $('div.bg-whole-site-color > div.container > section.mb-xs:eq(2)').hide();  //hide the featured titles
+                        $(window).on('load', function () {
+                          if(!$('#view-more-discover').is(':visible')){
                             $('#view-more-discover').show();    // show the results
-                          } 
+                          }
                         });
                     }
-                }      
+                }
             }
-            // identify Discover Categories: 
+            // identify Discover Categories:
             if (URLpathArray[2].toLowerCase() === "discover-categories") {
-                $('body').addClass('mobileDiscoverCat'); 
+                $('body').addClass('mobileDiscoverCat');
 
                 if($('#view-more-discover').length){ // series sub pages...
                   $('div.bg-whole-site-color > .series-detail > div.container > section:eq(1)').hide();  //hide the featured titles
-                    $(window).on('load', function () { 
-                      if(!$('#view-more-discover').is(':visible')){ 
+                    $(window).on('load', function () {
+                      if(!$('#view-more-discover').is(':visible')){
                         $('#view-more-discover').show();    // show the results
-                      } 
+                      }
                     });
-                } 
+                }
             }
- 
-            // Author Page break Skava cache for Grid / List view results 
+
+            // Author Page break Skava cache for Grid / List view results
             $(document).on('click', '#grid-view,#list-view', function(e) {
                 e.preventDefault();
                 var newUrl;
-                var thisId = $(this).attr('id'); 
+                var thisId = $(this).attr('id');
                 var qs = window.location.search.substring(1);
                 if(qs.indexOf("list-view") > -1){
                    var listview = qs.indexOf("list-view");
-                   qs = qs.substring(0, listview-1); 
-                }  
+                   qs = qs.substring(0, listview-1);
+                }
                 if(qs.indexOf("grid-view") > -1){
                    var gridview = qs.indexOf("grid-view");
-                   qs = qs.substring(0, gridview-1);  
-                }          
+                   qs = qs.substring(0, gridview-1);
+                }
                 if(qs.length > 1){
                     newUrl = location.pathname +'?'+ qs+'&'+thisId;
                 }else{
@@ -190,9 +190,9 @@
                 }
                 window.location.href = newUrl;
                 return false;
-            });  
+            });
 
- 
+
 
 
 
@@ -849,7 +849,7 @@
 
 
         // Contributor functionality
-        // Contributor Landing Page "Alpha" Navigation  
+        // Contributor Landing Page "Alpha" Navigation
         var sectionLinkContainer = $('<div id="sectionLinkContainer"></div>');
         $('.isMobile .author-series-indexes--contributor h2.index-heading, .isMobile .author-series-indexes--contributor .index-grid').hide();
         $('.isMobile .author-series-indexes--contributor h2.index-heading').each(function (i, val) {
@@ -890,10 +890,20 @@
         */
 
         $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").click(function () {
+          var exist = $(this).hasClass("active");
+          if (exist) {
+            $(this).removeClass("active");
+            this.nextElementSibling.style.display = "none";
+          } else {
             $(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();
             $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").removeClass("active");
             $(this).addClass("active");
             this.nextElementSibling.style.display = "block";
+          }
+            /*$(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();
+            $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").removeClass("active");
+            $(this).addClass("active");
+            this.nextElementSibling.style.display = "block";*/
         });
 
         $(".isMobile .genre-index-refinements--discover-categories h2.index-heading").text(function () {
@@ -926,16 +936,26 @@ function contribGridContents(x) {
     $(".index-grid").hide();
     x.style.display = "block";
 }
-
 function discoverContentGrid() {
-    /*console.log(this.innerText);
-    console.log(this.nextSibling);*/
+    $(".index-grid").hide();
+    $("h2.index-heading").removeClass("active");
+    var exist = $(this).hasClass("active");
+    if (exist) {
+      $(this).removeClass("active");
+      this.nextElementSibling.style.display = "none";
+    } else {
+      $(this).addClass("active");
+      this.nextElementSibling.style.display = "block";
+    }
+}
+
+/*function discoverContentGrid() {
     $(".index-grid").hide();
     $("h2.index-heading").removeClass("active");
     $(this).addClass("active");
     this.nextElementSibling.style.display = "block";
 }
-
+*/
 var slickCafe = function () {
     $('.cafe-slick').slick({
         dots: true,
@@ -947,4 +967,3 @@ var slickCafe = function () {
         infinite: false
     });
 };
-
