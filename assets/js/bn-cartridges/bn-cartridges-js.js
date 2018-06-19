@@ -911,6 +911,27 @@
         });
 
 
+        // Series Tabulation
+        $("#SeriesDescription").insertAfter(".isMobile .tab-container--series .tab-list-container .tab-list li:first");
+        $("#Author").insertAfter(".isMobile .tab-container--series .tab-list-container .tab-list li:last");
+        $("#Author, #SeriesDescription").addClass("invisible");
+
+
+        $(".isMobile .tab-container--series .tab-list-container .tab-list li").click(function () {
+        $(this).addClass("active");
+        var exist = $(this).hasClass("active");
+          if (exist) {
+            console.log(exist);
+            $(this).removeClass("active");
+            $("div#Author, div#SeriesDescription").addClass("invisible");
+          } else {
+            $(".isMobile .tab-container--series .tab-list-container .tab-list li").removeClass("active");
+            $("div#Author, div#SeriesDescription").addClass("invisible");
+            $(this).addClass("active");
+            this.nextElementSibling.addClass("invisible");
+          }
+        });
+
 
 
 
