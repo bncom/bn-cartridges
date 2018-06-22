@@ -7501,3 +7501,6 @@ header .text--subheader {
   visibility: hidden;
   display: none;
 }
+.isMobile .tab-list-container {
+  display: none;
+}

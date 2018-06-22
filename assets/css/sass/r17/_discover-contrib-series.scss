@@ -977,6 +977,11 @@ div.tab-highlight {
     visibility: hidden;
     display: none;
 }
+// hiding the tabs
+.tab-list-container {
+    display: none;
+}
+
 /* Discover category tabs to make them accordians
 .tab-container--series .tab-list-container.text--center {
     text-align: left;
