@@ -912,6 +912,7 @@
 
 
         // Series Tabulation
+        /*
         $("#SeriesDescription").insertAfter(".isMobile .tab-container--series .tab-list-container .tab-list li:first");
         $("#Author").insertAfter(".isMobile .tab-container--series .tab-list-container .tab-list li:last");
         $("#Author, #SeriesDescription").addClass("invisible");
@@ -931,7 +932,7 @@
             this.nextElementSibling.addClass("invisible");
           }
         });
-
+*/
 
 
 

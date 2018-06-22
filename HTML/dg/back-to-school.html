@@ -18,18 +18,18 @@
 
   <div class="outterBounds">
     <div class="outterBoundsContent">
-      <a onclick="set_cookie('cqcf_shop-by-age__image');" href="#" class="">
+      <div><a onclick="set_cookie('cqcf_shop-by-age__image');" href="#" class="">
         <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Pod_NewLook_2x.jpg" />
         <span class="">start a new look</span>
-      </a>
-      <a onclick="set_cookie('cqcf_shop-by-age__image');" href="#" class="">
+      </a></div>
+      <div><a onclick="set_cookie('cqcf_shop-by-age__image');" href="#" class="">
         <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Pod_Organized_2x.jpg" />
         <span class="">stay organized</span>
-      </a>
-      <a onclick="set_cookie('cqcf_shop-by-age__image');" href="#" class="">
+      </a></div>
+      <div><a onclick="set_cookie('cqcf_shop-by-age__image');" href="#" class="">
         <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Pod_Supplies_2x.jpg" />
         <span class="">stock up on supplies</span>
-      </a>
+      </a></div>
     </div>
   </div>
 
@@ -79,7 +79,7 @@
 
 <style>
 main.bg-whole-site-color {
-    background-image: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/GrayBand_BG_dbdada.png);
+    background-image: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/GrayBand_BG_e7e7e7.png);
     background-repeat: repeat-x;
     background-position-y: 714px;
 }
@@ -142,7 +142,7 @@ div#btsHero img {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    background-color: #dbdada;
+    background-color: #e7e7e7;
 }
 .outterBoundsContent a {
   text-decoration: none;
@@ -154,7 +154,7 @@ div#btsHero img {
 .outterBounds {
     padding: 58px 0 0;
     position: relative;
-    background-color: #dbdada;
+    background-color: #e7e7e7;
 
 }
 .outterBounds .outterBoundsContent span {
@@ -193,7 +193,7 @@ div#btsHero img {
 .categoriesContent img {
     width: 202px;
     border-radius: 50%;
-    background-color: #eeeeee;
+    background-color: #e7e7e7;
     margin-bottom: 16px;
 }
 
@@ -230,14 +230,110 @@ div#btsHero img {
     padding-bottom: 1px;
     text-decoration: none;
 }
-
-@media screen only (max-width:600px){
-  div#btsHero img {src: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Hero-mobile.jpg);}
-}
 @font-face {
     font-family: 'Fjalla One';
     src: url('https://css.css-bn.com/static/redesign/release/fonts/FjallaOne-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+  div#btsHero img {src: url(//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Hero-mobile.jpg);
+  }
+    .container {
+    padding: 2.25rem 0px;
+  }
+    div#btsHero {
+      width: 100%
+    }
+    section#backToSchool {
+      width: 100%;
+      right: unset;
+    }
+    .btsgrades {
+      width: 100%;
+      overflow-x: scroll;
+      /*! overflow-x: hidden; */
+      background-color: red;
+      margin: 45px 0px 44px;
+      width: 100%;
+    }
+    .gradesContainer {
+      display: inline-block;
+    margin-top: 48px;
+    /*! width: 100%; */
+  }
+    .btsgrades a {
+    height: 133px;
+    width: 133px;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: Poynter, sans-Serif;
+  }
+  .outterBoundsContent {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	background-color: #e7e7e7;
+	flex-wrap: wrap;
+}
+  .outterBoundsContent img {
+	max-width: 380px;
+	width: 100%;
+  height: unset;
+}
+  .outterBoundsContent a{
+    background-color: #e7e7e7;
+  }
+.outterBounds .outterBoundsContent span {
+	display: block;
+	font-size: 23px;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: .96px;
+	color: #21282d;
+	text-transform: uppercase;
+	margin: 19px auto 21px;
+	font-family: fjalla One, sans-serif;
+	padding-bottom: 2px;
+	border-bottom: 1px solid transparent;
+	width: max-content;
+	width: -moz-max-content;
+	text-align: center;
+	text-decoration: none;
+	background-color: #e7e7e7;
+}
+  .outterBoundsContent div{
+    border-bottom: 26px solid white;
+    width: 100%
+  }
+  .categories {
+	padding: 50px 0px 48px;
+}
+  .categoriesSecond {
+    padding: 0 0 49px 0;
+  }
+  .categoriesContent {
+	display: flex;
+	justify-content: unset;
+	text-align: center;
+	text-transform: uppercase;
+	overflow-x: hidden;
+	overflow-x: scroll;
+}
+  .categoriesContent img {
+	width: 133px;
+	border-radius: 50%;
+	background-color: #e7e7e7;
+	margin-bottom: 16px;
+	flex-basis: 1;
+}
+  .categoriesContent span {
+	display: block;
+	width: auto;
+}
+	.categoriesContent a {
+		margin: 0 9px 0;
+	}
 }
 </style>
