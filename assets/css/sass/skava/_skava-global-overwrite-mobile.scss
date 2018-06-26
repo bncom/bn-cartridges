@@ -147,4 +147,61 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
     max-width: 100%;
   } */
 }
+
+
+
+
+
+
+
+
+/*  temp Gift Cards page styling pending deployment of version in QA2  */
+.html .gift-card-list-r17{padding-left:20px;}
+.html .gift-card-list-r17 a.tile{
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin: 0 5px;
+    margin-bottom: 0px;
+    text-align: center;
+    height: auto;
+    padding: 0; 
+    float: none;
+    vertical-align: top;
+}
+.html .gift-card-list-r17 .tile:nth-child(3n) { margin-right: 0;}
+.html .gift-card-list-r17 h2{ font-size:22px;}
+
+.sk_passthroughPage .parbase.page-hero { display: none;}
+.promo-pdp {
+    line-height: 1.2;
+    margin: 0 0 5px;
+    width: 100%;
+}
+.promo-pdp .container {
+    margin: 0 auto !important;
+    padding: 15px 10px 20px !important;
+    display: block;
+    text-align: center;
+    line-height: 1.5 !important;
+}
+.promo-pdp--light-text a {
+    font-family: PoynterOSDisp-Semibold, Poynter;
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5 !important;
+}
+.promo-pdp--light-text .promo-pdp__cta {
+    color: #fff;
+    display: block;
+    text-decoration: underline;
+    font-size: 14px; 
+    line-height: 1.5 !important;
+}
+.promo-pdp__cta { line-height: 1.5 !important; } 
+
+/* End Temp Gift Card update */
+
+
  
