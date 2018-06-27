@@ -2,9 +2,9 @@
 
 
     // Utilities...
-    if (window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com") {
-        $('head').append('<link rel="stylesheet" type="text/css" href="https://qa-adobe-dispatch.bn-web.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css">');
-    }
+    // if (window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com" || window.location.hostname === "mqa.barnesandnoble.com") {
+    //     $('head').append('<link rel="stylesheet" type="text/css" href="https://qa-adobe-dispatch.bn-web.com/etc/designs/ccr/static/html/css/bn-cartridges-mobile.min.css">');
+    // }
 
 
     // retrieve querystring params
@@ -121,7 +121,7 @@
 
         var isMobile = false;
         var URLpathArray = window.location.pathname.split('/');
-        if (URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com") {
+        if (URLpathArray[1].toLowerCase() === "mobile" || window.location.hostname === "m.barnesandnoble.com" || window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname === "mpreprod.barnesandnoble.com" || window.location.hostname === "mpreview.barnesandnoble.com" || window.location.hostname === "mqa.barnesandnoble.com" ) {
             isMobile = true;
         }
         if (isMobile) { // ***  Applies to Mobile Only  ***
