@@ -707,6 +707,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   /* iPhone Download App */
   /* End iPhone */
   /* Skava local styling  */
+  /* styles for privacy and other pages */
   /*Coupon & Deals page*/
   /* green coupon section */
   /* coupon promo text message */
@@ -1786,7 +1787,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .pmis-samplet-next-item,
 .html .pmis-samplet-prev-item {
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   bottom: 0;
   cursor: pointer;
   height: 25px;
@@ -1835,7 +1836,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   margin: 23px 0 28px;
 }
 .html .pmis-steps::before {
-  background: transparent url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png) repeat-x scroll 0 0;
   top: 25px;
   content: "";
   display: block;
@@ -1845,7 +1846,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   width: 100%;
 }
 .html .pmis-steps::after {
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-dash-h.png") repeat-x scroll 0 0;
   content: "";
   display: block;
   height: 6px;
@@ -1874,7 +1875,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 140px;
   padding: 30px 0 0 115px;
   margin-bottom: 8px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/h/promotional/put-me-in-the-story/pmis-sprite_re.png") no-repeat;
   font-family: Raleway, PTSans, Arial;
   color: #0d4563;
   font-size: 20px;
@@ -2332,7 +2333,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   bottom: 0px;
 }
 .html .bnapp-hero .itunes-icon {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_itune.png) no-repeat scroll left center;
   float: left;
   height: 33px;
   margin: 2px 0 0 20px;
@@ -2349,7 +2350,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-rendering: optimizelegibility;
 }
 .html .bnapp-button {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/button.png) no-repeat scroll left center;
   clear: both;
   height: 41px;
   margin: 0 auto;
@@ -2366,7 +2367,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-button-small {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/buttonsmall.png) no-repeat scroll left center;
   clear: both;
   float: left;
   height: 41px;
@@ -2383,11 +2384,11 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   text-decoration: none;
 }
 .html .bnapp-categories .module-bn {
-  background: transparent url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pimages/mobile/app/bnapp_bgtexture.jpg) no-repeat scroll center bottom;
   padding: 3% 0;
 }
 .html h2.bnapp-hdr-standard {
-  background: transparent url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
+  background: rgba(0, 0, 0, 0) url("https://simg1.imagesbn.com/pimages/storefronts/st_header_line_772.png") no-repeat scroll center 58%;
   letter-spacing: 0.5px;
   margin: 0 auto;
   text-align: center;
@@ -2423,14 +2424,14 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   line-height: 24px;
 }
 .html .bnapp-sbs {
-  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-bg-body-gradient.png) repeat-x scroll 0 0;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
   min-height: 232px;
   overflow: hidden;
 }
 .html .bnapp-sbs .bg-body-right {
-  background: transparent url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) url(https://simg1.imagesbn.com/pImages/resources/gateway/2011/dev/module-body-bg-end.png) no-repeat scroll 0 0;
   float: right;
   height: 17px;
   width: 202px;
@@ -2937,6 +2938,29 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   .html .bnapp-hdr .inner {
     font-size: 0.8em;
   }
+}
+.html #legacy-fixes {
+  font-size: 13px;
+  margin: 0 20px;
+}
+.html #legacy-fixes p {
+  font-size: 13px;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+.html #legacy-fixes strong, .html #legacy-fixes b {
+  font-weight: 700px;
+}
+.html #legacy-fixes i, .html #legacy-fixes em {
+  font-style: italic;
+}
+.html #legacy-fixes ul li {
+  padding: 0 0 10px 0;
+  margin: 0 0 0 25px;
+  list-style-type: disc;
+}
+.html #legacy-fixes.copy, .html #legacy-fixes .copy {
+  padding: 0;
 }
 .html [class*=coupn-] {
   transition: all 0.5s ease;
@@ -3467,7 +3491,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -3483,7 +3507,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -3830,7 +3854,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -4075,7 +4099,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.locator:before, .html .event-intro .event-intro-link.locator:before {
   padding-left: 27px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -9px -273px;
 }
 .html .event-intro .event-cta.locator:hover, .html .event-intro .event-intro-link.locator:hover {
@@ -4091,7 +4115,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
 }
 .html .event-intro .event-cta.video:before, .html .event-intro .event-intro-link.video:before {
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -11px -242px;
 }
 .html .event-intro .event-cta.video:hover:before, .html .event-intro .event-intro-link.video:hover:before {
@@ -4514,7 +4538,7 @@ section#customerFavorites, section#featuredAuthor, section#featuredBrands, secti
   height: 30px;
   width: 30px;
   padding-left: 30px;
-  background: transparent url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
+  background: rgba(0, 0, 0, 0) url("//dispatch.barnesandnoble.com/content/dam/ccr/design/sprites/Events_Sprite.png") no-repeat;
   background-position: -116px -242px;
   font-size: 22px;
 }
@@ -6400,7 +6424,7 @@ header .text--subheader {
 .promo-item-name .arrow:after {
   content: "";
   display: block;
-  background: transparent url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
+  background: rgba(0, 0, 0, 0) url("//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201705160242p/img/sprite-categories_2x.png") repeat scroll -38px -3px/276px 84px;
   height: 17px;
   white-space: nowrap;
   width: 11px;

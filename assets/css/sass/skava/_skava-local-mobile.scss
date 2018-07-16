@@ -1,7 +1,27 @@
 /* Skava local styling  */
 
+/* styles for privacy and other pages */
 
+#legacy-fixes {
 
+	font-size: 13px;
+    margin: 0 20px;
 
+	p {
+		font-size: 13px;
+		margin: 0;
+		padding: 0 0 10px 0;
+	}
 
+	strong, b { font-weight: 700px; }
 
+	i, em { font-style: italic; }
+
+	ul li {
+		padding: 0 0 10px 0;
+	    margin: 0 0 0 25px;
+	    list-style-type: disc;
+	}
+	
+	&.copy, & .copy { padding: 0; }
+}
