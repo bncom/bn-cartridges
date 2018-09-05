@@ -7595,3 +7595,26 @@ header .text--subheader {
 .isMobile .tab-list-container {
   display: none;
 }
+.isMobile .author-header .author-image__cont {
+  float: unset;
+  width: 160px;
+  margin: 0 auto;
+}
+.isMobile .author-header .author-details__cont {
+  max-width: unset;
+  text-align: center;
+}
+.isMobile .author-header .author-details__cont .text--left {
+  text-align: center;
+  font-size: 25px;
+}
+.isMobile .author-header .author-details__cont p.about-author {
+  font-size: 17px;
+}
+.isMobile .author-header .author-details__cont p {
+  font-size: 15px;
+}
+.isMobile .container > .author-header {
+  display: block;
+  margin-bottom: 0px !important;
+}

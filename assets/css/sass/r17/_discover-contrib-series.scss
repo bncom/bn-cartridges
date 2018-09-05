@@ -984,6 +984,32 @@ div.tab-highlight {
     display: none;
 }
 
+
+// Release 5.17 - fixing Author info text rendering
+
+.author-header .author-image__cont {
+    float: unset;
+    width: 160px;
+    margin: 0 auto;
+}
+.author-header .author-details__cont {
+    max-width: unset;
+    text-align: center;
+}
+.author-header .author-details__cont .text--left {
+    text-align: center;
+    font-size: 25px;
+}
+.author-header .author-details__cont p.about-author {
+    font-size: 17px;
+}
+.author-header .author-details__cont p {
+    font-size: 15px;
+}
+.container>.author-header {
+	display: block;
+	margin-bottom: 0px!important;
+}
 /* Discover category tabs to make them accordians
 .tab-container--series .tab-list-container.text--center {
     text-align: left;
