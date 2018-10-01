@@ -1010,6 +1010,94 @@ div.tab-highlight {
 	display: block;
 	margin-bottom: 0px!important;
 }
+
+/* 5 product carousel */
+
+.five-product-carousel-new {
+    overflow-x: scroll;
+    width: 100% !important;
+    display: -webkit-box;
+    display: inline-flex;
+    vertical-align: unset;
+    align-items: flex-start;
+    }
+
+.five-product-carousel-new .product-shelf-tile {
+    width: 126px;
+    margin-right: 20px;
+    display: table-cell;
+    align-self: baseline;
+}
+
+.five-product-carousel-new .product-shelf-title {font: 16px GillSansMTPro-Medium;}
+
+.five-product-carousel-new .product-shelf-author.pb-xxxs.pt-0 {
+    text-decoration: none;
+    color: #4e4e4e;
+    font: 14px GillSansMTPro-Book,GillSansMTPro-Medium;
+    line-height: 20px;
+}
+
+.five-product-carousel-new .gig-comment-rating-star:before, .five-product-carousel-new .gig-rating-star:before, .star:before {
+    font-size: 17px;
+}
+
+.five-product-carousel-new .product-shelf-image {
+    max-height: 170px;max-width: 114px;
+}
+
+.five-product-carousel-new .product-shelf-image>a img {
+    max-width: 114px;
+}
+
+.main-content.container {padding-left: unset;padding-right: unset;}
+
+.book.product-shelf-tile.product-shelf-tile-book:first-child {
+    margin-left: 20px;
+}
+
+.five-product-carousel-new .product-shelf-info {
+    margin-top: 16px;
+    border-top: unset;
+}
+
+section.mb-m .rule {
+    font-size: 22px;
+    margin: 0 0 0 20px;
+    text-align: left;
+    display: block;
+    line-height: 27px;
+}
+
+section.mb-m h2.rule:before, section.mb-m h2.rule:after {
+    margin: unset;
+    content: unset;
+}
+
+section.mb-m h2.rule:after {
+    background: url(//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201809182216p/img/sprite-categories_2x.png);
+    background-position: -38px -3px;
+    background-size: 276px 84px;
+    height: 16px;
+    width: 11px;
+    text-indent: 100%;
+    white-space: nowrap;
+    right: 15px;
+    position: absolute;
+    top: 7px;
+    content: " ";
+    }
+
+section.mb-m {
+    padding-bottom: 32px !IMPORTANT;
+    border-bottom: 1px solid #d8dcdd;
+    margin-bottom: 25px !important;
+}
+section.mb-m .mb-l {
+    margin-bottom: 7rem!important;
+}
+
+
 /* Discover category tabs to make them accordians
 .tab-container--series .tab-list-container.text--center {
     text-align: left;
