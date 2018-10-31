@@ -875,7 +875,7 @@
 
 
         /* Popular Authors carousel */
-        $('.isMobile .author-image-carousel .carousel').slick('unslick');
+        $('.isMobile .author-image-carousel .carousel, .five-product-carousel-new').slick('unslick');
 
 
         //Discover Categories functionality

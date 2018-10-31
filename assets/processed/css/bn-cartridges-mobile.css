@@ -6739,6 +6739,11 @@ header .text--subheader {
   /* Related Authors */
   /* Popular Authors carousel */
   /* Discover Category */
+  /*
+  #main-content .main-content.container h2.rule {
+    display: none;
+  }
+  */
   /* Slick Featured Categories - Pages: Dicover Categories / Series / Authors */
   /* CONTRIBUTOR DETAILS PAGE (Bill) */
   /* CONTRIBUTOR DETAILS PAGE (BY) */
@@ -7119,9 +7124,6 @@ header .text--subheader {
 .isMobile #main-content .main-content.container h2.rule:after,
 .isMobile #main-content .main-content.container h2.rule:before {
   display: block !important;
-}
-.isMobile #main-content .main-content.container h2.rule {
-  display: none;
 }
 .isMobile .slick-feat-cat {
   overflow: hidden;
