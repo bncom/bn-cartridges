@@ -393,12 +393,6 @@ body {
           } 
       }
    */
-  /*
-  zzz:target {
-      border: 2px solid #D4D4D4;
-      background-color: #e5eecc;
-  }
-  */
   /*  sticky nav */
   /* Privacy Policy */
   /* iPhone Mobile */
@@ -1770,7 +1764,7 @@ body {
   width: 35px;
   height: 35px;
 }
-.html .authorSectionLink {
+.html .bfAuthorSectionLink {
   display: block;
   width: 100%;
   padding: 8px 0;
@@ -1779,14 +1773,14 @@ body {
   /* 17px; */
   border: 1px transparent solid;
 }
-.html .authorSectionLink.active {
+.html .bfAuthorSectionLink.active {
   border-color: #21282d;
 }
-.html a.authorSectionLink:hover {
+.html a.bfAuthorSectionLink:hover {
   border-color: #ccc;
   text-decoration: underline;
 }
-.html a.authorSectionLink:focus {
+.html a.bfAuthorSectionLink:focus {
   border-color: #21282d;
   text-decoration: none;
 }

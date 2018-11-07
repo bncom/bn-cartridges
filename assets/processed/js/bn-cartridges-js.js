@@ -603,7 +603,7 @@
                     if (insertAlphaNav) {
                         if (count === 0 || (count > 1 && (sectionName !== jsonSignedEditions[count - 1].section))) {
                             alphaPosition = alphaPosition + 1;
-                            var sectionLink = '<a role="menuitem" aria-setsize="" aria-posinset="' + alphaPosition + '" href="#' + sectionName + '" class="authorSectionLink" tabindex="0">' + sectionName + '</a>';
+                            var sectionLink = '<a role="menuitem" aria-setsize="" aria-posinset="' + alphaPosition + '" href="#' + sectionName + '" class="bfAuthorSectionLink" tabindex="0">' + sectionName + '</a>';
                             sectionTarget = 'id="' + sectionName + '"';
                             $('#bfAuthorNavPrimary li[data-section=' + sectionName + ']').html(sectionLink);
                             $('#bfAuthorNavSecondary li[data-section=' + sectionName + ']').html(sectionLink);
@@ -626,7 +626,7 @@
 
                     var icItem = "event_result-grid_" + ean + "_image";
                     var imgPath = "//prodimage.images-bn.com/pimages/" + ean + "_p0_v3_s118x184.jpg";
-                    var jsonItem = $('<div ' + sectionTarget + ' class="jsonGridItem active sect_' + sectionName + '"><a aria-label="' + title + ' - Signed Edition" href="http://stores.barnesandnoble.com/" onclick="set_cookie(' + icItem + ');"><div class="jsonGridImage"><img src="' + imgPath + '" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridContributor">' + contributor + '</p><p class="jsonGridTitle">' + titleDisplayed + '</p></div></a></div>');
+                    var jsonItem = $('<div ' + sectionTarget + ' class="jsonGridItem active sect_' + sectionName + '"><a aria-label="' + title + ' - Signed Edition" href="https://stores.barnesandnoble.com/" onclick="set_cookie(' + icItem + ');"><div class="jsonGridImage"><img src="' + imgPath + '" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridContributor">' + contributor + '</p><p class="jsonGridTitle">' + titleDisplayed + '</p></div></a></div>');
                     $('#jsonBFSignedEditions').append(jsonItem);
                 }
 
@@ -669,23 +669,23 @@
             };
 
             if (insertAlphaNav) {
-                $('.authorSectionLink').attr("aria-setsize", $('.authorSectionLink').length);
-                $('#bfAuthorNavSecondary .authorSectionLink').click(function (e) {
+                $('.bfAuthorSectionLink').attr("aria-setsize", $('.bfAuthorSectionLink').length);
+                $('#bfAuthorNavSecondary .bfAuthorSectionLink').click(function (e) {
                     e.preventDefault();
                     var section = $(this).parent().attr('data-section');
-                    $('#bfAuthorNavPrimary .authorSectionLink').removeClass('active');
-                    $('#bfAuthorNavPrimary [data-section=' + section + '] .authorSectionLink').addClass('active');
+                    $('#bfAuthorNavPrimary .bfAuthorSectionLink').removeClass('active');
+                    $('#bfAuthorNavPrimary [data-section=' + section + '] .bfAuthorSectionLink').addClass('active');
                     signedEditionsRenderer(section);
                     $('html, body').animate({
                         scrollTop: ($('#bfAuthorNavPrimary').offset().top)
                     }, 500);
                 });
 
-                $('#bfAuthorNavPrimary .authorSectionLink').click(function (e) {
+                $('#bfAuthorNavPrimary .bfAuthorSectionLink').click(function (e) {
                     e.preventDefault();
                     var section = $(this).parent().attr('data-section');
-                    if ($('.authorSectionLink.active').parent().attr('data-section') !== section) {
-                        $('#bfAuthorNavPrimary .authorSectionLink').removeClass('active');
+                    if ($('.bfAuthorSectionLink.active').parent().attr('data-section') !== section) {
+                        $('#bfAuthorNavPrimary .bfAuthorSectionLink').removeClass('active');
                         $(this).addClass('active');
                         signedEditionsRenderer(section);
                     }

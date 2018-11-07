@@ -891,7 +891,7 @@ header.smartgifth2 h2 {
     height: 35px;  
 }
  
-.authorSectionLink {
+.bfAuthorSectionLink {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -899,23 +899,18 @@ header.smartgifth2 h2 {
     font-size: 1.31rem;  /* 17px; */
     border: 1px transparent solid;
 } 
-.authorSectionLink.active {
+.bfAuthorSectionLink.active {
     border-color: #21282d;
 } 
-a.authorSectionLink:hover {
+a.bfAuthorSectionLink:hover {
     border-color: #ccc;
     text-decoration: underline;
 } 
-a.authorSectionLink:focus {
+a.bfAuthorSectionLink:focus {
     border-color: #21282d;
     text-decoration: none;
 } 
-/*
-zzz:target {
-    border: 2px solid #D4D4D4;
-    background-color: #e5eecc;
-}
-*/ 
+ 
 
 .bfSignedEdContent{
 
