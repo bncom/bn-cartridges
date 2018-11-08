@@ -583,10 +583,11 @@
         // BlackFriday Signed Editions 2017
         // Confirm dom wrapper to write to AND array are available! then...
         if ($('#jsonBFSignedEditions').length && (typeof jsonSignedEditions !== "undefined")) {
+            var previewOnly = "";
+            if ($('#jsonBFSignedEditions.previewOnly').length > 0 ){previewOnly = true;}
 
             var insertAlphaNav = ($('#bfAuthorNavPrimary').length > 0);
             var alphaPosition = 1;
-
 
             var signedEd = jsonSignedEditions.map(function (i, count) {
                 // });
@@ -626,9 +627,10 @@
 
                     var icItem = "event_result-grid_" + ean + "_image";
                     var imgPath = "//prodimage.images-bn.com/pimages/" + ean + "_p0_v3_s118x184.jpg";
+                    if(previewOnly === true){ imgPath = "//dispatch.barnesandnoble.com/content/dam/ccr/pdp/bfse2018/" + ean + ".jpg"; }
                     var jsonItem = $('<div ' + sectionTarget + ' class="jsonGridItem active sect_' + sectionName + '"><a aria-label="' + title + ' - Signed Edition" href="https://stores.barnesandnoble.com/" onclick="set_cookie(' + icItem + ');"><div class="jsonGridImage"><img src="' + imgPath + '" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridContributor">' + contributor + '</p><p class="jsonGridTitle">' + titleDisplayed + '</p></div></a></div>');
-                    $('#jsonBFSignedEditions').append(jsonItem);
-                } 
+                    $('#jsonBFSignedEditions').append(jsonItem); 
+                }  
 
             });
 
