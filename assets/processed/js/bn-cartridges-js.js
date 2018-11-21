@@ -566,13 +566,13 @@
                         //re-trim if we are in the middle of a word
                         trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
                         titleDisplayed = trimmedString + extHellip;
-                        // $(this).text(trimmedString);
-                        // $(this).append(extHellip);
+                        // $(this).text(trimmedString); 
+                        // $(this).append(extHellip); 
                     }
 
                     var icItem = "event_result-grid_" + ean + "_image";
-                    var imgPath = "//prodimage.images-bn.com/pimages/" + ean + "_p0_v3_s118x184.jpg";
-                    var jsonItem = $('<div class="jsonGridItem"><a href="http://stores.barnesandnoble.com/" onclick="set_cookie(' + icItem + ');"><div class="jsonGridImage"><img src="' + imgPath + '" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridTitle">' + titleDisplayed + '</p><p class="jsonGridContributor">by ' + contributor + '</p></div></a></div>');
+                    var imgPath = "//prodimage.images-bn.com/pimages/" + ean + "_p0_v4_s118x184.jpg";
+                    var jsonItem = $('<div class="jsonGridItem"><a href="https://stores.barnesandnoble.com/" onclick="set_cookie(' + icItem + ');"><div class="jsonGridImage"><img src="' + imgPath + '" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridTitle">' + titleDisplayed + '</p><p class="jsonGridContributor">by ' + contributor + '</p></div></a></div>');
                     $('#jsonGridItems').append(jsonItem);
 
                 }
@@ -622,11 +622,11 @@
                         trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
                         titleDisplayed = trimmedString + extHellip;
                         // $(this).text(trimmedString);
-                        // $(this).append(extHellip);
+                        // $(this).append(extHellip); 
                     }
 
                     var icItem = "event_result-grid_" + ean + "_image";
-                    var imgPath = "//prodimage.images-bn.com/pimages/" + ean + "_p0_v3_s118x184.jpg";
+                    var imgPath = "//prodimage.images-bn.com/pimages/" + ean + "_p0_v5_s118x184.jpg";
                     if(previewOnly === true){ imgPath = "//dispatch.barnesandnoble.com/content/dam/ccr/pdp/bfse2018/" + ean + ".jpg"; }
                     var jsonItem = $('<div ' + sectionTarget + ' class="jsonGridItem active sect_' + sectionName + '"><a aria-label="' + title + ' - Signed Edition" href="https://stores.barnesandnoble.com/" onclick="set_cookie(' + icItem + ');"><div class="jsonGridImage"><img src="' + imgPath + '" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridContributor">' + contributor + '</p><p class="jsonGridTitle">' + titleDisplayed + '</p></div></a></div>');
                     $('#jsonBFSignedEditions').append(jsonItem); 
@@ -764,7 +764,7 @@
                 //console.log(i);
                 var count = i + 1;
                 var promoIsCurrent = true;
-                if (count < 30) { // isolate this array line's items
+                if (count < 55) { // isolate this array line's items
                     var promoType = this.promoType.trim();
                     var promoStore = this.promoStore.trim();
                     var promoTitle = this.promoTitle.trim();
