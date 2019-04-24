@@ -1,0 +1,136 @@
+<%--
+  Video Editorial component.
+  Video Editorial component.
+--%>
+
+<%@include file="/apps/bn-ccr-core/includes/global.jsp"%>
+<%@page session="false" %>
+
+<c:set var="title_1"    	value="${fn:trim(properties.first_title)}"/>
+<c:set var="title_2"    	value="${fn:trim(properties.second_title)}"/>
+<c:set var="title_3"    	value="${properties.subheader_title}"/>
+<c:set var="title_4"    	value="${properties.subheader_link}"/>
+<c:set var="text"       	value="${fn:trim(properties.text_paragraph)}"/>
+<c:set var="alt"        	value="${fn:trim(properties.alt)}"/>
+<c:set var="image_title"    value="${fn:trim(properties.image_title)}"/>
+<c:set var="image_file" 	value="${fn:trim(properties.fileReference)}"/>
+<c:set var="asset_id"       value="${fn:trim(properties.asset_id)}"/>
+<c:set var="media_title"    value="${fn:trim(properties.media_title)}"/>
+<c:set var="element"        value="cqve" />
+<c:set var="adformat"       value="video" />
+<c:set var="ica"            value="${element}_${cc:getReplaceICA(title_1)}_Add_${adformat}" />
+<cc:getAssetsHost var="assetsHostServer"/>
+<c:set var="pathToImage" value="${assetsHostServer}${image_file}" />
+
+<section id="videoEditorial" class="mb-lg-l mb-md-l mb-sm-s">
+
+            <div class="editorial-heading">
+                <div>
+                    <h2 class="rule"><c:out value="${(fn:length(title_1) > 0 ? title_1 : '')}" /></h2>
+                    <a href="<c:out value="${(fn:length(title_4) > 0 ? title_4 : '')}" />"><c:out value="${(fn:length(title_3) > 0 ? title_3 : '')}" /></a>
+                </div>
+			</div>
+			<div class="editorial-body">
+                    <!-- START 'editorial' -->
+                    <div class="editorial">
+
+                        <div class="editorial-img">
+
+
+                            <!-- START 'video-tile' -->
+                            <div tabindex="0" class="video-tile">
+                                <a onclick="set_cookie('${ica}');" href="#" data-modal-class="BN.Modal.Browse.PDP.Video" class="display-video" data-media-title="${media_title}" data-media-stem="" data-asset-id="${asset_id}" data-asset-source="" data-asset-skin="">
+                                    <img tabindex="-1" class="block" src="${pathToImage}" alt="${alt}" title="${image_title}" />
+                                </a>
+
+                                <!-- <div tabindex="-1" class="shadow"></div> -->
+                                <div tabindex="-1" class="play-button"><span class="icon-play"></span></div>
+                            </div>
+                            <!-- END 'video-tile' -->
+
+                        </div>
+
+                        <div class="editorial-text">
+                            <p class="title"><c:out value="${(fn:length(title_2) > 0 ? title_2 : '')}" /></p>
+
+
+                            <p class="text--small"><cq:text value="${(fn:length(text) > 0 ? text : '')}" /></p>
+                        </div>
+
+                    </div>
+                    <!-- END 'editorial' -->
+                </div>
+</section>
+<hr class="mobile">
+
+
+
+<style type="text/css">
+  .mobile {
+      display:none;
+  }
+
+@media screen and (max-width: 939px){
+.editorial-body {
+    margin: 0 3.875rem;
+}
+.editorial .editorial-text{
+}
+#videoEditorial {
+    margin-top:2.5rem
+}
+
+}
+
+@media screen and (max-width: 839px){
+.mobile {
+    display:block;
+}
+
+.rule:after, .rule:before {
+    visibility: hidden;
+}
+}
+
+@media screen and (max-width: 600px){
+.editorial-heading {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.editorial-body {
+    margin: 0 0.35rem;
+}
+.editorial {
+    display: flex;
+}
+}
+
+@media screen and (max-width: 479px){
+.editorial {
+    display: flex;
+    flex-direction: column;
+}
+.editorial .editorial-img {
+    margin: 0 auto;
+}
+.editorial .editorial-img .video-tile {
+    width: 100%;
+}
+.editorial .editorial-text {
+    margin: 1rem 0 0;
+    text-align: center;
+}
+.editorial .editorial-text p {
+  font-size: 1rem;
+}
+.editorial-heading h2 {
+    line-height: 1;
+    height: auto;
+    padding: unset;
+}
+.rule:after, .rule:before {
+    visibility: hidden;
+}
+
+}
+</style>

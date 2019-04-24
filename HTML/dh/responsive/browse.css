@@ -1,0 +1,80 @@
+<style type="text/css">
+
+/* Browse page */
+
+#main-content .col-lg-10 .bd-left-disabled-gray {
+    border-left: none !important;
+}
+.pl-lg-xxl, .pl-lg-l {
+    padding-left: unset !important;
+}
+
+#refinements .advertising {
+    display: none;
+}
+
+#refinements .sidebar__section .lists, .CQ-content .sidebar__section .lists {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-left: 0px;
+    height: auto;
+    margin-bottom: 2.65rem;
+}
+
+#refinements .sidebar__section .lists li, .CQ-content .sidebar__section li {
+    list-style: none;
+    width: 225px;
+    color: white;
+    font-weight: bold;
+    margin-top: .9375rem;
+    padding-right: 1.875rem;
+    line-height: 1;
+}
+.PageContent .row .col-lg-2, #main-content .row .col-lg-10 {
+    flex: 100%;
+    max-width: 1024px;
+}
+.CQ-content .sidebar__section H2 {
+    text-transform: uppercase;
+    margin-bottom: .9375rem;
+}
+#main-content .row .col-lg-10 {
+    padding-left: unset !important;
+}
+
+#searchGrid {
+    border-left: none !important;
+    padding-left: unset !important;
+}
+
+@media screen and (min-width: 840px){
+.pl-lg-xxl, .pl-lg-l {
+    padding-left: unset !important;
+}
+#main-content .container .row .col-lg-2, #main-content .row .col-lg-10 {
+    flex: 100%;
+    max-width: 1024px;
+}
+
+}
+
+@media screen and (max-width: 840px){
+.pl-lg-xxl, .pl-lg-l {
+  padding-left: 0 !important;
+}
+#refinements .sidebar__section .lists li, .CQ-content .sidebar__section li{
+  width: 240px;
+}
+.sidebar__section.categories .augHeader {
+  display: block;
+  margin-top: 2.65rem;
+}
+}
+
+
+</style>

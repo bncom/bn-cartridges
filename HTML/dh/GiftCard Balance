@@ -1,0 +1,48 @@
+section.check-gc-balance-landing-page {
+    height: unset;
+}
+section.check-gc-balance-landing-page .gcWidgetHeader {
+    font-size: 22px;
+    line-height: 1.3 !important;
+    padding-top: 24px;
+}
+.mb-ss {
+    margin-bottom: 10px !important;
+}
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container .text-input,
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container .text-input--gc,
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container input{
+    height: 45px;
+    font-size: 14px;
+    flex-basis: 25%;
+}
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container .text-input--gc {
+    flex-basis: 74%;
+    margin-left: 14px;
+}
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container .text-input--icon {
+    flex-basis: 15%;
+}
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container section {
+flex-basis: 100%;margin: 16px 15px;}
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container #giftNumber {
+    width: 100%;
+}
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container #giftCardPIN {
+    width: 100%;
+}
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container {
+    flex-wrap: wrap;
+    /* justify-content: left;*/
+}
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container #checkGCBal {
+    width: 100%;font-size: 14px;
+}
+.mr-s {
+    margin-right: 14px !important;
+}
+section.check-gc-balance-landing-page .gift-card-payment .gcWidget-container .text-input label {
+    font-size: 14px;
+    font-style: italic;
+    top: 10px;
+}

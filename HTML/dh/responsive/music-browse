@@ -1,0 +1,191 @@
+<div class="sidebar__section refinements focus">
+<span class="augHeader" data-toggle="collapse" data-target="#sidebar-section-0" aria-expanded="true" role="button" tabindex="0">
+<h2 class="h2-as-h6"> Categories</h2>
+</span>
+<ul class="lists lists--unstyled focus" id="sidebar-section-0" aria-expanded="true">
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/action-adventure/_/N-8qiZ1emd">Action/Adventure</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/alternative/_/N-8qiZ1d6r">Alternative</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/animation/_/N-8qiZ1eod">Animation</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/art-house/_/N-8qiZ1ep1">Art House</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/biography/_/N-8qiZsoc">Biography</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/blues-folk/_/N-8qiZ1d9q">Blues &amp; Folk</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/brands/_/N-8qiZ1hev">Brands</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/broadway-vocal/_/N-8qiZ1df7">Broadway &amp; Vocal</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/children/_/N-8qiZ1dfk">Children</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/children/_/N-8qiZ1eq5">Children</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/classical/_/N-8qiZ1dhi">Classical</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/comedy/_/N-8qiZ1ery">Comedy</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/country/_/N-8qiZ1dg2">Country</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/dance-dj/_/N-8qiZ1dir">Dance &amp; DJ</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/diet-health-fitness/_/N-8qiZ11ip">Diet, Health &amp; Fitness</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/documentary/_/N-8qiZ1et1">Documentary</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/drama/_/N-8qiZ1etw">Drama</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/electronic-toys/_/N-8qiZ1hn0">Electronic Toys</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/electronics/_/N-8qiZ1hj0">Electronics</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/international/_/N-8qiZ1ex2">International</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/jazz/_/N-8qiZ1dl5">Jazz</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/journals/_/N-8qiZ1hg8">Journals</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/latin/_/N-8qiZ1dog">Latin</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/miscellaneous/_/N-8qiZ1dqy">Miscellaneous</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/music-musicals/_/N-8qiZ1ezn">Music &amp; Musicals</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/music-film-performing-arts/_/N-8qiZzzc">Music, Film &amp; Performing Arts</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/new-age/_/N-8qiZ1dss">New Age</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/parenting-family/_/N-8qiZ16ql">Parenting &amp; Family</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/pop/_/N-8qiZ1du0">Pop</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/rb-and-hip-hop/_/N-8qiZ1dy5">R&amp;B and Hip-Hop</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/religious-music/_/N-8qiZ1e0j">Religious Music</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/rock/_/N-8qiZ1e2j">Rock</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/science-fiction-horror/_/N-8qiZ1f0h">Science Fiction/Horror</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/self-help-relationships/_/N-8qiZ18ly">Self-Help &amp; Relationships</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/soundtracks/_/N-8qiZ1e6t">Soundtracks</a></li>
+<li>
+<a class="bread-crumbs__item" rel="" href="/b/music/television/_/N-8qiZ1f2j">Television</a></li>
+<li class="focus">
+<a class="bread-crumbs__item" rel="" href="/b/music/world/_/N-8qiZ1e79">World</a></li>
+
+</ul>
+</div>
+
+<style type="text/css">
+.col-lg-2{
+  width: auto;
+  padding-bottom: 25px;
+}
+.col-lg-2 .sidebar {
+  display: flex;
+  height: 350px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+div#refinements div.endeca-slot {
+    display: flex;
+}
+
+#refinements h2.h2-as-h6, .augHeader h2.h2-as-h6 {
+    line-height: 2.4 !important;
+    padding: 0;
+    margin: 0 0 5px;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: unset !important;
+}
+.col-lg-2 .sidebar li:first-child {
+    margin-top: .9375rem;
+}
+.sidebar__section li {
+    color: #347d56;
+    margin-top: 0.9375rem;
+    padding-right: 1.875rem;
+    line-height: 1;
+}
+.sidebar ul {
+  margin-bottom: 2.625rem;
+  width: 221px;
+  height: 290px;
+  display: flex;
+  flex-flow: column wrap;
+}
+#sidebar-section-SpecialCollections li {
+    width: 221px;
+}
+.pl-l {
+    padding-left: 0px !important;
+}
+.col-lg-10 {
+    width: 100%;
+    padding-left: 0px !important;
+}
+
+.bd-left-disabled-gray {
+    border: unset;
+}
+
+.pl-xxl {
+    padding: 0 !important;
+}
+
+#searchGrid .sidebar__section ul {
+    display: flex;
+    flex-flow: column wrap;
+    height: 350px;
+}
+
+#searchGrid .sidebar__section ul li {
+    width: 221px;
+}
+@media screen and (max-width: 850px) and (min-width:601px){
+  .col-lg-10 .sidebar__section li {
+    font:16px GillSansMTPro-Medium!important;
+    padding: 5px !important;
+  }
+  .col-lg-10 .sidebar__section {
+    padding-left: 15px;
+  }
+#searchGrid .sidebar__section ul, .sidebar ul, .col-lg-2 .sidebar {
+    display: flex;
+    flex-flow: column wrap;
+    height: -webkit-fill-available;
+    height: 100%;
+}
+}
+@media screen and (max-width: 600px) {
+  .sidebar__section li {
+    font:16px GillSansMTPro-Medium!important;
+    padding: 5px !important;
+  }
+  #searchGrid .sidebar__section ul, .sidebar ul, .col-lg-2 .sidebar {
+    display: flex;
+    flex-flow: column wrap;
+    height: unset;
+}
+.col-lg-10 .sidebar__section {
+  padding-left: 15px;
+}
+.col-lg-2 .sidebar__section:nth-child(3) {
+    margin-left: unset;
+}
+.pl-l {
+    padding-left: unset !important;
+}
+}
+</style>

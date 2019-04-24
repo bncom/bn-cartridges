@@ -1,0 +1,143 @@
+
+.sk_passthroughPage .product-shelf {
+    overflow-x: scroll;
+    width: 100% !important;
+    display: -webkit-box;
+    display: inline-flex;
+    vertical-align: unset;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sk_passthroughPage .product-shelf .product-shelf-tile {
+    width: 156px;
+    padding-right: 20px;
+    display: table-cell;
+    align-self: baseline;
+}
+
+
+.sk_passthroughPage .product-shelf .product-shelf-info {
+    text-decoration: none;
+    color: #4e4e4e;
+    font: 14px GillSansMTPro-Book,GillSansMTPro-Medium;
+    line-height: 20px;
+}
+
+.sk_passthroughPage .product-shelf .gig-comment-rating-star:before,
+.sk_passthroughPage .product-shelf .gig-rating-star:before,
+.sk_passthroughPage .star:before {
+    font-size: 16px;
+}
+
+.sk_passthroughPage .product-shelf .product-shelf-image {
+    max-height: 210px;
+    max-width: 134px;
+}
+
+.sk_passthroughPage .product-shelf .product-shelf-image>a img {
+    max-width: 114px;
+    max-height: 173px;
+}
+
+.sk_passthroughPage .main-content.container {
+    padding-left: unset;
+    padding-right: unset;
+}
+
+.sk_passthroughPage .book.product-shelf-tile.product-shelf-tile-book:first-child {
+    margin-left: 20px;
+}
+
+.sk_passthroughPage .product-shelf .product-shelf-info {
+    margin-top: 16px;
+    border-top: unset;
+}
+
+.sk_passthroughPage section.mb-m .rule {
+    font-size: 22px;
+    margin: 0px 0 0 26px;
+    text-align: left;
+    display: block;
+    line-height: 27px;
+}
+
+.sk_passthroughPage section.mb-m h2.rule:before,
+.sk_passthroughPage section.mb-m h2.rule:after {
+    margin: unset;
+    content: unset;
+}
+
+.sk_passthroughPage section.mb-m h2.rule:after {
+    background: url(//d1b4ee4v90cgsg.cloudfront.net/b-n/skassets/bnb/v201809182216p/img/sprite-categories_2x.png);
+    background-position: -38px -3px;
+    background-size: 276px 84px;
+    height: 16px;
+    width: 11px;
+    text-indent: 100%;
+    white-space: nowrap;
+    right: 15px;
+    position: absolute;
+    top: 7px;
+    content: " ";
+    }
+
+.sk_passthroughPage section.mb-m {
+    padding-bottom: 32px !IMPORTANT;
+    border-bottom: 1px solid #d8dcdd;
+    margin-bottom: 25px !important;
+}
+.sk_passthroughPage section.mb-m .mb-l {
+    margin-bottom: 7rem!important;
+}
+
+.sk_passthroughPage .col-lg-10,
+.sk_passthroughPage .col-lg-10.pl-l {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.sk_passthroughPage .bd-l-disabled-gray,
+.sk_passthroughPage .bd-left-disabled-gray {
+    border-left: unset;
+}
+
+.sk_passthroughPage .container .pl-xxl {
+    padding-left: unset !important;
+}
+
+.sk_passthroughPage .container {
+    padding: 0;
+}
+.sk_passthroughPage .product-shelf-favorite,
+.sk_passthroughPage .container #searchGrid header a,
+.sk_passthroughPage .product-shelf-curl,
+.sk_passthroughPage .gig-comment-rating-star-half:after,
+.sk_passthroughPage .gig-rating-star-half:after,
+.sk_passthroughPage .star--half:after {
+    display: none;
+}
+
+.sk_passthroughPage .row {
+    margin: unset;
+}
+
+.sk_passthroughPage h1 {
+    width: auto;
+    line-height: normal;
+    font-size: 30px;
+    height: auto;
+    margin: 0;
+    font-family: PoynterOSDisp-Semibold,Poynter;
+    color: #000;
+}
+
+.sk_passthroughPage .product-shelf-image-cont[style] {
+    height: 173px !important;
+}
+.sk_passthroughPage .product-shelf .product-shelf-image-cont,
+.sk_passthroughPage .product-shelf .product-shelf-info {
+    padding: 0;
+}
+.sk_passthroughPage .product-shelf .product-shelf-tile:first-child {
+    margin-left: 20px;

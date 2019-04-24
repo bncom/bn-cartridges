@@ -1,0 +1,854 @@
+<style type="text/css">
+.main-content.container {
+    padding: unset;
+}
+
+#legoHero {
+     width: 1024px;
+     margin: 32px 0 22px;
+}
+ #legoHero img {
+     width: 100%;
+}
+#legoHero a {
+    position: relative;
+    line-height: 0;
+    display: block;
+}
+ #legoOffers {
+     margin: 50px 0 40px;
+     height: 314px;
+}
+ .legoCategoriesContent {
+     display: flex;
+     justify-content: space-evenly;
+     text-align: center;
+     text-transform: uppercase;
+}
+ span.doubleText {
+    /* height: 160px;
+     */
+    /* width: 136px;
+     */
+     color: #ffffff;
+     font-size: 43px;
+     font-weight: 400;
+     font-family: 'Fjalla One',sans-serif!important;
+     text-transform: uppercase;
+     letter-spacing: .8px;
+     line-height: 45px;
+     text-align: center;
+     text-decoration: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+    /* top: -214px;
+     */
+    /* left: 122px;
+     */
+     letter-spacing: .43px;
+}
+ .legoCategoriesContent img {
+     height: 314px;
+     width: 350px;
+}
+ .legoCategoriesContent .twoCat {
+     width: 324px;
+}
+ .legoCategoriesContent .twoCat img {
+     width: 324px;
+}
+ .legoCategoriesContent a {
+     height: 314px;
+}
+ .oneCat span {
+     top: -208px;
+     width: 216px;
+     display: inline-block;
+     left: 18px;
+     text-shadow: 1px 4px 5px rgba(118,74,21,.7), 0px 0px 40px rgba(118,74,21,.25);
+}
+ .twoCat span {
+     top: -185px;
+     left: 2px;
+     text-shadow: 2px 4px 7px rgba(122, 30, 0, .7);
+}
+ .threeCat span {
+     top: -206px;
+     width: 139px;
+     display: inline-block;
+     left: 3px;
+     text-shadow: 1px 4px 5px rgba(118,74,21,.7), 0px 0px 40px rgba(118,74,21,.25);
+}
+ #legoBoutiques {
+     margin: 0 0 38px;
+}
+ .legoBoutiqueContent {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+ .BoutOne, .BoutTwo {
+     width: 490px;
+    /* height: 217px;
+     */
+}
+ .legoBout img {
+     width: 100%;
+}
+ .legoBout a span, #legoHero a span {
+     position: absolute;
+     bottom: 0px;
+     right: 0px;
+     border-top: 1px solid #ffffff9c;
+     display: inline-flex;
+     width: 150px;
+     height: 36px;
+     justify-content: center;
+     align-items: center;
+     background: #00000060;
+     color: #fff;
+     border-left: 1px solid #ffffff9c;
+     font-size: 14px;
+     letter-spacing: 1.2px;
+     font-weight: 700;
+}
+  #legoBoutiques a:hover span,
+  #legoBoutiques a:focus span,
+  #legoHero a:hover span,
+  #legoHero a:focus span {
+      background: black;
+      box-shadow: 0px 0px 35px rgb(255, 255, 255), -5px 0px 25px rgba(255, 255, 255, 0.72);
+  }
+ .legoBout a {
+     position: relative;
+     height: 217px;
+}
+ .legoBout.BoutThree {
+     margin-top: 40px;
+}
+ .legoages h2, .legoThemes h2 {
+     font-size: 40px;
+     font-weight: 400;
+     font-family: 'Fjalla One',sans-serif!important;
+     text-transform: uppercase;
+     line-height: .1;
+}
+ .legoages h2:after {
+     margin-left: 15px;
+}
+ .legoages h2:before {
+     margin-right: 15px;
+}
+ .legoages .categoriesContent {
+     margin: 0px 0 74px;
+}
+ .legoages .agesContent {
+     display: flex;
+     justify-content: space-between;
+     height: 112px;
+     margin-top: 67px;
+}
+ .legoage {
+     width: 112px;
+     height: auto;
+    /* position: relative;
+     */
+    /* display: flex;
+     */
+    /* justify-content: center;
+     */
+     position: relative;
+}
+ .legoage img {
+     width: 100%;
+}
+ .legoage span {
+     position: absolute;
+     top: 36px;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     text-align: -webkit-center;
+    /* vertical-align: unset;
+     */
+     font-family: 'Fjalla One',sans-serif!important;
+     font-size: 40px;
+     letter-spacing: .4px;
+     color: #fff;
+     text-transform: uppercase;
+     text-shadow: 1px 3px 3px rgba(50,40,80,.6)
+}
+ .legoage .twoBout span {
+     text-shadow:1px 3px 2px rgba(80,40,60,.5)
+}
+ .legoage .threeBout span {
+     text-shadow: 1px 2px 3px rgba(50,40,90,.7);
+}
+ .legoage .fourBout span {
+     text-shadow: 1px 3px 3px rgba(80,20,0,.6)
+}
+ .legoage a {
+    /* display: flex;
+     */
+    /* justify-content: center;
+     */
+    /* align-items: center;
+     */
+}
+ .legoages .ageOne {
+     margin-left: 30px;
+}
+ .legoages .ageFive {
+     margin-right: 30px;
+}
+ #legoages .legoage.ageFive a span {
+     text-transform: 1px 4px 3px rgba(50,20,100,.6);
+}
+ #legothemes .themeContent span.regs {
+     display: inline;
+     font-size: 10px !important;
+     padding: 0;
+     vertical-align: super;
+}
+ .legoThemes {
+     margin-top: 60px;
+}
+ .themeContent {
+     display: flex;
+     justify-content: space-between;
+     text-transform: unset;
+     flex-wrap: wrap;
+     margin-top: 36px;
+     text-align: center;
+}
+ .themeContent img {
+     width: 156px;
+     margin-bottom: 2px;
+}
+ .themeContent a {
+     width: calc((100%/5) - (48px/4));
+}
+/* Beginning of Back to School */
+ .gradesContainer,.outterBoundsContent{
+     display:flex;
+     justify-content:space-between
+}
+ .pt-m{
+     padding-top:unset!important
+}
+section#worldoflego{
+    width:1024px;
+    margin: 0 auto;
+    position:relative
+}
+ #legoHero {
+     width: 1024px;
+     margin: 32px 0 22px;
+}
+
+ .btsgrades{
+     margin:44px 4px 60px
+}
+ .btsgrades .categoriesContent{
+     margin:44px 0 64px
+}
+ .btsgrades h2{
+     font-size:36px;
+     font-weight:400
+}
+ .gradesContainer{
+     margin-top:48px
+}
+ .btsgrades span{
+     color:#efe7a2:
+}
+ .btsgrades a, .btsgrades a span{
+     height:160px;
+     width:160px;
+     border-radius:50%;
+     background-color:#bc1d29;
+     color:#efe7a2;
+     font-size:22px;
+     font-weight:400;
+     font-family:'Fjalla One',sans-serif!important;
+     text-transform:uppercase;
+     letter-spacing:.8px;
+     line-height:30px;
+     text-align:center;
+     text-decoration:none;
+     display:flex;
+     justify-content:center;
+     align-items:center
+}
+ .btsgrades .categoriesContent a span:hover,.btsgrades a:focus,.btsgrades a:hover{
+     background-color:#efe7a2;
+     color:#bc1d29;
+     border:none;
+     text-decoration:none
+}
+ .rule:before{
+     margin-right:40px
+}
+ .rule:after{
+     margin-left:40px
+}
+ .outterBoundsContent{
+     text-align:center;
+     background-color:#e7e7e7
+}
+ .outterBoundsContent a{
+     text-decoration:none
+}
+ .outterBoundsContent img{
+     width:315px;
+     height:210px
+}
+ .outterBounds{
+     padding:58px 0 0;
+     position:relative;
+     background-color:#e7e7e7
+}
+ .outterBounds .outterBoundsContent span{
+     display:block;
+     font-size:23px;
+     font-weight:400;
+     line-height:1;
+     letter-spacing:.96px;
+     color:#21282d;
+     text-transform:uppercase;
+     margin:17px auto 46px;
+     font-family:fjalla One,sans-serif;
+     padding-bottom:2px;
+     border-bottom:1px solid transparent;
+     width:max-content;
+     width:-moz-max-content;
+     text-align:center;
+     text-decoration:none
+}
+ .outterBounds .outterBoundsContent a:hover span{
+     border-bottom:1px solid #21282d;
+     text-decoration:none;
+     padding-bottom:2px
+}
+ .categories,.categoriesSecond{
+     padding:78px 18px 0
+}
+ .categoriesSecond{
+     padding-top:74px;
+     padding-bottom:35px
+}
+ .categoriesContent a{
+     text-decoration:none
+}
+ .categoriesContent span{
+     display:block;
+     width:max-content;
+     width:-moz-max-content;
+     margin:0 auto;
+     border: 1px solid transparent;
+     padding-bottom:1px;
+     font-size:17px;
+     font-weight:700;
+     line-height:1.15;
+     letter-spacing:.5px;
+     color:#21282d;
+     margin-bottom: 12px;
+}
+ .categoriesContent a:hover span, .categoriesContent a:focus span{
+     border:1px solid transparent;
+     border-bottom:1px solid #21282d;
+     padding-bottom:1px;
+     text-decoration:none
+}
+ .legoCategoriesContent a:hover {
+     text-decoration: none;
+}
+ .categoriesContent a:hover span .regs{
+     border:1px solid transparent;
+     border-bottom:1px solid transparent;
+}
+ a:hover, a:focus {
+     text-decoration: none;
+}
+ .legoCategoriesContent a:hover span.doubleText, .legoage a:hover span, .legoCategoriesContent a:focus span.doubleText, .legoage a:focus span {
+     color:#000000;
+     text-shadow: 2px 3px 3px rgba(255, 255, 255, 0.59), 0px 0px 30px rgb(255, 255, 255), 0px 0px 35px rgba(255, 255, 255, 0.77);
+}
+#worldoflego .legal, .legal {
+  font-size: 10px;
+  padding: 0 10px;
+}
+ @font-face{
+     font-family:'Fjalla One';
+     src:url(https://css.css-bn.com/static/redesign/release/fonts/FjallaOne-Regular.ttf) format('truetype');
+     font-weight:400;
+     font-style:normal
+}
+ .promo-pdp a.container.bg-moss,.promo-pdp a.container.bg-secondary-teal{
+     font-family:unset;
+     font-size:20px;
+     font-weight:400;
+     letter-spacing:.25px;
+     padding:30px;
+     background:#0a7a9c
+}
+ .promo-pdp a.container.bg-moss{
+     background:#9e9d52
+}
+ span.promo-pdp__cta{
+     font-size:17px;
+     padding-left:unset;
+     border-bottom:1px solid transparent;
+     margin-left:5px
+}
+ a:hover span.promo-pdp__cta:after{
+     border-bottom:1px solid
+}
+ @media screen and (max-width:600px){
+   section#worldoflego{
+       width:100%;
+       right:unset;
+       position:relative
+   }
+.container{
+    padding: 0;
+}
+.sk_passthroughPage .resultsListContainer{
+    padding: 0 15px;
+}
+     .legoages h2, .legoThemes h2 {
+         font-weight: 400;
+         font-family: 'Fjalla One',sans-serif!important;
+         text-transform: uppercase;
+         line-height: .2;
+    }
+     .rule:after, .rule:before {
+         top: -4px;
+    }
+     .legoages h2, .legoThemes h2 {
+         font-size: 36px;
+    }
+     .legoTerms {
+         font-size: 9px;
+         padding: 0 10px;
+    }
+     section#worldoflego {
+         width: 100%;
+
+    }
+     #legoHero {
+         width: 100%;
+         margin: unset;
+    }
+     #legoOffers {
+         height:unset;
+         margin:20px 0 12px;
+    }
+     .legoCategoriesContent {
+         flex-wrap: wrap;
+         justify-content: space-around;
+    }
+     .legoCategoriesContent a, .legoCategoriesContent img, .legoCategoriesContent .twoCat img {
+         width: 100%;
+         height: unset;
+    }
+     .lcctwo {
+         order: 3;
+    }
+     .themeContent {
+         width: 100%;
+         height: unset;
+         padding: 0 10px;
+    }
+     .themeContent a {
+         width: 33%;
+    }
+     .legoages .agesContent {
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         height: unset;
+         margin-top: 35px;
+    }
+     .legoages .ageOne {
+         margin-left: 10px;
+    }
+     .legoage {
+         margin: 20px;
+    }
+     .legoBout a {
+         position: relative;
+         height: unset;
+         margin-bottom: 20px;
+    }
+     #legoBoutiques {
+         margin: 0px 0 10px;
+    }
+     .legoThemes {
+         margin-top: 41px;
+    }
+     .rule:before {
+         margin-right: 15px;
+    }
+     .rule:after {
+         margin-left: 15px;
+    }
+     .legoBout img {
+         max-width: 640px;
+    }
+     .legoBout.BoutThree {
+         margin-top: unset;
+    }
+     .BoutOne, .BoutTwo {
+         width: unset;
+    }
+}
+ @media screen and (min-width:506px) and (max-width:600px) {
+     .legoage.ageFour {
+         margin-left: 10px;
+    }
+     .legoage.ageFive {
+         margin-right: 10px;
+    }
+}
+ @media screen and (min-width:414px) and (max-width:600px) {
+     .themeContent img {
+         width: 139px;
+    }
+     .themeContent span {
+         font-size: 15px;
+         letter-spacing: 0;
+    }
+     .legoage {
+         width: 94px;
+    }
+     .legoage span{
+         font-size: 30px;
+         top: 33px;
+    }
+     .lccone, .lcctwo, .lccthree {
+         width: 207px;
+         height: 200px;
+    }
+     .legoCategoriesContent img {
+         width: 207px;
+         height: unset;
+    }
+     .legoCategoriesContent span.doubleText {
+         font-size: 25.1px;
+         top: -132px;
+         left: 9px;
+         width: 107px;
+         line-height: 1.19;
+    }
+     .legoCategoriesContent .lccthree span.doubleText {
+         left: 0px;
+         width: 81px;
+         top: -121px;
+    }
+     .legoCategoriesContent .twoCat {
+         width:187px;
+    }
+     .legoCategoriesContent .lcctwo span.doubleText {
+         left: 8px;
+         width: 100%;
+         top: -121px;
+         font-size: 25.75px;
+    }
+     .legoCategoriesContent a, .legoCategoriesContent img, .legoCategoriesContent .twoCat img {
+         width: 207px;
+    }
+     .legoage {
+         margin: 10px;
+    }
+     .legoage.ageFour {
+         margin-left: 60px;
+    }
+     .legoage.ageFive {
+         margin-right: 60px;
+    }
+}
+ @media screen and (min-width:375px) and (max-width:413px) {
+     .lccone, .lcctwo, .lccthree {
+         width: 187px;
+         height: 181px;
+    }
+     .legoCategoriesContent img {
+         width: 187px;
+         height: unset;
+    }
+     .legoCategoriesContent span.doubleText {
+         font-size: 22.72px;
+         top: -122px;
+         left: 6px;
+         width: 107px;
+         line-height: 1.19;
+    }
+     .legoCategoriesContent .lccthree span.doubleText {
+         left: 0px;
+         width: 71px;
+         top: -109px;
+    }
+     .legoCategoriesContent .twoCat {
+         width:187px;
+    }
+     .legoCategoriesContent .lcctwo span.doubleText {
+         left: 0px;
+         width: 100%;
+         top: -108px;
+         font-size: 23.25px;
+    }
+     .legoCategoriesContent a, .legoCategoriesContent img, .legoCategoriesContent .twoCat img {
+         width: 187px;
+    }
+     .legoage {
+         margin: 10px;
+    }
+     .themeContent img {
+         width: 118px;
+    }
+     .themeContent span {
+         font-size: 13px;
+         letter-spacing: 0;
+    }
+     .legoage {
+         width: 85px;
+    }
+     .legoage span{
+         font-size: 27px;
+         top: 29px;
+    }
+     .legoage.ageFour {
+         margin-left: 60px;
+    }
+     .legoage.ageFive {
+         margin-right: 60px;
+    }
+}
+ @media screen and (min-width:360px) and (max-width:374px) {
+     .lccone, .lcctwo, .lccthree {
+         width: 180px;
+         height: 174px;
+    }
+     .legoCategoriesContent img {
+         width: 180px;
+         height: unset;
+    }
+     .legoCategoriesContent span.doubleText {
+         font-size: 21.8px;
+         top: -117px;
+         left: 6px;
+         width: 107px;
+         line-height: 1.19;
+    }
+     .legoCategoriesContent .lccthree span.doubleText {
+         left: 0px;
+         width: 71px;
+         top: -104px;
+    }
+     .legoCategoriesContent .twoCat {
+         width:180px;
+    }
+     .legoCategoriesContent .lcctwo span.doubleText {
+         left: 0px;
+         width: 100%;
+         top: -105px;
+         font-size: 22.3px;
+    }
+     .legoCategoriesContent a, .legoCategoriesContent img, .legoCategoriesContent .twoCat img {
+         width: 180px;
+    }
+     .legoage {
+         margin: 10px;
+    }
+     .themeContent a {
+         width: 31%;
+         margin: 0 3px;
+    }
+     .themeContent img {
+         width: 108px;
+    }
+     .themeContent {
+         padding: 0 3px;
+    }
+     .themeContent span {
+         font-size: 12px;
+         letter-spacing: 0;
+    }
+     .legoage {
+         width: 81.5px;
+    }
+     .legoage span {
+         font-size: 26px;
+         top: 29px;
+    }
+     .legoage.ageFour {
+         margin-left: 60px;
+    }
+     .legoage.ageFive {
+         margin-right: 60px;
+    }
+}
+ @media screen and (min-width:320px) and (max-width:359px) {
+     .lccone, .lcctwo, .lccthree {
+         width: 160px;
+         height: 155px;
+    }
+     .legoCategoriesContent img {
+         height: unset;
+         width: 160px;
+    }
+     .legoCategoriesContent span.doubleText {
+         font-size: 19.25px;
+         top: -105px;
+         left: 8px;
+         width: 107px;
+         line-height: 1.19;
+    }
+     .legoCategoriesContent .lccthree span.doubleText {
+         left: 1px;
+         width: 63px;
+         top: -95px;
+    }
+     .legoCategoriesContent .twoCat {
+         width:160px;
+    }
+     .legoCategoriesContent .lcctwo span.doubleText {
+         left: unset;
+         width: 100%;
+         top: -93px;
+         font-size: 19.75px;
+    }
+     .legoCategoriesContent a, .legoCategoriesContent img, .legoCategoriesContent .twoCat img {
+         width: 160px;
+    }
+     .legoage {
+         margin: 10px;
+    }
+     .themeContent {
+         padding: 0 24px;
+    }
+     .themeContent a {
+         width: 45%;
+         margin: 0 3px;
+    }
+     .themeContent img {
+         width: 122px;
+    }
+     .themeContent span {
+         font-size: 12px;
+         letter-spacing: 0;
+    }
+     .legoages h2, .legoThemes h2 {
+         font-size: 32px;
+    }
+     .legoage {
+         width: 72.5px;
+    }
+     .legoage span{
+         font-size: 23px;
+         top: 26px;
+    }
+     .legoage.ageFour {
+         margin-left: 60px;
+    }
+     .legoage.ageFive {
+         margin-right: 60px;
+    }
+}
+ @media screen and (max-width:320px) {
+     .themeContent a {
+         width: 100%;
+    }
+     .legoages h2, .legoThemes h2 {
+         font-size: 32px;
+    }
+}
+</style>
+<section id="worldoflego">
+<h1 id="legoHero"><a class="threeBout" href="//www.barnesandnoble.com/b/the-lego-movie-2/_/N-2s12" onclick="set_cookie('lego_lego-architecture_image_link');"><img alt="The Lego 2 Movie" role="presentation" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/LEGO_Movie2.jpg" /><span role="button">SHOP NOW</span></a></h1>
+<!--
+  <div class="promo-pdp promo-pdp--light-text"><a href="//www.barnesandnoble.com/h/free-lego-harry-potter-minifigure-set" class="container bg-secondary-teal">FREE LEGO Harry Potter 4 Minifigure Set with any $75 LEGO Purchase <span class="promo-pdp__cta">See details</span></a></div>-->
+
+<div id="legoOffers">
+<div class="legoCategoriesContent">
+<div class="lccone"><a class="oneCat" href="//www.barnesandnoble.com/b/lego-building-bigger-thinking/_/N-2oo1" onclick="set_cookie('lego_new-arrival_text');"><img alt="New Arrivals" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/Categ_NewArrivals.jpg" /><span class="doubleText" role="button">New Arrivals</span> </a></div>
+
+<div class="lcctwo"><a class="twoCat" href="//www.barnesandnoble.com/b/lego/_/N-1p7f" onclick="set_cookie('lego_bestsellers_text');"><img alt="Bestsellers" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/Categ_BestSellers.jpg" /> <span class="doubleText" role="button">Bestsellers</span> </a></div>
+
+<div class="lccthree"><a class="threeCat" href="//www.barnesandnoble.com/b/lego-hard-to-find-collection/_/N-2ftl" onclick="set_cookie('lego_hard-to-find_text');"><img alt="Hard to Find" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/Categ_HardToFind.jpg" /> <span class="doubleText" role="button">Hard to find</span> </a></div>
+</div>
+</div>
+
+<div id="legoBoutiques">
+<div class="legoBoutiqueContent">
+<div class="legoBout BoutOne"><a class="oneBout" href="//www.barnesandnoble.com/b/lego-harry-potter/_/N-2r1q" onclick="set_cookie('lego_harry-potter_image_link');"><img alt="Lego Harry Potter" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/Section_HarryPotter_190101.jpg" /> <span role="button">SHOP NOW</span></a></div>
+
+<div class="legoBout BoutTwo"><a class="twoBout" href="//www.barnesandnoble.com/b/toys-games/lego/lego-star-wars/_/N-8qfZ2c92" onclick="set_cookie('lego_star-wars_image_link');"><img alt="Lego StarWars" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/Section_StarWars_190101.jpg" /> <span role="button">SHOP NOW</span></a></div>
+
+<div class="legoBout BoutThree"><a class="threeBout" href="//www.barnesandnoble.com/b/lego/building-lego/lego-architecture/_/N-1p5jZ1hmg" onclick="set_cookie('lego_lego-architecture_image_link');"><img alt="Lego Architecture" src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/Section_Architecture_190101.jpg" /> <span role="button">SHOP NOW</span></a></div>
+</div>
+</div>
+
+<div class="legoages" id="legoages">
+<h2 class="rule">Shop by Age</h2>
+
+<div class="agesContent">
+<div class="legoage ageOne"><a class="oneBout" href="//www.barnesandnoble.com/b/lego/_/N-7Z1p5j" onclick="set_cookie('lego_grade_zero-to-two_text');" tabindex="0"><img alt="Grade level Zero to Tow" src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/age_2_13.jpg" /> <span>0-2</span></a></div>
+
+<div class="legoage ageTwo"><a class="twoBout" href="//www.barnesandnoble.com/b/lego/_/N-8Z1p5j" onclick="set_cookie('lego_grade_three-to-five_text');" tabindex="0"><img alt="Grade level Three to Five" src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/age_3-5.jpg" /> <span>3-5</span></a></div>
+
+<div class="legoage ageThree"><a class="threeBout" href="//www.barnesandnoble.com/b/lego/_/N-9Z1p5j" onclick="set_cookie('lego_grade_six-to-eight_text');" tabindex="0"><img alt="Grade level Six to Eight" src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/age_6-8.jpg" /> <span>6-8</span></a></div>
+
+<div class="legoage ageFour"><a class="fourBout" href="//www.barnesandnoble.com/b/lego/_/N-aZ1p5j" onclick="set_cookie('lego_grade_nine-to-twelve_text');" tabindex="0"><img alt="Grade level Nine to Twelve" src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/age_9-12.jpg" /> <span>9-12</span></a></div>
+
+<div class="legoage ageFive"><a class="fiveBout" href="//www.barnesandnoble.com/b/lego/_/N-bZ1p5j" onclick="set_cookie('lego_grade_thirteen-and-up_text');" tabindex="0"><img alt="Grade level Thirteen and up" src="https://dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/age_2_13.jpg" /> <span>13+</span></a></div>
+</div>
+</div>
+
+<div class="legoThemes" id="legothemes">
+<h2 class="rule">Shop by Theme</h2>
+
+<div class="categoriesContent themeContent">
+  <a href="//www.barnesandnoble.com/b/the-lego-movie-2/_/N-2s12" onclick="set_cookie('lego_theme_lego-movie2_imagetext');" tabindex="0"><img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_TheLegoMovie2.jpg" /> <span>The LEGO<span class="regs">&reg;</span><br />Movie 2<span class="regs">&trade;</span></span> </a>
+  <a href="//www.barnesandnoble.com/b/lego-overwatch/_/N-2ru2" onclick="set_cookie('lego_theme_overwatch_imagetext');" tabindex="0"><img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Overwatch.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />Overwatch</span> </a>
+  <a href="//www.barnesandnoble.com/b/lego/lego-speed-champions/_/N-2s0p" onclick="set_cookie('lego_theme_speed-champions_imagetext');" tabindex="0"><img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_SpeedChampions.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />Speed Champions</span> </a>
+  <a href="//www.barnesandnoble.com/b/lego/lego-spider-man/_/N-2s0q" onclick="set_cookie('lego_theme_lego-spider-man_imagetext');" tabindex="0"><img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_SpiderMan.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />Spider-Man</span></a>
+  <a href="//www.barnesandnoble.com/b/lego/lego-batman/_/N-2s0o" onclick="set_cookie('lego_theme_lego-batman_imagetext');" tabindex="0"><img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Batman.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />
+  Batman<span class="regs">&trade;</span></span> </a>
+  <a href="//www.barnesandnoble.com/b/lego/lego-disney-princess/_/N-2k0z" onclick="set_cookie('lego_theme_disney-princess_imagetext');" tabindex="0"><img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_DisneyPrincess.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />
+  Disney<span class="regs">&trade;</span> Princess</span> </a>
+
+  <a href="//www.barnesandnoble.com/b/lego-harry-potter/_/N-2r1q" onclick="set_cookie('lego_theme_harry-potter_imagetext');" tabindex="0"><img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_HarryPotter.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />
+Harry Potter<span class="regs">&trade;</span></span> </a> <a href="//www.barnesandnoble.com/b/toys-games/lego/lego-ninjago/_/N-8qfZ2c8z" onclick="set_cookie('lego_theme_ninjago_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Ninjago.jpg" /> <span>LEGO<span class="regs">&reg;</span> Ninjago<span class="regs">&reg;</span></span> </a> <a href="//www.barnesandnoble.com/b/lego/lego-minifigures/_/N-2rpt" onclick="set_cookie('lego_theme_Minifigures_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Minifigures.jpg" /> <span>LEGO<span class="regs">&reg;</span> Minifigures</span> </a> <a href="//www.barnesandnoble.com/b/toys-games/lego/lego-minecraft/_/N-8qfZ2k14" onclick="set_cookie('lego_theme_Minecraft_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Minecraft.jpg" /> <span>LEGO<span class="regs">&reg;</span> Minecraft<span class="regs">&trade;</span></span> </a> <a href="//www.barnesandnoble.com/b/lego/lego-classic/_/N-2rps" onclick="set_cookie('lego_theme_Classic_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Classic.jpg" /> <span>LEGO<span class="regs">&reg;</span> Classic</span> </a> <a href="//www.barnesandnoble.com/b/lego-jurassic-world/building-lego/lego/_/N-2qh2Z2fpy" onclick="set_cookie('lego_theme_Jurassic World_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_JurassicWorld.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />
+Jurassic World<span class="regs">&trade;</span></span> </a> <a href="//www.barnesandnoble.com/b/lego/lego-unikitty/_/N-2rqn" onclick="set_cookie('lego_theme_unikitty_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_UNIKITTY.jpg" /> <span>LEGO<span class="regs">&reg;</span> Unikitty<span class="regs">&trade;</span></span> </a> <a href="//www.barnesandnoble.com/b/toys-games/lego/lego-dc-comics-super-heroes/_/N-8qfZ2k0y" onclick="set_cookie('lego_theme_dc-comics-super-heroes_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_DC.jpg" /> <span>LEGO<span class="regs">&reg;</span> DC<br />
+Super Heroes</span> </a> <a href="//www.barnesandnoble.com/b/lego/lego/lego-duplo/_/N-1p5jZ2c8r" onclick="set_cookie('lego_theme_duplo_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Duplo.jpg" /> <span>LEGO<span class="regs">&reg;</span> DUPLO<span class="regs">&reg;</span></span> </a> <a href="//www.barnesandnoble.com/b/toys-games/lego/lego-technic/_/N-8qfZ2k16" onclick="set_cookie('lego_theme_technic_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Technic.jpg" /> <span>LEGO<span class="regs">&reg;</span> Technic<span class="regs">&trade;</span></span> </a> <a href="//www.barnesandnoble.com/b/toys-games/lego/lego-star-wars/_/N-8qfZ2c92" onclick="set_cookie('lego_theme_star-wars_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_StarWars.jpg" /> <span>LEGO<span class="regs">&reg;</span> Star Wars<span class="regs">&trade;</span></span> </a> <a href="//www.barnesandnoble.com/b/lego-ideas/building-lego/lego/_/N-2op9Z2fpy" onclick="set_cookie('lego_theme_ideas_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Ideas.jpg" /> <span>LEGO<span class="regs">&reg;</span> Ideas</span> </a> <a href="//www.barnesandnoble.com/b/toys-games/lego/lego-marvel-super-heroes/_/N-8qfZ2k13" onclick="set_cookie('lego_theme_marvel-super-heroes_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Marvel.jpg" /> <span>LEGO<span class="regs">&reg;</span> Marvel<br />
+Super Heroes</span> </a> <a href="//www.barnesandnoble.com/b/toys-games/lego/lego-juniors/_/N-8qfZ2k12" onclick="set_cookie('lego_theme_juniors_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Juniors.jpg" /> <span>LEGO<span class="regs">&reg;</span> Juniors</span> </a> <a href="//www.barnesandnoble.com/b/new-from-lego-friends/_/N-2oo7" onclick="set_cookie('lego_theme_friends_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Friends.jpg" /> <span>LEGO<span class="regs">&reg;</span> Friends</span> </a> <a href="//www.barnesandnoble.com/b/lego-hard-to-find-collection/_/N-2ftl" onclick="set_cookie('lego_theme_hard-to-find-collection_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Hard-to-Find.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />
+Hard-to-Find</span> </a> <a href="//www.barnesandnoble.com/b/lego/lego/lego-city/_/N-1p5jZ2c8p" onclick="set_cookie('lego_theme_lego-city_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_City.jpg" /> <span>LEGO<span class="regs">&reg;</span> City</span> </a> <a href="//www.barnesandnoble.com/b/lego/building-lego/lego-architecture/_/N-1p5jZ1hmg" onclick="set_cookie('lego_theme_architecture_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Architiecture.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />
+Architecture</span> </a> <a href="//www.barnesandnoble.com/b/lego/lego/lego-creator/_/N-1p5jZ2c8q" onclick="set_cookie('lego_theme_creator_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Creator.jpg" /> <span>LEGO<span class="regs">&reg;</span> Creator</span> </a> <a href="//www.barnesandnoble.com/b/lego/kids-books/_/N-1p5jZ8qc" onclick="set_cookie('lego_theme_books_imagetext');" tabindex="0"> <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Books.jpg" /> <span>LEGO<span class="regs">&reg;</span> Books</span> </a>
+
+<a href="//www.barnesandnoble.com/b/lego/movies-tv/_/N-1p5jZ8qh" onclick="set_cookie('lego_theme_lego-movies_imagetext');" tabindex="0"><img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Movies.jpg" /> <span>LEGO<span class="regs">&reg;</span><br />
+Movies</span> </a>
+
+<a href="//www.barnesandnoble.com/b/lego/lego-apparel/_/N-2s0n" onclick="set_cookie('lego_theme_apparel_imagetext');" tabindex="0"><img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/minipod_Apparel.jpg" /> <span>LEGO<span class="regs">&reg;</span> Apparel<br />
+&amp; Accessories</span> </a>
+</div>
+</div>
+</section>
+
+<script type="text/javascript">
+
+var ventana = window.innerWidth;
+    if(ventana >= 600) {
+      $("#legoHero img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/LEGO_Movie2.jpg");
+      $("#legoBoutiques .BoutOne img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/Section_HarryPotter_190101.jpg");
+      $("#legoBoutiques .BoutTwo img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/Section_StarWars_190101.jpg");
+      $("#legoBoutiques .BoutThree img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/Section_Architecture_190101.jpg")
+    } else {
+      $("#legoHero img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/LEGO_Movie2-mobile.jpg");
+      $("#legoBoutiques .BoutOne img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/m_Section_HarryPotter.jpg");
+      $("#legoBoutiques .BoutTwo img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/m_Section_StarWars_190101.jpg");
+      $("#legoBoutiques .BoutThree img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/worldoflego/m_Section_Architecture_190101.jpg")
+    }
+</script>

@@ -1,0 +1,102 @@
+
+
+<style>
+
+</style>
+<script type="text/javascript">
+if (window.location.hostname === "m.barnesandnoble.com"|| window.location.hostname === "mbarnesandnoble.skavaone.com" || window.location.hostname==="mpreprod.barnesandnoble.com" || window.location.hostname==="mpreview.barnesandnoble.com" ) {
+$("#btsHero img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Hero-mobile.jpg")
+}
+</script>
+
+<section id="backToSchool">
+
+
+  <div id="btsHero" class="" >
+    <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Hero.jpg" />
+  </div>
+  <div class="btsgrades">
+    <h2 class="rule">Shop by Grade</h2>
+    <div class="categoriesContent">
+      <a onclick="set_cookie('bts_shop-by-grade-teacher_text');" href="//www.barnesandnoble.com/b/for-teachers/_/N-2jri" class="">
+        <span class="">teachers</span>
+      </a>
+      <a onclick="set_cookie('bts_shop-by-grade-college_text');" href="//www.barnesandnoble.com/b/college/_/N-1p2s" class="">
+        <span class="">college</span>
+      </a>
+      <a onclick="set_cookie('bts_shop-by-grade-highschool_text');" href="//www.barnesandnoble.com/b/high-school/_/N-1p2u" class="">
+        <span class="">high school</span>
+      </a>
+      <a onclick="set_cookie('bts_shop-by-grade-grade4-8_text');" href="//www.barnesandnoble.com/b/grade-4-to-grade-8/_/N-1p2t" class="">
+        <span class="">grade 4 -<br>grade 8</span>
+      </a>
+      <a onclick="set_cookie('bts_shop-by-grade-preK-grade3_text');" href="//www.barnesandnoble.com/b/pre-k-to-grade-3/_/N-1p2v" class="">
+        <span class="">pre-k -<br>grade&nbsp;3</span>
+      </a>
+    </div>
+  </div>
+  <!-- removed on 032719
+  <div class="outterBounds">
+    <div class="outterBoundsContent">
+      <div><a onclick="set_cookie('bts_start-a-new-look_image');" href="//www.barnesandnoble.com/h/back-to-school/back-to-school-set" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Pod_NewLook_2x.jpg" />
+        <span class="">start a new look</span>
+      </a></div>
+      <div><a onclick="set_cookie('bts_stay-organized_image');" href="//www.barnesandnoble.com/b/stay-organized/_/N-2qsm" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Pod_Organized_2x.jpg" />
+        <span class="">stay organized</span>
+      </a></div>
+      <div><a onclick="set_cookie('bts_stock-up-on-supplies_image');" href="//www.barnesandnoble.com/b/stock-up-on-supplies/_/N-2qsn" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Pod_Supplies_2x.jpg" />
+        <span class="">stock up on supplies</span>
+      </a></div>
+    </div>
+  </div> -->
+<!-- removed on 012919
+  <div class="promo-pdp mt-xxl promo-pdp--light-text"><a href="//www.barnesandnoble.com/b/30-off-school-supplies/_/N-2r8r" class="container bg-secondary-teal">50% Off Select School Supplies <span class="promo-pdp__cta">shop Now</span> </a> </div> -->
+
+  <div class="categories">
+    <div class="categoriesContent">
+      <a onclick="set_cookie('bts_categories_study-guides_imagetext');" href="//www.barnesandnoble.com/b/books/study-aids-test-prep/_/N-29Z8q8Z1gke" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_studyguides.png" />
+        <span class="">study guides & Test&nbsp;Prep</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_work-books_imagetext');" href="//www.barnesandnoble.com/b/back-to-school-workbooks/_/N-2jtq" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_workbooks_b.png" />
+        <span class="">workbooks</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_textbooks_imagetext');" href="//www.barnesandnoble.com/b/textbooks/_/N-8q9" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_textbooks_b.png" />
+        <span class="">textbooks</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_required-reading_imagetext');" href="//www.barnesandnoble.com/b/required-reading/_/N-2quo" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_required.png" />
+        <span class="">required reading</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="categoriesSecond">
+    <div class="categoriesContent">
+      <a onclick="set_cookie('bts_categories_journals-workbooks_imagetext');" href="//www.barnesandnoble.com/b/home-gifts/journals/_/N-8qgZ1hg8" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_journals.png" />
+        <span class="">journals &amp; notebooks</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_bags-backpacks_imagetext');" href="//www.barnesandnoble.com/b/home-gifts/bags-totes/backpacks-messenger-bags/_/N-8qgZ1h35" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_backpacks.png" />
+        <span class="">Bags &amp; Backpacks</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_electronics_imagetext');" href="//www.barnesandnoble.com/b/home-gifts/electronics/_/N-8qgZ1hj0" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_electronics.png" />
+        <span class="">electronics</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_nook_imagetext');" href="//www.barnesandnoble.com/b/nook/_/N-1pbl" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_nook.png" />
+        <span class="">nook</span>
+      </a>
+    </div>
+  </div>
+  <div class="promo-pdp mt-xxl promo-pdp--light-text"><a href="//specialists.barnesandnoble.com/summerreading?summer-reading-lists-for-kids" class="container bg-moss"> Start Your Summer&nbsp;Reading&nbsp;Journey! <span class="promo-pdp__cta">Explore Specialists Now</span> </a> </div>
+  <div class="btsBorder"></div>
+
+</section>

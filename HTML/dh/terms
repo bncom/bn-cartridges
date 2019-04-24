@@ -1,0 +1,14 @@
+@media screen and (max-width: 839px) {
+#main-content h1 {
+    font-size: 2.3082rem;
+    text-align: center;
+  }
+  #main-content .CQ-content .html-embed-container {
+    margin: 0 4rem;
+}
+}
+@media screen and (max-width: 479px){
+#main-content .CQ-content .html-embed-container {
+    margin: 0 1.5rem;
+}
+}

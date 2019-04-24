@@ -566,8 +566,8 @@
                         //re-trim if we are in the middle of a word
                         trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
                         titleDisplayed = trimmedString + extHellip;
-                        // $(this).text(trimmedString); 
-                        // $(this).append(extHellip); 
+                        // $(this).text(trimmedString);
+                        // $(this).append(extHellip);
                     }
 
                     var icItem = "event_result-grid_" + ean + "_image";
@@ -622,15 +622,15 @@
                         trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
                         titleDisplayed = trimmedString + extHellip;
                         // $(this).text(trimmedString);
-                        // $(this).append(extHellip); 
+                        // $(this).append(extHellip);
                     }
 
                     var icItem = "event_result-grid_" + ean + "_image";
                     var imgPath = "//prodimage.images-bn.com/pimages/" + ean + "_p0_v5_s118x184.jpg";
                     if(previewOnly === true){ imgPath = "//dispatch.barnesandnoble.com/content/dam/ccr/pdp/bfse2018/" + ean + ".jpg"; }
                     var jsonItem = $('<div ' + sectionTarget + ' class="jsonGridItem active sect_' + sectionName + '"><a aria-label="' + title + ' - Signed Edition" href="https://stores.barnesandnoble.com/" onclick="set_cookie(' + icItem + ');"><div class="jsonGridImage"><img src="' + imgPath + '" border="0" alt="" /></div><div class="jsonGridDetails"><p class="jsonGridContributor">' + contributor + '</p><p class="jsonGridTitle">' + titleDisplayed + '</p></div></a></div>');
-                    $('#jsonBFSignedEditions').append(jsonItem); 
-                }  
+                    $('#jsonBFSignedEditions').append(jsonItem);
+                }
 
             });
 
@@ -879,7 +879,8 @@
         /* Popular Authors carousel */
         $('.isMobile .author-image-carousel .carousel, .isMobile .five-product-carousel-new').slick('unslick');
 
-
+        /* Pass through b pages carousel unslick */
+        $(".sk_passthroughPage .product-shelf").slick('unslick');
         //Discover Categories functionality
         /*
         $(".isMobile .genre-index-refinements--discover-categories div.index-grid").hide();

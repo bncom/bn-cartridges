@@ -1,0 +1,492 @@
+
+
+<style>
+  .main-content.container {
+      padding: unset;
+  }
+  .gradesContainer,.outterBoundsContent{
+      display:flex;
+      justify-content:space-between
+  }
+  main.bg-whole-site-color{
+      background-image:url(//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/GrayBand_BG_e7e7e7.png);
+      background-repeat:repeat-x;
+      background-position-y:714px
+  }
+  .pt-m{
+      padding-top:unset!important
+  }
+
+div#btsHero img {
+    max-width: 100%;
+}
+div#btsHero {
+    max-width: 1024px;
+    height: auto;
+    width:100%;
+}
+  .btsgrades{
+      margin:44px 4px 60px
+  }
+  .btsgrades .categoriesContent{
+      margin:44px 0 64px
+  }
+  .btsgrades h2{
+      font-size:36px;
+      font-weight:400
+  }
+  .gradesContainer{
+      margin-top:48px
+  }
+  .btsgrades span{
+      color:#efe7a2:
+  }
+  .btsgrades a,.btsgrades a span{
+      height:160px;
+      width:160px;
+      border-radius:50%;
+      background-color:#bc1d29;
+      color:#efe7a2;
+      font-size:22px;
+      font-weight:400;
+      font-family:'Fjalla One',sans-serif!important;
+      text-transform:uppercase;
+      letter-spacing:.8px;
+      line-height:30px;
+      text-align:center;
+      text-decoration:none;
+      display:flex;
+      justify-content:center;
+      align-items:center
+  }
+  .btsgrades .categoriesContent a span:hover,.btsgrades a:focus,.btsgrades a:hover{
+      background-color:#efe7a2;
+      color:#bc1d29;
+      border:none;
+      text-decoration:none
+  }
+  .rule:before{
+      margin-right:40px
+  }
+  .rule:after{
+      margin-left:40px
+  }
+  .outterBoundsContent{
+      text-align:center;
+      background-color:#e7e7e7
+  }
+  .outterBoundsContent a{
+      text-decoration:none
+  }
+  .outterBoundsContent img{
+      width:315px;
+      height:210px
+  }
+  .outterBounds{
+      padding:58px 0 0;
+      position:relative;
+      background-color:#e7e7e7
+  }
+  .outterBounds .outterBoundsContent span{
+      display:block;
+      font-size:23px;
+      font-weight:400;
+      line-height:1;
+      letter-spacing:.96px;
+      color:#21282d;
+      text-transform:uppercase;
+      margin:17px auto 46px;
+      font-family:fjalla One,sans-serif;
+      padding-bottom:2px;
+      border-bottom:1px solid transparent;
+      width:max-content;
+      width:-moz-max-content;
+      text-align:center;
+      text-decoration:none
+  }
+  .outterBounds .outterBoundsContent a:hover span{
+      border-bottom:1px solid #21282d;
+      text-decoration:none;
+      padding-bottom:2px
+  }
+  .categories,.categoriesSecond{
+      padding:78px 18px 0
+  }
+  .categoriesContent{
+      display:flex;
+      justify-content:space-between;
+      text-align:center;
+      text-transform:uppercase
+  }
+  .categoriesContent img{
+      width:202px;
+      border-radius:50%;
+      background-color:#e7e7e7;
+      margin-bottom:16px
+  }
+  .categoriesSecond{
+      padding-top:74px;
+      padding-bottom:35px
+  }
+  .categoriesContent a{
+      text-decoration:none
+  }
+  .categoriesContent span{
+      display:block;
+      width:max-content;
+      width:-moz-max-content;
+      margin:0 auto;
+      border:1px solid transparent;
+      padding-bottom:1px;
+      font-size:15px;
+      font-weight:700;
+      line-height:1.35;
+      letter-spacing:.5px;
+      color:#21282d
+  }
+  .categoriesContent a:hover span{
+      border:1px solid transparent;
+      border-bottom:1px solid #21282d;
+      padding-bottom:1px;
+      text-decoration:none
+  }
+  @font-face{
+      font-family:'Fjalla One';
+      src:url(https://css.css-bn.com/static/redesign/release/fonts/FjallaOne-Regular.ttf) format('truetype');
+      font-weight:400;
+      font-style:normal
+  }
+  .promo-pdp a.container.bg-moss,.promo-pdp a.container.bg-secondary-teal{
+      font-family:unset;
+      font-size:20px;
+      font-weight:400;
+      letter-spacing:.25px;
+      padding:30px;
+      background:#0a7a9c
+  }
+  .promo-pdp a.container.bg-moss{
+      background:#9e9d52
+  }
+  span.promo-pdp__cta{
+      font-size:17px;
+      padding-left:unset;
+      border-bottom:1px solid transparent;
+      margin-left:5px
+  }
+  a:hover span.promo-pdp__cta:after{
+      border-bottom:1px solid
+  }
+
+  @media screen and (min-width:839px) {
+    .outterBoundsContent img {
+    max-width: 315px;
+    height: auto;
+    width: 100%;
+}
+}
+  @media screen and (max-width:839px){
+      main.bg-whole-site-color{
+          background-image:unset;
+          background-repeat:unset;
+          background-position-y:unset
+      }
+      .container{
+          padding:2.25rem 0
+      }
+      div#btsHero{
+          width:100%;
+          height:unset
+      }
+      section#backToSchool{
+          width:100%;
+          right:unset
+      }
+      .btsgrades{
+          overflow-x:scroll;
+          margin:35px 0 44px;
+          width:100%
+      }
+      .btsgrades .categoriesContent,.btsgrades h2{
+          margin:36px 0 0
+      }
+      .btsgrades h2{
+          font-size:28px;
+          font-weight:600;
+          font-family:Poynter,Georgia,serif;
+          justify-content:center
+      }
+      .rule::after,.rule::before{
+          background-color:unset
+      }
+      .categoriesContent img,.outterBounds,.outterBoundsContent,.outterBoundsContent a{
+          background-color:#e7e7e7
+      }
+      .gradesContainer{
+          display:inline-block;
+          /*! width: 100%;
+           */
+          margin-top:48px
+      }
+      .btsgrades a,.btsgrades a span{
+          height:133px;
+          width:133px;
+          font-weight:400;
+          font-size:18px;
+          font-family:Poynter,sans-Serif;
+          line-height:22px
+      }
+      .outterBounds{
+          padding:0;
+          position:relative
+      }
+      .outterBoundsContent{
+          display:flex;
+          justify-content:space-around;
+          text-align:center;
+          flex-wrap:wrap
+      }
+      .categoriesContent a:first-child{
+          margin-left:14px
+      }
+      .categories .categoriesContent a:first-child,.categoriesSecond .categoriesContent a:first-child{
+          margin-left:12px
+      }
+      .outterBoundsContent img{
+          max-width:450px;
+          width:100%;
+          height:unset
+      }
+      .outterBounds .outterBoundsContent span{
+          display:block;
+          font-size:23px;
+          font-weight:400;
+          line-height:1;
+          letter-spacing:.96px;
+          color:#21282d;
+          text-transform:uppercase;
+          margin:19px auto 18px;
+          font-family:fjalla One,sans-serif;
+          padding-bottom:2px;
+          border-bottom:1px solid transparent;
+          width:max-content;
+          width:-moz-max-content;
+          text-align:center;
+          text-decoration:none;
+          background-color:#e7e7e7
+      }
+      .outterBoundsContent div{
+          border-bottom:26px solid #fff;
+          width:100%
+      }
+      .categories{
+          padding:24px 0 43px
+      }
+      .categoriesSecond{
+          padding:0 0 42px
+      }
+      .categoriesContent{
+          text-align:center;
+          text-transform:uppercase;
+          overflow-x:hidden;
+          overflow-x:scroll
+      }
+      .categoriesContent img{
+          width:133px;
+          border-radius:50%;
+          margin-bottom:10px;
+          flex-basis:1
+      }
+      .categoriesContent span{
+          display:block;
+          width:fit-content
+      }
+      .categoriesContent a{
+          margin:0 9px
+      }
+      .outterBounds .outterBoundsContent a:hover span{
+          border-bottom:1px solid transparent;
+          padding-bottom:2px;
+          text-decoration:underline
+      }
+      .categoriesContent a:hover span{
+          border-bottom:1px solid transparent;
+          padding-bottom:unset;
+          text-decoration:underline
+      }
+      .btsBorder{
+          border-bottom:1px solid #ddd;
+          margin:0 15px
+      }
+      .promo-pdp{
+          margin-top:0!important;
+          padding-bottom:37px
+      }
+      .promo-pdp a.container.bg-moss,.promo-pdp a.container.bg-secondary-teal{
+          font-family:unset;
+          font-size:24px;
+          font-weight:400;
+          letter-spacing:.25px;
+          padding:20px 30px 30px;
+          background:#0a7a9c;
+          line-height:29px!important
+      }
+      .promo-pdp a.container.bg-moss{
+          background:#9e9d52
+      }
+      span.promo-pdp__cta{
+          font-size:20px!important;
+          padding-left:unset;
+          padding-top:7px;
+          border-bottom:1px solid transparent;
+          margin-left:5px
+      }
+  }
+  @media screen and (max-width:600px){
+      .btsgrades {
+          overflow-x: scroll;
+          margin: 0px 0 44px;
+          width: 100%;
+      }
+  }
+  @media screen and (min-width:450px) and (max-width:600px){
+      .outterBoundsContent img{
+          padding-top:25px
+      }
+  }
+  @media screen and (max-width:320px){
+      .btsgrades a,.btsgrades a span{
+          width:118px;
+          height:118px;
+          margin:0 6px
+      }
+      .btsgrades a:first-child{
+          margin-left:3px
+      }
+      .categories .categoriesContent a img,.categoriesSecond .categoriesContent a img{
+          width:118px;
+          height:118px
+      }
+      .categories .categoriesContent a:first-child,.categoriesSecond .categoriesContent a:first-child{
+          margin-left:2px
+      }
+      .categories .categoriesContent a span,.categoriesSecond .categoriesContent a span{
+          font-size:14px
+      }
+      .categories .categoriesContent{
+          padding:17px 0 32px
+      }
+      .categories{
+          padding:unset
+      }
+      .promo-pdp a.container.bg-moss,.promo-pdp a.container.bg-secondary-teal{
+          padding:20px 10px 30px!important
+      }
+  }
+
+</style>
+
+
+<section id="backToSchool">
+
+
+  <div id="btsHero" class="" >
+    <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Hero.jpg" />
+  </div>
+  <div class="btsgrades">
+    <h2 class="rule">Shop by Grade</h2>
+    <div class="categoriesContent">
+      <a onclick="set_cookie('bts_shop-by-grade-teacher_text');" href="//www.barnesandnoble.com/b/for-teachers/_/N-2jri" class="">
+        <span class="">teachers</span>
+      </a>
+      <a onclick="set_cookie('bts_shop-by-grade-college_text');" href="//www.barnesandnoble.com/b/college/_/N-1p2s" class="">
+        <span class="">college</span>
+      </a>
+      <a onclick="set_cookie('bts_shop-by-grade-highschool_text');" href="//www.barnesandnoble.com/b/high-school/_/N-1p2u" class="">
+        <span class="">high school</span>
+      </a>
+      <a onclick="set_cookie('bts_shop-by-grade-grade4-8_text');" href="//www.barnesandnoble.com/b/grade-4-to-grade-8/_/N-1p2t" class="">
+        <span class="">grade 4 -<br>grade 8</span>
+      </a>
+      <a onclick="set_cookie('bts_shop-by-grade-preK-grade3_text');" href="//www.barnesandnoble.com/b/pre-k-to-grade-3/_/N-1p2v" class="">
+        <span class="">pre-k -<br>grade&nbsp;3</span>
+      </a>
+    </div>
+  </div>
+  <div class="outterBounds">
+    <div class="outterBoundsContent">
+      <div><a onclick="set_cookie('bts_start-a-new-look_image');" href="//www.barnesandnoble.com/h/back-to-school/back-to-school-set" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Pod_NewLook_2x.jpg" />
+        <span class="">start a new look</span>
+      </a></div>
+      <div><a onclick="set_cookie('bts_stay-organized_image');" href="//www.barnesandnoble.com/b/stay-organized/_/N-2qsm" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Pod_Organized_2x.jpg" />
+        <span class="">stay organized</span>
+      </a></div>
+      <div><a onclick="set_cookie('bts_stock-up-on-supplies_image');" href="//www.barnesandnoble.com/b/stock-up-on-supplies/_/N-2qsn" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Pod_Supplies_2x.jpg" />
+        <span class="">stock up on supplies</span>
+      </a></div>
+    </div>
+  </div>
+<!-- removed on 012919
+  <div class="promo-pdp mt-xxl promo-pdp--light-text"><a href="//www.barnesandnoble.com/b/30-off-school-supplies/_/N-2r8r" class="container bg-secondary-teal">50% Off Select School Supplies <span class="promo-pdp__cta">shop Now</span> </a> </div> -->
+
+  <div class="categories">
+    <div class="categoriesContent">
+      <a onclick="set_cookie('bts_categories_study-guides_imagetext');" href="//www.barnesandnoble.com/b/books/study-aids-test-prep/_/N-29Z8q8Z1gke" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_studyguides.png" />
+        <span class="">study guides & Test&nbsp;Prep</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_work-books_imagetext');" href="//www.barnesandnoble.com/b/back-to-school-workbooks/_/N-2jtq" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_workbooks_b.png" />
+        <span class="">workbooks</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_textbooks_imagetext');" href="//www.barnesandnoble.com/b/textbooks/_/N-8q9" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_textbooks_b.png" />
+        <span class="">textbooks</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_required-reading_imagetext');" href="//www.barnesandnoble.com/b/required-reading/_/N-2quo" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_required.png" />
+        <span class="">required reading</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="categoriesSecond">
+    <div class="categoriesContent">
+      <a onclick="set_cookie('bts_categories_journals-workbooks_imagetext');" href="//www.barnesandnoble.com/b/home-gifts/journals/_/N-8qgZ1hg8" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_journals.png" />
+        <span class="">journals &amp; notebooks</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_bags-backpacks_imagetext');" href="//www.barnesandnoble.com/b/home-gifts/bags-totes/backpacks-messenger-bags/_/N-8qgZ1h35" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_backpacks.png" />
+        <span class="">Bags &amp; Backpacks</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_electronics_imagetext');" href="//www.barnesandnoble.com/b/home-gifts/electronics/_/N-8qgZ1hj0" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_electronics.png" />
+        <span class="">electronics</span>
+      </a>
+      <a onclick="set_cookie('bts_categories_nook_imagetext');" href="//www.barnesandnoble.com/b/nook/_/N-1pbl" class="">
+        <img src="//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_nook.png" />
+        <span class="">nook</span>
+      </a>
+    </div>
+  </div>
+  <div class="promo-pdp mt-xxl promo-pdp--light-text"><a href="//specialists.barnesandnoble.com/summerreading?summer-reading-lists-for-kids" class="container bg-moss"> Start Your Summer&nbsp;Reading&nbsp;Journey <span class="promo-pdp__cta">Explore Specialists Now</span> </a> </div>
+  <div class="btsBorder"></div>
+
+</section>
+
+<script type="text/javascript">
+if(window.addEventListener) {
+window.addEventListener('resize', function() {
+var ventana = window.innerWidth;
+  if(ventana >= 600) {
+    $("#btsHero img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Hero.jpg")
+  } else {
+    $("#btsHero img").attr("src","//dispatch.barnesandnoble.com/content/dam/ccr/h/back-to-school/BTS_Hero-mobile.jpg")
+  }
+}, true);
+}
+
+</script>
